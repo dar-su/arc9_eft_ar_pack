@@ -43,7 +43,7 @@ SWEP.IronSights = {
 }
 
 SWEP.ActivePos = Vector(-0.7, -3.1, -.35)
-SWEP.CustomizePos = Vector(13.5, 40, 4)
+SWEP.CustomizePos = Vector(13.5, 40, 4.5)
 SWEP.CustomizeSnapshotFOV = 60
 SWEP.CustomizeRotateAnchor = Vector(13.5, -4.28-0.1, -5.23)
 SWEP.CustomizeSnapshotPos = Vector(0, 30, 0)
@@ -187,10 +187,10 @@ SWEP.CustomizeRotateAnchorHook = function(wep, vec)
 	local eles = wep:GetElements()
 
 	-- Suppressors	
-	if eles["eft_ash12_muzzle_silencer"] then vec = vec + Vector(1.5, 3, 0) end
+	if eles["eft_ash12_muzzle_silencer"] then vec = vec + Vector(1.5, 0, 0) end
 	
 	-- Magazines
-	if eles["eft_ash12_mag_20"] or eles["eft_ash12_mag_20_stick"] then vec = vec + Vector(0, 4, 1.75) end
+	if eles["eft_ash12_mag_20"] or eles["eft_ash12_mag_20_stick"] then vec = vec + Vector(0, 0, 1.75) end
 
 	return vec
 end
