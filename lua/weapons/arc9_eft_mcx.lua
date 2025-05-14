@@ -2,9 +2,7 @@ AddCSLuaFile()
 SWEP.Base = "arc9_eft_base"
 SWEP.Category = "ARC9 - Escape From Tarkov"
 
--- uhh :33
-SWEP.Spawnable = file.Exists("weapons/arc9_eft_m4a1.lua", "LUA")
--- requires ar15 pack
+SWEP.Spawnable = true
 
 ------------------------- |||           Trivia            ||| -------------------------
 
