@@ -47,10 +47,14 @@ SWEP.IronSights = {
 }
 
 SWEP.ActivePos = Vector(-0.7, -3.1, -.35)
-SWEP.CustomizePos = Vector(17, 43, 4)
-SWEP.CustomizeSnapshotFOV = 50
+SWEP.CustomizePos = Vector(17, 40, 4)
+SWEP.CustomizeSnapshotFOV = 60
 SWEP.CustomizeRotateAnchor = Vector(17, -4.28, -5.23)
 SWEP.CustomizeSnapshotPos = Vector(0, 25, 0)
+
+SWEP.PeekMaxFOV = 60
+SWEP.PeekPosReloading = Vector(3, 2, -1)
+SWEP.PeekAngReloading = Angle(0, 0, -5)
 
 ------------------------- |||           Stats            ||| -------------------------
 
@@ -179,6 +183,72 @@ SWEP.Hook_Think = function(swep) -- horrible asf
     end
 end
 
+SWEP.CustomizePosHook = function(wep, vec)
+	local eles = wep:GetElements()
+
+	-- Barrels	
+	if eles["eft_aug_barrel_16a1"] or eles["eft_aug_barrel_16"] then vec = vec + Vector(-2.5, -1, 0) end
+
+	-- Suppressors	
+	if eles["eft_silencer_dthybrid"] 
+		or eles["eft_silencer_r43_556"] 
+		or eles["eft_silencer_ultra5"] 
+		or eles["eft_silencer_ar15_m4sdk"] 
+		or eles["eft_silencer_ar15_sakerasr"]
+		or eles["eft_silencer_ar15_socommini"] 
+		or eles["eft_silencer_ar15_socommonster"] 
+		or eles["eft_silencer_ar15_socomrc2"] 
+		or eles["eft_silencer_ar15_kacqdssnt4"] 
+		or eles["eft_silencer_ar15_kacqdssnt4_f"] 
+		then vec = vec + Vector(2, 3, 0)
+
+		elseif eles["eft_silencer_sdn6"] then vec = vec + Vector(3.75, 6, 0)
+		elseif eles["eft_silencer_thorpsr"] then vec = vec + Vector(3.75, 6, 0)
+		elseif eles["eft_silencer_waveqd"] or eles["eft_silencer_gemtechone"] then vec = vec + Vector(3, 5, 0)
+		
+		elseif eles["eft_muzzle_aug_t4"] then vec = vec + Vector(1.65, 2.65, 0)
+		elseif eles["eft_muzzle_aug_ase"] then vec = vec + Vector(2, 3, 0)
+	end
+	
+	-- Magazines
+	if eles["eft_aug_mag_42"] then vec = vec + Vector(0, 4, 1.75) end
+
+	return vec
+end
+
+SWEP.CustomizeRotateAnchorHook = function(wep, vec)
+	local eles = wep:GetElements()
+
+	-- Barrels	
+	if eles["eft_aug_barrel_16a1"] or eles["eft_aug_barrel_16"] then vec = vec + Vector(-2.5, 0, 0) end
+
+	-- Suppressors	
+	if eles["eft_silencer_dthybrid"] 
+		or eles["eft_silencer_r43_556"] 
+		or eles["eft_silencer_ultra5"] 
+		or eles["eft_silencer_ar15_m4sdk"] 
+		or eles["eft_silencer_ar15_sakerasr"]
+		or eles["eft_silencer_ar15_socommini"] 
+		or eles["eft_silencer_ar15_socommonster"] 
+		or eles["eft_silencer_ar15_socomrc2"] 
+		or eles["eft_silencer_ar15_kacqdssnt4"] 
+		or eles["eft_silencer_ar15_kacqdssnt4_f"] 
+		then vec = vec + Vector(2, 0, 0)
+
+		elseif eles["eft_silencer_sdn6"] then vec = vec + Vector(3.75, 0, 0)
+		elseif eles["eft_silencer_thorpsr"] then vec = vec + Vector(3.75, 0, 0)
+		elseif eles["eft_silencer_waveqd"] or eles["eft_silencer_gemtechone"] then vec = vec + Vector(3, 0, 0)
+		
+		elseif eles["eft_muzzle_aug_t4"] then vec = vec + Vector(1.65, 0, 0)
+		elseif eles["eft_muzzle_aug_ase"] then vec = vec + Vector(2, 0, 0)
+	end
+	
+	-- Magazines
+	if eles["eft_aug_mag_42"] then vec = vec + Vector(0, 0, 1.75) end
+
+	return vec
+end
+
 ------------------------- |||           Sounds            ||| -------------------------
 
 local path = "weapons/darsu_eft/aug/"
@@ -265,7 +335,6 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
     end
     
     if anim == "reload" or anim == "reload_empty" then
-        if nomag then return "reload_single" end
         if empty then
             if elements["auga1"] then mag = mag .. "_a1" end
             return "reload_empty" .. mag 
@@ -490,84 +559,11 @@ SWEP.Animations = {
     ["fire_empty"] = { Source = "fire_last", NoIdle = true, EventTable = { { s = path .. "mp7_hammer.ogg", t = 0 } } },
     ["fire_dry_empty"] = { Source = "fire_dry_empty", EventTable = { { s = path .. "p90_trigger_empty.ogg", t = 0 } } },
 
-    ["reload_0"] = {
-        Source = "reload0",
-        MinProgress = 0.85,
-        FireASAP = true,
-        MagSwapTime = 1.0,
-        EventTable = rst_reload,
-        IKTimeLine = rik_reload
-    },
-    ["reload_empty_0"] = {
-        Source = "reload_empty0",
-        MinProgress = 0.85,
-        FireASAP = true,
-        MagSwapTime = 1.0,
-        EventTable = rst_reloadempty,
-        IKTimeLine = rik_reloadempty
-    },
-    ["reload_empty_0_a1"] = {
-        Source = "reload_empty0_a1",
-        MinProgress = 0.85,
-        FireASAP = true,
-        MagSwapTime = 1.0,
-        EventTable = rst_reloademptya1,
-        IKTimeLine = rik_reloademptya1
-    },
-
-    ["reload_1"] = {
-        Source = "reload1",
-        MinProgress = 0.85,
-        FireASAP = true,
-        MagSwapTime = 1.0,
-        EventTable = rst_reload,
-        IKTimeLine = rik_reload
-    },
-    ["reload_empty_1"] = {
-        Source = "reload_empty1",
-        MinProgress = 0.85,
-        FireASAP = true,
-        MagSwapTime = 1.0,
-        EventTable = rst_reloadempty,
-        IKTimeLine = rik_reloadempty
-    },
-    ["reload_empty_1_a1"] = {
-        Source = "reload_empty1_a1",
-        MinProgress = 0.85,
-        FireASAP = true,
-        MagSwapTime = 1.0,
-        EventTable = rst_reloademptya1,
-        IKTimeLine = rik_reloademptya1
-    },
-
-    ["reload_2"] = {
-        Source = "reload2",
-        MinProgress = 0.85,
-        FireASAP = true,
-        MagSwapTime = 1.0,
-        EventTable = rst_reload,
-        IKTimeLine = rik_reload
-    },
-    ["reload_empty_2"] = {
-        Source = "reload_empty2",
-        MinProgress = 0.85,
-        FireASAP = true,
-        MagSwapTime = 1.0,
-        EventTable = rst_reloadempty42,
-        IKTimeLine = rik_reloadempty
-    },
-    ["reload_empty_2_a1"] = {
-        Source = "reload_empty2_a1",
-        MinProgress = 0.85,
-        FireASAP = true,
-        MagSwapTime = 1.0,
-        EventTable = rst_reloadempty42a1,
-        IKTimeLine = rik_reloademptya1
-    },
-
-    ["reload_single"] = {
+    ["reload"] = {
         Source = "reload_single",
-        MinProgress = 0.95,
+        RefillProgress = 0.875,
+        PeekProgress = 0.95,
+        MinProgress = 0.975,
         FireASAP = true,
         MagSwapTime = 1.5,
         EventTable = {
@@ -591,6 +587,126 @@ SWEP.Animations = {
         },
     },    
     
+    ["reload_empty"] = {
+        Source = "reload_single",
+        RefillProgress = 0.825,
+        PeekProgress = 0.95,
+        MinProgress = 0.975,
+        FireASAP = true,
+        MagSwapTime = 1.5,
+        EventTable = {
+            { s = randspin, t = 0.11 },
+            { s = path .. "p90_bolt_handle_grab.ogg", t = 0.27 },
+            { s = path .. "aug_bolt_up.ogg", t = 0.31 },
+            { s = randspin, t = 0.91 },
+            { s = "arc9_eft_shared/weap_round_pullout.ogg", t = 1.47},
+            { s = path .. "generic_jam_shell_ remove_medium2.ogg", t = 2.05 },
+            { s = randspin, t = 2.38 },
+            { s = path .. "p90_bolt_handle_grab.ogg", t = 3.1 },
+            { s = path .. "aug_bolt_down.ogg", t = 3.29},
+            { s = randspin, t = 3.63 },
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.07, lhik = 0 },
+            { t = 0.83, lhik = 0 },
+            { t = 0.94, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+    },    
+    
+    ["reload_0"] = {
+        Source = "reload0",
+        RefillProgress = 0.825,
+        PeekProgress = 0.95,
+        MinProgress = 0.975,
+        FireASAP = true,
+        MagSwapTime = 1.0,
+        EventTable = rst_reload,
+        IKTimeLine = rik_reload
+    },
+    ["reload_empty_0"] = {
+        Source = "reload_empty0",
+        RefillProgress = 0.825,
+        PeekProgress = 0.95,
+        MinProgress = 0.975,
+        FireASAP = true,
+        MagSwapTime = 1.0,
+        EventTable = rst_reloadempty,
+        IKTimeLine = rik_reloadempty
+    },
+    ["reload_empty_0_a1"] = {
+        Source = "reload_empty0_a1",
+        RefillProgress = 0.825,
+        PeekProgress = 0.95,
+        MinProgress = 0.975,
+        FireASAP = true,
+        MagSwapTime = 1.0,
+        EventTable = rst_reloademptya1,
+        IKTimeLine = rik_reloademptya1
+    },
+
+    ["reload_1"] = {
+        Source = "reload1",
+        RefillProgress = 0.825,
+        PeekProgress = 0.95,
+        MinProgress = 0.975,
+        FireASAP = true,
+        MagSwapTime = 1.0,
+        EventTable = rst_reload,
+        IKTimeLine = rik_reload
+    },
+    ["reload_empty_1"] = {
+        Source = "reload_empty1",
+        RefillProgress = 0.825,
+        PeekProgress = 0.95,
+        MinProgress = 0.975,
+        FireASAP = true,
+        MagSwapTime = 1.0,
+        EventTable = rst_reloadempty,
+        IKTimeLine = rik_reloadempty
+    },
+    ["reload_empty_1_a1"] = {
+        Source = "reload_empty1_a1",
+        RefillProgress = 0.825,
+        PeekProgress = 0.95,
+        MinProgress = 0.975,
+        FireASAP = true,
+        MagSwapTime = 1.0,
+        EventTable = rst_reloademptya1,
+        IKTimeLine = rik_reloademptya1
+    },
+
+    ["reload_2"] = {
+        Source = "reload2",
+        RefillProgress = 0.825,
+        PeekProgress = 0.95,
+        MinProgress = 0.975,
+        FireASAP = true,
+        MagSwapTime = 1.0,
+        EventTable = rst_reload,
+        IKTimeLine = rik_reload
+    },
+    ["reload_empty_2"] = {
+        Source = "reload_empty2",
+        RefillProgress = 0.825,
+        PeekProgress = 0.95,
+        MinProgress = 0.975,
+        FireASAP = true,
+        MagSwapTime = 1.0,
+        EventTable = rst_reloadempty42,
+        IKTimeLine = rik_reloadempty
+    },
+    ["reload_empty_2_a1"] = {
+        Source = "reload_empty2_a1",
+        RefillProgress = 0.825,
+        PeekProgress = 0.95,
+        MinProgress = 0.975,
+        FireASAP = true,
+        MagSwapTime = 1.0,
+        EventTable = rst_reloadempty42a1,
+        IKTimeLine = rik_reloademptya1
+    },
 
 
     ["inspect1"] = {
