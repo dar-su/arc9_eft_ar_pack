@@ -342,6 +342,9 @@ ARC9EFT.AR15_Anims = {
         RareSource = {"tooidle0", "tooidle1", "tooidle2"},
         RareSourceChance = 0.0001,
     },
+    ["idle_sights"] = {
+        Source = "idle",
+    },
     ["idle_empty"] = {
         Source = "idle_empty",
         RareSource = {"tooidle0_empty", "tooidle1_empty", "tooidle2_empty"},

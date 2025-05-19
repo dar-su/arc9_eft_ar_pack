@@ -298,6 +298,9 @@ ARC9EFT.AK_Anims = {
         RareSource = {"tooidle0", "tooidle1", "tooidle2"},
         RareSourceChance = 0.0001,
     },
+    ["idle_sights"] = {
+        Source = "idle",
+    },
 
     ["ready"] = {
         Source = {"ready0", "ready1", "ready2"},
