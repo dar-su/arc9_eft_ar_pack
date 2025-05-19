@@ -935,7 +935,7 @@ Black version.
 ]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
-ATT.Folder = "MAGPUL"
+ATT.Folder = "Magpul"
 
 ATT.EFTErgoAdd = 10
 ATT.CustomPros = { Ergonomics = "+10" }
@@ -986,7 +986,7 @@ It comes equipped with licensed M-LOK mounts for the installation of additional 
 Flat Dark Earth version.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
-ATT.Folder = "MAGPUL"
+ATT.Folder = "Magpul"
 
 ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_magpul_moe.mdl"
@@ -1037,7 +1037,7 @@ It comes equipped with licensed M-LOK mounts for the installation of additional 
 Olive Drab version.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
-ATT.Folder = "MAGPUL"
+ATT.Folder = "Magpul"
 
 ATT.EFTErgoAdd = 10
 ATT.CustomPros = { Ergonomics = "+10" }
@@ -1088,7 +1088,7 @@ It comes equipped with licensed M-LOK mounts for the installation of additional 
 Plum-colored polymer version.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
-ATT.Folder = "MAGPUL"
+ATT.Folder = "Magpul"
 
 ATT.EFTErgoAdd = 10
 ATT.CustomPros = { Ergonomics = "+10" }
@@ -1146,7 +1146,7 @@ ATT.VisualRecoilMult = 0.98
 ATT.HeatCapacityMult = 1.053
 
 ATT.MenuCategory = "ARC9 - EFT Attachments"
-ATT.Folder = "MAGPUL"
+ATT.Folder = "Magpul"
 
 ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_magpul_moe.mdl"
@@ -1730,7 +1730,7 @@ Equipped with licensed M-LOK mounts for installation of additional devices or ra
 Black version.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
-ATT.Folder = "MAGPUL"
+ATT.Folder = "Magpul"
 
 ATT.EFTErgoAdd = 14
 ATT.CustomPros = { Ergonomics = "+14" }
@@ -1788,7 +1788,7 @@ Equipped with licensed M-LOK mounts for installation of additional devices or ra
 Flat Dark Earth version.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
-ATT.Folder = "MAGPUL"
+ATT.Folder = "Magpul"
 
 ATT.EFTErgoAdd = 14
 ATT.CustomPros = { Ergonomics = "+14" }
@@ -1846,7 +1846,7 @@ Equipped with licensed M-LOK mounts for installation of additional devices or ra
 Plum-colored polymer version.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
-ATT.Folder = "MAGPUL"
+ATT.Folder = "Magpul"
 
 ATT.EFTErgoAdd = 14
 ATT.CustomPros = { Ergonomics = "+14" }
