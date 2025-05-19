@@ -6,9 +6,9 @@ SWEP.Spawnable = true
 ------------------------- |||           Trivia            ||| -------------------------
 
 SWEP.PrintName = ARC9:GetPhrase("eft_weapon_akm")
-SWEP.Description = "eft_weapon_akm_desc"
+SWEP.Description = ARC9:GetPhrase("eft_weapon_akm_desc")
 
-SWEP.Class = "eft_class_weapon_ar"
+SWEP.Class = ARC9:GetPhrase("eft_class_weapon_ar")
 SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_ar")
 
 SWEP.Trivia = {
@@ -371,7 +371,7 @@ SWEP.AttachmentElements = {
 
 SWEP.Attachments = {
     {
-        PrintName = "eft_cat_muzzle",
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
         Category = "eft_akm_muzzle",
         Bone = "mod_muzzle",
         Pos = Vector(0, 0.1, 0),
@@ -380,7 +380,7 @@ SWEP.Attachments = {
         Installed = "eft_muzzle_ak_akm_std"
     },
     {
-        PrintName = "eft_cat_receiver",
+        PrintName = ARC9:GetPhrase("eft_cat_receiver"),
         Category = "eft_ak_dustcover",
         Bone = "mod_reciever",
         Pos = Vector(0, 0, 0),
@@ -391,7 +391,7 @@ SWEP.Attachments = {
         Installed = "eft_rec_ak_akm"
     },
     {
-        PrintName = "eft_cat_stock",
+        PrintName = ARC9:GetPhrase("eft_cat_stock"),
         Category = "eft_akm_stock",
         Bone = "mod_stock",
         Installed = "eft_stock_akm_std",
@@ -400,7 +400,7 @@ SWEP.Attachments = {
         Ang = Angle(0, 0, 3),
     },
     {
-        PrintName = "eft_cat_dovetail",
+        PrintName = ARC9:GetPhrase("eft_cat_dovetail"),
         Category = "eft_mount_dovetail",
         Bone = "mod_mount_000",
         Pos = Vector(0.05, 1.05, 0.49),
@@ -409,7 +409,7 @@ SWEP.Attachments = {
         RequireElements = {"nmount"},
     },
     {
-        PrintName = "eft_cat_pgrip",
+        PrintName = ARC9:GetPhrase("eft_cat_pgrip"),
         Category = {"eft_ak_grip", "eft_ak_cqrgrip"},
         Bone = "mod_pistol_grip",
         Pos = Vector(0, 0, 0.05),
@@ -418,7 +418,7 @@ SWEP.Attachments = {
         Installed = "eft_grip_ak_akm_b",
     },
     {
-        PrintName = "eft_cat_ammo",
+        PrintName = ARC9:GetPhrase("eft_cat_ammo"),
         Category = "eft_ammo_76239",
         Bone = "mod_magazine",
         Integral = "eft_ammo_76239_ps",
@@ -427,7 +427,7 @@ SWEP.Attachments = {
         Ang = Angle(0, 0, 0),
     },
     {
-        PrintName = "eft_cat_magazine",
+        PrintName = ARC9:GetPhrase("eft_cat_magazine"),
         Category = "eft_ak_762_mag",
         Bone = "mod_magazine",
         Pos = Vector(0, 0, -0.25),
@@ -436,7 +436,7 @@ SWEP.Attachments = {
         Installed = "eft_mag_ak_55_762_30"
     },    
     {
-        PrintName = "eft_cat_gasblock",
+        PrintName = ARC9:GetPhrase("eft_cat_gasblock"),
         Category = "eft_ak_gasblock",
         Bone = "mod_gas_block",
         Pos = Vector(0, 0, 0),
@@ -452,7 +452,7 @@ SWEP.Attachments = {
         }
     }, 
     {
-        PrintName = "eft_cat_rearsight",
+        PrintName = ARC9:GetPhrase("eft_cat_rearsight"),
         Category = "eft_akm_rearsight",
         Bone = "mod_sight_rear",
         Pos = Vector(0, 0, 0),
@@ -462,7 +462,7 @@ SWEP.Attachments = {
         Installed = "eft_rs_ak_akm"
     },
     {
-        PrintName = "eft_cat_charge",
+        PrintName = ARC9:GetPhrase("eft_cat_charge"),
         Category = "eft_ak_charge",
         Bone = "mod_charge",
         Pos = Vector(0, 0, 0),
@@ -471,7 +471,7 @@ SWEP.Attachments = {
     },
     
     {
-        PrintName = "eft_cat_frontsight",
+        PrintName = ARC9:GetPhrase("eft_cat_frontsight"),
         Category = "eft_ak_akmp_fs",
         Bone = "weapon",
         Pos = Vector(0, 33.75, 1.93),
@@ -480,7 +480,7 @@ SWEP.Attachments = {
     },
     
     {
-        PrintName = "eft_cat_launcher",
+        PrintName = ARC9:GetPhrase("eft_cat_launcher"),
         Category = "eft_ak_gp34",
         ExcludeElements = {"nogp34"},
         Bone = "weapon",
@@ -489,14 +489,14 @@ SWEP.Attachments = {
         Icon_Offset = Vector(-5, 0, -1),
     },
     {
-        PrintName = "eft_cat_dovetail",
+        PrintName = ARC9:GetPhrase("eft_cat_dovetail"),
         Category = "eft_ak74_conv",
         Bone = "mod_pistol_grip",
         Pos = Vector(0, 1, 1),
         Ang = Angle(0, 0, 0),
     },
     {
-        PrintName = "eft_cat_custom",
+        PrintName = ARC9:GetPhrase("eft_cat_custom"),
         Category = {"eft_custom_slot", "eft_custom_slot_ak", "eft_custom_slot_akm"},
         Bone = "mod_pistol_grip",
         Pos = Vector(0, -4, -2),

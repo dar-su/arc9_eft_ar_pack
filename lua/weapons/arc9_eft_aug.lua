@@ -5,8 +5,8 @@ SWEP.Spawnable = true
 
 ------------------------- |||           Trivia            ||| -------------------------
 
-SWEP.PrintName = "Steyr AUG A3"
-SWEP.Description = [[Steyr AUG A3 is a 5.56x45 bullpup assault rifle, developed by the Austrian company Steyr-Daimler-Puch. AUG is known for good ergonomics, decent accuracy, low recoil and sufficient reliability. The rifle also stands out for its futuristic design. The A3 version features a bolt-catch button.]]
+SWEP.PrintName = ARC9:GetPhrase("eft_weapon_auga3")
+SWEP.Description = ARC9:GetPhrase("eft_weapon_auga3_desc")
 
 SWEP.Class = ARC9:GetPhrase("eft_class_weapon_ar")
 SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_ar")
@@ -940,7 +940,7 @@ SWEP.AttachmentElements = {
 
 SWEP.Attachments = {
     {
-        PrintName = "Receiver",
+        PrintName = ARC9:GetPhrase("eft_cat_receiver"),
         Category = "eft_aug_rec",
         Bone = "mod_reciever",
         Pos = Vector(0, 0, 0),
@@ -961,7 +961,7 @@ SWEP.Attachments = {
         }
     },
     {
-        PrintName = "Charge",
+        PrintName = ARC9:GetPhrase("eft_cat_charge"),
         Category = "eft_aug_charge",
         Bone = "mod_charge",
         Pos = Vector(0, 0, 0),
@@ -970,7 +970,7 @@ SWEP.Attachments = {
         Installed = "eft_aug_ch_a3",
     },
     {
-        PrintName = "Mag", 
+        PrintName = ARC9:GetPhrase("eft_cat_magazine"), 
         Category = "eft_aug_mag",
         Bone = "mod_magazine",
         Pos = Vector(0, 0, 0),
@@ -979,7 +979,7 @@ SWEP.Attachments = {
         Installed = "eft_aug_mag_30"
     },
     {
-        PrintName = "Ammunition",
+        PrintName = ARC9:GetPhrase("eft_cat_ammo"),
         Category = {"eft_ammo_556"},
         Bone = "mod_magazine",
         Integral = true,
@@ -989,7 +989,7 @@ SWEP.Attachments = {
         Icon_Offset = Vector(-1, 0, -3),
     },
     {
-        PrintName = "Custom slot",
+        PrintName = ARC9:GetPhrase("eft_cat_custom"),
         Category = {"eft_custom_slot", "eft_custom_aug"},
         Bone = "weapon",
         Pos = Vector(0, 4, -2),

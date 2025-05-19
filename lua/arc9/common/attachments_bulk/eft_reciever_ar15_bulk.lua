@@ -26,27 +26,27 @@ ATT.HeatCapacityMult = 0.989
 
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_scope",
+        PrintName = ARC9:GetPhrase("eft_cat_scope"),
         Category = {"eft_optic_large", "eft_optic_medium", "eft_optic_small"},
         Pos = Vector(2.2, 0, -2.1),
         Ang = Angle(0, 0, 0),
         ExcludeElements = {"IronsBlockingSight"},
     },
     {
-        PrintName = "eft_cat_rearsight",
+        PrintName = ARC9:GetPhrase("eft_cat_rearsight"),
         Category = {"eft_ar_rearsight", "eft_rearsight", "eft_rearsight_hk416"},
         Pos = Vector(4.75, 0, -2.13),
         Ang = Angle(0, 0, 0),
     },
     {
-        PrintName = "eft_cat_barrel",
+        PrintName = ARC9:GetPhrase("eft_cat_barrel"),
         Category = "eft_m4a1_barrel",
         Pos = Vector(-0.175, 0, -0.9),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(-0.2, 0, 0),
     },
     {
-        PrintName = "eft_cat_handguard",
+        PrintName = ARC9:GetPhrase("eft_cat_handguard"),
         Category = "eft_ar15_hguard",
         Pos = Vector(-0.15-0.07, 0, -1+0.01),
         Ang = Angle(0, 90, 0),
@@ -81,27 +81,27 @@ ATT.HeatCapacityMult = 0.991
 
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_scope",
+        PrintName = ARC9:GetPhrase("eft_cat_scope"),
         Category = {"eft_optic_large", "eft_optic_medium", "eft_optic_small"},
         Pos = Vector(2.2, 0, -2.1),
         Ang = Angle(0, 0, 0),
         ExcludeElements = {"IronsBlockingSight"},
     },
     {
-        PrintName = "eft_cat_rearsight",
+        PrintName = ARC9:GetPhrase("eft_cat_rearsight"),
         Category = {"eft_ar_rearsight", "eft_rearsight", "eft_rearsight_hk416"},
         Pos = Vector(4.75, 0, -2.13),
         Ang = Angle(0, 0, 0),
     },
     {
-        PrintName = "eft_cat_barrel",
+        PrintName = ARC9:GetPhrase("eft_cat_barrel"),
         Category = "eft_m4a1_barrel",
         Pos = Vector(-0.175, 0, -0.9),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(-0.2, 0, 0),
     },
     {
-        PrintName = "eft_cat_handguard",
+        PrintName = ARC9:GetPhrase("eft_cat_handguard"),
         Category = "eft_ar15_hguard",
         Pos = Vector(-0.15-0.07, 0, -1+0.01),
         Ang = Angle(0, 90, 0),
@@ -139,27 +139,27 @@ ATT.EFTAR15NoFwdAssist = true
 
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_scope",
+        PrintName = ARC9:GetPhrase("eft_cat_scope"),
         Category = {"eft_optic_large", "eft_optic_medium", "eft_optic_small"},
         Pos = Vector(2.2, 0, -2.1),
         Ang = Angle(0, 0, 0),
         ExcludeElements = {"IronsBlockingSight"},
     },
     {
-        PrintName = "eft_cat_rearsight",
+        PrintName = ARC9:GetPhrase("eft_cat_rearsight"),
         Category = {"eft_ar_rearsight", "eft_rearsight", "eft_rearsight_hk416"},
         Pos = Vector(4.75, 0, -2.13),
         Ang = Angle(0, 0, 0),
     },
     {
-        PrintName = "eft_cat_barrel",
+        PrintName = ARC9:GetPhrase("eft_cat_barrel"),
         Category = "eft_m4a1_barrel",
         Pos = Vector(-0.175, 0, -0.9),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(-0.2, 0, 0),
     },
     {
-        PrintName = "eft_cat_handguard",
+        PrintName = ARC9:GetPhrase("eft_cat_handguard"),
         Category = "eft_ar15_hguard",
         Pos = Vector(-0.15-0.11, 0, -1+0.001),
         Ang = Angle(0, 90, 0),
@@ -195,27 +195,27 @@ ATT.HeatCapacityMult = 0.979
 
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_scope",
+        PrintName = ARC9:GetPhrase("eft_cat_scope"),
         Category = {"eft_optic_large", "eft_optic_medium", "eft_optic_small"},
         Pos = Vector(2.2, 0, -2.1),
         Ang = Angle(0, 0, 0),
         ExcludeElements = {"IronsBlockingSight"},
     },
     {
-        PrintName = "eft_cat_rearsight",
+        PrintName = ARC9:GetPhrase("eft_cat_rearsight"),
         Category = {"eft_ar_rearsight", "eft_rearsight", "eft_rearsight_hk416"},
         Pos = Vector(4.75, 0, -2.13),
         Ang = Angle(0, 0, 0),
     },
     {
-        PrintName = "eft_cat_barrel",
+        PrintName = ARC9:GetPhrase("eft_cat_barrel"),
         Category = "eft_m4a1_barrel",
         Pos = Vector(-0.175, 0, -0.9),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(-0.2, 0, 0),
     },
     {
-        PrintName = "eft_cat_handguard",
+        PrintName = ARC9:GetPhrase("eft_cat_handguard"),
         Category = "eft_ar15_hguard",
         Pos = Vector(-0.15-0.07, 0, -1+0.01),
         Ang = Angle(0, 90, 0),
@@ -254,27 +254,27 @@ ATT.EFTAR15NoFwdAssist = true
 
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_scope",
+        PrintName = ARC9:GetPhrase("eft_cat_scope"),
         Category = {"eft_optic_large", "eft_optic_medium", "eft_optic_small"},
         Pos = Vector(2.2, 0, -2.1),
         Ang = Angle(0, 0, 0),
         ExcludeElements = {"IronsBlockingSight"},
     },
     {
-        PrintName = "eft_cat_rearsight",
+        PrintName = ARC9:GetPhrase("eft_cat_rearsight"),
         Category = {"eft_ar_rearsight", "eft_rearsight", "eft_rearsight_hk416"},
         Pos = Vector(4.75, 0, -2.13),
         Ang = Angle(0, 0, 0),
     },
     {
-        PrintName = "eft_cat_barrel",
+        PrintName = ARC9:GetPhrase("eft_cat_barrel"),
         Category = "eft_m4a1_barrel",
         Pos = Vector(-0.175, 0, -0.9),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(-0.2, 0, 0),
     },
     {
-        PrintName = "eft_cat_handguard",
+        PrintName = ARC9:GetPhrase("eft_cat_handguard"),
         Category = "eft_ar15_hguard",
         Pos = Vector(-0.15-0.06, 0, -1+0.003),
         Ang = Angle(0, 90, 0),
@@ -312,27 +312,27 @@ ATT.EFTAR15NoFwdAssist = true
 
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_scope",
+        PrintName = ARC9:GetPhrase("eft_cat_scope"),
         Category = {"eft_optic_large", "eft_optic_medium", "eft_optic_small"},
         Pos = Vector(2.2, 0, -2.1),
         Ang = Angle(0, 0, 0),
         ExcludeElements = {"IronsBlockingSight"},
     },
     {
-        PrintName = "eft_cat_rearsight",
+        PrintName = ARC9:GetPhrase("eft_cat_rearsight"),
         Category = {"eft_ar_rearsight", "eft_rearsight", "eft_rearsight_hk416"},
         Pos = Vector(4.75, 0, -2.13),
         Ang = Angle(0, 0, 0),
     },
     {
-        PrintName = "eft_cat_barrel",
+        PrintName = ARC9:GetPhrase("eft_cat_barrel"),
         Category = "eft_m4a1_barrel",
         Pos = Vector(-0.175, 0, -0.9),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(-0.2, 0, 0),
     },
     {
-        PrintName = "eft_cat_handguard",
+        PrintName = ARC9:GetPhrase("eft_cat_handguard"),
         Category = "eft_ar15_hguard",
         Pos = Vector(-0.15-0.07, 0, -1-0.0115),
         Ang = Angle(0, 90, 0),

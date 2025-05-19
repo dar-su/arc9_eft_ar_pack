@@ -76,12 +76,12 @@ ATT.Category = {"eft_9a_stock"}
 
 ATT.ToggleStats = {
     {
-        PrintName = "Unfolded",
+        PrintName = "eft_toggle_unfolded",
         RecoilMult = 0.8,
         VisualRecoilMult = 0.8
     },
     {
-        PrintName = "Folded",
+        PrintName = "eft_toggle_folded",
         -- CustomizePos = Vector(21, 25, 2),
         ActivateElements = {"folded"}
     },
@@ -202,7 +202,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_vsk_muzzle"}
 ATT.Attachments = {
     {
-        PrintName = "Mount",
+        PrintName = ARC9:GetPhrase("eft_cat_mount"),
         Category = "eft_vsk_mount",
         Pos = Vector(-3.0, 0, 0),
         Ang = Angle(0, 0, -90),
@@ -237,14 +237,14 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_vsk_barrel"}
 ATT.Attachments = {
     {
-        PrintName = "Muzzle",
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
         Category = "eft_vsk_muzzle",
         Pos = Vector(-6.25, 0, 0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "Handguard",
+        PrintName = ARC9:GetPhrase("eft_cat_handguard"),
         Category = "eft_vsk_hg",
         Pos = Vector(-3, 0, 0.5),
         Ang = Angle(0, 0, 0),
@@ -278,14 +278,14 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_vsk_barrel"}
 ATT.Attachments = {
     {
-        PrintName = "Muzzle",
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
         Category = "eft_vsk_muzzle",
         Pos = Vector(-6.25, 0, 0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "Handguard",
+        PrintName = ARC9:GetPhrase("eft_cat_handguard"),
         Category = "eft_vsk_hg",
         Pos = Vector(-3, 0, 0.5),
         Ang = Angle(0, 0, 0),

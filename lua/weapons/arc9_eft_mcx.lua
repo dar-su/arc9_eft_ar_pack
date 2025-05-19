@@ -7,9 +7,9 @@ SWEP.Spawnable = true
 ------------------------- |||           Trivia            ||| -------------------------
 
 SWEP.PrintName = ARC9:GetPhrase("eft_weapon_mcx")
-SWEP.Description = "eft_weapon_mcx_desc"
+SWEP.Description = ARC9:GetPhrase("eft_weapon_mcx_desc")
 
-SWEP.Class = "eft_class_weapon_ar"
+SWEP.Class = ARC9:GetPhrase("eft_class_weapon_ar")
 SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_ar")
 
 SWEP.Trivia = {
@@ -253,7 +253,7 @@ SWEP.AttachmentElements = {
 
 SWEP.Attachments = {
     {
-        PrintName = "Reciever",
+        PrintName = ARC9:GetPhrase("eft_cat_receiver"),
         Category = "eft_mcx_upper",
         Installed = "eft_mcx_rec",
         Bone = "mod_reciever",
@@ -292,7 +292,7 @@ SWEP.Attachments = {
         }
     },
     {
-        PrintName = "Pistol grip",
+        PrintName = ARC9:GetPhrase("eft_cat_pgrip"),
         Category = {"eft_ar15_pgrip", "eft_ar15_pgrip_m4"},
         Installed = "eft_ar_pgrip_mcx",
         Bone = "mod_pistol_grip",
@@ -300,7 +300,7 @@ SWEP.Attachments = {
         Ang = Angle(0, -90, 0),
     },
     {
-        PrintName = "Charging handle",
+        PrintName = ARC9:GetPhrase("eft_cat_charge"),
         Category = "eft_mcx_charge",
         Installed = "eft_mcx_ch",
         Bone = "mod_charge",
@@ -309,7 +309,7 @@ SWEP.Attachments = {
         Ang = Angle(0, -90, 0),
     },
     {
-        PrintName = "Stock",
+        PrintName = ARC9:GetPhrase("eft_cat_stock"),
         Category = "eft_mcx_stock",
         Bone = "mod_reciever",
         Pos = Vector(0, -8.45, 1.05),
@@ -317,7 +317,7 @@ SWEP.Attachments = {
         Installed = "eft_mcx_stock_light",
     },
     {
-        PrintName = "Ammunition",
+        PrintName = ARC9:GetPhrase("eft_cat_ammo"),
         Category = "eft_ammo_300blk",
         Bone = "mod_magazine",
         Integral = true,
@@ -326,7 +326,7 @@ SWEP.Attachments = {
         Ang = Angle(0, 0, 0),
     },
     {
-        PrintName = "Magazine",
+        PrintName = ARC9:GetPhrase("eft_cat_magazine"),
         Category = {"eft_ar15_mag", "eft_ar15_drum", "eft_ar15_quad", "eft_ar15_doubledrum"},
         Bone = "mod_magazine",
         Installed = "eft_mag_ar15_stanag_30",
@@ -335,7 +335,7 @@ SWEP.Attachments = {
         Ang = Angle(0, -90, 0),
     },
     {
-        PrintName = "Custom slot",
+        PrintName = ARC9:GetPhrase("eft_cat_custom"),
         Category = {"eft_custom_slot", "eft_custom_slot_mcx"},
         RejectAttachments = {["eft_extras_camos"] = true}, -- we have real camo support
         Bone = "mod_pistol_grip",
@@ -344,7 +344,7 @@ SWEP.Attachments = {
     },
 
     {
-        PrintName = "Camouflage 1",
+        PrintName = ARC9:GetPhrase("eft_cat_camo1"),
         Category = {"universal_camo"},
         Bone = "weapon",
         Pos = Vector(0, 6, -2),
@@ -352,7 +352,7 @@ SWEP.Attachments = {
         IsAdvancedCamo1 = true,
     },
     {
-        PrintName = "Camouflage 2",
+        PrintName = ARC9:GetPhrase("eft_cat_camo2"),
         Category = {"universal_camo"},
         Bone = "weapon",
         Pos = Vector(0, 4.5, -2),
@@ -360,7 +360,7 @@ SWEP.Attachments = {
         IsAdvancedCamo2 = true,
     },
     {
-        PrintName = "Camouflage 3",
+        PrintName = ARC9:GetPhrase("eft_cat_camo3"),
         Category = {"universal_camo"},
         Bone = "weapon",
         Pos = Vector(0, 3, -2),

@@ -9,7 +9,7 @@ SWEP.Category = "ARC9 - Escape From Tarkov"
 SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_ar")
 
 SWEP.PrintName = ARC9:GetPhrase("eft_weapon_ak102")
-SWEP.Description = "eft_weapon_ak102_desc"
+SWEP.Description = ARC9:GetPhrase("eft_weapon_ak102_desc")
 
 SWEP.StandardPresets = false 
 
@@ -55,7 +55,7 @@ SWEP.DefaultElements = {"short_barrel"}
 
 SWEP.Attachments = {
     { -- 5.56 short
-        PrintName = "eft_cat_muzzle",
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
         Category = "eft_ak101_muzzle",
         Bone = "mod_muzzle",
         Pos = Vector(0, -4.1, 0),

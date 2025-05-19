@@ -385,7 +385,7 @@ ATT.Folder = "Magpul"
 
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_stock",
+        PrintName = ARC9:GetPhrase("eft_cat_stock"),
         Category = "eft_ar_buttpad",
         Pos = Vector(4.2, 0, 1.12),
         Ang = Angle(0, 0, 0),
@@ -425,7 +425,7 @@ ATT.Folder = "Magpul"
 
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_stock",
+        PrintName = ARC9:GetPhrase("eft_cat_stock"),
         Category = "eft_ar_buttpad",
         Pos = Vector(4.2, 0, 1.12),
         Ang = Angle(0, 0, 0),
@@ -465,7 +465,7 @@ ATT.Folder = "Magpul"
 
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_stock",
+        PrintName = ARC9:GetPhrase("eft_cat_stock"),
         Category = "eft_ar_buttpad",
         Pos = Vector(4.2, 0, 1.12),
         Ang = Angle(0, 0, 0),
@@ -505,7 +505,7 @@ ATT.Folder = "Magpul"
 
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_stock",
+        PrintName = ARC9:GetPhrase("eft_cat_stock"),
         Category = "eft_ar_buttpad",
         Pos = Vector(4.2, 0, 1.12),
         Ang = Angle(0, 0, 0),
@@ -545,7 +545,7 @@ ATT.Folder = "Magpul"
 
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_stock",
+        PrintName = ARC9:GetPhrase("eft_cat_stock"),
         Category = "eft_ar_buttpad",
         Pos = Vector(4.2, 0, 1.12),
         Ang = Angle(0, 0, 0),
@@ -791,7 +791,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_stock",
+        PrintName = ARC9:GetPhrase("eft_cat_stock"),
         Category = "eft_dd_buttpad",
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -830,7 +830,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_stock",
+        PrintName = ARC9:GetPhrase("eft_cat_stock"),
         Category = "eft_dd_buttpad",
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),

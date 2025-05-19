@@ -8,13 +8,13 @@ SWEP.Spawnable = true
 SWEP.Category = "ARC9 - Escape From Tarkov"
 
 SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_carb")
-SWEP.Class = "eft_class_weapon_carb"
+SWEP.Class = ARC9:GetPhrase("eft_class_weapon_carb")
 
 SWEP.PrintName = ARC9:GetPhrase("eft_weapon_vsk94")
 
 SWEP.DefaultBodygroups = "010000000000000"
 
-SWEP.Description = "eft_weapon_vsk94_desc"
+SWEP.Description = ARC9:GetPhrase("eft_weapon_vsk94_desc")
 
 SWEP.Spread = 3.266 * ARC9.MOAToAcc
 

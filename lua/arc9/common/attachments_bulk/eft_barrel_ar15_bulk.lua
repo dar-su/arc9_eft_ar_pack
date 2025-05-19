@@ -32,14 +32,14 @@ ATT.ActivateElements = {"barrel_260mm"}
 
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_gasblock",
+        PrintName = ARC9:GetPhrase("eft_cat_gasblock"),
         Category = "eft_ar15_gasblock",
         ExcludeElements = {"nostdgasblockpls"},
         Pos = Vector(-7.72, 0, 0.25),
         Ang = Angle(0, 0, 0),
     },
     {
-        PrintName = "eft_cat_muzzle",
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
         Category = "eft_ar15_muzzle",
         Pos = Vector(-9.9, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -80,14 +80,14 @@ ATT.ActivateElements = {"barrel_370mm"}
 
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_gasblock",
+        PrintName = ARC9:GetPhrase("eft_cat_gasblock"),
         Category = "eft_ar15_gasblock",
         ExcludeElements = {"nostdgasblockpls"},
         Pos = Vector(-7.72, 0, 0.25),
         Ang = Angle(0, 0, 0),
     },
     {
-        PrintName = "eft_cat_muzzle",
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
         Category = "eft_ar15_muzzle",
         Pos = Vector(-14, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -132,14 +132,14 @@ ATT.ExcludeElements = {"eft_hg_ar15_adar", "eft_hg_ar15_m4", "eft_hg_ar15_kacris
 
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_gasblock",
+        PrintName = ARC9:GetPhrase("eft_cat_gasblock"),
         Category = "eft_ar15_gasblock",
         ExcludeElements = {"nostdgasblockpls"},
         Pos = Vector(-11.2, 0, 0.25),
         Ang = Angle(0, 0, 0),
     },
     {
-        PrintName = "eft_cat_muzzle",
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
         Category = "eft_ar15_muzzle",
         Pos = Vector(-17.2, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -181,14 +181,14 @@ ATT.ExcludeElements = {"eft_hg_ar15_adar", "eft_hg_ar15_m4", "eft_hg_ar15_kacris
 
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_gasblock",
+        PrintName = ARC9:GetPhrase("eft_cat_gasblock"),
         Category = "eft_ar15_gasblock",
         ExcludeElements = {"nostdgasblockpls"},
         Pos = Vector(-11.2, 0, 0.25),
         Ang = Angle(0, 0, 0),
     },
     {
-        PrintName = "eft_cat_muzzle",
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
         Category = "eft_ar15_muzzle",
         Pos = Vector(-19.2, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -231,14 +231,14 @@ ATT.ExcludeElements = {"eft_hg_ar15_m4", "eft_hg_ar15_kacris"}
 
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_gasblock",
+        PrintName = ARC9:GetPhrase("eft_cat_gasblock"),
         Category = "eft_ar15_gasblock",
         ExcludeElements = {"nostdgasblockpls"},
         Pos = Vector(-9.65, 0, 0.25),
         Ang = Angle(0, 0, 0),
     },
     {
-        PrintName = "eft_cat_muzzle",
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
         Category = "eft_ar15_muzzle",
         Pos = Vector(-15.11, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -282,14 +282,14 @@ ATT.ExcludeElements = {"eft_hg_ar15_m4", "eft_hg_ar15_kacris"}
 
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_gasblock",
+        PrintName = ARC9:GetPhrase("eft_cat_gasblock"),
         Category = "eft_ar15_gasblock",
         ExcludeElements = {"nostdgasblockpls"},
         Pos = Vector(-9.65, 0, 0.25),
         Ang = Angle(0, 0, 0),
     },
     {
-        PrintName = "eft_cat_muzzle",
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
         Category = "eft_ar15_muzzle",
         Pos = Vector(-15.95, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -330,14 +330,14 @@ ATT.ActivateElements = {"barrel_260mm"}
 
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_gasblock",
+        PrintName = ARC9:GetPhrase("eft_cat_gasblock"),
         Category = "eft_ar15_gasblock",
         ExcludeElements = {"nostdgasblockpls"},
         Pos = Vector(-7.72, 0, 0.25),
         Ang = Angle(0, 0, 0),
     },
     {
-        PrintName = "eft_cat_muzzle",
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
         Category = "eft_ar15_muzzle",
         Pos = Vector(-13.7, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -439,7 +439,7 @@ ATT.Category = {"eft_ar15_gasblock"}
 
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_frontsight",
+        PrintName = ARC9:GetPhrase("eft_cat_frontsight"),
         Category = {"eft_frontsight"},
         Pos = Vector(-1.1, 0, -1.45),
         Ang = Angle(0, 0, 0),

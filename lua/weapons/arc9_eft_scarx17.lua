@@ -17,7 +17,7 @@ SWEP.Trivia = {
     ["eft_trivia_year5"] = "~2020"
 }
 
-SWEP.Description = "eft_weapon_scarhx17_desc"
+SWEP.Description = ARC9:GetPhrase("eft_weapon_scarhx17_desc")
 
 SWEP.StandardPresets = false
 

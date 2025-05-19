@@ -157,7 +157,7 @@ ATT.ModelOffset = Vector(-2.5, 0.97, 1.95)
 
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_misc",
+        PrintName = ARC9:GetPhrase("eft_cat_aux"),
         Category = {"eft_1p78_eyecap"},
         Pos = Vector(2.8, 1.52, -1.49),
         Ang = Angle(0, 0, 0),
@@ -248,7 +248,7 @@ ATT.ModelOffset = Vector(-2.1, 1, 2.0)
 
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_misc",
+        PrintName = ARC9:GetPhrase("eft_cat_aux"),
         Category = {"eft_ekp_shade"},
         Pos = Vector(2.05, 1, -2),
         --Pos = Vector(0, 0, 0),
@@ -334,7 +334,7 @@ ATT.FlareAttachment = 1
 ATT.ModelOffset = Vector(-2.5, 0.97, 2.05)
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_misc",
+        PrintName = ARC9:GetPhrase("eft_cat_aux"),
         Category = {"eft_nspum_eyecap"},
         Pos = Vector(2.5, 0.97, -2.05),
         Ang = Angle(0, 0, 0),
@@ -564,7 +564,7 @@ ATT.ModelOffset = Vector(-3.5, 0.97, 2.05) - Vector(-1.1, 0, 0) -- front dovetai
 
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_misc",
+        PrintName = ARC9:GetPhrase("eft_cat_aux"),
         Category = {"eft_pso_eyecap"},
         Pos = Vector(3.55-1.1, 0.97, -2.05),
         Ang = Angle(0, 0, 0),
@@ -644,7 +644,7 @@ ATT.FlareAttachment = 1
 ATT.ModelOffset = Vector(-3.5, 0.97, 2.05) - Vector(-1.1, 0, 0) -- front dovetail offset
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_misc",
+        PrintName = ARC9:GetPhrase("eft_cat_aux"),
         Category = {"eft_pso_eyecap"},
         Pos = Vector(3.5-1.1, 0.97, -2.05),
         Ang = Angle(0, 0, 0),
@@ -723,7 +723,7 @@ ATT.FlareAttachment = 1
 ATT.ModelOffset = Vector(-3.5, 0.97, 2.05) - Vector(-1.1, 0, 0) -- front dovetail offset
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_misc",
+        PrintName = ARC9:GetPhrase("eft_cat_aux"),
         Category = {"eft_pso_eyecap"},
         Pos = Vector(3.5-1.1, 0.97, -2.05),
         Ang = Angle(0, 0, 0),
@@ -793,7 +793,7 @@ ATT.ModelOffset = Vector(-2.5, 0.97, 1.95)
 
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_misc",
+        PrintName = ARC9:GetPhrase("eft_cat_aux"),
         Category = {"eft_tulpan_eyecap"},
         Pos = Vector(4.5, 2.05, -3.67),
         Ang = Angle(0, 0, 0),
@@ -1152,7 +1152,7 @@ ATT.EFTErgoAdd = -1
 ATT.CustomCons = { Ergonomics = "-1" }
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_scope",
+        PrintName = ARC9:GetPhrase("eft_cat_scope"),
         Category = {"eft_optic_30mm"},
         Pos = Vector(-2.5, 0, -1.585),
         Ang = Angle(0, 0, 0),

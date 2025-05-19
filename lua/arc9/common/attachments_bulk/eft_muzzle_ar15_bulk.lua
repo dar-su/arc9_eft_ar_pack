@@ -53,7 +53,7 @@ ATT.Category = {"eft_ar15_muzzle"}
 
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_silencer",
+        PrintName = ARC9:GetPhrase("eft_cat_silencer"),
         Category = "eft_ar15_surefire_silencer",
         Pos = Vector(-0.5, 0, 0),
         Icon_Offset = Vector(1, 0, 0),
@@ -90,7 +90,7 @@ ATT.Category = {"eft_ar15_muzzle"}
 
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_muzzle",
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
         Category = "eft_ar15_ferfrans",
         Pos = Vector(-0.5, 0, 0),
         Icon_Offset = Vector(1, 0, 0),
@@ -127,7 +127,7 @@ ATT.Category = {"eft_ar15_muzzle"}
 
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_silencer",
+        PrintName = ARC9:GetPhrase("eft_cat_silencer"),
         Category = "eft_m4sdk",
         Pos = Vector(-0.5, 0, 0),
         Icon_Offset = Vector(1, 0, 0),
@@ -192,7 +192,7 @@ ATT.Category = {"eft_ar15_muzzle"}
 
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_muzzle",
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
         Category = "eft_awcpsr",
         Pos = Vector(-0.32, 0, 0),
         Icon_Offset = Vector(1, 0, 0),
@@ -256,7 +256,7 @@ ATT.Category = {"eft_ar15_muzzle"}
 
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_silencer",
+        PrintName = ARC9:GetPhrase("eft_cat_silencer"),
         Category = "eft_m4sdk",
         Pos = Vector(-0.5, 0, 0),
         Icon_Offset = Vector(1, 0, 0),
@@ -292,7 +292,7 @@ ATT.Category = {"eft_ar15_muzzle"}
 
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_silencer",
+        PrintName = ARC9:GetPhrase("eft_cat_silencer"),
         Category = "eft_m4sdk",
         Pos = Vector(-0.5, 0, 0),
         Icon_Offset = Vector(1, 0, 0),
@@ -330,7 +330,7 @@ ATT.Category = {"eft_ar15_muzzle"}
 
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_silencer",
+        PrintName = ARC9:GetPhrase("eft_cat_silencer"),
         Category = "eft_sdn6",
         Pos = Vector(-0.2, 0, 0),
         Icon_Offset = Vector(1, 0, 0),
@@ -395,7 +395,7 @@ ATT.Category = {"eft_ar15_muzzle"}
 
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_silencer",
+        PrintName = ARC9:GetPhrase("eft_cat_silencer"),
         Category = "eft_waveqd",
         Pos = Vector(-0.3, 0, 0),
         Icon_Offset = Vector(1, 0, 0),
@@ -461,7 +461,7 @@ ATT.Category = {"eft_ar15_muzzle"}
 
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_silencer",
+        PrintName = ARC9:GetPhrase("eft_cat_silencer"),
         Category = "eft_ar15_kacqdc",
         Pos = Vector(-0.5, 0, 0),
         Icon_Offset = Vector(1, 0, 0),
@@ -583,7 +583,7 @@ ATT.Category = {"eft_ar15_muzzle"}
 
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_silencer",
+        PrintName = ARC9:GetPhrase("eft_cat_silencer"),
         Category = "eft_ar15_surefire_silencer",
         Pos = Vector(-0.35, 0, 0),
         Icon_Offset = Vector(1, 0, 0),
@@ -620,7 +620,7 @@ ATT.Category = {"eft_ar15_muzzle"}
 
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_silencer",
+        PrintName = ARC9:GetPhrase("eft_cat_silencer"),
         Category = "eft_ar15_saker",
         Pos = Vector(-0.35, 0, 0),
         Icon_Offset = Vector(1, 0, 0),
@@ -658,7 +658,7 @@ ATT.Category = {"eft_ar15_muzzle"}
 
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_silencer",
+        PrintName = ARC9:GetPhrase("eft_cat_silencer"),
         Category = "eft_ultra5",
         Pos = Vector(0.15, 0, 0),
         Icon_Offset = Vector(1, 0, 0),
@@ -697,7 +697,7 @@ ATT.Category = {"eft_ar15_muzzle"}
 
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_silencer",
+        PrintName = ARC9:GetPhrase("eft_cat_silencer"),
         Category = "eft_ar15_surefire_silencer",
         Pos = Vector(-0.35, 0, 0),
         Icon_Offset = Vector(1, 0, 0),
@@ -786,7 +786,7 @@ ATT.Category = {"eft_ar15_muzzle"}
 
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_silencer",
+        PrintName = ARC9:GetPhrase("eft_cat_silencer"),
         Category = "eft_ar15_kacqdc",
         Pos = Vector(-0.2, 0, 0),
         Icon_Offset = Vector(1, 0, 0),

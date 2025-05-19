@@ -9,9 +9,9 @@ SWEP.Category = "ARC9 - Escape From Tarkov"
 SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_carb")
 
 SWEP.PrintName = ARC9:GetPhrase("eft_weapon_adar215")
-SWEP.Class = "eft_class_weapon_carb"
+SWEP.Class = ARC9:GetPhrase("eft_class_weapon_carb")
 
-SWEP.Description = "eft_weapon_adar215_desc"
+SWEP.Description = ARC9:GetPhrase("eft_weapon_adar215_desc")
 
 SWEP.Trivia = {
     ["eft_trivia_manuf1"] = "eft_trivia_manuf_adar",

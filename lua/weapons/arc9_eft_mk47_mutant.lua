@@ -6,9 +6,9 @@ SWEP.Spawnable = true
 ------------------------- |||           Trivia            ||| -------------------------
 
 SWEP.PrintName = ARC9:GetPhrase("eft_weapon_mk47")
-SWEP.Description = "eft_weapon_mk47_desc"
+SWEP.Description = ARC9:GetPhrase("eft_weapon_mk47_desc")
 
-SWEP.Class = "eft_class_weapon_ar"
+SWEP.Class = ARC9:GetPhrase("eft_class_weapon_ar")
 SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_ar")
 
 SWEP.Trivia = {
@@ -756,7 +756,7 @@ SWEP.AttachmentElements = {
 
 SWEP.Attachments = {
     {
-        PrintName = "Pistol grip",
+        PrintName = ARC9:GetPhrase("eft_cat_pgrip"),
         Category = {"eft_ar15_pgrip", "eft_ar15_pgrip_m4"},
         Installed = "eft_ar_pgrip_moe",
         Bone = "weapon",
@@ -764,7 +764,7 @@ SWEP.Attachments = {
         Ang = Angle(0, -90, 0),
     },
     {
-        PrintName = "Buffer tube",
+        PrintName = ARC9:GetPhrase("eft_cat_buffertube"),
         Category = {"eft_ar15_buffertube", "eft_cmmg_buffertube"},
         Bone = "weapon",
         Pos = Vector(0, 8.77, 0.05),
@@ -777,7 +777,7 @@ SWEP.Attachments = {
         }
     },
     {
-        PrintName = "Upper Receiver",
+        PrintName = ARC9:GetPhrase("eft_cat_receiver"),
         Category = "eft_mk47_upper",
         Bone = "weapon",
         Pos = Vector(0, 15, -0),
@@ -813,7 +813,7 @@ SWEP.Attachments = {
         }
     },
     {
-        PrintName = "Charge", 
+        PrintName = ARC9:GetPhrase("eft_cat_charge"), 
         Category = "eft_mk47_charge",
         Bone = "weapon",
         Pos = Vector(0, 9.5, 1),
@@ -823,7 +823,7 @@ SWEP.Attachments = {
     },
 
     {
-        PrintName = "Magazine", 
+        PrintName = ARC9:GetPhrase("eft_cat_magazine"), 
         Category = "eft_ak_762_mag",
         RejectAttachments = {
             ["eft_mag_ak_x47_762_50"] = true,
@@ -836,7 +836,7 @@ SWEP.Attachments = {
         ExcludeElements = {"eft_mk47_conversion_545", "eft_mk47_conversion_556"},
     },
     {
-        PrintName = "Ammunition",
+        PrintName = ARC9:GetPhrase("eft_cat_ammo"),
         Category = "eft_ammo_76239",
         Integral = true,
         Installed = "eft_ammo_76239_ps",
@@ -848,7 +848,7 @@ SWEP.Attachments = {
     },
 
     {
-        PrintName = "Magazine", 
+        PrintName = ARC9:GetPhrase("eft_cat_magazine"), 
         Category = "eft_ak_545_mag",
         RejectAttachments = {
             ["eft_mag_ak_6l31_545_60"] = true,
@@ -861,7 +861,7 @@ SWEP.Attachments = {
         RequireElements = {"eft_mk47_conversion_545"},
     },
     {
-        PrintName = "Ammunition",
+        PrintName = ARC9:GetPhrase("eft_cat_ammo"),
         Category = "eft_ammo_545",
         Integral = true,
         Installed = "eft_ammo_545_ps",
@@ -873,7 +873,7 @@ SWEP.Attachments = {
     },
 
     {
-        PrintName = "Magazine", 
+        PrintName = ARC9:GetPhrase("eft_cat_magazine"), 
         Category = "eft_ak_556_mag",
         -- RejectAttachments = {
         --     ["eft_mag_ak_x47_762_50"] = true,
@@ -886,7 +886,7 @@ SWEP.Attachments = {
         RequireElements = {"eft_mk47_conversion_556"},
     },
     {
-        PrintName = "Ammunition",
+        PrintName = ARC9:GetPhrase("eft_cat_ammo"),
         Category = "eft_ammo_556",
         Integral = true,
         Installed = "eft_ammo_556_fmj",
@@ -898,7 +898,7 @@ SWEP.Attachments = {
     },
 
     {
-        PrintName = "Custom slot",
+        PrintName = ARC9:GetPhrase("eft_cat_custom"),
         Category = {"eft_custom_slot", "eft_custom_mk47"},
         RejectAttachments = {["eft_extras_camos"] = true}, -- we have real camo support
         Bone = "weapon",
@@ -908,7 +908,7 @@ SWEP.Attachments = {
     },
 
     {
-        PrintName = "Camouflage 1",
+        PrintName = ARC9:GetPhrase("eft_cat_camo1"),
         Category = {"universal_camo"},
         Bone = "weapon",
         Pos = Vector(0, 6, -2),
@@ -916,7 +916,7 @@ SWEP.Attachments = {
         IsAdvancedCamo1 = true,
     },
     {
-        PrintName = "Camouflage 2",
+        PrintName = ARC9:GetPhrase("eft_cat_camo2"),
         Category = {"universal_camo"},
         Bone = "weapon",
         Pos = Vector(0, 4.5, -2),
@@ -924,7 +924,7 @@ SWEP.Attachments = {
         IsAdvancedCamo2 = true,
     },
     {
-        PrintName = "Camouflage 3",
+        PrintName = ARC9:GetPhrase("eft_cat_camo3"),
         Category = {"universal_camo"},
         Bone = "weapon",
         Pos = Vector(0, 3, -2),

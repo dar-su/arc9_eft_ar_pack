@@ -8,7 +8,7 @@ SWEP.Spawnable = true
 SWEP.Category = "ARC9 - Escape From Tarkov"
 
 SWEP.PrintName = ARC9:GetPhrase("eft_weapon_mdr556_alt")
-SWEP.Description = "eft_weapon_mdr556_desc"
+SWEP.Description = ARC9:GetPhrase("eft_weapon_mdr556_desc")
 
 SWEP.DefaultElements = {"mdr_556"} -- owo
 

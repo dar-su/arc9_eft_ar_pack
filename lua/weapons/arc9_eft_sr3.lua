@@ -8,7 +8,7 @@ SWEP.Spawnable = true
 SWEP.Category = "ARC9 - Escape From Tarkov"
 
 SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_carb")
-SWEP.Class = "eft_class_weapon_carb"
+SWEP.Class = ARC9:GetPhrase("eft_class_weapon_carb")
 
 SWEP.PrintName = ARC9:GetPhrase("eft_weapon_sr3m")
 
@@ -17,7 +17,7 @@ SWEP.ViewModel = "models/weapons/arc9/darsu_eft/c_sr3m.mdl"
 
 SWEP.SaveBase = "arc9_eft_sr3" -- savebase getting pulled from asval, need to set back to default
 
-SWEP.Description = "eft_weapon_sr3m_desc"
+SWEP.Description = ARC9:GetPhrase("eft_weapon_sr3m_desc")
 
 SWEP.Spread = 5.019 * ARC9.MOAToAcc
 

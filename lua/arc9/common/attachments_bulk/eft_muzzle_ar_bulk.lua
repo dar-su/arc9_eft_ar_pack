@@ -81,7 +81,7 @@ ATT.PhysBulletMuzzleVelocityMult = 0.995
 
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_silencer",
+        PrintName = ARC9:GetPhrase("eft_cat_silencer"),
         Category = "eft_waveqd",
         Pos = Vector(-0.3, 0, 0),
         Icon_Offset = Vector(1, 0, 0),
@@ -175,7 +175,7 @@ ATT.Category = {"eft_ar10_muzzle"}
 
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_silencer",
+        PrintName = ARC9:GetPhrase("eft_cat_silencer"),
         Category = "eft_ultra5",
         Pos = Vector(0.15, 0, 0),
         Icon_Offset = Vector(1, 0, 0),
@@ -379,7 +379,7 @@ ATT.PhysBulletMuzzleVelocityMult = 1.01
 
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_silencer",
+        PrintName = ARC9:GetPhrase("eft_cat_silencer"),
         Category = "eft_sdn6",
         Pos = Vector(0.05, 0, 0),
         Icon_Offset = Vector(1, 0, 0),
@@ -444,14 +444,14 @@ ATT.VisualRecoilMult = 0.99
 
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_muzzle",
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
         Category = "eft_bmd762_muzzle",
         Pos = Vector(-0.1, 0, 0),
         Icon_Offset = Vector(2, 0, 0),
         Ang = Angle(0, 0, 0),
     },
     {
-        PrintName = "eft_cat_muzzle",
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
         Category = "eft_bmd762_muzzle2",
         Pos = Vector(-0.3, 0, 0),
         Icon_Offset = Vector(0.5, 0, 0),
@@ -564,14 +564,14 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_all_sig_qd_muzzle_base_76
 
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_muzzle",
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
         Category = "eft_tlok_muzzle",
         Pos = Vector(-0.78, 0, 0),
         Icon_Offset = Vector(0.3, 0, 0),
         Ang = Angle(0, 0, 0),
     },
     {
-        PrintName = "eft_cat_silencer",
+        PrintName = ARC9:GetPhrase("eft_cat_silencer"),
         Category = "eft_tlok_silencer",
         Pos = Vector(-0.35, 0, 0),
         Icon_Offset = Vector(1.3, 0, 0),

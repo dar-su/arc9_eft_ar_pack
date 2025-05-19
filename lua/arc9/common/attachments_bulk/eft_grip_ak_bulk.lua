@@ -582,7 +582,7 @@ ATT.Category = {"eft_ak_grip"}
 
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_pgrip",
+        PrintName = ARC9:GetPhrase("eft_cat_pgrip"),
         -- Category = "eft_ar15_pgrip_flat",
         Category = "eft_ar15_pgrip",
         Pos = Vector(0, -0.54, 0.34),

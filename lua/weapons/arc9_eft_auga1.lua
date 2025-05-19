@@ -7,10 +7,10 @@ SWEP.Base = "arc9_eft_aug"
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - Escape From Tarkov"
 
-SWEP.PrintName = "Steyr AUG A1"
+SWEP.PrintName = ARC9:GetPhrase("eft_weapon_auga1")
 SWEP.DefaultBodygroups = "00000000000000"
 
-SWEP.Description = [[Steyr AUG A1 is a 5.56x45 bullpup assault rifle, developed by the Austrian company Steyr-Daimler-Puch. AUG is known for good ergonomics, decent accuracy, low recoil and sufficient reliability. The rifle also stands out for its futuristic design.]]
+SWEP.Description = ARC9:GetPhrase("eft_weapon_auga1_desc")
 
 SWEP.DefaultElements = {"auga1"} -- owo
 
