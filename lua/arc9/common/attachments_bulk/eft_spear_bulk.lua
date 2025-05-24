@@ -519,7 +519,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasAmmoooooooo = true
 
-ATT.EFTRoundName = "6.8x51mm SIG FMJ"
+ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_68x51_fmj.printname")
 
 ATT.DamageMax = 80 * mult51
 ATT.DamageMin = 54.15 * mult51
@@ -592,7 +592,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasAmmoooooooo = true
 
-ATT.EFTRoundName = "6.8x51mm SIG Hybrid"
+ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_68x51_hybrid.printname")
 
 ATT.DamageMax = 72 * mult51
 ATT.DamageMin = 48.36 * mult51

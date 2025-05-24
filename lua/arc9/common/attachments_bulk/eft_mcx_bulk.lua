@@ -488,7 +488,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasAmmoooooooo = true 
 
-ATT.EFTRoundName = ".300 Blackout AP"
+ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_300blk_ap.printname")
 
 ATT.DamageMax = 51 * mult39
 ATT.DamageMin = 35.45 * mult39
@@ -562,7 +562,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasAmmoooooooo = true 
 
-ATT.EFTRoundName = ".300 Blackout M62 Tracer"
+ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_300blk_m62.printname")
 
 ATT.DamageMax = 54 * mult39
 ATT.DamageMin = 40.81 * mult39
@@ -635,7 +635,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasAmmoooooooo = true 
 
-ATT.EFTRoundName = ".300 Blackout BCP FMJ"
+ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_300blk_bcp.printname")
 
 ATT.DamageMax = 60 * mult39
 ATT.DamageMin = 42.11 * mult39
@@ -707,7 +707,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasAmmoooooooo = true 
 
-ATT.EFTRoundName = ".300 Blackout CBJ"
+ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_300blk_cbj.printname")
 
 ATT.DamageMax = 58 * mult39
 ATT.DamageMin = 39.4 * mult39
@@ -780,7 +780,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasAmmoooooooo = true 
 
-ATT.EFTRoundName = ".300 Blackout V-Max"
+ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_300blk_vmax.printname")
 
 ATT.DamageMax = 72 * mult39
 ATT.DamageMin = 48.93 * mult39
@@ -852,7 +852,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasAmmoooooooo = true 
 
-ATT.EFTRoundName = ".300 Blackout Whisper"
+ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_300blk_whisper.printname")
 
 ATT.DamageMax = 90 * mult39
 ATT.DamageMin = 59.72 * mult39

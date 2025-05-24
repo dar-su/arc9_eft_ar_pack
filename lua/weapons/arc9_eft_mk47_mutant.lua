@@ -205,6 +205,8 @@ SWEP.BulletBones = { -- the bone that represents bullets in gun/mag
     [4] = "patron_in_mag2",
 }
 
+SWEP.EFT_HasTacReloads = true 
+
 SWEP.Hook_TranslateAnimation = function(swep, anim)
     local elements = swep:GetElements()
     if !IsFirstTimePredicted() then return end
@@ -253,6 +255,10 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
     end
     
     if anim == "reload" or anim == "reload_empty" then
+        if swep.EFT_StartedTacReload and !empty then
+            if SERVER then swep:SetClip1(1) end
+            return "reload_tactical" .. mag
+        end
         if nomag then return "reload_single" end
         if empty then return "reload_empty" .. mag end
         return anim .. mag
@@ -311,6 +317,18 @@ local rst_reload = {
     { s = path .. "akm_magin_metal.ogg", t = 2.03 },
     { s = randspin, t = 2.45 },
 }
+local rst_reloadt = {
+    { s = path .. "mutant_magrelease_button.ogg", t = 0.32 - 7/28 },
+    { s = randspin, t = 0.38 - 7/28 },
+    { s = path .. "akm_magout_metal.ogg", t = 0.45 - 7/28 },
+    { s = randspin, t = 0.81 - 7/28 },
+    { s = pouchout, t = 1.1 - 7/28 },
+    { s = path .. "akm_magin_metal.ogg", t = 1.72 - 7/28 },
+    { s = randspin, t = 2.09 - 7/28 },
+    {hide = 0, t = 0},
+    {hide = 1, t = 0.5},
+    {hide = 0, t = 1.05}
+}
 local rst_reloaddrum = {
     { s = randspin, t = 0.11 },
     { s = path .. "mutant_magrelease_button.ogg", t = 0.51 },
@@ -319,6 +337,18 @@ local rst_reloaddrum = {
     { s = pouchout, t = 1.72 },
     { s = path .. "akm_magin_metal.ogg", t = 2.45 },
     { s = randspin, t = 2.99 },
+}
+local rst_reloaddrumt = {
+    { s = path .. "mutant_magrelease_button.ogg", t = 0.32 - 7/28 },
+    { s = randspin, t = 0.38 - 7/28 },
+    { s = path .. "akm_magout_metal.ogg", t = 0.45 - 7/28 },
+    { s = randspin, t = 0.81 - 7/28 },
+    { s = pouchout, t = 1.1 - 7/28 },
+    { s = path .. "akm_magin_metal.ogg", t = 1.72 - 7/28 },
+    { s = randspin, t = 2.09 - 7/28 },
+    {hide = 0, t = 0},
+    {hide = 1, t = 0.5},
+    {hide = 0, t = 1.05}
 }
 
 local rst_reloadempty = {
@@ -473,6 +503,15 @@ SWEP.Animations = {
         EventTable = rst_reload,
         IKTimeLine = rik_reload
     },
+    ["reload_tactical_762"] = {
+        Source = "reload_762t",
+        MinProgress = 0.85,
+        FireASAP = true,
+        MagSwapTime = 1.5,
+        DropMagAt = 0.5,
+        EventTable = rst_reloadt,
+        IKTimeLine = rik_reload
+    },
     ["reload_empty_762"] = {
         Source = "reload_empty_762",
         MinProgress = 0.85,
@@ -498,6 +537,15 @@ SWEP.Animations = {
         EventTable = rst_reload,
         IKTimeLine = rik_reload
     },
+    ["reload_10rndt"] = {
+        Source = "reload_10rndt",
+        MinProgress = 0.85,
+        FireASAP = true,
+        MagSwapTime = 1.5,
+        DropMagAt = 0.5,
+        EventTable = rst_reloadt,
+        IKTimeLine = rik_reload
+    },
     ["reload_empty_10rnd"] = {
         Source = "reload_empty_10rnd",
         MinProgress = 0.85,
@@ -521,6 +569,15 @@ SWEP.Animations = {
         FireASAP = true,
         MagSwapTime = 1.5,
         EventTable = rst_reloaddrum,
+        IKTimeLine = rik_reload
+    },
+    ["reload_drumt"] = {
+        Source = "reload_drumt",
+        MinProgress = 0.85,
+        FireASAP = true,
+        MagSwapTime = 1.5,
+        DropMagAt = 0.5,
+        EventTable = rst_reloaddrumt,
         IKTimeLine = rik_reload
     },
     ["reload_empty_drum"] = {
