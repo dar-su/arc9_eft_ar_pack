@@ -220,9 +220,11 @@ SWEP.BulletBones = {
     [5] = "patron_in_mag3",
 }
 
+SWEP.EFT_HasTacReloads = true
+
 SWEP.Hook_TranslateAnimation = function(swep, anim)
     local elements = swep:GetElements()
-    if !IsFirstTimePredicted() then return end
+    -- if !IsFirstTimePredicted() then return end
 
     local ending = ""
     local mag = ""
@@ -240,18 +242,23 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
     -- 2 slide checking  (!empty)
     
     if anim == "inspect" then
-        swep.EFTInspectnum = (swep.EFTInspectnum or 0) + 1
+        swep.EFTInspectnum = swep.EFTInspectnum or 0
+        if IsFirstTimePredicted() then
+            swep.EFTInspectnum = swep.EFTInspectnum + 1
+        end
         local rand = swep.EFTInspectnum
         if rand == 3 then swep.EFTInspectnum = 0 rand = 0 end
         
         if rand == 2 and nomag then rand = 0 swep.EFTInspectnum = 0 end
         
-        if rand == 2 and ARC9EFTBASE and SERVER then
-            net.Start("arc9eftmagcheck")
-            net.WriteBool(false) -- accurate or not based on mag type
-            net.WriteUInt(math.min(swep:Clip1(), swep:GetCapacity()), 9)
-            net.WriteUInt(swep:GetCapacity(), 9)
-            net.Send(swep:GetOwner())
+        if rand == 2 then
+            if SERVER then 
+                net.Start("arc9eftmagcheck")
+                net.WriteBool(false) -- accurate or not based on mag type
+                net.WriteUInt(math.min(swep:Clip1(), swep:GetCapacity()), 9)
+                net.WriteUInt(swep:GetCapacity(), 9)
+                net.Send(swep:GetOwner())
+            end
             rand = rand .. mag
         end
 
@@ -261,6 +268,10 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
     if anim == "reload" or anim == "reload_empty" then
         if nomag then return "reload_single" end
         if empty then return "reload_empty" .. mag end
+        if swep.EFT_StartedTacReload and !empty then
+            if SERVER then timer.Simple(0.3, function() if IsValid(swep) then swep:SetClip1(1) end end) end
+            return "reload_tactical" .. mag
+        end
         return anim .. mag
     end
     -- if anim == "firemode_1" or anim == "firemode_2" then
@@ -270,7 +281,7 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
     if anim == "fix" then
         local rand = math.Truncate(util.SharedRandom("hi", 1, 4.99))
         -- 0 = misfire, 1 = eject, 2 = feed, 3 = bolt, 4 = bolt 
-        if ARC9EFTBASE and SERVER then
+        if SERVER then
             timer.Simple(0.25, function()
                 if IsValid(swep) and IsValid(swep:GetOwner()) then
                     net.Start("arc9eftjam")
@@ -336,6 +347,19 @@ local rst_reloadempty = {
     { s = randspin, t = 3.3 },
     {hide = 0, t = 0},
     {hide = 1, t = 0.63},
+    {hide = 0, t = 0.99}
+}
+local rst_tac = {
+    { s = randspin, t = 0.1 - 4/26 },
+    { s = path .. "9A91_mag_out.ogg", t = 0.4-0.05  - 4/26},
+    { s = path .. "9A91_mag_flip_empty.ogg", t = 0.53 - 4/26 },
+    { s = randspin, t = 0.65  - 4/26},
+    { s = pouchout, t = 0.9  - 4/26},
+    { s = path .. "9A91_mag_in.ogg", t = 1.53-0.25 - 4/26},
+    { s = path .. "sr2m_flip_01.ogg", t = 2.14 - 4/26},
+    { s = randspin, t = 2.3 - 4/26 },
+    {hide = 0, t = 0},
+    {hide = 1, t = 0.63- 4/26},
     {hide = 0, t = 0.99}
 }
 
@@ -433,6 +457,15 @@ SWEP.Animations = {
         EventTable = rst_reload,
         IKTimeLine = rik_reload
     },
+    ["reload_tactical_0"] = {
+        Source = "reload0t",
+        MinProgress = 0.85,
+        FireASAP = true,
+        MagSwapTime = 1.0,
+        DropMagAt = 0.63- 4/26,
+        EventTable = rst_tac,
+        IKTimeLine = rik_reload
+    },
     ["reload_empty_0"] = {
         Source = {"reload_empty0_0", "reload_empty0_1"},
         MinProgress = 0.85,
@@ -477,6 +510,10 @@ SWEP.Animations = {
     },    
     
 
+    ["inspect"] = { -- shutup arc9 we have inspect
+        Source = "idle",
+        Time = 0.05,
+    },
 
     ["inspect1"] = {
         Source = "look0",

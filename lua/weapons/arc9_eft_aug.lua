@@ -33,7 +33,7 @@ SWEP.DefaultBodygroups = "0100000000000"
 SWEP.WorldModelOffset = {
     Pos = Vector(-11.5, 5.5, -4.85),
     Ang = Angle(-7, 0, 180),
-    TPIKPos = Vector(-4, 4, -4), -- rpg
+    TPIKPos = Vector(-6.5, 4, -4), -- rpg
     TPIKAng = Angle(-11.5, 0, 180),
     Scale = 1
 }
@@ -176,7 +176,7 @@ SWEP.MuzzleParticle = "muzzleflash_4"
 SWEP.ShellModel = "models/weapons/arc9_eft_shared/shells/eft_shell_556_m855.mdl"
 SWEP.ShellSounds = ARC9EFT.Shells556
 
-SWEP.Hook_Think = function(swep) -- horrible asf
+SWEP.Hook_Think2 = function(swep) -- horrible asf
     if swep:GetValue("HasGrip") then
         swep.LHIKModel = nil
         swep.LHIKModelWM  = nil
@@ -290,6 +290,8 @@ SWEP.BulletBones = { -- the bone that represents bullets in gun/mag
 
 SWEP.SuppressEmptySuffix = true
 
+SWEP.EFT_HasTacReloads = true
+
 SWEP.SuppressEmptySuffixHook = function(swep, old)
     if swep:GetElements()["auga1"] then return true else return old end
 end
@@ -322,12 +324,14 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
         
         if rand == 2 and nomag then rand = 0 swep.EFTInspectnum = 0 end
         
-        if rand == 2 and ARC9EFTBASE and SERVER then
-            net.Start("arc9eftmagcheck")
-            net.WriteBool(!!swep:GetValue("EFTImprovedMagCheck")) -- accurate or not based on mag type
-            net.WriteUInt(math.min(swep:Clip1(), swep:GetCapacity()), 9)
-            net.WriteUInt(swep:GetCapacity(), 9)
-            net.Send(swep:GetOwner())
+        if rand == 2 then
+            if SERVER then
+                net.Start("arc9eftmagcheck")
+                net.WriteBool(!!swep:GetValue("EFTImprovedMagCheck")) -- accurate or not based on mag type
+                net.WriteUInt(math.min(swep:Clip1(), swep:GetCapacity()), 9)
+                net.WriteUInt(swep:GetCapacity(), 9)
+                net.Send(swep:GetOwner())
+            end
             rand = rand .. mag
         end
 
@@ -339,13 +343,20 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
             if elements["auga1"] then mag = mag .. "_a1" end
             return "reload_empty" .. mag 
         end
+
+        if swep.EFT_StartedTacReload and !empty then
+            if SERVER then timer.Simple(0.3, function() if IsValid(swep) then swep:SetClip1(1) end end) end
+            print("reload_tactical" .. mag)
+            return "reload_tactical" .. mag
+        end
+
         return anim .. mag
     end
 
     if anim == "fix" then
         local rand = math.Truncate(util.SharedRandom("hi", 1, 4.99))
         -- 0 = misfire, 1 = eject, 2 = feed, 3 = bolt, 4 = bolt 
-        if ARC9EFTBASE and SERVER then
+        if SERVER then
             timer.Simple(0.25, function()
                 if IsValid(swep) and IsValid(swep:GetOwner()) then
                     net.Start("arc9eftjam")
@@ -429,6 +440,33 @@ local rst_reloadempty42 = {
     -- { s = path .. "g36_bolt_catchrelease.ogg", t = 2.25+0.11 },
     { s = path .. "aug_bolt_down.ogg", t = 2.2+0.11 },
     { s = randspin, t = 2.62+0.11 },
+    {hide = 0, t = 0},
+    {hide = 1, t = 0.88},
+    {hide = 0, t = 1.04}
+}
+
+local rst_tac = {
+    { s = randspin, t = 0.2  - 2/28},
+    { s = path .. "g36_mag_releasebutton.ogg", t = 0.37 - 2/28 },
+    { s = path .. "g36_mag_out.ogg", t = 0.46 - 2/28 },
+    { s = randspin, t = 0.68  - 2/28},
+    { s = pouchout, t = 1.04  - 2/28},
+    { s = path .. "g36_mag_rattle2.ogg", t = 1.4 - 2/28 },
+    { s = path .. "g36_mag_in.ogg", t = 1.66  - 2/28},
+    { s = randspin, t = 1.96 - 2/28 },
+    {hide = 0, t = 0},
+    {hide = 1, t = 0.88},
+    {hide = 0, t = 1.04}
+}
+local rst_tac42 = {
+    { s = randspin, t = 0.2 - 2/28},
+    { s = path .. "g36_mag_releasebutton.ogg", t = 0.37 - 2/28 },
+    { s = path .. "g36_mag_out.ogg", t = 0.46 - 2/28 },
+    { s = randspin, t = 0.68 - 2/28 },
+    { s = pouchout, t = 1.1  - 2/28},
+    { s = path .. "g36_mag_rattle2.ogg", t = 1.4+0.11 - 2/28 },
+    { s = path .. "g36_mag_in.ogg", t = 1.66+0.11 - 2/28 },
+    { s = randspin, t = 1.96+0.11 - 2/28 },
     {hide = 0, t = 0},
     {hide = 1, t = 0.88},
     {hide = 0, t = 1.04}
@@ -625,6 +663,17 @@ SWEP.Animations = {
         EventTable = rst_reload,
         IKTimeLine = rik_reload
     },
+    ["reload_tactical_0"] = {
+        Source = "reload0t",
+        RefillProgress = 0.825,
+        PeekProgress = 0.95,
+        MinProgress = 0.975,
+        FireASAP = true,
+        MagSwapTime = 1.0,
+        DropMagAt = 0.88,
+        EventTable = rst_tac,
+        IKTimeLine = rik_reload
+    },
     ["reload_empty_0"] = {
         Source = "reload_empty0",
         RefillProgress = 0.825,
@@ -656,6 +705,17 @@ SWEP.Animations = {
         EventTable = rst_reload,
         IKTimeLine = rik_reload
     },
+    ["reload_tactical_1"] = {
+        Source = "reload1t",
+        RefillProgress = 0.825,
+        PeekProgress = 0.95,
+        MinProgress = 0.975,
+        FireASAP = true,
+        MagSwapTime = 1.0,
+        DropMagAt = 0.88,
+        EventTable = rst_tac42,
+        IKTimeLine = rik_reload
+    },
     ["reload_empty_1"] = {
         Source = "reload_empty1",
         RefillProgress = 0.825,
@@ -685,6 +745,17 @@ SWEP.Animations = {
         FireASAP = true,
         MagSwapTime = 1.0,
         EventTable = rst_reload,
+        IKTimeLine = rik_reload
+    },
+    ["reload_tactical_2"] = {
+        Source = "reload2t",
+        RefillProgress = 0.825,
+        PeekProgress = 0.95,
+        MinProgress = 0.975,
+        FireASAP = true,
+        MagSwapTime = 1.0,
+        DropMagAt = 0.88,
+        EventTable = rst_tac42,
         IKTimeLine = rik_reload
     },
     ["reload_empty_2"] = {

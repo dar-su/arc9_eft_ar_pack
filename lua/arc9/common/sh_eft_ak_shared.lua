@@ -47,7 +47,7 @@ ARC9EFT.AK_AnimsHook = function(swep, anim)
         if rand == 2 and !nomag then -- mag
             ending = "_mag_" .. ending
     
-            if ARC9EFTBASE and SERVER then
+            if SERVER then
                 net.Start("arc9eftmagcheck")
                 net.WriteBool(!!swep:GetValue("EFTImprovedMagCheck")) -- accurate or not based on mag type
                 net.WriteUInt(math.min(swep:Clip1(), swep:GetCapacity()), 9)
@@ -58,10 +58,14 @@ ARC9EFT.AK_AnimsHook = function(swep, anim)
             if nomag then ending = math.max(rand, 2) end
             ending = rand
         end
+        
+        return anim .. ending
     elseif anim == "firemode_1" or anim == "firemode_2" or anim == "firemode_3" then
         if class == "arc9_eft_rpk16" or class == "arc9_eft_ak12" or class == "arc9_eft_ak15" then
             ending = "_rpk"
         end
+        
+        return anim .. ending
     elseif anim == "inspect_ubgl" then -- gp25 lhik
         swep.EFTInspectBool = swep.EFTInspectBool or false
         if IsFirstTimePredicted() then
@@ -80,7 +84,7 @@ ARC9EFT.AK_AnimsHook = function(swep, anim)
     if anim == "fix" then
         rand = math.Truncate(util.SharedRandom("hi", 0, 4.99))
 
-        if ARC9EFTBASE and SERVER then
+        if SERVER then
             net.Start("arc9eftjam")
             net.WriteUInt(rand, 3)
             net.Send(swep:GetOwner())
@@ -88,9 +92,17 @@ ARC9EFT.AK_AnimsHook = function(swep, anim)
 
         return "jam" .. rand
     end
-    
-    return anim .. ending
-    -- return anim .. 3
+
+    if anim == "reload" or anim == "reload_empty" then 
+        if swep.EFT_StartedTacReload then
+            if SERVER then timer.Simple(0.3, function() if IsValid(swep) then swep:SetClip1(1) end end) end
+            return "reload_tactical" .. ending
+        end
+        return anim .. ending 
+    end
+
+    return anim
+    -- return anim .. ending
 end
 
 local rik_single = {
@@ -116,9 +128,18 @@ local rik_drop = {
     { t = 1, lhik = 1 },
 }
 
+local rik_tac = {
+    { t = 0, lhik = 1 },
+    { t = 0.12, lhik = 1 },
+    { t = 0.25, lhik = 0 },
+    { t = 0.9, lhik = 0 },
+    { t = 1, lhik = 1 },
+}
+
 local rik_long = {
     { t = 0, lhik = 1 },
-    { t = 0.15, lhik = 0 },
+    { t = 0.1, lhik = 1 },
+    { t = 0.23, lhik = 0 },
     { t = 0.61, lhik = 0 },
     { t = 0.75, lhik = 1 },
 }
@@ -191,6 +212,19 @@ local rst_10e = {
     {hide = 0, t = 1.02}
 }
 
+local rst_10t = {
+    { s = randspin, t = 0 },
+    { s = path .. "ak74_magrelease_button.ogg", t = 6/27 - 4/27 },
+    { s = path .. "ak74_magout_plastic.ogg", t = 8/27 - 4/27 },
+    { s = pouchout, t = 28/27 - 4/27 },
+    { s = path .. "ak74_magin_plastic.ogg", t = 44/27  - 4/27},
+    -- { s = path .. "ak74_magrelease_button.ogg", t = 53/27 },
+    { s = randspin, t = 63/27  - 4/27},
+    {hide = 0, t = 0},
+    {hide = 1, t = 0.7},
+    {hide = 0, t = 1.02}
+}
+
 local rst_545 = {
     { s = randspin, t = 5/27 },
     { s = path .. "ak74_magrelease_button.ogg", t = 11/27 },
@@ -214,6 +248,19 @@ local rst_545e = {
     { s = path .. "ak74_slider_up.ogg", t = 83/27 },
     { s = path .. "ak74_slider_down.ogg", t = 90/27 },
     { s = randspin, t = 96/27 },
+    {hide = 0, t = 0},
+    {hide = 1, t = 0.7},
+    {hide = 0, t = 1.02}
+}
+
+local rst_545t = {
+    { s = randspin, t = 0 },
+    { s = path .. "ak74_magrelease_button.ogg", t = 6/27 - 4/27 },
+    { s = path .. "ak74_magout_plastic.ogg", t = 8/27 - 4/27 },
+    { s = pouchout, t = 28/27 - 4/27 },
+    { s = path .. "ak74_magin_plastic.ogg", t = 46/27 - 4/27 },
+    -- { s = path .. "ak74_magrelease_button.ogg", t = 53/27 },
+    { s = randspin, t = 63/27 - 4/27},
     {hide = 0, t = 0},
     {hide = 1, t = 0.7},
     {hide = 0, t = 1.02}
@@ -246,6 +293,18 @@ local rst_60e = {
     {hide = 1, t = 0.7},
     {hide = 0, t = 1.02}
 }
+local rst_60t = {
+    { s = randspin, t = 0 },
+    { s = path .. "ak74_magrelease_button.ogg", t = 6/27 - 4/27 },
+    { s = path .. "ak74_magout_plastic.ogg", t = 8/27 - 4/27 },
+    { s = pouchout, t = 29/27 - 4/27 },
+    { s = path .. "ak74_magin_plastic.ogg", t = 47/27 - 4/27 },
+    -- { s = path .. "ak74_magrelease_button.ogg", t = 53/27 },
+    { s = randspin, t = 64/27 - 4/27 },
+    {hide = 0, t = 0},
+    {hide = 1, t = 0.7},
+    {hide = 0, t = 1.02}
+}
 
 local rst_drum = {
     { s = randspin, t = 5/27 },
@@ -270,6 +329,19 @@ local rst_drume = {
     { s = path .. "ak74_slider_up.ogg", t = 86/27 },
     { s = path .. "ak74_slider_down.ogg", t = 94/27 },
     { s = randspin, t = 100/27 },
+    {hide = 0, t = 0},
+    {hide = 1, t = 0.7},
+    {hide = 0, t = 1.1}
+}
+
+local rst_drumt = {
+    { s = randspin, t = 0 },
+    { s = path .. "ak74_magrelease_button.ogg", t = 6/27 - 4/27 },
+    { s = path .. "ak74_magout_plastic.ogg", t = 8/27 - 4/27 },
+    { s = pouchout, t = 32/27 - 4/27 },
+    { s = path .. "ak74_magin_plastic.ogg", t = 49/27 - 4/27 },
+    -- { s = path .. "ak74_magrelease_button.ogg", t = 56/27 },
+    { s = randspin, t = 69/27 - 4/27 },
     {hide = 0, t = 0},
     {hide = 1, t = 0.7},
     {hide = 0, t = 1.1}
@@ -386,6 +458,17 @@ ARC9EFT.AK_Anims = {
         EventTable = rst_545e,
         MagSwapTime = 1.5,
     },
+    ["reload_tactical545"] = {
+        Source = "reload545t",
+        RefillProgress = 0.875,
+        PeekProgress = 0.95,
+        MinProgress = 0.99,
+        FireASAP = true,
+        IKTimeLine = rik_tac,
+        EventTable = rst_545t,
+        DropMagAt = 0.7,
+        MagSwapTime = 1.5,
+    },
 
     ["reloadlong545"] = {
         Source = "reloadlong545",
@@ -405,6 +488,17 @@ ARC9EFT.AK_Anims = {
         FireASAP = true,
         IKTimeLine = rik_long,
         EventTable = rst_drume,
+        MagSwapTime = 1.5,
+    },
+    ["reload_tacticallong545"] = {
+        Source = "reloadlong545t",
+        RefillProgress = 0.875,
+        PeekProgress = 0.95,
+        MinProgress = 0.99,
+        FireASAP = true,
+        IKTimeLine = rik_tac,
+        EventTable = rst_drumt,
+        DropMagAt = 0.7,
         MagSwapTime = 1.5,
     },
 
@@ -428,6 +522,17 @@ ARC9EFT.AK_Anims = {
         EventTable = rst_drume,
         MagSwapTime = 1.5,
     },
+    ["reload_tacticallong762"] = {
+        Source = "reloadlong762t",
+        RefillProgress = 0.875,
+        PeekProgress = 0.95,
+        MinProgress = 0.99,
+        FireASAP = true,
+        IKTimeLine = rik_tac,
+        EventTable = rst_drumt,
+        DropMagAt = 0.7,
+        MagSwapTime = 1.5,
+    },
 
     ["reload762"] = {
         Source = "reload762",
@@ -449,6 +554,17 @@ ARC9EFT.AK_Anims = {
         EventTable = rst_545e,
         MagSwapTime = 1.5,
     },
+    ["reload_tactical762"] = {
+        Source = "reload762t",
+        RefillProgress = 0.875,
+        PeekProgress = 0.95,
+        MinProgress = 0.99,
+        FireASAP = true,
+        IKTimeLine = rik_tac,
+        EventTable = rst_545t,
+        DropMagAt = 0.7,
+        MagSwapTime = 1.5,
+    },
 
     ["reload556"] = {
         Source = "reload556",
@@ -468,6 +584,17 @@ ARC9EFT.AK_Anims = {
         FireASAP = true,
         IKTimeLine = rik_drop,
         EventTable = rst_545e,
+        MagSwapTime = 1.5,
+    },
+    ["reload_tactical556"] = {
+        Source = "reload556t",
+        RefillProgress = 0.875,
+        PeekProgress = 0.95,
+        MinProgress = 0.99,
+        FireASAP = true,
+        IKTimeLine = rik_tac,
+        EventTable = rst_545t,
+        DropMagAt = 0.7,
         MagSwapTime = 1.5,
     },
 
@@ -492,6 +619,17 @@ ARC9EFT.AK_Anims = {
         EventTable = rst_10e,
         MagSwapTime = 1.5,
     },
+    ["reload_tactical10rnd"] = {
+        Source = "reload10rndt",
+        RefillProgress = 0.875,
+        PeekProgress = 0.95,
+        MinProgress = 0.99,
+        FireASAP = true,
+        IKTimeLine = rik_tac,
+        EventTable = rst_10t,
+        DropMagAt = 0.7,
+        MagSwapTime = 1.5,
+    },
 
 
     ["reload60rnd"] = {
@@ -512,6 +650,17 @@ ARC9EFT.AK_Anims = {
         FireASAP = true,
         IKTimeLine = rik_empty,
         EventTable = rst_60e,
+        MagSwapTime = 1.5,
+    },
+    ["reload_tactical60rnd"] = {
+        Source = "reload60rndt",
+        RefillProgress = 0.875,
+        PeekProgress = 0.95,
+        MinProgress = 0.99,
+        FireASAP = true,
+        IKTimeLine = rik_tac,
+        EventTable = rst_60t,
+        DropMagAt = 0.7,
         MagSwapTime = 1.5,
     },
 
@@ -537,6 +686,17 @@ ARC9EFT.AK_Anims = {
         EventTable = rst_drume,
         MagSwapTime = 1.5,
     },
+    ["reload_tacticalsmalldrum"] = {
+        Source = "reloadsmalldrumt",
+        RefillProgress = 0.875,
+        PeekProgress = 0.95,
+        MinProgress = 0.99,
+        FireASAP = true,
+        IKTimeLine = rik_tac,
+        EventTable = rst_drumt,
+        DropMagAt = 0.7,
+        MagSwapTime = 1.5,
+    },
 
 
     ["reloadbigdrum"] = {
@@ -557,6 +717,17 @@ ARC9EFT.AK_Anims = {
         FireASAP = true,
         IKTimeLine = rik_empty,
         EventTable = rst_drume,
+        MagSwapTime = 1.5,
+    },
+    ["reload_tacticalbigdrum"] = {
+        Source = "reloadbigdrumt",
+        RefillProgress = 0.875,
+        PeekProgress = 0.95,
+        MinProgress = 0.99,
+        FireASAP = true,
+        IKTimeLine = rik_tac,
+        EventTable = rst_drumt,
+        DropMagAt = 0.7,
         MagSwapTime = 1.5,
     },
 

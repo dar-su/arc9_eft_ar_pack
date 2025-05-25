@@ -236,6 +236,8 @@ SWEP.BulletBones = {
 
 SWEP.SuppressEmptySuffix = true
 
+SWEP.EFT_HasTacReloads = true
+
 SWEP.Hook_TranslateAnimation = function(swep, anim)
     local elements = swep:GetElements()
 
@@ -264,13 +266,14 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
                 
 
 
-        if ending == 2 and ARC9EFTBASE and SERVER then
-            net.Start("arc9eftmagcheck")
-            net.WriteBool(false) -- accurate or not based on mag type
-            net.WriteUInt(math.min(swep:Clip1(), swep:GetCapacity()), 9)
-            net.WriteUInt(swep:GetCapacity(), 9)
-            net.Send(swep:GetOwner())
-
+        if ending == 2 then
+            if SERVER then
+                net.Start("arc9eftmagcheck")
+                net.WriteBool(false) -- accurate or not based on mag type
+                net.WriteUInt(math.min(swep:Clip1(), swep:GetCapacity()), 9)
+                net.WriteUInt(swep:GetCapacity(), 9)
+                net.Send(swep:GetOwner())
+            end
             if elements["ashmag10"] then
                 return anim .. "2_0"
             elseif elements["ashmag20"] then
@@ -286,6 +289,11 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
     if anim == "reload" or anim == "reload_empty" then -- reload
         if empty then ending = ending .. "_empty" end
 
+        if swep.EFT_StartedTacReload and !empty and !nomag then
+            if SERVER then timer.Simple(0.3, function() if IsValid(swep) then swep:SetClip1(1) end end) end
+            return "reload_tactical" .. (elements["ashmag10"] and "_0" or "_1")
+        end
+
         if elements["ashmag10"] then
             return anim .. (empty and "_empty" or "") .. "_0"
         elseif elements["ashmag20"] then
@@ -298,7 +306,7 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
     if anim == "fix" then
         local rand = math.Truncate(util.SharedRandom("hi", 1, 4.99))
         -- 0 = misfire, 1 = eject, 2 = feed, 3 = bolt, 4 = bolt      -- no misfire here
-        if ARC9EFTBASE and SERVER then
+        if SERVER then
             timer.Simple(0.3, function()
                 if IsValid(swep) and IsValid(swep:GetOwner()) then
                     net.Start("arc9eftjam")
@@ -364,6 +372,37 @@ local emptyreload1 = {
     { s = path .. "ash12_bolt_in.ogg", t = 4+0.2 },
     { s = path .. "ash12_bolt_handle_bounce.ogg", t = 4.09+0.2 },
     { s = randspin, t = 4.27+0.2 },   
+
+    {hide = 0, t = 0},
+    {hide = 1, t = 0.9},
+    {hide = 0, t = 1.4}
+}
+
+local tac0 = {
+    { s = randspin, t = 0.17 - 4/25},   
+    { s = path .. "svd_mag_button.ogg", t = 0.54 - 4/25},
+    { s = path .. "ash12_mag_out.ogg", t = 0.6 - 4/25},
+    { s = randspin, t = 0.96- 4/25 },   
+    { s = pouchout, t = 1.35- 4/25 },
+    { s = randspin, t = 1.69- 4/25 },   
+
+    { s = path .. "ash12_mag_in.ogg", t = 2.18- 4/25 },
+    { s = randspin, t = 3.05- 4/25 },
+
+    {hide = 0, t = 0},
+    {hide = 1, t = 0.9},
+    {hide = 0, t = 1.4}
+}
+local tac1 = {
+    { s = randspin, t = 0.17 - 4/25},   
+    { s = path .. "svd_mag_button.ogg", t = 0.54- 4/25 },
+    { s = path .. "ash12_mag_out.ogg", t = 0.6- 4/25 },
+    { s = randspin, t = 0.96 - 4/25},   
+    { s = pouchout, t = 1.35 - 4/25},
+    { s = randspin, t = 1.69+0.1- 4/25 },   
+
+    { s = path .. "ash12_mag_in.ogg", t = 2.18+0.2- 4/25 },
+    { s = randspin, t = 3.05+0.2 - 4/25 },
 
     {hide = 0, t = 0},
     {hide = 1, t = 0.9},
@@ -498,6 +537,22 @@ SWEP.Animations = {
             { t = 1, lhik = 1 },
         },
     },    
+    ["reload_tactical_0"] = {
+        Source = "reload0t",
+        RefillProgress = 0.85,
+        PeekProgress = 0.95,
+        MinProgress = 0.975,
+        FireASAP = true,
+        MagSwapTime = 1.5,
+        DropMagAt = 0.9,
+        EventTable = tac0,        
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.1, lhik = 0 },
+            { t = 0.85, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
+    },    
     ["reload_1"] = {
         Source = "reload1",
         RefillProgress = 0.85,
@@ -515,6 +570,23 @@ SWEP.Animations = {
             { s = path .. "ash12_mag_in.ogg", t = 2.8+0.2 },
             { s = randspin, t = 3.43+0.2 },   
         },        
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.1, lhik = 0 },
+            { t = 0.83, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
+    },
+    ["reload_tactical_1"] = {
+        Source = "reload1t",
+        EventTableOffsetMP = -1.3,
+        RefillProgress = 0.85,
+        PeekProgress = 0.95,
+        MinProgress = 0.975,
+        FireASAP = true,
+        MagSwapTime = 1.5,
+        DropMagAt = 0.9,
+        EventTable = tac1,
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.1, lhik = 0 },

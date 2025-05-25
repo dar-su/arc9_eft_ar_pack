@@ -356,6 +356,8 @@ SWEP.BulletBones = {
     [4] = "patron_in_mag2",
 }
 
+SWEP.EFT_HasTacReloads = true
+
 SWEP.Hook_TranslateAnimation = ARC9EFT.AK_AnimsHook
 
 SWEP.ReloadHideBoneTables = {

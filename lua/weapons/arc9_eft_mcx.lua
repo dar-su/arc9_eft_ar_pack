@@ -216,6 +216,8 @@ SWEP.BulletBones = {
 
 SWEP.SuppressEmptySuffix = true
 
+SWEP.EFT_HasTacReloads = true
+
 SWEP.Hook_TranslateAnimation = ARC9EFT.AR15_AnimsHook
 
 SWEP.ReloadHideBoneTables = {
