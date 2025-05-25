@@ -133,6 +133,7 @@ ATT.Attachments = {
     },
 }
 
+ATT.AdvancedCamoSupport = true
 
 ARC9.LoadAttachment(ATT, "eft_rec_ak_b33")
 

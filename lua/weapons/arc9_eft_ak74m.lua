@@ -433,4 +433,29 @@ SWEP.Attachments = {
         Pos = Vector(0, -4, -2),
         Ang = Angle(0, 0, 0),
     },
+
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_camo1"),
+        Category = {"universal_camo"},
+        Bone = "mod_pistol_grip",
+        Pos = Vector(0, -5, -5),
+        CosmeticOnly = true,
+        IsAdvancedCamo1 = true,
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_camo2"),
+        Category = {"universal_camo"},
+        Bone = "mod_pistol_grip",
+        Pos = Vector(0, -6.5, -5),
+        CosmeticOnly = true,
+        IsAdvancedCamo2 = true,
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_camo3"),
+        Category = {"universal_camo"},
+        Bone = "mod_pistol_grip",
+        Pos = Vector(0, -8, -5),
+        CosmeticOnly = true,
+        IsAdvancedCamo3 = true,
+    },
 }

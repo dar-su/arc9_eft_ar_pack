@@ -238,12 +238,40 @@ SWEP.Attachments = {
         Pos = Vector(0, -4, -2),
         Ang = Angle(0, 0, 0),
     },
+
+    -- bitch ass lua
     {
         PrintName = "fuck this",
         Category = {"eft_custom_slot", "eft_custom_slot_ak", "eft_custom_slot_vpo136"},
         Bone = "mod_pistol_grip",
         Pos = Vector(0, -7, -2),
         Ang = Angle(0, 0, 0),
+        RequireElements = {"impossibleonthisgun"},
+        IsAdvancedCamo1 = false,
+        IsAdvancedCamo2 = false,
+        CosmeticOnly = false,
+    },
+    {
+        IsAdvancedCamo1 = false,
+        IsAdvancedCamo2 = false,
+        IsAdvancedCamo3 = false,
+        CosmeticOnly = false,
+        RequireElements = {"impossibleonthisgun"},
+    },
+    {
+        IsAdvancedCamo2 = false,
+        IsAdvancedCamo3 = false,
+        CosmeticOnly = false,
+        RequireElements = {"impossibleonthisgun"},
+    },
+    {
+        IsAdvancedCamo3 = false,
+        CosmeticOnly = false,
+        RequireElements = {"impossibleonthisgun"},
+    },
+    {
+        IsAdvancedCamo3 = false,
+        CosmeticOnly = false,
         RequireElements = {"impossibleonthisgun"},
     },
 }

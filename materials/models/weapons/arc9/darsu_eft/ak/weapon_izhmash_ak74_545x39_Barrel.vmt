@@ -17,40 +17,24 @@
 	"$rimlightboost"	"3"
 	"$envmap"	"env_cubemap"
 
-	"$envmaptint" "[0.025 0.025 0.025]"
+	"$envmaptint" "[0.05 0.05 0.05]"
 	"$color2" "[0.88 0.88 0.88]"
-    
-    "$detailblendmode" "4"
-    "$detailblendfactor" "0.65"
-    "$detailscale" "2"
 
-    "$detailangle" 0
-    "$attname" ""
-    
-    "Proxies"
-    {
+	"$detail" "models/weapons/arc9/darsu_eft/ak/74_heat"
+    "$detailscale" "1"
+	"$detailblendfactor" "0"
+    "$detailblendmode" "5"
+
+	"Proxies"
+     {
         "Arc9EnvMapTint"
         {
             "specularity" "0.5"
             "min" "0"
-            "max" "0.025"
+            "max" "0.05"
         }
-        
-        "Arc9CustomCamoAdvanced" 
-        {
-            "camoTexture" $detail
-            "camoScale" $detailscale
-            "camoAngle" $detailangle
-            "camoBlendMode" $detailblendmode
-            "camoBlendFactor" $detailblendfactor
-            "phonk" $phongboost
-            "color" "[0.99 0.99 0.99]"
+        "ARC9_Heat" {
+			blend $detailblendfactor
         }
-
-        "TextureTransform"
-        {
-            "rotateVar" "$detailangle"
-            "resultVar" "$detailtexturetransform"
-        }
-    }
+     }
 }

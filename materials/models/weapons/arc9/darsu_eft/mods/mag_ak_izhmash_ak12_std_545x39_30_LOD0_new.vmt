@@ -20,10 +20,10 @@
     "$color2"           "[0.88 0.88 0.88]"
     
     "$detailblendmode" "4"
-    "$detailblendfactor" "0.5"
+    "$detailblendfactor" "0.75"
     "$detailscale" "1.5"
 
-    "$detailangle" 0.0
+    "$detailangle" 180.0
     "$attname" eft_mag_ak_ak12_545_30
     
     "Proxies"

@@ -77,4 +77,25 @@ SWEP.Attachments = {
             }
         }
     }, 
+    _,
+    _,
+    _,
+    _,
+    
+    -- bitch ass lua
+    {
+        IsAdvancedCamo1 = false,
+        CosmeticOnly = false,
+        RequireElements = {"impossibleonthisgun"},
+    },
+    {
+        IsAdvancedCamo2 = false,
+        CosmeticOnly = false,
+        RequireElements = {"impossibleonthisgun"},
+    },
+    {
+        IsAdvancedCamo3 = false,
+        CosmeticOnly = false,
+        RequireElements = {"impossibleonthisgun"},
+    },
 }

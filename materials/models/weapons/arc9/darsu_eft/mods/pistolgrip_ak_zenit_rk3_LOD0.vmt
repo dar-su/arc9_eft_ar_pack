@@ -20,7 +20,10 @@
     "$color2"           "[0.88 0.88 0.88]"
     
     "$detailblendmode" "4"
-    "$detailblendfactor" "1"
+    "$detailblendfactor" "0.3"
+    "$detailscale" "0.6"
+
+    "attName" "eft_grip_ak_rk3"
 
     "Proxies"
     {
@@ -28,14 +31,17 @@
         {
             "specularity" "0.5"
             "min" "0"
-            "max" "0.025"
+            "max" "0.015"
         }
         
         "Arc9CustomCamoAdvanced" 
         {
             "camoTexture" $detail
+            "camoScale" $detailscale
+            "camoAngle" $detailangle
+            "camoBlendMode" $detailblendmode
+            "camoBlendFactor" $detailblendfactor
             "phonk" $phongboost
-            "attName" "eft_grip_ak_rk3"
             "color" "[0.99 0.99 0.99]"
         }
 

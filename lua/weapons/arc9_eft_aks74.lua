@@ -40,4 +40,31 @@ SWEP.Attachments = {
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 3),
     },
+    _,
+    _,
+    _,
+    _,
+    _,
+    _,
+    _,
+    _,
+    _,
+    _,
+    
+    -- bitch ass lua
+    {
+        IsAdvancedCamo1 = false,
+        CosmeticOnly = false,
+        RequireElements = {"impossibleonthisgun"},
+    },
+    {
+        IsAdvancedCamo2 = false,
+        CosmeticOnly = false,
+        RequireElements = {"impossibleonthisgun"},
+    },
+    {
+        IsAdvancedCamo3 = false,
+        CosmeticOnly = false,
+        RequireElements = {"impossibleonthisgun"},
+    },
 }

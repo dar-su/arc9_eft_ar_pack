@@ -20,7 +20,7 @@
     "$color2"           "[0.88 0.88 0.88]"
     
     "$detailblendmode" "4"
-    "$detailblendfactor" "0.5"
+    "$detailblendfactor" "0.7"
     "$detailscale" "1.0"
 
     "$detailangle" 0.0

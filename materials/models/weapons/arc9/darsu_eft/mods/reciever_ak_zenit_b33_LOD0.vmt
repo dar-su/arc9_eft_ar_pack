@@ -17,16 +17,42 @@
 	"$rimlightboost"	"3"
 	"$envmap"	"env_cubemap"
 
-	"$envmaptint" "[0.05 0.05 0.05]"
+	"$envmaptint" "[0.025 0.025 0.025]"
 	"$color2" "[0.88 0.88 0.88]"
 
-	"Proxies"
-     {
+    "$detailblendmode" "4"
+    "$detailblendfactor" "0.5"
+    "$detailscale" "[1.7 0.9 1]"
+
+
+    "$detailangle" 0.0
+    "$attname" eft_rec_ak_b33
+
+    "Proxies"
+    {
         "Arc9EnvMapTint"
         {
             "specularity" "0.5"
             "min" "0"
-            "max" "0.05"
+            "max" "0.01"
+        }        
+        
+        "Arc9CustomCamoAdvanced" 
+        {
+            "camoTexture" $detail
+            "camoScale" $detailscale
+            "camoAngle" $detailangle
+            "camoBlendMode" $detailblendmode
+            "camoBlendFactor" $detailblendfactor
+            "phonk" $phongboost
+            "color" "[0.99 0.99 0.99]"
         }
-     }
+
+        "TextureTransform"
+        {
+            "rotateVar" "$detailangle"
+            "resultVar" "$detailtexturetransform"
+        }
+
+    }
 }

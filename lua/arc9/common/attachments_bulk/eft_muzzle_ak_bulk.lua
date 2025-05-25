@@ -420,6 +420,7 @@ ATT.VisualRecoilMult = 0.87
 ATT.HeatCapacityMult = 0.99
 ATT.PhysBulletMuzzleVelocityMult = 1.004
 
+ATT.AdvancedCamoSupport = true
 
 ARC9.LoadAttachment(ATT, "eft_muzzle_ak_dtk1")
 
@@ -782,8 +783,9 @@ ATT.SpreadMult = 1.02
 ATT.HeatCapacityMult = 1.14
 ATT.PhysBulletMuzzleVelocityMult = 1.0075
 
-
 ATT.BarrelLengthAdd = 2
+
+ATT.AdvancedCamoSupport = true
 
 ARC9.LoadAttachment(ATT, "eft_silencer_ak_dtk4m")
 

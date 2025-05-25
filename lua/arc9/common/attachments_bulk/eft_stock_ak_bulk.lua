@@ -715,6 +715,7 @@ ATT.Attachments = {
     },
 }
 
+ATT.AdvancedCamoSupport = true
 
 ARC9.LoadAttachment(ATT, "eft_stock_zenit_pt1")
 
@@ -744,7 +745,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ak_zenit_pt3.mdl"
 ATT.HasStock = true
 
 ATT.Category = {"eft_stock_zenit_lock"}
-
 
 ARC9.LoadAttachment(ATT, "eft_stock_zenit_pt3")
 

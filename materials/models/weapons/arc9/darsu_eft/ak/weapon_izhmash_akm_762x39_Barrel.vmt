@@ -19,38 +19,14 @@
 
 	"$envmaptint" "[0.05 0.05 0.05]"
 	"$color2" "[0.88 0.88 0.88]"
-    
-    "$detailblendmode" "4"
-    "$detailblendfactor" "0.5"
-    "$detailscale" "2"
 
-    "$detailangle" 180
-    "$attname" ""
-    
-    "Proxies"
-    {
+	"Proxies"
+     {
         "Arc9EnvMapTint"
         {
             "specularity" "0.5"
             "min" "0"
-            "max" "0.025"
+            "max" "0.05"
         }
-        
-        "Arc9CustomCamoAdvanced" 
-        {
-            "camoTexture" $detail
-            "camoScale" $detailscale
-            "camoAngle" $detailangle
-            "camoBlendMode" $detailblendmode
-            "camoBlendFactor" $detailblendfactor
-            "phonk" $phongboost
-            "color" "[0.99 0.99 0.99]"
-        }
-
-        "TextureTransform"
-        {
-            "rotateVar" "$detailangle"
-            "resultVar" "$detailtexturetransform"
-        }
-    }
+     }
 }
