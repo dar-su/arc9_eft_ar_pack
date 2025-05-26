@@ -601,6 +601,10 @@ SWEP.Animations = {
     },    
     
 
+    ["inspect"] = { -- shutup arc9 we have inspect
+        Source = "idle",
+        Time = 0.05,
+    },
 
     ["inspect1"] = {
         Source = "look0",

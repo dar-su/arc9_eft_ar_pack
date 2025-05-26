@@ -579,7 +579,6 @@ SWEP.Animations = {
     },
     ["reload_tactical_1"] = {
         Source = "reload1t",
-        EventTableOffsetMP = -1.3,
         RefillProgress = 0.85,
         PeekProgress = 0.95,
         MinProgress = 0.975,
@@ -669,6 +668,10 @@ SWEP.Animations = {
 
 
 
+    ["inspect"] = { -- shutup arc9 we have inspect
+        Source = "idle",
+        Time = 0.05,
+    },
 
     ["inspect1"] = {
         Source = "inspect0",
