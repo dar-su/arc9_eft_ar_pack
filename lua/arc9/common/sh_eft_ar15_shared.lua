@@ -439,15 +439,15 @@ ARC9EFT.AR15_Anims = {
 
     ["fire"] = {
         Source = "fire", 
-        EventTable = { { s = "arc9_eft_shared/weap_trigger_hammer.wav", t = 0 } }
+        EventTable = { { s = ")arc9_eft_shared/weap_trigger_hammer.wav", t = 0 } }
     },
     ["fire_empty"] = {
         Source = "fire_empty",
     },
 
 
-    ["dryfire"] = { Source = "fire_dry", EventTable = { { s = "arc9_eft_shared/weap_trigger_hammer.wav", t = 0 }, } },
-    ["dryfire_empty"] = { Source = "fire_dry_empty", EventTable = { { s = "arc9_eft_shared/weap_trigger_hammer.wav", t = 0 }, } },
+    ["dryfire"] = { Source = "fire_dry", EventTable = { { s = ")arc9_eft_shared/weap_trigger_hammer.wav", t = 0 }, } },
+    ["dryfire_empty"] = { Source = "fire_dry_empty", EventTable = { { s = ")arc9_eft_shared/weap_trigger_hammer.wav", t = 0 }, } },
 
     ["reload"] = {
         Source = "reload_single",

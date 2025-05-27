@@ -494,8 +494,8 @@ SWEP.Animations = {
     ["holster"] = { Source = "holster", EventTable = { { s = "arc9_eft_shared/weap_out.ogg", t = 0.05 } } },
 
 
-    ["fire"] = { Source = "fire", NoIdle = true, EventTable = { { s = "arc9_eft_shared/weap_trigger_hammer.wav", t = 0 } } },
-    ["fire_dry"] = { Source = "fire_dry", EventTable = { { s = "arc9_eft_shared/weap_trigger_hammer.wav", t = 0 } } },
+    ["fire"] = { Source = "fire", NoIdle = true, EventTable = { { s = ")arc9_eft_shared/weap_trigger_hammer.wav", t = 0 } } },
+    ["fire_dry"] = { Source = "fire_dry", EventTable = { { s = ")arc9_eft_shared/weap_trigger_hammer.wav", t = 0 } } },
 
     ["reload_762"] = {
         Source = "reload_762",

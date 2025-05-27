@@ -405,7 +405,7 @@ ARC9EFT.AK_Anims = {
     ["fire"] = {
         Source = "fire",        
         EventTable = {
-            { s = "arc9_eft_shared/weap_trigger_hammer.wav", t = 0},
+            { s = ")arc9_eft_shared/weap_trigger_hammer.wav", t = 0},
         },
     },
 
