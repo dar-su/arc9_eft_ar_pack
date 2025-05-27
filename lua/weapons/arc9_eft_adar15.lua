@@ -42,17 +42,17 @@ SWEP.Spread = 1.49 * ARC9.MOAToAcc
 SWEP.RecoilUp   = 3.5  -- up recoil
 SWEP.RecoilSide = 0.5 -- sideways recoil
 
-local path = "weapons/darsu_eft/m4a1/"
+local path = ")weapons/darsu_eft/m4a1/"
 
-SWEP.ShootSound = path .. "fire_new/adar_fire_outdoor_close.ogg"
-SWEP.ShootSoundSilenced = path .. "fire_new/adar_fire_outdoor_silenced_close.ogg"
-SWEP.ShootSoundIndoor = path .. "fire_new/adar_fire_indoor_close.ogg"
-SWEP.ShootSoundSilencedIndoor = path .. "fire_new/adar_fire_indoor_silenced_close.ogg"
+SWEP.ShootSound = path .. "fire_new/adar_fire_outdoor_close.wav"
+SWEP.ShootSoundSilenced = path .. "fire_new/adar_fire_outdoor_silenced_close.wav"
+SWEP.ShootSoundIndoor = path .. "fire_new/adar_fire_indoor_close.wav"
+SWEP.ShootSoundSilencedIndoor = path .. "fire_new/adar_fire_indoor_silenced_close.wav"
 
-SWEP.DistantShootSound = path .. "fire_new/adar_fire_outdoor_distant.ogg"
-SWEP.DistantShootSoundSilenced = path .. "fire_new/adar_fire_outdoor_silenced_distant.ogg"
-SWEP.DistantShootSoundIndoor = path .. "fire_new/adar_fire_indoor_distant.ogg"
-SWEP.DistantShootSoundSilencedIndoor = path .. "fire_new/adar_fire_indoor_silenced_distant.ogg"
+SWEP.DistantShootSound = path .. "fire_new/adar_fire_outdoor_distant.wav"
+SWEP.DistantShootSoundSilenced = path .. "fire_new/adar_fire_outdoor_silenced_distant.wav"
+SWEP.DistantShootSoundIndoor = path .. "fire_new/adar_fire_indoor_distant.wav"
+SWEP.DistantShootSoundSilencedIndoor = path .. "fire_new/adar_fire_indoor_silenced_distant.wav"
 
 SWEP.LayerSound = false
 SWEP.LayerSoundSilenced = false

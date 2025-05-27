@@ -50,24 +50,24 @@ SWEP.RecoilRandomSide = 0.4   -- random left/right
 
 SWEP.RecoilAutoControl = 4 -- autocompenstaion, could be cool if set to high but it also affects main recoil
 
-local path = "weapons/darsu_eft/m4a1/"
+local path = ")weapons/darsu_eft/m4a1/"
 
-SWEP.ShootSound = { path .. "fire_new/hk416_outdoor_close_loop1.ogg", path .. "fire_new/hk416_outdoor_close_loop2.ogg", path .. "fire_new/hk416_outdoor_close_loop3.ogg", path .. "fire_new/hk416_outdoor_close_loop4.ogg" }
-SWEP.LayerSound = path .. "fire_new/hk416_outdoor_close_loop_tail.ogg"
+SWEP.ShootSound = { path .. "fire_new/hk416_outdoor_close_loop1.wav", path .. "fire_new/hk416_outdoor_close_loop2.wav", path .. "fire_new/hk416_outdoor_close_loop3.wav", path .. "fire_new/hk416_outdoor_close_loop4.wav" }
+SWEP.LayerSound = path .. "fire_new/hk416_outdoor_close_loop_tail.wav"
 
-SWEP.ShootSoundSilenced = { path .. "fire_new/hk416_outdoor_silenced_close_loop1.ogg", path .. "fire_new/hk416_outdoor_silenced_close_loop2.ogg", path .. "fire_new/hk416_outdoor_silenced_close_loop3.ogg", path .. "fire_new/hk416_outdoor_silenced_close_loop4.ogg" }
-SWEP.LayerSoundSilenced = path .. "fire_new/hk416_outdoor_silenced_close_loop_tail.ogg"
+SWEP.ShootSoundSilenced = { path .. "fire_new/hk416_outdoor_silenced_close_loop1.wav", path .. "fire_new/hk416_outdoor_silenced_close_loop2.wav", path .. "fire_new/hk416_outdoor_silenced_close_loop3.wav", path .. "fire_new/hk416_outdoor_silenced_close_loop4.wav" }
+SWEP.LayerSoundSilenced = path .. "fire_new/hk416_outdoor_silenced_close_loop_tail.wav"
 
-SWEP.ShootSoundIndoor = { path .. "fire_new/hk416_indoor_close_loop1.ogg", path .. "fire_new/hk416_indoor_close_loop2.ogg", path .. "fire_new/hk416_indoor_close_loop3.ogg", path .. "fire_new/hk416_indoor_close_loop4.ogg" }
-SWEP.LayerSoundIndoor = path .. "fire_new/hk416_indoor_close_loop_tail.ogg"
+SWEP.ShootSoundIndoor = { path .. "fire_new/hk416_indoor_close_loop1.wav", path .. "fire_new/hk416_indoor_close_loop2.wav", path .. "fire_new/hk416_indoor_close_loop3.wav", path .. "fire_new/hk416_indoor_close_loop4.wav" }
+SWEP.LayerSoundIndoor = path .. "fire_new/hk416_indoor_close_loop_tail.wav"
 
-SWEP.ShootSoundSilencedIndoor = { path .. "fire_new/hk416_indoor_silenced_close_loop1.ogg", path .. "fire_new/hk416_indoor_silenced_close_loop2.ogg", path .. "fire_new/hk416_indoor_silenced_close_loop3.ogg", path .. "fire_new/hk416_indoor_silenced_close_loop4.ogg" }
-SWEP.LayerSoundSilencedIndoor = path .. "fire_new/hk416_indoor_silenced_close_loop_tail.ogg"
+SWEP.ShootSoundSilencedIndoor = { path .. "fire_new/hk416_indoor_silenced_close_loop1.wav", path .. "fire_new/hk416_indoor_silenced_close_loop2.wav", path .. "fire_new/hk416_indoor_silenced_close_loop3.wav", path .. "fire_new/hk416_indoor_silenced_close_loop4.wav" }
+SWEP.LayerSoundSilencedIndoor = path .. "fire_new/hk416_indoor_silenced_close_loop_tail.wav"
 
-SWEP.DistantShootSound = { path .. "fire_new/hk416_outdoor_distant_loop1.ogg", path .. "fire_new/hk416_outdoor_distant_loop2.ogg", path .. "fire_new/hk416_outdoor_distant_loop3.ogg", path .. "fire_new/hk416_outdoor_distant_loop4.ogg" }
-SWEP.DistantShootSoundSilenced = { path .. "fire_new/hk416_outdoor_silenced_distant_loop1.ogg", path .. "fire_new/hk416_outdoor_silenced_distant_loop2.ogg", path .. "fire_new/hk416_outdoor_silenced_distant_loop3.ogg", path .. "fire_new/hk416_outdoor_silenced_distant_loop4.ogg" }
-SWEP.DistantShootSoundIndoor = { path .. "fire_new/hk416_indoor_distant_loop1.ogg", path .. "fire_new/hk416_indoor_distant_loop2.ogg", path .. "fire_new/hk416_indoor_distant_loop3.ogg", path .. "fire_new/hk416_indoor_distant_loop4.ogg" }
-SWEP.DistantShootSoundSilencedIndoor = { path .. "fire_new/hk416_indoor_silenced_distant_loop1.ogg", path .. "fire_new/hk416_indoor_silenced_distant_loop2.ogg", path .. "fire_new/hk416_indoor_silenced_distant_loop3.ogg", path .. "fire_new/hk416_indoor_silenced_distant_loop4.ogg" }
+SWEP.DistantShootSound = { path .. "fire_new/hk416_outdoor_distant_loop1.wav", path .. "fire_new/hk416_outdoor_distant_loop2.wav", path .. "fire_new/hk416_outdoor_distant_loop3.wav", path .. "fire_new/hk416_outdoor_distant_loop4.wav" }
+SWEP.DistantShootSoundSilenced = { path .. "fire_new/hk416_outdoor_silenced_distant_loop1.wav", path .. "fire_new/hk416_outdoor_silenced_distant_loop2.wav", path .. "fire_new/hk416_outdoor_silenced_distant_loop3.wav", path .. "fire_new/hk416_outdoor_silenced_distant_loop4.wav" }
+SWEP.DistantShootSoundIndoor = { path .. "fire_new/hk416_indoor_distant_loop1.wav", path .. "fire_new/hk416_indoor_distant_loop2.wav", path .. "fire_new/hk416_indoor_distant_loop3.wav", path .. "fire_new/hk416_indoor_distant_loop4.wav" }
+SWEP.DistantShootSoundSilencedIndoor = { path .. "fire_new/hk416_indoor_silenced_distant_loop1.wav", path .. "fire_new/hk416_indoor_silenced_distant_loop2.wav", path .. "fire_new/hk416_indoor_silenced_distant_loop3.wav", path .. "fire_new/hk416_indoor_silenced_distant_loop4.wav" }
 
 -- anger
 local sposoffset, sangoffset = Vector(-0.006, 0, -0.05), Angle(0, 0.45, 0)

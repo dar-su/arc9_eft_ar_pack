@@ -254,24 +254,24 @@ ATT.SortOrder = 0
 ATT.Category = "eft_custom_mk47"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-local path = "weapons/darsu_eft/ak/"
+local path = ")weapons/darsu_eft/ak/"
 
-ATT.ShootSound = { path .. "fire_new/ak105_close_loop_1.ogg", path .. "fire_new/ak105_close_loop_2.ogg", path .. "fire_new/ak105_close_loop_3.ogg", path .. "fire_new/ak105_close_loop_4.ogg" }
-ATT.LayerSound = path .. "fire_new/ak105_close_loop_tail.ogg"
+ATT.ShootSound = { path .. "fire_new/ak105_close_loop_1.wav", path .. "fire_new/ak105_close_loop_2.wav", path .. "fire_new/ak105_close_loop_3.wav", path .. "fire_new/ak105_close_loop_4.wav" }
+ATT.LayerSound = path .. "fire_new/ak105_close_loop_tail.wav"
 
-ATT.ShootSoundSilenced = { path .. "fire_new/ak74m_outdoor_silenced_close_loop_1.ogg", path .. "fire_new/ak74m_outdoor_silenced_close_loop_2.ogg", path .. "fire_new/ak74m_outdoor_silenced_close_loop_3.ogg", path .. "fire_new/ak74m_outdoor_silenced_close_loop_4.ogg" }
-ATT.LayerSoundSilenced = path .. "fire_new/ak74_loop_outdoor_close_silenced_tail.ogg"
+ATT.ShootSoundSilenced = { path .. "fire_new/ak74m_outdoor_silenced_close_loop_1.wav", path .. "fire_new/ak74m_outdoor_silenced_close_loop_2.wav", path .. "fire_new/ak74m_outdoor_silenced_close_loop_3.wav", path .. "fire_new/ak74m_outdoor_silenced_close_loop_4.wav" }
+ATT.LayerSoundSilenced = path .. "fire_new/ak74_loop_outdoor_close_silenced_tail.wav"
 
-ATT.ShootSoundIndoor = { path .. "fire_new/ak74m_indoor_close_loop_1.ogg", path .. "fire_new/ak74m_indoor_close_loop_2.ogg", path .. "fire_new/ak74m_indoor_close_loop_3.ogg", path .. "fire_new/ak74m_indoor_close_loop_4.ogg" }
-ATT.LayerSoundIndoor = path .. "fire_new/ak74m_indoor_close_loop_tail.ogg"
+ATT.ShootSoundIndoor = { path .. "fire_new/ak74m_indoor_close_loop_1.wav", path .. "fire_new/ak74m_indoor_close_loop_2.wav", path .. "fire_new/ak74m_indoor_close_loop_3.wav", path .. "fire_new/ak74m_indoor_close_loop_4.wav" }
+ATT.LayerSoundIndoor = path .. "fire_new/ak74m_indoor_close_loop_tail.wav"
 
-ATT.ShootSoundSilencedIndoor = { path .. "fire_new/ak74m_indoor_silenced_close_loop_1.ogg", path .. "fire_new/ak74m_indoor_silenced_close_loop_2.ogg", path .. "fire_new/ak74m_indoor_silenced_close_loop_3.ogg", path .. "fire_new/ak74m_indoor_silenced_close_loop_4.ogg" }
-ATT.LayerSoundSilencedIndoor = path .. "fire_new/ak74m_indoor_silenced_close_loop_tail.ogg"
+ATT.ShootSoundSilencedIndoor = { path .. "fire_new/ak74m_indoor_silenced_close_loop_1.wav", path .. "fire_new/ak74m_indoor_silenced_close_loop_2.wav", path .. "fire_new/ak74m_indoor_silenced_close_loop_3.wav", path .. "fire_new/ak74m_indoor_silenced_close_loop_4.wav" }
+ATT.LayerSoundSilencedIndoor = path .. "fire_new/ak74m_indoor_silenced_close_loop_tail.wav"
 
-ATT.DistantShootSound = { path .. "fire_new/ak105_distant_loop_1.ogg", path .. "fire_new/ak105_distant_loop_2.ogg" }
-ATT.DistantShootSoundSilenced = { path .. "fire_new/ak74m_outdoor_silenced_distant_loop_1.ogg", path .. "fire_new/ak74m_outdoor_silenced_distant_loop_2.ogg" }
-ATT.DistantShootSoundIndoor = { path .. "fire_new/ak74m_indoor_distant_loop_1.ogg", path .. "fire_new/ak74m_indoor_distant_loop_2.ogg" }
-ATT.DistantShootSoundSilencedIndoor = { path .. "fire_new/ak74m_indoor_silenced_distant_loop_1.ogg", path .. "fire_new/ak74m_indoor_silenced_distant_loop_2.ogg" }
+ATT.DistantShootSound = { path .. "fire_new/ak105_distant_loop_1.wav", path .. "fire_new/ak105_distant_loop_2.wav" }
+ATT.DistantShootSoundSilenced = { path .. "fire_new/ak74m_outdoor_silenced_distant_loop_1.wav", path .. "fire_new/ak74m_outdoor_silenced_distant_loop_2.wav" }
+ATT.DistantShootSoundIndoor = { path .. "fire_new/ak74m_indoor_distant_loop_1.wav", path .. "fire_new/ak74m_indoor_distant_loop_2.wav" }
+ATT.DistantShootSoundSilencedIndoor = { path .. "fire_new/ak74m_indoor_silenced_distant_loop_1.wav", path .. "fire_new/ak74m_indoor_silenced_distant_loop_2.wav" }
 
 ATT.Attachments = {
     {
@@ -305,24 +305,24 @@ ATT.Category = "eft_custom_mk47"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 
-local path = "weapons/darsu_eft/ak/"
+local path = ")weapons/darsu_eft/ak/"
 
-ATT.ShootSound = { path .. "fire_new/ak102_outdoor_close_loop_1.ogg", path .. "fire_new/ak102_outdoor_close_loop_2.ogg", path .. "fire_new/ak102_outdoor_close_loop_3.ogg", path .. "fire_new/ak102_outdoor_close_loop_4.ogg" }
-ATT.LayerSound = path .. "fire_new/ak102_outdoor_close_loop_tail.ogg"
+ATT.ShootSound = { path .. "fire_new/ak102_outdoor_close_loop_1.wav", path .. "fire_new/ak102_outdoor_close_loop_2.wav", path .. "fire_new/ak102_outdoor_close_loop_3.wav", path .. "fire_new/ak102_outdoor_close_loop_4.wav" }
+ATT.LayerSound = path .. "fire_new/ak102_outdoor_close_loop_tail.wav"
 
-ATT.ShootSoundSilenced = { path .. "fire_new/ak102_outdoor_silenced_close_loop_1.ogg", path .. "fire_new/ak102_outdoor_silenced_close_loop_2.ogg", path .. "fire_new/ak102_outdoor_silenced_close_loop_3.ogg", path .. "fire_new/ak102_outdoor_silenced_close_loop_4.ogg" }
-ATT.LayerSoundSilenced = path .. "fire_new/ak102_outdoor_silenced_close_loop_tail.ogg"
+ATT.ShootSoundSilenced = { path .. "fire_new/ak102_outdoor_silenced_close_loop_1.wav", path .. "fire_new/ak102_outdoor_silenced_close_loop_2.wav", path .. "fire_new/ak102_outdoor_silenced_close_loop_3.wav", path .. "fire_new/ak102_outdoor_silenced_close_loop_4.wav" }
+ATT.LayerSoundSilenced = path .. "fire_new/ak102_outdoor_silenced_close_loop_tail.wav"
 
-ATT.ShootSoundIndoor = { path .. "fire_new/ak102_indoor_close_loop_1.ogg", path .. "fire_new/ak102_indoor_close_loop_2.ogg", path .. "fire_new/ak102_indoor_close_loop_3.ogg", path .. "fire_new/ak102_indoor_close_loop_4.ogg" }
-ATT.LayerSoundIndoor = path .. "fire_new/ak102_indoor_close_loop_tail.ogg"
+ATT.ShootSoundIndoor = { path .. "fire_new/ak102_indoor_close_loop_1.wav", path .. "fire_new/ak102_indoor_close_loop_2.wav", path .. "fire_new/ak102_indoor_close_loop_3.wav", path .. "fire_new/ak102_indoor_close_loop_4.wav" }
+ATT.LayerSoundIndoor = path .. "fire_new/ak102_indoor_close_loop_tail.wav"
 
-ATT.ShootSoundSilencedIndoor = { path .. "fire_new/ak102_indoor_silenced_close_loop_1.ogg", path .. "fire_new/ak102_indoor_silenced_close_loop_2.ogg", path .. "fire_new/ak102_indoor_silenced_close_loop_3.ogg", path .. "fire_new/ak102_indoor_silenced_close_loop_4.ogg" }
-ATT.LayerSoundSilencedIndoor = path .. "fire_new/ak102_indoor_silenced_close_loop_tail.ogg"
+ATT.ShootSoundSilencedIndoor = { path .. "fire_new/ak102_indoor_silenced_close_loop_1.wav", path .. "fire_new/ak102_indoor_silenced_close_loop_2.wav", path .. "fire_new/ak102_indoor_silenced_close_loop_3.wav", path .. "fire_new/ak102_indoor_silenced_close_loop_4.wav" }
+ATT.LayerSoundSilencedIndoor = path .. "fire_new/ak102_indoor_silenced_close_loop_tail.wav"
 
-ATT.DistantShootSound = { path .. "fire_new/ak102_outdoor_distant_loop_1.ogg", path .. "fire_new/ak102_outdoor_distant_loop_2.ogg" }
-ATT.DistantShootSoundSilenced = { path .. "fire_new/ak102_outdoor_silenced_distant_loop_1.ogg", path .. "fire_new/ak102_outdoor_silenced_distant_loop_2.ogg" }
-ATT.DistantShootSoundIndoor = { path .. "fire_new/ak102_indoor_distant_loop_1.ogg", path .. "fire_new/ak102_indoor_distant_loop_2.ogg" }
-ATT.DistantShootSoundSilencedIndoor = { path .. "fire_new/ak102_indoor_silenced_distant_loop_1.ogg", path .. "fire_new/ak102_indoor_silenced_distant_loop_2.ogg" }
+ATT.DistantShootSound = { path .. "fire_new/ak102_outdoor_distant_loop_1.wav", path .. "fire_new/ak102_outdoor_distant_loop_2.wav" }
+ATT.DistantShootSoundSilenced = { path .. "fire_new/ak102_outdoor_silenced_distant_loop_1.wav", path .. "fire_new/ak102_outdoor_silenced_distant_loop_2.wav" }
+ATT.DistantShootSoundIndoor = { path .. "fire_new/ak102_indoor_distant_loop_1.wav", path .. "fire_new/ak102_indoor_distant_loop_2.wav" }
+ATT.DistantShootSoundSilencedIndoor = { path .. "fire_new/ak102_indoor_silenced_distant_loop_1.wav", path .. "fire_new/ak102_indoor_silenced_distant_loop_2.wav" }
 
 
 ATT.Attachments = {

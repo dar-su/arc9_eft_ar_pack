@@ -117,24 +117,24 @@ SWEP.MuzzleParticle = "muzzleflash_4"
 SWEP.ShellModel = "models/weapons/arc9_eft_shared/shells/eft_shell_556_m855.mdl"
 
 
-local path = "weapons/darsu_eft/mdr/"
+local path = ")weapons/darsu_eft/mdr/"
 
-SWEP.ShootSound = { path .. "fire_new/mdr_outdoor_close_loop1.ogg", path .. "fire_new/mdr_outdoor_close_loop2.ogg", path .. "fire_new/mdr_outdoor_close_loop3.ogg", path .. "fire_new/mdr_outdoor_close_loop4.ogg" }
-SWEP.LayerSound = path .. "fire_new/mdr_outdoor_close_loop_tail.ogg"
+SWEP.ShootSound = { path .. "fire_new/mdr_outdoor_close_loop1.wav", path .. "fire_new/mdr_outdoor_close_loop2.wav", path .. "fire_new/mdr_outdoor_close_loop3.wav", path .. "fire_new/mdr_outdoor_close_loop4.wav" }
+SWEP.LayerSound = path .. "fire_new/mdr_outdoor_close_loop_tail.wav"
 
-SWEP.ShootSoundSilenced = { path .. "fire_new/mdr_outdoor_silenced_close_loop1.ogg", path .. "fire_new/mdr_outdoor_silenced_close_loop2.ogg", path .. "fire_new/mdr_outdoor_silenced_close_loop3.ogg", path .. "fire_new/mdr_outdoor_silenced_close_loop4.ogg" }
-SWEP.LayerSoundSilenced = path .. "fire_new/mdr_outdoor_silenced_close_loop_tail.ogg"
+SWEP.ShootSoundSilenced = { path .. "fire_new/mdr_outdoor_silenced_close_loop1.wav", path .. "fire_new/mdr_outdoor_silenced_close_loop2.wav", path .. "fire_new/mdr_outdoor_silenced_close_loop3.wav", path .. "fire_new/mdr_outdoor_silenced_close_loop4.wav" }
+SWEP.LayerSoundSilenced = path .. "fire_new/mdr_outdoor_silenced_close_loop_tail.wav"
 
-SWEP.ShootSoundIndoor = { path .. "fire_new/mdr_indoor_close_loop1.ogg", path .. "fire_new/mdr_indoor_close_loop2.ogg", path .. "fire_new/mdr_indoor_close_loop3.ogg", path .. "fire_new/mdr_indoor_close_loop4.ogg" }
-SWEP.LayerSoundIndoor = path .. "fire_new/mdr_indoor_close_loop_tail.ogg"
+SWEP.ShootSoundIndoor = { path .. "fire_new/mdr_indoor_close_loop1.wav", path .. "fire_new/mdr_indoor_close_loop2.wav", path .. "fire_new/mdr_indoor_close_loop3.wav", path .. "fire_new/mdr_indoor_close_loop4.wav" }
+SWEP.LayerSoundIndoor = path .. "fire_new/mdr_indoor_close_loop_tail.wav"
 
-SWEP.ShootSoundSilencedIndoor = { path .. "fire_new/mdr_indoor_silenced_close_loop1.ogg", path .. "fire_new/mdr_indoor_silenced_close_loop2.ogg", path .. "fire_new/mdr_indoor_silenced_close_loop3.ogg", path .. "fire_new/mdr_indoor_silenced_close_loop4.ogg" }
-SWEP.LayerSoundSilencedIndoor = path .. "fire_new/mdr_indoor_silenced_close_loop_tail.ogg"
+SWEP.ShootSoundSilencedIndoor = { path .. "fire_new/mdr_indoor_silenced_close_loop1.wav", path .. "fire_new/mdr_indoor_silenced_close_loop2.wav", path .. "fire_new/mdr_indoor_silenced_close_loop3.wav", path .. "fire_new/mdr_indoor_silenced_close_loop4.wav" }
+SWEP.LayerSoundSilencedIndoor = path .. "fire_new/mdr_indoor_silenced_close_loop_tail.wav"
 
-SWEP.DistantShootSound = { path .. "fire_new/mdr_outdoor_distant_loop1.ogg", path .. "fire_new/mdr_outdoor_distant_loop2.ogg" }
-SWEP.DistantShootSoundSilenced = { path .. "fire_new/mdr_outdoor_silenced_distant_loop1.ogg", path .. "fire_new/mdr_outdoor_silenced_distant_loop2.ogg" }
-SWEP.DistantShootSoundIndoor = { path .. "fire_new/mdr_indoor_distant_loop1.ogg", path .. "fire_new/mdr_indoor_distant_loop2.ogg" }
-SWEP.DistantShootSoundSilencedIndoor = { path .. "fire_new/mdr_indoor_silenced_distant_loop1.ogg", path .. "fire_new/mdr_indoor_silenced_distant_loop2.ogg" }
+SWEP.DistantShootSound = { path .. "fire_new/mdr_outdoor_distant_loop1.wav", path .. "fire_new/mdr_outdoor_distant_loop2.wav" }
+SWEP.DistantShootSoundSilenced = { path .. "fire_new/mdr_outdoor_silenced_distant_loop1.wav", path .. "fire_new/mdr_outdoor_silenced_distant_loop2.wav" }
+SWEP.DistantShootSoundIndoor = { path .. "fire_new/mdr_indoor_distant_loop1.wav", path .. "fire_new/mdr_indoor_distant_loop2.wav" }
+SWEP.DistantShootSoundSilencedIndoor = { path .. "fire_new/mdr_indoor_silenced_distant_loop1.wav", path .. "fire_new/mdr_indoor_silenced_distant_loop2.wav" }
 
 SWEP.CustomPoseParamsHandler = function(swep, ent, iswm)
     ent:SetPoseParameter("owo", 1) -- different animations for 556

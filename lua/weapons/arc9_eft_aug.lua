@@ -251,24 +251,24 @@ end
 
 ------------------------- |||           Sounds            ||| -------------------------
 
-local path = "weapons/darsu_eft/aug/"
+local path = ")weapons/darsu_eft/aug/"
 
-SWEP.ShootSound = { path .. "fire_new/aug_outdoor_close_loop1.ogg", path .. "fire_new/aug_outdoor_close_loop2.ogg", path .. "fire_new/aug_outdoor_close_loop3.ogg", path .. "fire_new/aug_outdoor_close_loop4.ogg" }
-SWEP.LayerSound = path .. "fire_new/aug_outdoor_close_loopt.ogg"
+SWEP.ShootSound = { path .. "fire_new/aug_outdoor_close_loop1.wav", path .. "fire_new/aug_outdoor_close_loop2.wav", path .. "fire_new/aug_outdoor_close_loop3.wav", path .. "fire_new/aug_outdoor_close_loop4.wav" }
+SWEP.LayerSound = path .. "fire_new/aug_outdoor_close_loopt.wav"
 
-SWEP.ShootSoundSilenced = { path .. "fire_new/aug_outdoor_close_silenced_loop1.ogg", path .. "fire_new/aug_outdoor_close_silenced_loop2.ogg", path .. "fire_new/aug_outdoor_close_silenced_loop3.ogg", path .. "fire_new/aug_outdoor_close_silenced_loop4.ogg" }
-SWEP.LayerSoundSilenced = path .. "fire_new/aug_outdoor_close_silenced_loopt.ogg"
+SWEP.ShootSoundSilenced = { path .. "fire_new/aug_outdoor_close_silenced_loop1.wav", path .. "fire_new/aug_outdoor_close_silenced_loop2.wav", path .. "fire_new/aug_outdoor_close_silenced_loop3.wav", path .. "fire_new/aug_outdoor_close_silenced_loop4.wav" }
+SWEP.LayerSoundSilenced = path .. "fire_new/aug_outdoor_close_silenced_loopt.wav"
 
-SWEP.ShootSoundIndoor = { path .. "fire_new/aug_indoor_close_loop1.ogg", path .. "fire_new/aug_indoor_close_loop2.ogg", path .. "fire_new/aug_indoor_close_loop3.ogg", path .. "fire_new/aug_indoor_close_loop4.ogg" }
-SWEP.LayerSoundIndoor = path .. "fire_new/aug_indoor_close_loopt.ogg"
+SWEP.ShootSoundIndoor = { path .. "fire_new/aug_indoor_close_loop1.wav", path .. "fire_new/aug_indoor_close_loop2.wav", path .. "fire_new/aug_indoor_close_loop3.wav", path .. "fire_new/aug_indoor_close_loop4.wav" }
+SWEP.LayerSoundIndoor = path .. "fire_new/aug_indoor_close_loopt.wav"
 
-SWEP.ShootSoundSilencedIndoor = { path .. "fire_new/aug_indoor_close_silenced_loop1.ogg", path .. "fire_new/aug_indoor_close_silenced_loop2.ogg", path .. "fire_new/aug_indoor_close_silenced_loop3.ogg", path .. "fire_new/aug_indoor_close_silenced_loop4.ogg" }
-SWEP.LayerSoundSilencedIndoor = path .. "fire_new/aug_indoor_close_silenced_loopt.ogg"
+SWEP.ShootSoundSilencedIndoor = { path .. "fire_new/aug_indoor_close_silenced_loop1.wav", path .. "fire_new/aug_indoor_close_silenced_loop2.wav", path .. "fire_new/aug_indoor_close_silenced_loop3.wav", path .. "fire_new/aug_indoor_close_silenced_loop4.wav" }
+SWEP.LayerSoundSilencedIndoor = path .. "fire_new/aug_indoor_close_silenced_loopt.wav"
 
-SWEP.DistantShootSound = { path .. "fire_new/aug_outdoor_distant_loop1.ogg", path .. "fire_new/aug_outdoor_distant_loop2.ogg" }
-SWEP.DistantShootSoundSilenced = { path .. "fire_new/aug_outdoor_distant_silenced_loop1.ogg", path .. "fire_new/aug_outdoor_distant_silenced_loop2.ogg" }
-SWEP.DistantShootSoundIndoor = { path .. "fire_new/aug_indoor_distant_loop1.ogg", path .. "fire_new/aug_indoor_distant_loop2.ogg" }
-SWEP.DistantShootSoundSilencedIndoor = { path .. "fire_new/aug_indoor_distant_silenced_loop1.ogg", path .. "fire_new/aug_indoor_distant_silenced_loop2.ogg" }
+SWEP.DistantShootSound = { path .. "fire_new/aug_outdoor_distant_loop1.wav", path .. "fire_new/aug_outdoor_distant_loop2.wav" }
+SWEP.DistantShootSoundSilenced = { path .. "fire_new/aug_outdoor_distant_silenced_loop1.wav", path .. "fire_new/aug_outdoor_distant_silenced_loop2.wav" }
+SWEP.DistantShootSoundIndoor = { path .. "fire_new/aug_indoor_distant_loop1.wav", path .. "fire_new/aug_indoor_distant_loop2.wav" }
+SWEP.DistantShootSoundSilencedIndoor = { path .. "fire_new/aug_indoor_distant_silenced_loop1.wav", path .. "fire_new/aug_indoor_distant_silenced_loop2.wav" }
 
 ------------------------- |||           Dropped magazines            ||| -------------------------
 
@@ -592,10 +592,10 @@ SWEP.Animations = {
     ["holster_empty"] = { Source = "holster_empty", EventTable = { { s = "arc9_eft_shared/weap_out.ogg", t = 0.05 } } },
 
 
-    ["fire"] = { Source = "fire", NoIdle = true, EventTable = { { s = path .. "mp7_hammer.ogg", t = 0 } } },
-    ["fire_dry"] = { Source = "fire_dry", EventTable = { { s = path .. "p90_trigger_empty.ogg", t = 0 } } },
-    ["fire_empty"] = { Source = "fire_last", NoIdle = true, EventTable = { { s = path .. "mp7_hammer.ogg", t = 0 } } },
-    ["fire_dry_empty"] = { Source = "fire_dry_empty", EventTable = { { s = path .. "p90_trigger_empty.ogg", t = 0 } } },
+    ["fire"] = { Source = "fire", NoIdle = true, EventTable = { { s = path .. "mp7_hammer.wav", t = 0 } } },
+    ["fire_dry"] = { Source = "fire_dry", EventTable = { { s = path .. "p90_trigger_empty.wav", t = 0 } } },
+    ["fire_empty"] = { Source = "fire_last", NoIdle = true, EventTable = { { s = path .. "mp7_hammer.wav", t = 0 } } },
+    ["fire_dry_empty"] = { Source = "fire_dry_empty", EventTable = { { s = path .. "p90_trigger_empty.wav", t = 0 } } },
 
     ["reload"] = {
         Source = "reload_single",

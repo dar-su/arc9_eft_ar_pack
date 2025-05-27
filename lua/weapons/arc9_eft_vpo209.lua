@@ -137,19 +137,19 @@ SWEP.SubtleVisualRecoilDirection = 1.5
 SWEP.SubtleVisualRecoilSpeed = 0.75
 
 
-local path = "weapons/darsu_eft/ak/"
+local path = ")weapons/darsu_eft/ak/"
 -- vpo 209
 
-SWEP.ShootSound = path .. "fire_new/vpo209_fire_close.ogg"
-SWEP.ShootSoundSilenced = path .. "fire_new/vpo209_fire_close_silenced.ogg"
+SWEP.ShootSound = path .. "fire_new/vpo209_fire_close.wav"
+SWEP.ShootSoundSilenced = path .. "fire_new/vpo209_fire_close_silenced.wav"
 
-SWEP.ShootSoundIndoor = path .. "fire_new/vpo209_fire_indoor_close.ogg"
-SWEP.ShootSoundSilencedIndoor = path .. "fire_new/vpo209_fire_indoor_close_silenced.ogg"
+SWEP.ShootSoundIndoor = path .. "fire_new/vpo209_fire_indoor_close.wav"
+SWEP.ShootSoundSilencedIndoor = path .. "fire_new/vpo209_fire_indoor_close_silenced.wav"
 
-SWEP.DistantShootSound = path .. "fire_new/vpo209_fire_distant.ogg"
-SWEP.DistantShootSoundSilenced = path .. "fire_new/vpo209_fire_distant_silenced.ogg"
-SWEP.DistantShootSoundIndoor = path .. "fire_new/vpo209_fire_indoor_distant.ogg"
-SWEP.DistantShootSoundSilencedIndoor = path .. "fire_new/vpo209_fire_indoor_distant_silenced.ogg"
+SWEP.DistantShootSound = path .. "fire_new/vpo209_fire_distant.wav"
+SWEP.DistantShootSoundSilenced = path .. "fire_new/vpo209_fire_distant_silenced.wav"
+SWEP.DistantShootSoundIndoor = path .. "fire_new/vpo209_fire_indoor_distant.wav"
+SWEP.DistantShootSoundSilencedIndoor = path .. "fire_new/vpo209_fire_indoor_distant_silenced.wav"
 
 SWEP.LayerSound = false
 SWEP.LayerSoundSilenced = false

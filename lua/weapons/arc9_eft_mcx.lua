@@ -177,24 +177,24 @@ SWEP.ShellSounds = ARC9EFT.Shells556
 
 ------------------------- |||           Sounds            ||| -------------------------
 
-local path = "weapons/darsu_eft/mcxmpx/"
+local path = ")weapons/darsu_eft/mcxmpx/"
 
-SWEP.ShootSound = { path .. "fire_new/mcx_outdoor_close1.ogg", path .. "fire_new/mcx_outdoor_close2.ogg", path .. "fire_new/mcx_outdoor_close3.ogg", path .. "fire_new/mcx_outdoor_close4.ogg" }
-SWEP.LayerSound = path .. "fire_new/mcx_outdoor_close_tail.ogg"
+SWEP.ShootSound = { path .. "fire_new/mcx_outdoor_close1.wav", path .. "fire_new/mcx_outdoor_close2.wav", path .. "fire_new/mcx_outdoor_close3.wav", path .. "fire_new/mcx_outdoor_close4.wav" }
+SWEP.LayerSound = path .. "fire_new/mcx_outdoor_close_tail.wav"
 
-SWEP.ShootSoundSilenced = { path .. "fire_new/mcx_outdoor_silenced_close1.ogg", path .. "fire_new/mcx_outdoor_silenced_close2.ogg", path .. "fire_new/mcx_outdoor_silenced_close3.ogg", path .. "fire_new/mcx_outdoor_silenced_close4.ogg" }
-SWEP.LayerSoundSilenced = path .. "fire_new/mcx_outdoor_silenced_close_tail.ogg"
+SWEP.ShootSoundSilenced = { path .. "fire_new/mcx_outdoor_silenced_close1.wav", path .. "fire_new/mcx_outdoor_silenced_close2.wav", path .. "fire_new/mcx_outdoor_silenced_close3.wav", path .. "fire_new/mcx_outdoor_silenced_close4.wav" }
+SWEP.LayerSoundSilenced = path .. "fire_new/mcx_outdoor_silenced_close_tail.wav"
 
-SWEP.ShootSoundIndoor = { path .. "fire_new/mcx_indoor_close1.ogg", path .. "fire_new/mcx_indoor_close2.ogg", path .. "fire_new/mcx_indoor_close3.ogg", path .. "fire_new/mcx_indoor_close4.ogg" }
-SWEP.LayerSoundIndoor = path .. "fire_new/mcx_indoor_close_tail.ogg"
+SWEP.ShootSoundIndoor = { path .. "fire_new/mcx_indoor_close1.wav", path .. "fire_new/mcx_indoor_close2.wav", path .. "fire_new/mcx_indoor_close3.wav", path .. "fire_new/mcx_indoor_close4.wav" }
+SWEP.LayerSoundIndoor = path .. "fire_new/mcx_indoor_close_tail.wav"
 
-SWEP.ShootSoundSilencedIndoor = { path .. "fire_new/mcx_indoor_silenced_close1.ogg", path .. "fire_new/mcx_indoor_silenced_close2.ogg", path .. "fire_new/mcx_indoor_silenced_close3.ogg", path .. "fire_new/mcx_indoor_silenced_close4.ogg" }
-SWEP.LayerSoundSilencedIndoor = path .. "fire_new/mcx_indoor_silenced_close_tail.ogg"
+SWEP.ShootSoundSilencedIndoor = { path .. "fire_new/mcx_indoor_silenced_close1.wav", path .. "fire_new/mcx_indoor_silenced_close2.wav", path .. "fire_new/mcx_indoor_silenced_close3.wav", path .. "fire_new/mcx_indoor_silenced_close4.wav" }
+SWEP.LayerSoundSilencedIndoor = path .. "fire_new/mcx_indoor_silenced_close_tail.wav"
 
-SWEP.DistantShootSound = { path .. "fire_new/mcx_outdoor_distant1.ogg", path .. "fire_new/mcx_outdoor_distant2.ogg" }
-SWEP.DistantShootSoundSilenced = { path .. "fire_new/mcx_outdoor_silenced_distant1.ogg", path .. "fire_new/mcx_outdoor_silenced_distant2.ogg" }
-SWEP.DistantShootSoundIndoor = { path .. "fire_new/mcx_indoor_distant1.ogg", path .. "fire_new/mcx_indoor_distant2.ogg" }
-SWEP.DistantShootSoundSilencedIndoor = { path .. "fire_new/mcx_indoor_silenced_distant1.ogg", path .. "fire_new/mcx_indoor_silenced_distant2.ogg" }
+SWEP.DistantShootSound = { path .. "fire_new/mcx_outdoor_distant1.wav", path .. "fire_new/mcx_outdoor_distant2.wav" }
+SWEP.DistantShootSoundSilenced = { path .. "fire_new/mcx_outdoor_silenced_distant1.wav", path .. "fire_new/mcx_outdoor_silenced_distant2.wav" }
+SWEP.DistantShootSoundIndoor = { path .. "fire_new/mcx_indoor_distant1.wav", path .. "fire_new/mcx_indoor_distant2.wav" }
+SWEP.DistantShootSoundSilencedIndoor = { path .. "fire_new/mcx_indoor_silenced_distant1.wav", path .. "fire_new/mcx_indoor_silenced_distant2.wav" }
 
 ------------------------- |||           Dropped magazines            ||| -------------------------
 

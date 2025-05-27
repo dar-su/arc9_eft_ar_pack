@@ -30,9 +30,9 @@ ATT.ClipSize = 30
 
 ATT.HookP_TranslateSound = function(self, data) -- that is metal mag
     if data.sound == "weapons/darsu_eft/ak/ak74_magin_plastic.ogg" then
-        data.sound = "weapons/darsu_eft/ak/akm_magin_metal.ogg"
+        data.sound = ")weapons/darsu_eft/ak/akm_magin_metal.ogg"
     elseif data.sound == "weapons/darsu_eft/ak/ak74_magout_plastic.ogg" then
-        data.sound = "weapons/darsu_eft/ak/akm_magout_metal.ogg"
+        data.sound = ")weapons/darsu_eft/ak/akm_magout_metal.ogg"
     end
     return data
 end
@@ -352,9 +352,9 @@ ATT.ClipSize = 40
 
 ATT.HookP_TranslateSound = function(self, data) -- that is metal mag
     if data.sound == "weapons/darsu_eft/ak/ak74_magin_plastic.ogg" then
-        data.sound = "weapons/darsu_eft/ak/akm_magin_metal.ogg"
+        data.sound = ")weapons/darsu_eft/ak/akm_magin_metal.ogg"
     elseif data.sound == "weapons/darsu_eft/ak/ak74_magout_plastic.ogg" then
-        data.sound = "weapons/darsu_eft/ak/akm_magout_metal.ogg"
+        data.sound = ")weapons/darsu_eft/ak/akm_magout_metal.ogg"
     end
     return data
 end
@@ -524,9 +524,9 @@ ATT.ClipSize = 30
 
 ATT.HookP_TranslateSound = function(self, data) -- that is metal mag
     if data.sound == "weapons/darsu_eft/ak/ak74_magin_plastic.ogg" then
-        data.sound = "weapons/darsu_eft/ak/akm_magin_metal.ogg"
+        data.sound = ")weapons/darsu_eft/ak/akm_magin_metal.ogg"
     elseif data.sound == "weapons/darsu_eft/ak/ak74_magout_plastic.ogg" then
-        data.sound = "weapons/darsu_eft/ak/akm_magout_metal.ogg"
+        data.sound = ")weapons/darsu_eft/ak/akm_magout_metal.ogg"
     end
     return data
 end
@@ -564,9 +564,9 @@ ATT.ClipSize = 10
 
 ATT.HookP_TranslateSound = function(self, data) -- that is metal mag
     if data.sound == "weapons/darsu_eft/ak/ak74_magin_plastic.ogg" then
-        data.sound = "weapons/darsu_eft/ak/akm_magin_metal.ogg"
+        data.sound = ")weapons/darsu_eft/ak/akm_magin_metal.ogg"
     elseif data.sound == "weapons/darsu_eft/ak/ak74_magout_plastic.ogg" then
-        data.sound = "weapons/darsu_eft/ak/akm_magout_metal.ogg"
+        data.sound = ")weapons/darsu_eft/ak/akm_magout_metal.ogg"
     end
     return data
 end
@@ -603,9 +603,9 @@ ATT.ClipSize = 75
 
 ATT.HookP_TranslateSound = function(self, data) -- that is metal mag
     if data.sound == "weapons/darsu_eft/ak/ak74_magin_plastic.ogg" then
-        data.sound = "weapons/darsu_eft/ak/akm_magin_metal.ogg"
+        data.sound = ")weapons/darsu_eft/ak/akm_magin_metal.ogg"
     elseif data.sound == "weapons/darsu_eft/ak/ak74_magout_plastic.ogg" then
-        data.sound = "weapons/darsu_eft/ak/akm_magout_metal.ogg"
+        data.sound = ")weapons/darsu_eft/ak/akm_magout_metal.ogg"
     end
     return data
 end
@@ -837,9 +837,9 @@ ATT.ClipSize = 10
 
 ATT.HookP_TranslateSound = function(self, data) -- that is metal mag
     if data.sound == "weapons/darsu_eft/ak/ak74_magin_plastic.ogg" then
-        data.sound = "weapons/darsu_eft/ak/akm_magin_metal.ogg"
+        data.sound = ")weapons/darsu_eft/ak/akm_magin_metal.ogg"
     elseif data.sound == "weapons/darsu_eft/ak/ak74_magout_plastic.ogg" then
-        data.sound = "weapons/darsu_eft/ak/akm_magout_metal.ogg"
+        data.sound = ")weapons/darsu_eft/ak/akm_magout_metal.ogg"
     end
     return data
 end

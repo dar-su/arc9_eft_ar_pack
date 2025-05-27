@@ -174,24 +174,24 @@ SWEP.ShellSounds = ARC9EFT.Shells556
 
 ------------------------- |||           Sounds            ||| -------------------------
 
-local path = "weapons/darsu_eft/scar/"
+local path = ")weapons/darsu_eft/scar/"
 
-SWEP.ShootSound = { path .. "fire_new/scar_l_outdoor_close1.ogg", path .. "fire_new/scar_l_outdoor_close2.ogg", path .. "fire_new/scar_l_outdoor_close3.ogg", path .. "fire_new/scar_l_outdoor_close4.ogg" }
-SWEP.LayerSound = path .. "fire_new/scar_l_outdoor_closet.ogg"
+SWEP.ShootSound = { path .. "fire_new/scar_l_outdoor_close1.wav", path .. "fire_new/scar_l_outdoor_close2.wav", path .. "fire_new/scar_l_outdoor_close3.wav", path .. "fire_new/scar_l_outdoor_close4.wav" }
+SWEP.LayerSound = path .. "fire_new/scar_l_outdoor_closet.wav"
 
-SWEP.ShootSoundSilenced = { path .. "fire_new/scar_l_outdoor_silenced_close1.ogg", path .. "fire_new/scar_l_outdoor_silenced_close2.ogg", path .. "fire_new/scar_l_outdoor_silenced_close3.ogg" }
-SWEP.LayerSoundSilenced = path .. "fire_new/scar_l_outdoor_silenced_closet.ogg"
+SWEP.ShootSoundSilenced = { path .. "fire_new/scar_l_outdoor_silenced_close1.wav", path .. "fire_new/scar_l_outdoor_silenced_close2.wav", path .. "fire_new/scar_l_outdoor_silenced_close3.wav" }
+SWEP.LayerSoundSilenced = path .. "fire_new/scar_l_outdoor_silenced_closet.wav"
 
-SWEP.ShootSoundIndoor = { path .. "fire_new/scar_l_indoor_close1.ogg", path .. "fire_new/scar_l_indoor_close2.ogg", path .. "fire_new/scar_l_indoor_close3.ogg", path .. "fire_new/scar_l_indoor_close4.ogg" }
-SWEP.LayerSoundIndoor = path .. "fire_new/scar_l_indoor_closet.ogg"
+SWEP.ShootSoundIndoor = { path .. "fire_new/scar_l_indoor_close1.wav", path .. "fire_new/scar_l_indoor_close2.wav", path .. "fire_new/scar_l_indoor_close3.wav", path .. "fire_new/scar_l_indoor_close4.wav" }
+SWEP.LayerSoundIndoor = path .. "fire_new/scar_l_indoor_closet.wav"
 
-SWEP.ShootSoundSilencedIndoor = { path .. "fire_new/scar_l_indoor_silenced_close1.ogg", path .. "fire_new/scar_l_indoor_silenced_close2.ogg", path .. "fire_new/scar_l_indoor_silenced_close3.ogg" }
-SWEP.LayerSoundSilencedIndoor = path .. "fire_new/scar_l_indoor_silenced_closet.ogg"
+SWEP.ShootSoundSilencedIndoor = { path .. "fire_new/scar_l_indoor_silenced_close1.wav", path .. "fire_new/scar_l_indoor_silenced_close2.wav", path .. "fire_new/scar_l_indoor_silenced_close3.wav" }
+SWEP.LayerSoundSilencedIndoor = path .. "fire_new/scar_l_indoor_silenced_closet.wav"
 
-SWEP.DistantShootSound = { path .. "fire_new/scar_l_outdoor_distant1.ogg", path .. "fire_new/scar_l_outdoor_distant2.ogg" }
-SWEP.DistantShootSoundSilenced = { path .. "fire_new/scar_l_outdoor_silenced_distant1.ogg", path .. "fire_new/scar_l_outdoor_silenced_distant2.ogg" }
-SWEP.DistantShootSoundIndoor = { path .. "fire_new/scar_l_indoor_distant1.ogg", path .. "fire_new/scar_l_indoor_distant2.ogg" }
-SWEP.DistantShootSoundSilencedIndoor = { path .. "fire_new/scar_l_indoor_silenced_distant1.ogg", path .. "fire_new/scar_l_indoor_silenced_distant2.ogg" }
+SWEP.DistantShootSound = { path .. "fire_new/scar_l_outdoor_distant1.wav", path .. "fire_new/scar_l_outdoor_distant2.wav" }
+SWEP.DistantShootSoundSilenced = { path .. "fire_new/scar_l_outdoor_silenced_distant1.wav", path .. "fire_new/scar_l_outdoor_silenced_distant2.wav" }
+SWEP.DistantShootSoundIndoor = { path .. "fire_new/scar_l_indoor_distant1.wav", path .. "fire_new/scar_l_indoor_distant2.wav" }
+SWEP.DistantShootSoundSilencedIndoor = { path .. "fire_new/scar_l_indoor_silenced_distant1.wav", path .. "fire_new/scar_l_indoor_silenced_distant2.wav" }
 
 ------------------------- |||           Dropped magazines            ||| -------------------------
 
@@ -539,10 +539,10 @@ SWEP.Animations = {
     ["holster_empty"] = { Source = "holster_empty", EventTable = { { s = "arc9_eft_shared/weap_out.ogg", t = 0.05 } } },
 
 
-    ["fire"] = { Source = "fire", NoIdle = true, EventTable = { { s = "arc9_eft_shared/weap_trigger_hammer.ogg", t = 0 } } },
-    ["fire_dry"] = { Source = "fire_dry", EventTable = { { s = "arc9_eft_shared/weap_trigger_hammer.ogg", t = 0 } } },
-    ["fire_empty"] = { Source = "fire_empty", NoIdle = true, EventTable = { { s = "arc9_eft_shared/weap_trigger_hammer.ogg", t = 0 } } },
-    ["fire_dry_empty"] = { Source = "fire_dry_empty", EventTable = { { s = "arc9_eft_shared/weap_trigger_hammer.ogg", t = 0 } } },
+    ["fire"] = { Source = "fire", NoIdle = true, EventTable = { { s = "arc9_eft_shared/weap_trigger_hammer.wav", t = 0 } } },
+    ["fire_dry"] = { Source = "fire_dry", EventTable = { { s = "arc9_eft_shared/weap_trigger_hammer.wav", t = 0 } } },
+    ["fire_empty"] = { Source = "fire_empty", NoIdle = true, EventTable = { { s = "arc9_eft_shared/weap_trigger_hammer.wav", t = 0 } } },
+    ["fire_dry_empty"] = { Source = "fire_dry_empty", EventTable = { { s = "arc9_eft_shared/weap_trigger_hammer.wav", t = 0 } } },
 
     ["reload_0"] = {
         Source = "reload0",

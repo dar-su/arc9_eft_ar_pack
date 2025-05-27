@@ -212,24 +212,24 @@ SWEP.DynamicConditions = {
 
 ------------------------- |||           Sounds            ||| -------------------------
 
-local path = "weapons/darsu_eft/g36/"
+local path = ")weapons/darsu_eft/g36/"
 
-SWEP.ShootSound = { path .. "fire_new/g36_outdoor_close1.ogg", path .. "fire_new/g36_outdoor_close2.ogg", path .. "fire_new/g36_outdoor_close3.ogg", path .. "fire_new/g36_outdoor_close4.ogg" }
-SWEP.LayerSound = path .. "fire_new/g36_outdoor_close_tail.ogg"
+SWEP.ShootSound = { path .. "fire_new/g36_outdoor_close1.wav", path .. "fire_new/g36_outdoor_close2.wav", path .. "fire_new/g36_outdoor_close3.wav", path .. "fire_new/g36_outdoor_close4.wav" }
+SWEP.LayerSound = path .. "fire_new/g36_outdoor_close_tail.wav"
 
-SWEP.ShootSoundSilenced = { path .. "fire_new/g36_outdoor_silenced_close1.ogg", path .. "fire_new/g36_outdoor_silenced_close2.ogg", path .. "fire_new/g36_outdoor_silenced_close3.ogg", path .. "fire_new/g36_outdoor_silenced_close4.ogg" }
-SWEP.LayerSoundSilenced = path .. "fire_new/g36_outdoor_silenced_close_tail.ogg"
+SWEP.ShootSoundSilenced = { path .. "fire_new/g36_outdoor_silenced_close1.wav", path .. "fire_new/g36_outdoor_silenced_close2.wav", path .. "fire_new/g36_outdoor_silenced_close3.wav", path .. "fire_new/g36_outdoor_silenced_close4.wav" }
+SWEP.LayerSoundSilenced = path .. "fire_new/g36_outdoor_silenced_close_tail.wav"
 
-SWEP.ShootSoundIndoor = { path .. "fire_new/g36_indoor_close1.ogg", path .. "fire_new/g36_indoor_close2.ogg", path .. "fire_new/g36_indoor_close3.ogg", path .. "fire_new/g36_indoor_close4.ogg" }
-SWEP.LayerSoundIndoor = path .. "fire_new/g36_indoor_close_tail.ogg"
+SWEP.ShootSoundIndoor = { path .. "fire_new/g36_indoor_close1.wav", path .. "fire_new/g36_indoor_close2.wav", path .. "fire_new/g36_indoor_close3.wav", path .. "fire_new/g36_indoor_close4.wav" }
+SWEP.LayerSoundIndoor = path .. "fire_new/g36_indoor_close_tail.wav"
 
-SWEP.ShootSoundSilencedIndoor = { path .. "fire_new/g36_indoor_silenced_close1.ogg", path .. "fire_new/g36_indoor_silenced_close2.ogg", path .. "fire_new/g36_indoor_silenced_close3.ogg", path .. "fire_new/g36_indoor_silenced_close4.ogg" }
-SWEP.LayerSoundSilencedIndoor = path .. "fire_new/g36_indoor_silenced_close_tail.ogg"
+SWEP.ShootSoundSilencedIndoor = { path .. "fire_new/g36_indoor_silenced_close1.wav", path .. "fire_new/g36_indoor_silenced_close2.wav", path .. "fire_new/g36_indoor_silenced_close3.wav", path .. "fire_new/g36_indoor_silenced_close4.wav" }
+SWEP.LayerSoundSilencedIndoor = path .. "fire_new/g36_indoor_silenced_close_tail.wav"
 
-SWEP.DistantShootSound = { path .. "fire_new/g36_outdoor_distant1.ogg", path .. "fire_new/g36_outdoor_distant2.ogg" }
-SWEP.DistantShootSoundSilenced = { path .. "fire_new/g36_outdoor_silenced_distant1.ogg", path .. "fire_new/g36_outdoor_silenced_distant2.ogg" }
-SWEP.DistantShootSoundIndoor = { path .. "fire_new/g36_indoor_distant1.ogg", path .. "fire_new/g36_indoor_distant2.ogg" }
-SWEP.DistantShootSoundSilencedIndoor = { path .. "fire_new/g36_indoor_silenced_distant1.ogg", path .. "fire_new/g36_indoor_silenced_distant2.ogg" }
+SWEP.DistantShootSound = { path .. "fire_new/g36_outdoor_distant1.wav", path .. "fire_new/g36_outdoor_distant2.wav" }
+SWEP.DistantShootSoundSilenced = { path .. "fire_new/g36_outdoor_silenced_distant1.wav", path .. "fire_new/g36_outdoor_silenced_distant2.wav" }
+SWEP.DistantShootSoundIndoor = { path .. "fire_new/g36_indoor_distant1.wav", path .. "fire_new/g36_indoor_distant2.wav" }
+SWEP.DistantShootSoundSilencedIndoor = { path .. "fire_new/g36_indoor_silenced_distant1.wav", path .. "fire_new/g36_indoor_silenced_distant2.wav" }
 
 ------------------------- |||           Dropped magazines            ||| -------------------------
 
@@ -351,7 +351,7 @@ local rst_magcheck = {
 }
 local rst_magcheck_stanag = {
     { s = randspin, t = 0.05 },
-    { s = path .. "p90_trigger_empty.ogg", t = 6/24 - 0.025 },
+    { s = path .. "p90_trigger_empty.wav", t = 6/24 - 0.025 },
     { s = path .. "mcx_mag_out3.ogg", t = 11/24 - 0.05 },
     -- { s = path .. "g36_mag_spring1.ogg", t = 33/24 },
     { s = path .. "mcx_mag_in2.ogg", t = 61/24 - 0.2 },
@@ -431,7 +431,7 @@ local rst_tac = {
 -- stanags 20/30
 local rst_reload30 = {
     { s = randspin, t = 0.1 },
-    { s = path .. "p90_trigger_empty.ogg", t = 8/26 - 0.025 },
+    { s = path .. "p90_trigger_empty.wav", t = 8/26 - 0.025 },
     { s = path .. "mcx_mag_out3.ogg", t = 13/26 - 0.05 },
     { s = pouchin, t = 21/26 },
     { s = pouchout, t = 30/26 },
@@ -440,7 +440,7 @@ local rst_reload30 = {
 }
 local rst_reloadempty30 = {
     { s = randspin, t = 3/26 },
-    { s = path .. "p90_trigger_empty.ogg", t = 9/26 - 0.025 },
+    { s = path .. "p90_trigger_empty.wav", t = 9/26 - 0.025 },
     { s = path .. "mcx_mag_out3.ogg", t = 12/26 - 0.05 },
     { s = randspin, t = 21/26 },
     { s = pouchout, t = 26/26 },
@@ -457,7 +457,7 @@ local rst_reloadempty30 = {
 }
 local rst_tac30 = {
     { s = randspin, t = 3/26 - 4/26 },
-    { s = path .. "p90_trigger_empty.ogg", t = 9/26 - 0.025  - 4/26},
+    { s = path .. "p90_trigger_empty.wav", t = 9/26 - 0.025  - 4/26},
     { s = path .. "mcx_mag_out3.ogg", t = 12/26 - 0.05 - 4/26 },
     { s = randspin, t = 21/26 - 4/26 },
     { s = pouchout, t = 26/26 - 4/26 },
@@ -470,7 +470,7 @@ local rst_tac30 = {
 -- stanags 10
 local rst_reload10 = {
     { s = randspin, t = 0.1 },
-    { s = path .. "p90_trigger_empty.ogg", t = 8/26 - 0.025 },
+    { s = path .. "p90_trigger_empty.wav", t = 8/26 - 0.025 },
     { s = path .. "mcx_mag_out3.ogg", t = 13/26 - 0.05 },
     { s = pouchin, t = 21/26 },
     { s = pouchout, t = 30/26 - 0.1 },
@@ -479,7 +479,7 @@ local rst_reload10 = {
 }
 local rst_reloadempty10 = {
     { s = randspin, t = 3/26 },
-    { s = path .. "p90_trigger_empty.ogg", t = 9/26 - 0.025 },
+    { s = path .. "p90_trigger_empty.wav", t = 9/26 - 0.025 },
     { s = path .. "mcx_mag_out3.ogg", t = 12/26 - 0.05 },
     { s = randspin, t = 21/26 },
     { s = pouchout, t = 26/26 - 0.1 },
@@ -496,7 +496,7 @@ local rst_reloadempty10 = {
 }
 local rst_tac10 = {
     { s = randspin, t = 3/26 - 4/26 },
-    { s = path .. "p90_trigger_empty.ogg", t = 9/26 - 0.025 - 4/26 },
+    { s = path .. "p90_trigger_empty.wav", t = 9/26 - 0.025 - 4/26 },
     { s = path .. "mcx_mag_out3.ogg", t = 12/26 - 0.05  - 4/26},
     { s = randspin, t = 21/26 - 4/26 },
     { s = pouchout, t = 26/26 - 0.1 - 4/26 },
@@ -509,7 +509,7 @@ local rst_tac10 = {
 -- stanags 40
 local rst_reload40 = {
     { s = randspin, t = 0.1 },
-    { s = path .. "p90_trigger_empty.ogg", t = 8/26 - 0.025 },
+    { s = path .. "p90_trigger_empty.wav", t = 8/26 - 0.025 },
     { s = path .. "mcx_mag_out3.ogg", t = 13/26 - 0.05 },
     { s = pouchin, t = 21/26 },
     { s = pouchout, t = 30/26 + 0.1 },
@@ -518,7 +518,7 @@ local rst_reload40 = {
 }
 local rst_reloadempty40 = {
     { s = randspin, t = 3/26 },
-    { s = path .. "p90_trigger_empty.ogg", t = 9/26 - 0.025 },
+    { s = path .. "p90_trigger_empty.wav", t = 9/26 - 0.025 },
     { s = path .. "mcx_mag_out3.ogg", t = 12/26 - 0.05 },
     { s = randspin, t = 21/26 },
     { s = pouchout, t = 26/26 + 0.1 },
@@ -535,7 +535,7 @@ local rst_reloadempty40 = {
 }
 local rst_tac40 = {
     { s = randspin, t = 3/26  - 4/26},
-    { s = path .. "p90_trigger_empty.ogg", t = 9/26 - 0.025 - 4/26 },
+    { s = path .. "p90_trigger_empty.wav", t = 9/26 - 0.025 - 4/26 },
     { s = path .. "mcx_mag_out3.ogg", t = 12/26 - 0.05  - 4/26},
     { s = randspin, t = 21/26 - 4/26 },
     { s = pouchout, t = 26/26 + 0.1  - 4/26},
@@ -548,7 +548,7 @@ local rst_tac40 = {
 -- stanags 60/100
 local rst_reload60 = {
     { s = randspin, t = 0.1 },
-    { s = path .. "p90_trigger_empty.ogg", t = 8/26 - 0.025 },
+    { s = path .. "p90_trigger_empty.wav", t = 8/26 - 0.025 },
     { s = path .. "mcx_mag_out3.ogg", t = 13/26 - 0.05 },
     { s = pouchin, t = 21/26 },
     { s = pouchout, t = 30/26 + 0.17 },
@@ -557,7 +557,7 @@ local rst_reload60 = {
 }
 local rst_reloadempty60 = {
     { s = randspin, t = 3/26 },
-    { s = path .. "p90_trigger_empty.ogg", t = 9/26 - 0.025 },
+    { s = path .. "p90_trigger_empty.wav", t = 9/26 - 0.025 },
     { s = path .. "mcx_mag_out3.ogg", t = 12/26 - 0.05 },
     { s = randspin, t = 21/26 },
     { s = pouchout, t = 26/26 + 0.17 },
@@ -574,7 +574,7 @@ local rst_reloadempty60 = {
 }
 local rst_tac60 = {
     { s = randspin, t = 3/26 - 4/26 },
-    { s = path .. "p90_trigger_empty.ogg", t = 9/26 - 0.025 - 4/26 },
+    { s = path .. "p90_trigger_empty.wav", t = 9/26 - 0.025 - 4/26 },
     { s = path .. "mcx_mag_out3.ogg", t = 12/26 - 0.05 - 4/26 },
     { s = randspin, t = 21/26 - 4/26 },
     { s = pouchout, t = 26/26 + 0.17 - 4/26 },
@@ -660,10 +660,10 @@ SWEP.Animations = {
     ["holster_empty"] = { Source = "holster_empty", EventTable = { { s = "arc9_eft_shared/weap_out.ogg", t = 0.05 } } },
 
 
-    ["fire"] = { Source = "fire", NoIdle = true, EventTable = { { s = "arc9_eft_shared/weap_trigger_hammer.ogg", t = 0 } } },
-    ["fire_dry"] = { Source = "fire_dry", EventTable = { { s = "arc9_eft_shared/weap_trigger_hammer.ogg", t = 0 } } },
-    ["fire_empty"] = { Source = "fire_last", NoIdle = true, EventTable = { { s = "arc9_eft_shared/weap_trigger_hammer.ogg", t = 0 } } },
-    ["fire_dry_empty"] = { Source = "fire_dry_empty", EventTable = { { s = "arc9_eft_shared/weap_trigger_hammer.ogg", t = 0 } } },
+    ["fire"] = { Source = "fire", NoIdle = true, EventTable = { { s = "arc9_eft_shared/weap_trigger_hammer.wav", t = 0 } } },
+    ["fire_dry"] = { Source = "fire_dry", EventTable = { { s = "arc9_eft_shared/weap_trigger_hammer.wav", t = 0 } } },
+    ["fire_empty"] = { Source = "fire_last", NoIdle = true, EventTable = { { s = "arc9_eft_shared/weap_trigger_hammer.wav", t = 0 } } },
+    ["fire_dry_empty"] = { Source = "fire_dry_empty", EventTable = { { s = "arc9_eft_shared/weap_trigger_hammer.wav", t = 0 } } },
 
     ["reload_0"] = {
         Source = "reload0",

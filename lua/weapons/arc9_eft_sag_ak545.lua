@@ -251,18 +251,18 @@ end
 
 ------------------------- |||           Sounds            ||| -------------------------
 
-local path = "weapons/darsu_eft/ak/"
+local path = ")weapons/darsu_eft/ak/"
 
-SWEP.ShootSound = path .. "fire_new/aksag_outdoor_close.ogg"
-SWEP.ShootSoundSilenced = path .. "fire_new/aksag_outdoor_silenced_close.ogg"
+SWEP.ShootSound = path .. "fire_new/aksag_outdoor_close.wav"
+SWEP.ShootSoundSilenced = path .. "fire_new/aksag_outdoor_silenced_close.wav"
 
-SWEP.ShootSoundIndoor = path .. "fire_new/aksag_indoor_close.ogg"
-SWEP.ShootSoundSilencedIndoor = path .. "fire_new/aksag_indoor_silenced_close.ogg"
+SWEP.ShootSoundIndoor = path .. "fire_new/aksag_indoor_close.wav"
+SWEP.ShootSoundSilencedIndoor = path .. "fire_new/aksag_indoor_silenced_close.wav"
 
-SWEP.DistantShootSound = path .. "fire_new/aksag_outdoor_distant.ogg"
-SWEP.DistantShootSoundSilenced = path .. "fire_new/aksag_outdoor_silenced_distant.ogg"
-SWEP.DistantShootSoundIndoor = path .. "fire_new/aksag_indoor_distant.ogg"
-SWEP.DistantShootSoundSilencedIndoor = path .. "fire_new/aksag_indoor_silenced_distant.ogg"
+SWEP.DistantShootSound = path .. "fire_new/aksag_outdoor_distant.wav"
+SWEP.DistantShootSoundSilenced = path .. "fire_new/aksag_outdoor_silenced_distant.wav"
+SWEP.DistantShootSoundIndoor = path .. "fire_new/aksag_indoor_distant.wav"
+SWEP.DistantShootSoundSilencedIndoor = path .. "fire_new/aksag_indoor_silenced_distant.wav"
 
 SWEP.HookP_TranslateSound = function(self, data) -- sag bolt
     if data.sound == path .. "ak74_slider_down.ogg" then

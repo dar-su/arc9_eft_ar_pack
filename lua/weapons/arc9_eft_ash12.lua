@@ -197,24 +197,24 @@ end
 
 ------------------------- |||           Sounds            ||| -------------------------
 
-local path = "weapons/darsu_eft/ash12/"
+local path = ")weapons/darsu_eft/ash12/"
 
-SWEP.ShootSound = { path .. "fire/ash12_outdoor_close_1.ogg", path .. "fire/ash12_outdoor_close_2.ogg", path .. "fire/ash12_outdoor_close_3.ogg" }
-SWEP.LayerSound = path .. "fire/ash12_outdoor_close_loop_tail.ogg"
+SWEP.ShootSound = { path .. "fire/ash12_outdoor_close_1.wav", path .. "fire/ash12_outdoor_close_2.wav", path .. "fire/ash12_outdoor_close_3.wav" }
+SWEP.LayerSound = path .. "fire/ash12_outdoor_close_loop_tail.wav"
 
-SWEP.ShootSoundSilenced = { path .. "fire/ash12_outdoor_close_silenced_1.ogg", path .. "fire/ash12_outdoor_close_silenced_2.ogg", path .. "fire/ash12_outdoor_close_silenced_3.ogg" }
-SWEP.LayerSoundSilenced = path .. "fire/ash12_outdoor_close_loop_silenced_tail.ogg"
+SWEP.ShootSoundSilenced = { path .. "fire/ash12_outdoor_close_silenced_1.wav", path .. "fire/ash12_outdoor_close_silenced_2.wav", path .. "fire/ash12_outdoor_close_silenced_3.wav" }
+SWEP.LayerSoundSilenced = path .. "fire/ash12_outdoor_close_loop_silenced_tail.wav"
 
-SWEP.ShootSoundIndoor = { path .. "fire/ash12_indoor_close_1.ogg", path .. "fire/ash12_indoor_close_2.ogg", path .. "fire/ash12_indoor_close_3.ogg" }
-SWEP.LayerSoundIndoor = path .. "fire/ash12_indoor_close_loop_tail.ogg"
+SWEP.ShootSoundIndoor = { path .. "fire/ash12_indoor_close_1.wav", path .. "fire/ash12_indoor_close_2.wav", path .. "fire/ash12_indoor_close_3.wav" }
+SWEP.LayerSoundIndoor = path .. "fire/ash12_indoor_close_loop_tail.wav"
 
-SWEP.ShootSoundSilencedIndoor = { path .. "fire/ash12_indoor_close_silenced_1.ogg", path .. "fire/ash12_indoor_close_silenced_2.ogg", path .. "fire/ash12_indoor_close_silenced_3.ogg" }
-SWEP.LayerSoundSilencedIndoor = path .. "fire/ash12_indoor_close_loop_silenced_tail.ogg"
+SWEP.ShootSoundSilencedIndoor = { path .. "fire/ash12_indoor_close_silenced_1.wav", path .. "fire/ash12_indoor_close_silenced_2.wav", path .. "fire/ash12_indoor_close_silenced_3.wav" }
+SWEP.LayerSoundSilencedIndoor = path .. "fire/ash12_indoor_close_loop_silenced_tail.wav"
 
-SWEP.DistantShootSound = path .. "fire/ash12_outdoor_distant_1.ogg"
-SWEP.DistantShootSoundSilenced = path .. "fire/ash12_outdoor_distant_silenced_1.ogg"
-SWEP.DistantShootSoundIndoor = path .. "fire/ash12_indoor_distant_1.ogg"
-SWEP.DistantShootSoundSilencedIndoor = path .. "fire/ash12_indoor_distant_silenced_1.ogg"
+SWEP.DistantShootSound = path .. "fire/ash12_outdoor_distant_1.wav"
+SWEP.DistantShootSoundSilenced = path .. "fire/ash12_outdoor_distant_silenced_1.wav"
+SWEP.DistantShootSoundIndoor = path .. "fire/ash12_indoor_distant_1.wav"
+SWEP.DistantShootSoundSilencedIndoor = path .. "fire/ash12_indoor_distant_silenced_1.wav"
 
 ------------------------- |||           Dropped magazines            ||| -------------------------
 
@@ -441,7 +441,7 @@ SWEP.Animations = {
 
 
     ["fire"] = { Source = "fire", NoIdle = true, IKTimeLine = {{ t = 0, lhik = 1 }} , EventTable = { 
-        { s = path .. "ash12_trigger_hammer.ogg", t = 0 },
+        { s = path .. "ash12_trigger_hammer.wav", t = 0 },
         { s = path .. "ash12_bolt_handle_bounce.ogg", t = 0.02 },
      } },
     ["dryfire"] = { Source = "fire_dry", IKTimeLine = {{ t = 0, lhik = 1 }} },

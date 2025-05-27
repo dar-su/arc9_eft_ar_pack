@@ -179,24 +179,24 @@ SWEP.ShellSounds = ARC9EFT.Shells556
 
 ------------------------- |||           Sounds            ||| -------------------------
 
-local path = "weapons/darsu_eft/val/"
+local path = ")weapons/darsu_eft/val/"
 
-SWEP.ShootSound = { path .. "fire_new/vss_loop_close1.ogg", path .. "fire_new/vss_loop_close2.ogg", path .. "fire_new/vss_loop_close3.ogg", path .. "fire_new/vss_loop_close4.ogg" }
-SWEP.LayerSound = path .. "fire_new/vss_loop_closetail.ogg"
+SWEP.ShootSound = { path .. "fire_new/vss_loop_close1.wav", path .. "fire_new/vss_loop_close2.wav", path .. "fire_new/vss_loop_close3.wav", path .. "fire_new/vss_loop_close4.wav" }
+SWEP.LayerSound = path .. "fire_new/vss_loop_closetail.wav"
 
-SWEP.ShootSoundSilenced = { path .. "fire_new/vss_loop_close1.ogg", path .. "fire_new/vss_loop_close2.ogg", path .. "fire_new/vss_loop_close3.ogg", path .. "fire_new/vss_loop_close4.ogg" }
-SWEP.LayerSoundSilenced = path .. "fire_new/vss_loop_closetail.ogg"
+SWEP.ShootSoundSilenced = { path .. "fire_new/vss_loop_close1.wav", path .. "fire_new/vss_loop_close2.wav", path .. "fire_new/vss_loop_close3.wav", path .. "fire_new/vss_loop_close4.wav" }
+SWEP.LayerSoundSilenced = path .. "fire_new/vss_loop_closetail.wav"
 
-SWEP.ShootSoundIndoor = { path .. "fire_new/vss_loop_indoor_close1.ogg", path .. "fire_new/vss_loop_indoor_close2.ogg", path .. "fire_new/vss_loop_indoor_close4.ogg" }
-SWEP.LayerSoundIndoor = path .. "fire_new/vss_loop_indoor_close_tail.ogg"
+SWEP.ShootSoundIndoor = { path .. "fire_new/vss_loop_indoor_close1.wav", path .. "fire_new/vss_loop_indoor_close2.wav", path .. "fire_new/vss_loop_indoor_close4.wav" }
+SWEP.LayerSoundIndoor = path .. "fire_new/vss_loop_indoor_close_tail.wav"
 
-SWEP.ShootSoundSilencedIndoor = { path .. "fire_new/vss_loop_indoor_close1.ogg", path .. "fire_new/vss_loop_indoor_close2.ogg", path .. "fire_new/vss_loop_indoor_close4.ogg" }
-SWEP.LayerSoundSilencedIndoor = path .. "fire_new/vss_loop_indoor_close_tail.ogg"
+SWEP.ShootSoundSilencedIndoor = { path .. "fire_new/vss_loop_indoor_close1.wav", path .. "fire_new/vss_loop_indoor_close2.wav", path .. "fire_new/vss_loop_indoor_close4.wav" }
+SWEP.LayerSoundSilencedIndoor = path .. "fire_new/vss_loop_indoor_close_tail.wav"
 
-SWEP.DistantShootSound = { path .. "fire_new/vss_loop_distant1.ogg", path .. "fire_new/vss_loop_distant2.ogg" }
-SWEP.DistantShootSoundSilenced = { path .. "fire_new/vss_loop_distant1.ogg", path .. "fire_new/vss_loop_distant2.ogg" }
-SWEP.DistantShootSoundIndoor = { path .. "fire_new/vss_loop_indoor_distant1.ogg", path .. "fire_new/vss_loop_indoor_distant2.ogg" }
-SWEP.DistantShootSoundSilencedIndoor = { path .. "fire_new/vss_loop_indoor_distant1.ogg", path .. "fire_new/vss_loop_indoor_distant2.ogg" }
+SWEP.DistantShootSound = { path .. "fire_new/vss_loop_distant1.wav", path .. "fire_new/vss_loop_distant2.wav" }
+SWEP.DistantShootSoundSilenced = { path .. "fire_new/vss_loop_distant1.wav", path .. "fire_new/vss_loop_distant2.wav" }
+SWEP.DistantShootSoundIndoor = { path .. "fire_new/vss_loop_indoor_distant1.wav", path .. "fire_new/vss_loop_indoor_distant2.wav" }
+SWEP.DistantShootSoundSilencedIndoor = { path .. "fire_new/vss_loop_indoor_distant1.wav", path .. "fire_new/vss_loop_indoor_distant2.wav" }
 
 ------------------------- |||           Dropped magazines            ||| -------------------------
 
@@ -303,7 +303,7 @@ local randspin = {"arc9_eft_shared/weapon_generic_rifle_spin1.ogg","arc9_eft_sha
 local pouchin = {"arc9_eft_shared/generic_mag_pouch_in1.ogg","arc9_eft_shared/generic_mag_pouch_in2.ogg","arc9_eft_shared/generic_mag_pouch_in3.ogg","arc9_eft_shared/generic_mag_pouch_in4.ogg","arc9_eft_shared/generic_mag_pouch_in5.ogg","arc9_eft_shared/generic_mag_pouch_in6.ogg","arc9_eft_shared/generic_mag_pouch_in7.ogg"}
 local pouchout = {"arc9_eft_shared/generic_mag_pouch_out1.ogg","arc9_eft_shared/generic_mag_pouch_out2.ogg","arc9_eft_shared/generic_mag_pouch_out3.ogg","arc9_eft_shared/generic_mag_pouch_out4.ogg","arc9_eft_shared/generic_mag_pouch_out5.ogg","arc9_eft_shared/generic_mag_pouch_out6.ogg","arc9_eft_shared/generic_mag_pouch_out7.ogg"}
 
-local pathvsk = "weapons/darsu_eft/vsk/"
+local pathvsk = ")weapons/darsu_eft/vsk/"
 
 local rst_magcheck = {
     -- { s = randspin, t = 0.1 },
@@ -470,8 +470,8 @@ SWEP.Animations = {
     } },
 
 
-    ["fire"] = { Source = "fire", NoIdle = true, EventTable = { { s = "arc9_eft_shared/weap_trigger_hammer.ogg", t = 0 } } },
-    ["fire_dry"] = { Source = "fire_dry", EventTable = { { s = "arc9_eft_shared/weap_trigger_hammer.ogg", t = 0 } } },
+    ["fire"] = { Source = "fire", NoIdle = true, EventTable = { { s = "arc9_eft_shared/weap_trigger_hammer.wav", t = 0 } } },
+    ["fire_dry"] = { Source = "fire_dry", EventTable = { { s = "arc9_eft_shared/weap_trigger_hammer.wav", t = 0 } } },
     
     ["reload_0"] = {
         Source = "reload0",
