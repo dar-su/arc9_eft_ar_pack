@@ -512,7 +512,7 @@ ATT.PhysBulletMuzzleVelocityMult = 1.005
 
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_suppressor",
+        PrintName = ARC9:GetPhrase("eft_cat_suppressor"),
         Category = "eft_ak_wafflemaker",
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
