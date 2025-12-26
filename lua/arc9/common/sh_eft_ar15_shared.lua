@@ -13,6 +13,7 @@ ARC9EFT.AR15_AnimsHook = function(swep, anim)
     elseif elements["drum"] then ending = "5"
     elseif elements["10rnd"] then ending = "6"
     elseif elements["100rndballs"] then ending = "7"
+    elseif elements["eft_mag_ar15_stanag_20"] then ending = "8"
     else nomag = true end
 
     if anim == "inspect" or anim == "inspect_empty" then
@@ -702,14 +703,14 @@ ARC9EFT.AR15_Anims = {
     },
 
     ["inspect1"] = {
-        Source = "look0",
+        Source = "look_0",
         MinProgress = 0.85,
         FireASAP = true,
         IKTimeLine = rik_look,
         EventTable = rst_look
     },
     ["inspect_empty1"] = {
-        Source = "look0_empty",
+        Source = "look_0_empty",
         MinProgress = 0.85,
         FireASAP = true,
         IKTimeLine = rik_look,

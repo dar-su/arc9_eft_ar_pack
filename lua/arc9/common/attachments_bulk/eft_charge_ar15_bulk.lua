@@ -204,3 +204,60 @@ ATT.CustomPros = { Ergonomics = "+2" }
 ATT.Category = {"eft_ar15_charge_lever"}
 
 ARC9.LoadAttachment(ATT, "eft_charge_ar15_badlever")
+
+///////////////////////////////////////      eft_charge_ar15_raptor_sd
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Radian Weapons Raptor-SD charging handle"
+ATT.CompactName = "Raptor-SD"
+ATT.Icon = Material("entities/eft_ar15_attachments/6895bf08e2d16810ba0bf43e.png", "mips smooth")
+ATT.Description = "An ambidextrous charging handle for the AR-15 platform. Manufactured by Radian Weapons."
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.HasBolt = true
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/charge_ar15_radian_raptor_sd_ambidextrous_charging_handle.mdl"
+ATT.EFTErgoAdd = 3.5
+ATT.CustomPros = { Ergonomics = "+3.5" }
+ATT.Category = {"eft_ar15_charge"}
+
+ARC9.LoadAttachment(ATT, "eft_charge_ar15_raptor_sd")
+
+///////////////////////////////////////      eft_charge_ar15_early
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Colt early type charging handle "
+ATT.CompactName = "AR-15 ET"
+ATT.Icon = Material("entities/eft_ar15_attachments/68a63a9522b1e0bd360afe5f.png", "mips smooth")
+ATT.Description = "An early type charging handle for AR-15 and compatible systems, manufactured by Colt."
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.HasBolt = true
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/charge_ar15_colt_charging_handle_early.mdl"
+
+ATT.Category = {"eft_ar15_charge"}
+
+ARC9.LoadAttachment(ATT, "eft_charge_ar15_early")
+
+///////////////////////////////////////      eft_charge_ar15_m84
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Precision Reflex M84 Gas Buster Charging Handle"
+ATT.CompactName = "M84 GB"
+ATT.Icon = Material("entities/eft_ar15_attachments/68caabebc71156cf470bc186.png", "mips smooth")
+ATT.Description = "The M84 Gas Buster charging handle for use with AR-15 platform rifles, equipped with the Military Big Latch. Manufactured by Precision Reflex."
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.HasBolt = true
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/charge_ar15_precision_reflex_m84_gas_buster_w_military_latch.mdl"
+ATT.EFTErgoAdd = 2
+ATT.CustomPros = { Ergonomics = "+2" }
+
+ATT.Category = {"eft_ar15_charge"}
+
+ARC9.LoadAttachment(ATT, "eft_charge_ar15_m84")

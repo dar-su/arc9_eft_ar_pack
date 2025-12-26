@@ -186,6 +186,74 @@ ATT.Attachments = {
 ARC9.LoadAttachment(ATT, "eft_mcx_barrel229")
 
 
+///////////////////////////////////////      eft_mcx_barrel406
+
+ATT = {}
+
+ATT.PrintName = "MCX .300 BLK 16 inch barrel"
+ATT.CompactName = "MCX 16\""
+ATT.Icon = Material("entities/eft_mcx_attachments/681245a31eb182c02f0d7f09.png", "mips smooth")
+ATT.Description = "A 16 inch (406mm) barrel for MCX-based weapons, chambered in .300 BLK."
+
+ATT.HasBarrel = true
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_mcx_barrel"}
+
+ATT.EFTErgoAdd = -10
+ATT.CustomCons = { Ergonomics = "-10" }
+ATT.RecoilMult = 0.92
+ATT.VisualRecoilMult = 0.92
+ATT.PhysBulletMuzzleVelocityMult = 0.9309999999999999
+
+ATT.BarrelLengthAdd = 4
+ATT.Spread = 1.99 * ARC9.MOAToAcc
+ATT.HeatCapacityMult = 0.98
+ATT.ActivateElements = {"barrel_406mm"}
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/barrel_mcx_406mm_762x35.mdl"
+ATT.ModelOffset = Vector(-0.48, 0, 0)
+ATT.MuzzleDevice = true
+ATT.MuzzleDevice_Priority = 2
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_gasblock"),
+        Category = "eft_mcx_gasblock2",
+        Pos = Vector(-6.3, 0, 0),
+        Ang = Angle(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
+        Category = "eft_mcx_muzzle",
+        -- Category = "eft_ar15_muzzle",
+        Pos = Vector(-15.55, 0, 0),
+        Ang = Angle(0, 0, 0),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_mcx_barrel406")
+
+
+///////////////////////////////////////      eft_mcx_gbcalx
+
+ATT = {}
+
+ATT.PrintName = "MCX Cal-X Mid-Piston gas block"
+ATT.CompactName = "MCX mid"
+ATT.Icon = Material("entities/eft_mcx_attachments/68124640c5fd00ec0a01a237.png", "mips smooth")
+ATT.Description = "A gas block with a medium length piston designed for the MCX assault rifles, manufactured by SIG Sauer."
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.HasGas = true
+
+ATT.Category = {"eft_mcx_gasblock2"}
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/gas_block_mcx_sig_mcx_mid_piston.mdl"
+
+ATT.RecoilMult = 0.96
+ATT.VisualRecoilMult = 0.96
+
+ARC9.LoadAttachment(ATT, "eft_mcx_gbcalx")
+
 ///////////////////////////////////////      eft_mcx_gb
 
 ATT = {}
@@ -323,6 +391,259 @@ ATT.Attachments = {
 
 ATT.AdvancedCamoSupport = true
 ARC9.LoadAttachment(ATT, "eft_mcx_hg_8")
+
+
+///////////////////////////////////////      eft_mcx_hg_lancer_105
+
+ATT = {}
+
+ATT.PrintName = "MCX Lancer Carbon Fiber M-LOK 10.5 inch handguard"
+ATT.CompactName = "CF 10.5\""
+ATT.Icon = Material("entities/eft_mcx_attachments/68120dcbb90552f01004e5ca.png", "mips smooth")
+ATT.Description = "A 10.5 inch handguard for the MCX assault rifle, equipped with an M-LOK interface for installation of additional tactical devices and accessories. Manufactured by Lancer Systems."
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.HasHG = true
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_mcx_lancer_oem_gen1_105_inch_mlok.mdl"
+ATT.LHIK = true 
+ATT.EFTErgoAdd = 8
+ATT.CustomPros = { Ergonomics = "+8" }
+ATT.RecoilMult = 0.99
+ATT.VisualRecoilMult = 0.99
+ATT.Category = {"eft_mcx_hguard"}
+
+-- ATT.ExcludeElements = {"barrel_260mm", "eft_silencer_r43_556","eft_gas_ar15_rg", "eft_gas_ar15_m4fs"}
+
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_frontsight"),
+        Category = {"eft_frontsight"},
+        Pos = Vector(0, 7.9, -2.71+0.192+0.02),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExtraSightDistance = 8
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_l"),
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti", "eft_mount_mlokoffset"},
+        Pos = Vector(-1.15, 8.6, -0.84),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_r"),
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti", "eft_mount_mlokoffset"},
+        Pos = Vector(1.15, 8.6, -0.84),
+        Ang = Angle(180, 90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_b"),
+        Category = {"eft_mount_mlok41", "eft_foregrip_mlok"},
+        Pos = Vector(0, 4.5, 0.28),
+        Ang = Angle(0, -90, -90),   
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_b"),
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti", "eft_mount_mlokoffset"},
+        Pos = Vector(0, 9.3, 0.28),
+        Ang = Angle(0, -90, -90),   
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_mcx_hg_lancer_105")
+
+///////////////////////////////////////      eft_mcx_hg_lancer_12
+
+ATT = {}
+
+ATT.PrintName = "MCX Lancer Carbon Fiber M-LOK 12 inch handguard"
+ATT.CompactName = "CF 12\""
+ATT.Icon = Material("entities/eft_mcx_attachments/6812180dc20f5c52bc04d6cc.png", "mips smooth")
+ATT.Description = "A 12 inch handguard for the MCX assault rifle, equipped with an M-LOK interface for installation of additional tactical devices and accessories. Manufactured by Lancer Systems."
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.HasHG = true
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_mcx_lancer_oem_gen1_12_inch_mlok.mdl"
+ATT.LHIK = true 
+ATT.EFTErgoAdd = 10
+ATT.CustomPros = { Ergonomics = "+10" }
+ATT.RecoilMult = 0.985
+ATT.VisualRecoilMult = 0.985
+ATT.Category = {"eft_mcx_hguard"}
+
+-- ATT.ExcludeElements = {"barrel_260mm", "eft_silencer_r43_556","eft_gas_ar15_rg", "eft_gas_ar15_m4fs"}
+
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_frontsight"),
+        Category = {"eft_frontsight"},
+        Pos = Vector(0, 7.9, -2.71+0.192+0.02),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExtraSightDistance = 8
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_l"),
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti", "eft_mount_mlokoffset"},
+        Pos = Vector(-1.15, 8.6 + 1.6, -0.84),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_r"),
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti", "eft_mount_mlokoffset"},
+        Pos = Vector(1.15, 8.6 + 1.6, -0.84),
+        Ang = Angle(180, 90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_b"),
+        Category = {"eft_mount_mlok41", "eft_foregrip_mlok"},
+        Pos = Vector(0, 4.5, 0.28),
+        Ang = Angle(0, -90, -90),   
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_b"),
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti", "eft_mount_mlokoffset"},
+        Pos = Vector(0, 9.3 + 1.6, 0.28),
+        Ang = Angle(0, -90, -90),   
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_mcx_hg_lancer_12")
+
+///////////////////////////////////////      eft_mcx_hg_lancer_18
+
+ATT = {}
+
+ATT.PrintName = "MCX Lancer Carbon Fiber M-LOK 18 inch handguard"
+ATT.CompactName = "CF 18\""
+ATT.Icon = Material("entities/eft_mcx_attachments/681236df5cbf0518e00557a0.png", "mips smooth")
+ATT.Description = "An 18 inch handguard for the MCX assault rifle, equipped with an M-LOK interface for installation of additional tactical devices and accessories. Manufactured by Lancer Systems."
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.HasHG = true
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_mcx_lancer_oem_gen1_18_inch_mlok.mdl"
+ATT.LHIK = true 
+ATT.EFTErgoAdd = 6
+ATT.CustomPros = { Ergonomics = "+6" }
+ATT.RecoilMult = 0.98
+ATT.VisualRecoilMult = 0.98
+ATT.Category = {"eft_mcx_hguard"}
+
+-- ATT.ExcludeElements = {"barrel_260mm", "eft_silencer_r43_556","eft_gas_ar15_rg", "eft_gas_ar15_m4fs"}
+
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_frontsight"),
+        Category = {"eft_frontsight"},
+        Pos = Vector(0, 7.9, -2.71+0.192+0.02),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExtraSightDistance = 8
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_l"),
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti", "eft_mount_mlokoffset"},
+        Pos = Vector(-1.15, 8.6 + 8, -0.84),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_r"),
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti", "eft_mount_mlokoffset"},
+        Pos = Vector(1.15, 8.6 + 8, -0.84),
+        Ang = Angle(180, 90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_b"),
+        Category = {"eft_mount_mlok41", "eft_foregrip_mlok"},
+        Pos = Vector(0, 4.5, 0.28),
+        Ang = Angle(0, -90, -90),   
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_b"),
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti", "eft_mount_mlokoffset"},
+        Pos = Vector(0, 9.3 + 8, 0.28),
+        Ang = Angle(0, -90, -90),   
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_mcx_hg_lancer_18")
+
+///////////////////////////////////////      eft_mcx_hg_gen1
+
+ATT = {}
+
+ATT.PrintName = "MCX GEN1 10.5 inch handguard"
+ATT.CompactName = "MCX 10.5\""
+ATT.Icon = Material("entities/eft_mcx_attachments/6811f4854922782caa087440.png", "mips smooth")
+ATT.Description = "A first-gen 10.5 inch handguard with a proprietary rail attachment system for the MCX assault rifle. Part of the LVAW (Low Visibility Assault Weapon) configuration used by US JSOC units. Manufactured by SIG Sauer."
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.HasHG = true
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_mcx_sig_mcx_gen1_105_inch.mdl"
+ATT.LHIK = true 
+ATT.EFTErgoAdd = 8
+ATT.CustomPros = { Ergonomics = "+8" }
+ATT.Category = {"eft_mcx_hguard"}
+
+-- ATT.ExcludeElements = {"barrel_260mm", "eft_silencer_r43_556","eft_gas_ar15_rg", "eft_gas_ar15_m4fs"}
+
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_frontsight"),
+        Category = {"eft_frontsight"},
+        Pos = Vector(0, 6.9, -2.71+0.192+0.02),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExtraSightDistance = 8
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_l"),
+        Category = {"eft_mount_mpx2"},
+        Pos = Vector(-1.17, 8.8, -0.9),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_r"),
+        Category = {"eft_mount_mpx2"},
+        Pos = Vector(1.17, 8.8, -0.9),
+        Ang = Angle(180, 90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_b"),
+        Category = {"eft_mount_mpx4"},
+        Pos = Vector(0, 4.8, 0.28),
+        Ang = Angle(0, -90, -90),   
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_b"),
+        Category = {"eft_mount_mpx2"},
+        Pos = Vector(0, 9.0, 0.28),
+        Ang = Angle(0, -90, -90),   
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_mcx_hg_gen1")
+
+
+
+
+
+
 
 
 

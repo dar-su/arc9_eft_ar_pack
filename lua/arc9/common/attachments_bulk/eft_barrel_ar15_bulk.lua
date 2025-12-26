@@ -1,5 +1,10 @@
 local ATT = {}
 
+-- barrel_10i
+-- barrel_145i barrel_137i
+-- barrel_16i
+-- barrel_18i
+-- barrel_20i
 
 ///////////////////////////////////////      eft_barrel_ar15_260mm
 
@@ -9,7 +14,7 @@ ATT.PrintName = "AR-15 5.56x45 260mm barrel"
 ATT.CompactName = "AR-15 260mm"
 ATT.Icon = Material("entities/eft_ar15_attachments/barrel/ar15_556x45_260mm_barrel.png", "mips smooth")
 ATT.Description = [[A 260mm barrel for AR-15 based weapons for 5.56x45 NATO ammo. Corresponds with standard service M4 CQBR barrel.]]
-ATT.SortOrder = 0
+ATT.SortOrder = 260
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasBarrel = true
 
@@ -28,7 +33,9 @@ ATT.HeatCapacityMult = 1.06
 ATT.PhysBulletMuzzleVelocityMult = 0.84
 ATT.Spread = 2.41 * ARC9.MOAToAcc
 
-ATT.ActivateElements = {"barrel_260mm"}
+ATT.ActivateElements = {"barrel_260mm", "barrel_10i"}
+
+ATT.ExcludeElements = {"eft_hg_ar15_stm12", "eft_hg_ar15_stm15", "eft_hg_ar15_adar", "eft_hg_ar15_ax15", "eft_hg_ar15_mk10", "eft_hg_ar15_ddrisii1225", "eft_hg_ar15_mk16", "eft_hg_ar15_kacurx31", "eft_hg_ar15_ionlite", "eft_hg_ar15_moesl", "eft_hg_ar15_saiqd", "eft_hg_ar15_lvoac_b", "eft_hg_ar15_lvoac_f", "eft_hg_ar15_lvoac_g", "eft_hg_ar15_lvoas_b", "eft_hg_ar15_lvoas_f", "eft_hg_ar15_lvoas_g", "eft_hg_ar15_ax15_158", "eft_hg_ar15_radian_14", "eft_hg_ar15_cgnl_105", "eft_hg_ar15_cgnl_14", "eft_hg_ar15_kac_ff", "eft_hg_ar15_precision_round", "eft_hg_ar15_precision_round_fde", "eft_hg_ar15_precision", "eft_hg_ar15_moeslmid", "eft_hg_ar15_wing", "eft_hg_ar15_m16a1", "eft_hg_ar15_skinny", "eft_hg_ar15_kac_m5", "eft_hg_ar15_gridlok_15", "eft_hg_ar15_gridlok_17", "eft_ar10_hg_rsass"}
 
 ATT.Attachments = {
     {
@@ -57,7 +64,7 @@ ATT.PrintName = "AR-15 5.56x45 370mm barrel"
 ATT.CompactName = "AR-15 370mm"
 ATT.Icon = Material("entities/eft_ar15_attachments/barrel/ar15_556x45_370mm_barrel.png", "mips smooth")
 ATT.Description = [[A 370mm barrel for AR-15 based weapons for 5.56x45 NATO ammo. Corresponds with standard service M4A1 barrel.]]
-ATT.SortOrder = 0
+ATT.SortOrder = 370
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasBarrel = true
 
@@ -76,7 +83,9 @@ ATT.Spread = 1.82 * ARC9.MOAToAcc
 
 ATT.Category = {"eft_m4a1_barrel"}
 
-ATT.ActivateElements = {"barrel_370mm"}
+ATT.ActivateElements = {"barrel_370mm", "barrel_145i"}
+
+ATT.ExcludeElements = {"eft_hg_ar15_stm15", "eft_hg_ar15_moeslmid", "eft_hg_ar15_m16a1", "eft_hg_ar15_adar", "eft_hg_ar15_ionlite", "eft_hg_ar15_moesl", "eft_hg_ar15_saiqd10", "eft_hg_ar15_ax15_158", "eft_hg_ar15_radian_14", "eft_hg_ar15_gridlok_15", "eft_hg_ar15_gridlok_17", "eft_ar10_hg_rsass"}
 
 ATT.Attachments = {
     {
@@ -107,7 +116,7 @@ ATT.PrintName = "AR-15 5.56x45 18 inch barrel"
 ATT.CompactName = "AR-15 18\""
 ATT.Icon = Material("entities/eft_ar15_attachments/barrel/ar15_556x45_18_inch_barrel.png", "mips smooth")
 ATT.Description = [[A barrel for AR-15 based weapons for 5.56x45 NATO ammo, 18 inch long.]]
-ATT.SortOrder = 0
+ATT.SortOrder = 457
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasBarrel = true
 
@@ -126,14 +135,14 @@ ATT.Spread = 1.41 * ARC9.MOAToAcc
 
 ATT.Category = {"eft_m4a1_barrel"}
 
-ATT.ActivateElements = {"barrel_18i"}
+ATT.ActivateElements = {"barrel_457mm", "barrel_18i"}
 
-ATT.ExcludeElements = {"eft_hg_ar15_adar", "eft_hg_ar15_m4", "eft_hg_ar15_kacris", "eft_hg_ar15_moesl", "eft_hg_ar15_moeslmid", "eft_hg_ar15_viper", "eft_hg_ar15_viper_f"}
+ATT.ExcludeElements = {"eft_hg_ar15_adar", "eft_hg_ar15_m4", "eft_hg_ar15_kacris", "eft_hg_ar15_moesl", "eft_hg_ar15_moeslmid", "eft_hg_ar15_viper", "eft_hg_ar15_viper_f", "eft_hg_ar15_saiqd10"}
 
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_gasblock"),
-        Category = "eft_ar15_gasblock",
+        Category = {"eft_ar15_gasblock", "eft_ar15_gasblock_mk12"},
         ExcludeElements = {"nostdgasblockpls"},
         Pos = Vector(-11.2, 0, 0.25),
         Ang = Angle(0, 0, 0),
@@ -156,7 +165,7 @@ ATT.PrintName = "AR-15 5.56x45 20 inch barrel"
 ATT.CompactName = "AR-15 20\""
 ATT.Icon = Material("entities/eft_ar15_attachments/barrel/ar15_556x45_20_inch_barrel.png", "mips smooth")
 ATT.Description = [[A barrel for AR-15 based weapons for 5.56x45 NATO ammo, 20 inches long.]]
-ATT.SortOrder = 0
+ATT.SortOrder = 508
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasBarrel = true
 
@@ -175,9 +184,9 @@ ATT.Spread = 1.1 * ARC9.MOAToAcc
 
 ATT.Category = {"eft_m4a1_barrel"}
 
-ATT.ActivateElements = {"barrel_20i"}
+ATT.ActivateElements = {"barrel_508mm", "barrel_20i"}
 
-ATT.ExcludeElements = {"eft_hg_ar15_adar", "eft_hg_ar15_m4", "eft_hg_ar15_kacris", "eft_hg_ar15_moesl", "eft_hg_ar15_moeslmid", "eft_hg_ar15_viper", "eft_hg_ar15_viper_f"}
+ATT.ExcludeElements = {"eft_hg_ar15_adar", "eft_hg_ar15_m4", "eft_hg_ar15_kacris", "eft_hg_ar15_moesl", "eft_hg_ar15_moeslmid", "eft_hg_ar15_viper", "eft_hg_ar15_viper_f", "eft_hg_ar15_saiqd10"}
 
 ATT.Attachments = {
     {
@@ -205,7 +214,7 @@ ATT.PrintName = "AR-15 5.56x45 Molot Arms 406mm barrel"
 ATT.CompactName = "406mm AR-15"
 ATT.Icon = Material("entities/eft_ar15_attachments/barrel/ar15_556x45_molot_arms_406mm_barrel.png", "mips smooth")
 ATT.Description = [[The Molot Arms 406mm barrel for AR-15 based weapons for 5.56x45 NATO ammo. A standard-issue barrel for ADAR 2-15.]]
-ATT.SortOrder = 0
+ATT.SortOrder = 406
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasBarrel = true
 
@@ -224,9 +233,9 @@ ATT.Spread = 2.2 * ARC9.MOAToAcc
 
 ATT.Category = {"eft_m4a1_barrel"}
 
-ATT.ActivateElements = {"barrel_406mm"}
+ATT.ActivateElements = {"barrel_406mm", "barrel_16i"}
 
-ATT.ExcludeElements = {"eft_hg_ar15_m4", "eft_hg_ar15_kacris"}
+ATT.ExcludeElements = {"eft_hg_ar15_m4", "eft_hg_ar15_kacris", "eft_hg_ar15_viper", "eft_hg_ar15_ax15_158", "eft_hg_ar15_gridlok_17"}
 
 
 ATT.Attachments = {
@@ -256,7 +265,7 @@ ATT.PrintName = "AR-15 Hanson Carbine 5.56x45 16 inch barrel"
 ATT.CompactName = "Hanson 16\""
 ATT.Icon = Material("entities/eft_ar15_attachments/barrel/hanson16.png", "mips smooth")
 ATT.Description = [[The Hanson Carbine barrel for AR-15 based weapons for 5.56x45 NATO ammo, 16 inch long.]]
-ATT.SortOrder = 0
+ATT.SortOrder = 406
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasBarrel = true
 
@@ -275,15 +284,15 @@ ATT.Spread = 1.03 * ARC9.MOAToAcc
 
 ATT.Category = {"eft_m4a1_barrel"}
 
-ATT.ActivateElements = {"barrel_406mm"}
+ATT.ActivateElements = {"barrel_406mm", "barrel_16i"}
 
-ATT.ExcludeElements = {"eft_hg_ar15_m4", "eft_hg_ar15_kacris"}
+ATT.ExcludeElements = {"eft_hg_ar15_m4", "eft_hg_ar15_kacris", "eft_hg_ar15_ionlite", "eft_hg_ar15_ax15_158", "eft_hg_ar15_viper"}
 
 
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_gasblock"),
-        Category = "eft_ar15_gasblock",
+        Category = "eft_ar15_gasblock_thin",
         ExcludeElements = {"nostdgasblockpls"},
         Pos = Vector(-9.65, 0, 0.25),
         Ang = Angle(0, 0, 0),
@@ -307,7 +316,7 @@ ATT.PrintName = "AR-15 Hanson Carbine 5.56x45 13.7 inch barrel"
 ATT.CompactName = "Hanson 13.7\""
 ATT.Icon = Material("entities/eft_ar15_attachments/barrel/hanson137.png", "mips smooth")
 ATT.Description = [[The Hanson Carbine barrel for AR-15 based weapons for 5.56x45 NATO ammo, 13.7 inch long.]]
-ATT.SortOrder = 0
+ATT.SortOrder = 348
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasBarrel = true
 
@@ -326,7 +335,9 @@ ATT.HeatCapacityMult = 1.03
 ATT.PhysBulletMuzzleVelocityMult = 0.93
 ATT.Spread = 1.55 * ARC9.MOAToAcc
 
-ATT.ActivateElements = {"barrel_260mm"}
+ATT.ActivateElements = {"barrel_370mm", "barrel_145i", "barrel_137i"}
+
+ATT.ExcludeElements = {"eft_hg_ar15_stm15", "eft_hg_ar15_moeslmid", "eft_hg_ar15_m16a1", "eft_hg_ar15_skinny", "eft_hg_ar15_adar", "eft_hg_ar15_ionlite", "eft_hg_ar15_moesl", "eft_hg_ar15_saiqd10", "eft_hg_ar15_ax15_158", "eft_hg_ar15_radian_14", "eft_hg_ar15_lvoac_b", "eft_hg_ar15_lvoac_f", "eft_hg_ar15_lvoac_g", "eft_hg_ar15_cgnl_14", "eft_hg_ar15_gridlok_15", "eft_hg_ar15_gridlok_17", "eft_ar10_hg_rsass"}
 
 ATT.Attachments = {
     {
@@ -345,6 +356,217 @@ ATT.Attachments = {
 }
 
 ARC9.LoadAttachment(ATT, "eft_barrel_ar15_hanson_137")
+
+
+///////////////////////////////////////      eft_barrel_ar15_292mm
+
+ATT = {}
+
+ATT.PrintName = "AR-15 5.56x45 11.5 inch barrel"
+ATT.CompactName = "AR-15 11.5\""
+ATT.Icon = Material("entities/eft_ar15_attachments/68a86bd51d1284a8e20e39d5.png", "mips smooth")
+ATT.Description = "An 11.5 inch (292mm) barrel for AR-15 platform weapons for 5.56x45 NATO ammo."
+ATT.SortOrder = 292
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.HasBarrel = true
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/barrel_ar15_ba_292mm.mdl"
+ATT.MuzzleDevice = true
+ATT.MuzzleDevice_Priority = 2
+ATT.BarrelLengthAdd = 2
+
+ATT.Category = {"eft_m4a1_barrel"}
+
+ATT.EFTErgoAdd = -9
+ATT.CustomCons = { Ergonomics = "-9" }
+ATT.RecoilMult = 0.98
+ATT.VisualRecoilMult = 0.98
+ATT.PhysBulletMuzzleVelocityMult = 0.882
+ATT.HeatCapacityMult = 1.06
+ATT.Spread = 2.13 * ARC9.MOAToAcc
+
+ATT.ActivateElements = {"barrel_260mm", "barrel_10i"}
+
+ATT.ExcludeElements = {"eft_hg_ar15_stm12", "eft_hg_ar15_stm15", "eft_hg_ar15_adar", "eft_hg_ar15_ax15", "eft_hg_ar15_mk10", "eft_hg_ar15_ddrisii1225", "eft_hg_ar15_mk16", "eft_hg_ar15_kacurx31", "eft_hg_ar15_ionlite", "eft_hg_ar15_moesl", "eft_hg_ar15_saiqd", "eft_hg_ar15_lvoac_b", "eft_hg_ar15_lvoac_f", "eft_hg_ar15_lvoac_g", "eft_hg_ar15_lvoas_b", "eft_hg_ar15_lvoas_f", "eft_hg_ar15_lvoas_g", "eft_hg_ar15_ax15_158", "eft_hg_ar15_radian_14", "eft_hg_ar15_cgnl_105", "eft_hg_ar15_cgnl_14", "eft_hg_ar15_kac_ff", "eft_hg_ar15_precision_round", "eft_hg_ar15_precision_round_fde", "eft_hg_ar15_precision", "eft_hg_ar15_moeslmid", "eft_hg_ar15_wing", "eft_hg_ar15_m16a1", "eft_hg_ar15_skinny", "eft_hg_ar15_kac_m5", "eft_hg_ar15_gridlok_15", "eft_hg_ar15_gridlok_17", "eft_ar10_hg_rsass"}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_gasblock"),
+        Category = "eft_ar15_gasblock",
+        ExcludeElements = {"nostdgasblockpls"},
+        Pos = Vector(-7.72, 0, 0.25),
+        Ang = Angle(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
+        Category = "eft_ar15_muzzle",
+        Pos = Vector(-11.2, 0, 0),
+        Ang = Angle(0, 0, 0),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_barrel_ar15_292mm")
+
+///////////////////////////////////////      eft_barrel_ar15_16i_mk12
+
+ATT = {}
+
+ATT.PrintName = "AR-15 5.56x45 Centurion Arms Mk12 16 inch barrel"
+ATT.CompactName = "Mk12 16\""
+ATT.Icon = Material("entities/eft_ar15_attachments/68caabc3f42a4476cf0be2a6.png", "mips smooth")
+ATT.Description = "A 16 inch (406mm) barrel for AR-15 platform weapons for 5.56x45 NATO ammo. Manufactured by Centurion Arms."
+ATT.SortOrder = 406
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.HasBarrel = true
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/barrel_ar15_centurion_arms_mk12_406mm.mdl"
+ATT.MuzzleDevice = true
+ATT.MuzzleDevice_Priority = 2
+ATT.BarrelLengthAdd = 5
+
+ATT.EFTErgoAdd = -17
+ATT.CustomCons = { Ergonomics = "-17" }
+ATT.RecoilMult = 0.95
+ATT.VisualRecoilMult = 0.95
+ATT.PhysBulletMuzzleVelocityMult = 0.949
+ATT.HeatCapacityMult = 0.96
+ATT.Spread = 1.03 * ARC9.MOAToAcc
+
+ATT.Category = {"eft_m4a1_barrel"}
+
+ATT.ActivateElements = {"barrel_406mm", "barrel_16i"}
+
+ATT.ExcludeElements = {"eft_hg_ar15_m4", "eft_hg_ar15_kacris", "eft_hg_ar15_ionlite", "eft_hg_ar15_viper"}
+
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_gasblock"),
+        Category = "eft_ar15_gasblock_thin",
+        ExcludeElements = {"nostdgasblockpls"},
+        Pos = Vector(-9.65, 0, 0.25),
+        Ang = Angle(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
+        Category = "eft_ar15_muzzle",
+        Pos = Vector(-15.55, 0, 0),
+        Ang = Angle(0, 0, 0),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_barrel_ar15_16i_mk12")
+
+
+///////////////////////////////////////      eft_barrel_ar15_18i_mk12
+
+ATT = {}
+
+ATT.PrintName = "AR-15 5.56x45 Centurion Arms Mk12 18 inch barrel"
+ATT.CompactName = "Mk12 18\""
+ATT.Icon = Material("entities/eft_ar15_attachments/68caaa93269e10396503acf6.png", "mips smooth")
+ATT.Description = "An 18 inch (457mm) barrel for AR-15 platform weapons for 5.56x45 NATO ammo. Manufactured by Centurion Arms."
+
+ATT.SortOrder = 457
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.HasBarrel = true
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/barrel_ar15_centurion_arms_mk12_457mm.mdl"
+ATT.MuzzleDevice = true
+ATT.MuzzleDevice_Priority = 2
+ATT.BarrelLengthAdd = 6
+
+ATT.EFTErgoAdd = -24
+ATT.CustomCons = { Ergonomics = "-24" }
+ATT.RecoilMult = 0.94
+ATT.VisualRecoilMult = 0.94
+ATT.PhysBulletMuzzleVelocityMult = 0.962
+ATT.HeatCapacityMult = 0.96
+ATT.Spread = 0.89 * ARC9.MOAToAcc
+
+ATT.Category = {"eft_m4a1_barrel"}
+
+ATT.ActivateElements = {"barrel_457mm", "barrel_18i", "allow_spr_collar"}
+
+ATT.ExcludeElements = {"eft_hg_ar15_adar", "eft_hg_ar15_m4", "eft_hg_ar15_kacris", "eft_hg_ar15_moesl", "eft_hg_ar15_moeslmid", "eft_hg_ar15_viper", "eft_hg_ar15_viper_f", "eft_hg_ar15_saiqd10"}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_gasblock"),
+        Category = {"eft_ar15_gasblock", "eft_ar15_gasblock_mk12"},
+        ExcludeElements = {"nostdgasblockpls"},
+        Pos = Vector(-13.1, 0, 0.25),
+        Ang = Angle(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
+        Category = "eft_ar15_muzzle",
+        Pos = Vector(-17.65, 0, 0),
+        Ang = Angle(0, 0, 0),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_barrel_ar15_18i_mk12")
+
+-- a2 20icnh 
+
+-- ///////////////////////////////////////      eft_barrel_ar15_20i
+
+-- ATT = {}
+
+-- ATT.PrintName = "AR-15 5.56x45 20 inch barrel"
+-- ATT.CompactName = "AR-15 20\""
+-- ATT.Icon = Material("entities/eft_ar15_attachments/barrel/ar15_556x45_20_inch_barrel.png", "mips smooth")
+-- ATT.Description = [[A barrel for AR-15 based weapons for 5.56x45 NATO ammo, 20 inches long.]]
+-- ATT.SortOrder = 508
+-- ATT.MenuCategory = "ARC9 - EFT Attachments"
+-- ATT.HasBarrel = true
+
+-- ATT.Model = "models/weapons/arc9/darsu_eft/mods/barrel_ar15_508mm.mdl"
+-- ATT.MuzzleDevice = true
+-- ATT.MuzzleDevice_Priority = 2
+-- ATT.BarrelLengthAdd = 7
+
+-- ATT.EFTErgoAdd = -29
+-- ATT.CustomCons = { Ergonomics = "-29" }
+-- ATT.RecoilMult = 0.94
+-- ATT.VisualRecoilMult = 0.94
+-- ATT.HeatCapacityMult = 0.94
+-- ATT.PhysBulletMuzzleVelocityMult = 0.97
+-- ATT.Spread = 1.1 * ARC9.MOAToAcc
+
+-- ATT.Category = {"eft_m4a1_barrel"}
+
+ATT.ActivateElements = {"barrel_508mm", "barrel_20i"}
+
+-- ATT.ExcludeElements = {"eft_hg_ar15_adar", "eft_hg_ar15_m4", "eft_hg_ar15_kacris", "eft_hg_ar15_moesl", "eft_hg_ar15_moeslmid", "eft_hg_ar15_viper", "eft_hg_ar15_viper_f"}
+
+-- ATT.Attachments = {
+--     {
+--         PrintName = ARC9:GetPhrase("eft_cat_gasblock"),
+--         Category = {"eft_ar15_gasblock", "eft_ar15_gasblock_thin"},
+--         ExcludeElements = {"nostdgasblockpls"},
+--         Pos = Vector(-11.2, 0, 0.25),
+--         Ang = Angle(0, 0, 0),
+--     },
+--     {
+--         PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
+--         Category = "eft_ar15_muzzle",
+--         Pos = Vector(-19.2, 0, 0),
+--         Ang = Angle(0, 0, 0),
+--     },
+-- }
+
+-- ARC9.LoadAttachment(ATT, "eft_barrel_ar15_20i")
+
+
+
+
+
+
+
+
+
 
 
 ///////////////////////////////////////      eft_gas_ar15_m4fs
@@ -366,6 +588,9 @@ ATT.CustomCons = { Ergonomics = "-1" }
 ATT.HeatCapacityMult = 0.995
 ATT.Category = {"eft_ar15_gasblock"}
 ATT.AdvancedCamoSupport = true
+ATT.ActivateElements = {"gasblock_big"}
+
+ATT.ExcludeElements = {"eft_hg_ar15_stm12", "eft_hg_ar15_stm15", "eft_hg_ar15_stm9", "eft_hg_ar15_adar", "eft_hg_ar15_ax15", "eft_hg_ar15_mk10", "eft_hg_ar15_ddrisii1225", "eft_hg_ar15_ddrisii95", "eft_hg_ar15_mk16", "eft_hg_ar15_kacurx31", "eft_hg_ar15_kacurx38", "eft_hg_ar15_ionlite", "eft_hg_ar15_saiqd10", "eft_hg_ar15_vypr", "eft_hg_ar15_wing", "eft_hg_ar15_lvoac_b", "eft_hg_ar15_lvoac_f", "eft_hg_ar15_lvoac_g", "eft_hg_ar15_lvoas_b", "eft_hg_ar15_lvoas_f", "eft_hg_ar15_lvoas_g", "eft_hg_ar15_ax15_158", "eft_hg_ar15_kac_m5", "eft_hg_ar15_radian_14", "eft_hg_ar15_cgnl_105", "eft_hg_ar15_cgnl_14", "eft_hg_ar15_kac_ff", "eft_hg_ar15_precision_round", "eft_hg_ar15_precision_round_fde", "eft_hg_ar15_precision"}
 
 ARC9.LoadAttachment(ATT, "eft_gas_ar15_m4fs")
 
@@ -389,7 +614,7 @@ ATT.CustomPros = { Ergonomics = "+1" }
 ATT.RecoilMult = 0.98
 ATT.VisualRecoilMult = 0.98
 ATT.HeatCapacityMult = 0.995
-ATT.Category = {"eft_ar15_gasblock"}
+ATT.Category = {"eft_ar15_gasblock", "eft_ar15_gasblock_thin"}
 
 ARC9.LoadAttachment(ATT, "eft_gas_ar15_mk12")
 
@@ -413,7 +638,9 @@ ATT.CustomCons = { Ergonomics = "-1" }
 ATT.RecoilMult = 0.97
 ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 0.99
-ATT.Category = {"eft_ar15_gasblock"}
+ATT.Category = {"eft_ar15_gasblock", "eft_ar15_gasblock_thin"}
+
+ATT.ExcludeElements = {"eft_hg_ar15_moeslmid"}
 
 ARC9.LoadAttachment(ATT, "eft_gas_ar15_jp")
 
@@ -436,6 +663,9 @@ ATT.RecoilMult = 0.98
 ATT.VisualRecoilMult = 0.98
 ATT.HeatCapacityMult = 0.995
 ATT.Category = {"eft_ar15_gasblock"}
+ATT.ActivateElements = {"gasblock_big"}
+
+ATT.ExcludeElements = {"eft_hg_ar15_stm12", "eft_hg_ar15_stm15", "eft_hg_ar15_stm9", "eft_hg_ar15_adar", "eft_hg_ar15_ax15", "eft_hg_ar15_mk10", "eft_hg_ar15_ddrisii1225", "eft_hg_ar15_ddrisii95", "eft_hg_ar15_mk16", "eft_hg_ar15_kacurx31", "eft_hg_ar15_kacurx38", "eft_hg_ar15_ionlite", "eft_hg_ar15_saiqd10", "eft_hg_ar15_vypr", "eft_hg_ar15_wing", "eft_hg_ar15_lvoac_b", "eft_hg_ar15_lvoac_f", "eft_hg_ar15_lvoac_g", "eft_hg_ar15_lvoas_b", "eft_hg_ar15_lvoas_f", "eft_hg_ar15_lvoas_g", "eft_hg_ar15_ax15_158", "eft_hg_ar15_kac_m5", "eft_hg_ar15_radian_14", "eft_hg_ar15_cgnl_105", "eft_hg_ar15_cgnl_14", "eft_hg_ar15_kac_ff", "eft_hg_ar15_precision_round", "eft_hg_ar15_precision_round_fde", "eft_hg_ar15_precision"}
 
 ATT.Attachments = {
     {
@@ -466,6 +696,55 @@ ATT.CustomPros = { Ergonomics = "+1" }
 ATT.RecoilMult = 0.97
 ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 0.98
-ATT.Category = {"eft_ar15_gasblock"}
+ATT.Category = {"eft_ar15_gasblock", "eft_ar15_gasblock_thin"}
 
 ARC9.LoadAttachment(ATT, "eft_gas_ar15_lopro")
+
+
+///////////////////////////////////////      eft_gas_ar15_mk12g1
+
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Precision Reflex Mk12 Gen.1 Flip-Up Front Sight Gas Block"
+ATT.CompactName = "Mk12 Gen.1"
+ATT.Icon = Material("entities/eft_ar15_attachments/68caac02269e10396503acfa.png", "mips smooth")
+ATT.Description = "A gas block with an integrated foldable front sight for the AR-15 platform. Manufactured by Precision Reflex."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.HasGas = true
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/gas_block_ar15_precision_reflex_mk12_gen_1_folding_gas_block.mdl"
+ATT.EFTErgoAdd = 0.5
+ATT.CustomPros = { Ergonomics = "+0.5" }
+ATT.RecoilMult = 0.985
+ATT.VisualRecoilMult = 0.985
+ATT.Category = {"eft_ar15_gasblock_mk12"}
+ATT.ActivateElements = {"gasblock_big"}
+
+ATT.DrawFunc = function(swep, model) model:SetBodygroup(1, (swep:GetValue("FoldSights") or swep:HasElement("eft_frontsight")) and 1 or 0) end
+
+ARC9.LoadAttachment(ATT, "eft_gas_ar15_mk12g1")
+
+///////////////////////////////////////      eft_gas_ar15_sentry7
+
+
+ATT = {}
+
+ATT.PrintName = "AR-15 SLR Rifleworks Sentry 7 gas block"
+ATT.CompactName = "Sentry 7"
+ATT.Icon = Material("entities/eft_ar15_attachments/68c16f6883e2d814b0093f7a.png", "mips smooth")
+ATT.Description = "A low-profile gas block that replaces the factory gas tube collar on AR-10/AR-15 family carbines and rifles. Manufactured by SLR Rifleworks."
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.HasGas = true
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/gas_block_ar15_slr_sentry_7_adjustable.mdl"
+ATT.EFTErgoAdd = -0.5
+ATT.CustomCons = { Ergonomics = "-0.5" }
+ATT.RecoilMult = 0.99
+ATT.VisualRecoilMult = 0.99
+ATT.Category = {"eft_ar15_gasblock", "eft_ar15_gasblock_thin"}
+
+ARC9.LoadAttachment(ATT, "eft_gas_ar15_sentry7")

@@ -217,7 +217,8 @@ ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 1.02
 ATT.PhysBulletMuzzleVelocityMult = 0.92
 ATT.Spread = 1.89 * ARC9.MOAToAcc
-ATT.DrawFunc = function(swep, model) model:SetBodygroup(1, swep:GetValue("FoldSights") and 1 or 0) end
+
+ATT.DrawFunc = function(swep, model) model:SetBodygroup(1, (swep:GetValue("FoldSights") or swep:HasElement("eft_frontsight")) and 1 or 0) end
 
 ATT.Category = {"eft_hk416_barrel"}
 
@@ -265,7 +266,8 @@ ATT.VisualRecoilMult = 0.95
 ATT.HeatCapacityMult = 0.98
 ATT.PhysBulletMuzzleVelocityMult = 0.95
 ATT.Spread = 1.55 * ARC9.MOAToAcc
-ATT.DrawFunc = function(swep, model) model:SetBodygroup(1, swep:GetValue("FoldSights") and 1 or 0) end
+
+ATT.DrawFunc = function(swep, model) model:SetBodygroup(1, (swep:GetValue("FoldSights") or swep:HasElement("eft_frontsight")) and 1 or 0) end
 
 ATT.Category = {"eft_hk416_barrel"}
 
@@ -314,7 +316,8 @@ ATT.HeatCapacityMult = 0.94
 ATT.PhysBulletMuzzleVelocityMult = 1.03
 ATT.Spread = 1.1 * ARC9.MOAToAcc
 
-ATT.DrawFunc = function(swep, model) model:SetBodygroup(1, swep:GetValue("FoldSights") and 1 or 0) end
+
+ATT.DrawFunc = function(swep, model) model:SetBodygroup(1, (swep:GetValue("FoldSights") or swep:HasElement("eft_frontsight")) and 1 or 0) end
 
 ATT.Category = {"eft_hk416_barrel"}
 
@@ -662,7 +665,8 @@ ATT.HeatCapacityMult = 0.976
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_416_hk_quad_rail_w_sight.mdl"
 ATT.LHIK = true 
 
-ATT.DrawFunc = function(swep, model) model:SetBodygroup(1, swep:GetValue("FoldSights") and 1 or 0) end
+
+ATT.DrawFunc = function(swep, model) model:SetBodygroup(1, (swep:GetValue("FoldSights") or swep:HasElement("eft_frontsight")) and 1 or 0) end
 
 ATT.Category = {"eft_hk416_hguard"}
 
@@ -891,7 +895,8 @@ ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_416_strike_industries_crux_m_lok_15_inch.mdl"
 ATT.LHIK = true 
 
-ATT.DrawFunc = function(swep, model) model:SetBodygroup(1, swep:GetValue("FoldSights") and 1 or 0) end
+
+ATT.DrawFunc = function(swep, model) model:SetBodygroup(1, (swep:GetValue("FoldSights") or swep:HasElement("eft_frontsight")) and 1 or 0) end
 
 ATT.Category = {"eft_hk416_hguard"}
 ATT.EFTErgoAdd = 11

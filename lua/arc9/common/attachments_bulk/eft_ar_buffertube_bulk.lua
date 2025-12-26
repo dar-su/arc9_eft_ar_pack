@@ -415,3 +415,73 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 
 ARC9.LoadAttachment(ATT, "eft_ar_buffertube_baskak")
+
+
+///////////////////////////////////////      eft_ar_buffertube_cgnl
+
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Custom Guns buffer tube"
+ATT.CompactName = "CGNL"
+ATT.Icon = Material("entities/eft_ar15_attachments/68c17005ba442c8112076088.png", "mips smooth")
+ATT.Description = "An AR-15 mil-spec buffer tube for installation of various telescopic buttstocks. Manufactured by Custom Guns."
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_cgnl_stock_tube.mdl"
+
+ATT.HasBufferTube = true
+ATT.RecoilMult = 0.99
+ATT.VisualRecoilMult = 0.99
+ATT.SortOrder = 0
+ATT.Category = "eft_ar15_buffertube"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_stock"),
+        Category = "eft_ar_stock",
+        Pos = Vector(3.6, 0, 0.9),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExcludeElements = {"pgrip_stock"},
+    },
+}
+
+
+ARC9.LoadAttachment(ATT, "eft_ar_buffertube_cgnl")
+
+///////////////////////////////////////      eft_ar_buffertube_cgnl_fde
+
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Custom Guns buffer tube (FDE)"
+ATT.CompactName = "CGNL"
+ATT.Icon = Material("entities/eft_ar15_attachments/68c1701cba442c811207608b.png", "mips smooth")
+ATT.Description = "An AR-15 mil-spec buffer tube for installation of various telescopic buttstocks. Manufactured by Custom Guns. Flat Dark Earth version."
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_cgnl_stock_tube.mdl"
+ATT.ModelSkin = 1
+
+ATT.HasBufferTube = true
+ATT.RecoilMult = 0.99
+ATT.VisualRecoilMult = 0.99
+ATT.SortOrder = 0
+ATT.Category = "eft_ar15_buffertube"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_stock"),
+        Category = "eft_ar_stock",
+        Pos = Vector(3.6, 0, 0.9),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExcludeElements = {"pgrip_stock"},
+    },
+}
+
+
+ARC9.LoadAttachment(ATT, "eft_ar_buffertube_cgnl_fde")

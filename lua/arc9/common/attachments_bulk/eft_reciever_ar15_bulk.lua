@@ -27,7 +27,7 @@ ATT.HeatCapacityMult = 0.989
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_scope"),
-        Category = {"eft_optic_large", "eft_optic_medium", "eft_optic_small"},
+        Category = {"eft_optic_large", "eft_optic_medium", "eft_optic_small", "eft_sprrail"},
         Pos = Vector(2.2, 0, -2.1),
         Ang = Angle(0, 0, 0),
         ExcludeElements = {"IronsBlockingSight"},
@@ -82,7 +82,7 @@ ATT.HeatCapacityMult = 0.991
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_scope"),
-        Category = {"eft_optic_large", "eft_optic_medium", "eft_optic_small"},
+        Category = {"eft_optic_large", "eft_optic_medium", "eft_optic_small", "eft_sprrail"},
         Pos = Vector(2.2, 0, -2.1),
         Ang = Angle(0, 0, 0),
         ExcludeElements = {"IronsBlockingSight"},
@@ -140,7 +140,7 @@ ATT.EFTAR15NoFwdAssist = true
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_scope"),
-        Category = {"eft_optic_large", "eft_optic_medium", "eft_optic_small"},
+        Category = {"eft_optic_large", "eft_optic_medium", "eft_optic_small", "eft_sprrail"},
         Pos = Vector(2.2, 0, -2.1),
         Ang = Angle(0, 0, 0),
         ExcludeElements = {"IronsBlockingSight"},
@@ -196,7 +196,7 @@ ATT.HeatCapacityMult = 0.979
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_scope"),
-        Category = {"eft_optic_large", "eft_optic_medium", "eft_optic_small"},
+        Category = {"eft_optic_large", "eft_optic_medium", "eft_optic_small", "eft_sprrail"},
         Pos = Vector(2.2, 0, -2.1),
         Ang = Angle(0, 0, 0),
         ExcludeElements = {"IronsBlockingSight"},
@@ -255,7 +255,7 @@ ATT.EFTAR15NoFwdAssist = true
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_scope"),
-        Category = {"eft_optic_large", "eft_optic_medium", "eft_optic_small"},
+        Category = {"eft_optic_large", "eft_optic_medium", "eft_optic_small", "eft_sprrail"},
         Pos = Vector(2.2, 0, -2.1),
         Ang = Angle(0, 0, 0),
         ExcludeElements = {"IronsBlockingSight"},
@@ -313,7 +313,7 @@ ATT.EFTAR15NoFwdAssist = true
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_scope"),
-        Category = {"eft_optic_large", "eft_optic_medium", "eft_optic_small"},
+        Category = {"eft_optic_large", "eft_optic_medium", "eft_optic_small", "eft_sprrail"},
         Pos = Vector(2.2, 0, -2.1),
         Ang = Angle(0, 0, 0),
         ExcludeElements = {"IronsBlockingSight"},
@@ -341,3 +341,236 @@ ATT.Attachments = {
 }
 
 ARC9.LoadAttachment(ATT, "eft_rec_ar15_aeronknxo")
+
+///////////////////////////////////////      eft_rec_ar15_radian
+
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Radian Weapons Model 1 5.56x45 upper receiver"
+ATT.CompactName = "Model 1"
+ATT.Icon = Material("entities/eft_ar15_attachments/6895becad55f0ebf6a0c0311.png", "mips smooth")
+ATT.Description = "A precision CNC machined upper receiver for the AR-15 platform. Manufactured by Radian Weapons."
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.HasReceiver = true
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/reciever_ar15_radian_model1_std.mdl"
+
+ATT.Category = {"eft_m4a1_upper"}
+
+ATT.EFTErgoAdd = 7
+ATT.CustomPros = { Ergonomics = "+7" }
+ATT.RecoilMult = 0.95
+ATT.VisualRecoilMult = 0.95
+
+-- ATT.EFTAR15NoFwdAssist = true
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_scope"),
+        Category = {"eft_optic_large", "eft_optic_medium", "eft_optic_small", "eft_sprrail"},
+        Pos = Vector(2.2, 0, -2.1),
+        Ang = Angle(0, 0, 0),
+        ExcludeElements = {"IronsBlockingSight"},
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_rearsight"),
+        Category = {"eft_ar_rearsight", "eft_rearsight", "eft_rearsight_hk416"},
+        Pos = Vector(4.75, 0, -2.13),
+        Ang = Angle(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_barrel"),
+        Category = "eft_m4a1_barrel",
+        Pos = Vector(-0.175, 0, -0.9),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(-0.2, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_handguard"),
+        Category = "eft_ar15_hguard",
+        Pos = Vector(-0.15-0.07, 0, -1-0.0115),
+        Ang = Angle(0, 90, 0),
+        Icon_Offset = Vector(0, 4, 0),
+    },
+}
+
+ATT.AdvancedCamoSupport = true
+ARC9.LoadAttachment(ATT, "eft_rec_ar15_radian")
+
+
+///////////////////////////////////////      eft_rec_ar15_m16a1e1
+
+
+ATT = {}
+
+ATT.PrintName = "M16A1E1 5.56x45 upper receiver"
+ATT.CompactName = "M16A1E1"
+ATT.Icon = Material("entities/eft_ar15_attachments/68a63b90e1fb670852024659.png", "mips smooth")
+ATT.Description = "An upper receiver for the M16A1E1 assault rifle manufactured by Colt. An early prototype variant between the M16A1 and M16A2, which also served as the basis for the Canadian C7. During the 1980s it was widely fitted to various special carbines produced by Colt."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.HasReceiver = true
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/reciever_ar15_colt_m16a1e1_std.mdl"
+
+ATT.Category = {"eft_m4a1_upper"}
+
+ATT.EFTErgoAdd = 4
+ATT.CustomPros = { Ergonomics = "+4" }
+ATT.RecoilMult = 0.985
+ATT.VisualRecoilMult = 0.985
+
+-- ATT.EFTAR15NoFwdAssist = true
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_scope"),
+        Category = {"eft_scope_trijicon", "eft_m4carry"},
+        Pos = Vector(3.25, 0, -3.13),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_barrel"),
+        Category = "eft_m4a1_barrel",
+        Pos = Vector(-0.175, 0, -0.9),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(-0.2, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_handguard"),
+        Category = "eft_ar15_hguard",
+        Pos = Vector(-0.15-0.07, 0, -1+0.01),
+        Ang = Angle(0, 90, 0),
+        Icon_Offset = Vector(0, 4, 0),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_rec_ar15_m16a1e1")
+
+
+///////////////////////////////////////      eft_rec_ar15_m16a2
+
+
+ATT = {}
+
+ATT.PrintName = "M16A2 5.56x45 upper receiver"
+ATT.CompactName = "M16A2"
+ATT.Icon = Material("entities/eft_ar15_attachments/68a63b9b8e1fe612970728f7.png", "mips smooth")
+ATT.Description = "An upper receiver for the M16A2 assault rifle manufactured by Colt."
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.HasReceiver = true
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/reciever_ar15_colt_m16a2_std.mdl"
+
+ATT.Category = {"eft_m4a1_upper"}
+
+ATT.EFTErgoAdd = 4
+ATT.CustomPros = { Ergonomics = "+4" }
+ATT.RecoilMult = 0.985
+ATT.VisualRecoilMult = 0.985
+
+-- ATT.EFTAR15NoFwdAssist = true
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_scope"),
+        Category = {"eft_scope_trijicon", "eft_m4carry"},
+        Pos = Vector(3.25, 0, -3.13),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_barrel"),
+        Category = "eft_m4a1_barrel",
+        Pos = Vector(-0.175, 0, -0.9),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(-0.2, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_handguard"),
+        Category = "eft_ar15_hguard",
+        Pos = Vector(-0.15-0.07, 0, -1+0.01),
+        Ang = Angle(0, 90, 0),
+        Icon_Offset = Vector(0, 4, 0),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_rec_ar15_m16a2")
+
+///////////////////////////////////////      eft_rec_m16_rail
+
+ATT = {}
+
+ATT.PrintName = "AR-15 ProMag Delta Style scope mount"
+ATT.CompactName = "Delta Style"
+ATT.Icon = Material("entities/eft_ar15_attachments/68a63d1522b1e0bd360afe67.png", "mips smooth")
+ATT.Description = "A scope mount that fits over the AR-15 carry handle. Modeled after the mount from the 1990s. Manufactured by ProMag."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.EFTErgoAdd = -0.2
+ATT.CustomCons = { Ergonomics = "-0.2" }
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/mount_ar15_promag_delta_style.mdl"
+-- ATT.ModelOffset = Vector(-1.525, 0, 0.025)
+
+-- ATT.RequireElements = {"eft_gas_ar15_m4fs"}
+-- ATT.ExcludeElements = {"barrel_18i", "barrel_20i", "barrel_406mm"}
+ATT.Category = {"eft_m4carry"}
+
+-- ATT.Max = 1
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_scope"),
+        Category = {"eft_optic_large", "eft_optic_small", "eft_optic_medium"},
+        Pos = Vector(-0.5, -0, -0.84),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0.2),
+        ExtraSightDistance = 3,
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_rec_m16_rail")
+
+///////////////////////////////////////      eft_rec_ar15_spr_rail
+
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Precision Reflex GEN III SPR Top Rail"
+ATT.CompactName = "SPR Top Rail"
+ATT.Icon = Material("entities/eft_ar15_attachments/68caacb4c8ac87b10507c5a6.png", "mips smooth")
+ATT.Description = "A rifle length Picatinny top rail designed for installation on Precision Reflex GEN III Round handguards. Bridges the handguard and upper receiver. Manufactured by Precision Reflex."
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/mount_ar15_precision_reflex_spr_peq_rifle_lenght_top_rail_gen_3.mdl"
+
+ATT.Category = {"eft_sprrail"}
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+-- ATT.Max = 1
+
+ATT.EFTErgoAdd = -2
+ATT.CustomCons = { Ergonomics = "-2" }
+ATT.ModelOffset = Vector(0.22, 0, -0)
+
+ATT.RequireElements = {"sprrailallowed"}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_scope"),
+        Category = {"eft_optic_large", "eft_optic_small", "eft_optic_medium"},
+        Pos = Vector(-0.2, -0, -0.55),
+        --Pos = Vector(0, 0, 0),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0.2),
+    },
+}
+
+
+ARC9.LoadAttachment(ATT, "eft_rec_ar15_spr_rail")

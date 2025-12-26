@@ -444,3 +444,48 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 
 ARC9.LoadAttachment(ATT, "eft_ar_pgrip_sig")
+
+///////////////////////////////////////      eft_ar_pgrip_a1
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Colt A1 pistol grip"
+ATT.CompactName = "A1"
+ATT.Icon = Material("entities/eft_ar15_attachments/68a63d4f22b1e0bd360afe6a.png", "mips smooth")
+ATT.Description = "An older style polymer pistol grip manufactured by Colt."
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/pistolgrip_ar15_colt_a1.mdl"
+
+ATT.HasGrip = true
+
+ATT.EFTErgoAdd = 5.5
+ATT.CustomPros = { Ergonomics = "+5.5" }
+
+ATT.SortOrder = 0
+ATT.Category = "eft_ar15_pgrip_m4"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+
+ARC9.LoadAttachment(ATT, "eft_ar_pgrip_a1")
+
+///////////////////////////////////////      eft_ar_pgrip_spr
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Sierra Precision SPR pistol grip"
+ATT.CompactName = "SP SPR"
+ATT.Icon = Material("entities/eft_ar15_attachments/68caac14f42a4476cf0be2aa.png", "mips smooth")
+ATT.Description = "The polymer SPR Handgrip can be installed on any weapon compatible with AR-15 pistol grips. Manufactured by Sierra Precision."
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/pistolgrip_ar15_sierra_precision_spr_handgrip.mdl"
+
+ATT.HasGrip = true
+
+ATT.EFTErgoAdd = 12
+ATT.CustomPros = { Ergonomics = "+12" }
+
+ATT.SortOrder = 0
+ATT.Category = "eft_ar15_pgrip_m4"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ARC9.LoadAttachment(ATT, "eft_ar_pgrip_spr")

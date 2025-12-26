@@ -806,3 +806,145 @@ ATT.NoFlash = true
 ATT.Category = {"eft_ak101_muzzle", "eft_ar15_muzzle"}
 
 ARC9.LoadAttachment(ATT, "eft_silencer_r43_556")
+
+///////////////////////////////////////      eft_muzzle_usgi_a1
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Colt USGI A1 3-prong 5.56x45 flash hider"
+ATT.CompactName = "USGI A1 3-pr"
+ATT.Icon = Material("entities/eft_ar15_attachments/68a63b03e1fb670852024656.png", "mips smooth")
+ATT.Description = "A three-prong flash hider for the AR-15 series rifles, manufactured by Colt. The classic earlier A1 variant made in the 60s, which was later replaced by the more famous Bird Cage type."
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ar15_colt_usgi_a1_3_prong_flash_hider_556x45.mdl"
+ATT.MuzzleDevice = true
+ATT.MuzzleDevice_Priority = 4
+ATT.BarrelLengthAdd = 0.5
+
+ATT.EFTErgoAdd = -0.5
+ATT.CustomCons = { Ergonomics = "-0.5" }
+ATT.RecoilMult = 0.96
+ATT.VisualRecoilMult = 0.96
+
+ATT.Category = {"eft_ar15_muzzle"}
+
+ARC9.LoadAttachment(ATT, "eft_muzzle_usgi_a1")
+
+///////////////////////////////////////      eft_muzzle_spr_brake
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Allen Engineering SPR Brake 5.56x45"
+ATT.CompactName = "SPR Brake"
+ATT.Icon = Material("entities/eft_ar15_attachments/68caac500bfe742288085e1e.png", "mips smooth")
+ATT.Description = "The SPR muzzle brake for the AR-15 platform. Manufactured by Allen Engineering."
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ar15_allen_engineering_spr_brake_556x45.mdl"
+ATT.MuzzleDevice = true
+ATT.MuzzleDevice_Priority = 4
+ATT.BarrelLengthAdd = 0.5
+
+ATT.EFTErgoAdd = -2
+ATT.CustomCons = { Ergonomics = "-2" }
+ATT.RecoilMult = 0.92
+ATT.VisualRecoilMult = 0.92
+
+ATT.Category = {"eft_ar15_muzzle"}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
+        Category = "eft_spr_muzzle",
+        Pos = Vector(-0.1, 0, 0),
+        Icon_Offset = Vector(2, 0, 0),
+        Ang = Angle(0, 0, 0),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_muzzle_spr_brake")
+
+
+///////////////////////////////////////      eft_muzzle_spr_thr
+
+ATT = {}
+
+ATT.PrintName = "Allen Engineering SPR Brake thread protector"
+ATT.CompactName = "SPR thr."
+ATT.Icon = Material("entities/eft_ar15_attachments/68caac63269e10396503acfc.png", "mips smooth")
+ATT.Description = "A thread protector for the SPR Brake, manufactured by Allen Engineering."
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ar15_allen_engineering_spr_thread_protector_556x45.mdl"
+
+ATT.EFTErgoAdd = 1
+ATT.CustomPros = { Ergonomics = "+1" }
+
+ATT.Category = {"eft_spr_muzzle"}
+
+ARC9.LoadAttachment(ATT, "eft_muzzle_spr_thr")
+
+
+///////////////////////////////////////      eft_muzzle_spr_collar
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Allen Engineering SPR Collar suppressor mount"
+ATT.CompactName = "SPR Collar"
+ATT.Icon = Material("entities/eft_ar15_attachments/68caac96933990601c07f476.png", "mips smooth")
+ATT.Description = "A special AR-15 barrel mount required for installation of Allen Engineering suppressors. Manufactured by Allen Engineering."
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/mount_ar15_allen_engineering_spr_colar.mdl"
+
+ATT.EFTErgoAdd = -0.5
+ATT.CustomCons = { Ergonomics = "-0.5" }
+
+ATT.Category = {"eft_spr_muzzle"}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
+        Category = "eft_spr_sup",
+        Pos = Vector(-0.1, 0, 0),
+        Icon_Offset = Vector(2, 0, 0),
+        Ang = Angle(0, 0, 0),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_muzzle_spr_collar")
+
+
+///////////////////////////////////////      eft_muzzle_spr_sup
+
+ATT = {}
+
+ATT.PrintName = "Allen Engineering AEM-5 5.56x45 sound suppressor"
+ATT.CompactName = "AEM-5"
+ATT.Icon = Material("entities/eft_ar15_attachments/68caad12269e10396503acfe.png", "mips smooth")
+ATT.Description = "The Allen Engineering AEM-5 5.56x45/.223 sound suppressor. Can only be installed on compatible Allen Engineering muzzle devices, and also requires a proprietary SPR Collar on the barrel."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/silencer_ae_allen_engineering_aem_5_556x45.mdl"
+ATT.EFTErgoAdd = -24
+ATT.CustomCons = { Ergonomics = "-24" }
+ATT.RecoilMult = 0.9
+ATT.VisualRecoilMult = 0.9
+ATT.PhysBulletMuzzleVelocityMult = 1.007
+
+ATT.Category = {"eft_spr_sup"}
+
+ATT.Silencer = true
+ATT.MuzzleDevice = true
+ATT.MuzzleDevice_Priority = 5
+ATT.MuzzleParticle = "muzzleflash_suppressed"
+ATT.NoFlash = true
+
+ARC9.LoadAttachment(ATT, "eft_muzzle_spr_sup")

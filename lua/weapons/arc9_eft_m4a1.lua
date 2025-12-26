@@ -73,8 +73,8 @@ SWEP.EFTErgo = 48
 SWEP.BarrelLength = 38
 SWEP.Ammo = "smg1"
 SWEP.Firemodes = {
-    { Mode = -1, PoseParam = 1},
-    { Mode = 1, RPM = 450, PoseParam = 2 }
+    { Mode = -1, PoseParam = 2},
+    { Mode = 1, RPM = 450, PoseParam = 1 }
 }
 
 SWEP.Slot = 2
@@ -422,7 +422,7 @@ SWEP.Attachments = {
         Bone = "weapon",
         Pos = Vector(0, 18.2, -1.55),
         Ang = Angle(0, 90, 0),
-        RequireElements = {"eft_barrel_ar15_370mm"}
+        RequireElements = {"eft_m203_allowed"}
     },
     {
         PrintName = ARC9:GetPhrase("eft_cat_custom"),

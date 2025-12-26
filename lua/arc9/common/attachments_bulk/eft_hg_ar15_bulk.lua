@@ -22,6 +22,7 @@ ATT.EFTErgoAdd = 7
 ATT.CustomPros = { Ergonomics = "+7" }
 ATT.HeatCapacityMult = 1.074
 ATT.Category = {"eft_ar15_hguard"}
+ATT.ExcludeElements = {"barrel_10i", "barrel_145i", "barrel_18i", "barrel_20i", "gasblock_big"}
 
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_adar")
 
@@ -45,7 +46,8 @@ ATT.CustomPros = { Ergonomics = "+9" }
 ATT.HeatCapacityMult = 0.953
 ATT.Category = {"eft_ar15_hguard"}
 
-ATT.ExcludeElements = {"barrel_260mm", "eft_gas_ar15_rg", "eft_gas_ar15_jp", "eft_gas_ar15_m4fs"}
+ATT.ExcludeElements = {"barrel_10i", "gasblock_big"}
+ATT.ActivateElements = {"sprrailallowed"}
 
 ATT.Attachments = {
     {
@@ -54,7 +56,8 @@ ATT.Attachments = {
         Pos = Vector(0, 3.8, -1.1),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0),
-        ExtraSightDistance = 8
+        ExtraSightDistance = 8,
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
     },
     {
         PrintName = ARC9:GetPhrase("eft_cat_frontsight"),
@@ -62,7 +65,8 @@ ATT.Attachments = {
         Pos = Vector(0, 9.8, -1.1),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0),
-        ExtraSightDistance = 8
+        ExtraSightDistance = 8,
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
     },
     {
         PrintName = ARC9:GetPhrase("eft_cat_mount_r"),
@@ -110,7 +114,8 @@ ATT.CustomPros = { Ergonomics = "+8" }
 ATT.RecoilMult = 0.97
 ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 0.996
-ATT.ExcludeElements = {"eft_gas_ar15_rg", "eft_gas_ar15_m4fs"}
+ATT.ExcludeElements = {"barrel_10i", "gasblock_big"}
+ATT.ActivateElements = {"sprrailallowed"}
 
 ATT.Attachments = {
     {
@@ -169,6 +174,8 @@ ATT.Attachments = {
 }
 ATT.AdvancedCamoSupport = true
 
+ATT.ActivateElements = {"eft_m203_allowed"}
+
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_m4")
 
 ///////////////////////////////////////      eft_hg_ar15_m4_lower
@@ -187,6 +194,7 @@ ATT.CustomPros = { Ergonomics = "+7" }
 ATT.HeatCapacityMult = 1.029
 ATT.Category = {"eft_hglower_m4"}
 ATT.AdvancedCamoSupport = "eft_hg_ar15_m4"
+ATT.ExcludeElements = {"eft_m203"}
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_m4_lower")
 
 
@@ -212,8 +220,9 @@ ATT.LHIK_Priority = 0 -- lower
 
 ATT.Category = {"eft_ar15_hguard"}
 ATT.Folder = "Daniel Defens"
+ATT.ActivateElements = {"sprrailallowed", "eft_m203_allowed"}
 
-ATT.ExcludeElements = {"barrel_260mm", "eft_gas_ar15_rg", "eft_gas_ar15_jp", "eft_gas_ar15_m4fs"}
+ATT.ExcludeElements = {"barrel_10i", "gasblock_big"}
 
 ATT.Attachments = {
     {
@@ -229,7 +238,8 @@ ATT.Attachments = {
         Pos = Vector(0, 1.8, -1.15),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0),
-        ExtraSightDistance = 8
+        ExtraSightDistance = 8,
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
     },
     {
         PrintName = ARC9:GetPhrase("eft_cat_frontsight"),
@@ -245,6 +255,7 @@ ATT.Attachments = {
         Pos = Vector(0, 8.5, -1.1),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0.5),
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
     },
     {
         PrintName = ARC9:GetPhrase("eft_cat_tactical_r"),
@@ -297,6 +308,7 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, -1),
     },
 }
+ATT.ExcludeElements = {"eft_m203"}
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_ddrisii1225_lower")
 
 
@@ -322,7 +334,9 @@ ATT.CustomPros = { Ergonomics = "+2" }
 ATT.HeatCapacityMult = 0.987
 ATT.Category = {"eft_ar15_hguard"}
 ATT.Folder = "Daniel Defens"
-ATT.ExcludeElements = { "eft_gas_ar15_rg", "eft_gas_ar15_m4fs"}
+ATT.ExcludeElements = { "gasblock_big"}
+
+ATT.ActivateElements = {"eft_m203_allowed"}
 
 ATT.Attachments = {
     {
@@ -400,6 +414,7 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, -1),
     },
 }
+ATT.ExcludeElements = {"eft_m203"}
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_ddrisii95_lower")
 
 ///////////////////////////////////////      eft_hg_ar15_ddrisii95_b
@@ -425,7 +440,9 @@ ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 0.992
 ATT.Category = {"eft_ar15_hguard"}
 ATT.Folder = "Daniel Defens"
-ATT.ExcludeElements = { "eft_gas_ar15_rg", "eft_gas_ar15_m4fs"}
+ATT.ExcludeElements = { "gasblock_big"}
+
+ATT.ActivateElements = {"eft_m203_allowed"}
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_handguard"),
@@ -502,6 +519,7 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, -1),
     },
 }
+ATT.ExcludeElements = {"eft_m203"}
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_ddrisii95_lower_b")
 
 ///////////////////////////////////////      eft_hg_ar15_ddfsp
@@ -581,8 +599,9 @@ ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 0.965
 ATT.Category = {"eft_ar15_hguard"}
+ATT.ActivateElements = {"sprrailallowed"}
 
-ATT.ExcludeElements = {"barrel_260mm", "eft_gas_ar15_rg", "eft_gas_ar15_jp", "eft_gas_ar15_m4fs"}
+ATT.ExcludeElements = {"barrel_10i", "gasblock_big"}
 
 ATT.Attachments = {
     {
@@ -591,7 +610,8 @@ ATT.Attachments = {
         Pos = Vector(0, 2.3, -1.1),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0),
-        ExtraSightDistance = 8
+        ExtraSightDistance = 8,
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
     },
     {
         PrintName = ARC9:GetPhrase("eft_cat_frontsight"),
@@ -599,7 +619,8 @@ ATT.Attachments = {
         Pos = Vector(0, 9.8+3.5, -1.1),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0),
-        ExtraSightDistance = 8
+        ExtraSightDistance = 8,
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
     },
     {
         PrintName = ARC9:GetPhrase("eft_cat_tactical_u"),
@@ -607,6 +628,7 @@ ATT.Attachments = {
         Pos = Vector(0, 8.5, -1.1),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0.5),
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
     },
     {
         PrintName = ARC9:GetPhrase("eft_cat_mount_r"),
@@ -654,7 +676,7 @@ ATT.CustomPros = { Ergonomics = "+8" }
 ATT.HeatCapacityMult = 0.996
 ATT.Category = {"eft_ar15_hguard"}
 
-ATT.ExcludeElements = {"eft_gas_ar15_rg", "eft_gas_ar15_jp", "eft_gas_ar15_m4fs"}
+ATT.ExcludeElements = {"gasblock_big"}
 
 ATT.Attachments = {
     {
@@ -726,6 +748,9 @@ ATT.EFTErgoAdd = 1
 ATT.CustomPros = { Ergonomics = "+1" }
 ATT.HeatCapacityMult = 1.018
 ATT.Category = {"eft_ar15_hguard"}
+ATT.Folder = "KAC"
+
+ATT.ActivateElements = {"eft_m203_allowed"}
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_handguard"),
@@ -785,6 +810,7 @@ ATT.Attachments = {
     },
 }
 ATT.AdvancedCamoSupport = "eft_hg_ar15_kacris"
+ATT.ExcludeElements = {"eft_m203"}
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_kacris_lower")
 
 
@@ -808,8 +834,10 @@ ATT.EFTErgoAdd = 2
 ATT.CustomPros = { Ergonomics = "+2" }
 ATT.HeatCapacityMult = 0.96
 ATT.Category = {"eft_ar15_hguard"}
+ATT.Folder = "KAC"
+ATT.ActivateElements = {"sprrailallowed", "eft_m203_allowed"}
 
-ATT.ExcludeElements = {"barrel_260mm", "eft_gas_ar15_rg", "eft_gas_ar15_jp", "eft_gas_ar15_m4fs"}
+ATT.ExcludeElements = {"barrel_10i", "gasblock_big"}
 
 ATT.Attachments = {
     {
@@ -825,6 +853,7 @@ ATT.Attachments = {
         Pos = Vector(0, 10.7, -1.1),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0),
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
     },
     {
         PrintName = ARC9:GetPhrase("eft_cat_tactical_r"),
@@ -846,6 +875,7 @@ ATT.Attachments = {
         Pos = Vector(0, 7.5, -1.1),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0),
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
     },
     {
         PrintName = ARC9:GetPhrase("eft_cat_mount_r"),
@@ -867,7 +897,8 @@ ATT.Attachments = {
         Pos = Vector(0, 1.5, -1.1),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0),
-        ExtraSightDistance = 8
+        ExtraSightDistance = 8,
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
     },
 }
 
@@ -907,6 +938,7 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+ATT.ExcludeElements = {"eft_m203"}
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_kacurx31_lower")
 
 
@@ -1054,8 +1086,11 @@ ATT.LHIK = true
 -- ATT.LHIK_Priority = -22 -- needs lower hg
 
 ATT.Category = {"eft_ar15_hguard"}
+ATT.Folder = "KAC"
 
-ATT.ExcludeElements = {"eft_gas_ar15_rg", "eft_gas_ar15_jp", "eft_gas_ar15_m4fs"}
+ATT.ExcludeElements = {"gasblock_big"}
+
+ATT.ActivateElements = {"eft_m203_allowed"}
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_handguard"),
@@ -1144,6 +1179,7 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+ATT.ExcludeElements = {"eft_m203"}
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_kacurx38_lower")
 
 ///////////////////////////////////////      eft_hg_ar15_ionlite
@@ -1168,8 +1204,9 @@ ATT.VisualRecoilMult = 0.99
 ATT.SpreadMult = 0.99
 ATT.HeatCapacityMult = 0.961
 ATT.Category = {"eft_ar15_hguard"}
+ATT.ActivateElements = {"sprrailallowed"}
 
-ATT.ExcludeElements = {"barrel_260mm","barrel_370mm","barrel_406mm", "eft_gas_ar15_rg", "eft_gas_ar15_jp", "eft_gas_ar15_m4fs"}
+ATT.ExcludeElements = {"barrel_10i", "barrel_145i", "barrel_16i", "gasblock_big"}
 
 ATT.Attachments = {
     {
@@ -1178,7 +1215,8 @@ ATT.Attachments = {
         Pos = Vector(0, 3.3, -1.15),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0),
-        ExtraSightDistance = 8
+        ExtraSightDistance = 8,
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
     },
     {
         PrintName = ARC9:GetPhrase("eft_cat_frontsight"),
@@ -1186,7 +1224,7 @@ ATT.Attachments = {
         Pos = Vector(0, 14.8+1.2, -1.1),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0),
-        ExtraSightDistance = 8
+        ExtraSightDistance = 8,
     },
     {
         PrintName = ARC9:GetPhrase("eft_cat_tactical_u"),
@@ -1194,6 +1232,7 @@ ATT.Attachments = {
         Pos = Vector(0, 11.5, -1.1),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0),
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
     },
     {
         PrintName = ARC9:GetPhrase("eft_cat_mount_r"),
@@ -1261,7 +1300,7 @@ ATT.Category = {"eft_ar15_hguard"}
 ATT.EFTErgoAdd = 10
 ATT.CustomPros = { Ergonomics = "+10" }
 ATT.HeatCapacityMult = 1.058
-ATT.ExcludeElements = {"barrel_406mm"}
+ATT.ExcludeElements = {"barrel_10i", "barrel_145i", "barrel_18i", "barrel_20i"}
 
 ATT.Attachments = {
     {
@@ -1362,7 +1401,8 @@ ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 0.968
 ATT.Category = {"eft_ar15_hguard"}
 
-ATT.ExcludeElements = {"barrel_260mm", "eft_gas_ar15_rg", "eft_gas_ar15_jp", "eft_gas_ar15_m4fs"}
+ATT.ActivateElements = {"sprrailallowed"}
+ATT.ExcludeElements = {"barrel_10i"}
 
 ATT.Attachments = {
     {
@@ -1399,6 +1439,7 @@ ATT.Attachments = {
         Pos = Vector(0, 6.5+3.35, -1.1),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0),
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
     },
     {
         PrintName = ARC9:GetPhrase("eft_cat_tactical_b"),
@@ -1434,7 +1475,8 @@ ATT.Attachments = {
         Pos = Vector(0, 1.5, -1.1),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0),
-        ExtraSightDistance = 8
+        ExtraSightDistance = 8,
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
     },
 }
 
@@ -1462,8 +1504,9 @@ ATT.RecoilMult = 0.97
 ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 0.965
 ATT.Category = {"eft_ar15_hguard"}
+ATT.ActivateElements = {"sprrailallowed"}
 
-ATT.ExcludeElements = {"barrel_406mm","barrel_370mm","barrel_18i","barrel_20i", "eft_gas_ar15_rg", "eft_gas_ar15_jp", "eft_gas_ar15_m4fs"}
+ATT.ExcludeElements = {"barrel_20i", "barrel_145i", "barrel_18i", "barrel_20i", "gasblock_big"}
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
@@ -1478,6 +1521,7 @@ ATT.Attachments = {
         Pos = Vector(0, 10.4, -1.1),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0),
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
     },
     {
         PrintName = ARC9:GetPhrase("eft_cat_tactical_r"),
@@ -1499,6 +1543,7 @@ ATT.Attachments = {
         Pos = Vector(0, 6.5, -1.1),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0),
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
     },
     {
         PrintName = ARC9:GetPhrase("eft_cat_tactical_b"),
@@ -1534,7 +1579,8 @@ ATT.Attachments = {
         Pos = Vector(0, 1.5, -1.1),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0),
-        ExtraSightDistance = 8
+        ExtraSightDistance = 8,
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
     },
 }
 
@@ -1565,7 +1611,7 @@ ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 0.985
 ATT.Category = {"eft_ar15_hguard"}
 
-ATT.ExcludeElements = {"eft_gas_ar15_rg", "eft_gas_ar15_jp", "eft_gas_ar15_m4fs"}
+ATT.ExcludeElements = {"gasblock_big"}
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_backup"),
@@ -1643,7 +1689,10 @@ ATT.CustomPros = { Ergonomics = "+3" }
 ATT.HeatCapacityMult = 1.008
 ATT.Category = {"eft_ar15_hguard"}
 
-ATT.ExcludeElements = {"barrel_406mm"}
+
+ATT.ActivateElements = {"eft_m203_allowed"}
+
+-- ATT.ExcludeElements = {"barrel_406mm"}
 
 -- fix later 
 ATT.Attachments = {
@@ -1695,6 +1744,8 @@ ATT.EFTErgoAdd = 3
 ATT.CustomPros = { Ergonomics = "+3" }
 ATT.HeatCapacityMult = 1.008
 ATT.Category = {"eft_ar15_hguard"}
+
+ATT.ActivateElements = {"eft_m203_allowed"}
 
 ATT.Attachments = {
     {
@@ -1749,6 +1800,7 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+ATT.ExcludeElements = {"eft_m203"}
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_viper_lower")
 
 ///////////////////////////////////////      eft_hg_ar15_viper_lower_fde
@@ -1776,6 +1828,7 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+ATT.ExcludeElements = {"eft_m203"}
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_viper_lower_fde")
 
 ///////////////////////////////////////      eft_hg_ar15_wing
@@ -1795,8 +1848,9 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_unique_ars_wing_a
 ATT.LHIK = true 
 
 ATT.Category = {"eft_ar15_hguard"}
+ATT.ActivateElements = {"sprrailallowed"}
 
-ATT.ExcludeElements = {"barrel_260mm", "eft_gas_ar15_rg", "eft_gas_ar15_jp", "eft_gas_ar15_m4fs"}
+ATT.ExcludeElements = {"barrel_260mm", "gasblock_big"}
 
 ATT.EFTErgoAdd = 15
 ATT.CustomPros = { Ergonomics = "+15" }
@@ -1825,8 +1879,9 @@ ATT.VisualRecoilMult = 0.98
 ATT.HeatCapacityMult = 0.942
 ATT.Category = {"eft_ar15_hguard"}
 ATT.Folder = "WS LVOA"
+ATT.ActivateElements = {"sprrailallowed"}
 
-ATT.ExcludeElements = {"barrel_260mm", "eft_silencer_r43_556","eft_gas_ar15_rg", "eft_gas_ar15_m4fs"}
+ATT.ExcludeElements = {"barrel_10i", "barrel_137i", "eft_silencer_r43_556", "gasblock_big"}
 
 
 ATT.Attachments = {
@@ -1836,7 +1891,8 @@ ATT.Attachments = {
         Pos = Vector(0, 1.2, -1.15),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0),
-        ExtraSightDistance = 8
+        ExtraSightDistance = 8,
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
     },
     {
         PrintName = ARC9:GetPhrase("eft_cat_frontsight"),
@@ -1844,7 +1900,8 @@ ATT.Attachments = {
         Pos = Vector(0, 14.8+1.5, -1.1),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0),
-        ExtraSightDistance = 8
+        ExtraSightDistance = 8,
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
     },
     {
         PrintName = ARC9:GetPhrase("eft_cat_tactical_u"),
@@ -1852,6 +1909,7 @@ ATT.Attachments = {
         Pos = Vector(0, 6.5, -1.1),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0),
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
     },
     {
         PrintName = ARC9:GetPhrase("eft_cat_mount_b"),
@@ -1906,8 +1964,9 @@ ATT.VisualRecoilMult = 0.98
 ATT.HeatCapacityMult = 0.942
 ATT.Category = {"eft_ar15_hguard"}
 ATT.Folder = "WS LVOA"
+ATT.ActivateElements = {"sprrailallowed"}
 
-ATT.ExcludeElements = {"barrel_260mm", "eft_silencer_r43_556","eft_gas_ar15_rg", "eft_gas_ar15_m4fs"}
+ATT.ExcludeElements = {"barrel_10i", "barrel_137i", "eft_silencer_r43_556", "gasblock_big"}
 
 ATT.Attachments = {
     {
@@ -1916,7 +1975,8 @@ ATT.Attachments = {
         Pos = Vector(0, 1.2, -1.15),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0),
-        ExtraSightDistance = 8
+        ExtraSightDistance = 8,
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
     },
     {
         PrintName = ARC9:GetPhrase("eft_cat_frontsight"),
@@ -1924,7 +1984,8 @@ ATT.Attachments = {
         Pos = Vector(0, 14.8+1.5, -1.1),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0),
-        ExtraSightDistance = 8
+        ExtraSightDistance = 8,
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
     },
     {
         PrintName = ARC9:GetPhrase("eft_cat_tactical_u"),
@@ -1932,6 +1993,7 @@ ATT.Attachments = {
         Pos = Vector(0, 6.5, -1.1),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0),
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
     },
     {
         PrintName = ARC9:GetPhrase("eft_cat_mount_b"),
@@ -1987,8 +2049,9 @@ ATT.VisualRecoilMult = 0.98
 ATT.HeatCapacityMult = 0.942
 ATT.Category = {"eft_ar15_hguard"}
 ATT.Folder = "WS LVOA"
+ATT.ActivateElements = {"sprrailallowed"}
 
-ATT.ExcludeElements = {"barrel_260mm", "eft_silencer_r43_556","eft_gas_ar15_rg", "eft_gas_ar15_m4fs"}
+ATT.ExcludeElements = {"barrel_10i", "barrel_137i", "eft_silencer_r43_556", "gasblock_big"}
 
 ATT.Attachments = {
     {
@@ -1997,7 +2060,8 @@ ATT.Attachments = {
         Pos = Vector(0, 1.2, -1.15),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0),
-        ExtraSightDistance = 8
+        ExtraSightDistance = 8,
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
     },
     {
         PrintName = ARC9:GetPhrase("eft_cat_frontsight"),
@@ -2005,7 +2069,8 @@ ATT.Attachments = {
         Pos = Vector(0, 14.8+1.5, -1.1),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0),
-        ExtraSightDistance = 8
+        ExtraSightDistance = 8,
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
     },
     {
         PrintName = ARC9:GetPhrase("eft_cat_tactical_u"),
@@ -2013,6 +2078,7 @@ ATT.Attachments = {
         Pos = Vector(0, 6.5, -1.1),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0),
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
     },
     {
         PrintName = ARC9:GetPhrase("eft_cat_mount_b"),
@@ -2065,8 +2131,9 @@ ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 0.95
 ATT.Category = {"eft_ar15_hguard"}
-ATT.ExcludeElements = { "eft_gas_ar15_rg", "eft_gas_ar15_m4fs"}
+ATT.ExcludeElements = {"barrel_10i", "gasblock_big"}
 ATT.Folder = "WS LVOA"
+ATT.ActivateElements = {"sprrailallowed"}
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_backup"),
@@ -2074,7 +2141,8 @@ ATT.Attachments = {
         Pos = Vector(0, 1.2, -1.15),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0),
-        ExtraSightDistance = 8
+        ExtraSightDistance = 8,
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
     },
     {
         PrintName = ARC9:GetPhrase("eft_cat_frontsight"),
@@ -2082,7 +2150,8 @@ ATT.Attachments = {
         Pos = Vector(0, 14.8+1.5-4, -1.1),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0),
-        ExtraSightDistance = 8
+        ExtraSightDistance = 8,
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
     },
     {
         PrintName = ARC9:GetPhrase("eft_cat_tactical_u"),
@@ -2090,6 +2159,7 @@ ATT.Attachments = {
         Pos = Vector(0, 6.5, -1.1),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0),
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
     },
     {
         PrintName = ARC9:GetPhrase("eft_cat_mount_b"),
@@ -2143,8 +2213,9 @@ ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 0.95
 ATT.Category = {"eft_ar15_hguard"}
-ATT.ExcludeElements = { "eft_gas_ar15_rg", "eft_gas_ar15_m4fs"}
+ATT.ExcludeElements = {"barrel_10i", "gasblock_big"}
 ATT.Folder = "WS LVOA"
+ATT.ActivateElements = {"sprrailallowed"}
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_backup"),
@@ -2152,7 +2223,8 @@ ATT.Attachments = {
         Pos = Vector(0, 1.2, -1.15),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0),
-        ExtraSightDistance = 8
+        ExtraSightDistance = 8,
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
     },
     {
         PrintName = ARC9:GetPhrase("eft_cat_frontsight"),
@@ -2160,7 +2232,8 @@ ATT.Attachments = {
         Pos = Vector(0, 14.8+1.5-4, -1.1),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0),
-        ExtraSightDistance = 8
+        ExtraSightDistance = 8,
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
     },
     {
         PrintName = ARC9:GetPhrase("eft_cat_tactical_u"),
@@ -2168,6 +2241,7 @@ ATT.Attachments = {
         Pos = Vector(0, 6.5, -1.1),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0),
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
     },
     {
         PrintName = ARC9:GetPhrase("eft_cat_mount_b"),
@@ -2221,8 +2295,9 @@ ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 0.95
 ATT.Category = {"eft_ar15_hguard"}
-ATT.ExcludeElements = { "eft_gas_ar15_rg", "eft_gas_ar15_m4fs"}
+ATT.ExcludeElements = {"barrel_10i", "gasblock_big"}
 ATT.Folder = "WS LVOA"
+ATT.ActivateElements = {"sprrailallowed"}
 
 ATT.Attachments = {
     {
@@ -2231,7 +2306,8 @@ ATT.Attachments = {
         Pos = Vector(0, 1.2, -1.15),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0),
-        ExtraSightDistance = 8
+        ExtraSightDistance = 8,
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
     },
     {
         PrintName = ARC9:GetPhrase("eft_cat_frontsight"),
@@ -2239,7 +2315,8 @@ ATT.Attachments = {
         Pos = Vector(0, 14.8+1.5-4, -1.1),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0),
-        ExtraSightDistance = 8
+        ExtraSightDistance = 8,
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
     },
     {
         PrintName = ARC9:GetPhrase("eft_cat_tactical_u"),
@@ -2247,6 +2324,7 @@ ATT.Attachments = {
         Pos = Vector(0, 6.5, -1.1),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0),
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
     },
     {
         PrintName = ARC9:GetPhrase("eft_cat_mount_b"),
@@ -2302,7 +2380,7 @@ ATT.CustomPros = { Ergonomics = "+14" }
 ATT.RecoilMult = 0.98
 ATT.VisualRecoilMult = 0.98
 ATT.HeatCapacityMult = 1.03
-ATT.ExcludeElements = {"barrel_260mm", "eft_gas_ar15_rg", "eft_gas_ar15_jp", "eft_gas_ar15_m4fs"}
+ATT.ExcludeElements = {"barrel_10i", "gasblock_big"}
 
 ATT.Attachments = {
     {
@@ -2429,7 +2507,8 @@ ATT.Category = {"eft_ar15_hguard"}
 ATT.EFTErgoAdd = 13
 ATT.CustomPros = { Ergonomics = "+13" }
 ATT.HeatCapacityMult = 0.92
-ATT.ExcludeElements = {"eft_gas_ar15_rg", "eft_gas_ar15_jp", "eft_gas_ar15_m4fs"}
+-- ATT.ExcludeElements = {"gasblock_big"}
+ATT.ActivateElements = {"sprrailallowed"}
 
 ATT.Attachments = {
     {
@@ -2438,7 +2517,8 @@ ATT.Attachments = {
         Pos = Vector(0, 2.2, -1.15),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0),
-        ExtraSightDistance = 8
+        ExtraSightDistance = 8,
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
     },
 }
 
@@ -2464,8 +2544,9 @@ ATT.CustomPros = { Ergonomics = "+12" }
 ATT.HeatCapacityMult = 0.985
 ATT.Category = {"eft_ar15_hguard"}
 
-ATT.ExcludeElements = {"barrel_406mm", "barrel_260mm", "eft_gas_ar15_rg", "eft_gas_ar15_jp", "eft_gas_ar15_m4fs"}
+ATT.ExcludeElements = {"barrel_10i", "barrel_145i", "eft_barrel_ar15_hanson_16", "gasblock_big"}
 
+ATT.ActivateElements = {"sprrailallowed"}
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_backup"),
@@ -2473,7 +2554,8 @@ ATT.Attachments = {
         Pos = Vector(0, 3.8, -1.1),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0),
-        ExtraSightDistance = 8
+        ExtraSightDistance = 8,
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
     },
     {
         PrintName = ARC9:GetPhrase("eft_cat_frontsight"),
@@ -2580,3 +2662,1193 @@ ATT.Attachments = {
 
 
 ARC9.LoadAttachment(ATT, "eft_mount_alexander_10")
+
+
+
+
+
+///////////////////////////////////////      eft_hg_ar15_m16a1
+
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Colt M16A1 handguard"
+ATT.CompactName = "M16A1"
+ATT.Icon = Material("entities/eft_ar15_attachments/68a63cb3e1fb670852024664.png", "mips smooth")
+ATT.Description = "A triangular fiberglass rifle handguard manufactured by Colt. Standard-issue handguard for M16A1 rifles."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.HasHG = true
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_colt_m16a1_std.mdl"
+ATT.LHIK = true 
+
+ATT.ExcludeElements = {"barrel_260mm", "barrel_370mm"}
+ATT.EFTErgoAdd = 7
+ATT.CustomPros = { Ergonomics = "+7" }
+ATT.HeatCapacityMult = 1.074
+ATT.Category = {"eft_ar15_hguard"}
+
+ARC9.LoadAttachment(ATT, "eft_hg_ar15_m16a1")
+
+///////////////////////////////////////      eft_hg_ar15_m16a2
+
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Colt M16A2 handguard"
+ATT.CompactName = "M16A2"
+ATT.Icon = Material("entities/eft_ar15_attachments/68a63cc0c92ee33ffa01bf5c.png", "mips smooth")
+ATT.Description = "A polymer rifle handguard manufactured by Colt. Standard-issue handguard for M16A2 rifles."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.HasHG = true
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_colt_m16a2_std.mdl"
+ATT.LHIK = true 
+
+ATT.ExcludeElements = {"barrel_260mm", "barrel_370mm"}
+ATT.EFTErgoAdd = 2
+ATT.CustomPros = { Ergonomics = "+2" }
+ATT.HeatCapacityMult = 1.074
+ATT.Category = {"eft_ar15_hguard"}
+
+ATT.ActivateElements = {"eft_m203_allowed"}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_handguard"),
+        Category = {"eft_hglower_m16a2"},
+        Pos = Vector(0, 0.65, 0.1),
+        Ang = Angle(0, 0, 0),   
+        Icon_Offset = Vector(0, 3.35, -1),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_hg_ar15_m16a2")
+
+///////////////////////////////////////      eft_hg_ar15_m16a2_lower
+ATT = {}
+ATT.PrintName = "AR-15 Colt A2 lower handguard"
+ATT.CompactName = "M16A2 lower"
+ATT.Icon = Material("entities/eft_ar15_attachments/68a6413b54ef229c4d089238.png", "mips smooth")
+ATT.Description = "A bottom part of the A2 handguard, manufactured by Colt. Standard-issue handguard for M16A2 rifles."
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_colt_m16a2_std_lower.mdl"
+ATT.LHIK = true
+ATT.LHIK_Priority = 1 -- lower
+ATT.EFTErgoAdd = 6
+ATT.CustomPros = { Ergonomics = "+6" }
+ATT.Category = {"eft_hglower_m16a2"}
+ATT.ExcludeElements = {"eft_m203"}
+ARC9.LoadAttachment(ATT, "eft_hg_ar15_m16a2_lower")
+
+///////////////////////////////////////      eft_hg_ar15_skinny
+
+
+ATT = {}
+
+ATT.PrintName = "AR-15 CAR-15 Skinny handguard"
+ATT.CompactName = "CAR-15"
+ATT.Icon = Material("entities/eft_ar15_attachments/68a63ccc8a85019a82087956.png", "mips smooth")
+ATT.Description = "An old-style carbine length 'skinny' handguard manufactured by Colt."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.HasHG = true
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_colt_car15_skinny.mdl"
+ATT.LHIK = true 
+
+ATT.ExcludeElements = {"barrel_260mm"}
+ATT.EFTErgoAdd = 2.5
+ATT.CustomPros = { Ergonomics = "+2.5" }
+ATT.HeatCapacityMult = 1.074
+ATT.Category = {"eft_ar15_hguard"}
+
+ATT.ActivateElements = {"eft_m203_allowed"}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_handguard"),
+        Category = {"eft_hglower_skinny"},
+        Pos = Vector(0, 0.65, 0.1),
+        Ang = Angle(0, 0, 0),   
+        Icon_Offset = Vector(0, 3.35, -1),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_hg_ar15_skinny")
+
+///////////////////////////////////////      eft_hg_ar15_skinny_lower
+ATT = {}
+ATT.PrintName = "AR-15 Colt CAR-15 Skinny lower handguard"
+ATT.CompactName = "CAR-15 lower"
+ATT.Icon = Material("entities/eft_ar15_attachments/68a641452258a88280055616.png", "mips smooth")
+ATT.Description = "A bottom part of the CAR-15 handguard, manufactured by Colt."
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_colt_car15_skinny_lower.mdl"
+ATT.LHIK = true
+ATT.LHIK_Priority = 1 -- lower
+ATT.EFTErgoAdd = 7.5
+ATT.CustomPros = { Ergonomics = "+7.5" }
+ATT.Category = {"eft_hglower_skinny"}
+ATT.ExcludeElements = {"eft_m203"}
+ARC9.LoadAttachment(ATT, "eft_hg_ar15_skinny_lower")
+
+
+///////////////////////////////////////      eft_hg_ar15_kac_m5
+
+
+ATT = {}
+
+ATT.PrintName = "AR-15 KAC M5 RAS handguard"
+ATT.CompactName = "M5 RAS"
+ATT.Icon = Material("entities/eft_ar15_attachments/68a63cdac92ee33ffa01bf5f.png", "mips smooth")
+ATT.Description = "A quad-rail handguard manufactured by Knight's Armament Company. Standard-issue handguard for the M16A4 rifle."
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.HasHG = true
+ATT.EFTErgoAdd = 1
+ATT.CustomPros = { Ergonomics = "+1" }
+ATT.RecoilMult = 0.99
+ATT.VisualRecoilMult = 0.99
+ATT.HeatCapacityMult = 0.968
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_kac_m5_ras.mdl"
+ATT.LHIK = true 
+ATT.LHIK_Priority = 0 -- lower
+-- ATT.LHIK_Priority = -22 -- needs lower hg
+
+ATT.Category = {"eft_ar15_hguard"}
+ATT.Folder = "KAC"
+ATT.ActivateElements = {"sprrailallowed", "eft_m203_allowed"}
+
+ATT.ExcludeElements = {"barrel_260mm", "gasblock_big"}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_handguard"),
+        Category = {"eft_hglower_kacm5"},
+        Pos = Vector(0, 0.87, -0.07),
+        Ang = Angle(0, 0, 0),   
+        Icon_Offset = Vector(0, 3.35, -1),
+    },    
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_backup"),
+        Category = {"eft_backupmount"},
+        Pos = Vector(0, 1.8, -1.15),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExtraSightDistance = 8,
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_frontsight"),
+        Category = {"eft_frontsight"},
+        Pos = Vector(0, 12.5, -1.1),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExtraSightDistance = 8,
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
+    },    
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_u"),
+        Category = {"eft_tactical_top", "eft_tactical_top_big"},
+        Pos = Vector(0, 8.5, -1.1),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0.5),
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_r"),
+        Category = {"eft_tactical", "eft_tactical_top", "eft_tactical_top_big"},
+        Pos = Vector(1.1, 12, 0.1),
+        Ang = Angle(0, -90, 90),
+        Icon_Offset = Vector(0, 0, 0.5),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_l"),
+        Category = {"eft_tactical", "eft_tactical_top", "eft_tactical_top_big"},
+        Pos = Vector(-1.1, 12, 0.1),
+        Ang = Angle(0, -90, -90),
+        Icon_Offset = Vector(0, 0, 0.5),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_hg_ar15_kac_m5")
+
+///////////////////////////////////////      eft_hg_ar15_kac_m5_lower
+ATT = {}
+ATT.PrintName = "AR-15 KAC M5 RAS lower handguard"
+ATT.CompactName = "M5 RAS lower"
+ATT.Icon = Material("entities/eft_ar15_attachments/68a63ce2e1fb670852024667.png", "mips smooth")
+ATT.Description = "A bottom rail part of the M5 RAS handguard. Manufactured by Knight's Armament Company."
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_kac_m5_ras_lower.mdl"
+ATT.ModelOffset = Vector(0, -0.1, -0.5)
+ATT.LHIK = true
+ATT.LHIK_Priority = 1 -- lower
+ATT.Category = {"eft_hglower_kacm5"}
+ATT.EFTErgoAdd = 5
+ATT.CustomPros = { Ergonomics = "+5" }
+ATT.RecoilMult = 0.99
+ATT.VisualRecoilMult = 0.99
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_b"),
+        Category = {"eft_tactical", "eft_tactical_top", "eft_bipod"},
+        Pos = Vector(0, 10, 1.15),
+        Ang = Angle(0, -90, 180),
+        Icon_Offset = Vector(0, 0, 0.5),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_foregrip"),
+        Category = {"eft_foregrip_small", "eft_foregrip_large"},
+        Pos = Vector(0, 3.4, 1.2),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, -1),
+    },
+}
+ATT.ExcludeElements = {"eft_m203"}
+ARC9.LoadAttachment(ATT, "eft_hg_ar15_kac_m5_lower")
+
+
+///////////////////////////////////////      eft_hg_ar15_radian_14
+
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Radian Model 1 14 inch handguard"
+ATT.CompactName = "Radian 14\""
+ATT.Icon = Material("entities/eft_ar15_attachments/6895bd19d55f0ebf6a0c0306.png", "mips smooth")
+ATT.Description = "A precision CNC machined 14 inch handguard, equipped with an M-LOK interface for installation of additional equipment. Manufactured by Radian Weapons."
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.HasHG = true
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_radian_model1_m_lok_14_inch.mdl"
+ATT.LHIK = true 
+ATT.EFTErgoAdd = 10
+ATT.CustomPros = { Ergonomics = "+10" }
+ATT.RecoilMult = 0.975
+ATT.VisualRecoilMult = 0.975
+ATT.HeatCapacityMult = 0.985
+ATT.Category = {"eft_ar15_hguard"}
+ATT.ActivateElements = {"sprrailallowed"}
+
+ATT.ExcludeElements = {"barrel_10i", "barrel_145i", "gasblock_big"}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_backup"),
+        Category = {"eft_backupmount"},
+        Pos = Vector(0, 3.8, -1.1),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExtraSightDistance = 8,
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_frontsight"),
+        Category = {"eft_frontsight"},
+        Pos = Vector(0, 15.25, -1.1),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExtraSightDistance = 8
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_r"),
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti", "eft_mount_mlokoffset"},
+        Pos = Vector(0.85, 15, 0.05),
+        Ang = Angle(180, 90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_l"),
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti", "eft_mount_mlokoffset"},
+        Pos = Vector(-0.85, 15, 0.05),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_u"),
+        Category = {"eft_tactical_top", "eft_tactical_top_big"},
+        Pos = Vector(0, 8.5, -1.1),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0.5),
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_b"),
+        Category = {"eft_mount_mlok41", "eft_foregrip_mlok"},
+        Pos = Vector(0, 4.1, 0.97),
+        Ang = Angle(0, -90, -90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+ATT.AdvancedCamoSupport = true
+ARC9.LoadAttachment(ATT, "eft_hg_ar15_radian_14")
+
+///////////////////////////////////////      eft_hg_ar15_cgnl_105
+
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Custom Guns 10.5 inch M-LOK handguard"
+ATT.CompactName = "CGNL 10.5\""
+ATT.Icon = Material("entities/eft_ar15_attachments/68c1707983e2d814b0093f7e.png", "mips smooth")
+ATT.Description = "The Custom Guns 10.5 inch handguard for AR-15 equipped with an M-LOK interface for installation of additional devices and accessories."
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.HasHG = true
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_cgnl_ar15_105_inch.mdl"
+ATT.LHIK = true 
+ATT.EFTErgoAdd = 9
+ATT.CustomPros = { Ergonomics = "+9" }
+ATT.RecoilMult = 0.99
+ATT.VisualRecoilMult = 0.99
+ATT.HeatCapacityMult = 0.996
+ATT.Category = {"eft_ar15_hguard"}
+
+ATT.ExcludeElements = {"barrel_10i", "gasblock_big"}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_backup"),
+        Category = {"eft_backupmount"},
+        Pos = Vector(0, 1.3, -1.1),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExtraSightDistance = 8
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_frontsight"),
+        Category = {"eft_frontsight"},
+        Pos = Vector(0, 9.8+3.5-4.2, -1.1),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExtraSightDistance = 8
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_u"),
+        Category = {"eft_tactical_top", "eft_tactical_top_big"},
+        Pos = Vector(0, 8.5-3.2, -1.1),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0.5),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_r"),
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti", "eft_mount_mlokoffset"},
+        Pos = Vector(0.8, 9.2+1.5-2.6, 0.1),
+        Ang = Angle(180, 90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_l"),
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti", "eft_mount_mlokoffset"},
+        Pos = Vector(-0.8, 9.2+1.5-2.6, 0.1),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_b"),
+        Category = {"eft_mount_mlok41", "eft_foregrip_mlok"},
+        Pos = Vector(0, 4, 1),
+        Ang = Angle(0, -90, -90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_hg_ar15_cgnl_105")
+
+///////////////////////////////////////      eft_hg_ar15_cgnl_14
+
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Custom Guns 14 inch M-LOK handguard"
+ATT.CompactName = "CGNL 14\""
+ATT.Icon = Material("entities/eft_ar15_attachments/68c170e383e2d814b0093f87.png", "mips smooth")
+ATT.Description = "The Custom Guns 14 inch handguard for AR-15 equipped with an M-LOK interface for installation of additional devices and accessories."
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.HasHG = true
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_cgnl_ar15_14_inch.mdl"
+ATT.LHIK = true 
+ATT.EFTErgoAdd = 10
+ATT.CustomPros = { Ergonomics = "+10" }
+ATT.RecoilMult = 0.985
+ATT.VisualRecoilMult = 0.985
+ATT.HeatCapacityMult = 0.968
+ATT.Category = {"eft_ar15_hguard"}
+
+ATT.ExcludeElements = {"barrel_10i", "barrel_137i", "gasblock_big"}
+
+ATT.ActivateElements = {"sprrailallowed"}
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_backup"),
+        Category = {"eft_backupmount"},
+        Pos = Vector(0, 1.3, -1.1),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExtraSightDistance = 8,
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_frontsight"),
+        Category = {"eft_frontsight"},
+        Pos = Vector(0, 9.8+3.5-4.2, -1.1),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExtraSightDistance = 8
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_u"),
+        Category = {"eft_tactical_top", "eft_tactical_top_big"},
+        Pos = Vector(0, 8.5-3.2, -1.1),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0.5),
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_r"),
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti", "eft_mount_mlokoffset"},
+        Pos = Vector(0.8, 9.2+1.5-2.6, 0.1),
+        Ang = Angle(180, 90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_l"),
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti", "eft_mount_mlokoffset"},
+        Pos = Vector(-0.8, 9.2+1.5-2.6, 0.1),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_b"),
+        Category = {"eft_mount_mlok41", "eft_foregrip_mlok"},
+        Pos = Vector(0, 4, 1),
+        Ang = Angle(0, -90, -90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_hg_ar15_cgnl_14")
+
+
+///////////////////////////////////////      eft_hg_ar15_kac_ff
+
+
+ATT = {}
+
+ATT.PrintName = "AR-15 KAC Free Float Rifle RAS 12 inch handguard"
+ATT.CompactName = "FF RAS 12\""
+ATT.Icon = Material("entities/eft_ar15_attachments/68caac360bfe742288085e16.png", "mips smooth")
+ATT.Description = "A quad-rail 12 inch handguard for the AR-15 platform. Manufactured by Knight's Armament Company."
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.HasHG = true
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_kac_rifle_lenght_free_float_ras_12_inch.mdl"
+ATT.LHIK = true
+ATT.EFTErgoAdd = 4
+ATT.CustomPros = { Ergonomics = "+4" }
+ATT.RecoilMult = 0.985
+ATT.VisualRecoilMult = 0.985
+ATT.HeatCapacityMult = 1.018
+ATT.Category = {"eft_ar15_hguard"}
+ATT.Folder = "KAC"
+ATT.ActivateElements = {"sprrailallowed"}
+ATT.ExcludeElements = {"barrel_10i", "gasblock_big"}
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_backup"),
+        Category = {"eft_backupmount"},
+        Pos = Vector(0, 1.3, -1.1),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExtraSightDistance = 8,
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_frontsight"),
+        Category = {"eft_frontsight"},
+        Pos = Vector(0, 12.8+1.5-4, -1.1),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExtraSightDistance = 8,
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_u"),
+        Category = {"eft_tactical_top", "eft_tactical_top_big"},
+        Pos = Vector(0, 8.5-2.5, -1.1),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0.5),
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_r"),
+        Category = {"eft_tactical", "eft_tactical_top"},
+        Pos = Vector(1.1, 12-5, 0.1),
+        Ang = Angle(0, -90, 90),
+        Icon_Offset = Vector(0, 0, 0.5),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_l"),
+        Category = {"eft_tactical", "eft_tactical_top"},
+        Pos = Vector(-1.1, 12-5, 0.1),
+        Ang = Angle(0, -90, -90),
+        Icon_Offset = Vector(0, 0, 0.5),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_foregrip"),
+        Category = {"eft_foregrip_small", "eft_foregrip_large"},
+        Pos = Vector(0, 3.4, 0.8),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, -1),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_hg_ar15_kac_ff")
+
+
+///////////////////////////////////////      eft_hg_ar15_precision_round
+
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Precision Reflex GEN III Round Carbon 12 inch handguard"
+ATT.CompactName = "Round Carbon"
+ATT.Icon = Material("entities/eft_ar15_attachments/68caac28f42a4476cf0be2ac.png", "mips smooth")
+ATT.Description = "The 12 inch GEN III Round Carbon handguard for AR-15 systems. Manufactured by Precision Reflex."
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.HasHG = true
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_precision_reflex_carbon_round_gen_3_12_inch.mdl"
+-- ATT.ModelSkin = 2
+ATT.LHIK = true 
+
+ATT.Category = {"eft_ar15_hguard"}
+ATT.EFTErgoAdd = 12
+ATT.CustomPros = { Ergonomics = "+12" }
+ATT.RecoilMult = 0.985
+ATT.VisualRecoilMult = 0.985
+ATT.ExcludeElements = {"barrel_10i", "gasblock_big"}
+
+ATT.ActivateElements = {"sprrailallowed"}
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_frontsight"),
+        Category = {"eft_frontsight"},
+        Pos = Vector(0, 12.8+1.5-4, -1.1),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExtraSightDistance = 8,
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_u"),
+        Category = {"eft_tactical_top", "eft_tactical_top_big"},
+        Pos = Vector(0, 8.5-2.5, -1.1),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0.5),
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_r"),
+        Category = {"eft_tactical", "eft_tactical_top"},
+        Pos = Vector(1.1, 12-5, 0.1),
+        Ang = Angle(0, -90, 90),
+        Icon_Offset = Vector(0, 0, 0.5),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_l"),
+        Category = {"eft_tactical", "eft_tactical_top"},
+        Pos = Vector(-1.1, 12-5, 0.1),
+        Ang = Angle(0, -90, -90),
+        Icon_Offset = Vector(0, 0, 0.5),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_foregrip"),
+        Category = {"eft_foregrip_small", "eft_foregrip_large"},
+        Pos = Vector(0, 3.4, 0.8),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, -1),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_hg_ar15_precision_round")
+
+///////////////////////////////////////      eft_hg_ar15_precision_round_fde
+
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Precision Reflex GEN III Round Carbon 12 inch handguard (FDE)"
+ATT.CompactName = "Round Carbon"
+ATT.Icon = Material("entities/eft_ar15_attachments/68cc2ae66e59cb54f4054f47.png", "mips smooth")
+ATT.Description = "The 12 inch GEN III Round Carbon handguard for AR-15 systems. Manufactured by Precision Reflex. Flat Dark Earth version."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.HasHG = true
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_precision_reflex_carbon_round_gen_3_12_inch.mdl"
+ATT.ModelSkin = 1
+ATT.LHIK = true 
+
+ATT.Category = {"eft_ar15_hguard"}
+ATT.EFTErgoAdd = 12
+ATT.CustomPros = { Ergonomics = "+12" }
+ATT.RecoilMult = 0.985
+ATT.VisualRecoilMult = 0.985
+ATT.ExcludeElements = {"barrel_10i", "gasblock_big"}
+
+ATT.ActivateElements = {"sprrailallowed"}
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_frontsight"),
+        Category = {"eft_frontsight"},
+        Pos = Vector(0, 12.8+1.5-4, -1.1),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExtraSightDistance = 8,
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_u"),
+        Category = {"eft_tactical_top", "eft_tactical_top_big"},
+        Pos = Vector(0, 8.5-2.5, -1.1),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0.5),
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_r"),
+        Category = {"eft_tactical", "eft_tactical_top"},
+        Pos = Vector(1.1, 12-5, 0.1),
+        Ang = Angle(0, -90, 90),
+        Icon_Offset = Vector(0, 0, 0.5),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_l"),
+        Category = {"eft_tactical", "eft_tactical_top"},
+        Pos = Vector(-1.1, 12-5, 0.1),
+        Ang = Angle(0, -90, -90),
+        Icon_Offset = Vector(0, 0, 0.5),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_foregrip"),
+        Category = {"eft_foregrip_small", "eft_foregrip_large"},
+        Pos = Vector(0, 3.4, 0.8),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, -1),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_hg_ar15_precision_round_fde")
+
+///////////////////////////////////////      eft_hg_ar15_gridlok_base_blk
+
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Strike Industries GRIDLOK base (Black)"
+ATT.CompactName = "GRIDLOK base"
+ATT.Icon = Material("entities/eft_ar15_attachments/68a5dc0c2cd64a8b58023b87.png", "mips smooth")
+ATT.Description = "A base for installing GRIDLOK AR-15 handguards. Manufactured by Strike Industries. Black version."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+-- ATT.HasHG = true
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_strike_industries_gridlok_base.mdl"
+ATT.ModelSkin = 0
+ATT.ModelAngleOffset = Angle(0, -90, 0)
+
+ATT.Category = {"eft_ar15_hguard"}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_handguard"),
+        Category = {"eft_gridlok"},
+        Pos = Vector(0, 1, 0.12),
+        Ang = Angle(0, 0, 0),   
+        Icon_Offset = Vector(0, 2, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_backup"),
+        Category = {"eft_backupmount"},
+        Pos = Vector(0, 0.7, -1.1),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExtraSightDistance = 8
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_hg_ar15_gridlok_base_blk")
+
+///////////////////////////////////////      eft_hg_ar15_gridlok_base_red
+
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Strike Industries GRIDLOK base (Red)"
+ATT.CompactName = "GRIDLOK base"
+ATT.Icon = Material("entities/eft_ar15_attachments/68a7000d7708ac5120060527.png", "mips smooth")
+ATT.Description = "A base for installing GRIDLOK AR-15 handguards. Manufactured by Strike Industries. Red version."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+-- ATT.HasHG = true
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_strike_industries_gridlok_base.mdl"
+ATT.ModelSkin = 1
+ATT.ModelAngleOffset = Angle(0, -90, 0)
+
+ATT.Category = {"eft_ar15_hguard"}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_handguard"),
+        Category = {"eft_gridlok"},
+        Pos = Vector(0, 1, 0.12),
+        Ang = Angle(0, 0, 0),   
+        Icon_Offset = Vector(0, 2, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_backup"),
+        Category = {"eft_backupmount"},
+        Pos = Vector(0, 0.7, -1.1),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExtraSightDistance = 8
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_hg_ar15_gridlok_base_red")
+
+///////////////////////////////////////      eft_hg_ar15_gridlok_base_yellow
+
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Strike Industries GRIDLOK base (Yellow)"
+ATT.CompactName = "GRIDLOK base"
+ATT.Icon = Material("entities/eft_ar15_attachments/68a6fff085a17dc1cb008066.png", "mips smooth")
+ATT.Description = "A base for installing GRIDLOK AR-15 handguards. Manufactured by Strike Industries. Yellow version."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+-- ATT.HasHG = true
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_strike_industries_gridlok_base.mdl"
+ATT.ModelSkin = 2
+ATT.ModelAngleOffset = Angle(0, -90, 0)
+
+ATT.Category = {"eft_ar15_hguard"}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_handguard"),
+        Category = {"eft_gridlok"},
+        Pos = Vector(0, 1, 0.12),
+        Ang = Angle(0, 0, 0),   
+        Icon_Offset = Vector(0, 2, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_backup"),
+        Category = {"eft_backupmount"},
+        Pos = Vector(0, 0.7, -1.1),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExtraSightDistance = 8
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_hg_ar15_gridlok_base_yellow")
+
+
+///////////////////////////////////////      eft_hg_ar15_gridlok_85
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Strike Industries GRIDLOK 8.5 inch handguard"
+ATT.CompactName = "GRIDLOK 8.5\""
+ATT.Icon = Material("entities/eft_ar15_attachments/68a5dc4eed35a7eac1048ff6.png", "mips smooth")
+ATT.Description = "An 8.5 inch main body of the GRIDLOK handguard for the AR-15 platform. Equipped with an M-LOK interface for installation of additional equipment. Manufactured by Strike Industries."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_strike_industries_gridlok_8_5_inch_m_lok.mdl"
+ATT.LHIK = true
+ATT.LHIK_Priority = 1 -- lower
+ATT.HasHG = true
+
+ATT.EFTErgoAdd = 10
+ATT.CustomPros = { Ergonomics = "+10" }
+ATT.RecoilMult = 0.995
+ATT.VisualRecoilMult = 0.995
+
+ATT.Category = {"eft_gridlok"}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_handguard"),
+        Category = {"eft_gridlok_ext"},
+        Pos = Vector(0, 3.48, -.03),
+        Ang = Angle(0, 0, 0),   
+        Icon_Offset = Vector(0, 1, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_r"),
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti", "eft_mount_mlokoffset"},
+        Pos = Vector(0.9, 6.0, -0.05),
+        Ang = Angle(180, 90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_l"),
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti", "eft_mount_mlokoffset"},
+        Pos = Vector(-0.9, 6.0, -0.05),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_hg_ar15_gridlok_85")
+
+///////////////////////////////////////      eft_hg_ar15_gridlok_11
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Strike Industries GRIDLOK 11 inch handguard"
+ATT.CompactName = "GRIDLOK 11\""
+ATT.Icon = Material("entities/eft_ar15_attachments/68a6f3b27279296357007cd7.png", "mips smooth")
+ATT.Description = "An 11 inch main body of the GRIDLOK handguard for the AR-15 platform. Equipped with an M-LOK interface for installation of additional equipment. Manufactured by Strike Industries."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_strike_industries_gridlok_11_inch_m_lok.mdl"
+ATT.LHIK = true
+ATT.LHIK_Priority = 1 -- lower
+ATT.HasHG = true
+
+ATT.EFTErgoAdd = 10
+ATT.CustomPros = { Ergonomics = "+10" }
+ATT.RecoilMult = 0.995
+ATT.VisualRecoilMult = 0.995
+
+ATT.Category = {"eft_gridlok"}
+
+ATT.ExcludeElements = {"barrel_20i", "eft_barrel_ar15_260mm"}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_handguard"),
+        Category = {"eft_gridlok_ext"},
+        Pos = Vector(0, 3.48+2.55, -.03),
+        Ang = Angle(0, 0, 0),   
+        Icon_Offset = Vector(0, 1, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_r"),
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti", "eft_mount_mlokoffset"},
+        Pos = Vector(0.9, 6.0+2.55, -0.05),
+        Ang = Angle(180, 90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_l"),
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti", "eft_mount_mlokoffset"},
+        Pos = Vector(-0.9, 6.0+2.55, -0.05),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_b"),
+        -- Category = {"eft_mount_mlok41", "eft_foregrip_mlok"},
+        Category = {"eft_foregrip_mlok"},
+        Pos = Vector(0, 3.5, 1.12),
+        Ang = Angle(0, -90, -90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_hg_ar15_gridlok_11")
+
+///////////////////////////////////////      eft_hg_ar15_gridlok_15
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Strike Industries GRIDLOK 15 inch handguard"
+ATT.CompactName = "GRIDLOK 15\""
+ATT.Icon = Material("entities/eft_ar15_attachments/68a6fbb07279296357007ce2.png", "mips smooth")
+ATT.Description = "A 15 inch main body of the GRIDLOK handguard for the AR-15 platform. Equipped with an M-LOK interface for installation of additional equipment. Manufactured by Strike Industries."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_strike_industries_gridlok_15_inch_m_lok.mdl"
+ATT.LHIK = true
+ATT.LHIK_Priority = 1 -- lower
+ATT.HasHG = true
+
+ATT.EFTErgoAdd = 10
+ATT.CustomPros = { Ergonomics = "+10" }
+ATT.RecoilMult = 0.995
+ATT.VisualRecoilMult = 0.995
+
+ATT.Category = {"eft_gridlok"}
+
+ATT.ExcludeElements = {"barrel_10i", "barrel_145i", "gasblock_big"}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_handguard"),
+        Category = {"eft_gridlok_ext"},
+        Pos = Vector(0, 3.48+6.6, -.03),
+        Ang = Angle(0, 0, 0),   
+        Icon_Offset = Vector(0, 1, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_r"),
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti", "eft_mount_mlokoffset"},
+        Pos = Vector(0.9, 6.0+6.6, -0.05),
+        Ang = Angle(180, 90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_l"),
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti", "eft_mount_mlokoffset"},
+        Pos = Vector(-0.9, 6.0+6.6, -0.05),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_b"),
+        Category = {"eft_mount_mlok41", "eft_foregrip_mlok"},
+        Pos = Vector(0, 4.4, 1.12),
+        Ang = Angle(0, -90, -90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_hg_ar15_gridlok_15")
+
+///////////////////////////////////////      eft_hg_ar15_gridlok_17
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Strike Industries GRIDLOK 17 inch handguard"
+ATT.CompactName = "GRIDLOK 17\""
+ATT.Icon = Material("entities/eft_ar15_attachments/68a6fbfdd31595bb360c73bd.png", "mips smooth")
+ATT.Description = "A 17 inch main body of the GRIDLOK handguard for the AR-15 platform. Equipped with an M-LOK interface for installation of additional equipment. Manufactured by Strike Industries."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_strike_industries_gridlok_17_inch_m_lok.mdl"
+ATT.LHIK = true
+ATT.LHIK_Priority = 1 -- lower
+ATT.HasHG = true
+
+ATT.EFTErgoAdd = 10
+ATT.CustomPros = { Ergonomics = "+10" }
+ATT.RecoilMult = 0.995
+ATT.VisualRecoilMult = 0.995
+
+ATT.Category = {"eft_gridlok"}
+
+ATT.ExcludeElements = {"barrel_10i", "barrel_145i", "barrel_16i", "gasblock_big"}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_handguard"),
+        Category = {"eft_gridlok_ext"},
+        Pos = Vector(0, 3.48+8.63, -.03),
+        Ang = Angle(0, 0, 0),   
+        Icon_Offset = Vector(0, 1, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_r"),
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti", "eft_mount_mlokoffset"},
+        Pos = Vector(0.9, 6.0+8.63, -0.05),
+        Ang = Angle(180, 90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_l"),
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti", "eft_mount_mlokoffset"},
+        Pos = Vector(-0.9, 6.0+8.63, -0.05),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_b"),
+        Category = {"eft_mount_mlok41", "eft_foregrip_mlok"},
+        Pos = Vector(0, 4.4, 1.12),
+        Ang = Angle(0, -90, -90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_hg_ar15_gridlok_17")
+
+
+///////////////////////////////////////      eft_hg_ar15_gridlok_ext_blk
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Strike Industries GRIDLOK Extension (Black)"
+ATT.CompactName = "GRIDLOK Ext."
+ATT.Icon = Material("entities/eft_ar15_attachments/68a6e8fd4ac5b037cb0e9b86.png", "mips smooth")
+ATT.Description = "An extension for the GRIDLOK handguard. Equipped with a folding front sight, Picatinny rail, and an M-LOK interface. Manufactured by Strike Industries. Black version."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/mount_ar15_strike_industries_gridlok_extention.mdl"
+ATT.ModelSkin = 0
+ATT.ModelAngleOffset = Angle(0, -90, 0)
+
+ATT.EFTErgoAdd = 2
+ATT.CustomPros = { Ergonomics = "+2" }
+
+ATT.Category = {"eft_gridlok_ext"}
+
+
+ATT.DrawFunc = function(swep, model) model:SetBodygroup(1, (swep:GetValue("FoldSights") or swep:HasElement("eft_frontsight")) and 1 or 0) end
+
+ATT.ExcludeElements = {"gasblock_big"}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_u"),
+        Category = {"eft_tactical_top", "eft_tactical_top_big"},
+        Pos = Vector(0, 1.8, -1.25),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0.5),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_b"),
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti", "eft_mount_mlokoffset", "eft_mount_mlok_bipod"},
+        Pos = Vector(0, 2.5, 1.2),
+        Ang = Angle(0, -90, -90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_hg_ar15_gridlok_ext_blk")
+
+///////////////////////////////////////      eft_hg_ar15_gridlok_ext_red
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Strike Industries GRIDLOK Extension (Red)"
+ATT.CompactName = "GRIDLOK Ext."
+ATT.Icon = Material("entities/eft_ar15_attachments/68a6ff952885e0bbd30bb6fd.png", "mips smooth")
+ATT.Description = "An extension for the GRIDLOK handguard. Equipped with a folding front sight, Picatinny rail, and an M-LOK interface. Manufactured by Strike Industries. Red version."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/mount_ar15_strike_industries_gridlok_extention.mdl"
+ATT.ModelSkin = 1
+ATT.ModelAngleOffset = Angle(0, -90, 0)
+
+ATT.EFTErgoAdd = 2
+ATT.CustomPros = { Ergonomics = "+2" }
+
+ATT.Category = {"eft_gridlok_ext"}
+
+
+ATT.DrawFunc = function(swep, model) model:SetBodygroup(1, (swep:GetValue("FoldSights") or swep:HasElement("eft_frontsight")) and 1 or 0) end
+
+ATT.ExcludeElements = {"gasblock_big"}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_u"),
+        Category = {"eft_tactical_top", "eft_tactical_top_big"},
+        Pos = Vector(0, 1.8, -1.25),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0.5),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_b"),
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti", "eft_mount_mlokoffset", "eft_mount_mlok_bipod"},
+        Pos = Vector(0, 2.5, 1.2),
+        Ang = Angle(0, -90, -90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_hg_ar15_gridlok_ext_red")
+
+///////////////////////////////////////      eft_hg_ar15_gridlok_ext_yellow
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Strike Industries GRIDLOK Extension (Yellow)"
+ATT.CompactName = "GRIDLOK Ext."
+ATT.Icon = Material("entities/eft_ar15_attachments/68a6ff732885e0bbd30bb6f9.png", "mips smooth")
+ATT.Description = "An extension for the GRIDLOK handguard. Equipped with a folding front sight, Picatinny rail, and an M-LOK interface. Manufactured by Strike Industries. Yellow version."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/mount_ar15_strike_industries_gridlok_extention.mdl"
+ATT.ModelSkin = 2
+ATT.ModelAngleOffset = Angle(0, -90, 0)
+
+ATT.EFTErgoAdd = 2
+ATT.CustomPros = { Ergonomics = "+2" }
+
+ATT.Category = {"eft_gridlok_ext"}
+
+
+ATT.DrawFunc = function(swep, model) model:SetBodygroup(1, (swep:GetValue("FoldSights") or swep:HasElement("eft_frontsight")) and 1 or 0) end
+
+ATT.ExcludeElements = {"gasblock_big"}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_u"),
+        Category = {"eft_tactical_top", "eft_tactical_top_big"},
+        Pos = Vector(0, 1.8, -1.25),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0.5),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_b"),
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti", "eft_mount_mlokoffset", "eft_mount_mlok_bipod"},
+        Pos = Vector(0, 2.5, 1.2),
+        Ang = Angle(0, -90, -90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_hg_ar15_gridlok_ext_yellow")
+
+
+
+
+-- add
+-- AB ARMS/ ABA M1 -- no limits
+
+
+-- MaTech
+-- a2 20inch barrel (can , "eft_ar15_gasblock_mk12")
