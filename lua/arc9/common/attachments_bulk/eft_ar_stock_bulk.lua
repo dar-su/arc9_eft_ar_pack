@@ -1040,28 +1040,3 @@ ATT.Category = "eft_ar_stock_a2"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ARC9.LoadAttachment(ATT, "eft_ar_stock_7")
-
-///////////////////////////////////////      eft_ar_stock_sass
-
-
-ATT = {}
-
-ATT.PrintName = "AR-15 KAC SASS stock (Taupe)"
-ATT.CompactName = "SASS"
-ATT.Icon = Material("entities/eft_ar15_attachments/sassstock.png", "mips smooth")
-ATT.Description = "???"
-
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_kac_m110_sass.mdl"
-
-ATT.HasStock = true
-
-ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3" }
-ATT.RecoilMult = 0.77
-ATT.VisualRecoilMult = 0.77
-
-ATT.SortOrder = 0
-ATT.Category = "eft_ar_stock_a2"
-ATT.MenuCategory = "ARC9 - EFT Attachments"
-
-ARC9.LoadAttachment(ATT, "eft_ar_stock_sass")

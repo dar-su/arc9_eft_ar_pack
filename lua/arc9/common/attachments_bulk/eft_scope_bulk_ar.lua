@@ -1161,3 +1161,200 @@ ATT.Attachments = {
 }
 
 ARC9.LoadAttachment(ATT, "eft_mount_30mm_alpha4")
+
+
+
+///////////////////////////////////////      eft_scope_30mm_mark4mrt
+
+
+ATT = {}
+
+ATT.PrintName = "Leupold Mark 4 MR/T TS-30A2 2.5-8x36 30mm riflescope"
+ATT.CompactName = "TS-30A2"
+ATT.Icon = Material("entities/eft_attachments/68caad7f933990601c07f47c.png", "mips smooth")
+ATT.Description = "Precise, accurate, durable and dependable - the Mark 4 MR/T TS-30A2 rifle scope. The model provides 2.5-8x magnification giving you a clear idea of the actual size of the targeted object."    
+ATT.SortOrder = 3
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/scope_leupold_mark4.mdl"
+
+ATT.ExcludeElements = {"eft_rsh12_mag_std"} -- wawa not for rsh12
+
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = "eft_optic_30mm"
+
+ATT.EFTErgoAdd = -3.5
+ATT.CustomCons = { Ergonomics = "-3.5" }
+
+ATT.FoldSights = true
+
+ATT.Sights = {
+    {
+        Pos = Vector(0, 12.6, 0),
+        Ang = Angle(0, 0, 0),
+        Magnification = 1.15,
+        ViewModelFOV = 36,
+        RTScopeFOV = 36/1,
+    },
+}
+
+local prevscroll = 0
+ATT.DrawFunc = function(swep, model, wm) 
+    if !wm then
+        -- swep:GetSight().slottbl.Address
+        local active = swep:GetInSights() and model.slottbl.Address == swep:GetActiveSightSlotTable().Address
+
+        if active then
+            local scrollevel = swep:GetSight().SmoothScrollLevel or 0
+            model:SetPoseParameter("switch", 1 - scrollevel)
+            
+
+            local roundedscroll = math.Round(scrollevel, 2)
+            if prevscroll != roundedscroll then
+                if roundedscroll == 1 then ARC9EFTdrawnumber("2.5x")
+                elseif roundedscroll == 0 then ARC9EFTdrawnumber("8x") end
+            end
+            prevscroll = roundedscroll
+        end
+    end
+end
+
+ATT.ZoomSound = false
+ATT.RTScopeAdjustable = true
+ATT.RTScopeAdjustmentLevels = 7
+
+ATT.RTScopeMagnification = 2.5
+ATT.RTScopeMagnificationMin = 2.5
+ATT.RTScopeMagnificationMax = 8
+
+ATT.RTScope = true
+ATT.RTScopeSubmatIndex = 4
+ATT.RTScopeFOV = 12
+ATT.RTScopeReticle = Material("vgui/arc9_eft_shared/reticles/scope_30mm_leupold_mark_4_mr_t_ts_30a2_25_8x36_mark.png", "mips smooth")
+ATT.RTScopeReticleScale = 1
+ATT.RTScopeColorable = false
+ATT.RTScopeShadowIntensity = 10
+ATT.RTScopeBlackBox = true 
+ATT.RTScopeBlackBoxShadow = true 
+
+ATT.ScopeScreenRatio = 0.5833
+
+
+ARC9.LoadAttachment(ATT, "eft_scope_30mm_mark4mrt")
+
+
+///////////////////////////////////////      eft_scope_elcan_mount
+
+ATT = {}
+
+ATT.PrintName = "Elcan SpecterDR Mounting Plate for Trijicon"
+ATT.CompactName = "Specter"
+ATT.Icon = Material("entities/eft_attachments/688b54a11cef2a61d005273b.png", "mips smooth")
+ATT.Description = "A mount base for installation of RMR-type reflex sights on the Elcan SpecterDR scope."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_elcan_mount"}
+
+ATT.EFTErgoAdd = -0.1
+ATT.CustomCons = { Ergonomics = "-0.1" }
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_scope"),
+        Category = "eft_rmr",
+        Pos = Vector(0, -0, -1.025),
+        --Pos = Vector(0, 0, 0),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 1),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_scope_elcan_mount")
+
+
+///////////////////////////////////////      eft_mount_30mm_arms
+
+ATT = {}
+
+ATT.PrintName = "A.R.M.S. #22 30mm ring scope mount"
+ATT.CompactName = "ARMS#22"
+ATT.Icon = Material("entities/eft_attachments/68caacc7933990601c07f479.png", "mips smooth")
+ATT.Description = "A.R.M.S. #22 is a universal 30mm scope base mount for installation on Picatinny rails."
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/mount_all_arms_22_scope_rings.mdl"
+
+ATT.Category = {"eft_optic_large"}
+ATT.Folder = "Scopes/Mounts"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.EFTErgoAdd = -1
+ATT.CustomCons = { Ergonomics = "-1" }
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_scope"),
+        Category = {"eft_optic_30mm"},
+        Pos = Vector(-2.5, 0, -1.585),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount"),
+        Category = {"eft_mount_arms_22"},
+        Pos = Vector(0, 0, 0),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(3.1, 0, 1.5),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_mount_30mm_arms")
+
+///////////////////////////////////////      eft_mount_arms_22_cap
+
+
+ATT = {}
+
+ATT.PrintName = "A.R.M.S. #22 ring cap"
+ATT.CompactName = "ARMS#22"
+ATT.Icon = Material("entities/eft_attachments/68caace5f42a4476cf0be2b4.png", "mips smooth")
+ATT.Description = "A top ring cap for the A.R.M.S. #22 mount."
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/mount_base_arms_22_ring_cap.mdl"
+
+ATT.EFTErgoAdd = 0.5
+ATT.CustomPros = { Ergonomics = "+0.5" }
+ATT.Category = {"eft_mount_arms_22"}
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+
+ARC9.LoadAttachment(ATT, "eft_mount_arms_22_cap")
+
+///////////////////////////////////////      eft_mount_arms_22_tr
+
+
+ATT = {}
+
+ATT.PrintName = "A.R.M.S. #22 Tactical Ring Rail mount"
+ATT.CompactName = "#22 TRR"
+ATT.Icon = Material("entities/eft_attachments/68caacf7c8ac87b10507c5a9.png", "mips smooth")
+ATT.Description = "A universal rail mount for installation of various red dot sights or tactical equipment on the A.R.M.S. #22 optic mount, installed as replacement for standard ring cap."
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/mount_base_arms_22_trr.mdl"
+
+ATT.EFTErgoAdd = -0.1
+ATT.CustomCons = { Ergonomics = "-0.1" }
+
+ATT.Category = {"eft_mount_arms_22"}
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_tactical"), -- Front
+        Category = {"eft_optic_small", "eft_raptar"},
+        Pos = Vector(-3.6, 0, -3.65),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+
+ARC9.LoadAttachment(ATT, "eft_mount_arms_22_tr")

@@ -35,6 +35,7 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_rearsight"),
         Category = {"eft_ar_rearsight", "eft_rearsight", "eft_rearsight_hk416"},
+        -- ExcludeElements = {"eft_rec_ar15_spr_rail"},
         Pos = Vector(4.75, 0, -2.13),
         Ang = Angle(0, 0, 0),
     },
@@ -90,6 +91,7 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_rearsight"),
         Category = {"eft_ar_rearsight", "eft_rearsight", "eft_rearsight_hk416"},
+        -- ExcludeElements = {"eft_rec_ar15_spr_rail"},
         Pos = Vector(4.75, 0, -2.13),
         Ang = Angle(0, 0, 0),
     },
@@ -148,6 +150,7 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_rearsight"),
         Category = {"eft_ar_rearsight", "eft_rearsight", "eft_rearsight_hk416"},
+        -- ExcludeElements = {"eft_rec_ar15_spr_rail"},
         Pos = Vector(4.75, 0, -2.13),
         Ang = Angle(0, 0, 0),
     },
@@ -204,6 +207,7 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_rearsight"),
         Category = {"eft_ar_rearsight", "eft_rearsight", "eft_rearsight_hk416"},
+        -- ExcludeElements = {"eft_rec_ar15_spr_rail"},
         Pos = Vector(4.75, 0, -2.13),
         Ang = Angle(0, 0, 0),
     },
@@ -263,6 +267,7 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_rearsight"),
         Category = {"eft_ar_rearsight", "eft_rearsight", "eft_rearsight_hk416"},
+        -- ExcludeElements = {"eft_rec_ar15_spr_rail"},
         Pos = Vector(4.75, 0, -2.13),
         Ang = Angle(0, 0, 0),
     },
@@ -321,6 +326,7 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_rearsight"),
         Category = {"eft_ar_rearsight", "eft_rearsight", "eft_rearsight_hk416"},
+        -- ExcludeElements = {"eft_rec_ar15_spr_rail"},
         Pos = Vector(4.75, 0, -2.13),
         Ang = Angle(0, 0, 0),
     },
@@ -377,6 +383,7 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_rearsight"),
         Category = {"eft_ar_rearsight", "eft_rearsight", "eft_rearsight_hk416"},
+        -- ExcludeElements = {"eft_rec_ar15_spr_rail"},
         Pos = Vector(4.75, 0, -2.13),
         Ang = Angle(0, 0, 0),
     },
@@ -424,6 +431,16 @@ ATT.RecoilMult = 0.985
 ATT.VisualRecoilMult = 0.985
 
 -- ATT.EFTAR15NoFwdAssist = true
+
+ATT.Sights = {
+    {
+        Pos = Vector(0, 12, -3.522),
+        Ang = Angle(0, 0, 0),
+        Magnification = 1.1,
+        ViewModelFOV = 53,
+        IsIronSight = true
+    }
+}
 
 ATT.Attachments = {
     {
@@ -475,6 +492,16 @@ ATT.RecoilMult = 0.985
 ATT.VisualRecoilMult = 0.985
 
 -- ATT.EFTAR15NoFwdAssist = true
+
+ATT.Sights = {
+    {
+        Pos = Vector(0, 12, -3.522),
+        Ang = Angle(0, 0, 0),
+        Magnification = 1.1,
+        ViewModelFOV = 53,
+        IsIronSight = true
+    }
+}
 
 ATT.Attachments = {
     {
@@ -565,12 +592,107 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_scope"),
         Category = {"eft_optic_large", "eft_optic_small", "eft_optic_medium"},
-        Pos = Vector(-0.2, -0, -0.55),
-        --Pos = Vector(0, 0, 0),
+        Pos = Vector(0.2, -0, -0.5),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0.2),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_backup"),
+        Category = {"eft_backupmount"},
+        Pos = Vector(-3, -0, -0.5),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExtraSightDistance = 8
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_u"),
+        Category = {"eft_tactical_top", "eft_tactical_top_big"},
+        Pos = Vector(-11.5, -0, -0.5),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0.5),
     },
 }
 
 
 ARC9.LoadAttachment(ATT, "eft_rec_ar15_spr_rail")
+
+
+///////////////////////////////////////      eft_rearsight_matech
+
+
+ATT = {}
+
+ATT.PrintName = "MaTech BUIS rear sight"
+ATT.CompactName = "MaTech"
+ATT.Icon = Material("entities/eft_ar15_attachments/68a63d3c8e977b40b2032286.png", "mips smooth")
+ATT.Description = "A back-up iron sight manufactured by MaTech Solutions."
+ATT.SortOrder = 1
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/sight_rear_all_matech_buis.mdl"
+
+ATT.Category = {"eft_rearsight"}
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.EFTErgoAdd = 0.5
+ATT.CustomPros = { Ergonomics = "+0.5" }
+
+ATT.Scale = 1
+ATT.ModelOffset = Vector(0, 0, -0)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
+
+-- ATT.ActivateElements = {"IronsBlockingSight"}
+
+ATT.Sights = {
+    {
+        -- Pos = Vector(0, 7.5, -1.23),
+        -- Ang = Angle(0, 0.55, 0),
+        Pos = Vector(0, 7.5, -1.26),
+        Ang = Angle(0, 0.3, 0),
+        Magnification = 1.1,
+        ViewModelFOV = 53,
+        IsIronSight = true
+    }
+}
+
+
+ARC9.LoadAttachment(ATT, "eft_rearsight_matech")
+
+///////////////////////////////////////      eft_rearsight_arms40
+
+
+ATT = {}
+
+ATT.PrintName = "A.R.M.S. #40 Flip-Up Rear Sight"
+ATT.CompactName = "ARMS#40"
+ATT.Icon = Material("entities/eft_attachments/68caad70269e10396503ad00.png", "mips smooth")
+ATT.Description = "A flip-up rear sight manufactured by A.R.M.S. Inc."
+ATT.SortOrder = 1
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/sight_rear_all_arms_40.mdl"
+
+ATT.Category = {"eft_rearsight_hk416"}
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.EFTErgoAdd = 0.5
+ATT.CustomPros = { Ergonomics = "+0.5" }
+
+ATT.Scale = 1
+ATT.ModelOffset = Vector(0, 0, -0)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
+
+-- ATT.ActivateElements = {"IronsBlockingSight"}
+
+ATT.Sights = {
+    {
+        -- Pos = Vector(0, 7.5, -1.23),
+        -- Ang = Angle(0, 0.55, 0),
+        Pos = Vector(0, 7.5, -1.26),
+        Ang = Angle(0, 0.3, 0),
+        Magnification = 1.1,
+        ViewModelFOV = 53,
+        IsIronSight = true
+    }
+}
+
+
+ARC9.LoadAttachment(ATT, "eft_rearsight_arms40")

@@ -782,6 +782,96 @@ ARC9.LoadAttachment(ATT, "eft_mcx_stock_ulss")
 
 
 
+///////////////////////////////////////      eft_mcx_stock_ucs
+
+ATT = {}
+
+ATT.PrintName = "Magpul UCS buttstock (Black)"
+ATT.CompactName = "UCS"
+ATT.Icon = Material("entities/eft_mcx_attachments/68badb6458dbe419740b1520.png", "mips smooth")
+ATT.Description = "A telescopic buttstock designed for installation on 1913 Picatinny rails. Manufactured by Magpul. Black version."
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_all_magpul_ucs.mdl"
+
+ATT.HasStock = true
+
+ATT.EFTErgoAdd = 12
+ATT.CustomPros = { Ergonomics = "+12" }
+ATT.RecoilMult = 0.75
+ATT.VisualRecoilMult = 0.75
+
+ATT.SortOrder = 0
+ATT.Category = "eft_mcx_stock"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_stock"),
+        Category = "eft_ucs_cheek",
+        Pos = Vector(0, 0, 0),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(-4.5, 0, 0),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_mcx_stock_ucs")
+
+///////////////////////////////////////      eft_mcx_stock_ucs_fde
+
+ATT = {}
+
+ATT.PrintName = "Magpul UCS buttstock (FDE)"
+ATT.CompactName = "UCS"
+ATT.Icon = Material("entities/eft_mcx_attachments/68d566f3f3d7cd248f0a06db.png", "mips smooth")
+ATT.Description = "A telescopic buttstock designed for installation on 1913 Picatinny rails. Manufactured by Magpul. Flat Dark Earth version."
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_all_magpul_ucs.mdl"
+ATT.ModelSkin = 1
+
+ATT.HasStock = true
+
+ATT.EFTErgoAdd = 12
+ATT.CustomPros = { Ergonomics = "+12" }
+ATT.RecoilMult = 0.75
+ATT.VisualRecoilMult = 0.75
+
+ATT.SortOrder = 0
+ATT.Category = "eft_mcx_stock"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_stock"),
+        Category = "eft_ucs_cheek",
+        Pos = Vector(0, 0, 0),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(-4.5, 0, 0),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_mcx_stock_ucs_fde")
+
+
+///////////////////////////////////////      eft_mcx_stock_ucs_cheek
+
+ATT = {}
+
+ATT.PrintName = "Magpul UCS Stock Cheek Riser"
+ATT.CompactName = "UCS CR"
+ATT.Icon = Material("entities/eft_mcx_attachments/68badc0366a72211fe004bc7.png", "mips smooth")
+ATT.Description = "A cheek rest for the Universal Carbine Stock. Manufactured by Magpul."
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ucs_magpul_ucs_buttstock_cheek.mdl"
+
+ATT.EFTErgoAdd = 12
+ATT.CustomPros = { Ergonomics = "+12" }
+ATT.RecoilMult = 0.75
+ATT.VisualRecoilMult = 0.75
+
+ATT.Category = "eft_ucs_cheek"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ARC9.LoadAttachment(ATT, "eft_mcx_stock_ucs_cheek")
 
 
 

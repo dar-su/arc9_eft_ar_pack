@@ -859,8 +859,8 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
         Category = "eft_spr_muzzle",
-        Pos = Vector(-0.1, 0, 0),
-        Icon_Offset = Vector(2, 0, 0),
+        Pos = Vector(0, 0, 0),
+        Icon_Offset = Vector(1, 0, 0),
         Ang = Angle(0, 0, 0),
     },
 }
@@ -911,7 +911,7 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
         Category = "eft_spr_sup",
-        Pos = Vector(-0.1, 0, 0),
+        Pos = Vector(0, 0, 0),
         Icon_Offset = Vector(2, 0, 0),
         Ang = Angle(0, 0, 0),
     },

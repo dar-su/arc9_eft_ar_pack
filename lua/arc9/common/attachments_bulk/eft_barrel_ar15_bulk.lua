@@ -10,10 +10,10 @@ local ATT = {}
 
 ATT = {}
 
-ATT.PrintName = "AR-15 5.56x45 260mm barrel"
-ATT.CompactName = "AR-15 260mm"
+ATT.PrintName = "AR-15 5.56x45 10.3\" barrel"
+ATT.CompactName = "AR-15 10.3\""
 ATT.Icon = Material("entities/eft_ar15_attachments/barrel/ar15_556x45_260mm_barrel.png", "mips smooth")
-ATT.Description = [[A 260mm barrel for AR-15 based weapons for 5.56x45 NATO ammo. Corresponds with standard service M4 CQBR barrel.]]
+ATT.Description = [[A 10.3\" (260mm) barrel for AR-15 based weapons for 5.56x45 NATO ammo. Corresponds with standard service M4 CQBR barrel.]]
 ATT.SortOrder = 260
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasBarrel = true
@@ -42,7 +42,7 @@ ATT.Attachments = {
         PrintName = ARC9:GetPhrase("eft_cat_gasblock"),
         Category = "eft_ar15_gasblock",
         ExcludeElements = {"nostdgasblockpls"},
-        Pos = Vector(-7.72, 0, 0.25),
+        Pos = Vector(-7.73, 0, 0.25),
         Ang = Angle(0, 0, 0),
     },
     {
@@ -92,7 +92,7 @@ ATT.Attachments = {
         PrintName = ARC9:GetPhrase("eft_cat_gasblock"),
         Category = "eft_ar15_gasblock",
         ExcludeElements = {"nostdgasblockpls"},
-        Pos = Vector(-7.72, 0, 0.25),
+        Pos = Vector(-7.74, 0, 0.25),
         Ang = Angle(0, 0, 0),
     },
     {
@@ -144,7 +144,7 @@ ATT.Attachments = {
         PrintName = ARC9:GetPhrase("eft_cat_gasblock"),
         Category = {"eft_ar15_gasblock", "eft_ar15_gasblock_mk12"},
         ExcludeElements = {"nostdgasblockpls"},
-        Pos = Vector(-11.2, 0, 0.25),
+        Pos = Vector(-11.55, 0, 0.25),
         Ang = Angle(0, 0, 0),
     },
     {
@@ -193,7 +193,7 @@ ATT.Attachments = {
         PrintName = ARC9:GetPhrase("eft_cat_gasblock"),
         Category = "eft_ar15_gasblock",
         ExcludeElements = {"nostdgasblockpls"},
-        Pos = Vector(-11.2, 0, 0.25),
+        Pos = Vector(-11.565, 0, 0.25),
         Ang = Angle(0, 0, 0),
     },
     {
@@ -211,7 +211,7 @@ ARC9.LoadAttachment(ATT, "eft_barrel_ar15_20i")
 ATT = {}
 
 ATT.PrintName = "AR-15 5.56x45 Molot Arms 406mm barrel"
-ATT.CompactName = "406mm AR-15"
+ATT.CompactName = "ADAR 16\""
 ATT.Icon = Material("entities/eft_ar15_attachments/barrel/ar15_556x45_molot_arms_406mm_barrel.png", "mips smooth")
 ATT.Description = [[The Molot Arms 406mm barrel for AR-15 based weapons for 5.56x45 NATO ammo. A standard-issue barrel for ADAR 2-15.]]
 ATT.SortOrder = 406
@@ -243,7 +243,7 @@ ATT.Attachments = {
         PrintName = ARC9:GetPhrase("eft_cat_gasblock"),
         Category = "eft_ar15_gasblock",
         ExcludeElements = {"nostdgasblockpls"},
-        Pos = Vector(-9.65, 0, 0.25),
+        Pos = Vector(-9.67, 0, 0.25),
         Ang = Angle(0, 0, 0),
     },
     {
@@ -294,7 +294,7 @@ ATT.Attachments = {
         PrintName = ARC9:GetPhrase("eft_cat_gasblock"),
         Category = "eft_ar15_gasblock_thin",
         ExcludeElements = {"nostdgasblockpls"},
-        Pos = Vector(-9.65, 0, 0.25),
+        Pos = Vector(-9.82, 0, 0.25),
         Ang = Angle(0, 0, 0),
     },
     {
@@ -344,7 +344,7 @@ ATT.Attachments = {
         PrintName = ARC9:GetPhrase("eft_cat_gasblock"),
         Category = "eft_ar15_gasblock",
         ExcludeElements = {"nostdgasblockpls"},
-        Pos = Vector(-7.72, 0, 0.25),
+        Pos = Vector(-7.65, 0, 0.25),
         Ang = Angle(0, 0, 0),
     },
     {
@@ -394,7 +394,7 @@ ATT.Attachments = {
         PrintName = ARC9:GetPhrase("eft_cat_gasblock"),
         Category = "eft_ar15_gasblock",
         ExcludeElements = {"nostdgasblockpls"},
-        Pos = Vector(-7.72, 0, 0.25),
+        Pos = Vector(-7.78, 0, 0.25),
         Ang = Angle(0, 0, 0),
     },
     {
@@ -444,7 +444,7 @@ ATT.Attachments = {
         PrintName = ARC9:GetPhrase("eft_cat_gasblock"),
         Category = "eft_ar15_gasblock_thin",
         ExcludeElements = {"nostdgasblockpls"},
-        Pos = Vector(-9.65, 0, 0.25),
+        Pos = Vector(-9.71, 0, 0.25),
         Ang = Angle(0, 0, 0),
     },
     {
@@ -495,7 +495,7 @@ ATT.Attachments = {
         PrintName = ARC9:GetPhrase("eft_cat_gasblock"),
         Category = {"eft_ar15_gasblock", "eft_ar15_gasblock_mk12"},
         ExcludeElements = {"nostdgasblockpls"},
-        Pos = Vector(-13.1, 0, 0.25),
+        Pos = Vector(-13.17, 0, 0.25),
         Ang = Angle(0, 0, 0),
     },
     {
@@ -508,56 +508,55 @@ ATT.Attachments = {
 
 ARC9.LoadAttachment(ATT, "eft_barrel_ar15_18i_mk12")
 
--- a2 20icnh 
 
--- ///////////////////////////////////////      eft_barrel_ar15_20i
+///////////////////////////////////////      eft_barrel_ar15_m16_20i
 
--- ATT = {}
+ATT = {}
 
--- ATT.PrintName = "AR-15 5.56x45 20 inch barrel"
--- ATT.CompactName = "AR-15 20\""
--- ATT.Icon = Material("entities/eft_ar15_attachments/barrel/ar15_556x45_20_inch_barrel.png", "mips smooth")
--- ATT.Description = [[A barrel for AR-15 based weapons for 5.56x45 NATO ammo, 20 inches long.]]
--- ATT.SortOrder = 508
--- ATT.MenuCategory = "ARC9 - EFT Attachments"
--- ATT.HasBarrel = true
+ATT.PrintName = "AR-15 5.56x45 A2 type 20 inch barrel"
+ATT.CompactName = "AR-15 A2 20\""
+ATT.Icon = Material("entities/eft_ar15_attachments/68a63ac58e1fe612970728f2.png", "mips smooth")
+ATT.Description = "A 20 inch (508mm) barrel for AR-15 platform weapons for 5.56x45 NATO ammo. Corresponds with standard service M16A2 barrel."
+ATT.SortOrder = 508
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.HasBarrel = true
 
--- ATT.Model = "models/weapons/arc9/darsu_eft/mods/barrel_ar15_508mm.mdl"
--- ATT.MuzzleDevice = true
--- ATT.MuzzleDevice_Priority = 2
--- ATT.BarrelLengthAdd = 7
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/barrel_ar15_colt_m16_std_508mm.mdl"
+ATT.MuzzleDevice = true
+ATT.MuzzleDevice_Priority = 2
+ATT.BarrelLengthAdd = 7
 
--- ATT.EFTErgoAdd = -29
--- ATT.CustomCons = { Ergonomics = "-29" }
--- ATT.RecoilMult = 0.94
--- ATT.VisualRecoilMult = 0.94
--- ATT.HeatCapacityMult = 0.94
--- ATT.PhysBulletMuzzleVelocityMult = 0.97
--- ATT.Spread = 1.1 * ARC9.MOAToAcc
+ATT.EFTErgoAdd = -30
+ATT.CustomCons = { Ergonomics = "-30" }
+ATT.RecoilMult = 0.95
+ATT.VisualRecoilMult = 0.95
+ATT.PhysBulletMuzzleVelocityMult = 0.966
+ATT.HeatCapacityMult = 0.94
+ATT.Spread = 1.24 * ARC9.MOAToAcc
 
--- ATT.Category = {"eft_m4a1_barrel"}
+ATT.Category = {"eft_m4a1_barrel"}
 
 ATT.ActivateElements = {"barrel_508mm", "barrel_20i"}
 
--- ATT.ExcludeElements = {"eft_hg_ar15_adar", "eft_hg_ar15_m4", "eft_hg_ar15_kacris", "eft_hg_ar15_moesl", "eft_hg_ar15_moeslmid", "eft_hg_ar15_viper", "eft_hg_ar15_viper_f"}
+ATT.ExcludeElements = {"eft_hg_ar15_adar", "eft_hg_ar15_m4", "eft_hg_ar15_kacris", "eft_hg_ar15_moesl", "eft_hg_ar15_moeslmid", "eft_hg_ar15_viper", "eft_hg_ar15_viper_f"}
 
--- ATT.Attachments = {
---     {
---         PrintName = ARC9:GetPhrase("eft_cat_gasblock"),
---         Category = {"eft_ar15_gasblock", "eft_ar15_gasblock_thin"},
---         ExcludeElements = {"nostdgasblockpls"},
---         Pos = Vector(-11.2, 0, 0.25),
---         Ang = Angle(0, 0, 0),
---     },
---     {
---         PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
---         Category = "eft_ar15_muzzle",
---         Pos = Vector(-19.2, 0, 0),
---         Ang = Angle(0, 0, 0),
---     },
--- }
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_gasblock"),
+        Category = {"eft_ar15_gasblock", "eft_ar15_gasblock_mk12"},
+        ExcludeElements = {"nostdgasblockpls"},
+        Pos = Vector(-13.17, 0, 0.25),
+        Ang = Angle(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
+        Category = "eft_ar15_muzzle",
+        Pos = Vector(-19.82, 0, 0),
+        Ang = Angle(0, 0, 0),
+    },
+}
 
--- ARC9.LoadAttachment(ATT, "eft_barrel_ar15_20i")
+ARC9.LoadAttachment(ATT, "eft_barrel_ar15_m16_20i")
 
 
 
