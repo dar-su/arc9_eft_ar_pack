@@ -35,7 +35,7 @@ ATT.Spread = 2.41 * ARC9.MOAToAcc
 
 ATT.ActivateElements = {"barrel_260mm", "barrel_10i"}
 
-ATT.ExcludeElements = {"eft_hg_ar15_stm12", "eft_hg_ar15_stm15", "eft_hg_ar15_adar", "eft_hg_ar15_ax15", "eft_hg_ar15_mk10", "eft_hg_ar15_ddrisii1225", "eft_hg_ar15_mk16", "eft_hg_ar15_kacurx31", "eft_hg_ar15_ionlite", "eft_hg_ar15_moesl", "eft_hg_ar15_saiqd", "eft_hg_ar15_lvoac_b", "eft_hg_ar15_lvoac_f", "eft_hg_ar15_lvoac_g", "eft_hg_ar15_lvoas_b", "eft_hg_ar15_lvoas_f", "eft_hg_ar15_lvoas_g", "eft_hg_ar15_ax15_158", "eft_hg_ar15_radian_14", "eft_hg_ar15_cgnl_105", "eft_hg_ar15_cgnl_14", "eft_hg_ar15_kac_ff", "eft_hg_ar15_precision_round", "eft_hg_ar15_precision_round_fde", "eft_hg_ar15_precision", "eft_hg_ar15_moeslmid", "eft_hg_ar15_wing", "eft_hg_ar15_m16a1", "eft_hg_ar15_skinny", "eft_hg_ar15_kac_m5", "eft_hg_ar15_gridlok_15", "eft_hg_ar15_gridlok_17", "eft_ar10_hg_rsass"}
+ATT.ExcludeElements = {"eft_hg_ar15_stm12", "eft_hg_ar15_stm15", "eft_hg_ar15_adar", "eft_hg_ar15_ax15", "eft_hg_ar15_mk10", "eft_hg_ar15_ddrisii1225", "eft_hg_ar15_mk16", "eft_hg_ar15_kacurx31", "eft_hg_ar15_ionlite", "eft_hg_ar15_moesl", "eft_hg_ar15_saiqd", "eft_hg_ar15_lvoac_b", "eft_hg_ar15_lvoac_f", "eft_hg_ar15_lvoac_g", "eft_hg_ar15_lvoas_b", "eft_hg_ar15_lvoas_f", "eft_hg_ar15_lvoas_g", "eft_hg_ar15_ax15_158", "eft_hg_ar15_radian_14", "eft_hg_ar15_cgnl_105", "eft_hg_ar15_cgnl_14", "eft_hg_ar15_kac_ff", "eft_hg_ar15_precision_round", "eft_hg_ar15_precision_round_fde", "eft_hg_ar15_precision", "eft_hg_ar15_moeslmid", "eft_hg_ar15_wing", "eft_hg_ar15_m16a1", "eft_hg_ar15_kac_m5", "eft_hg_ar15_gridlok_15", "eft_hg_ar15_gridlok_17", "eft_ar10_hg_rsass"}
 
 ATT.Attachments = {
     {
@@ -337,7 +337,7 @@ ATT.Spread = 1.55 * ARC9.MOAToAcc
 
 ATT.ActivateElements = {"barrel_370mm", "barrel_145i", "barrel_137i"}
 
-ATT.ExcludeElements = {"eft_hg_ar15_stm15", "eft_hg_ar15_moeslmid", "eft_hg_ar15_m16a1", "eft_hg_ar15_skinny", "eft_hg_ar15_adar", "eft_hg_ar15_ionlite", "eft_hg_ar15_moesl", "eft_hg_ar15_saiqd10", "eft_hg_ar15_ax15_158", "eft_hg_ar15_radian_14", "eft_hg_ar15_lvoac_b", "eft_hg_ar15_lvoac_f", "eft_hg_ar15_lvoac_g", "eft_hg_ar15_cgnl_14", "eft_hg_ar15_gridlok_15", "eft_hg_ar15_gridlok_17", "eft_ar10_hg_rsass"}
+ATT.ExcludeElements = {"eft_hg_ar15_stm15", "eft_hg_ar15_moeslmid", "eft_hg_ar15_m16a1", "eft_hg_ar15_adar", "eft_hg_ar15_ionlite", "eft_hg_ar15_moesl", "eft_hg_ar15_saiqd10", "eft_hg_ar15_ax15_158", "eft_hg_ar15_radian_14", "eft_hg_ar15_lvoac_b", "eft_hg_ar15_lvoac_f", "eft_hg_ar15_lvoac_g", "eft_hg_ar15_cgnl_14", "eft_hg_ar15_gridlok_15", "eft_hg_ar15_gridlok_17", "eft_ar10_hg_rsass"}
 
 ATT.Attachments = {
     {
@@ -387,7 +387,7 @@ ATT.Spread = 2.13 * ARC9.MOAToAcc
 
 ATT.ActivateElements = {"barrel_260mm", "barrel_10i"}
 
-ATT.ExcludeElements = {"eft_hg_ar15_stm12", "eft_hg_ar15_stm15", "eft_hg_ar15_adar", "eft_hg_ar15_ax15", "eft_hg_ar15_mk10", "eft_hg_ar15_ddrisii1225", "eft_hg_ar15_mk16", "eft_hg_ar15_kacurx31", "eft_hg_ar15_ionlite", "eft_hg_ar15_moesl", "eft_hg_ar15_saiqd", "eft_hg_ar15_lvoac_b", "eft_hg_ar15_lvoac_f", "eft_hg_ar15_lvoac_g", "eft_hg_ar15_lvoas_b", "eft_hg_ar15_lvoas_f", "eft_hg_ar15_lvoas_g", "eft_hg_ar15_ax15_158", "eft_hg_ar15_radian_14", "eft_hg_ar15_cgnl_105", "eft_hg_ar15_cgnl_14", "eft_hg_ar15_kac_ff", "eft_hg_ar15_precision_round", "eft_hg_ar15_precision_round_fde", "eft_hg_ar15_precision", "eft_hg_ar15_moeslmid", "eft_hg_ar15_wing", "eft_hg_ar15_m16a1", "eft_hg_ar15_skinny", "eft_hg_ar15_kac_m5", "eft_hg_ar15_gridlok_15", "eft_hg_ar15_gridlok_17", "eft_ar10_hg_rsass"}
+ATT.ExcludeElements = {"eft_hg_ar15_stm12", "eft_hg_ar15_stm15", "eft_hg_ar15_adar", "eft_hg_ar15_ax15", "eft_hg_ar15_mk10", "eft_hg_ar15_ddrisii1225", "eft_hg_ar15_mk16", "eft_hg_ar15_kacurx31", "eft_hg_ar15_ionlite", "eft_hg_ar15_moesl", "eft_hg_ar15_saiqd", "eft_hg_ar15_lvoac_b", "eft_hg_ar15_lvoac_f", "eft_hg_ar15_lvoac_g", "eft_hg_ar15_lvoas_b", "eft_hg_ar15_lvoas_f", "eft_hg_ar15_lvoas_g", "eft_hg_ar15_ax15_158", "eft_hg_ar15_radian_14", "eft_hg_ar15_cgnl_105", "eft_hg_ar15_cgnl_14", "eft_hg_ar15_kac_ff", "eft_hg_ar15_precision_round", "eft_hg_ar15_precision_round_fde", "eft_hg_ar15_precision", "eft_hg_ar15_moeslmid", "eft_hg_ar15_wing", "eft_hg_ar15_m16a1", "eft_hg_ar15_kac_m5", "eft_hg_ar15_gridlok_15", "eft_hg_ar15_gridlok_17", "eft_ar10_hg_rsass"}
 
 ATT.Attachments = {
     {

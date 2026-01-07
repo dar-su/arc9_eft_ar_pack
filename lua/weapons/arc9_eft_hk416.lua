@@ -79,7 +79,7 @@ function SWEP:GetSightPositions()
         return s.Pos, s.Ang
     elseif e["barrel_20i"] then
         return s.Pos + sposoffset, s.Ang + sangoffset
-    elseif e["barrel_165i"] or e["barrel_145i"] then
+    elseif e["barrel_16i"] or e["barrel_145i"] then
         return s.Pos + sposoffset, s.Ang + sangoffset*1.2
     elseif e["eft_hg_hk416_crux"] then
         return s.Pos + sposoffset*0.8, s.Ang + sangoffset*0.6

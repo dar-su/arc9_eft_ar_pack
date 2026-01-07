@@ -51,36 +51,28 @@ SWEP.DefaultElements = {"noextendedcatch"}
 
 SWEP.Attachments = {
     {
-        Installed = "eft_rec_ar15_tx15",
+        Installed = "eft_rec_ar15_radian",
         SubAttachments = {
             {},
-            {},
             {
-                Installed = "eft_barrel_ar15_18i",
+                Installed = "eft_rearsight_mbus"
+            },
+            {
+                Installed = "eft_barrel_ar15_hanson_16",
                 SubAttachments = {
                     {
                         Installed = "eft_gas_ar15_mk12"
                     },
                     {
-                        Installed = "eft_muzzle_ar15_223cb",
-                        SubAttachments = {
-                            {
-                                Installed = "eft_silencer_ultra5"
-                            }
-                        }
+                        Installed = "eft_muzzle_ar15_butter",
                     }
                 }
             },
             {
-                Installed = "eft_hg_ar15_ionlite",
+                Installed = "eft_hg_ar15_radian_14",
                 SubAttachments = {
                     {},
-                    {},
-                    {},
-                    {},
-                    {},
-                    { Installed = "eft_mount_mlok25" },
-                    { Installed = "eft_mount_mlok41" },
+                    { Installed = "eft_frontsight_mbus" },
                 }
             }
         }
@@ -89,14 +81,13 @@ SWEP.Attachments = {
         Installed = "eft_ar_pgrip_moe",
     },
     {
-        Installed = "eft_charge_ar15_raptor_g",
+        Installed = "eft_charge_ar15_raptor_sd",
     },
     {
-        PrintName = ARC9:GetPhrase("eft_cat_buffertube"),
-        Installed = "eft_ar_buffertube_a2",
+        Installed = "eft_ar_buffertube_siadv",
         SubAttachments = {
             {
-                Installed = "eft_ar_stock_prsgen3"
+                Installed = "eft_ar_stock_magpulmoe"
             }
         }
     },

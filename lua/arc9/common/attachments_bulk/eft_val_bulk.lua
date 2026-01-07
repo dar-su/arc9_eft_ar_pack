@@ -163,6 +163,35 @@ ATT.Category = {"eft_val_stock"}
 
 ARC9.LoadAttachment(ATT, "eft_val_stockk")
 
+///////////////////////////////////////      eft_val_stock_nb
+
+ATT = {}
+
+ATT.PrintName = "AS VAL NB stock adapter tube"
+ATT.CompactName = "VAL tube"
+ATT.Icon = Material("entities/eft_val_attachments/6878ccf4181ac8a5b5077236.png", "mips smooth")
+ATT.Description = "An adapter for installing aftermarket buttstocks on the AS VAL."
+
+ATT.RecoilMult = 0.99
+ATT.VisualRecoilMult = 0.99
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_val_stock"}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_stock"),
+        Category = {"eft_ar_stock", "eft_ar_stock_notbuffer"},
+        Pos = Vector(6, 0, -0.3),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(-1, 0, 0.5),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_val_stock_nb")
+
 -- ///////////////////////////////////////      eft_val_dc_vss
 
 -- ATT = {}
@@ -274,6 +303,27 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_val_grip"}
 
 ARC9.LoadAttachment(ATT, "eft_val_grip_black")
+
+///////////////////////////////////////      eft_val_grip_rk3
+
+ATT = {}
+
+ATT.PrintName = "AS VAL Zenit RK-3 pistol grip"
+ATT.CompactName = "RK-3k"
+ATT.Icon = Material("entities/eft_val_attachments/6878cc5bd0c26d57bf0aa37a.png", "mips smooth")
+ATT.Description = "A custom Zenit pistol grip for the AS VAL. Replaces the standard pistol grip."
+
+ATT.HasGrip = true
+
+ATT.EFTErgoAdd = 7
+ATT.CustomPros = { Ergonomics = "+7" }
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_val_grip"}
+
+ARC9.LoadAttachment(ATT, "eft_val_grip_rk3")
 
 ///////////////////////////////////////      eft_val_hg_std
 
@@ -1452,3 +1502,237 @@ ATT.Category = {"eft_ammo_9x39"}
 
 
 ARC9.LoadAttachment(ATT, "eft_ammo_9x39_sp5")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+///////////////////////////////////////      eft_valmod4_hgg
+
+ATT = {}
+
+ATT.PrintName = "AS VAL NB MOD.4 Kit handguard"
+ATT.CompactName = "MOD.4 Kit"
+ATT.Icon = Material("entities/eft_val_attachments/687128c4505fed5f370b1625.png", "mips smooth")
+ATT.Description = "A custom handguard designed for the AS VAL MOD.4. Features rails for mounting optics, tactical accessories, and foregrips."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_valmod4_hg"}
+
+ATT.EFTErgoAdd = 10
+ATT.CustomPros = { Ergonomics = "+10" }
+ATT.RecoilMult = 0.97
+ATT.VisualRecoilMult = 0.97
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_foregrip"),
+        Category = "eft_sr3_fg",
+        Pos = Vector(-4.0, 0, 2),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_scope"),
+        Category = {"eft_optic_small", "eft_optic_medium", "eft_tactical_top"},
+        RejectAttachments = {
+            ["eft_optic_553"] = true,
+            ["eft_optic_boss"] = true,
+            ["eft_optic_krechet"] = true,
+            ["eft_optic_kobra"] = true,
+            ["eft_optic_pk120"] = true,
+        },
+        Pos = Vector(-2.3, 0, -1.7),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExcludeElements = {"IronsBlockingSight"},
+        ExtraSightDistance = 6,
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_r"),
+        Category = {"eft_tactical_pistol"},
+        Pos = Vector(-3.25, 1.05, -0.2),
+        Ang = Angle(0, 0, 90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_valmod4_hgg")
+
+///////////////////////////////////////      eft_valmod4_magwell
+
+ATT = {}
+
+ATT.PrintName = "AS VAL MOD.4 magwell"
+ATT.CompactName = "MOD.4"
+ATT.Icon = Material("entities/eft_val_attachments/68712a7d505fed5f370b1633.png", "mips smooth")
+ATT.Description = "A flared magazine well for the AS VAL MOD.4. Enables faster and more precise magazine insertion."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_valmod4_magw"}
+
+ATT.EFTErgoAdd = 4
+ATT.CustomPros = { Ergonomics = "+4" }
+
+ARC9.LoadAttachment(ATT, "eft_valmod4_magwell")
+
+///////////////////////////////////////      eft_valmod4_siderail
+
+ATT = {}
+
+ATT.PrintName = "NB MOD.4 Kit 3.5 inch rail"
+ATT.CompactName = "MOD.4"
+ATT.Icon = Material("entities/eft_val_attachments/68712b57a1be89347f0d8179.png", "mips smooth")
+ATT.Description = "A 3.5 inch rail for the AS VAL MOD.4 handguard. Allows installation of tactical equipment."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_valmod4_side"}
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/mount_val_mod4_nb_short_rail.mdl"
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_r"),
+        Category = {"eft_tactical_pistol"},
+        Pos = Vector(0.8, 1.1, -0.07),
+        Ang = Angle(0, 0, 90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_valmod4_siderail")
+
+
+///////////////////////////////////////      eft_valmod4_topcover
+
+ATT = {}
+
+ATT.PrintName = "AS VAL NB MOD.4 Kit top cover"
+ATT.CompactName = "MOD.4"
+ATT.Icon = Material("entities/eft_val_attachments/68712bd4251b8d4c6c04ec19.png", "mips smooth")
+ATT.Description = "A custom mount for the AS VAL MOD.4. Allows installation of optics."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_valmod4_top"}
+
+ATT.EFTErgoAdd = -1
+ATT.CustomCons = { Ergonomics = "-1" }
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_optic_large"),
+        Category = {"eft_optic_large"},
+        Pos = Vector(0, 0, 0),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExcludeElements = {"IronsBlockingSight"},
+    },
+}
+
+
+ARC9.LoadAttachment(ATT, "eft_valmod4_topcover")
+
+///////////////////////////////////////      eft_valmod4_suppressor
+
+ATT = {}
+
+ATT.PrintName = "AS VAL MOD.4 9x39 integral barrel-suppressor"
+ATT.CompactName = "MOD.4"
+ATT.Icon = Material("entities/eft_val_attachments/68712ce2251b8d4c6c04ec1f.png", "mips smooth")
+ATT.Description = "An integral barrel-suppressor module for the AS VAL MOD.4."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_valmod4_sup"}
+
+ATT.EFTErgoAdd = -4
+ATT.CustomCons = { Ergonomics = "-4" }
+ATT.RecoilMult = 0.89
+ATT.VisualRecoilMult = 0.89
+ATT.PhysBulletMuzzleVelocityMult = 1.011
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
+        Category = {"eft_valmod4_sup2"},
+        Pos = Vector(0, 5, 0),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_valmod4_suppressor")
+
+///////////////////////////////////////      eft_valmod4_supcap
+
+ATT = {}
+
+ATT.PrintName = "AS VAL MOD.4 9x39 suppressor cap"
+ATT.CompactName = "MOD.4"
+ATT.Icon = Material("entities/eft_val_attachments/68712cafa1be89347f0d817c.png", "mips smooth")
+ATT.Description = "A muzzle cap for the AS VAL MOD.4 sound suppressor."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_valmod4_sup2"}
+
+ATT.EFTErgoAdd = 2
+ATT.CustomPros = { Ergonomics = "+2" }
+ATT.RecoilMult = 0.98
+ATT.VisualRecoilMult = 0.98
+
+ARC9.LoadAttachment(ATT, "eft_valmod4_supcap")
+
+///////////////////////////////////////      eft_valmod4_brake
+
+ATT = {}
+
+ATT.PrintName = "AS VAL 9x39 NB MOD.4 muzzle brake"
+ATT.CompactName = "MOD.4"
+ATT.Icon = Material("entities/eft_val_attachments/6878c143254146e6fd043756.png", "mips smooth")
+ATT.Description = "A custom muzzle brake for the AS VAL MOD.4."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_valmod4_sup2"}
+
+ATT.EFTErgoAdd = -8
+ATT.CustomCons = { Ergonomics = "-8" }
+ATT.RecoilMult = 0.94
+ATT.VisualRecoilMult = 0.94
+
+ARC9.LoadAttachment(ATT, "eft_valmod4_brake")
+
+///////////////////////////////////////      eft_valmod4_jailbrake
+
+ATT = {}
+
+ATT.PrintName = "AS VAL 9x39 NB MOD.4 JailBrake muzzle device"
+ATT.CompactName = "MOD.4 JB"
+ATT.Icon = Material("entities/eft_val_attachments/6878c1c723c3173d7f06d926.png", "mips smooth")
+ATT.Description = "A custom muzzle device for the AS VAL MOD.4, installed on the MOD.4 handguard."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_valmod4_jail"}
+
+ATT.EFTErgoAdd = -9
+ATT.CustomCons = { Ergonomics = "-9" }
+ATT.RecoilMult = 0.96
+ATT.VisualRecoilMult = 0.96
+ATT.SpreadMult = 0.97
+
+ARC9.LoadAttachment(ATT, "eft_valmod4_jailbrake")

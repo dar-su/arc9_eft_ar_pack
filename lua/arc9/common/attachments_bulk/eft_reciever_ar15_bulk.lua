@@ -655,6 +655,15 @@ ATT.Sights = {
 }
 
 
+ATT.DrawFunc = function(swep, model)
+    if swep:GetValue("FoldSights") then
+        model:SetBodygroup(1, 1)
+    else
+        model:SetBodygroup(1, 0)
+    end
+end
+
+
 ARC9.LoadAttachment(ATT, "eft_rearsight_matech")
 
 ///////////////////////////////////////      eft_rearsight_arms40
@@ -693,6 +702,15 @@ ATT.Sights = {
         IsIronSight = true
     }
 }
+
+
+ATT.DrawFunc = function(swep, model)
+    if swep:GetValue("FoldSights") then
+        model:SetBodygroup(1, 1)
+    else
+        model:SetBodygroup(1, 0)
+    end
+end
 
 
 ARC9.LoadAttachment(ATT, "eft_rearsight_arms40")

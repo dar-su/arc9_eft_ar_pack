@@ -189,16 +189,16 @@ SWEP.CustomizePosHook = function(wep, vec)
 	local eles = wep:GetElements()
 
 	-- Barrels
-	if eles["eft_barrel_ar15_260mm"] or eles["eft_barrel_hk416_11i"] or eles["eft_barrel_hk416_106i"] then vec = vec + Vector(-2.5, -3, 0)
-	elseif eles["eft_barrel_ar15_406mm"] or eles["eft_barrel_hk416_165i"] then vec = vec + Vector(1.25, 1, 0)
-	elseif eles["eft_barrel_ar15_hanson_16"] then vec = vec + Vector(2, 2, 0)
-	elseif eles["eft_barrel_ar15_18i"] then vec = vec + Vector(2.5, 4, 0)
-	elseif eles["eft_barrel_ar15_20i"] or eles["eft_barrel_hk416_20i"] then vec = vec + Vector(3.25, 6, 0)
+	if eles["barrel_10i"] then vec = vec + Vector(-2.5, -3, 0)
+	elseif eles["barrel_145i"] or eles["barrel_137i"] then vec = vec + Vector(1.25, 1, 0)
+	elseif eles["barrel_16i"] then vec = vec + Vector(2, 2, 0)
+	elseif eles["barrel_18i"] then vec = vec + Vector(2.5, 2, 0)
+	elseif eles["barrel_20i"] then vec = vec + Vector(3.25, 2, 0)
 	end
 	
 	-- Stocks
-	if eles["eft_ar_stock_prsgen3"] or eles["eft_ar_stock_prsgen3g"] then vec = vec + Vector(-1.75, 3, 0) end
-	if eles["eft_ar_stock_prsgen2f"] or eles["eft_ar_stock_adar"] then vec = vec + Vector(-1.25, 2, 0) end
+	if eles["eft_ar_buffertube_a2"] then vec = vec + Vector(-1.75, 2, 0) 
+    elseif eles["eft_ar_stock_prsgen2f"] or eles["eft_ar_stock_adar"] then vec = vec + Vector(-1.25, 2, 0) end
 
 	-- Suppressors	
 	if eles["eft_silencer_dthybrid"] 
@@ -229,11 +229,11 @@ SWEP.CustomizeRotateAnchorHook = function(wep, vec)
 	local eles = wep:GetElements()
 
 	-- Barrels
-	if eles["eft_barrel_ar15_260mm"] or eles["eft_barrel_hk416_11i"] or eles["eft_barrel_hk416_106i"] then vec = vec + Vector(-2.5, 0, 0)
-	elseif eles["eft_barrel_ar15_406mm"] or eles["eft_barrel_hk416_165i"] then vec = vec + Vector(1.25, 0, 0)
-	elseif eles["eft_barrel_ar15_hanson_16"] then vec = vec + Vector(2, 0, 0)
-	elseif eles["eft_barrel_ar15_18i"] then vec = vec + Vector(2.5, 0, 0)
-	elseif eles["eft_barrel_ar15_20i"] or eles["eft_barrel_hk416_20i"] then vec = vec + Vector(3.25, 0, 0)
+	if eles["barrel_10i"] then vec = vec + Vector(-2.5, 0, 0)
+	elseif eles["barrel_145i"] or eles["barrel_137i"] then vec = vec + Vector(1.25, 0, 0)
+	elseif eles["barrel_16i"] then vec = vec + Vector(2, 0, 0)
+	elseif eles["barrel_18i"] then vec = vec + Vector(2.5, 0, 0)
+	elseif eles["barrel_20i"] then vec = vec + Vector(4.25, 0, 0)
 	end
 	
 	-- Stocks
@@ -269,21 +269,21 @@ end
 
 local path = ")weapons/darsu_eft/m4a1/"
 
-SWEP.ShootSound = { path .. "fire_new/m4_fire_outdoor_loop1.wav", path .. "fire_new/m4_fire_outdoor_loop2.wav", path .. "fire_new/m4_fire_outdoor_loop3.wav", path .. "fire_new/m4_fire_outdoor_loop4.wav" }
-SWEP.LayerSound = path .. "fire_new/m4_fire_outdoor_loop_tail.wav"
+SWEP.ShootSound = { path .. "fire_new/m4a1_outdoor_close_onseshot_01.wav", path .. "fire_new/m4a1_outdoor_close_onseshot_02.wav", path .. "fire_new/m4a1_outdoor_close_onseshot_03.wav", path .. "fire_new/m4a1_outdoor_close_onseshot_04.wav" }
+SWEP.LayerSound = false 
 
 SWEP.ShootSoundSilenced = { path .. "fire_new/m4a1_fire_silenced_close_loop1.wav", path .. "fire_new/m4a1_fire_silenced_close_loop2.wav", path .. "fire_new/m4a1_fire_silenced_close_loop3.wav", path .. "fire_new/m4a1_fire_silenced_close_loop4.wav" }
 SWEP.LayerSoundSilenced = path .. "fire_new/m4a1_fire_silenced_close_loop_tail.wav"
 
-SWEP.ShootSoundIndoor = { path .. "fire_new/m4_fire_indoor_loop1.wav", path .. "fire_new/m4_fire_indoor_loop2.wav", path .. "fire_new/m4_fire_indoor_loop3.wav", path .. "fire_new/m4_fire_indoor_loop4.wav" }
-SWEP.LayerSoundIndoor = path .. "fire_new/m4_fire_indoor_loop_tail.wav"
+SWEP.ShootSoundIndoor = { path .. "fire_new/m4a1_indoor_close_onseshot_01.wav", path .. "fire_new/m4a1_indoor_close_onseshot_02.wav", path .. "fire_new/m4a1_indoor_close_onseshot_03.wav" }
+SWEP.LayerSoundIndoor = false 
 
 SWEP.ShootSoundSilencedIndoor = { path .. "fire_new/m4a1_silenced_indoor_close_loop1.wav", path .. "fire_new/m4a1_silenced_indoor_close_loop2.wav", path .. "fire_new/m4a1_silenced_indoor_close_loop3.wav", path .. "fire_new/m4a1_silenced_indoor_close_loop4.wav" }
 SWEP.LayerSoundSilencedIndoor = path .. "fire_new/m4a1_silenced_indoor_close_loop_tail.wav"
 
-SWEP.DistantShootSound = { path .. "fire_new/m4_fire_distant_loop1.wav", path .. "fire_new/m4_fire_distant_loop2.wav", path .. "fire_new/m4_fire_distant_loop3.wav", path .. "fire_new/m4_fire_distant_loop4.wav" }
+SWEP.DistantShootSound = { path .. "fire_new/m4a1_outdoor_distant_onseshot_01.wav", path .. "fire_new/m4a1_outdoor_distant_onseshot_02.wav", path .. "fire_new/m4a1_outdoor_distant_onseshot_03.wav" }
 SWEP.DistantShootSoundSilenced = { path .. "fire_new/m4a1_fire_silenced_distant_loop1.wav", path .. "fire_new/m4a1_fire_silenced_distant_loop2.wav", path .. "fire_new/m4a1_fire_silenced_distant_loop3.wav", path .. "fire_new/m4a1_fire_silenced_distant_loop4.wav" }
-SWEP.DistantShootSoundIndoor = { path .. "fire_new/hk416_indoor_distant_loop1.wav", path .. "fire_new/hk416_indoor_distant_loop2.wav", path .. "fire_new/hk416_indoor_distant_loop3.wav", path .. "fire_new/hk416_indoor_distant_loop4.wav" } -- no idea where m4 are
+SWEP.DistantShootSoundIndoor = { path .. "fire_new/m4a1_indoor_distant_onseshot_01.wav", path .. "fire_new/m4a1_indoor_distant_onseshot_02.wav", path .. "fire_new/m4a1_indoor_distant_onseshot_03.wav" }
 SWEP.DistantShootSoundSilencedIndoor = { path .. "fire_new/m4a1_silenced_indoor_distant_loop1.wav", path .. "fire_new/m4a1_silenced_indoor_distant_loop2.wav", path .. "fire_new/m4a1_silenced_indoor_distant_loop3.wav", path .. "fire_new/m4a1_silenced_indoor_distant_loop4.wav" }
 
 ------------------------- |||           Dropped magazines            ||| -------------------------

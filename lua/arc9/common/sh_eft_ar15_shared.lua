@@ -8,12 +8,13 @@ ARC9EFT.AR15_AnimsHook = function(swep, anim)
     local nomag = false
 
     if elements["30rnd"] then ending = "0"
+    elseif elements["eft_mag_ar15_stanag_20"] then ending = "8"
     elseif elements["20rnd"] then ending = "2"
-    elseif elements["100rnd"] or elements["40rnd"] then ending = "4"
     elseif elements["drum"] then ending = "5"
     elseif elements["10rnd"] then ending = "6"
     elseif elements["100rndballs"] then ending = "7"
-    elseif elements["eft_mag_ar15_stanag_20"] then ending = "8"
+    elseif elements["40rnd"] then ending = "3"
+    elseif elements["100rnd"] then ending = "4"
     else nomag = true end
 
     if anim == "inspect" or anim == "inspect_empty" then
@@ -36,6 +37,11 @@ ARC9EFT.AR15_AnimsHook = function(swep, anim)
             end
         else
             if nomag then ending = math.max(rand, 2) end
+            
+            if rand == 0 and nomag and swep:Clip1() == 0 then return "inspect0_nomag" end
+
+            if rand == 1 and (ending == "4" or ending == "5" or elements["eft_foregrip_cqr"] or elements["eft_m203"] or nomag) then rand = rand .. "_alt" end
+            if rand == 1 and ending == "7" then rand = rand .. "_bigdrum" end
             ending = rand
         end
 
@@ -56,7 +62,7 @@ ARC9EFT.AR15_AnimsHook = function(swep, anim)
 
 
     if anim == "fix" then
-        local rand = math.Truncate(util.SharedRandom("hi", 0, 4.99))
+        local rand = math.Truncate(util.SharedRandom("hi", 1, 4.99))
 
         -- swep.EFTInspectnum = swep.EFTInspectnum or 0
         -- if IsFirstTimePredicted() then
@@ -72,7 +78,7 @@ ARC9EFT.AR15_AnimsHook = function(swep, anim)
             net.Send(swep:GetOwner())
         end
 
-        if swep:GetValue("EFTAR15NoFwdAssist") and (rand == 1 or rand == 2) then
+        if swep:GetValue("EFTAR15NoFwdAssist") and (rand == 1) then
             rand = rand .. "_nofwd"
         end
         
@@ -101,26 +107,25 @@ local pouchout = {"arc9_eft_shared/generic_mag_pouch_out1.ogg","arc9_eft_shared/
 
 local rik_single = {
     { t = 0, lhik = 1 },
-    { t = 0.075, lhik = 0 },
-    { t = 0.25, lhik = 0 },
-    { t = 0.42, lhik = 1 },
-    { t = 0.74, lhik = 1 },
+    { t = 0.11, lhik = 0 },
     { t = 0.85, lhik = 0 },
-    { t = 0.9, lhik = 0 },
+    { t = 0.97, lhik = 1 },
     { t = 1, lhik = 1 },
 }
 
 local rik_def = {
     { t = 0, lhik = 1 },
-    { t = 0.15, lhik = 0 },
-    { t = 0.82, lhik = 0 },
+    { t = 0.13, lhik = 0 },
+    { t = 0.83, lhik = 0 },
+    { t = 0.96, lhik = 1 },
     { t = 1, lhik = 1 },
 }
 
 local rik_empty = {
     { t = 0, lhik = 1 },
-    { t = 0.15, lhik = 0 },
-    { t = 0.82, lhik = 0 },
+    { t = 0.11, lhik = 0 },
+    { t = 0.8, lhik = 0 },
+    { t = 0.95, lhik = 1 },
     { t = 1, lhik = 1 },
 }
 local rik_emptyl = {
@@ -139,26 +144,40 @@ local rik_magcheck = {
     { t = 1, lhik = 1 },
 }
 local rst_single = {
-    { s = randspin, t = 0.3 },
-    { s = path .. "mcx_bolt_out.ogg", t = 0.75 },
-    { s = path .. "mcx_bolt_in.ogg", t = 1.2 },
-    { s = randspin, t = 1.96 },
-    { s = "arc9_eft_shared/weap_round_pullout.ogg", t = 2.52 },
-    { s = randspin, t = 2.7 },
-    { s = path .. "ak74_round_in_chamber.ogg", t = 3.22 },
-    { s = path .. "mcx_bolt_catchrelease.ogg", t = 4.92 },
-    { s = randspin, t = 5.27 },
+    { s = randspin, t = 0.1 },
+    { s = path .. "mcx_bolt_out.ogg", t = 0.92 },
+    { s = path .. "mcx_bolt_in.ogg", t = 1.17 },
+    { s = randspin, t = 1.7 },
+    { s = "arc9_eft_shared/weap_round_pullout.ogg", t = 2.0 },
+    { s = randspin, t = 2.2 },
+    { s = path .. "rsh_12_ammo_in.ogg", t = 2.74 },
+    { s = path .. "mcx_bolt_catchrelease.ogg", t = 3.92 },
+    { s = randspin, t = 4.2 },
 }
 
 local rik_look = {
+    { t = 0, lhik = 1 },
+    { t = 0.14, lhik = 0 },
+    { t = 0.77, lhik = 0 },
+    { t = 0.92, lhik = 1 },
+    { t = 1, lhik = 1 },
+}
+local rik_lookalt = {
     { t = 0, lhik = 1 },
     { t = 1, lhik = 1 },
 }
 local rik_chamber = {
     { t = 0, lhik = 1 },
-    { t = 0.15, lhik = 0 },
-    { t = 0.675, lhik = 0 },
+    { t = 0.16, lhik = 0 },
+    { t = 0.7, lhik = 0 },
     { t = 0.95, lhik = 1 },
+    { t = 1, lhik = 1 },
+}
+local rik_chambernomag = {
+    { t = 0, lhik = 1 },
+    { t = 0.14, lhik = 0 },
+    { t = 0.8, lhik = 0 },
+    { t = 0.97, lhik = 1 },
     { t = 1, lhik = 1 },
 }
 
@@ -167,243 +186,328 @@ local magout = {path .. "mcx_mag_out1.ogg", path .. "mcx_mag_out2.ogg", path .. 
 
 local rst_def = {
     { s = randspin, t = 0.1 },
-    { s = path .. "mcx_magrelease_button.ogg", t = 0.49 },
-    { s = magout, t = 0.61 },
-    { s = pouchin, t = 1.08 },
-    { s = pouchout, t = 1.42 },
-    { s = magin, t = 2.04 },
-    { s = randspin, t = 2.57 }
+    { s = path .. "mcx_magrelease_button.ogg", t = 0.5 },
+    { s = path .. "hand_grip2.ogg", t = 0.55 },
+    { s = magout, t = 0.66 },
+    { s = pouchin, t = 1.0 },
+    { s = pouchout, t = 1.3 },
+    { s = randspin, t = 1.5 },
+    { s = {path .. "g36_mag_rattle1.ogg", path .. "g36_mag_rattle2.ogg"}, t = 1.75 },
+    { s = magin, t = 2.15 },
+    { s = randspin, t = 2.5 }
 }
 local rst_empty = {
     { s = randspin, t = 0.04 },
-    { s = path .. "mcx_magrelease_button.ogg", t = 0.3 },
-    { s = magout, t = 0.38 },
-    { s = pouchout, t = 0.96 },
-    { s = magin, t = 1.6 },
-    { s = path .. "mcx_bolt_catch_handhit.ogg", t = 2.2 },
-    { s = path .. "mcx_bolt_catchrelease.ogg", t = 2.25 },
-    { s = randspin, t = 2.27 },
+    { s = path .. "mcx_magrelease_button.ogg", t = 0.25 },
+    { s = magout, t = 0.32 },
+    { s = pouchout, t = 0.9 },
+    { s = {path .. "g36_mag_rattle1.ogg", path .. "g36_mag_rattle2.ogg"}, t = 1.58-0.1 },
+    { s = magin, t = 1.92-0.15 },
+    { s = path .. "mcx_bolt_catch_handhit.ogg", t = 2.48-0.05 },
+    { s = path .. "mcx_bolt_catchrelease.ogg", t = 2.52-0.05 },
+    { s = randspin, t = 2.79 },
     {hide = 0, t = 0},
     {hide = 1, t = 0.6},
     {hide = 0, t = 1.1}
 }
 local rst_tac = {
-    { s = randspin, t = 0.04 - 2/28},
-    { s = path .. "mcx_magrelease_button.ogg", t = 0.3 - 2/28 },
-    { s = magout, t = 0.38 - 2/28 },
-    { s = pouchout, t = 0.96 - 2/28 },
-    { s = magin, t = 1.6 - 2/28 },
-    { s = randspin, t = 1.8 - 2/28 },
+    { s = randspin, t = 0.04 - 2/27 },
+    { s = path .. "mcx_magrelease_button.ogg", t = 0.25 - 2/27 },
+    { s = magout, t = 0.32 - 2/27 },
+    { s = pouchout, t = 0.9 - 2/27 },
+    { s = {path .. "g36_mag_rattle1.ogg", path .. "g36_mag_rattle2.ogg"}, t = 1.58-0.1 - 2/27 },
+    { s = magin, t = 1.92-0.15 - 2/27 },
+    { s = randspin, t = 1.99 - 1/28 },
     {hide = 0, t = 0},
     {hide = 1, t = 0.6},
     {hide = 0, t = 1.1}
 }
 local rst_emptyl = {
     { s = randspin, t = 0.04 },
-    { s = path .. "mcx_magrelease_button.ogg", t = 0.3 },
-    { s = magout, t = 0.38 },
-    { s = pouchout, t = 0.96 },
-    { s = magin, t = 1.6 },
-    -- { s = path .. "mcx_bolt_catch_handhit.ogg", t = 2.2-0.1 },
-    { s = path .. "mcx_bolt_catchrelease.ogg", t = 2.25-0.1 },
-    { s = randspin, t = 2.27-0.1 },
+    { s = path .. "mcx_magrelease_button.ogg", t = 0.25 },
+    { s = magout, t = 0.32 },
+    { s = pouchout, t = 0.9 },
+    { s = {path .. "g36_mag_rattle1.ogg", path .. "g36_mag_rattle2.ogg"}, t = 1.58-0.1 },
+    { s = magin, t = 1.92-0.15 },
+    { s = path .. "mcx_bolt_catchrelease.ogg", t = 2.45 },
+    { s = randspin, t = 2.55 },
     {hide = 0, t = 0},
     {hide = 1, t = 0.6},
     {hide = 0, t = 1.1}
 }
 
 
-local rst_def40 = {
-    { s = randspin, t = 0.1 },
-    { s = path .. "mcx_magrelease_button.ogg", t = 0.49 },
-    { s = magout, t = 0.61 },
-    { s = pouchin, t = 1.08 },
-    { s = pouchout, t = 1.42+0.12 },
-    { s = magin, t = 2.04+0.12 },
-    { s = randspin, t = 2.57+0.12 }
-}
-local rst_empty40 = {
+-- same def
+-- same tac
+local rst_empty2 = {
     { s = randspin, t = 0.04 },
-    { s = path .. "mcx_magrelease_button.ogg", t = 0.3 },
-    { s = magout, t = 0.38 },
-    { s = pouchout, t = 0.96+0.12 },
-    { s = magin, t = 1.6+0.12 },
-    { s = path .. "mcx_bolt_catch_handhit.ogg", t = 2.2+0.12 },
-    { s = path .. "mcx_bolt_catchrelease.ogg", t = 2.25+0.12 },
-    { s = randspin, t = 2.27+0.12 },
+    { s = path .. "mcx_magrelease_button.ogg", t = 0.25 },
+    { s = magout, t = 0.32 },
+    { s = pouchout, t = 0.9-0.15 },
+    { s = {path .. "g36_mag_rattle1.ogg", path .. "g36_mag_rattle2.ogg"}, t = 1.58-0.1-0.15 },
+    { s = magin, t = 1.92-0.15-0.15 },
+    { s = path .. "mcx_bolt_catch_handhit.ogg", t = 2.48-0.05-0.15 },
+    { s = path .. "mcx_bolt_catchrelease.ogg", t = 2.52-0.05-0.15 },
+    { s = randspin, t = 2.79-0.15 },
     {hide = 0, t = 0},
     {hide = 1, t = 0.6},
-    {hide = 0, t = 1.12}
+    {hide = 0, t = 1.1}
 }
-local rst_tac40 = {
-    { s = randspin, t = 0.04  - 2/28},
-    { s = path .. "mcx_magrelease_button.ogg", t = 0.3 - 2/28 },
-    { s = magout, t = 0.38 - 2/28 },
-    { s = pouchout, t = 0.96+0.12 - 2/28 },
-    { s = magin, t = 1.6+0.12 - 2/28 },
-    { s = randspin, t = 1.8+0.12 - 2/28 },
-    {hide = 0, t = 0},
-    {hide = 1, t = 0.6},
-    {hide = 0, t = 1.12}
-}
-local rst_empty40l = {
+local rst_emptyl2 = {
     { s = randspin, t = 0.04 },
-    { s = path .. "mcx_magrelease_button.ogg", t = 0.3 },
-    { s = magout, t = 0.38 },
-    { s = pouchout, t = 0.96+0.12 },
-    { s = magin, t = 1.6+0.12 },
-    -- { s = path .. "mcx_bolt_catch_handhit.ogg", t = 2.2+0.12 },
-    { s = path .. "mcx_bolt_catchrelease.ogg", t = 2.25+0.12-0.1 },
-    { s = randspin, t = 2.27+0.12-0.1 },
-    {hide = 0, t = 0},
-    {hide = 1, t = 0.6},
-    {hide = 0, t = 1.12}
-}
-
-local rst_def50 = {
-    { s = randspin, t = 0.1 },
-    { s = path .. "mcx_magrelease_button.ogg", t = 0.49 },
-    { s = magout, t = 0.61 },
-    { s = pouchin, t = 1.08 },
-    { s = pouchout, t = 1.42+0.2 },
-    { s = magin, t = 2.04+0.2 },
-    { s = randspin, t = 2.57+0.2 }
-}
-local rst_empty50 = {
-    { s = randspin, t = 0.04 },
-    { s = path .. "mcx_magrelease_button.ogg", t = 0.3 },
-    { s = magout, t = 0.38 },
-    { s = pouchout, t = 0.96+0.2 },
-    { s = magin, t = 1.6+0.2 },
-    { s = path .. "mcx_bolt_catch_handhit.ogg", t = 2.2+0.2 },
-    { s = path .. "mcx_bolt_catchrelease.ogg", t = 2.25+0.2 },
-    { s = randspin, t = 2.27+0.2 },
-    {hide = 0, t = 0},
-    {hide = 1, t = 0.6},
-    {hide = 0, t = 1.12}
-}
-local rst_tac50 = {
-    { s = randspin, t = 0.04 - 2/28 },
-    { s = path .. "mcx_magrelease_button.ogg", t = 0.3 - 2/28 },
-    { s = magout, t = 0.38 - 2/28 },
-    { s = pouchout, t = 0.96+0.2 - 2/28 },
-    { s = magin, t = 1.6+0.2 - 2/28 },
-    { s = randspin, t = 1.8+0.2 - 2/28 },
-    {hide = 0, t = 0},
-    {hide = 1, t = 0.6},
-    {hide = 0, t = 1.12}
-}
-local rst_empty50l = {
-    { s = randspin, t = 0.04 },
-    { s = path .. "mcx_magrelease_button.ogg", t = 0.3 },
-    { s = magout, t = 0.38 },
-    { s = pouchout, t = 0.96+0.2 },
-    { s = magin, t = 1.6+0.2 },
-    -- { s = path .. "mcx_bolt_catch_handhit.ogg", t = 2.2+0.2 },
-    { s = path .. "mcx_bolt_catchrelease.ogg", t = 2.25+0.2-0.1 },
-    { s = randspin, t = 2.27+0.2-0.1 },
-    {hide = 0, t = 0},
-    {hide = 1, t = 0.6},
-    {hide = 0, t = 1.12}
-}
-
-local rst_empty60l = {
-    { s = randspin, t = 0.04 },
-    { s = path .. "mcx_magrelease_button.ogg", t = 0.3 },
-    { s = magout, t = 0.38 },
-    { s = pouchout, t = 0.96 },
-    { s = magin, t = 1.42 },
-    -- { s = path .. "mcx_bolt_catch_handhit.ogg", t = 2.2-0.1 },
-    { s = path .. "mcx_bolt_catchrelease.ogg", t = 1.8 },
-    { s = randspin, t = 1.82 },
+    { s = path .. "mcx_magrelease_button.ogg", t = 0.25 },
+    { s = magout, t = 0.32 },
+    { s = pouchout, t = 0.9-0.15 },
+    { s = {path .. "g36_mag_rattle1.ogg", path .. "g36_mag_rattle2.ogg"}, t = 1.58-0.1-0.15 },
+    { s = magin, t = 1.92-0.15 -0.15},
+    { s = path .. "mcx_bolt_catchrelease.ogg", t = 2.45-0.15 },
+    { s = randspin, t = 2.55-0.15 },
     {hide = 0, t = 0},
     {hide = 1, t = 0.6},
     {hide = 0, t = 1.1}
 }
 
-local rst_def70 = {
+
+
+local rst_def4 = {
     { s = randspin, t = 0.1 },
-    { s = path .. "mcx_magrelease_button.ogg", t = 0.49 },
-    { s = magout, t = 0.61 },
-    { s = pouchin, t = 1.08 },
-    { s = pouchout, t = 1.42+0.25 },
-    { s = magin, t = 2.04+0.35 },
-    { s = randspin, t = 2.57+0.35 }
+    { s = path .. "mcx_magrelease_button.ogg", t = 0.5 },
+    { s = path .. "hand_grip2.ogg", t = 0.55 },
+    { s = magout, t = 0.66 },
+    { s = pouchin, t = 1.0 },
+    { s = pouchout, t = 1.3+0.12 },
+    { s = randspin, t = 1.5+0.12 },
+    { s = {path .. "g36_mag_rattle1.ogg", path .. "g36_mag_rattle2.ogg"}, t = 1.75+0.12 },
+    { s = magin, t = 2.15+0.12 },
+    { s = randspin, t = 2.5+0.12 }
 }
-local rst_empty70 = {
+-- same empty
+-- same l
+-- same tac
+
+
+
+local rst_def5 = {
+    { s = randspin, t = 0.1 },
+    { s = path .. "mcx_magrelease_button.ogg", t = 0.5 },
+    { s = path .. "hand_grip2.ogg", t = 0.55 },
+    { s = magout, t = 0.66 },
+    { s = pouchin, t = 1.0 },
+    { s = pouchout, t = 1.3+0.15 },
+    { s = randspin, t = 1.5+0.15 },
+    { s = {path .. "g36_mag_rattle1.ogg", path .. "g36_mag_rattle2.ogg"}, t = 1.75+0.15 },
+    { s = magin, t = 2.15+0.15 },
+    { s = randspin, t = 2.5+0.15 }
+}
+-- same empty
+-- same l
+-- same tac
+
+
+local rst_def6 = {
+    { s = randspin, t = 0.1 },
+    { s = path .. "mcx_magrelease_button.ogg", t = 0.5 },
+    { s = path .. "hand_grip2.ogg", t = 0.55 },
+    { s = magout, t = 0.66 },
+    { s = pouchin, t = 1.0 },
+    { s = pouchout, t = 1.3-0.12 },
+    { s = randspin, t = 1.5-0.185 },
+    { s = {path .. "g36_mag_rattle1.ogg", path .. "g36_mag_rattle2.ogg"}, t = 1.75-0.185 },
+    { s = magin, t = 2.15-0.185 },
+    { s = randspin, t = 2.5-0.185 }
+}
+
+local rst_empty6 = {
     { s = randspin, t = 0.04 },
-    { s = path .. "mcx_magrelease_button.ogg", t = 0.3 },
-    { s = magout, t = 0.38 },
-    { s = pouchout, t = 0.96+0.25 },
-    { s = magin, t = 1.6+0.35 },
-    { s = path .. "mcx_bolt_out.ogg", t = 2.62 },
-    { s = path .. "mcx_bolt_in.ogg", t = 2.9 },
-    { s = randspin, t = 2.27+0.35 },
+    { s = path .. "mcx_magrelease_button.ogg", t = 0.25 },
+    { s = magout, t = 0.32 },
+    { s = pouchout, t = 0.9-0.15 },
+    { s = {path .. "g36_mag_rattle1.ogg", path .. "g36_mag_rattle2.ogg"}, t = 1.58-0.1-0.185 },
+    { s = magin, t = 1.92-0.15-0.185 },
+    { s = path .. "mcx_bolt_catch_handhit.ogg", t = 2.48-0.05-0.185 },
+    { s = path .. "mcx_bolt_catchrelease.ogg", t = 2.52-0.05-0.185 },
+    { s = randspin, t = 2.79-0.185 },
     {hide = 0, t = 0},
     {hide = 1, t = 0.6},
-    {hide = 0, t = 1.12}
+    {hide = 0, t = 1.1}
 }
-local rst_tac70 = {
-    { s = randspin, t = 0.04 - 2/28 },
-    { s = path .. "mcx_magrelease_button.ogg", t = 0.3 - 2/28 },
-    { s = magout, t = 0.38 - 2/28 },
-    { s = pouchout, t = 0.96+0.25  - 2/28},
-    { s = magin, t = 1.6+0.35 - 2/28 },
-    { s = randspin, t = 1.8+0.35 - 2/28 },
+local rst_tac6 = {
+    { s = randspin, t = 0.04 - 2/27 },
+    { s = path .. "mcx_magrelease_button.ogg", t = 0.25 - 2/27 },
+    { s = magout, t = 0.32 - 2/27 },
+    { s = pouchout, t = 0.9 - 2/27 - 0.1 },
+    { s = {path .. "g36_mag_rattle1.ogg", path .. "g36_mag_rattle2.ogg"}, t = 1.58-0.1 - 2/27 - 0.12 },
+    { s = magin, t = 1.92-0.15 - 2/27 - 0.12 },
+    { s = randspin, t = 1.99 - 1/28 - 0.12 },
     {hide = 0, t = 0},
     {hide = 1, t = 0.6},
-    {hide = 0, t = 1.12}
+    {hide = 0, t = 1.1}
 }
-local rst_empty70l = {
+local rst_emptyl6 = {
     { s = randspin, t = 0.04 },
-    { s = path .. "mcx_magrelease_button.ogg", t = 0.3 },
-    { s = magout, t = 0.38 },
-    { s = pouchout, t = 0.96+0.25 },
-    { s = magin, t = 1.6+0.35 },
-    -- { s = path .. "mcx_bolt_catch_handhit.ogg", t = 2.2+0.2 },
-    { s = path .. "mcx_bolt_catchrelease.ogg", t = 2.25+0.35-0.1 },
-    { s = randspin, t = 2.27+0.35-0.1 },
+    { s = path .. "mcx_magrelease_button.ogg", t = 0.25 },
+    { s = magout, t = 0.32 },
+    { s = pouchout, t = 0.9-0.15 },
+    { s = {path .. "g36_mag_rattle1.ogg", path .. "g36_mag_rattle2.ogg"}, t = 1.58-0.1-0.185 },
+    { s = magin, t = 1.92-0.15-0.185 },
+    { s = path .. "mcx_bolt_catchrelease.ogg", t = 2.45-0.185 },
+    { s = randspin, t = 2.55-0.185 },
     {hide = 0, t = 0},
     {hide = 1, t = 0.6},
-    {hide = 0, t = 1.12}
+    {hide = 0, t = 1.1}
 }
+
+
+
+
+
+local rst_def7 = {
+    { s = randspin, t = 0.1 },
+    { s = path .. "mcx_magrelease_button.ogg", t = 0.5 },
+    { s = path .. "hand_grip2.ogg", t = 0.55 },
+    { s = magout, t = 0.66 },
+    { s = pouchin, t = 1.0 },
+    { s = pouchout, t = 1.3+ 0.15 },
+    { s = randspin, t = 1.5+ 0.2 },
+    { s = {path .. "g36_mag_rattle1.ogg", path .. "g36_mag_rattle2.ogg"}, t = 1.75+ 0.2 },
+    { s = magin, t = 2.15+ 0.2 },
+    { s = randspin, t = 2.5+ 0.2 },
+    { s = randspin, t = 2.5+ 0.2 + 0.2 }
+}
+local rst_empty7 = {
+    { s = randspin, t = 0.04 },
+    { s = path .. "mcx_magrelease_button.ogg", t = 0.25 },
+    { s = magout, t = 0.32 },
+    { s = pouchout, t = 0.9+ 0.2 },
+    { s = {path .. "g36_mag_rattle1.ogg", path .. "g36_mag_rattle2.ogg"}, t = 1.58-0.1+ 0.37 },
+    { s = magin, t = 1.92-0.15+ 0.37 },
+    
+    { s = path .. "mcx_bolt_out.ogg", t = 3.05 },
+    { s = path .. "mcx_bolt_in.ogg", t = 3.25 },
+
+
+    { s = randspin, t = 2.79+ 0.37 },
+    {hide = 0, t = 0},
+    {hide = 1, t = 0.6},
+    {hide = 0, t = 1.1}
+}
+local rst_tac7 = {
+    { s = randspin, t = 0.04 - 2/27 },
+    { s = path .. "mcx_magrelease_button.ogg", t = 0.25 - 2/27 },
+    { s = magout, t = 0.32 - 2/27 },
+    { s = pouchout, t = 0.9 - 2/27+ 0.2 },
+    { s = {path .. "g36_mag_rattle1.ogg", path .. "g36_mag_rattle2.ogg"}, t = 1.58-0.1 - 2/27+ 0.37 },
+    { s = magin, t = 1.92-0.15 - 2/27+ 0.37 },
+    { s = randspin, t = 1.99 - 1/28+ 0.37 },
+    { s = randspin, t = 1.99 - 1/28+ 0.37 + 0.2 },
+    {hide = 0, t = 0},
+    {hide = 1, t = 0.6},
+    {hide = 0, t = 1.1}
+}
+local rst_emptyl7 = {
+    { s = randspin, t = 0.04 },
+    { s = path .. "mcx_magrelease_button.ogg", t = 0.25 },
+    { s = magout, t = 0.32 },
+    { s = pouchout, t = 0.9+ 0.2 },
+    { s = {path .. "g36_mag_rattle1.ogg", path .. "g36_mag_rattle2.ogg"}, t = 1.58-0.1+ 0.37 },
+    { s = magin, t = 1.92-0.15+ 0.37 },
+    { s = path .. "mcx_bolt_catchrelease.ogg", t = 2.45+ 0.37 },
+    { s = randspin, t = 2.55+ 0.37 },
+    {hide = 0, t = 0},
+    {hide = 1, t = 0.6},
+    {hide = 0, t = 1.1}
+}
+
+
+
+-- same def
+-- same tac
+
+local rst_empty8 = {
+    { s = randspin, t = 0.04 },
+    { s = path .. "mcx_magrelease_button.ogg", t = 0.25 },
+    { s = magout, t = 0.32 },
+    { s = pouchout, t = 0.9 },
+    { s = {path .. "g36_mag_rattle1.ogg", path .. "g36_mag_rattle2.ogg"}, t = 1.58-0.1 },
+    { s = magin, t = 1.92-0.15 },
+    { s = path .. "mcx_bolt_out.ogg", t = 2.35 },
+    { s = path .. "mcx_bolt_in.ogg", t = 2.65 },
+    { s = randspin, t = 2.79 },
+    {hide = 0, t = 0},
+    {hide = 1, t = 0.6},
+    {hide = 0, t = 1.1}
+}
+local rst_emptyl8 = {
+    { s = randspin, t = 0.04 },
+    { s = path .. "mcx_magrelease_button.ogg", t = 0.25 },
+    { s = magout, t = 0.32 },
+    { s = pouchout, t = 0.9-0.1 },
+    { s = {path .. "g36_mag_rattle1.ogg", path .. "g36_mag_rattle2.ogg"}, t = 1.58-0.1-0.185 },
+    { s = magin, t = 1.92-0.15-0.185 },
+    { s = path .. "mcx_bolt_catchrelease.ogg", t = 2.45-0.185 },
+    { s = randspin, t = 2.55-0.185 },
+    {hide = 0, t = 0},
+    {hide = 1, t = 0.6},
+    {hide = 0, t = 1.1}
+}
+
 
 local rst_magcheck = {
-    { s = randspin, t = 5/24 },
-    { s = path .. "mcx_magrelease_button.ogg", t = 0.46 },
-    { s = magout, t = 0.63 },
-    { s = randspin, t = 0.91 },
-    { s = randspin, t = 1.41 },
-    { s = magin, t = 1.76 },
-    { s = randspin, t = 2.39 },
+    { s = randspin, t = 0.1 },
+    { s = path .. "mcx_magrelease_button.ogg", t = 0.3 },
+    { s = path .. "hand_grip2.ogg", t = 0.25 },
+    { s = magout, t = 0.47 },
+    { s = randspin, t = 0.8 },
+    { s = {path .. "g36_mag_rattle1.ogg", path .. "g36_mag_rattle2.ogg"}, t = 2.12 - 0.15 },
+    { s = magin, t = 2.25 - 0.15 },
+    { s = randspin, t = 2.4 }
+}
+local rst_magcheck7 = {
+    { s = randspin, t = 0.1 },
+    { s = path .. "mcx_magrelease_button.ogg", t = 0.3 },
+    { s = path .. "hand_grip2.ogg", t = 0.25 },
+    { s = magout, t = 0.47 },
+    { s = randspin, t = 0.8 },
+    { s = {path .. "g36_mag_rattle1.ogg", path .. "g36_mag_rattle2.ogg"}, t = 2.12 - 0.15 + 0.5 },
+    { s = magin, t = 2.25 - 0.15 + 0.5 },
+    { s = randspin, t = 2.4 + 0.5 }
 }
 
 local rst_look = {
-    { s = randspin, t = 9/28 },
-    { s = randspin, t = 38/28 },
-    { s = randspin, t = 73/28 },
+    { s = randspin, t = 0.12 },
+    { s = randspin, t = 1.5 },
+    { s = randspin, t = 2.7 },
 }
 
 local rst_chamber = {
-    { s = randspin, t = 9/24 },
-    { s = "arc9_eft_shared/weap_bolt_handle_out.ogg", t = 21/24},
-    { s = "arc9_eft_shared/weap_bolt_handle_in.ogg", t = 37/24},
-    { s = randspin, t = 53/24 },
+    { s = randspin, t = 0.09 },
+    { s = "arc9_eft_shared/weap_bolt_handle_out.ogg", t = 0.6},
+    { s = "arc9_eft_shared/weap_bolt_handle_in.ogg", t = 1.3},
+    { s = randspin, t = 1.7 },
+}
+local rst_chamberempty = {
+    { s = randspin, t = 0.07 },
+    { s = randspin, t = 0.7 },
+}
+local rst_chambernomag = {
+    { s = randspin, t = 0.09 },
+    { s = "arc9_eft_shared/weap_bolt_handle_out.ogg", t = 0.6},
+    { s = path .. "mcx_bolt_out.ogg", t = 1 },
+    { s = path .. "mcx_bolt_in.ogg", t = 1.37 },
+    { s = path .. "mcx_bolt_out.ogg", t = 1.7 },
+    { s = path .. "mcx_bolt_in.ogg", t = 1.85 },
+    { s = randspin, t = 2.7 },
 }
 
 ARC9EFT.AR15_Anims = {
     ["idle"] = {
         Source = "idle",
-        RareSource = {"tooidle0", "tooidle1", "tooidle2"},
-        RareSourceChance = 0.0001,
     },
     ["idle_sights"] = {
         Source = "idle",
     },
     ["idle_empty"] = {
         Source = "idle_empty",
-        RareSource = {"tooidle0_empty", "tooidle1_empty", "tooidle2_empty"},
-        RareSourceChance = 0.0001,
     },
 
     ["ready"] = {
@@ -415,8 +519,8 @@ ARC9EFT.AR15_Anims = {
         },
         EventTable = {
             { s = "arc9_eft_shared/weap_in.ogg", t = 0 },
-            { s = path .. "mcx_bolt_out.ogg", t = 0.33 },
-            { s = path .. "mcx_bolt_in.ogg", t = 0.63 },
+            { s = path .. "mcx_bolt_out.ogg", t = 0.4 },
+            { s = path .. "mcx_bolt_in.ogg", t = 0.7 },
         },
     },
 
@@ -444,11 +548,12 @@ ARC9EFT.AR15_Anims = {
     },
     ["fire_empty"] = {
         Source = "fire_empty",
+        EventTable = { { s = ")arc9_eft_shared/weap_trigger_hammer.wav", t = 0 } }
     },
 
 
-    ["dryfire"] = { Source = "fire_dry", EventTable = { { s = ")arc9_eft_shared/weap_trigger_hammer.wav", t = 0 }, } },
-    ["dryfire_empty"] = { Source = "fire_dry_empty", EventTable = { { s = ")arc9_eft_shared/weap_trigger_hammer.wav", t = 0 }, } },
+    ["dryfire"] = { Source = "fire_dry", EventTable = { { s = ")arc9_eft_shared/weap_trigger_empty.wav", t = 0 }, } },
+    ["dryfire_empty"] = { Source = "fire_dry_empty", EventTable = { { s = ")arc9_eft_shared/weap_trigger_empty.wav", t = 0 }, } },
 
     ["reload"] = {
         Source = "reload_single",
@@ -507,6 +612,8 @@ ARC9EFT.AR15_Anims = {
         IKTimeLine = rik_emptyl,
         EventTable = rst_emptyl,
     },
+
+
     ["reload2"] = {
         Source = "reload2",
         RefillProgress = 0.8,
@@ -533,7 +640,7 @@ ARC9EFT.AR15_Anims = {
         MinProgress = 1,
         FireASAP = true,
         IKTimeLine = rik_empty,
-        EventTable = rst_empty,
+        EventTable = rst_empty2,
     },
     ["reload_empty2_l"] = {
         Source = "reload_empty2_l",
@@ -542,8 +649,50 @@ ARC9EFT.AR15_Anims = {
         MinProgress = 1,
         FireASAP = true,
         IKTimeLine = rik_emptyl,
+        EventTable = rst_emptyl2,
+    },
+
+
+
+    ["reload3"] = {
+        Source = "reload3",
+        RefillProgress = 0.8,
+        PeekProgress = 0.95,
+        MinProgress = 1,
+        FireASAP = true,
+        IKTimeLine = rik_def,
+        EventTable = rst_def,
+    },
+    ["reload_tactical3"] = {
+        Source = "reload3t",
+        RefillProgress = 0.8,
+        PeekProgress = 0.95,
+        MinProgress = 1,
+        FireASAP = true,
+        DropMagAt = 0.6,
+        IKTimeLine = rik_def,
+        EventTable = rst_tac,
+    },
+    ["reload_empty3"] = {
+        Source = {"reload_empty3", "reload_empty3_1"},
+        RefillProgress = 0.8,
+        PeekProgress = 0.95,
+        MinProgress = 1,
+        FireASAP = true,
+        IKTimeLine = rik_empty,
+        EventTable = rst_empty,
+    },
+    ["reload_empty3_l"] = {
+        Source = "reload_empty3_l",
+        RefillProgress = 0.8,
+        PeekProgress = 0.95,
+        MinProgress = 1,
+        FireASAP = true,
+        IKTimeLine = rik_emptyl,
         EventTable = rst_emptyl,
     },
+
+
     ["reload4"] = {
         Source = "reload4",
         RefillProgress = 0.8,
@@ -551,7 +700,7 @@ ARC9EFT.AR15_Anims = {
         MinProgress = 1,
         FireASAP = true,
         IKTimeLine = rik_def,
-        EventTable = rst_def40,
+        EventTable = rst_def4,
     },
     ["reload_tactical4"] = {
         Source = "reload4t",
@@ -561,7 +710,7 @@ ARC9EFT.AR15_Anims = {
         FireASAP = true,
         DropMagAt = 0.6,
         IKTimeLine = rik_def,
-        EventTable = rst_tac40,
+        EventTable = rst_tac,
     },
     ["reload_empty4"] = {
         Source = {"reload_empty4", "reload_empty4_1"},
@@ -570,7 +719,7 @@ ARC9EFT.AR15_Anims = {
         MinProgress = 1,
         FireASAP = true,
         IKTimeLine = rik_empty,
-        EventTable = rst_empty40,
+        EventTable = rst_empty,
     },
     ["reload_empty4_l"] = {
         Source = "reload_empty4_l",
@@ -579,8 +728,12 @@ ARC9EFT.AR15_Anims = {
         MinProgress = 1,
         FireASAP = true,
         IKTimeLine = rik_emptyl,
-        EventTable = rst_empty40l,
+        EventTable = rst_empty,
     },
+
+
+
+
     ["reload5"] = {
         Source = "reload5",
         RefillProgress = 0.8,
@@ -588,7 +741,7 @@ ARC9EFT.AR15_Anims = {
         MinProgress = 1,
         FireASAP = true,
         IKTimeLine = rik_def,
-        EventTable = rst_def50,
+        EventTable = rst_def5,
     },
     ["reload_tactical5"] = {
         Source = "reload5t",
@@ -598,7 +751,7 @@ ARC9EFT.AR15_Anims = {
         FireASAP = true,
         DropMagAt = 0.6,
         IKTimeLine = rik_def,
-        EventTable = rst_tac50,
+        EventTable = rst_tac,
     },
     ["reload_empty5"] = {
         Source = {"reload_empty5", "reload_empty5_1"},
@@ -607,7 +760,7 @@ ARC9EFT.AR15_Anims = {
         MinProgress = 1,
         FireASAP = true,
         IKTimeLine = rik_empty,
-        EventTable = rst_empty50,
+        EventTable = rst_empty,
     },
     ["reload_empty5_l"] = {
         Source = "reload_empty5_l",
@@ -616,8 +769,11 @@ ARC9EFT.AR15_Anims = {
         MinProgress = 1,
         FireASAP = true,
         IKTimeLine = rik_emptyl,
-        EventTable = rst_empty50l,
+        EventTable = rst_emptyl,
     },
+
+
+
     ["reload6"] = {
         Source = "reload6",
         RefillProgress = 0.8,
@@ -625,7 +781,7 @@ ARC9EFT.AR15_Anims = {
         MinProgress = 1,
         FireASAP = true,
         IKTimeLine = rik_def,
-        EventTable = rst_def,
+        EventTable = rst_def6,
     },
     ["reload_tactical6"] = {
         Source = "reload6t",
@@ -635,7 +791,7 @@ ARC9EFT.AR15_Anims = {
         FireASAP = true,
         DropMagAt = 0.6,
         IKTimeLine = rik_def,
-        EventTable = rst_tac,
+        EventTable = rst_tac6,
     },
     ["reload_empty6"] = {
         Source = {"reload_empty6", "reload_empty6_1"},
@@ -644,7 +800,7 @@ ARC9EFT.AR15_Anims = {
         MinProgress = 1,
         FireASAP = true,
         IKTimeLine = rik_empty,
-        EventTable = rst_empty,
+        EventTable = rst_empty6,
     },
     ["reload_empty6_l"] = {
         Source = "reload_empty6_l",
@@ -653,8 +809,11 @@ ARC9EFT.AR15_Anims = {
         MinProgress = 1,
         FireASAP = true,
         IKTimeLine = rik_emptyl,
-        EventTable = rst_empty60l,
+        EventTable = rst_emptyl6,
     },
+
+
+
     ["reload7"] = {
         Source = "reload7",
         RefillProgress = 0.8,
@@ -662,7 +821,7 @@ ARC9EFT.AR15_Anims = {
         MinProgress = 1,
         FireASAP = true,
         IKTimeLine = rik_def,
-        EventTable = rst_def70,
+        EventTable = rst_def7,
     },
     ["reload_tactical7"] = {
         Source = "reload7t",
@@ -672,7 +831,7 @@ ARC9EFT.AR15_Anims = {
         FireASAP = true,
         DropMagAt = 0.6,
         IKTimeLine = rik_def,
-        EventTable = rst_tac70,
+        EventTable = rst_tac7,
     },
     ["reload_empty7"] = {
         Source = {"reload_empty7", "reload_empty7_1"},
@@ -681,7 +840,7 @@ ARC9EFT.AR15_Anims = {
         MinProgress = 1,
         FireASAP = true,
         IKTimeLine = rik_empty,
-        EventTable = rst_empty70,
+        EventTable = rst_empty7,
     },
     ["reload_empty7_l"] = {
         Source = "reload_empty7_l",
@@ -690,8 +849,52 @@ ARC9EFT.AR15_Anims = {
         MinProgress = 1,
         FireASAP = true,
         IKTimeLine = rik_emptyl,
-        EventTable = rst_empty70l,
+        EventTable = rst_emptyl7,
     },
+
+
+
+    ["reload8"] = {
+        Source = "reload8",
+        RefillProgress = 0.8,
+        PeekProgress = 0.95,
+        MinProgress = 1,
+        FireASAP = true,
+        IKTimeLine = rik_def,
+        EventTable = rst_def,
+    },
+    ["reload_tactical8"] = {
+        Source = "reload8t",
+        RefillProgress = 0.8,
+        PeekProgress = 0.95,
+        MinProgress = 1,
+        FireASAP = true,
+        DropMagAt = 0.6,
+        IKTimeLine = rik_def,
+        EventTable = rst_tac,
+    },
+    ["reload_empty8"] = {
+        -- Source = {"reload_empty8", "reload_empty8_1"},
+        Source = {"reload_empty8_bolt", "reload_empty8_1_bolt"},
+        RefillProgress = 0.8,
+        PeekProgress = 0.95,
+        MinProgress = 1,
+        FireASAP = true,
+        IKTimeLine = rik_empty,
+        EventTable = rst_empty8,
+    },
+    ["reload_empty8_l"] = {
+        Source = "reload_empty8_l",
+        RefillProgress = 0.8,
+        PeekProgress = 0.95,
+        MinProgress = 1,
+        FireASAP = true,
+        IKTimeLine = rik_emptyl,
+        EventTable = rst_emptyl8,
+    },
+
+
+
 
     ["inspect"] = { -- shutup arc9 we have inspect
         Source = "idle",
@@ -716,19 +919,55 @@ ARC9EFT.AR15_Anims = {
         IKTimeLine = rik_look,
         EventTable = rst_look
     },
+    ["inspect1_alt"] = {
+        Source = "look_1",
+        MinProgress = 0.85,
+        FireASAP = true,
+        IKTimeLine = rik_lookalt,
+        EventTable = rst_look
+    },
+    ["inspect_empty1_alt"] = {
+        Source = "look_1_empty",
+        MinProgress = 0.85,
+        FireASAP = true,
+        IKTimeLine = rik_look,
+        EventTable = rst_look
+    },
+    ["inspect1_bigdrum"] = {
+        Source = "look_2",
+        MinProgress = 0.85,
+        FireASAP = true,
+        IKTimeLine = rik_look,
+        EventTable = rst_look
+    },
+    ["inspect_empty1_bigdrum"] = {
+        Source = "look_2_empty",
+        MinProgress = 0.85,
+        FireASAP = true,
+        IKTimeLine = rik_lookalt,
+        EventTable = rst_look
+    },
+
+
     ["inspect0"] = {
-        Source = "look1",
+        Source = "check_chamber",
         MinProgress = 0.85,
         FireASAP = true,
         IKTimeLine = rik_chamber,
         EventTable = rst_chamber
     },
-    ["inspect_empty0"] = {
-        Source = "look1_empty",
+    ["inspect0_nomag"] = {
+        Source = "check_chamber_nomag",
         MinProgress = 0.85,
         FireASAP = true,
-        IKTimeLine = rik_chamber,
-        EventTable = rst_chamber
+        IKTimeLine = rik_chambernomag,
+        EventTable = rst_chambernomag
+    },
+    ["inspect_empty0"] = {
+        Source = "check_chamber_empty",
+        MinProgress = 0.85,
+        FireASAP = true,
+        EventTable = rst_chamberempty
     },
 
     ["inspect_mag_0"] = {
@@ -759,15 +998,29 @@ ARC9EFT.AR15_Anims = {
         IKTimeLine = rik_magcheck,
         EventTable = rst_magcheck
     },
+    ["inspect_mag_3"] = {
+        Source = "magcheck0",
+        MinProgress = 0.85,
+        FireASAP = true,
+        IKTimeLine = rik_magcheck,
+        EventTable = rst_magcheck
+    },
+    ["inspect_empty_mag_3"] = {
+        Source = "magcheck0_empty",
+        MinProgress = 0.85,
+        FireASAP = true,
+        IKTimeLine = rik_magcheck,
+        EventTable = rst_magcheck
+    },
     ["inspect_mag_4"] = {
-        Source = "magcheck4",
+        Source = "magcheck0",
         MinProgress = 0.85,
         FireASAP = true,
         IKTimeLine = rik_magcheck,
         EventTable = rst_magcheck
     },
     ["inspect_empty_mag_4"] = {
-        Source = "magcheck4_empty",
+        Source = "magcheck0_empty",
         MinProgress = 0.85,
         FireASAP = true,
         IKTimeLine = rik_magcheck,
@@ -806,10 +1059,24 @@ ARC9EFT.AR15_Anims = {
         MinProgress = 0.85,
         FireASAP = true,
         IKTimeLine = rik_magcheck,
-        EventTable = rst_magcheck
+        EventTable = rst_magcheck7
     },
     ["inspect_empty_mag_7"] = {
         Source = "magcheck7_empty",
+        MinProgress = 0.85,
+        FireASAP = true,
+        IKTimeLine = rik_magcheck,
+        EventTable = rst_magcheck7
+    },
+    ["inspect_mag_8"] = {
+        Source = "magcheck8",
+        MinProgress = 0.85,
+        FireASAP = true,
+        IKTimeLine = rik_magcheck,
+        EventTable = rst_magcheck
+    },
+    ["inspect_empty_mag_8"] = {
+        Source = "magcheck8_empty",
         MinProgress = 0.85,
         FireASAP = true,
         IKTimeLine = rik_magcheck,
@@ -852,137 +1119,120 @@ ARC9EFT.AR15_Anims = {
 
 
 
-    ["jam_0"] = {
-        Source = "jam_misfire", -- misfire
-        EventTable = {
-            { s = randspin, t = 0.04 },
-            { s = randspin, t = 0.49 },
-            { s = path .. "mcx_bolt_out.ogg", t = 1.17 },
-            { s = path .. "mcx_bolt_in.ogg", t = 1.55 },
-            { s = randspin, t = 1.89 },
-            
-        },
-        IKTimeLine = {
-            { t = 0, lhik = 1 },
-            { t = 0.3, lhik = 1 },
-            { t = 0.41, lhik = 0 },
-            { t = 0.8, lhik = 0 },
-            { t = 0.95, lhik = 1 },
-            { t = 1, lhik = 1 },
-        },
-        EjectAt = 1.3
-    },
     ["jam_2"] = {
         Source = "jam_feed", -- jam feed
         EventTable = {
-            { s = randspin, t = 0.04 },
-            { s = randspin, t = 0.49 },
-            { s = randspin, t = 0.81 },
-            { s = path .. "mcx_bolt_out.ogg", t = 1.04 },
-            { s = randspin, t = 1.3 },
-            { s = randspin, t = 1.61 },
-            { s = path .. "ak_jam_feedfault_extraction_nohand.ogg", t = 1.66 },
-            { s = randspin, t = 1.91 },
-            { s = path .. "mcx_bolt_in.ogg", t = 2.38 },
-            { s = path .. "generic_jam_slidelock_hit1.ogg", t = 2.66 },
-            { s = path .. "generic_jam_slidelock_hit2.ogg", t = 3.02 },
-            { s = randspin, t = 3.38 },
+            { s = randspin, t = 0.2 },
+            { s = randspin, t = 0.77 },
+            { s = randspin, t = 1.25 },
+
+            { s = "arc9_eft_shared/weap_bolt_handle_out.ogg", t = 1.73},
+            { s = path .. "mcx_bolt_out.ogg", t = 2.07 },
+            { s = randspin, t = 2.4 },
+            { s = randspin, t = 2.84 },
+            { s = path .. "ak_jam_feedfault_extraction_nohand.ogg", t = 3 },
+            { s = path .. "mcx_bolt_in.ogg", t = 3.07 },
+            { s = randspin, t = 3.26 },
         },
-        EjectAt = 1.66
-    },
-    ["jam_2_nofwd"] = {
-        Source = "jam_feed_nofwd", -- jam feed
-        EventTable = {
-            { s = randspin, t = 0.04 },
-            { s = randspin, t = 0.49 },
-            { s = randspin, t = 0.81 },
-            { s = path .. "mcx_bolt_out.ogg", t = 1.04 },
-            { s = randspin, t = 1.3 },
-            { s = randspin, t = 1.61 },
-            { s = path .. "ak_jam_feedfault_extraction_nohand.ogg", t = 1.66 },
-            { s = randspin, t = 1.91 },
-            { s = path .. "mcx_bolt_in.ogg", t = 2.38 },
-            { s = randspin, t = 2.73 },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.31, lhik = 1 },
+            { t = 0.5, lhik = 0 },
+            { t = 0.91, lhik = 0 },
+            { t = 1, lhik = 1 },
         },
-        EjectAt = 1.66
+        EjectAt = 3
     },
 
     ["jam_3"] = {
         Source = "jam_hard_slide", -- jam hard
         EventTable = {
-            { s = randspin, t = 0.04 },
-            { s = randspin, t = 0.49 },
-            { s = path .. "ar_jam_boltlock_grab1.ogg", t = 0.98 },
-            { s = path .. "ar_jam_boltlock_try1.ogg", t = 1.04 },
-            { s = path .. "ar_jam_boltlock_grab2.ogg", t = 1.57 },
-            { s = path .. "ar_jam_boltlock_try2.ogg", t = 1.72 },
-            { s = randspin, t = 1.94 },
-            { s = path .. "ar_jam_boltlock_grab3.ogg", t = 2.37 },
-            { s = path .. "ar_jam_boltlock_try3.ogg", t = 2.44 },
-            { s = path .. "mcx_bolt_out.ogg", t = 2.88 },
-            { s = path .. "ak_jam_feedfault_extraction_nohand.ogg", t = 2.97 },
-            { s = path .. "mcx_bolt_in.ogg", t = 3 },
-            { s = randspin, t = 3.18 },
+            { s = randspin, t = 0.2 },
+            { s = randspin, t = 0.77 },
+            { s = randspin, t = 1.25 },
             
+            { s = path .. "ar_jam_boltlock_grab1.ogg", t = 1.5 },
+            { s = path .. "ar_jam_boltlock_try1.ogg", t = 1.78 },
+            { s = path .. "ar_jam_boltlock_try2.ogg", t = 2.07 },
+            { s = path .. "ar_jam_boltlock_try3.ogg", t = 2.48 },
+            { s = randspin, t = 2.82 },
+            { s = path .. "ar_jam_boltlock_grab2.ogg", t = 3.6 },
+            { s = path .. "ar_jam_boltlock_try1.ogg", t = 3.75 },
+            { s = path .. "ar_jam_boltlock_try2.ogg", t = 4.11 },
+            { s = path .. "mcx_bolt_out.ogg", t = 4.44 },
+            { s = path .. "ak_jam_feedfault_extraction_nohand.ogg", t = 4.54 },
+            { s = path .. "mcx_bolt_in.ogg", t = 4.67 },
+            { s = randspin, t = 4.87 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
-            { t = 0.15, lhik = 1 },
-            { t = 0.24, lhik = 0 },
-            { t = 0.56, lhik = 0 },
-            { t = 0.67, lhik = 1 },
+            { t = 0.19, lhik = 1 },
+            { t = 0.32, lhik = 0 },
+            { t = 0.53, lhik = 0 },
+            { t = 0.6, lhik = 1 },
             { t = 1, lhik = 1 },
         },
-        EjectAt = 2.97
+        EjectAt = 4.54
     },
     ["jam_4"] = {
         Source = "jam_soft_slide", -- jam soft
         EventTable = {
-            { s = randspin, t = 0.04 },
-            { s = randspin, t = 0.49 },
-            { s = path .. "ar_jam_boltlock_grab1.ogg", t = 1.03 },
-            { s = path .. "ar_jam_boltlock_try1.ogg", t = 1.22 },
-            { s = path .. "ar_jam_boltlock_grab2.ogg", t = 1.56 },
-            { s = path .. "mcx_bolt_out.ogg", t = 1.67 },
-            { s = path .. "ak_jam_feedfault_extraction_nohand.ogg", t = 1.75 },
-            { s = path .. "mcx_bolt_in.ogg", t = 1.87 },
-            { s = randspin, t = 2.1 },
+            { s = randspin, t = 0.2 },
+            { s = randspin, t = 0.77 },
+            { s = randspin, t = 1.25 },
             
+            { s = path .. "ar_jam_boltlock_grab1.ogg", t = 1.5 },
+            { s = path .. "ar_jam_boltlock_try1.ogg", t = 1.76 },
+            { s = path .. "mcx_bolt_out.ogg", t = 2.07 },
+            { s = path .. "ak_jam_feedfault_extraction_nohand.ogg", t = 2.15 },
+            { s = path .. "mcx_bolt_in.ogg", t = 2.34 },
+            { s = randspin, t = 2.4 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
-            { t = 0.28, lhik = 1 },
-            { t = 0.4, lhik = 0 },
-            { t = 0.82, lhik = 0 },
-            { t = 0.9, lhik = 1 },
+            { t = 0.37, lhik = 1 },
+            { t = 0.56, lhik = 0 },
+            { t = 0.86, lhik = 0 },
+            { t = 0.96, lhik = 1 },
             { t = 1, lhik = 1 },
         },
-        EjectAt = 1.75
+        EjectAt = 2.15
     },
     ["jam_1"] = {
         Source = "jam_shell", -- jam shell
         EventTable = {
-            { s = randspin, t = 0.04 },
-            { s = randspin, t = 0.49 },
-            { s = path .. "ak_jam_shell_grab.ogg", t = 0.94 },
-            { s = path .. "ak_jam_shell_remove.ogg", t = 1.3 },
-            { s = "arc9_eft_shared/weap_bolt_handle_out.ogg", t = 1.71},
-            { s = "arc9_eft_shared/weap_bolt_handle_in.ogg", t = 2},
-            { s = path .. "generic_jam_slidelock_hit1.ogg", t = 2.25 },
-            { s = randspin, t = 2.43 },
+            { s = randspin, t = 0.2 },
+            { s = randspin, t = 0.77 },
+            { s = randspin, t = 1.25 },
+
+            { s = path .. "ar_jam_boltlock_grab1.ogg", t = 1.36 },
+            { s = path .. "mcx_bolt_out.ogg", t = 1.5 },
+            { s = path .. "ak_jam_feedfault_roundaftercharge.ogg", t = 1.52 },
+            { s = path .. "mcx_bolt_in.ogg", t = 1.7 },
+            { s = randspin, t = 1.8 },
+            { s = path .. "mcx_bolt_catch_handhit.ogg", t = 2.1 },
+            { s = randspin, t = 2.45 },
+            { s = ARC9EFT.Shells556, t = 2.45 },
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 1, lhik = 1 },
         },
     },
     ["jam_1_nofwd"] = {
         Source = "jam_shell_nofwd", -- jam shell
         EventTable = {
-            { s = randspin, t = 0.04 },
-            { s = randspin, t = 0.49 },
-            { s = path .. "ak_jam_shell_grab.ogg", t = 0.94 },
-            { s = path .. "ak_jam_shell_remove.ogg", t = 1.3 },
-            { s = "arc9_eft_shared/weap_bolt_handle_out.ogg", t = 1.71},
-            { s = "arc9_eft_shared/weap_bolt_handle_in.ogg", t = 2},
-            -- { s = path .. "generic_jam_slidelock_hit1.ogg", t = 2.25 },
-            { s = randspin, t = 2.3 },
+            { s = randspin, t = 0.2 },
+            { s = randspin, t = 0.77 },
+            { s = randspin, t = 1.25 },
+
+            { s = path .. "ar_jam_boltlock_grab1.ogg", t = 1.36 },
+            { s = path .. "mcx_bolt_out.ogg", t = 1.5 },
+            { s = path .. "ak_jam_feedfault_roundaftercharge.ogg", t = 1.52 },
+            { s = path .. "mcx_bolt_in.ogg", t = 1.7 },
+            { s = randspin, t = 1.8 },
+            { s = randspin, t = 1.88 },
+            { s = ARC9EFT.Shells556, t = 2.25 },
         },
     },    
     

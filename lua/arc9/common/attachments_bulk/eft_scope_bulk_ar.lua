@@ -1175,7 +1175,7 @@ ATT.Icon = Material("entities/eft_attachments/68caad7f933990601c07f47c.png", "mi
 ATT.Description = "Precise, accurate, durable and dependable - the Mark 4 MR/T TS-30A2 rifle scope. The model provides 2.5-8x magnification giving you a clear idea of the actual size of the targeted object."    
 ATT.SortOrder = 3
 
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/scope_leupold_mark4.mdl"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/scope_30mm_leupold_mark_4_mr_t_ts.mdl"
 
 ATT.ExcludeElements = {"eft_rsh12_mag_std"} -- wawa not for rsh12
 
@@ -1258,11 +1258,14 @@ ATT.Category = {"eft_elcan_mount"}
 ATT.EFTErgoAdd = -0.1
 ATT.CustomCons = { Ergonomics = "-0.1" }
 
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/mount_base_specter_trijicon_mounting_plate.mdl"
+
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_scope"),
         Category = "eft_rmr",
-        Pos = Vector(0, -0, -1.025),
+        Pos = Vector(0.04, -0, -0.15),
         --Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 1),
@@ -1293,16 +1296,16 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_scope"),
         Category = {"eft_optic_30mm"},
-        Pos = Vector(-2.5, 0, -1.585),
+        Pos = Vector(-2.0, 0, -1.475),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(0, 0, 0),
+        Icon_Offset = Vector(-2, 0, 0),
     },
     {
         PrintName = ARC9:GetPhrase("eft_cat_mount"),
         Category = {"eft_mount_arms_22"},
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(3.1, 0, 1.5),
+        Icon_Offset = Vector(1.7, 0, 1.5),
     },
 }
 
@@ -1350,9 +1353,11 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_tactical"), -- Front
         Category = {"eft_optic_small", "eft_raptar"},
-        Pos = Vector(-3.6, 0, -3.65),
+        Pos = Vector(-2.5, 0, -2.6),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
+        ExtraSightDistance = 3
+        
     },
 }
 

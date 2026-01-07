@@ -23,6 +23,8 @@ SWEP.EFTErgo = 48
 SWEP.RPM = 850
 -- SWEP.Spread = 0.99 * ARC9.MOAToAcc
 
+local pathfire = ")weapons/darsu_eft/nl545/"
+
 SWEP.ShootSound = { pathfire .. "cgnl_cgnl_gp_outdoor_close_01.wav", pathfire .. "cgnl_cgnl_gp_outdoor_close_02.wav", pathfire .. "cgnl_cgnl_gp_outdoor_close_03.wav" }
 SWEP.ShootSoundIndoor = { pathfire .. "cgnl_cgnl_gp_indoor_close_01.wav", pathfire .. "cgnl_cgnl_gp_indoor_close_02.wav", pathfire .. "cgnl_cgnl_gp_indoor_close_03.wav" }
 

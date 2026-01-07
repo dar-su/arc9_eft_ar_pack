@@ -1040,3 +1040,27 @@ ATT.Category = "eft_ar_stock_a2"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ARC9.LoadAttachment(ATT, "eft_ar_stock_7")
+
+///////////////////////////////////////      eft_ar_stock_a2
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Colt A2 stock"
+ATT.CompactName = "A2"
+ATT.Icon = Material("entities/eft_ar15_attachments/68a63c1fc92ee33ffa01bf5a.png", "mips smooth")
+ATT.Description = "The A2 type buttstock for the AR-15. Standard-issue for M16A2 assault rifles. Manufactured by Colt."
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_colt_a2.mdl"
+
+ATT.HasStock = true
+
+ATT.EFTErgoAdd = 2
+ATT.CustomPros = { Ergonomics = "+2" }
+ATT.RecoilMult = 0.77
+ATT.VisualRecoilMult = 0.77
+
+ATT.SortOrder = 0
+ATT.Category = "eft_ar_stock_a2"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ARC9.LoadAttachment(ATT, "eft_ar_stock_a2")

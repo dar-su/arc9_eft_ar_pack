@@ -129,7 +129,7 @@ ATT.ExcludeElements = {
 
 ATT.Category = {"eft_hk416_barrel"}
 
-ATT.ActivateElements = {"barrel_106i"}
+ATT.ActivateElements = {"barrel_10i"}
 
 ATT.Attachments = {
     {
@@ -175,7 +175,7 @@ ATT.ExcludeElements = {"eft_hg_hk416_mrs14", "eft_hg_hk416_quadext", "eft_hg_hk4
 
 ATT.Category = {"eft_hk416_barrel"}
 
-ATT.ActivateElements = {"barrel_11i"}
+ATT.ActivateElements = {"barrel_10i"}
 
 ATT.Attachments = {
     {
@@ -273,7 +273,7 @@ ATT.Category = {"eft_hk416_barrel"}
 
 ATT.ExcludeElements = {"eft_hg_hk416_mrs14", "eft_hg_hk416_quadext", "eft_hg_hk416_midwest135", "eft_hg_hk416_crux", "eft_hg_hk416_troy"}
 
-ATT.ActivateElements = {"barrel_165i"}
+ATT.ActivateElements = {"barrel_16i"}
 
 ATT.Attachments = {
     {
@@ -587,7 +587,7 @@ ATT.VisualRecoilMult = 0.98
 ATT.HeatCapacityMult = 0.985
 ATT.Category = {"eft_hk416_hguard"}
 
-ATT.ExcludeElements = {"barrel_11i", "barrel_145i", "barrel_165i"}
+ATT.ExcludeElements = {"barrel_10i", "barrel_145i", "barrel_16i"}
 
 -- ATT.ExcludeElements = {"barrel_260mm","barrel_370mm","barrel_406mm", "eft_gas_ar15_rg", "eft_gas_ar15_jp", "eft_gas_ar15_m4fs"}
 
@@ -820,7 +820,7 @@ ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 0.969
 ATT.Category = {"eft_hk416_hguard"}
 
-ATT.ExcludeElements = {"barrel_11i", "barrel_145i", "barrel_165i"}
+ATT.ExcludeElements = {"barrel_10i", "barrel_145i", "barrel_16i"}
 -- ATT.ExcludeElements = {"barrel_260mm","barrel_370mm","barrel_406mm", "eft_gas_ar15_rg", "eft_gas_ar15_jp", "eft_gas_ar15_m4fs"}
 
 ATT.Attachments = {

@@ -55,57 +55,46 @@ SWEP.Spread = 1.24 * ARC9.MOAToAcc
 
 SWEP.Attachments = {
     {
-        Installed = "eft_rec_ar15_tx15",
+        Installed = "eft_rec_ar15_m16a2",
         SubAttachments = {
             {},
-            {},
             {
-                Installed = "eft_barrel_ar15_18i",
+                Installed = "eft_barrel_ar15_m16_20i",
                 SubAttachments = {
                     {
-                        Installed = "eft_gas_ar15_mk12"
+                        Installed = "eft_gas_ar15_m4fs"
                     },
                     {
-                        Installed = "eft_muzzle_ar15_223cb",
-                        SubAttachments = {
-                            {
-                                Installed = "eft_silencer_ultra5"
-                            }
-                        }
+                        Installed = "eft_muzzle_ar15_usgia2",
                     }
                 }
             },
             {
-                Installed = "eft_hg_ar15_ionlite",
+                Installed = "eft_hg_ar15_m16a2",
                 SubAttachments = {
-                    {},
-                    {},
-                    {},
-                    {},
-                    {},
-                    { Installed = "eft_mount_mlok25" },
-                    { Installed = "eft_mount_mlok41" },
+                    {
+                        Installed = "eft_hg_ar15_m16a2_lower",
+                    },
                 }
             }
         }
     },
     {
-        Installed = "eft_ar_pgrip_moe",
+        Installed = "eft_ar_pgrip_colta2",
     },
     {
-        Installed = "eft_charge_ar15_raptor_g",
+        Installed = "eft_charge_ar15_early",
     },
     {
-        PrintName = ARC9:GetPhrase("eft_cat_buffertube"),
         Installed = "eft_ar_buffertube_a2",
         SubAttachments = {
             {
-                Installed = "eft_ar_stock_prsgen3"
+                Installed = "eft_ar_stock_a2"
             }
         }
     },
     _,
     {
-        Installed = "eft_mag_ar15_pmag_30",
+        Installed = "eft_mag_ar15_stanag_30",
     },
 }

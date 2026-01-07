@@ -3181,7 +3181,7 @@ ATT.HeatCapacityMult = 1.018
 ATT.Category = {"eft_ar15_hguard"}
 ATT.Folder = "KAC"
 ATT.ActivateElements = {"sprrailallowed"}
-ATT.ExcludeElements = {"barrel_10i", "gasblock_big"}
+ATT.ExcludeElements = {"barrel_10i"}
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_backup"),
@@ -3211,14 +3211,14 @@ ATT.Attachments = {
     },
     {
         PrintName = ARC9:GetPhrase("eft_cat_tactical_r"),
-        Category = {"eft_tactical", "eft_tactical_top"},
+        Category = {"eft_tactical", "eft_tactical_top", "eft_tactical_top_big"},
         Pos = Vector(1.12, 11, 0.1),
         Ang = Angle(0, -90, 90),
         Icon_Offset = Vector(0, 0, 0.5),
     },
     {
         PrintName = ARC9:GetPhrase("eft_cat_tactical_l"),
-        Category = {"eft_tactical", "eft_tactical_top"},
+        Category = {"eft_tactical", "eft_tactical_top", "eft_tactical_top_big"},
         Pos = Vector(-1.12, 11, 0.1),
         Ang = Angle(0, -90, -90),
         Icon_Offset = Vector(0, 0, 0.5),
@@ -3264,7 +3264,7 @@ ATT.EFTErgoAdd = 12
 ATT.CustomPros = { Ergonomics = "+12" }
 ATT.RecoilMult = 0.985
 ATT.VisualRecoilMult = 0.985
-ATT.ExcludeElements = {"barrel_10i", "gasblock_big"}
+ATT.ExcludeElements = {"barrel_10i"}
 
 ATT.ActivateElements = {"sprrailallowed"}
 ATT.Attachments = {
@@ -3287,14 +3287,14 @@ ATT.Attachments = {
     -- },
     {
         PrintName = ARC9:GetPhrase("eft_cat_tactical_r"),
-        Category = {"eft_tactical", "eft_tactical_top"},
+        Category = {"eft_tactical", "eft_tactical_top", "eft_tactical_top_big"},
         Pos = Vector(1.21, 11, 0.1),
         Ang = Angle(0, -90, 90),
         Icon_Offset = Vector(0, 0, 0.5),
     },
     {
         PrintName = ARC9:GetPhrase("eft_cat_tactical_l"),
-        Category = {"eft_tactical", "eft_tactical_top"},
+        Category = {"eft_tactical", "eft_tactical_top", "eft_tactical_top_big"},
         Pos = Vector(-1.21, 11, 0.1),
         Ang = Angle(0, -90, -90),
         Icon_Offset = Vector(0, 0, 0.5),
@@ -3340,7 +3340,7 @@ ATT.EFTErgoAdd = 12
 ATT.CustomPros = { Ergonomics = "+12" }
 ATT.RecoilMult = 0.985
 ATT.VisualRecoilMult = 0.985
-ATT.ExcludeElements = {"barrel_10i", "gasblock_big"}
+ATT.ExcludeElements = {"barrel_10i"}
 
 ATT.ActivateElements = {"sprrailallowed"}
 ATT.Attachments = {
@@ -3363,14 +3363,14 @@ ATT.Attachments = {
     -- },
     {
         PrintName = ARC9:GetPhrase("eft_cat_tactical_r"),
-        Category = {"eft_tactical", "eft_tactical_top"},
+        Category = {"eft_tactical", "eft_tactical_top", "eft_tactical_top_big"},
         Pos = Vector(1.21, 11, 0.1),
         Ang = Angle(0, -90, 90),
         Icon_Offset = Vector(0, 0, 0.5),
     },
     {
         PrintName = ARC9:GetPhrase("eft_cat_tactical_l"),
-        Category = {"eft_tactical", "eft_tactical_top"},
+        Category = {"eft_tactical", "eft_tactical_top", "eft_tactical_top_big"},
         Pos = Vector(-1.21, 11, 0.1),
         Ang = Angle(0, -90, -90),
         Icon_Offset = Vector(0, 0, 0.5),
@@ -3909,14 +3909,14 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_handguard"),
         Category = {"eft_hglower_abamod1"},
-        Pos = Vector(0, 0.985, 0.01),
+        Pos = Vector(0, 0.85, 0.4),
         Ang = Angle(0, 0, 0),   
         Icon_Offset = Vector(0, 3.35, -1),
     },
     {
         PrintName = ARC9:GetPhrase("eft_cat_tactical_u"),
-        Category = {"eft_tactical_top", "eft_tactical_top_big"},
-        Pos = Vector(0, 8.5-2.5, -1.1),
+        Category = {"eft_tactical_top", "eft_tactical_top_big", "eft_backupmount"},
+        Pos = Vector(0, 4, -1.48),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0.5),
     },

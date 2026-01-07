@@ -737,6 +737,7 @@ SWEP.EFTRequiredAtts = { "HasGrip", "HasBarrel", "HasHG", "HasAmmoooooooo" }
 SWEP.AttachmentElements = {
     ["eft_val_vss_stock"] = { Bodygroups = { {4, 2} } },
     ["eft_val_stockk"] = { Bodygroups = { {4, 1} } },
+    ["eft_val_stock_nb"] = { Bodygroups = { {4, 3} } },
 
     -- ["eft_val_dc_vss"] = { Bodygroups = { {1, 2} } },
     ["eft_val_dc_val"] = { Bodygroups = { {1, 1} } },
@@ -747,6 +748,7 @@ SWEP.AttachmentElements = {
     ["eft_val_grip_std"] = { Bodygroups = { {3, 1} } },
     ["eft_val_grip_rotor"] = { Bodygroups = { {3, 2} } },
     ["eft_val_grip_black"] = { Bodygroups = { {3, 3} } },
+    ["eft_val_grip_rk3"] = { Bodygroups = { {3, 4} } },
     
     ["eft_val_hg_std"] = { Bodygroups = { {8, 1} } },
     ["eft_val_hg_black"] = { Bodygroups = { {8, 2} } },
@@ -776,6 +778,15 @@ SWEP.AttachmentElements = {
 
     ["eft_sr3_mount_hg"] = { Bodygroups = { {9, 1} } },
     ["eft_sr3_mount_hgp"] = { Bodygroups = { {9, 2} } },
+
+    -- mod4
+    ["eft_valmod4_hgg"] = { Bodygroups = { {8, 1} } },
+    ["eft_valmod4_magwell"] = { Bodygroups = { {6, 1} } },
+    ["eft_valmod4_topcover"] = { Bodygroups = { {2, 1} } },
+    ["eft_valmod4_suppressor"] = { Bodygroups = { {5, 1} } },
+    ["eft_valmod4_supcap"] = { Bodygroups = { {10, 1} } },
+    ["eft_valmod4_brake"] = { Bodygroups = { {10, 2} } },
+    ["eft_valmod4_jailbrake"] = { Bodygroups = { {11, 1} } },
 }
 
 SWEP.Attachments = {

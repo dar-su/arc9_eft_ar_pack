@@ -88,7 +88,9 @@ SWEP.Attachments = {
         Installed = "eft_rec_ar15_tx15",
         SubAttachments = {
             {},
-            {},
+            {
+                Installed = "eft_rearsight_mbus"
+            },
             {
                 Installed = "eft_barrel_ar15_18i",
                 SubAttachments = {
@@ -109,7 +111,7 @@ SWEP.Attachments = {
                 Installed = "eft_hg_ar15_ionlite",
                 SubAttachments = {
                     {},
-                    {},
+                    { Installed = "eft_frontsight_mbus" },
                     {},
                     {},
                     {},
