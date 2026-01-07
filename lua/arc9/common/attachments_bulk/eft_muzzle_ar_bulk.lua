@@ -213,6 +213,32 @@ ATT.Category = {"eft_ar10_muzzle", "eft_bmd762_muzzle2"}
 
 ARC9.LoadAttachment(ATT, "eft_muzzle_ar10_lantac")
 
+///////////////////////////////////////      eft_muzzle_ar15_lantac
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Lantac Dragon 5.56x45 muzzle brake"
+ATT.CompactName = "DGN556B"
+ATT.Icon = Material("entities/eft_ar10_attachments/dgn762b.png", "mips smooth")
+ATT.Description = [[The Dragon muzzle brake by Lantac is designed for installation on 5.56x45mm weapon systems. Reduces recoil and counters the muzzle climb.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Model = "models/weapons/arc9_eft_shared/atts/muzzle/muzzle_ar10_lantac_dgn762b_muzzle_brake_762x51.mdl"
+ATT.MuzzleDevice = true
+ATT.MuzzleDevice_Priority = 4
+ATT.BarrelLengthAdd = 1
+
+ATT.EFTErgoAdd = -2
+ATT.CustomCons = { Ergonomics = "-2" }
+ATT.RecoilMult = 0.87
+ATT.VisualRecoilMult = 0.87
+ATT.HeatCapacityMult = 0.99
+
+ATT.Category = {"eft_ar15_muzzle"}
+
+ARC9.LoadAttachment(ATT, "eft_muzzle_ar15_lantac")
+
 
 
 ///////////////////////////////////////      eft_muzzle_ar10_m11

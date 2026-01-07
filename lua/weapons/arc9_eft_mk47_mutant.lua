@@ -539,7 +539,7 @@ SWEP.Animations = {
         EventTable = rst_reload,
         IKTimeLine = rik_reload
     },
-    ["reload_10rndt"] = {
+    ["reload_tactical_10rnd"] = {
         Source = "reload_10rndt",
         MinProgress = 0.85,
         FireASAP = true,
@@ -573,7 +573,7 @@ SWEP.Animations = {
         EventTable = rst_reloaddrum,
         IKTimeLine = rik_reload
     },
-    ["reload_drumt"] = {
+    ["reload_tactical_drum"] = {
         Source = "reload_drumt",
         MinProgress = 0.85,
         FireASAP = true,

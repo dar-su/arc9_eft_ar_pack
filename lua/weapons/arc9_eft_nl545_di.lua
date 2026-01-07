@@ -5,7 +5,7 @@ SWEP.Spawnable = true
 
 ------------------------- |||           Trivia            ||| -------------------------
 
-SWEP.PrintName = ARC9:GetPhrase("eft_weapon_nl545_di") or "CG NL545 (DI)"
+SWEP.PrintName = ARC9:GetPhrase("eft_weapon_nl545_di") or "CG NL545 DI"
 SWEP.Description = ARC9:GetPhrase("eft_weapon_nl545_di_desc") or "A Russian assault rifle that combines the ergonomics of the AR-15 platform with the widely available 5.45x39mm cartridge. Manufactured by Custom Guns. This variant uses a bolt carrier group in a direct gas impingement configuration. "
 
 SWEP.Class = ARC9:GetPhrase("eft_class_weapon_ar")
@@ -20,7 +20,7 @@ SWEP.Trivia = {
 }
 
 SWEP.StandardPresets = {
-    -- "[Mace]XQAAAQBsAwAAAAAAAAA9iIIiM7tuo1AtT00OeFDsU2rlYJ15CM1DLlgHUIIdw3uRL6Xe7fl4fShtmlFhOymfhgIb0Coaf3tkm/DVqzAK0ALNzCQqwoAqiE22B5Nmqrj0sUcnVSRxSZcaGDeheedDbEYnRu3WeMRWoKaJR0XIgBgBShfEIvxyLBXCiH89s/ft4ejFHjceq4V1fSynzVx+LJgSFilI0WERnUPKHwBpVzczam1Ko2rztHfJwGksiIXSSAzlVzDZ6qvOR6NKvqJiUvzLyszDwFp0ygXdt7w5ips3Z8TVRmsMU8QrhEd8MJABK2cRiMC+ThDTFfdyio9paJS0VHjYXTSDuWEXdJpScMkaeoazmMzBqTRl7opibVq8ZYF5/j1fzjoQNkhw/Q7qt6maPZ3EQDLrevQp8pn2BXTLxUuCcR1CY59SNHBCNOyLD/yc1QA="
+    "[Pilad 4x32]XQAAAQC3AgAAAAAAAAA9iIIiM7tuo1AtT00OeFDsU2rmGcZr7vjDaqwU45cv6R5VgRbGqsB/2kMTnesjTJjKMQ4jRokT8QPJTksHANwI+SMUnozj3FBaaa0Mr7RIiPHjZ2xtRZauU4hXYSHfmP2YNiD+VY0Z5VONZtSlRMbHgRG0RG1FwXozolpX3FIkD06T49BOEokFric4TLP+kmXrd1FI6sLS8AT1aeMNcvHi/E+oZlVoZgxufLiRVoQ8MfmK15+QYFYNdRZ8wcwp/9lG+hgZd1HmS+s/NOZf7sDBtR62yTQpe60KTLjFBR+STOzorceEwpykVFWkmw3pnbxj1AozjN9mkNAU8qFSUAA="
 }
 
 SWEP.WorldModel = "models/weapons/w_rif_m4a1.mdl"
@@ -45,7 +45,7 @@ SWEP.IronSights = {
 }
 
 SWEP.ActivePos = Vector(-0.7, -3.1, -.35)
-SWEP.CustomizePos = Vector(16.5, 42, 4.4)
+SWEP.CustomizePos = Vector(18.5, 42, 4.4)
 SWEP.CustomizeSnapshotFOV = 53
 SWEP.CustomizeRotateAnchor = Vector(16.6, -4.28, -5.23)
 SWEP.CustomizeSnapshotPos = Vector(0, 20, 0)
@@ -68,41 +68,41 @@ SWEP.Slot = 2
 
 SWEP.Recoil = 1 -- general multiplier of main recoil
 
-SWEP.RecoilUp   = 3.25   -- up recoil
+SWEP.RecoilUp   = 3   -- up recoil
 SWEP.RecoilSide = 1.1 -- sideways recoil
-SWEP.RecoilRandomUp   = 0.8 -- random up/down
-SWEP.RecoilRandomSide = 0.66   -- random left/right
+SWEP.RecoilRandomUp   = 0.75 -- random up/down
+SWEP.RecoilRandomSide = 0.75   -- random left/right
 
-SWEP.RecoilAutoControl = 4.1 -- autocompenstaion, could be cool if set to high but it also affects main recoil
+SWEP.RecoilAutoControl = 4 -- autocompenstaion, could be cool if set to high but it also affects main recoil
 
 -- visual recoil   aka visrec
-SWEP.VisualRecoil = 0.5 -- general multiplier for it
+SWEP.VisualRecoil = 0.72 -- general multiplier for it
 
 SWEP.EFT_VisualRecoilUp_BURST_SEMI   = 0.1   -- up/down tilt when semi/bursts
-SWEP.VisualRecoilUp                   = 0.25   --   when fullautoing
+SWEP.VisualRecoilUp                   = 0.4   --   when fullautoing
 SWEP.EFT_VisualRecoilSide_BURST_SEMI = 0.001 -- left/right tilt when semi/burst
-SWEP.VisualRecoilSide                 = 0.1   --   when fullautoing
+SWEP.VisualRecoilSide                 = 0.05   --   when fullautoing
 SWEP.VisualRecoilRoll = 4 -- roll tilt, a visual thing
 
-SWEP.VisualRecoilPunch = 3 -- How far back visrec moves the gun
-SWEP.VisualRecoilPunchSights = 12 -- same but in sights only
+SWEP.VisualRecoilPunch = 1 -- How far back visrec moves the gun
+SWEP.VisualRecoilPunchSights = 3 -- same but in sights only
 
 SWEP.VisualRecoilDampingConst = 100  -- spring settings, this is speed of visrec
 SWEP.VisualRecoilSpringPunchDamping = 5 -- the less this is the more wobbly gun moves
 SWEP.VisualRecoilSpringMagnitude = 0.5 -- some third element of spring, high values make gun shake asf on low fps
 
 SWEP.VisualRecoilPositionBumpUpHipFire = 0.1 -- gun will go down each shot by this value
-SWEP.VisualRecoilPositionBumpUp = -0.1 -- same but in sights
+SWEP.VisualRecoilPositionBumpUp = -0.2 -- same but in sights
 SWEP.VisualRecoilPositionBumpUpRTScope = 0.05 -- same but in rt scopes, you probably should keep it same as sight value, i guess it doesn't matter anymore after recoil update
 
--- SWEP.VisualRecoilCenter = Vector(4.28-1.5, 19, -5.23 +3) -- ugh, i dont now what to set it too, but probably it should be diffferent on each gun
-SWEP.EFT_ShotsToSwitchToFullAutoBehaviur = 2 -- how many shots for switch to fullauto stats from semi/burst, + 2 shots afterwards are lerping. you probably should not touch this but ok
+-- SWEP.VisualRecoilCenter = Vector(2, 14, 0) -- ugh, i dont now what to set it too, but probably it should be diffferent on each gun
+SWEP.EFT_ShotsToSwitchToFullAutoBehaviur = 3 -- how many shots for switch to fullauto stats from semi/burst, + 2 shots afterwards are lerping. you probably should not touch this but ok
 
-SWEP.RecoilKick = 0.75 -- camera roll each shot + makes camera go more up when fullautoing
+SWEP.RecoilKick = 0.6 -- camera roll each shot + makes camera go more up when fullautoing
 
-SWEP.VisualRecoilCenter = Vector(4.28, 19, -2)
-SWEP.SubtleVisualRecoil = 1.5
-SWEP.SubtleVisualRecoilDirection = 2.5
+SWEP.VisualRecoilCenter = Vector(4.28, 16, -2)
+SWEP.SubtleVisualRecoil = 0.75
+SWEP.SubtleVisualRecoilDirection = 4
 SWEP.SubtleVisualRecoilSpeed = 1
 
 ------------------------- |||           Damage            ||| -------------------------
@@ -217,11 +217,12 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
     if elements["545"] then mag = "_545"
     elseif elements["60rnd"] then mag = "_60rnd"
     elseif elements["10rnd"] then mag = "_10rnd"
+    elseif elements["long545"] then mag = "_545"
     -- elseif elements["long545"] then mag = "_long545"
     elseif elements["bigdrum"] then mag = "_drum"
 
     elseif elements["762"] then mag = "_545" -- in case for other calibers to be added
-    elseif elements["long762"] then mag = "_long545"
+    elseif elements["long762"] then mag = "_545"
     elseif elements["556"] then mag = "_545"
     elseif elements["smalldrum"] then mag = "_drum"
     
@@ -316,8 +317,8 @@ local rst_reload = {
     { s = path .. "akm_magout_metal.ogg", t = 0.62 },
     { s = pouchin, t = 1.16 },
     { s = pouchout, t = 1.4 },
-    { s = path .. "akm_magin_metal.ogg", t = 2.03 },
-    { s = randspin, t = 2.45 },
+    { s = path .. "akm_magin_metal.ogg", t = 2.03-0.3 },
+    { s = randspin, t = 2.45-0.3 },
 }
 local rst_reloadt = {
     { s = path .. "mutant_magrelease_button.ogg", t = 0.32 - 7/28 },
@@ -325,8 +326,8 @@ local rst_reloadt = {
     { s = path .. "akm_magout_metal.ogg", t = 0.45 - 7/28 },
     { s = randspin, t = 0.81 - 7/28 },
     { s = pouchout, t = 1.1 - 7/28 },
-    { s = path .. "akm_magin_metal.ogg", t = 1.72 - 7/28 },
-    { s = randspin, t = 2.09 - 7/28 },
+    { s = path .. "akm_magin_metal.ogg", t = 1.72 - 7/28-0.15 },
+    { s = randspin, t = 2.09 - 7/28-0.15 },
     {hide = 0, t = 0},
     {hide = 1, t = 0.5},
     {hide = 0, t = 1.05}
@@ -336,18 +337,18 @@ local rst_reloaddrum = {
     { s = path .. "mutant_magrelease_button.ogg", t = 0.51 },
     { s = path .. "akm_magout_metal.ogg", t = 0.65 },
     { s = pouchin, t = 1.18 },
-    { s = pouchout, t = 1.72 },
-    { s = path .. "akm_magin_metal.ogg", t = 2.45 },
-    { s = randspin, t = 2.99 },
+    { s = pouchout, t = 1.72-0.11 },
+    { s = path .. "akm_magin_metal.ogg", t = 2.45-0.3 },
+    { s = randspin, t = 2.99-0.3 },
 }
 local rst_reloaddrumt = {
     { s = path .. "mutant_magrelease_button.ogg", t = 0.32 - 7/28 },
     { s = randspin, t = 0.38 - 7/28 },
     { s = path .. "akm_magout_metal.ogg", t = 0.45 - 7/28 },
     { s = randspin, t = 0.81 - 7/28 },
-    { s = pouchout, t = 1.1 - 7/28 },
-    { s = path .. "akm_magin_metal.ogg", t = 1.72 - 7/28 },
-    { s = randspin, t = 2.09 - 7/28 },
+    { s = pouchout, t = 1.1+0.32-0.1 - 7/28 },
+    { s = path .. "akm_magin_metal.ogg", t = 1.72+0.4-0.3 - 7/28 },
+    { s = randspin, t = 2.09+0.4-0.3 - 7/28 },
     {hide = 0, t = 0},
     {hide = 1, t = 0.5},
     {hide = 0, t = 1.05}
@@ -357,18 +358,18 @@ local rst_reload60rnd = {
     { s = path .. "mutant_magrelease_button.ogg", t = 0.51 },
     { s = path .. "akm_magout_metal.ogg", t = 0.65 },
     { s = pouchin, t = 1.18 },
-    { s = pouchout, t = 1.72 },
-    { s = path .. "akm_magin_metal.ogg", t = 2.45 },
-    { s = randspin, t = 2.99 },
+    { s = pouchout, t = 1.72-0.2 },
+    { s = path .. "akm_magin_metal.ogg", t = 2.45-0.5 },
+    { s = randspin, t = 2.99-0.5 },
 }
 local rst_reload60rndt = {
     { s = path .. "mutant_magrelease_button.ogg", t = 0.32 - 7/28 },
     { s = randspin, t = 0.38 - 7/28 },
     { s = path .. "akm_magout_metal.ogg", t = 0.45 - 7/28 },
     { s = randspin, t = 0.81 - 7/28 },
-    { s = pouchout, t = 1.1 - 7/28 },
-    { s = path .. "akm_magin_metal.ogg", t = 1.72 - 7/28 },
-    { s = randspin, t = 2.09 - 7/28 },
+    { s = pouchout, t = 1.1 - 7/28-0.1 },
+    { s = path .. "akm_magin_metal.ogg", t = 1.72 - 7/28-0.0 },
+    { s = randspin, t = 2.09 - 7/28-0.0 },
     {hide = 0, t = 0},
     {hide = 1, t = 0.5},
     {hide = 0, t = 1.05}
@@ -380,12 +381,12 @@ local rst_reloadempty = {
     { s = path .. "akm_magout_metal.ogg", t = 0.45 },
     { s = randspin, t = 0.81 },
     { s = pouchout, t = 1.1 },
-    { s = path .. "akm_magin_metal.ogg", t = 1.72 },
-    { s = randspin, t = 2.09 },
-    { s = path .. "p90_bolt_handle_grab.ogg", t = 2.64 },
-    { s = path .. "mutant_bolt_na_tebya.ogg", t = 2.78 },
-    { s = path .. "mutant_bolt_ot_tebya.ogg", t = 3 },
-    { s = randspin, t = 3.29 },
+    { s = path .. "akm_magin_metal.ogg", t = 1.72-0.18 },
+    { s = randspin, t = 2.09-0.18 },
+    { s = path .. "p90_bolt_handle_grab.ogg", t = 2.64-0.18 },
+    { s = path .. "mutant_bolt_na_tebya.ogg", t = 2.78-0.18 },
+    { s = path .. "mutant_bolt_ot_tebya.ogg", t = 3-0.18 },
+    { s = randspin, t = 3.29-0.18 },
     {hide = 0, t = 0},
     {hide = 1, t = 0.6},
     {hide = 0, t = 1.05}
@@ -396,12 +397,12 @@ local rst_reloadempty1 = {
     { s = path .. "akm_magout_metal.ogg", t = 0.45 },
     { s = randspin, t = 0.81 },
     { s = pouchout, t = 1.1 },
-    { s = path .. "akm_magin_metal.ogg", t = 1.72 },
-    { s = randspin, t = 2.09 },
-    { s = path .. "p90_bolt_handle_grab.ogg", t = 2.64-0.11 },
-    { s = path .. "mutant_bolt_na_tebya.ogg", t = 2.78-0.11 },
-    { s = path .. "mutant_bolt_ot_tebya.ogg", t = 3-0.13 },
-    { s = randspin, t = 3.29 },
+    { s = path .. "akm_magin_metal.ogg", t = 1.72-0.18 },
+    { s = randspin, t = 2.09-0.18 },
+    { s = path .. "p90_bolt_handle_grab.ogg", t = 2.64-0.11-0.0 },
+    { s = path .. "mutant_bolt_na_tebya.ogg", t = 2.78-0.11-0.0 },
+    { s = path .. "mutant_bolt_ot_tebya.ogg", t = 3-0.13-0.0 },
+    { s = randspin, t = 3.29-0.0 },
     {hide = 0, t = 0},
     {hide = 1, t = 0.6},
     {hide = 0, t = 1.05}
@@ -412,13 +413,13 @@ local rst_reloademptydrum = {
     { s = randspin, t = 0.38 },
     { s = path .. "akm_magout_metal.ogg", t = 0.45 },
     { s = randspin, t = 0.81 },
-    { s = pouchout, t = 1.1+0.32 },
-    { s = path .. "akm_magin_metal.ogg", t = 1.72+0.4 },
-    { s = randspin, t = 2.09+0.4 },
-    { s = path .. "p90_bolt_handle_grab.ogg", t = 2.64+0.4 },
-    { s = path .. "mutant_bolt_na_tebya.ogg", t = 2.78+0.4 },
-    { s = path .. "mutant_bolt_ot_tebya.ogg", t = 3+0.4 },
-    { s = randspin, t = 3.29+0.4 },
+    { s = pouchout, t = 1.1+0.32-0.1 },
+    { s = path .. "akm_magin_metal.ogg", t = 1.72+0.4-0.3 },
+    { s = randspin, t = 2.09+0.4-0.3 },
+    { s = path .. "p90_bolt_handle_grab.ogg", t = 2.64+0.4-0.2 },
+    { s = path .. "mutant_bolt_na_tebya.ogg", t = 2.78+0.4-0.2 },
+    { s = path .. "mutant_bolt_ot_tebya.ogg", t = 3+0.4-0.2 },
+    { s = randspin, t = 3.29+0.4-0.2 },
     {hide = 0, t = 0},
     {hide = 1, t = 0.6},
     {hide = 0, t = 1.3}
@@ -428,13 +429,13 @@ local rst_reloademptydrum1 = {
     { s = randspin, t = 0.38 },
     { s = path .. "akm_magout_metal.ogg", t = 0.45 },
     { s = randspin, t = 0.81 },
-    { s = pouchout, t = 1.1+0.32 },
-    { s = path .. "akm_magin_metal.ogg", t = 1.72+0.4 },
-    { s = randspin, t = 2.09+0.4 },
-    { s = path .. "p90_bolt_handle_grab.ogg", t = 2.64+0.4-0.11 },
-    { s = path .. "mutant_bolt_na_tebya.ogg", t = 2.78+0.4-0.11 },
-    { s = path .. "mutant_bolt_ot_tebya.ogg", t = 3+0.4-0.13 },
-    { s = randspin, t = 3.29+0.4 },
+    { s = pouchout, t = 1.1+0.32-0.1 },
+    { s = path .. "akm_magin_metal.ogg", t = 1.72+0.4-0.3 },
+    { s = randspin, t = 2.09+0.4-0.3 },
+    { s = path .. "p90_bolt_handle_grab.ogg", t = 2.64+0.4-0.11-0.15 },
+    { s = path .. "mutant_bolt_na_tebya.ogg", t = 2.78+0.4-0.11-0.15 },
+    { s = path .. "mutant_bolt_ot_tebya.ogg", t = 3+0.4-0.13-0.15 },
+    { s = randspin, t = 3.29+0.4-0.15 },
     {hide = 0, t = 0},
     {hide = 1, t = 0.6},
     {hide = 0, t = 1.3}
@@ -444,13 +445,13 @@ local rst_reloadempty60rnd = {
     { s = randspin, t = 0.38 },
     { s = path .. "akm_magout_metal.ogg", t = 0.45 },
     { s = randspin, t = 0.81 },
-    { s = pouchout, t = 1.1+0.32 },
-    { s = path .. "akm_magin_metal.ogg", t = 1.72+0.4 },
-    { s = randspin, t = 2.09+0.4 },
-    { s = path .. "p90_bolt_handle_grab.ogg", t = 2.64+0.4 },
-    { s = path .. "mutant_bolt_na_tebya.ogg", t = 2.78+0.4 },
-    { s = path .. "mutant_bolt_ot_tebya.ogg", t = 3+0.4 },
-    { s = randspin, t = 3.29+0.4 },
+    { s = pouchout, t = 1.1+0.32-0.1 },
+    { s = path .. "akm_magin_metal.ogg", t = 1.72+0.4-0.2 },
+    { s = randspin, t = 2.09+0.4-0.2 },
+    { s = path .. "p90_bolt_handle_grab.ogg", t = 2.64+0.4-0.2 },
+    { s = path .. "mutant_bolt_na_tebya.ogg", t = 2.78+0.4-0.2 },
+    { s = path .. "mutant_bolt_ot_tebya.ogg", t = 3+0.4-0.2 },
+    { s = randspin, t = 3.29+0.4-0.2 },
     {hide = 0, t = 0},
     {hide = 1, t = 0.6},
     {hide = 0, t = 1.3}
@@ -460,13 +461,13 @@ local rst_reloadempty60rnd1 = {
     { s = randspin, t = 0.38 },
     { s = path .. "akm_magout_metal.ogg", t = 0.45 },
     { s = randspin, t = 0.81 },
-    { s = pouchout, t = 1.1+0.32 },
-    { s = path .. "akm_magin_metal.ogg", t = 1.72+0.4 },
-    { s = randspin, t = 2.09+0.4 },
-    { s = path .. "p90_bolt_handle_grab.ogg", t = 2.64+0.4-0.11 },
-    { s = path .. "mutant_bolt_na_tebya.ogg", t = 2.78+0.4-0.11 },
-    { s = path .. "mutant_bolt_ot_tebya.ogg", t = 3+0.4-0.13 },
-    { s = randspin, t = 3.29+0.4 },
+    { s = pouchout, t = 1.1+0.32-0.1 },
+    { s = path .. "akm_magin_metal.ogg", t = 1.72+0.4-0.2 },
+    { s = randspin, t = 2.09+0.4-0.2 },
+    { s = path .. "p90_bolt_handle_grab.ogg", t = 2.64+0.4-0.11-0.2 },
+    { s = path .. "mutant_bolt_na_tebya.ogg", t = 2.78+0.4-0.11-0.2 },
+    { s = path .. "mutant_bolt_ot_tebya.ogg", t = 3+0.4-0.13-0.2 },
+    { s = randspin, t = 3.29+0.4-0.2 },
     {hide = 0, t = 0},
     {hide = 1, t = 0.6},
     {hide = 0, t = 1.3}
@@ -592,7 +593,7 @@ SWEP.Animations = {
         EventTable = rst_reload,
         IKTimeLine = rik_reload
     },
-    ["reload_10rndt"] = {
+    ["reload_tactical_10rnd"] = {
         Source = "reload_10rndt",
         MinProgress = 0.85,
         FireASAP = true,
@@ -626,7 +627,7 @@ SWEP.Animations = {
         EventTable = rst_reloaddrum,
         IKTimeLine = rik_reload
     },
-    ["reload_drumt"] = {
+    ["reload_tactical_drum"] = {
         Source = "reload_drumt",
         MinProgress = 0.85,
         FireASAP = true,
@@ -660,7 +661,7 @@ SWEP.Animations = {
         EventTable = rst_reload60rnd,
         IKTimeLine = rik_reload
     },
-    ["reload_60rndt"] = {
+    ["reload_tactical_60rnd"] = {
         Source = "reload_60rndt",
         MinProgress = 0.85,
         FireASAP = true,
@@ -725,8 +726,8 @@ SWEP.Animations = {
         IKTimeLine = rik_look
     },
 
-    ["inspect2_762"] = {
-        Source = "inspect1_762",
+    ["inspect2_545"] = {
+        Source = "inspect1_545",
         MinProgress = 0.85,
         FireASAP = true,
         EventTable = rst_magcheck,
@@ -912,37 +913,52 @@ SWEP.Animations = {
 SWEP.EFTRequiredAtts = { "HasGas", "HasBarrel", "HasBufferTube", "HasCharge", "HasGrip", "HasReceiver", "HasHG", "HasAmmoooooooo" }
 
 SWEP.AttachmentElements = {
-    ["eft_nl545_gass"] = { Bodygroups = { {1, 1} } },
-    ["eft_nl545_upperr_gp"] = { Bodygroups = { {1, 1} } },
-    ["eft_nl545_upperr_di"] = { Bodygroups = { {1, 1} } },
-    ["eft_nl545_charge_std"] = { Bodygroups = { {2, 1} } },
-    ["eft_nl545_barrel_115"] = { Bodygroups = { {3, 2} } },
-    ["eft_nl545_barrel_165"] = { Bodygroups = { {3, 1} } },
-    ["eft_nl545_barrel_163_di"] = { Bodygroups = { {3, 1} } },
+    ["eft_nl545_gass"] = { Bodygroups = { {5, 1} } },
+
+    ["eft_nl545_upperr_gp"] = { Bodygroups = { {2, 2} } },
+    ["eft_nl545_upperr_di"] = { Bodygroups = { {2, 1} } },
+
+    ["eft_nl545_charge_std"] = { Bodygroups = { {3, 1} } },
+
+    ["eft_nl545_barrel_115"] = { Bodygroups = { {4, 2} } },
+    ["eft_nl545_barrel_165"] = { Bodygroups = { {4, 3} } },
+    ["eft_nl545_barrel_163_di"] = { Bodygroups = { {4, 1} } },
+
     ["eft_nl545_black"] = { Skin = 1 },
+    ["nl545_gp"] = { Bodygroups = { {1, 1} } },
 }
+
+SWEP.Hook_ModifyBodygroups = function(wep, data)
+    local eles = data.elements
+    local mdl = data.model
+
+    if eles["nl545_gp"] and eles["eft_nl545_charge_std"] then
+        data.model:SetBodygroup(3, 2)
+    end
+end
+
 
 SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_pgrip"),
-        Category = {"eft_ar15_pgrip", "eft_ar15_pgrip_m4"},
-        -- Installed = "eft_ar_pgrip_moe",
+        Category = {"eft_ar15_pgrip", "eft_ar15_pgripstock", "eft_ar15_pgrip_m4"},
+        Installed = "eft_ar_pgrip_dlg138",
         Bone = "weapon",
-        Pos = Vector(0, 11.25, -2.05),
+        Pos = Vector(0, 11.2, -2.0),
         Ang = Angle(0, -90, 0),
     },
     {
         PrintName = ARC9:GetPhrase("eft_cat_buffertube"),
         Category = {"eft_ar15_buffertube", "eft_cmmg_buffertube"},
         Bone = "weapon",
-        Pos = Vector(0, 8.77, 0.05),
+        Pos = Vector(0, 8.77, -0.05),
         Ang = Angle(0, -90, 0),
-        Installed = "eft_ar_buffertube_cmmg",
-        -- SubAttachments = {
-        --     {
-        --         Installed = "eft_ar_stock_ripstop"
-        --     }
-        -- }
+        Installed = "eft_ar_buffertube_cgnl",
+        SubAttachments = {
+            {
+                Installed = "eft_ar_stock_glcore"
+            }
+        }
     },
     {
         PrintName = ARC9:GetPhrase("eft_cat_receiver"),
@@ -951,34 +967,34 @@ SWEP.Attachments = {
         Pos = Vector(0, 15, -0),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0.15),
-        -- Installed = "eft_mk47_upper_std",
+        Installed = "eft_nl545_upperr_di",
 
-        -- SubAttachments = {
-        --     {
-        --         Installed = "eft_mk47_barrel_254",
-        --         SubAttachments = {
-        --             {
-        --                 Installed = "eft_ar10_gas_cmmg",
-        --             },
-        --             {
-        --                 Installed = "eft_muzzle_ar10_cmmgsv",
-        --             },
-        --         },
-        --     },
-        --     { 
-        --         Installed = "eft_ar10_hg_rml9",
-        --         SubAttachments = {
-        --             {},
-        --             {},
-        --             {
-        --                 Installed = "eft_frontsight_mbus",
-        --             }
-        --         }
-        --     },
-        --     { 
-        --         Installed = "eft_rearsight_mbus",
-        --     },
-        -- }
+        SubAttachments = {
+            {
+                Installed = "eft_nl545_barrel_163_di",
+                SubAttachments = {
+                    {
+                        Installed = "eft_gas_ar15_sentry7",
+                    },
+                    {
+                        Installed = "eft_muzzle_ar15_lantac",
+                    },
+                },
+            },
+            { 
+                Installed = "eft_hg_ar15_cgnl_14",
+                SubAttachments = {
+                    {},
+                    -- {},
+                    {
+                        Installed = "eft_frontsight_mbus",
+                    }
+                }
+            },
+            { 
+                Installed = "eft_rearsight_mbus",
+            },
+        }
     },
     {
         PrintName = ARC9:GetPhrase("eft_cat_charge"), 
@@ -987,20 +1003,18 @@ SWEP.Attachments = {
         Pos = Vector(0, 9.5, 1),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
-        -- Installed = "eft_mk47_charge_std"
+        Installed = "eft_nl545_charge_std"
     },
 
     {
         PrintName = ARC9:GetPhrase("eft_cat_magazine"), 
         Category = "eft_ak_545_mag",
-        -- RejectAttachments = {
-        --     ["eft_mag_ak_6l31_545_60"] = true,
-        -- },
+        -- RejectAttachments = { ["eft_mag_ak_6l31_545_60"] = true, },
         Bone = "mod_magazine",
-        Pos = Vector(0, 0.15, -0.3),
+        Pos = Vector(0, 0, -0.20),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, -1, -1),
-        -- Installed = "eft_mag_ak_pmag_762_30",
+        Installed = "eft_mag_ak_pmag_545_30",
     },
     {
         PrintName = ARC9:GetPhrase("eft_cat_ammo"),
@@ -1017,7 +1031,6 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_custom"),
         Category = {"eft_custom_slot", "eft_custom_nl545"},
-        -- Category = {"eft_custom_slot", "eft_custom_nl545", "eft_custom_nl545gp"},
         Bone = "weapon",
         Pos = Vector(0, 4, -2),
         Ang = Angle(0, -90, 0),

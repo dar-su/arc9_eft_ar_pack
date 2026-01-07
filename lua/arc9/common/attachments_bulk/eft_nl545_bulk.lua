@@ -78,14 +78,14 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_gasblock"),
         Category = "eft_nl545_gas",
-        Pos = Vector(-7.36, 0, 0.12),
+        Pos = Vector(-8, 0, 0.0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
         PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
         Category = "eft_ar15_muzzle",
-        Pos = Vector(-9.45, 0, 0.15),
+        Pos = Vector(-11.33, 0, 0.0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
@@ -122,14 +122,14 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_gasblock"),
         Category = "eft_nl545_gas",
-        Pos = Vector(-7.36, 0, 0.12),
+        Pos = Vector(-8, 0, 0.0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
         PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
         Category = "eft_ar15_muzzle",
-        Pos = Vector(-12.45, 0, 0.15),
+        Pos = Vector(-15.84, 0, 0.0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
@@ -169,13 +169,13 @@ ATT.Attachments = {
         PrintName = ARC9:GetPhrase("eft_cat_gasblock"),
         Category = "eft_ar15_gasblock_thin",
         ExcludeElements = {"nostdgasblockpls"},
-        Pos = Vector(-9.71, 0, 0.25),
+        Pos = Vector(-9.86, 0, 0.25),
         Ang = Angle(0, 0, 0),
     },
     {
         PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
         Category = "eft_ar15_muzzle",
-        Pos = Vector(-15.55, 0, 0),
+        Pos = Vector(-16.19, 0, 0),
         Ang = Angle(0, 0, 0),
     },
 }
@@ -208,27 +208,27 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_scope"),
         Category = {"eft_optic_large", "eft_optic_medium", "eft_optic_small"},
-        Pos = Vector(2.2, 0, -2.1-0.25),
+        Pos = Vector(0.3, 0, -1.51),
         Ang = Angle(0, 0, 0),
         ExcludeElements = {"IronsBlockingSight"},
     },
     {
         PrintName = ARC9:GetPhrase("eft_cat_rearsight"),
         Category = {"eft_ar_rearsight", "eft_rearsight", "eft_rearsight_hk416"},
-        Pos = Vector(4.75, 0, -2.13-0.25),
+        Pos = Vector(3.3, 0, -1.51),
         Ang = Angle(0, 0, 0),
     },
     {
         PrintName = ARC9:GetPhrase("eft_cat_barrel"),
         Category = "eft_nl545_barrel_gp",
-        Pos = Vector(-0.175, 0, -0.9),
+        Pos = Vector(-2.5, 0, 0.03),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
         PrintName = ARC9:GetPhrase("eft_cat_handguard"),
         Category = "eft_hk416_hguard",
-        Pos = Vector(-0.22, 0, -0.99),
+        Pos = Vector(-2.74, 0, -0.135),
         Ang = Angle(0, 90, 0),
         Icon_Offset = Vector(0, 4, 0),
     },
@@ -261,21 +261,21 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_barrel"),
         Category = "eft_nl545_barrel_di",
-        Pos = Vector(-2.5, 0, -0.2),
+        Pos = Vector(-2.5, 0, 0.03),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
         PrintName = ARC9:GetPhrase("eft_cat_handguard"),
-        Category = "eft_hk416_hg",
-        Pos = Vector(-2.28, 0, -0.154 - 0.085),
+        Category = "eft_ar15_hguard",
+        Pos = Vector(-2.74, 0, -0.063),
         Ang = Angle(0, 90, 0),
         Icon_Offset = Vector(0, 4, 0),
     },
     {
         PrintName = ARC9:GetPhrase("eft_cat_rearsight"),
         Category = {"eft_ar_rearsight", "eft_rearsight"},
-        Pos = Vector(3.35, 0, -1.4),
+        Pos = Vector(3.35, 0, -1.21),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
@@ -283,7 +283,7 @@ ATT.Attachments = {
         PrintName = ARC9:GetPhrase("eft_cat_scope"),
         Category = {"eft_optic_medium", "eft_optic_small", "eft_optic_large"},
         ExcludeElements = {"IronsBlockingSight"},
-        Pos = Vector(1, 0, -1.35),
+        Pos = Vector(0.85, 0, -1.19),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
@@ -304,6 +304,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasHG = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_416_cgnl_nl545_105_inch.mdl"
+ATT.ModelOffset = Vector(0, 0.04, 0)
 ATT.LHIK = true 
 ATT.EFTErgoAdd = 10
 ATT.CustomPros = { Ergonomics = "+10" }
@@ -374,6 +375,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasHG = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_416_cgnl_nl545_105_inch.mdl"
+ATT.ModelOffset = Vector(0, 0.04, 0)
 ATT.ModelSkin = 1
 ATT.LHIK = true 
 ATT.EFTErgoAdd = 10
