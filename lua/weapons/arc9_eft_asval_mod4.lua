@@ -36,13 +36,19 @@ SWEP.HeatCapacity = 76
 local path = ")weapons/darsu_eft/val/"
 
 SWEP.ShootSound = { path .. "valmod4_outdoor_close_01.wav", path .. "valmod4_outdoor_close_02.wav", path .. "valmod4_outdoor_close_03.wav", path .. "valmod4_outdoor_close_04.wav" }
+SWEP.ShootSoundSilenced = { path .. "valmod4_outdoor_close_01.wav", path .. "valmod4_outdoor_close_02.wav", path .. "valmod4_outdoor_close_03.wav", path .. "valmod4_outdoor_close_04.wav" }
 SWEP.LayerSound = false 
+SWEP.LayerSoundSilenced = false 
 
 SWEP.ShootSoundIndoor = { path .. "valmod4_indoor_close_01.wav", path .. "valmod4_indoor_close_02.wav", path .. "valmod4_indoor_close_03.wav", path .. "valmod4_indoor_close_04.wav" }
+SWEP.ShootSoundSilencedIndoor = { path .. "valmod4_indoor_close_01.wav", path .. "valmod4_indoor_close_02.wav", path .. "valmod4_indoor_close_03.wav", path .. "valmod4_indoor_close_04.wav" }
 SWEP.LayerSoundIndoor = false 
+SWEP.LayerSoundSilencedIndoor = false 
 
 SWEP.DistantShootSound = { path .. "valmod4_outdoor_distant_01.wav", path .. "valmod4_outdoor_distant_02.wav", path .. "valmod4_outdoor_distant_03.wav" }
+SWEP.DistantShootSoundSilenced = { path .. "valmod4_outdoor_distant_01.wav", path .. "valmod4_outdoor_distant_02.wav", path .. "valmod4_outdoor_distant_03.wav" }
 SWEP.DistantShootSoundIndoor = { path .. "valmod4_indoor_distant_01.wav", path .. "valmod4_indoor_distant_02.wav", path .. "valmod4_indoor_distant_03.wav" }
+SWEP.DistantShootSoundSilencedIndoor = { path .. "valmod4_indoor_distant_01.wav", path .. "valmod4_indoor_distant_02.wav", path .. "valmod4_indoor_distant_03.wav" }
 
 SWEP.Attachments = {
     {
