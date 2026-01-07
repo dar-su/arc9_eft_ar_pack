@@ -228,7 +228,7 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
 
     if elements["mag10"] then mag = "_0"
     elseif elements["mag20"] then mag = "_1"
-    elseif elements["mag30"] then mag = "_1"
+    elseif elements["mag30"] then mag = "_2"
     else nomag = true end
     
     local empty = swep:Clip1() == 0
@@ -243,7 +243,10 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
         if rand == 3 then swep.EFTInspectnum = 0 rand = 0 end
         
         if rand == 2 and nomag then rand = 0 swep.EFTInspectnum = 0 end
-        
+
+        if rand == 1 and !swep:GetValue("HasStock") then rand = rand .. "_folded" end
+        if rand == 0 and empty then rand = rand .. "_empty" end
+
         if rand == 2 then
             if SERVER then
                 net.Start("arc9eftmagcheck")
@@ -253,6 +256,7 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
                 net.Send(swep:GetOwner())
             end
             rand = rand .. mag
+            if empty then rand = rand .. "_empty" end
         end
 
         return anim .. rand
@@ -313,6 +317,14 @@ local rst_magcheck = {
     { s = randspin, t = 2.15 },
     { s = path .. "val_magin.ogg", t = 2.8 - 0.05 },
     { s = path .. "m203_hand_final_movement.ogg", t = 3.46 - 0.05 },
+    -- { s = randspin, t = 3.3 },
+}
+local rst_magcheckempty = {
+    -- { s = randspin, t = 0.1 },
+    { s = path .. "sr2m_flip_01.ogg", t = 0.1 },
+    { s = path .. "val_magout.ogg", t = 0.61 - 0.03 },
+    { s = path .. "val_magin.ogg", t = 1.3 },
+    { s = path .. "m203_hand_final_movement.ogg", t = 1.5 },
     -- { s = randspin, t = 3.3 },
 }
 
@@ -387,6 +399,13 @@ local rik_mag = {
     { t = 0.14, lhik = 0 },
     { t = 0.86, lhik = 0 },
     { t = 0.94, lhik = 1 },
+    { t = 1, lhik = 1 },
+}
+local rik_magempty = {
+    { t = 0, lhik = 1 },
+    { t = 0.14, lhik = 0 },
+    { t = 0.75, lhik = 0 },
+    { t = 0.95, lhik = 1 },
     { t = 1, lhik = 1 },
 }
 
@@ -549,6 +568,44 @@ SWEP.Animations = {
         Mult = 28/24
     },
 
+    ["reload_2"] = {
+        Source = "reload1",
+        MinProgress = 0.85,
+        FireASAP = true,
+        MagSwapTime = 1.0,
+        EventTable = rst_reload,
+        IKTimeLine = rik_reload,
+        Mult = 28/24
+    },
+    ["reload_tactical_2"] = {
+        Source = "reload1t",
+        MinProgress = 0.85,
+        FireASAP = true,
+        MagSwapTime = 1.0,
+        DropMagAt = 0.53,
+        EventTable = rst_tac,
+        IKTimeLine = rik_reload,
+        Mult = 28/24
+    },
+    ["reload_empty_2"] = {
+        Source = {"reload_empty1_0", "reload_empty1_1"},
+        MinProgress = 0.85,
+        FireASAP = true,
+        MagSwapTime = 0.8,
+        EventTable = rst_reloadempty,
+        IKTimeLine = rik_reloadempty,
+        Mult = 28/24
+    },
+    ["1_reload_empty_2"] = {
+        Source = "reload_empty1_2",
+        MinProgress = 0.85,
+        FireASAP = true,
+        MagSwapTime = 0.8,
+        EventTable = rst_reloadempty,
+        IKTimeLine = rik_reloadempty2,
+        Mult = 28/24
+    },
+
     ["reload_single"] = {
         Source = "reload_single",
         MinProgress = 0.95,
@@ -588,12 +645,26 @@ SWEP.Animations = {
         EventTable = rst_look,
         IKTimeLine = rik_look
     },
-
-    ["inspect2_0"] = {
-        Source = "checkmag0",
+    ["inspect1_folded"] = {
+        Source = "look_folded",
         MinProgress = 0.85,
         FireASAP = true,
-        EventTable = rst_magcheck,
+        EventTable = rst_look,
+        IKTimeLine = rik_look
+    },
+
+    ["inspect2_0"] = {
+        Source = "checkmag0new",
+        MinProgress = 0.85,
+        FireASAP = true,
+        EventTable = {
+            { s = path .. "sr2m_flip_01.ogg", t = 0.1 },
+            { s = path .. "val_magout.ogg", t = 0.61 - 0.03 },
+            -- { s = pathvsk .. "9A91_mag_flip_full.ogg", t = 2.00 - 0.03 },
+            -- { s = randspin, t = 2.15 },
+            { s = path .. "val_magin.ogg", t = 2.1 },
+            { s = path .. "m203_hand_final_movement.ogg", t = 2.7 },
+        },
         IKTimeLine = rik_mag
     },
     ["inspect2_1"] = {
@@ -603,12 +674,54 @@ SWEP.Animations = {
         EventTable = rst_magcheck,
         IKTimeLine = rik_mag
     },
+    ["inspect2_2"] = {
+        Source = "checkmag0",
+        MinProgress = 0.85,
+        FireASAP = true,
+        EventTable = rst_magcheck,
+        IKTimeLine = rik_mag
+    },
+    ["inspect2_0_empty"] = {
+        Source = "checkmag0new_empty",
+        MinProgress = 0.85,
+        FireASAP = true,
+        EventTable = rst_magcheckempty,
+        IKTimeLine = rik_magempty
+    },
+    ["inspect2_1_empty"] = {
+        Source = "checkmag1_empty",
+        MinProgress = 0.85,
+        FireASAP = true,
+        EventTable = rst_magcheckempty,
+        IKTimeLine = rik_magempty
+    },
+    ["inspect2_2_empty"] = {
+        Source = "checkmag2_empty",
+        MinProgress = 0.85,
+        FireASAP = true,
+        EventTable = rst_magcheckempty,
+        IKTimeLine = rik_magempty
+    },
 
     ["inspect0"] = {
         Source = "look1",
         MinProgress = 0.85,
         FireASAP = true,
         EventTable = rst_chamber,
+        IKTimeLine = rik_cham
+    },
+    ["inspect0_empty"] = {
+        Source = "check_chamber_empty",
+        MinProgress = 0.85,
+        FireASAP = true,
+        EventTable = {
+            { s = path .. "sr2m_flip_01.ogg", t = 0.1 },
+            { s = randspin, t = 0.18 },
+            { s = path .. "val_boltout.ogg", t = 0.56 - 0.05 },
+            { s = path .. "val_boltin.ogg", t = 1.04 - 0.05},
+            { s = randspin, t = 1.54 },
+            { s = path .. "m203_hand_final_movement.ogg", t = 1.69 - 0.05 },
+        },
         IKTimeLine = rik_cham
     },
 
@@ -784,8 +897,8 @@ SWEP.AttachmentElements = {
     ["eft_valmod4_magwell"] = { Bodygroups = { {6, 1} } },
     ["eft_valmod4_topcover"] = { Bodygroups = { {2, 1} } },
     ["eft_valmod4_suppressor"] = { Bodygroups = { {5, 1} } },
-    ["eft_valmod4_supcap"] = { Bodygroups = { {10, 1} } },
-    ["eft_valmod4_brake"] = { Bodygroups = { {10, 2} } },
+    ["eft_valmod4_supcap"] = { Bodygroups = { {10, 2} } },
+    ["eft_valmod4_brake"] = { Bodygroups = { {10, 1} } },
     ["eft_valmod4_jailbrake"] = { Bodygroups = { {11, 1} } },
 }
 

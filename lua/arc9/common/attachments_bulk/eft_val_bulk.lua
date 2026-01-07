@@ -184,8 +184,8 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_stock"),
         Category = {"eft_ar_stock", "eft_ar_stock_notbuffer"},
-        Pos = Vector(6, 0, -0.3),
-        Ang = Angle(0, 0, 0),
+        Pos = Vector(4.6, 0.32, 0.45),
+        Ang = Angle(-6, 0, 0),
         Icon_Offset = Vector(-1, 0, 0.5),
     },
 }
@@ -1534,16 +1534,25 @@ ATT.CustomPros = { Ergonomics = "+10" }
 ATT.RecoilMult = 0.97
 ATT.VisualRecoilMult = 0.97
 
+ATT.HasHG = true
+
 ATT.Attachments = {
     {
-        PrintName = ARC9:GetPhrase("eft_cat_foregrip"),
-        Category = "eft_sr3_fg",
-        Pos = Vector(-4.0, 0, 2),
+        PrintName = ARC9:GetPhrase("eft_cat_mount"),
+        Category = "eft_valmod4_top",
+        Pos = Vector(1, 0, -1.6),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = ARC9:GetPhrase("eft_cat_scope"),
+        PrintName = ARC9:GetPhrase("eft_cat_aux"),
+        Category = "eft_valmod4_magw",
+        Pos = Vector(0.5, 0, 1.5),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_tactical"),
         Category = {"eft_optic_small", "eft_optic_medium", "eft_tactical_top"},
         RejectAttachments = {
             ["eft_optic_553"] = true,
@@ -1552,18 +1561,47 @@ ATT.Attachments = {
             ["eft_optic_kobra"] = true,
             ["eft_optic_pk120"] = true,
         },
-        Pos = Vector(-2.3, 0, -1.7),
+        Pos = Vector(-3, 0, -1.6),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
         ExcludeElements = {"IronsBlockingSight"},
         ExtraSightDistance = 6,
     },
     {
-        PrintName = ARC9:GetPhrase("eft_cat_tactical_r"),
-        Category = {"eft_tactical_pistol"},
-        Pos = Vector(-3.25, 1.05, -0.2),
-        Ang = Angle(0, 0, 90),
+        PrintName = ARC9:GetPhrase("eft_cat_frontsight"),
+        Category = {"eft_frontsight"},
+        Pos = Vector(-7.7, 0, -1.6),
+        Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
+        ExtraSightDistance = 8
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_r"),
+        Category = {"eft_valmod4_side"},
+        Pos = Vector(-5.6, 0.95, -0.05),
+        Ang = Angle(0, 0, 180),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_l"),
+        Category = {"eft_valmod4_side"},
+        Pos = Vector(-5.6, -0.95, -0.05),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
+        Category = "eft_valmod4_jail",
+        Pos = Vector(-8, 0, 0),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_foregrip"),
+        Category = {"eft_foregrip_small", "eft_foregrip_large"},
+        Pos = Vector(-3.66, 0, 1.25),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, -1),
     },
 }
 
@@ -1600,14 +1638,14 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_valmod4_side"}
 
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/mount_val_mod4_nb_short_rail.mdl"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/mount_val_mod4_nb_short_rail2.mdl"
 
 ATT.Attachments = {
     {
-        PrintName = ARC9:GetPhrase("eft_cat_tactical_r"),
-        Category = {"eft_tactical_pistol"},
-        Pos = Vector(0.8, 1.1, -0.07),
-        Ang = Angle(0, 0, 90),
+        PrintName = ARC9:GetPhrase("eft_cat_tactical"),
+        Category = {"eft_tactical", "eft_tactical_top", "eft_tactical_top_big"},
+        Pos = Vector(0, -0.4, 0),
+        Ang = Angle(0, 0, -90),
         Icon_Offset = Vector(0, 0, 0),
     },
 }
@@ -1633,15 +1671,23 @@ ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.Attachments = {
     {
-        PrintName = ARC9:GetPhrase("eft_cat_optic_large"),
-        Category = {"eft_optic_large"},
-        Pos = Vector(0, 0, 0),
+        PrintName = ARC9:GetPhrase("eft_cat_scope"),
+        Category = {"eft_optic_large", "eft_optic_medium", "eft_optic_small"},
+        Pos = Vector(3.5, 0, 0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
         ExcludeElements = {"IronsBlockingSight"},
     },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_rearsight"),
+        Category = { "eft_rearsight"},
+        Pos = Vector(6.1, 0, 0),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
 }
 
+ATT.ActivateElements = {"railedcover"}
 
 ARC9.LoadAttachment(ATT, "eft_valmod4_topcover")
 
@@ -1668,7 +1714,7 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
         Category = {"eft_valmod4_sup2"},
-        Pos = Vector(0, 5, 0),
+        Pos = Vector(-7, 0, 0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
@@ -1694,6 +1740,8 @@ ATT.CustomPros = { Ergonomics = "+2" }
 ATT.RecoilMult = 0.98
 ATT.VisualRecoilMult = 0.98
 
+ATT.HasBarrel = true
+
 ARC9.LoadAttachment(ATT, "eft_valmod4_supcap")
 
 ///////////////////////////////////////      eft_valmod4_brake
@@ -1713,6 +1761,8 @@ ATT.EFTErgoAdd = -8
 ATT.CustomCons = { Ergonomics = "-8" }
 ATT.RecoilMult = 0.94
 ATT.VisualRecoilMult = 0.94
+
+ATT.HasBarrel = true
 
 ARC9.LoadAttachment(ATT, "eft_valmod4_brake")
 
