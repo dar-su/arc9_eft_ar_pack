@@ -264,6 +264,7 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
     
     if anim == "reload" or anim == "reload_empty" then
         if nomag then return "reload_single" end
+        if elements["mod4uwu"] then mag = mag .. "_FUCK" end
         if empty then return "reload_empty" .. mag end
         if swep.EFT_StartedTacReload and !empty then
             if SERVER then timer.Simple(0.3, function() if IsValid(swep) then swep:SetClip1(1) end end) end

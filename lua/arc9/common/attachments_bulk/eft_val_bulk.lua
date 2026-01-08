@@ -1710,6 +1710,10 @@ ATT.RecoilMult = 0.89
 ATT.VisualRecoilMult = 0.89
 ATT.PhysBulletMuzzleVelocityMult = 1.011
 
+ATT.Silencer = true
+ATT.MuzzleParticle = "muzzleflash_suppressed"
+ATT.NoFlash = true
+
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_muzzle"),

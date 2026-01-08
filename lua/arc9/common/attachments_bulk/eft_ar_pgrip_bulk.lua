@@ -501,15 +501,6 @@ ATT.CompactName = "DLG138"
 ATT.Icon = Material("entities/eft_attachments/68c16fcffc90c174e50de1ae.png", "mips smooth")
 ATT.Description = "The DLG-138 pistol grip can be installed on any weapon compatible with AR-15 systems. Manufactured by DLG Tactical. Black version."
 
-ATT.SortOrder = 0
-ATT.MenuCategory = "ARC9 - EFT Attachments"
-ATT.Category = {"eft_"}
-
-ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
-
-ARC9.LoadAttachment(ATT, "eft_")
-
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/pistolgrip_ar15_dlg_138.mdl"
 
 ATT.HasGrip = true
@@ -533,13 +524,6 @@ ATT.PrintName = "AR-15 DLG Tactical DLG-138 pistol grip (FDE)"
 ATT.CompactName = "DLG138"
 ATT.Icon = Material("entities/eft_attachments/68c16fe183e2d814b0093f7c.png", "mips smooth")
 ATT.Description = "The DLG-138 pistol grip can be installed on any weapon compatible with AR-15 systems. Manufactured by DLG Tactical. Flat Dark Earth version."
-
-ATT.SortOrder = 0
-ATT.MenuCategory = "ARC9 - EFT Attachments"
-ATT.Category = {"eft_"}
-
-ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/pistolgrip_ar15_dlg_138.mdl"
 ATT.ModelSkin = 1

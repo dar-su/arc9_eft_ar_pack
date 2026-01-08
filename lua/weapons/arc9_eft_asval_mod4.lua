@@ -32,6 +32,9 @@ SWEP.DefaultElements = {"mod4uwu"} -- owo
 
 SWEP.EFTErgo = 46
 SWEP.HeatCapacity = 76
+-- someone said recoil should be lower
+SWEP.Recoil = 0.8 * 0.83 -- general multiplier of main recoil
+SWEP.VisualRecoil = 0.69 * 0.83 -- general multiplier for it
 
 local path = ")weapons/darsu_eft/val/"
 
@@ -274,9 +277,21 @@ SWEP.Animations = {
             { s = path .. "m203_hand_final_movement.ogg", t = 2.7 },
         },
     },
+    ["inspect2_2"] = {
+        Source = "checkmag2",
+        EventTable = {
+            { s = path .. "sr2m_flip_01.ogg", t = 0.1 },
+            { s = path .. "val_magout.ogg", t = 0.61 - 0.03 },
+            { s = pathvsk .. "9A91_mag_flip_full.ogg", t = 1.85 },
+            { s = pathvsk .. "sr2m_flip_01.ogg", t = 2 },
+            { s = randspin, t = 2.15 },
+            { s = path .. "val_magin.ogg", t = 2.5 },
+            { s = path .. "m203_hand_final_movement.ogg", t = 2.7 },
+        },
+    },
 
     
-    ["reload_0"] = {
+    ["reload_0_FUCK"] = {
         Source = "reload9",
         MinProgress = 0.85,
         FireASAP = true,
@@ -285,7 +300,7 @@ SWEP.Animations = {
         IKTimeLine = rik_reload,
         Mult = 28/24
     },
-    ["reload_tactical_0"] = {
+    ["reload_tactical_0_FUCK"] = {
         Source = "reload9t",
         MinProgress = 0.85,
         FireASAP = true,
@@ -295,7 +310,7 @@ SWEP.Animations = {
         IKTimeLine = rik_reload,
         Mult = 28/24
     },
-    ["reload_empty_0"] = {
+    ["reload_empty_0_FUCK"] = {
         Source = {"reload_empty8_0", "reload_empty8_1"},
         MinProgress = 0.85,
         FireASAP = true,
@@ -304,7 +319,7 @@ SWEP.Animations = {
         IKTimeLine = rik_reloadempty,
         Mult = 28/24
     },
-    ["1_reload_empty_0"] = { -- seperate cuz differeitn lhik
+    ["1_reload_empty_0_FUCK"] = { -- seperate cuz differeitn lhik
         Source = "reload_empty8_2",
         MinProgress = 0.85,
         FireASAP = true,
@@ -314,7 +329,7 @@ SWEP.Animations = {
         Mult = 28/24
     },
 
-    ["reload_1"] = {
+    ["reload_1_FUCK"] = {
         Source = "reload8",
         MinProgress = 0.85,
         FireASAP = true,
@@ -323,7 +338,7 @@ SWEP.Animations = {
         IKTimeLine = rik_reload,
         Mult = 28/24
     },
-    ["reload_tactical_1"] = {
+    ["reload_tactical_1_FUCK"] = {
         Source = "reload8t",
         MinProgress = 0.85,
         FireASAP = true,
@@ -333,7 +348,7 @@ SWEP.Animations = {
         IKTimeLine = rik_reload,
         Mult = 28/24
     },
-    ["reload_empty_1"] = {
+    ["reload_empty_1_FUCK"] = {
         Source = {"reload_empty8_0", "reload_empty8_1"},
         MinProgress = 0.85,
         FireASAP = true,
@@ -342,7 +357,7 @@ SWEP.Animations = {
         IKTimeLine = rik_reloadempty,
         Mult = 28/24
     },
-    ["1_reload_empty_1"] = {
+    ["1_reload_empty_1_FUCK"] = {
         Source = "reload_empty8_2",
         MinProgress = 0.85,
         FireASAP = true,
@@ -351,7 +366,7 @@ SWEP.Animations = {
         IKTimeLine = rik_reloadempty2,
         Mult = 28/24
     },
-    ["reload_2"] = {
+    ["reload_2_FUCK"] = {
         Source = "reload8",
         MinProgress = 0.85,
         FireASAP = true,
@@ -360,7 +375,7 @@ SWEP.Animations = {
         IKTimeLine = rik_reload,
         Mult = 28/24
     },
-    ["reload_tactical_2"] = {
+    ["reload_tactical_2_FUCK"] = {
         Source = "reload8t",
         MinProgress = 0.85,
         FireASAP = true,
@@ -370,7 +385,7 @@ SWEP.Animations = {
         IKTimeLine = rik_reload,
         Mult = 28/24
     },
-    ["reload_empty_2"] = {
+    ["reload_empty_2_FUCK"] = {
         Source = {"reload_empty8_0", "reload_empty8_1"},
         MinProgress = 0.85,
         FireASAP = true,
@@ -379,7 +394,7 @@ SWEP.Animations = {
         IKTimeLine = rik_reloadempty,
         Mult = 28/24
     },
-    ["1_reload_empty_2"] = {
+    ["1_reload_empty_2_FUCK"] = {
         Source = "reload_empty8_2",
         MinProgress = 0.85,
         FireASAP = true,

@@ -22,7 +22,7 @@ ATT.EFTErgoAdd = 7
 ATT.CustomPros = { Ergonomics = "+7" }
 ATT.HeatCapacityMult = 1.074
 ATT.Category = {"eft_ar15_hguard"}
-ATT.ExcludeElements = {"barrel_10i", "barrel_145i", "barrel_18i", "barrel_20i", "gasblock_big"}
+ATT.ExcludeElements = {"barrel_10i", "barrel_145i"}
 
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_adar")
 
@@ -2131,7 +2131,7 @@ ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 0.95
 ATT.Category = {"eft_ar15_hguard"}
-ATT.ExcludeElements = {"barrel_10i", "gasblock_big"}
+ATT.ExcludeElements = {"gasblock_big"}
 ATT.Folder = "WS LVOA"
 ATT.ActivateElements = {"sprrailallowed"}
 ATT.Attachments = {
@@ -2213,7 +2213,7 @@ ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 0.95
 ATT.Category = {"eft_ar15_hguard"}
-ATT.ExcludeElements = {"barrel_10i", "gasblock_big"}
+ATT.ExcludeElements = {"gasblock_big"}
 ATT.Folder = "WS LVOA"
 ATT.ActivateElements = {"sprrailallowed"}
 ATT.Attachments = {
@@ -2295,7 +2295,7 @@ ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 0.95
 ATT.Category = {"eft_ar15_hguard"}
-ATT.ExcludeElements = {"barrel_10i", "gasblock_big"}
+ATT.ExcludeElements = {"gasblock_big"}
 ATT.Folder = "WS LVOA"
 ATT.ActivateElements = {"sprrailallowed"}
 
@@ -2828,7 +2828,7 @@ ATT.Category = {"eft_ar15_hguard"}
 ATT.Folder = "KAC"
 ATT.ActivateElements = {"sprrailallowed", "eft_m203_allowed"}
 
-ATT.ExcludeElements = {"barrel_10i", "barrel_145i", "barrel_16i", "eft_barrel_ar15_18i", "eft_barrel_ar15_20i"}
+ATT.ExcludeElements = {"barrel_10i", "barrel_145i", "eft_barrel_ar15_406mm", "eft_barrel_ar15_18i", "eft_barrel_ar15_20i"}
 
 
 ATT.Attachments = {
