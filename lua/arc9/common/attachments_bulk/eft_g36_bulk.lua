@@ -817,7 +817,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_scope"),
-        Category = "eft_optic_medium",
+        Category = {"eft_optic_small","eft_optic_medium"},
         Pos = Vector(1.5, 0, -2.08),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
