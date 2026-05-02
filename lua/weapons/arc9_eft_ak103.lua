@@ -237,6 +237,7 @@ SWEP.Attachments = {
         Bone = "mod_pistol_grip",
         Pos = Vector(0, -4, -2),
         Ang = Angle(0, 0, 0),
+        ExcludeElements = false,
     },
 
     -- bitch ass lua
