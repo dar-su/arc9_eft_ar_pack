@@ -82,11 +82,12 @@ ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 4
 ATT.RTScopeFOV = 12
 ATT.RTScopeReticle = Material("vgui/arc9_eft_shared/reticles/scope_all_ncstar_advance_dual_optic_3_9x_42_mark.png", "mips smooth")
-ATT.RTScopeReticleScale = 1.04
+ATT.RTScopeReticleScale = 0.9
 ATT.RTScopeColorable = true
 ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true 
 ATT.RTScopeBlackBoxShadow = true 
+ATT.RTScopeNew_ShadowScale = 1.05
 
 ATT.ScopeScreenRatio = 440/1080
 
@@ -126,7 +127,7 @@ ATT.FoldSights = true
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 5.5, -1.3),
+        Pos = Vector(0, 5.9, -1.3),
         Ang = Angle(0, 0, 0),
         Magnification = 1.15,
         ViewModelFOV = 38,
@@ -141,12 +142,13 @@ ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
 ATT.RTScopeFOV = 38/2.8
 ATT.RTScopeReticle = Material("vgui/arc9_eft_shared/reticles/scope_base_npz_1p78_1_28x24_marks.png", "mips smooth")
-ATT.RTScopeReticleScale = 1.2
+ATT.RTScopeReticleScale = 0.75
 ATT.RTScopeColorable = false
 ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true 
 ATT.RTScopeBlackBoxShadow = true 
 ATT.ScopeScreenRatio = 645/1080
+ATT.RTScopeNew_ShadowScale = 0.9
 
 ATT.Flare = true
 ATT.FlareColor = Color(255, 255, 255)
@@ -299,16 +301,17 @@ ATT.Sights = {
 }
 
 ATT.RTScope = true
-ATT.RTScopeSubmatIndex = 2
+ATT.RTScopeSubmatIndex = 1
 ATT.RTScopeFOV = 38/3.5
 ATT.RTScopeMagnification = 3.5
 ATT.RTScopeReticle = Material("vgui/arc9_eft_shared/reticles/scope_dovetail_npz_nspum_3,5x_marks.png", "mips smooth")
-ATT.RTScopeReticleScale = 0.975
+ATT.RTScopeReticleScale = 0.8
 ATT.RTScopeColorable = false
 ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true 
 ATT.RTScopeBlackBoxShadow = true 
 ATT.ScopeScreenRatio = 510/1080
+ATT.RTScopeNew_ShadowScale = 1.05
 
 ATT.RTScopeNightVision = true
 ATT.RTScopeNightVisionMonochrome = true
@@ -319,7 +322,7 @@ ATT.RTScopeNightVisionCC = {
     -- ["$pp_colour_brightness"] = -2,
     -- ["$pp_colour_contrast"] = 3.5,
     -- ["$pp_colour_colour"] = 0.09,
-    ["$pp_colour_brightness"] = -0.2,
+    ["$pp_colour_brightness"] = -0.35,
     ["$pp_colour_contrast"] = 2.5,
     ["$pp_colour_colour"] = 0.05,
     ["$pp_colour_mulr"] = 0,
@@ -528,14 +531,14 @@ local Reticle1 = Material("vgui/arc9_eft_shared/reticles/scope_dovetail_belomo_p
 
 ATT.Sights = {
     {
-        Pos = Vector(0.575, 7.6, -0.8),
+        Pos = Vector(0.575, 7.8, -0.8),
         Ang = Angle(0, 0, 0),
         Magnification = 1.15,
         ViewModelFOV = 38,
         Reticle = Reticle0
     },
     {
-        Pos = Vector(0.575, 7.6, -0.8),
+        Pos = Vector(0.575, 7.8, -0.8),
         Ang = Angle(0, 0, 0),
         Magnification = 1.15,
         ViewModelFOV = 38,
@@ -544,11 +547,11 @@ ATT.Sights = {
 }
 
 ATT.RTScope = true
-ATT.RTScopeSubmatIndex = 2
+ATT.RTScopeSubmatIndex = 1
 ATT.RTScopeFOV = 38/4
 ATT.RTScopeMagnification = 4
 ATT.RTScopeReticle = Material("vgui/arc9_eft_shared/reticles/scope_dovetail_belomo_pso_1_4x24_marks_1.png", "mips smooth")
-ATT.RTScopeReticleScale = 1.1
+ATT.RTScopeReticleScale = 0.765
 ATT.RTScopeColorable = false
 ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true 
@@ -610,14 +613,14 @@ local Reticle1 = Material("vgui/arc9_eft_shared/reticles/scope_dovetail_belomo_p
 
 ATT.Sights = {
     {
-        Pos = Vector(0.575, 7.6, -0.8),
+        Pos = Vector(0.575, 7.8, -0.8),
         Ang = Angle(0, 0, 0),
         Magnification = 1.15,
         ViewModelFOV = 38,
         Reticle = Reticle0
     },
     {
-        Pos = Vector(0.575, 7.6, -0.8),
+        Pos = Vector(0.575, 7.8, -0.8),
         Ang = Angle(0, 0, 0),
         Magnification = 1.15,
         ViewModelFOV = 38,
@@ -626,11 +629,11 @@ ATT.Sights = {
 }
 
 ATT.RTScope = true
-ATT.RTScopeSubmatIndex = 2
+ATT.RTScopeSubmatIndex = 1
 ATT.RTScopeFOV = 38/4
 ATT.RTScopeMagnification = 4
 ATT.RTScopeReticle = Material("vgui/arc9_eft_shared/reticles/scope_dovetail_belomo_pso_1m2_1_4x24_marks_1.png", "mips smooth")
-ATT.RTScopeReticleScale = 1.1
+ATT.RTScopeReticleScale = 0.765
 ATT.RTScopeColorable = false
 ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true 
@@ -689,14 +692,14 @@ local Reticle1 = Material("vgui/arc9_eft_shared/reticles/scope_dovetail_belomo_p
 
 ATT.Sights = {
     {
-        Pos = Vector(0.575, 7.6, -0.8),
+        Pos = Vector(0.575, 7.8, -0.8),
         Ang = Angle(0, 0, 0),
         Magnification = 1.15,
         ViewModelFOV = 38,
         Reticle = Reticle0
     },
     {
-        Pos = Vector(0.575, 7.6, -0.8),
+        Pos = Vector(0.575, 7.8, -0.8),
         Ang = Angle(0, 0, 0),
         Magnification = 1.15,
         ViewModelFOV = 38,
@@ -705,11 +708,11 @@ ATT.Sights = {
 }
 
 ATT.RTScope = true
-ATT.RTScopeSubmatIndex = 2
+ATT.RTScopeSubmatIndex = 1
 ATT.RTScopeFOV = 38/4
 ATT.RTScopeMagnification = 4
 ATT.RTScopeReticle = Material("vgui/arc9_eft_shared/reticles/scope_dovetail_belomo_pso_1m2_1_4x24_marks_1.png", "mips smooth")
-ATT.RTScopeReticleScale = 1.1
+ATT.RTScopeReticleScale = 0.765
 ATT.RTScopeColorable = false
 ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true 
@@ -773,16 +776,18 @@ ATT.Sights = {
 }
 
 ATT.RTScope = true
-ATT.RTScopeSubmatIndex = 2
+ATT.RTScopeSubmatIndex = 1
 ATT.RTScopeFOV = 38/4
 ATT.RTScopeMagnification = 4
 ATT.RTScopeReticle = Material("vgui/arc9_eft_shared/reticles/scope_dovetail_npz_1p29_4x_marks.png", "mips smooth")
-ATT.RTScopeReticleScale = 1.2
+ATT.RTScopeReticleScale = 1.0
+ATT.RTScopeNew_ReticleBlackBox = true 
 ATT.RTScopeColorable = false
 ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true 
 ATT.RTScopeBlackBoxShadow = true 
 ATT.ScopeScreenRatio = 515/1080
+ATT.RTScopeNew_ShadowScale = 0.7
 
 ATT.Flare = true
 ATT.FlareColor = Color(255, 255, 255)
@@ -829,7 +834,7 @@ ATT.FoldSights = true
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 9.3, -1.86),
+        Pos = Vector(0, 9.1, -1.86),
         Ang = Angle(0, 0, 0),
         Magnification = 1.15,
         ViewModelFOV = 36,
@@ -842,11 +847,12 @@ ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 4
 ATT.RTScopeFOV = 12
 ATT.RTScopeReticle = Material("vgui/arc9_eft_shared/reticles/scope_all_swampfox_trihawk_prism_scope_3x30_mark.png", "mips smooth")
-ATT.RTScopeReticleScale = 1.25
+ATT.RTScopeReticleScale = 1.35
 ATT.RTScopeColorable = true
 ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true 
 ATT.RTScopeBlackBoxShadow = true 
+ATT.RTScopeNew_ShadowScale = 0.65
 
 ATT.ScopeScreenRatio = 478/1080
 
@@ -878,7 +884,7 @@ ATT.FoldSights = true
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 15.5, 0),
+        Pos = Vector(0, 13.5, 0),
         Ang = Angle(0, 0, 0),
         Magnification = 1.15,
         ViewModelFOV = 36,
@@ -910,23 +916,23 @@ end
 local Reticle_full = Material("vgui/arc9_eft_shared/reticles/adjustable/tango6t_f.png", "mips")
 local Reticle_quarter = Material("vgui/arc9_eft_shared/reticles/adjustable/tango6t_q.png", "mips")
 
-local scale = 1
-local finalsize = 8 * scale
+local scale = 0.9
+local finalsize = 6.65 * scale
 ATT.RTScopeDrawFunc = function(swep, rtsize, sight) 
     local scrollevel = sight.SmoothScrollLevel or 0
     local size = (rtsize + rtsize * (1 - scrollevel) * finalsize) * scale
     local mat = Reticle_full
 
-    if scrollevel <= 0.6 then 
+    if scrollevel <= 0.45 then 
         size = size / 4
         mat = Reticle_quarter
     end
 
     surface.SetMaterial(mat)
     surface.SetDrawColor(255, 255, 255)
-    -- surface.DrawTexturedRect(rtsize / 2 - size / 2, rtsize / 2 - size / 2, size, size)
-    local counterrotation = ARC9.NewRTScopesEnabled and 0 or (swep.LastViewModelAng.z - sight.Ang.z + (arc9_cheapscopes:GetBool() and 0 or swep.SubtleVisualRecoilAng.z * 2))
-    surface.DrawTexturedRectRotated(rtsize / 2, rtsize / 2, size, size, -counterrotation)
+    surface.DrawTexturedRect(rtsize / 2 - size / 2, rtsize / 2 - size / 2, size, size)
+    -- local counterrotation = ARC9.NewRTScopesEnabled and 0 or (swep.LastViewModelAng.z - sight.Ang.z + (arc9_cheapscopes:GetBool() and 0 or swep.SubtleVisualRecoilAng.z * 2))
+    -- surface.DrawTexturedRectRotated(rtsize / 2, rtsize / 2, size, size, -counterrotation)
 end
 
 ATT.ZoomSound = false
@@ -948,6 +954,7 @@ ATT.RTScopeBlackBox = true
 ATT.RTScopeBlackBoxShadow = true 
 
 ATT.ScopeScreenRatio = 573/1080
+ATT.RTScopeNew_ShadowScale = 1.2
 
 
 ARC9.LoadAttachment(ATT, "eft_scope_30mm_tango6t")
@@ -1189,7 +1196,7 @@ ATT.FoldSights = true
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 12.6, 0),
+        Pos = Vector(0, 12.35, 0),
         Ang = Angle(0, 0, 0),
         Magnification = 1.15,
         ViewModelFOV = 36,
@@ -1230,13 +1237,14 @@ ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 4
 ATT.RTScopeFOV = 12
 ATT.RTScopeReticle = Material("vgui/arc9_eft_shared/reticles/scope_30mm_leupold_mark_4_mr_t_ts_30a2_25_8x36_mark.png", "mips smooth")
-ATT.RTScopeReticleScale = 1
+ATT.RTScopeReticleScale = 0.9
 ATT.RTScopeColorable = false
 ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true 
 ATT.RTScopeBlackBoxShadow = true 
 
 ATT.ScopeScreenRatio = 0.5833
+ATT.RTScopeNew_ShadowScale = 1.3
 
 
 ARC9.LoadAttachment(ATT, "eft_scope_30mm_mark4mrt")

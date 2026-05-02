@@ -704,7 +704,7 @@ ATT.Category = {"eft_g36_topmount"}
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/scope_g36_lense.mdl"
 ATT.Sights = {
     {
-        Pos = Vector(0, 6.2, -0.951),
+        Pos = Vector(0, 6.3, -0.951),
         Ang = Angle(0, 0, 0),
         Magnification = 1.15,
         ViewModelFOV = 36,
@@ -727,11 +727,13 @@ ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 0
 ATT.RTScopeFOV = 36/3
 ATT.RTScopeReticle = Material("entities/eft_g36_attachments/scope_g36_hensoldt_hkv_carry_handle_3x_marks.png", "mips smooth")
-ATT.RTScopeReticleScale = 2.25
+ATT.RTScopeReticleScale = 1.3
 ATT.RTScopeColorable = false
 ATT.RTScopeShadowIntensity = 25
 ATT.RTScopeBlackBox = true 
 ATT.RTScopeBlackBoxShadow = true 
+ATT.RTScopeNew_DisableRTVM = true
+ATT.RTScopeNew_ShadowScale = 0.5
 
 ATT.ScopeScreenRatio = 366/1080
 
@@ -768,7 +770,7 @@ ATT.Category = {"eft_g36_topmount"}
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/scope_g36_lense.mdl"
 ATT.Sights = {
     {
-        Pos = Vector(0, 6.2, -0.951),
+        Pos = Vector(0, 6.3, -0.951),
         Ang = Angle(0, 0, 0),
         Magnification = 1.15,
         ViewModelFOV = 36,
@@ -791,11 +793,13 @@ ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 0
 ATT.RTScopeFOV = 36/1.5
 ATT.RTScopeReticle = Material("entities/eft_g36_attachments/scope_g36_hensoldt_hkv_single_optic_carry_handle_1,5x_marks.png", "mips smooth")
-ATT.RTScopeReticleScale = 2.25
+ATT.RTScopeReticleScale = 1.3
 ATT.RTScopeColorable = false
 ATT.RTScopeShadowIntensity = 25
 ATT.RTScopeBlackBox = true 
 ATT.RTScopeBlackBoxShadow = true 
+ATT.RTScopeNew_DisableRTVM = true
+ATT.RTScopeNew_ShadowScale = 0.5
 
 ATT.ScopeScreenRatio = 366/1080
 

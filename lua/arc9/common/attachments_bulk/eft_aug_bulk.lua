@@ -190,7 +190,7 @@ ATT.FoldSights = true
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 13.5, -3.715),
+        Pos = Vector(0, 13.0, -3.715),
         Ang = Angle(0, 0, 0),
         Magnification = 1.15,
         ViewModelFOV = 36,
@@ -206,11 +206,14 @@ ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 1
 ATT.RTScopeFOV = 36/4
 ATT.RTScopeReticle = Material("entities/eft_aug_attachments/scope_aug_steyr_stg77_optic_1,5x_marks.png", "mips smooth")
-ATT.RTScopeReticleScale = 1.0
+ATT.RTScopeReticleScale = 0.85
 ATT.RTScopeColorable = false
 ATT.RTScopeShadowIntensity = 25
 ATT.RTScopeBlackBox = true 
 ATT.RTScopeBlackBoxShadow = true 
+ATT.RTScopeNew_DisableRTVM = true
+ATT.RTScopeNew_ShadowScale = 1.2
+ATT.RTScopeNew_ReticleBlackBox = true 
 
 ATT.ScopeScreenRatio = 398/1080
 
@@ -322,7 +325,7 @@ ATT.FoldSights = true
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 12, -3.78),
+        Pos = Vector(0, 11.75, -3.78),
         Ang = Angle(0, 0, 0),
         Magnification = 1.15,
         ViewModelFOV = 36,
@@ -345,11 +348,14 @@ ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 1
 ATT.RTScopeFOV = 36/4
 ATT.RTScopeReticle = Material("entities/eft_aug_attachments/scope_aug_steyr_stg77_optic_1,5x_marks.png", "mips smooth")
-ATT.RTScopeReticleScale = 1.0
+ATT.RTScopeReticleScale = 0.55
 ATT.RTScopeColorable = false
 ATT.RTScopeShadowIntensity = 25
 ATT.RTScopeBlackBox = true 
 ATT.RTScopeBlackBoxShadow = true 
+ATT.RTScopeNew_DisableRTVM = true
+ATT.RTScopeNew_ReticleBlackBox = true 
+ATT.RTScopeNew_ShadowScale = 1.8
 
 ATT.ScopeScreenRatio = 462/1080
 
