@@ -37,6 +37,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 628b9be6cff66b70c002b14c
 ARC9.LoadAttachment(ATT, "eft_sag545_cover")
 
 
@@ -69,6 +70,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 628b8d83717774443b15e248
 ARC9.LoadAttachment(ATT, "eft_sag545_gastube")
 
 
@@ -147,6 +149,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 628b916469015a4e1711ed8d
 ARC9.LoadAttachment(ATT, "eft_sag545_hg_std")
 
 
@@ -166,6 +169,7 @@ ATT.Category = {"eft_sag545_rss"}
 
 
 
+-- EFT ID: 628b9471078f94059a4b9bfb
 ARC9.LoadAttachment(ATT, "eft_sag545_rs")
 
 
@@ -199,4 +203,5 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 628b9a40717774443b15e9f2
 ARC9.LoadAttachment(ATT, "eft_sag545_buffertube")

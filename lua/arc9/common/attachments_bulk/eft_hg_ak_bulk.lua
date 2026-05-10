@@ -25,6 +25,7 @@ ATT.RequireElements = {"gasblock"}
 ATT.Category = {"eft_ak_handguard", "eft_vityaz_handguard"}
 
 
+-- EFT ID: 59d64f2f86f77417193ef8b3
 ARC9.LoadAttachment(ATT, "eft_hg_ak_6p1")
 
 
@@ -52,6 +53,7 @@ ATT.RequireElements = {"gasblock"}
 ATT.Category = {"eft_ak_handguard", "eft_vityaz_handguard"}
 
 
+-- EFT ID: 5648b0744bdc2d363b8b4578
 ARC9.LoadAttachment(ATT, "eft_hg_ak_6p20sb6")
 
 
@@ -82,6 +84,7 @@ ATT.RequireElements = {"gasblock"}
 ATT.Category = {"eft_ak_handguard", "eft_vityaz_handguard"}
 
 
+-- EFT ID: 5cbda9f4ae9215000e5b9bfc
 ARC9.LoadAttachment(ATT, "eft_hg_ak_6p20sb9p")
 
 
@@ -160,6 +163,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5cf4e3f3d7f00c06595bc7f0
 ARC9.LoadAttachment(ATT, "eft_hg_ak_agressor")
 
 
@@ -208,6 +212,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5cbda392ae92155f3c17c39f
 ARC9.LoadAttachment(ATT, "eft_hg_ak_ak100")
 
 
@@ -264,6 +269,7 @@ ATT.Attachments = {
 
 
 
+-- EFT ID: 5d1b198cd7ad1a604869ad72
 ARC9.LoadAttachment(ATT, "eft_hg_ak_akm_l")
 
 
@@ -322,6 +328,7 @@ ATT.Attachments = {
 
 
 
+-- EFT ID: 5d4aaa73a4b9365392071175
 ARC9.LoadAttachment(ATT, "eft_hg_ak_akm_l_ab")
 
 
@@ -380,6 +387,7 @@ ATT.Attachments = {
 
 
 
+-- EFT ID: 5d4aaa54a4b9365392071170
 ARC9.LoadAttachment(ATT, "eft_hg_ak_akm_l_ar")
 
 -- b10 moved to shared
@@ -450,6 +458,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5648b4534bdc2d3d1c8b4580
 ARC9.LoadAttachment(ATT, "eft_hg_ak_b10mb19")
 
 
@@ -502,6 +511,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 57ffa9f4245977728561e844
 ARC9.LoadAttachment(ATT, "eft_hg_ak_b11")
 
 
@@ -580,6 +590,7 @@ ATT.Attachments = {
 
 ATT.AdvancedCamoSupport = true
 
+-- EFT ID: 5efaf417aeb21837e749c7f2
 ARC9.LoadAttachment(ATT, "eft_hg_ak_b30b31s")
 
 
@@ -643,6 +654,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5c17664f2e2216398b5a7e3c
 ARC9.LoadAttachment(ATT, "eft_hg_ak_cmrd")
 
 
@@ -714,6 +726,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 6389f1dfc879ce63f72fc43e
 ARC9.LoadAttachment(ATT, "eft_hg_ak_cncguns")
 
 
@@ -790,6 +803,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5d15ce51d7ad1a1eff619092
 ARC9.LoadAttachment(ATT, "eft_hg_ak_goliaf")
 
 
@@ -853,6 +867,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5b800e9286f7747a8b04f3ff
 ARC9.LoadAttachment(ATT, "eft_hg_ak_hexagon")
 
 
@@ -918,6 +933,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5b80242286f77429445e0b47
 ARC9.LoadAttachment(ATT, "eft_hg_ak_hexagon_r")
 
 
@@ -970,6 +986,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 57cff947245977638e6f2a19
 ARC9.LoadAttachment(ATT, "eft_hg_ak_moe")
 
 
@@ -1021,6 +1038,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 57cffd8224597763b03fc609
 ARC9.LoadAttachment(ATT, "eft_hg_ak_moe_fde")
 
 
@@ -1072,6 +1090,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 57cffddc24597763133760c6
 ARC9.LoadAttachment(ATT, "eft_hg_ak_moe_olv")
 
 
@@ -1123,6 +1142,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 57cffe0024597763b03fc60b
 ARC9.LoadAttachment(ATT, "eft_hg_ak_moe_plm")
 
 
@@ -1175,6 +1195,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 57cffe20245977632f391a9d
 ARC9.LoadAttachment(ATT, "eft_hg_ak_moe_sg")
 
 
@@ -1239,6 +1260,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5648ae314bdc2d3d1c8b457f
 ARC9.LoadAttachment(ATT, "eft_hg_ak_rs47")
 
 
@@ -1305,6 +1327,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5a9d56c8a2750c0032157146
 ARC9.LoadAttachment(ATT, "eft_hg_ak_trax1")
 
 
@@ -1351,6 +1374,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5a9d6d34a2750c00141e07da
 ARC9.LoadAttachment(ATT, "eft_hg_ak_trax2")
 
 
@@ -1402,6 +1426,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5a9d6d21a2750c00137fa649
 ARC9.LoadAttachment(ATT, "eft_hg_ak_trax_bridge")
 
 
@@ -1480,6 +1505,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 59fb375986f7741b681b81a6
 ARC9.LoadAttachment(ATT, "eft_hg_ak_ufm")
 
 
@@ -1508,6 +1534,7 @@ ATT.RequireElements = {"gasblock"}
 ATT.Category = {"eft_ak_handguard", "eft_vityaz_handguard"}
 
 
+-- EFT ID: 59e6284f86f77440d569536f
 ARC9.LoadAttachment(ATT, "eft_hg_ak_vpo136")
 
 
@@ -1535,6 +1562,7 @@ ATT.RequireElements = {"gasblock"}
 ATT.Category = {"eft_ak_handguard", "eft_vityaz_handguard"}
 
 
+-- EFT ID: 59e898ee86f77427614bd225
 ARC9.LoadAttachment(ATT, "eft_hg_ak_vpo209")
 
 
@@ -1566,6 +1594,7 @@ ATT.ActivateElements = {"nogp34"}
 ATT.Category = {"eft_ak_handguard", "eft_vityaz_handguard"}
 
 
+-- EFT ID: 5d2c829448f0353a5c7d6674
 ARC9.LoadAttachment(ATT, "eft_hg_ak_wasr")
 
 
@@ -1644,6 +1673,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5f6331e097199b7db2128dc2
 ARC9.LoadAttachment(ATT, "eft_hg_ak_x47")
 
 
@@ -1714,6 +1744,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5a957c3fa2750c00137fa5f7
 ARC9.LoadAttachment(ATT, "eft_hg_ak_xrsu47")
 
 
@@ -1772,6 +1803,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5c9a07572e221644f31c4b32
 ARC9.LoadAttachment(ATT, "eft_hg_ak_zhu")
 
 
@@ -1830,6 +1862,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5c9a1c3a2e2216000e69fb6a
 ARC9.LoadAttachment(ATT, "eft_hg_ak_zhu_fde")
 
 
@@ -1888,6 +1921,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5c9a1c422e221600106f69f0
 ARC9.LoadAttachment(ATT, "eft_hg_ak_zhu_plm")
 
 --0.14
@@ -1938,6 +1972,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 647dba3142c479dde701b654
 ARC9.LoadAttachment(ATT, "eft_hg_ak_dominat")
 
 ///////////////////////////////////////      eft_hg_ak_aspid
@@ -2012,6 +2047,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 647dd2b8a12ebf96c3031655
 ARC9.LoadAttachment(ATT, "eft_hg_ak_aspid")
 
 ///////////////////////////////////////      eft_hg_ak_hartman
@@ -2067,6 +2103,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 651bfe4d1065f87f082e7209
 ARC9.LoadAttachment(ATT, "eft_hg_ak_hartman")
 
 ///////////////////////////////////////      eft_mount_lenok_70
@@ -2095,6 +2132,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 65434a4e4e3a01736a6c9706
 ARC9.LoadAttachment(ATT, "eft_mount_lenok_70")
 
 
@@ -2122,6 +2160,7 @@ ATT.LHIK = true
 
 ATT.Category = {"eft_velociraptor_handguard"}
 
+-- EFT ID: 674d5e287075e056160e0176
 ARC9.LoadAttachment(ATT, "eft_hg_velociraptor_std")
 
 
@@ -2162,6 +2201,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 57ffaea724597779f52b3a4d
 ARC9.LoadAttachment(ATT, "eft_mount_b12")
 
 
@@ -2194,6 +2234,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5b800ebc86f774394e230a90
 ARC9.LoadAttachment(ATT, "eft_mount_hexagon_m")
 
 
@@ -2229,6 +2270,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5b8403a086f7747ff856f4e2
 ARC9.LoadAttachment(ATT, "eft_mount_hexagon_m_ar")
 
 
@@ -2261,6 +2303,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5b800ed086f7747baf6e2f9e
 ARC9.LoadAttachment(ATT, "eft_mount_hexagon_s")
 
 
@@ -2296,5 +2339,6 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5b84038986f774774913b0c1
 ARC9.LoadAttachment(ATT, "eft_mount_hexagon_s_ar")
 

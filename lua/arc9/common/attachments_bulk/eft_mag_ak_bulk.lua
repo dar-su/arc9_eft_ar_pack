@@ -37,6 +37,7 @@ ATT.HookP_TranslateSound = function(self, data) -- that is metal mag
     return data
 end
 
+-- EFT ID: 59d625f086f774661516605d
 ARC9.LoadAttachment(ATT, "eft_mag_ak_55_762_30")
 
 
@@ -60,7 +61,6 @@ ATT.Category = {
 }
 
 ATT.EFTErgoAdd = -3
-ATT.CustomCons = { Ergonomics = "-3" }
 
 ATT.ActivateElements = {"762"}
 
@@ -68,6 +68,7 @@ ATT.ChamberSize = 1
 ATT.ClipSize = 30
 
 
+-- EFT ID: 5a01c29586f77474660c694c
 ARC9.LoadAttachment(ATT, "eft_mag_ak_6l10_762_30")
 
 
@@ -98,6 +99,7 @@ ATT.ActivateElements = {"long545"}
 ATT.ChamberSize = 1
 ATT.ClipSize = 45
 
+-- EFT ID: 564ca9df4bdc2d35148b4569
 ARC9.LoadAttachment(ATT, "eft_mag_ak_6l18_545_45")
 
 
@@ -117,7 +119,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak74_izhmash_6l20_545x39_30.
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak74_izhmash_6l20_545x39_30.mdl"
 
 ATT.EFTErgoAdd = -3
-ATT.CustomCons = { Ergonomics = "-3" }
 
 ATT.Category = {
     "eft_ak_545_mag",
@@ -129,6 +130,7 @@ ATT.ChamberSize = 1
 ATT.ClipSize = 30
 
 
+-- EFT ID: 564ca99c4bdc2d16268b4589
 ARC9.LoadAttachment(ATT, "eft_mag_ak_6l20_545_30")
 
 
@@ -149,7 +151,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak74_izhmash_6l23_plum_545x3
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak74_izhmash_6l23_plum_545x39_30.mdl"
 
 ATT.EFTErgoAdd = -3
-ATT.CustomCons = { Ergonomics = "-3" }
 
 ATT.Category = {
     "eft_ak_545_mag",
@@ -161,6 +162,7 @@ ATT.ChamberSize = 1
 ATT.ClipSize = 30
 
 
+-- EFT ID: 5cbdaf89ae9215000e5b9c94
 ARC9.LoadAttachment(ATT, "eft_mag_ak_6l23p_545_30")
 
 
@@ -180,7 +182,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak74_izhmash_6l23_545x39_30.
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak74_izhmash_6l23_545x39_30.mdl"
 
 ATT.EFTErgoAdd = -3
-ATT.CustomCons = { Ergonomics = "-3" }
 
 ATT.Category = {
     "eft_ak_545_mag",
@@ -192,6 +193,7 @@ ATT.ChamberSize = 1
 ATT.ClipSize = 30
 
 
+-- EFT ID: 55d480c04bdc2d1d4e8b456a
 ARC9.LoadAttachment(ATT, "eft_mag_ak_6l23_545_30")
 
 
@@ -226,6 +228,7 @@ ATT.ClipSize = 45
 ATT.AdvancedCamoSupport = true
 
 
+-- EFT ID: 55d481904bdc2d8c2f8b456a
 ARC9.LoadAttachment(ATT, "eft_mag_ak_6l26_545_45")
 
 
@@ -249,7 +252,6 @@ ATT.Category = {
 }
 
 ATT.EFTErgoAdd = -3
-ATT.CustomCons = { Ergonomics = "-3" }
 
 ATT.ActivateElements = {"556"}
 
@@ -257,6 +259,7 @@ ATT.ChamberSize = 1
 ATT.ClipSize = 30
 
 
+-- EFT ID: 5ac66c5d5acfc4001718d314
 ARC9.LoadAttachment(ATT, "eft_mag_ak_6l29_556_30")
 
 
@@ -288,6 +291,7 @@ ATT.ChamberSize = 1
 ATT.ClipSize = 60
 
 
+-- EFT ID: 55d482194bdc2d1d4e8b456b
 ARC9.LoadAttachment(ATT, "eft_mag_ak_6l31_545_60")
 
 
@@ -320,6 +324,7 @@ ATT.ClipSize = 40
 
 
 
+-- EFT ID: 5b1fb3e15acfc4001637f068
 ARC9.LoadAttachment(ATT, "eft_mag_ak_6p2bak_762_40")
 
 
@@ -359,6 +364,7 @@ ATT.HookP_TranslateSound = function(self, data) -- that is metal mag
     return data
 end
 
+-- EFT ID: 59e5f5a486f7746c530b3ce2
 ARC9.LoadAttachment(ATT, "eft_mag_ak_6p2sb11_762_40")
 
 
@@ -378,7 +384,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak_izhmash_ak103_std_762x39_
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak_izhmash_ak103_std_762x39_30.mdl"
 
 ATT.EFTErgoAdd = -3
-ATT.CustomCons = { Ergonomics = "-3" }
 
 ATT.Category = {
     "eft_ak_762_mag",
@@ -390,6 +395,7 @@ ATT.ChamberSize = 1
 ATT.ClipSize = 30
 
 
+-- EFT ID: 5ac66bea5acfc43b321d4aec
 ARC9.LoadAttachment(ATT, "eft_mag_ak_ak103_762_30")
 
 ///////////////////////////////////////      eft_mag_ak_ak12_545_30_old
@@ -422,6 +428,7 @@ ATT.ChamberSize = 1
 ATT.ClipSize = 30
 
 
+-- EFT ID: 649ec30cb013f04a700e60fb
 ARC9.LoadAttachment(ATT, "eft_mag_ak_ak12_545_30_old")
 
 
@@ -458,6 +465,7 @@ ATT.ChamberSize = 1
 ATT.ClipSize = 30
 
 
+-- EFT ID: 59fafc9386f774067d462453
 ARC9.LoadAttachment(ATT, "eft_mag_ak_ak30fde_762_30")
 
 
@@ -492,6 +500,7 @@ ATT.ChamberSize = 1
 ATT.ClipSize = 30
 
 
+-- EFT ID: 59fafc5086f7740dbe19f6c3
 ARC9.LoadAttachment(ATT, "eft_mag_ak_ak30_762_30")
 
 
@@ -531,6 +540,7 @@ ATT.HookP_TranslateSound = function(self, data) -- that is metal mag
     return data
 end
 
+-- EFT ID: 5a0060fc86f7745793204432
 ARC9.LoadAttachment(ATT, "eft_mag_ak_akms_762_30")
 
 
@@ -571,6 +581,7 @@ ATT.HookP_TranslateSound = function(self, data) -- that is metal mag
     return data
 end
 
+-- EFT ID: 5b1fd4e35acfc40018633c39
 ARC9.LoadAttachment(ATT, "eft_mag_ak_alum_762_10")
 
 
@@ -610,6 +621,7 @@ ATT.HookP_TranslateSound = function(self, data) -- that is metal mag
     return data
 end
 
+-- EFT ID: 5cbdc23eae9215001136a407
 ARC9.LoadAttachment(ATT, "eft_mag_ak_molot_762_75")
 
 
@@ -642,6 +654,7 @@ ATT.ClipSize = 30
 
 ATT.AdvancedCamoSupport = true
 
+-- EFT ID: 5aaa4194e5b5b055d06310a5
 ARC9.LoadAttachment(ATT, "eft_mag_ak_pmag_545_30")
 
 ///////////////////////////////////////      eft_mag_ak_pmag_545_30_fde
@@ -674,6 +687,7 @@ ATT.ClipSize = 30
 
 ATT.AdvancedCamoSupport = true
 
+-- EFT ID: 5aaa4194e5b5b055d06310a5
 ARC9.LoadAttachment(ATT, "eft_mag_ak_pmag_545_30_fde")
 
 
@@ -706,6 +720,7 @@ ATT.ClipSize = 30
 
 ATT.AdvancedCamoSupport = true
 
+-- EFT ID: 59d6272486f77466146386ff
 ARC9.LoadAttachment(ATT, "eft_mag_ak_pmag_762_30")
 
 ///////////////////////////////////////      eft_mag_ak_pmag_762_30_fde
@@ -739,6 +754,7 @@ ATT.ClipSize = 30
 
 ATT.AdvancedCamoSupport = true
 
+-- EFT ID: 59d6272486f77466146386ff
 ARC9.LoadAttachment(ATT, "eft_mag_ak_pmag_762_30_fde")
 
 
@@ -774,6 +790,7 @@ ATT.ChamberSize = 1
 ATT.ClipSize = 30
 
 
+-- EFT ID: 5e21a3c67e40bd02257a008a
 ARC9.LoadAttachment(ATT, "eft_mag_ak_pmag_banana_762_30")
 
 
@@ -805,6 +822,7 @@ ATT.ChamberSize = 1
 ATT.ClipSize = 73
 
 
+-- EFT ID: 5c6175362e221600133e3b94
 ARC9.LoadAttachment(ATT, "eft_mag_ak_promag_762_73")
 
 
@@ -844,6 +862,7 @@ ATT.HookP_TranslateSound = function(self, data) -- that is metal mag
     return data
 end
 
+-- EFT ID: 59e5d83b86f7745aed03d262
 ARC9.LoadAttachment(ATT, "eft_mag_ak_ribbed_762_10")
 
 
@@ -875,6 +894,7 @@ ATT.ChamberSize = 1
 ATT.ClipSize = 95
 
 
+-- EFT ID: 5bed625c0db834001c062946
 ARC9.LoadAttachment(ATT, "eft_mag_ak_rpk16_545_95")
 
 
@@ -906,6 +926,7 @@ ATT.ChamberSize = 1
 ATT.ClipSize = 30
 
 
+-- EFT ID: 5c0548ae0db834001966a3c2
 ARC9.LoadAttachment(ATT, "eft_mag_ak_slr106_556_30")
 
 
@@ -937,6 +958,7 @@ ATT.ChamberSize = 1
 ATT.ClipSize = 10
 
 
+-- EFT ID: 55d4837c4bdc2d1d4e8b456c
 ARC9.LoadAttachment(ATT, "eft_mag_ak_std_545_10")
 
 
@@ -970,6 +992,7 @@ ATT.ChamberSize = 1
 ATT.ClipSize = 30
 
 
+-- EFT ID: 6272874a6c47bd74f92e2087
 ARC9.LoadAttachment(ATT, "eft_mag_ak_ultimag_762_30")
 
 
@@ -1002,6 +1025,7 @@ ATT.ChamberSize = 1
 ATT.ClipSize = 50
 
 
+-- EFT ID: 5cfe8010d7ad1a59283b14c6
 ARC9.LoadAttachment(ATT, "eft_mag_ak_x47_762_50")
 
 
@@ -1039,6 +1063,7 @@ ATT.ClipSize = 30
 
 ATT.AdvancedCamoSupport = true
 
+-- EFT ID: 5bed61680db834001d2c45ab
 ARC9.LoadAttachment(ATT, "eft_mag_ak_ak12_545_30")
 
 ///////////////////////////////////////      eft_mag_ak_545_20
@@ -1068,35 +1093,7 @@ ATT.ActivateElements = {"545"}
 ATT.ChamberSize = 1
 ATT.ClipSize = 20
 
-ARC9.LoadAttachment(ATT, "eft_mag_ak_545_20")
-
-///////////////////////////////////////      eft_mag_ak_545_20
-
-
-ATT = {}
-
-ATT.PrintName = "AK-74 \"Saiga 545\" 5.45x39 20-round magazine"
-ATT.CompactName = "Saiga 20"
-ATT.Icon = Material("entities/eft_ak_attachments/mag/saiga20.png", "mips smooth")
-ATT.Description = [[A 20-round 5.45x39 Delta-Tech polymer magazine Saiga 545, for the AK-based civilian carbine of the same name.]]
-ATT.SortOrder = 0
-ATT.MenuCategory = "ARC9 - EFT Attachments"
-
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak74_deltatech_saiga_mk_545_20.mdl"
-ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak74_deltatech_saiga_mk_545_20.mdl"
-
-ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
-
-ATT.Category = {
-    "eft_ak_545_mag",
-}
-
-ATT.ActivateElements = {"545"}
-
-ATT.ChamberSize = 1
-ATT.ClipSize = 20
-
+-- EFT ID: 64b9e265c94d0d15c5027e35
 ARC9.LoadAttachment(ATT, "eft_mag_ak_545_20")
 
 ///////////////////////////////////////      eft_mag_ak_pmag_762_20
@@ -1126,6 +1123,7 @@ ATT.ActivateElements = {"762"}
 ATT.ChamberSize = 1
 ATT.ClipSize = 20
 
+-- EFT ID: 64b9cf0ac12b9c38db26923a
 ARC9.LoadAttachment(ATT, "eft_mag_ak_pmag_762_20")
 
 
@@ -1158,4 +1156,5 @@ ATT.ChamberSize = 1
 ATT.ClipSize = 45
 
 
+-- EFT ID: 6764139c44b3c96e7b0e2f7b
 ARC9.LoadAttachment(ATT, "eft_mag_ak_molot_556_45")

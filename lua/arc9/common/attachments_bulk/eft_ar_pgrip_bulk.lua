@@ -32,6 +32,7 @@ ATT.Category = "eft_ar15_pgrip"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 
+-- EFT ID: 6113c3586c780c1e710c90bc
 ARC9.LoadAttachment(ATT, "eft_ar_pgrip_f1s1")
 
 
@@ -57,6 +58,7 @@ ATT.Category = "eft_ar15_pgrip"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 
+-- EFT ID: 6113cce3d92c473c770200c7
 ARC9.LoadAttachment(ATT, "eft_ar_pgrip_f1s2")
 
 
@@ -82,6 +84,7 @@ ATT.Category = "eft_ar15_pgrip"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 
+-- EFT ID: 6113cc78d3a39d50044c065a
 ARC9.LoadAttachment(ATT, "eft_ar_pgrip_f1s2pc")
 
 
@@ -108,6 +111,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.AdvancedCamoSupport = true
 
+-- EFT ID: 59db3a1d86f77429e05b4e92
 ARC9.LoadAttachment(ATT, "eft_ar_pgrip_grals")
 
 
@@ -133,6 +137,7 @@ ATT.Category = "eft_ar15_pgrip"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 
+-- EFT ID: 615d8faecabb9b7ad90f4d5d
 ARC9.LoadAttachment(ATT, "eft_ar_pgrip_hexgrip")
 
 
@@ -158,6 +163,7 @@ ATT.Category = "eft_ar15_pgrip_m4"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 
+-- EFT ID: 5cc9bcaed7f00c011c04e179
 ARC9.LoadAttachment(ATT, "eft_ar_pgrip_hg15")
 
 
@@ -183,6 +189,7 @@ ATT.Category = "eft_ar15_pgrip"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 
+-- EFT ID: 5bb20e18d4351e00320205d5
 ARC9.LoadAttachment(ATT, "eft_ar_pgrip_hkbg")
 
 
@@ -209,6 +216,7 @@ ATT.Category = "eft_ar15_pgrip_m4"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 
+-- EFT ID: 5c6d7b3d2e221600114c9b7d
 ARC9.LoadAttachment(ATT, "eft_ar_pgrip_hkv2")
 
 
@@ -236,6 +244,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.AdvancedCamoSupport = true
 
+-- EFT ID: 5fbcbd6c187fea44d52eda14
 ARC9.LoadAttachment(ATT, "eft_ar_pgrip_mcx")
 
 
@@ -265,6 +274,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.AdvancedCamoSupport = true
 
+-- EFT ID: 55802f5d4bdc2dac148b458f
 ARC9.LoadAttachment(ATT, "eft_ar_pgrip_moe")
 
 
@@ -292,6 +302,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.AdvancedCamoSupport = true
 
+-- EFT ID: 5d15cf3bd7ad1a67e71518b2
 ARC9.LoadAttachment(ATT, "eft_ar_pgrip_moefde")
 
 
@@ -318,6 +329,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.AdvancedCamoSupport = true
 
+-- EFT ID: 5d025cc1d7ad1a53845279ef
 ARC9.LoadAttachment(ATT, "eft_ar_pgrip_psg1")
 
 
@@ -343,6 +355,7 @@ ATT.Category = "eft_ar15_pgrip_m4"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 
+-- EFT ID: 59db3acc86f7742a2c4ab912
 ARC9.LoadAttachment(ATT, "eft_ar_pgrip_stark")
 
 
@@ -369,6 +382,7 @@ ATT.Category = "eft_ar15_pgrip_m4"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 
+-- EFT ID: 59db3b0886f77429d72fb895
 ARC9.LoadAttachment(ATT, "eft_ar_pgrip_starkfde")
 
 
@@ -394,6 +408,7 @@ ATT.Category = "eft_ar15_pgrip"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 
+-- EFT ID: 5b07db875acfc40dc528a5f6
 ARC9.LoadAttachment(ATT, "eft_ar_pgrip_tdskelet")
 
 
@@ -419,6 +434,7 @@ ATT.Category = "eft_ar15_pgrip"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 
+-- EFT ID: 63f5feead259b42f0b4d6d0f
 ARC9.LoadAttachment(ATT, "eft_ar_pgrip_orion")
 
 ///////////////////////////////////////      eft_ar_pgrip_sig
@@ -466,6 +482,7 @@ ATT.Category = "eft_ar15_pgrip_m4"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 
+-- EFT ID: 68a63d4f22b1e0bd360afe6a
 ARC9.LoadAttachment(ATT, "eft_ar_pgrip_a1")
 
 ///////////////////////////////////////      eft_ar_pgrip_spr
@@ -488,6 +505,7 @@ ATT.SortOrder = 0
 ATT.Category = "eft_ar15_pgrip_m4"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+-- EFT ID: 68caac14f42a4476cf0be2aa
 ARC9.LoadAttachment(ATT, "eft_ar_pgrip_spr")
 
 
@@ -513,6 +531,7 @@ ATT.Category = "eft_ar15_pgrip_m4"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 
+-- EFT ID: 68c16fcffc90c174e50de1ae
 ARC9.LoadAttachment(ATT, "eft_ar_pgrip_dlg138")
 
 ///////////////////////////////////////      eft_ar_pgrip_dlg138_fde
@@ -537,4 +556,5 @@ ATT.SortOrder = 0
 ATT.Category = "eft_ar15_pgrip_m4"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+-- EFT ID: 68c16fe183e2d814b0093f7c
 ARC9.LoadAttachment(ATT, "eft_ar_pgrip_dlg138_fde")

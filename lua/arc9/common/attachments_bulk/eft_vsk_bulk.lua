@@ -27,6 +27,7 @@ ATT.DropMagazineAmount = 1
 -- ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_vsk_20.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_vsk94.mdl"
 
+-- EFT ID: 6450ec2e7da7133e5a09ca96
 ARC9.LoadAttachment(ATT, "eft_vsk_mag_20")
 
 
@@ -52,6 +53,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_vsk_stock"}
 
+-- EFT ID: 6452519e3d52156624001fd5
 ARC9.LoadAttachment(ATT, "eft_vsk_stockk")
 
 ///////////////////////////////////////      eft_vsk_top_stock
@@ -87,6 +89,7 @@ ATT.ToggleStats = {
     },
 }
 
+-- EFT ID: 6451167ad4928d46d30be3fd
 ARC9.LoadAttachment(ATT, "eft_vsk_top_stock")
 
 
@@ -109,6 +112,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_vsk_hg"}
 
+-- EFT ID: 644675573d52156624001fc9
 ARC9.LoadAttachment(ATT, "eft_vsk_hg_9a")
 
 ///////////////////////////////////////      eft_vsk_hg_vsk
@@ -130,6 +134,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_vsk_hg"}
 
+-- EFT ID: 6448f2f6d4928d46d30be3f6
 ARC9.LoadAttachment(ATT, "eft_vsk_hg_vsk")
 
 ///////////////////////////////////////      eft_vsk_grip_std
@@ -148,6 +153,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_9a_grip"}
 
+-- EFT ID: 6450f21a3d52156624001fcf
 ARC9.LoadAttachment(ATT, "eft_vsk_grip_std")
 
 ///////////////////////////////////////      eft_vsk_retainer
@@ -169,6 +175,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_vsk_muzzle"}
 
+-- EFT ID: 64527a263d52156624001fd7
 ARC9.LoadAttachment(ATT, "eft_vsk_retainer")
 
 ///////////////////////////////////////      eft_vsk_supp
@@ -210,6 +217,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 64527a3a7da7133e5a09ca99
 ARC9.LoadAttachment(ATT, "eft_vsk_supp")
 
 
@@ -252,6 +260,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 645123013d52156624001fd1
 ARC9.LoadAttachment(ATT, "eft_vsk_brl")
 
 ///////////////////////////////////////      eft_vsk_brl9
@@ -293,4 +302,5 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 645122f6d4928d46d30be3ff
 ARC9.LoadAttachment(ATT, "eft_vsk_brl9")

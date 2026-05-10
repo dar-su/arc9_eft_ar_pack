@@ -17,7 +17,6 @@ ATT.Category = {"eft_mount_dovetail"}
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -3
-ATT.CustomCons = { Ergonomics = "-3" }
 ATT.ModelOffset = Vector(-0.1, 0, 0)
 
 
@@ -43,6 +42,7 @@ ATT.Attachments = {
 ATT.ModelAngleOffset = Angle(0, 90, 0)
 
 
+-- EFT ID: 591ee00d86f774592f7b841e
 ARC9.LoadAttachment(ATT, "eft_mount_dovetail_aksion_kobra")
 
 
@@ -81,6 +81,7 @@ ATT.Attachments = {
 ATT.ModelAngleOffset = Angle(0, 90, 0)
 
 
+-- EFT ID: 5c61a40d2e2216001403158d
 ARC9.LoadAttachment(ATT, "eft_mount_dovetail_b13")
 
 
@@ -118,6 +119,7 @@ ATT.Attachments = {
 ATT.ModelAngleOffset = Angle(0, 90, 0)
 
 
+-- EFT ID: 5c90c3622e221601da359851
 ARC9.LoadAttachment(ATT, "eft_mount_dovetail_b13v")
 
 
@@ -155,6 +157,7 @@ ATT.Attachments = {
 ATT.ModelAngleOffset = Angle(0, 90, 0)
 
 
+-- EFT ID: 5d0a29ead7ad1a0026013f27
 ARC9.LoadAttachment(ATT, "eft_mount_dovetail_kmz_1p59")
 
 
@@ -193,6 +196,7 @@ ATT.Attachments = {
 ATT.ModelAngleOffset = Angle(0, 90, 0)
 
 
+-- EFT ID: 618a75c9a3884f56c957ca1b
 ARC9.LoadAttachment(ATT, "eft_mount_dovetail_npz")
 
 
@@ -215,7 +219,6 @@ ATT.ModelOffset = Vector(-0.06, 0, 0)
 ATT.ModelAngleOffset = Angle(0, 90, 0)
 
 ATT.EFTErgoAdd = -3
-ATT.CustomCons = { Ergonomics = "-3" }
 
 ATT.Attachments = {
     {
@@ -230,6 +233,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 57acb6222459771ec34b5cb0
 ARC9.LoadAttachment(ATT, "eft_mount_dovetail_pilad")
 
 
@@ -267,6 +271,7 @@ ATT.Attachments = {
 ATT.ModelAngleOffset = Angle(0, 90, 0)
 
 
+-- EFT ID: 638db77630c4240f9e06f8b6
 ARC9.LoadAttachment(ATT, "eft_mount_dovetail_sagbit")
 
 
@@ -305,6 +310,7 @@ ATT.Attachments = {
 
 ATT.ModelAngleOffset = Angle(0, 90, 0)
 
+-- EFT ID: 63d114019e35b334d82302f7
 ARC9.LoadAttachment(ATT, "eft_mount_dovetail_sag")
 
 
@@ -345,4 +351,5 @@ ATT.Attachments = {
 
 ATT.ModelAngleOffset = Angle(0, 90, 0)
 
+-- EFT ID: 65f1b1176dbd6c5ba2082eed
 ARC9.LoadAttachment(ATT, "eft_mount_dovetail_rsr")

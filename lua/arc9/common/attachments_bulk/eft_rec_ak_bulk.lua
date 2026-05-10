@@ -21,6 +21,7 @@ ATT.Category = {"eft_ak74_dustcover"}
 ATT.EFTErgoAdd = 5
 ATT.CustomPros = { Ergonomics = "+5" }
 
+-- EFT ID: 5649af094bdc2df8348b4586
 ARC9.LoadAttachment(ATT, "eft_rec_ak_ak74")
 
 
@@ -44,6 +45,7 @@ ATT.CustomPros = { Ergonomics = "+5" }
 ATT.Category = {"eft_ak74_dustcover"}
 
 
+-- EFT ID: 5ac50da15acfc4001718d287
 ARC9.LoadAttachment(ATT, "eft_rec_ak_ak74m")
 
 
@@ -67,6 +69,7 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_dc_akm_std.mdl"
 ATT.Category = {"eft_ak_dustcover"}
 
 
+-- EFT ID: 59d6507c86f7741b846413a2
 ARC9.LoadAttachment(ATT, "eft_rec_ak_akm")
 
 
@@ -90,6 +93,7 @@ ATT.EFTErgoAdd = 5
 ATT.CustomPros = { Ergonomics = "+5" }
 
 
+-- EFT ID: 59e6449086f7746c9f75e822
 ARC9.LoadAttachment(ATT, "eft_rec_ak_akm_molot")
 
 
@@ -135,6 +139,7 @@ ATT.Attachments = {
 
 ATT.AdvancedCamoSupport = true
 
+-- EFT ID: 5649af884bdc2d1b2b8b4589
 ARC9.LoadAttachment(ATT, "eft_rec_ak_b33")
 
 
@@ -175,6 +180,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5d2c76ed48f03532f2136169
 ARC9.LoadAttachment(ATT, "eft_rec_ak_bastion")
 
 
@@ -211,6 +217,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5d2c772c48f0355d95672c25
 ARC9.LoadAttachment(ATT, "eft_rec_ak_dogleg")
 
 
@@ -248,6 +255,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5d2c770c48f0354b4a07c100
 ARC9.LoadAttachment(ATT, "eft_rec_ak_fab_pdc")
 
 
@@ -272,6 +280,7 @@ ATT.HeatCapacityMult = 0.998
 ATT.Category = {"eft_ak_dustcover", "eft_ak74_dustcover"}
 
 
+-- EFT ID: 628a665a86cbd9750d2ff5e5
 ARC9.LoadAttachment(ATT, "eft_rec_ak_rd704")
 
 
@@ -293,6 +302,7 @@ ATT.CustomPros = { Ergonomics = "+1" }
 ATT.ActivateElements = {"nmount"}
 ATT.Category = {"eft_ak74_conv"}
 
+-- EFT ID: 5c110624d174af029e69734c
 ARC9.LoadAttachment(ATT, "eft_akn")
 
 
@@ -316,6 +326,7 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/charge_ak_css.mdl"
 ATT.Category = {"eft_ak_charge"}
 
 
+-- EFT ID: 6130ca3fd92c473c77020dbd
 ARC9.LoadAttachment(ATT, "eft_charge_ak_css")
 
 
@@ -342,5 +353,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/charge_ak_zenit_rp1.mdl"
 ATT.Category = {"eft_ak_charge"}
 
 
+-- EFT ID: 5648ac824bdc2ded0b8b457d
 ARC9.LoadAttachment(ATT, "eft_charge_ak_rp1")
 

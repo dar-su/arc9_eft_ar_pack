@@ -28,6 +28,7 @@ ATT.DropMagazineAmount = 1
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_val2_10.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_val2_10.mdl"
 
+-- EFT ID: 57838f0b2459774a256959b2
 ARC9.LoadAttachment(ATT, "eft_val_mag_10")
 
 ///////////////////////////////////////      eft_val_mag_20
@@ -56,6 +57,7 @@ ATT.DropMagazineAmount = 1
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_val2_20.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_val2_20.mdl"
 
+-- EFT ID: 57838f9f2459774a150289a0
 ARC9.LoadAttachment(ATT, "eft_val_mag_20")
 
 ///////////////////////////////////////      eft_val_mag_30
@@ -84,6 +86,7 @@ ATT.DropMagazineAmount = 1
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_val2_30sr3.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_val2_30sr3.mdl"
 
+-- EFT ID: 5a9e81fba2750c00164f6b11
 ARC9.LoadAttachment(ATT, "eft_val_mag_30")
 
 ///////////////////////////////////////      eft_val_mag_30s
@@ -112,6 +115,7 @@ ATT.DropMagazineAmount = 1
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_val2_30.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_val2_30.mdl"
 
+-- EFT ID: 65118f531b90b4fc77015083
 ARC9.LoadAttachment(ATT, "eft_val_mag_30s")
 
 
@@ -138,6 +142,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_vss_stock"}
 
+-- EFT ID: 578395e82459774a0e553c7b
 ARC9.LoadAttachment(ATT, "eft_val_vss_stock")
 
 ///////////////////////////////////////      eft_val_stockk
@@ -161,6 +166,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_val_stock"}
 
+-- EFT ID: 57c450252459772d28133253
 ARC9.LoadAttachment(ATT, "eft_val_stockk")
 
 ///////////////////////////////////////      eft_val_stock_nb
@@ -190,6 +196,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 6878ccf4181ac8a5b5077236
 ARC9.LoadAttachment(ATT, "eft_val_stock_nb")
 
 -- ///////////////////////////////////////      eft_val_dc_vss
@@ -209,6 +216,7 @@ ARC9.LoadAttachment(ATT, "eft_val_stock_nb")
 
 -- ATT.Category = {"eft_val_dc"}
 
+-- EFT ID: 578395402459774a256959b5
 -- ARC9.LoadAttachment(ATT, "eft_val_dc_vss")
 
 ///////////////////////////////////////      eft_val_dc_val
@@ -228,6 +236,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_val_dc"}
 
+-- EFT ID: 57c44f4f2459772d2c627113
 ARC9.LoadAttachment(ATT, "eft_val_dc_val")
 
 -- ///////////////////////////////////////      eft_val_rs_vss
@@ -244,6 +253,7 @@ ARC9.LoadAttachment(ATT, "eft_val_dc_val")
 
 -- ATT.Category = {"eft_val_rs"}
 
+-- EFT ID: 57838e1b2459774a256959b1
 -- ARC9.LoadAttachment(ATT, "eft_val_rs_vss")
 
 ///////////////////////////////////////      eft_val_rs_val
@@ -260,6 +270,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_val_rs"}
 
+-- EFT ID: 57c44e7b2459772d28133248
 ARC9.LoadAttachment(ATT, "eft_val_rs_val")
 
 ///////////////////////////////////////      eft_val_grip_std
@@ -281,6 +292,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_val_grip"}
 
+-- EFT ID: 57c44fa82459772d2d75e415
 ARC9.LoadAttachment(ATT, "eft_val_grip_std")
 
 ///////////////////////////////////////      eft_val_grip_black
@@ -302,6 +314,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_val_grip"}
 
+-- EFT ID: 6565b91666492762f5029c0b
 ARC9.LoadAttachment(ATT, "eft_val_grip_black")
 
 ///////////////////////////////////////      eft_val_grip_rk3
@@ -323,6 +336,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_val_grip"}
 
+-- EFT ID: 6878cc5bd0c26d57bf0aa37a
 ARC9.LoadAttachment(ATT, "eft_val_grip_rk3")
 
 ///////////////////////////////////////      eft_val_hg_std
@@ -344,6 +358,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_val_hg"}
 
+-- EFT ID: 651178336cad06c37c049eb4
 ARC9.LoadAttachment(ATT, "eft_val_hg_std")
 
 ///////////////////////////////////////      eft_val_hg_black
@@ -365,6 +380,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_val_hg"}
 
+-- EFT ID: 6565bb7eb4b12a56eb04b084
 ARC9.LoadAttachment(ATT, "eft_val_hg_black")
 
 ///////////////////////////////////////      eft_val_grip_rotor
@@ -398,6 +414,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5a69a2ed8dc32e000d46d1f1
 ARC9.LoadAttachment(ATT, "eft_val_grip_rotor")
 
 
@@ -445,6 +462,7 @@ ARC9.LoadAttachment(ATT, "eft_val_grip_rotor")
 --     },
 -- }
 
+-- EFT ID: 57838c962459774a1651ec63
 -- ARC9.LoadAttachment(ATT, "eft_val_supp_vss")
 
 ///////////////////////////////////////      eft_val_supp_val
@@ -490,6 +508,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 57c44dd02459772d2e0ae249
 ARC9.LoadAttachment(ATT, "eft_val_supp_val")
 
 ///////////////////////////////////////      eft_val_mount_6p
@@ -545,6 +564,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 59eb7ebe86f7740b373438ce
 ARC9.LoadAttachment(ATT, "eft_val_mount_6p")
 
 ///////////////////////////////////////      eft_val_mount_b3c
@@ -586,6 +606,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5a9fc7e6a2750c0032157184
 ARC9.LoadAttachment(ATT, "eft_val_mount_b3c")
 
 ///////////////////////////////////////      eft_val_mount_b3
@@ -618,6 +639,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 57a3459f245977764a01f703
 ARC9.LoadAttachment(ATT, "eft_val_mount_b3")
 
 
@@ -661,6 +683,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 65144ff50e00edc79406836f
 ARC9.LoadAttachment(ATT, "eft_sr3_supp")
 
 
@@ -703,6 +726,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 6565c3ab977bcc2dbb01c2e7
 ARC9.LoadAttachment(ATT, "eft_sr3_hg_std")
 
 ///////////////////////////////////////      eft_sr3_hg_black
@@ -744,6 +768,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 65144f546ddb773afa0e35e1
 ARC9.LoadAttachment(ATT, "eft_sr3_hg_black")
 
 ///////////////////////////////////////      eft_sr3_hg_rail
@@ -802,6 +827,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 6568a6bf2c5fb7afc70bc424
 ARC9.LoadAttachment(ATT, "eft_sr3_hg_rail")
 
 ///////////////////////////////////////      eft_sr3_fg_std
@@ -830,6 +856,7 @@ ATT.LHIK = true
 ATT.ModelOffset = Vector(0.1, 0, 1.5)
 ATT.ModelAngleOffset = Angle(0, 90, 0)
 
+-- EFT ID: 6565c0c2ff7eb7070409084c
 ARC9.LoadAttachment(ATT, "eft_sr3_fg_std")
 
 ///////////////////////////////////////      eft_sr3_fg_black
@@ -858,6 +885,7 @@ ATT.LHIK = true
 ATT.ModelOffset = Vector(0.1, 0, 1.5)
 ATT.ModelAngleOffset = Angle(0, 90, 0)
 
+-- EFT ID: 65329ebcc0d50d0c9204ace1
 ARC9.LoadAttachment(ATT, "eft_sr3_fg_black")
 
 
@@ -902,6 +930,7 @@ ATT.Attachments = {
 ATT.ModelOffset = Vector(0, -1.1, 0)
 ATT.ModelAngleOffset = Angle(0, 90, 0)
 
+-- EFT ID: 67069c8cee8138ed2f05ad34
 ARC9.LoadAttachment(ATT, "eft_mount_dovetail_sr3mp")
 
 ///////////////////////////////////////      eft_mount_dovetail_sr3mpp
@@ -945,6 +974,7 @@ ATT.Attachments = {
 ATT.ModelOffset = Vector(0, -1.1, 0)
 ATT.ModelAngleOffset = Angle(0, 90, 0)
 
+-- EFT ID: 67069cbbb29a2cd33803338c
 ARC9.LoadAttachment(ATT, "eft_mount_dovetail_sr3mpp")
 
 
@@ -981,6 +1011,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 67069cf1af4890b09f0006e8
 ARC9.LoadAttachment(ATT, "eft_sr3_mount_hg")
 
 ///////////////////////////////////////      eft_sr3_mount_hgp
@@ -1016,6 +1047,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 67069d02ad91f3a63c0bc2b0
 ARC9.LoadAttachment(ATT, "eft_sr3_mount_hgp")
 
 
@@ -1111,6 +1143,7 @@ ATT.DamageLookupTable = {
 ATT.Category = {"eft_ammo_9x39"}
 
 
+-- EFT ID: 6576f96220d53a5b8f3e395e
 ARC9.LoadAttachment(ATT, "eft_ammo_9x39_fmj")
 
 ///////////////////////////////////////      eft_ammo_9x39_sp6
@@ -1189,6 +1222,7 @@ ATT.DamageLookupTable = {
 ATT.Category = {"eft_ammo_9x39"}
 
 
+-- EFT ID: 57a0e5022459774d1673f889
 ARC9.LoadAttachment(ATT, "eft_ammo_9x39_sp6")
 
 ///////////////////////////////////////      eft_ammo_9x39_bp
@@ -1267,6 +1301,7 @@ ATT.DamageLookupTable = {
 ATT.Category = {"eft_ammo_9x39"}
 
 
+-- EFT ID: 5c0d688c86f77413ae3407b2
 ARC9.LoadAttachment(ATT, "eft_ammo_9x39_bp")
 
 ///////////////////////////////////////      eft_ammo_9x39_spp
@@ -1345,6 +1380,7 @@ ATT.DamageLookupTable = {
 ATT.Category = {"eft_ammo_9x39"}
 
 
+-- EFT ID: 5c0d668f86f7747ccb7f13b2
 ARC9.LoadAttachment(ATT, "eft_ammo_9x39_spp")
 
 ///////////////////////////////////////      eft_ammo_9x39_pab9
@@ -1423,6 +1459,7 @@ ATT.DamageLookupTable = {
 ATT.Category = {"eft_ammo_9x39"}
 
 
+-- EFT ID: 61962d879bb3d20b0946d385
 ARC9.LoadAttachment(ATT, "eft_ammo_9x39_pab9")
 
 ///////////////////////////////////////      eft_ammo_9x39_sp5
@@ -1501,6 +1538,7 @@ ATT.DamageLookupTable = {
 ATT.Category = {"eft_ammo_9x39"}
 
 
+-- EFT ID: 57a0dfb82459774d3078b56c
 ARC9.LoadAttachment(ATT, "eft_ammo_9x39_sp5")
 
 
@@ -1605,6 +1643,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 687128c4505fed5f370b1625
 ARC9.LoadAttachment(ATT, "eft_valmod4_hgg")
 
 ///////////////////////////////////////      eft_valmod4_magwell
@@ -1623,6 +1662,7 @@ ATT.Category = {"eft_valmod4_magw"}
 ATT.EFTErgoAdd = 4
 ATT.CustomPros = { Ergonomics = "+4" }
 
+-- EFT ID: 68712a7d505fed5f370b1633
 ARC9.LoadAttachment(ATT, "eft_valmod4_magwell")
 
 ///////////////////////////////////////      eft_valmod4_siderail
@@ -1650,6 +1690,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 68712b57a1be89347f0d8179
 ARC9.LoadAttachment(ATT, "eft_valmod4_siderail")
 
 
@@ -1689,6 +1730,7 @@ ATT.Attachments = {
 
 ATT.ActivateElements = {"railedcover"}
 
+-- EFT ID: 68712bd4251b8d4c6c04ec19
 ARC9.LoadAttachment(ATT, "eft_valmod4_topcover")
 
 ///////////////////////////////////////      eft_valmod4_suppressor
@@ -1724,6 +1766,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 68712ce2251b8d4c6c04ec1f
 ARC9.LoadAttachment(ATT, "eft_valmod4_suppressor")
 
 ///////////////////////////////////////      eft_valmod4_supcap
@@ -1746,6 +1789,7 @@ ATT.VisualRecoilMult = 0.98
 
 ATT.HasBarrel = true
 
+-- EFT ID: 68712cafa1be89347f0d817c
 ARC9.LoadAttachment(ATT, "eft_valmod4_supcap")
 
 ///////////////////////////////////////      eft_valmod4_brake
@@ -1768,6 +1812,7 @@ ATT.VisualRecoilMult = 0.94
 
 ATT.HasBarrel = true
 
+-- EFT ID: 6878c143254146e6fd043756
 ARC9.LoadAttachment(ATT, "eft_valmod4_brake")
 
 ///////////////////////////////////////      eft_valmod4_jailbrake
@@ -1789,4 +1834,5 @@ ATT.RecoilMult = 0.96
 ATT.VisualRecoilMult = 0.96
 ATT.SpreadMult = 0.97
 
+-- EFT ID: 6878c1c723c3173d7f06d926
 ARC9.LoadAttachment(ATT, "eft_valmod4_jailbrake")

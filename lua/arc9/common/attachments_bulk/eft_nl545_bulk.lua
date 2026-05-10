@@ -23,6 +23,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_nl545_gas"}
 
+-- EFT ID: 68c2a99647eb77c6310b170f
 ARC9.LoadAttachment(ATT, "eft_nl545_gass")
 
 
@@ -46,6 +47,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_nl545_charge"}
 
+-- EFT ID: 68c16f15efac701f800dfd36
 ARC9.LoadAttachment(ATT, "eft_nl545_charge_std")
 
 
@@ -91,6 +93,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 68c294800f5ebd68290d6c20
 ARC9.LoadAttachment(ATT, "eft_nl545_barrel_115")
 
 ///////////////////////////////////////      eft_nl545_barrel_165
@@ -135,6 +138,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 68c294750f5ebd68290d6c1c
 ARC9.LoadAttachment(ATT, "eft_nl545_barrel_165")
 
 ///////////////////////////////////////      eft_nl545_barrel_163_di
@@ -180,6 +184,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 68c16edf83e2d814b0093f76
 ARC9.LoadAttachment(ATT, "eft_nl545_barrel_163_di")
 
 
@@ -234,6 +239,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 68c294360f5ebd68290d6c16
 ARC9.LoadAttachment(ATT, "eft_nl545_upperr_gp")
 
 ///////////////////////////////////////      eft_nl545_upperr_di
@@ -289,6 +295,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 68c16e84fc90c174e50de1a8
 ARC9.LoadAttachment(ATT, "eft_nl545_upperr_di")
 
 ///////////////////////////////////////      eft_hg_hk416_cgnl
@@ -360,6 +367,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 68c2989dc9061bb2f50478f6
 ARC9.LoadAttachment(ATT, "eft_hg_hk416_cgnl")
 
 ///////////////////////////////////////      eft_hg_hk416_cgnl_blk
@@ -432,6 +440,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 68c2989dc9061bb2f50478f6
 ARC9.LoadAttachment(ATT, "eft_hg_hk416_cgnl_blk")
 
 ///////////////////////////////////////      eft_nl545_black
@@ -461,5 +470,5 @@ ATT.Attachments = {
         Category = {"eft_custom_slot", "eft_custom_nl545"},
     },
 }
-
+-- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_nl545_black")

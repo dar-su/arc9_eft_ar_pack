@@ -33,6 +33,7 @@ ATT.VisualRecoilMult = 0.72
 
 ATT.HasGrip = true
 
+-- EFT ID: 5c0e2ff6d174af02a1659d4a
 ARC9.LoadAttachment(ATT, "eft_ar_stock_adar")
 
 
@@ -63,6 +64,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.AdvancedCamoSupport = true
 
+-- EFT ID: 5beec8c20db834001d2c465c
 ARC9.LoadAttachment(ATT, "eft_ar_stock_ak12")
 
 
@@ -92,6 +94,7 @@ ATT.Category = "eft_ar_buttpad"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 
+-- EFT ID: 58d2912286f7744e27117493
 ARC9.LoadAttachment(ATT, "eft_ar_stock_buttpad")
 
 
@@ -122,6 +125,7 @@ ATT.Folder = "Magpul"
 
 ATT.AdvancedCamoSupport = true
 
+-- EFT ID: 5d135e83d7ad1a21b83f42d8
 ARC9.LoadAttachment(ATT, "eft_ar_stock_ctr")
 
 
@@ -153,6 +157,7 @@ ATT.Folder = "Magpul"
 
 ATT.AdvancedCamoSupport = true
 
+-- EFT ID: 5d135ecbd7ad1a21c176542e
 ARC9.LoadAttachment(ATT, "eft_ar_stock_ctrf")
 
 
@@ -181,6 +186,7 @@ ATT.Category = "eft_ar_stock"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 
+-- EFT ID: 5fbbaa86f9986c4cff3fe5f6
 ARC9.LoadAttachment(ATT, "eft_ar_stock_ds150")
 
 
@@ -210,6 +216,7 @@ ATT.Category = "eft_ar_stock"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 
+-- EFT ID: 5fce16961f152d4312622bc9
 ARC9.LoadAttachment(ATT, "eft_ar_stock_ds150f")
 
 
@@ -238,6 +245,7 @@ ATT.Category = "eft_ar_stock"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 
+-- EFT ID: 5c87a07c2e2216001219d4a2
 ARC9.LoadAttachment(ATT, "eft_ar_stock_e1")
 
 
@@ -266,6 +274,7 @@ ATT.Category = "eft_ar_stock"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 
+-- EFT ID: 5b39f8db5acfc40016387a1b
 ARC9.LoadAttachment(ATT, "eft_ar_stock_emod")
 
 
@@ -297,6 +306,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Folder = "FAB"
 
 
+-- EFT ID: 5bfe86df0db834001b734685
 ARC9.LoadAttachment(ATT, "eft_ar_stock_glr16s")
 
 
@@ -326,6 +336,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Folder = "FAB"
 
 
+-- EFT ID: 5a9eb32da2750c00171b3f9c
 ARC9.LoadAttachment(ATT, "eft_ar_stock_glshock")
 
 
@@ -354,6 +365,7 @@ ATT.CustomPros = { Ergonomics = "+20" }
 ATT.RecoilMult = 0.67
 ATT.VisualRecoilMult = 0.67
 
+-- EFT ID: 5a33e75ac4a2826c6e06d759
 ARC9.LoadAttachment(ATT, "eft_ar_stock_heracqr")
 
 
@@ -394,6 +406,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 56eabf3bd2720b75698b4569
 ARC9.LoadAttachment(ATT, "eft_ar_stock_magpulmoe")
 
 
@@ -434,6 +447,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 58d2946386f774496974c37e
 ARC9.LoadAttachment(ATT, "eft_ar_stock_magpulmoe_fde")
 
 
@@ -474,6 +488,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 58d2946c86f7744e271174b5
 ARC9.LoadAttachment(ATT, "eft_ar_stock_magpulmoe_fg")
 
 
@@ -514,6 +529,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 58d2947686f774485c6a1ee5
 ARC9.LoadAttachment(ATT, "eft_ar_stock_magpulmoe_od")
 
 
@@ -554,6 +570,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 58d2947e86f77447aa070d53
 ARC9.LoadAttachment(ATT, "eft_ar_stock_magpulmoe_sg")
 
 
@@ -586,6 +603,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Folder = "Magpul"
 
 
+-- EFT ID: 5d44069ca4b9361ebd26fc37
 ARC9.LoadAttachment(ATT, "eft_ar_stock_prsgen3")
 
 
@@ -616,6 +634,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Folder = "Magpul"
 
 
+-- EFT ID: 5d4406a8a4b9361e4f6eb8b7
 ARC9.LoadAttachment(ATT, "eft_ar_stock_prsgen3g")
 
 
@@ -645,6 +664,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.AdvancedCamoSupport = true
 
+-- EFT ID: 606587d11246154cad35d635
 ARC9.LoadAttachment(ATT, "eft_ar_stock_ripstop")
 
 
@@ -673,6 +693,7 @@ ATT.Category = "eft_ar_stock"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 
+-- EFT ID: 628a85ee6b1d481ff772e9d5
 ARC9.LoadAttachment(ATT, "eft_ar_stock_sba3")
 
 
@@ -702,6 +723,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.AdvancedCamoSupport = true
 
+-- EFT ID: 5bb20e70d4351e0035629f8f
 ARC9.LoadAttachment(ATT, "eft_ar_stock_slim")
 
 
@@ -732,6 +754,7 @@ ATT.Category = "eft_ar_stock"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 
+-- EFT ID: 5c793fde2e221601da358614
 ARC9.LoadAttachment(ATT, "eft_ar_stock_vipermod1")
 
 ///////////////////////////////////////      eft_ar_stock_magpul_slk
@@ -761,6 +784,7 @@ ATT.Folder = "Magpul"
 ATT.ModelOffset = Vector(-0.5, 0, 0)
 
 
+-- EFT ID: 6529370c405a5f51dd023db8
 ARC9.LoadAttachment(ATT, "eft_ar_stock_magpul_slk")
 
 
@@ -801,6 +825,7 @@ ATT.Attachments = {
 
 ATT.AdvancedCamoSupport = true
 
+-- EFT ID: 6516e91f609aaf354b34b3e2
 ARC9.LoadAttachment(ATT, "eft_ar_stock_ddecb")
 
 ///////////////////////////////////////      eft_ar_stock_ddecb_f
@@ -840,6 +865,7 @@ ATT.Attachments = {
 
 ATT.AdvancedCamoSupport = true
 
+-- EFT ID: 6516e971a3d4c6497930b450
 ARC9.LoadAttachment(ATT, "eft_ar_stock_ddecb_f")
 
 ///////////////////////////////////////      eft_dd_buttpad_14
@@ -866,6 +892,7 @@ ATT.Category = "eft_dd_buttpad"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 
+-- EFT ID: 6516e9bc5901745209404287
 ARC9.LoadAttachment(ATT, "eft_dd_buttpad_14")
 
 ///////////////////////////////////////      eft_dd_buttpad_20
@@ -892,6 +919,7 @@ ATT.Category = "eft_dd_buttpad"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 
+-- EFT ID: 6516e9d7e239bd0c487e3766
 ARC9.LoadAttachment(ATT, "eft_dd_buttpad_20")
 
 
@@ -932,6 +960,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 68a63c7322b1e0bd360afe65
 ARC9.LoadAttachment(ATT, "eft_ar_stock_n1")
 
 ///////////////////////////////////////      eft_ar_stock_n1_buttpad
@@ -957,6 +986,7 @@ ATT.SortOrder = 0
 ATT.Category = "eft_n1_buttpad"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+-- EFT ID: 68a63c998e1fe612970728fe
 ARC9.LoadAttachment(ATT, "eft_ar_stock_n1_buttpad")
 
 ///////////////////////////////////////      eft_ar_stock_magpul_acs
@@ -985,6 +1015,7 @@ ATT.Folder = "Magpul"
 ATT.ModelOffset = Vector(-0.5, 0, 0)
 
 
+-- EFT ID: 68bb25270e48a3afd7071216
 ARC9.LoadAttachment(ATT, "eft_ar_stock_magpul_acs")
 
 ///////////////////////////////////////      eft_ar_stock_magpul_acs_fde
@@ -1014,6 +1045,7 @@ ATT.Folder = "Magpul"
 ATT.ModelOffset = Vector(-0.5, 0, 0)
 
 
+-- EFT ID: 68bb2a3831ee03fbc00931e6
 ARC9.LoadAttachment(ATT, "eft_ar_stock_magpul_acs_fde")
 
 ///////////////////////////////////////      eft_ar_stock_7
@@ -1039,6 +1071,7 @@ ATT.SortOrder = 0
 ATT.Category = "eft_ar_stock_a2"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+-- EFT ID: 68a63bc422b1e0bd360afe61
 ARC9.LoadAttachment(ATT, "eft_ar_stock_7")
 
 ///////////////////////////////////////      eft_ar_stock_a2
@@ -1063,4 +1096,5 @@ ATT.SortOrder = 0
 ATT.Category = "eft_ar_stock_a2"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+-- EFT ID: 68a63c1fc92ee33ffa01bf5a
 ARC9.LoadAttachment(ATT, "eft_ar_stock_a2")

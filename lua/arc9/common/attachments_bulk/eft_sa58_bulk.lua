@@ -35,6 +35,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5b099a765acfc47a8607efe3
 ARC9.LoadAttachment(ATT, "eft_sa58_barrel_208")
 
 ///////////////////////////////////////      eft_sa58_barrel_406
@@ -72,6 +73,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5b7be1125acfc4001876c0e5
 ARC9.LoadAttachment(ATT, "eft_sa58_barrel_406")
 
 ///////////////////////////////////////      eft_sa58_barrel_533
@@ -109,6 +111,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5b7be1265acfc400161d0798
 ARC9.LoadAttachment(ATT, "eft_sa58_barrel_533")
 
 
@@ -131,6 +134,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_sa58_pgrip"}
 
+-- EFT ID: 5b7d679f5acfc4001a5c4024
 ARC9.LoadAttachment(ATT, "eft_sa58_pgrip_fab")
 
 ///////////////////////////////////////      eft_sa58_pgrip_std
@@ -152,6 +156,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_sa58_pgrip"}
 
+-- EFT ID: 5b7d678a5acfc4001a5c4022
 ARC9.LoadAttachment(ATT, "eft_sa58_pgrip_std")
 
 ///////////////////////////////////////      eft_sa58_pgrip_saw
@@ -173,6 +178,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_sa58_pgrip"}
 
+-- EFT ID: 5b099b965acfc400186331e6
 ARC9.LoadAttachment(ATT, "eft_sa58_pgrip_saw")
 
 ///////////////////////////////////////      eft_sa58_rs_std
@@ -189,6 +195,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_sa58_rs"}
 
+-- EFT ID: 5b0bc22d5acfc47a8607f085
 ARC9.LoadAttachment(ATT, "eft_sa58_rs_std")
 
 ///////////////////////////////////////      eft_sa58_rec_fal
@@ -208,6 +215,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_sa58_rec"}
 
+-- EFT ID: 5b7d6c105acfc40015109a5f
 ARC9.LoadAttachment(ATT, "eft_sa58_rec_fal")
 
 ///////////////////////////////////////      eft_sa58_rec_ed
@@ -237,6 +245,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5b099bb25acfc400186331e8
 ARC9.LoadAttachment(ATT, "eft_sa58_rec_ed")
 
 ///////////////////////////////////////      eft_sa58_stock_brs
@@ -258,6 +267,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_sa58_stock"}
 
+-- EFT ID: 5b7d64555acfc4001876c8e2
 ARC9.LoadAttachment(ATT, "eft_sa58_stock_brs")
 
 ///////////////////////////////////////      eft_sa58_stock_hump
@@ -279,6 +289,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_sa58_stock"}
 
+-- EFT ID: 5b7d645e5acfc400170e2f90
 ARC9.LoadAttachment(ATT, "eft_sa58_stock_hump")
 
 ///////////////////////////////////////      eft_sa58_stock_spr
@@ -300,6 +311,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_sa58_stock"}
 
+-- EFT ID: 5b7d63de5acfc400170e2f8d
 ARC9.LoadAttachment(ATT, "eft_sa58_stock_spr")
 
 ///////////////////////////////////////      eft_sa58_stock_adap
@@ -329,6 +341,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5b099bf25acfc4001637e683
 ARC9.LoadAttachment(ATT, "eft_sa58_stock_adap")
 
 ///////////////////////////////////////      eft_sa58_stock_fold
@@ -350,6 +363,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_sa58_stock"}
 
+-- EFT ID: 5b7d63cf5acfc4001876c8df
 ARC9.LoadAttachment(ATT, "eft_sa58_stock_fold")
 
 ///////////////////////////////////////      eft_sa58_stock_magpul
@@ -371,6 +385,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_sa58_stock"}
 
+-- EFT ID: 5b7d63b75acfc400170e2f8a
 ARC9.LoadAttachment(ATT, "eft_sa58_stock_magpul")
 
 
@@ -401,6 +416,7 @@ ATT.DropMagazineAmount = 1
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_fal_ds_arms_fal_sa58_762x51_10.mdl"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_fal_ds_arms_fal_sa58_762x51_10.mdl"
 
+-- EFT ID: 5b7bef1e5acfc43d82528402
 ARC9.LoadAttachment(ATT, "eft_sa58_mag_10")
 
 
@@ -431,6 +447,7 @@ ATT.DropMagazineAmount = 1
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_fal_ds_arms_fal_sa58_762x51_30.mdl"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_fal_ds_arms_fal_sa58_762x51_30.mdl"
 
+-- EFT ID: 5b7bef5d5acfc43bca7067a3
 ARC9.LoadAttachment(ATT, "eft_sa58_mag_30")
 
 ///////////////////////////////////////      eft_sa58_mag_30l
@@ -460,6 +477,7 @@ ATT.DropMagazineAmount = 1
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_fal_sarco_fal_l1a1_orig_762x51_30.mdl"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_fal_sarco_fal_l1a1_orig_762x51_30.mdl"
 
+-- EFT ID: 5b7d37845acfc400170e2f87
 ARC9.LoadAttachment(ATT, "eft_sa58_mag_30l")
 
 ///////////////////////////////////////      eft_sa58_mag_20mmw
@@ -489,6 +507,7 @@ ATT.DropMagazineAmount = 1
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_fal_mmw_fal_sa58_762x51_20.mdl"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_fal_mmw_fal_sa58_762x51_20.mdl"
 
+-- EFT ID: 5b7c2d1d5acfc43d1028532a
 ARC9.LoadAttachment(ATT, "eft_sa58_mag_20mmw")
 
 ///////////////////////////////////////      eft_sa58_mag_50
@@ -518,6 +537,7 @@ ATT.DropMagazineAmount = 1
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_fal_x_products_x_fal_762x51_50.mdl"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_fal_x_products_x_fal_762x51_50.mdl"
 
+-- EFT ID: 5b7bef9c5acfc43d102852ec
 ARC9.LoadAttachment(ATT, "eft_sa58_mag_50")
 
 
@@ -581,6 +601,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5b7bedd75acfc43d825283f9
 ARC9.LoadAttachment(ATT, "eft_sa58_hg_casvfal")
 
 ///////////////////////////////////////      eft_sa58_hg_casvfas
@@ -636,6 +657,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5b7bee755acfc400196d5383
 ARC9.LoadAttachment(ATT, "eft_sa58_hg_casvfas")
 
 ///////////////////////////////////////      eft_sa58_hg_fal
@@ -660,6 +682,7 @@ ATT.HeatCapacityMult = 0.962
 ATT.Category = {"eft_sa58_hg"}
 ATT.ExcludeElements = {"barrel_208mm"}
 
+-- EFT ID: 5b7bed205acfc400161d08cc
 ARC9.LoadAttachment(ATT, "eft_sa58_hg_fal")
 
 ///////////////////////////////////////      eft_sa58_hg_belg
@@ -683,6 +706,7 @@ ATT.CustomPros = { Ergonomics = "+9" }
 ATT.Category = {"eft_sa58_hg"}
 ATT.ExcludeElements = {"barrel_208mm"}
 
+-- EFT ID: 5b7d671b5acfc43d82528ddd
 ARC9.LoadAttachment(ATT, "eft_sa58_hg_belg")
 
 ///////////////////////////////////////      eft_sa58_hg_quad
@@ -738,6 +762,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5b099a9d5acfc47a8607efe7
 ARC9.LoadAttachment(ATT, "eft_sa58_hg_quad")
 
 ///////////////////////////////////////      eft_sa58_hg_quadfull
@@ -800,6 +825,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5b7be1ca5acfc400170e2d2f
 ARC9.LoadAttachment(ATT, "eft_sa58_hg_quadfull")
 
 ///////////////////////////////////////      eft_sa58_hg_sportkm
@@ -854,6 +880,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5b7be2345acfc400196d524a
 ARC9.LoadAttachment(ATT, "eft_sa58_hg_sportkm")
 
 ///////////////////////////////////////      eft_sa58_hg_sportmlok
@@ -924,6 +951,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5b7bebc85acfc43bca706666
 ARC9.LoadAttachment(ATT, "eft_sa58_hg_sportmlok")
 
 ///////////////////////////////////////      eft_muzzle_sa58_3pr
@@ -950,6 +978,7 @@ ATT.PhysBulletMuzzleVelocityMult = 1.005
 
 ATT.Category = {"eft_fal_muzzle"}
 
+-- EFT ID: 5b099b7d5acfc400186331e4
 ARC9.LoadAttachment(ATT, "eft_muzzle_sa58_3pr")
 
 ///////////////////////////////////////      eft_muzzle_sa58_aut
@@ -976,6 +1005,7 @@ ATT.PhysBulletMuzzleVelocityMult = 1.005
 
 ATT.Category = {"eft_fal_muzzle"}
 
+-- EFT ID: 5b7d68af5acfc400170e30c3
 ARC9.LoadAttachment(ATT, "eft_muzzle_sa58_aut")
 
 
@@ -1009,4 +1039,5 @@ ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ar10_drum_762x51
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ar10_drum_762x51_50.mdl"
 
 
+-- EFT ID: 6761770e48fa5c377e06fc3c
 ARC9.LoadAttachment(ATT, "eft_ar10_mag_drum50")

@@ -33,6 +33,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.AdvancedCamoSupport = true
 
+-- EFT ID: 5cda9bcfd7f00c0c0b53e900
 ARC9.LoadAttachment(ATT, "eft_foregrip_ash12")
 
 
@@ -62,6 +63,7 @@ ATT.Category = "eft_foregrip_small"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 
+-- EFT ID: 5c7fc87d2e221644f31c0298
 ARC9.LoadAttachment(ATT, "eft_foregrip_bcm")
 
 
@@ -91,6 +93,7 @@ ATT.Category = "eft_foregrip_small"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 
+-- EFT ID: 558032614bdc2de7118b4585
 ARC9.LoadAttachment(ATT, "eft_foregrip_bgv")
 
 
@@ -121,6 +124,7 @@ ATT.Category = "eft_foregrip_small"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 
+-- EFT ID: 58c157be86f77403c74b2bb6
 ARC9.LoadAttachment(ATT, "eft_foregrip_bgv_fde")
 
 
@@ -151,6 +155,7 @@ ATT.Category = "eft_foregrip_small"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 
+-- EFT ID: 58c157c886f774032749fb06
 ARC9.LoadAttachment(ATT, "eft_foregrip_bgv_sg")
 
 
@@ -180,6 +185,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.AdvancedCamoSupport = true
 
+-- EFT ID: 5c791e872e2216001219c40a
 ARC9.LoadAttachment(ATT, "eft_foregrip_cobra")
 
 
@@ -211,6 +217,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.AdvancedCamoSupport = true
 
+-- EFT ID: 5a7dbfc1159bd40016548fde
 ARC9.LoadAttachment(ATT, "eft_foregrip_cqr")
 
 
@@ -240,6 +247,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.AdvancedCamoSupport = true
 
+-- EFT ID: 59f8a37386f7747af3328f06
 ARC9.LoadAttachment(ATT, "eft_foregrip_fortis")
 
 
@@ -270,6 +278,7 @@ ATT.Category = "eft_grip_keymod"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 
+-- EFT ID: 615d8fd3290d254f5e6b2edc
 ARC9.LoadAttachment(ATT, "eft_foregrip_keymod_monstrum")
 
 
@@ -299,6 +308,7 @@ ATT.Category = "eft_grip_keymod"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 
+-- EFT ID: 5fc0f9b5d724d907e2077d82
 ARC9.LoadAttachment(ATT, "eft_foregrip_keymod_mvf")
 
 
@@ -328,6 +338,7 @@ ATT.Category = "eft_grip_keymod"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 
+-- EFT ID: 5fc0f9cbd6fa9c00c571bb90
 ARC9.LoadAttachment(ATT, "eft_foregrip_keymod_sig")
 
 
@@ -357,6 +368,7 @@ ATT.Category = "eft_foregrip_small"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 
+-- EFT ID: 5cf4fb76d7f00c065703d3ac
 ARC9.LoadAttachment(ATT, "eft_foregrip_rtm")
 
 
@@ -388,6 +400,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.AdvancedCamoSupport = true
 
+-- EFT ID: 5b057b4f5acfc4771e1bd3e9
 ARC9.LoadAttachment(ATT, "eft_foregrip_se5")
 
 
@@ -416,6 +429,7 @@ ATT.Category = "eft_foregrip_small"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 
+-- EFT ID: 5f6340d3ca442212f4047eb2
 ARC9.LoadAttachment(ATT, "eft_foregrip_td")
 
 
@@ -444,6 +458,7 @@ ATT.Category = "eft_foregrip_small"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 
+-- EFT ID: 591af28e86f77414a27a9e1d
 ARC9.LoadAttachment(ATT, "eft_foregrip_uvg")
 
 
@@ -475,6 +490,7 @@ ATT.SortOrder = 0
 ATT.Category = "eft_foregrip_small"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+-- EFT ID: 648067db042be0705c0b3009
 ARC9.LoadAttachment(ATT, "eft_foregrip_rtm_fde")
 
 ///////////////////////////////////////      eft_foregrip_se5_fde
@@ -504,6 +520,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.AdvancedCamoSupport = true
 
+-- EFT ID: 655df24fdf80b12750626d0a
 ARC9.LoadAttachment(ATT, "eft_foregrip_se5_fde")
 
 ///////////////////////////////////////      eft_foregrip_rtm_p2
@@ -530,6 +547,7 @@ ATT.SortOrder = 0
 ATT.Category = "eft_foregrip_small"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+-- EFT ID: 65169d5b30425317755f8e25
 ARC9.LoadAttachment(ATT, "eft_foregrip_rtm_p2")
 
 ///////////////////////////////////////      eft_foregrip_rtm_oso
@@ -556,6 +574,7 @@ ATT.SortOrder = 0
 ATT.Category = "eft_foregrip_small"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+-- EFT ID: 64806bdd26c80811d408d37a
 ARC9.LoadAttachment(ATT, "eft_foregrip_rtm_oso")
 
 ///////////////////////////////////////      eft_foregrip_rtm_oso_khaki
@@ -583,6 +602,7 @@ ATT.SortOrder = 0
 ATT.Category = "eft_foregrip_small"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+-- EFT ID: 64807a29e5ffe165600abc97
 ARC9.LoadAttachment(ATT, "eft_foregrip_rtm_oso_khaki")
 
 ///////////////////////////////////////      eft_foregrip_mlok_dd
@@ -612,6 +632,7 @@ ATT.ModelAngleOffset = Angle(0, 90, 90)
 -- ATT.ModelOffset = Vector(1.2, 0, 0)
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+-- EFT ID: 651a8bf3a8520e48047bf708
 ARC9.LoadAttachment(ATT, "eft_foregrip_mlok_dd")
 
 ///////////////////////////////////////      eft_foregrip_mlok_dd_fde
@@ -641,6 +662,7 @@ ATT.ModelAngleOffset = Angle(0, 90, 90)
 -- ATT.ModelOffset = Vector(1.2, 0, 0)
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+-- EFT ID: 651a8e529829226ceb67c319
 ARC9.LoadAttachment(ATT, "eft_foregrip_mlok_dd_fde")
 
 
@@ -674,6 +696,7 @@ ATT.SortOrder = 0
 ATT.Category = "eft_foregrip_small"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+-- EFT ID: 661e52415be02310ed07a07a
 ARC9.LoadAttachment(ATT, "eft_foregrip_bgv_qdk")
 
 ///////////////////////////////////////      eft_foregrip_bgv_qdk_fde
@@ -702,6 +725,7 @@ ATT.SortOrder = 0
 ATT.Category = "eft_foregrip_small"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+-- EFT ID: 661e52b5b099f32c28003586
 ARC9.LoadAttachment(ATT, "eft_foregrip_bgv_qdk_fde")
 
 ///////////////////////////////////////      eft_foregrip_bgv_qditi
@@ -729,6 +753,7 @@ ATT.SortOrder = 0
 ATT.Category = "eft_foregrip_small"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+-- EFT ID: 661e52e29c8b4dadef008577
 ARC9.LoadAttachment(ATT, "eft_foregrip_bgv_qditi")
 
 ///////////////////////////////////////      eft_foregrip_bgv_qditi_fde
@@ -757,6 +782,7 @@ ATT.SortOrder = 0
 ATT.Category = "eft_foregrip_small"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+-- EFT ID: 661e53149c8b4dadef008579
 ARC9.LoadAttachment(ATT, "eft_foregrip_bgv_qditi_fde")
 
 
@@ -789,6 +815,7 @@ ATT.ModelAngleOffset = Angle(0, 90, 90)
 -- ATT.ModelOffset = Vector(1.2, 0, 0)
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+-- EFT ID: 665d5d9e338229cfd6078da1
 ARC9.LoadAttachment(ATT, "eft_foregrip_mlok_mod3")
 
 ///////////////////////////////////////      eft_foregrip_mlok_mod3f
@@ -818,4 +845,5 @@ ATT.ModelAngleOffset = Angle(0, 90, 90)
 -- ATT.ModelOffset = Vector(1.2, 0, 0)
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+-- EFT ID: 665edce564fb556f940ab32a
 ARC9.LoadAttachment(ATT, "eft_foregrip_mlok_mod3f")

@@ -52,6 +52,7 @@ ATT.Attachments = {
 }
 ATT.AdvancedCamoSupport = true
 
+-- EFT ID: 5bb20d53d4351e4502010a69
 ARC9.LoadAttachment(ATT, "eft_rec_hk416")
 
 
@@ -96,6 +97,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5bb20e58d4351e00320205d7
 ARC9.LoadAttachment(ATT, "eft_ar_buffertube_hkenh")
 
 
@@ -146,6 +148,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5c6d85e02e22165df16b81f4
 ARC9.LoadAttachment(ATT, "eft_barrel_hk416_106i")
 
 ///////////////////////////////////////      eft_barrel_hk416_11i
@@ -192,6 +195,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5bb20d92d4351e00853263eb
 ARC9.LoadAttachment(ATT, "eft_barrel_hk416_11i")
 
 ///////////////////////////////////////      eft_barrel_hk416_145i
@@ -241,6 +245,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5bb20d9cd4351e00334c9d8a
 ARC9.LoadAttachment(ATT, "eft_barrel_hk416_145i")
 
 ///////////////////////////////////////      eft_barrel_hk416_165i
@@ -290,6 +295,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5bb20da5d4351e0035629dbf
 ARC9.LoadAttachment(ATT, "eft_barrel_hk416_165i")
 
 ///////////////////////////////////////      eft_barrel_hk416_20i
@@ -338,6 +344,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5bb20dadd4351e00367faeff
 ARC9.LoadAttachment(ATT, "eft_barrel_hk416_20i")
 
 ///////////////////////////////////////      eft_gas_hk416_std
@@ -357,6 +364,7 @@ ATT.HeatCapacityMult = 0.995
 
 ATT.Category = {"eft_hk416_gasblock"}
 
+-- EFT ID: 5bb20dcad4351e3bac1212da
 ARC9.LoadAttachment(ATT, "eft_gas_hk416_std")
 
 ///////////////////////////////////////      eft_rearsight_hk416
@@ -388,6 +396,7 @@ ATT.Sights = {
     }
 }
 
+-- EFT ID: 5bb20e49d4351e3bac1212de
 ARC9.LoadAttachment(ATT, "eft_rearsight_hk416")
 
 ///////////////////////////////////////      eft_hg_hk416_mrs14
@@ -486,6 +495,7 @@ ATT.Attachments = {
 }
 ATT.AdvancedCamoSupport = true
 
+-- EFT ID: 5c6d10e82e221601da357b07
 ARC9.LoadAttachment(ATT, "eft_hg_hk416_mrs14")
 
 ///////////////////////////////////////      eft_hg_hk416_quad
@@ -564,6 +574,7 @@ ATT.Attachments = {
 }
 ATT.AdvancedCamoSupport = true
 
+-- EFT ID: 5bb20de5d4351e0035629e59
 ARC9.LoadAttachment(ATT, "eft_hg_hk416_quad")
 
 ///////////////////////////////////////      eft_hg_hk416_quadext
@@ -646,6 +657,7 @@ ATT.Attachments = {
 }
 
 ATT.AdvancedCamoSupport = true
+-- EFT ID: 5bb20dfcd4351e00334c9e24
 ARC9.LoadAttachment(ATT, "eft_hg_hk416_quadext")
 
 ///////////////////////////////////////      eft_hg_hk416_quadsight
@@ -726,6 +738,7 @@ ATT.Attachments = {
     }, 
 }
 
+-- EFT ID: 5bb20df1d4351e00347787d5
 ARC9.LoadAttachment(ATT, "eft_hg_hk416_quadsight")
 
 ///////////////////////////////////////      eft_hg_hk416_midwest9
@@ -797,6 +810,7 @@ ATT.Attachments = {
 }
 
 ATT.AdvancedCamoSupport = true
+-- EFT ID: 5c6d10fa2e221600106f3f23
 ARC9.LoadAttachment(ATT, "eft_hg_hk416_midwest9")
 
 ///////////////////////////////////////      eft_hg_hk416_midwest135
@@ -878,6 +892,7 @@ ATT.Attachments = {
 }
 ATT.AdvancedCamoSupport = "eft_hg_hk416_midwest9"
 
+-- EFT ID: 5c6d11072e2216000e69d2e4
 ARC9.LoadAttachment(ATT, "eft_hg_hk416_midwest135")
 
 ///////////////////////////////////////      eft_hg_hk416_crux
@@ -961,6 +976,7 @@ ATT.Attachments = {
 }
 ATT.AdvancedCamoSupport = true
 
+-- EFT ID: 5c6d11152e2216000f2003e7
 ARC9.LoadAttachment(ATT, "eft_hg_hk416_crux")
 
 ///////////////////////////////////////      eft_hg_hk416_troy
@@ -1038,4 +1054,5 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5c6c2c9c2e2216000f2002e4
 ARC9.LoadAttachment(ATT, "eft_hg_hk416_troy")

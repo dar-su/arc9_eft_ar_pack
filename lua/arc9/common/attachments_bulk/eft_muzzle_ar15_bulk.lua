@@ -23,6 +23,7 @@ ATT.PhysBulletMuzzleVelocityMult = 1.006
 
 ATT.Category = {"eft_ar15_muzzle"}
 
+-- EFT ID: 626a74340be03179a165e30c
 ARC9.LoadAttachment(ATT, "eft_muzzle_ar15_phantom")
 
 ///////////////////////////////////////      eft_muzzle_ar15_warcomp
@@ -61,6 +62,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5c6d710d2e22165df16b81e7
 ARC9.LoadAttachment(ATT, "eft_muzzle_ar15_warcomp")
 
 ///////////////////////////////////////      eft_muzzle_ar15_ferfrans
@@ -98,6 +100,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5f6372e2865db925d54f3869
 ARC9.LoadAttachment(ATT, "eft_muzzle_ar15_ferfrans")
 
 ///////////////////////////////////////      eft_muzzle_ar15_glok
@@ -135,6 +138,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 6386120cd6baa055ad1e201c
 ARC9.LoadAttachment(ATT, "eft_muzzle_ar15_glok")
 
 ///////////////////////////////////////      eft_muzzle_ar15_st6012
@@ -162,6 +166,7 @@ ATT.HeatCapacityMult = 0.986
 
 ATT.Category = {"eft_ar15_muzzle"}
 
+-- EFT ID: 5cf6937cd7f00c056c53fb39
 ARC9.LoadAttachment(ATT, "eft_muzzle_ar15_st6012")
 
 ///////////////////////////////////////      eft_muzzle_ar15_psr556
@@ -200,6 +205,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 612e0cfc8004cc50514c2d9e
 ARC9.LoadAttachment(ATT, "eft_muzzle_ar15_psr556")
 
 
@@ -228,6 +234,7 @@ ATT.PhysBulletMuzzleVelocityMult = 1.004
 
 ATT.Category = {"eft_ar15_muzzle", "eft_mpx_muzzle"}
 
+-- EFT ID: 5b3a16655acfc40016387a2a
 ARC9.LoadAttachment(ATT, "eft_muzzle_ar15_annih")
 
 ///////////////////////////////////////      eft_muzzle_ar15_usgia2
@@ -264,6 +271,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 544a38634bdc2d58388b4568
 ARC9.LoadAttachment(ATT, "eft_muzzle_ar15_usgia2")
 
 ///////////////////////////////////////      eft_muzzle_ar15_adar
@@ -300,6 +308,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5c0fafb6d174af02a96260ba
 ARC9.LoadAttachment(ATT, "eft_muzzle_ar15_adar")
 
 ///////////////////////////////////////      eft_muzzle_ar15_aac51t
@@ -338,6 +347,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5c7e5f112e221600106f4ede
 ARC9.LoadAttachment(ATT, "eft_muzzle_ar15_aac51t")
 
 ///////////////////////////////////////      eft_muzzle_ar15_blitz
@@ -365,6 +375,7 @@ ATT.HeatCapacityMult = 0.987
 
 ATT.Category = {"eft_ar15_muzzle", "eft_scar556_muzzle"}
 
+-- EFT ID: 615d8e2f1cb55961fa0fd9a4
 ARC9.LoadAttachment(ATT, "eft_muzzle_ar15_blitz")
 
 ///////////////////////////////////////      eft_muzzle_ar15_wave
@@ -403,6 +414,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5cff9e5ed7ad1a09407397d4
 ARC9.LoadAttachment(ATT, "eft_muzzle_ar15_wave")
 
 ///////////////////////////////////////      eft_muzzle_ar15_mdr
@@ -431,6 +443,7 @@ ATT.PhysBulletMuzzleVelocityMult = 1.005
 
 ATT.Category = {"eft_ar15_muzzle"}
 
+-- EFT ID: 5c48a2a42e221602b66d1e07
 ARC9.LoadAttachment(ATT, "eft_muzzle_ar15_mdr")
 
 ///////////////////////////////////////      eft_muzzle_ar15_kacqdc
@@ -469,6 +482,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 56ea8180d2720bf2698b456a
 ARC9.LoadAttachment(ATT, "eft_muzzle_ar15_kacqdc")
 
 ///////////////////////////////////////      eft_muzzle_ar15_kx3
@@ -497,6 +511,7 @@ ATT.PhysBulletMuzzleVelocityMult = 1.004
 
 ATT.Category = {"eft_ar15_muzzle"}
 
+-- EFT ID: 56ea6fafd2720b844b8b4593
 ARC9.LoadAttachment(ATT, "eft_muzzle_ar15_kx3")
 
 ///////////////////////////////////////      eft_muzzle_ar15_crd
@@ -517,7 +532,6 @@ ATT.MuzzleDevice_Priority = 5
 ATT.BarrelLengthAdd = 0.5
 
 ATT.EFTErgoAdd = -3
-ATT.CustomCons = { Ergonomics = "-3" }
 ATT.RecoilMult = 0.92
 ATT.VisualRecoilMult = 0.92
 ATT.HeatCapacityMult = 0.99
@@ -525,6 +539,7 @@ ATT.PhysBulletMuzzleVelocityMult = 1.005
 
 ATT.Category = {"eft_ar15_ferfrans"}
 
+-- EFT ID: 5f6339d53ada5942720e2dc3
 ARC9.LoadAttachment(ATT, "eft_muzzle_ar15_crd")
 
 ///////////////////////////////////////      eft_muzzle_ar15_corvette
@@ -553,6 +568,7 @@ ATT.PhysBulletMuzzleVelocityMult = 1.005
 
 ATT.Category = {"eft_ar15_muzzle"}
 
+-- EFT ID: 5d02676dd7ad1a049e54f6dc
 ARC9.LoadAttachment(ATT, "eft_muzzle_ar15_corvette")
 
 ///////////////////////////////////////      eft_muzzle_ar15_sf3p
@@ -591,6 +607,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5c7fb51d2e2216001219ce11
 ARC9.LoadAttachment(ATT, "eft_muzzle_ar15_sf3p")
 
 ///////////////////////////////////////      eft_muzzle_ar15_asr
@@ -628,6 +645,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 609269c3b0e443224b421cc1
 ARC9.LoadAttachment(ATT, "eft_muzzle_ar15_asr")
 
 ///////////////////////////////////////      eft_muzzle_ar15_223cb
@@ -667,6 +685,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5d440625a4b9361eec4ae6c5
 ARC9.LoadAttachment(ATT, "eft_muzzle_ar15_223cb")
 
 ///////////////////////////////////////      eft_muzzle_ar15_fh556rc
@@ -705,6 +724,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5ea172e498dacb342978818e
 ARC9.LoadAttachment(ATT, "eft_muzzle_ar15_fh556rc")
 
 ///////////////////////////////////////      eft_muzzle_ar15_zk23
@@ -729,6 +749,7 @@ ATT.HeatCapacityMult = 0.989
 
 ATT.Category = {"eft_ar15_muzzle"}
 
+-- EFT ID: 612e0e55a112697a4b3a66e7
 ARC9.LoadAttachment(ATT, "eft_muzzle_ar15_zk23")
 
 ///////////////////////////////////////      eft_muzzle_ar15_vp09
@@ -757,6 +778,7 @@ ATT.PhysBulletMuzzleVelocityMult = 1.015
 
 ATT.Category = {"eft_ar15_muzzle"}
 
+-- EFT ID: 5a7c147ce899ef00150bd8b8
 ARC9.LoadAttachment(ATT, "eft_muzzle_ar15_vp09")
 
 
@@ -794,6 +816,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 626667e87379c44d557b7550
 ARC9.LoadAttachment(ATT, "eft_muzzle_ar15_qdc3")
 
 ///////////////////////////////////////      eft_muzzle_ar15_claymore
@@ -822,6 +845,7 @@ ATT.PhysBulletMuzzleVelocityMult = 1.005
 
 ATT.Category = {"eft_ar15_muzzle"}
 
+-- EFT ID: 5cc9b815d7f00c000e2579d6
 ARC9.LoadAttachment(ATT, "eft_muzzle_ar15_claymore")
 
 ///////////////////////////////////////      eft_muzzle_ar15_warden
@@ -850,6 +874,7 @@ ATT.PhysBulletMuzzleVelocityMult = 1.02
 
 ATT.Category = {"eft_ar15_muzzle"}
 
+-- EFT ID: 62669bccdb9ebb4daa44cd14
 ARC9.LoadAttachment(ATT, "eft_muzzle_ar15_warden")
 
 ///////////////////////////////////////      eft_muzzle_ar15_alien
@@ -877,6 +902,7 @@ ATT.PhysBulletMuzzleVelocityMult = 1.0045
 
 ATT.Category = {"eft_ar15_muzzle"}
 
+-- EFT ID: 63ac5c9658d0485fc039f0b8
 ARC9.LoadAttachment(ATT, "eft_muzzle_ar15_alien")
 
 ///////////////////////////////////////      eft_muzzle_ar15_jailbreak
@@ -912,6 +938,7 @@ ATT.ExcludeElements = {"eft_muzzle_ar15_kx3","eft_muzzle_ar15_ferfrans","barrel_
 -- thor psr can be installed because commisioner wanted the glitch to stay 🐟
 -- years passed now we can dissalow it back
 
+-- EFT ID: 5c78f2882e22165df16b832e
 ARC9.LoadAttachment(ATT, "eft_muzzle_ar15_jailbreak")
 
 
@@ -949,6 +976,7 @@ ATT.HeatCapacityMult = 1.1
 
 ATT.Category = {"eft_awcpsr"}
 
+-- EFT ID: 63877c99e785640d436458ea
 ARC9.LoadAttachment(ATT, "eft_silencer_thorpsr")
 
 ///////////////////////////////////////      eft_silencer_ar15_qdc556
@@ -980,6 +1008,7 @@ ATT.PhysBulletMuzzleVelocityMult = 1.0175
 
 ATT.Category = {"eft_kacqdc3"}
 
+-- EFT ID: 626673016f1edc06f30cf6d5
 ARC9.LoadAttachment(ATT, "eft_silencer_ar15_qdc556")
 
 ///////////////////////////////////////      eft_silencer_ar15_m4sdk
@@ -1012,6 +1041,7 @@ ATT.PhysBulletMuzzleVelocityMult = 1.015
 ATT.Category = {"eft_m4sdk"}
 
 ATT.AdvancedCamoSupport = true
+-- EFT ID: 638612b607dfed1ccb7206ba
 ARC9.LoadAttachment(ATT, "eft_silencer_ar15_m4sdk")
 
 ///////////////////////////////////////      eft_silencer_ar15_socommonster
@@ -1042,6 +1072,7 @@ ATT.PhysBulletMuzzleVelocityMult = 1.0075
 
 ATT.Category = {"eft_ar15_surefire_silencer"}
 
+-- EFT ID: 55d614004bdc2d86028b4568
 ARC9.LoadAttachment(ATT, "eft_silencer_ar15_socommonster")
 
 ///////////////////////////////////////      eft_silencer_ar15_socomrc2
@@ -1072,6 +1103,7 @@ ATT.PhysBulletMuzzleVelocityMult = 1.0075
 
 ATT.Category = {"eft_ar15_surefire_silencer"}
 
+-- EFT ID: 5ea17bbc09aa976f2e7a51cd
 ARC9.LoadAttachment(ATT, "eft_silencer_ar15_socomrc2")
 
 
@@ -1102,6 +1134,7 @@ ATT.HeatCapacityMult = 1.08
 
 ATT.Category = {"eft_ar15_surefire_silencer"}
 
+-- EFT ID: 55d6190f4bdc2d87028b4567
 ARC9.LoadAttachment(ATT, "eft_silencer_ar15_socommini")
 
 ///////////////////////////////////////      eft_silencer_ar15_sakerasr
@@ -1134,6 +1167,7 @@ ATT.PhysBulletMuzzleVelocityMult = 1.0075
 ATT.Category = {"eft_ar15_saker"}
 ATT.AdvancedCamoSupport = true
 
+-- EFT ID: 60926df0132d4d12c81fd9df
 ARC9.LoadAttachment(ATT, "eft_silencer_ar15_sakerasr")
 
 ///////////////////////////////////////      eft_silencer_ar15_kacqdssnt4
@@ -1166,6 +1200,7 @@ ATT.PhysBulletMuzzleVelocityMult = 1.0075
 
 ATT.Category = {"eft_ar15_kacqdc"}
 
+-- EFT ID: 57da93632459771cb65bf83f
 ARC9.LoadAttachment(ATT, "eft_silencer_ar15_kacqdssnt4")
 
 ///////////////////////////////////////      eft_silencer_ar15_kacqdssnt4_f
@@ -1199,6 +1234,7 @@ ATT.PhysBulletMuzzleVelocityMult = 1.0075
 
 ATT.Category = {"eft_ar15_kacqdc"}
 
+-- EFT ID: 57dbb57e2459774673234890
 ARC9.LoadAttachment(ATT, "eft_silencer_ar15_kacqdssnt4_f")
 
 
@@ -1227,6 +1263,7 @@ ATT.PhysBulletMuzzleVelocityMult = 1.001
 
 ATT.Category = {"eft_ar15_muzzle"}
 
+-- EFT ID: 6405ff6bd4578826ec3e377a
 ARC9.LoadAttachment(ATT, "eft_muzzle_ar15_butter")
 
 ///////////////////////////////////////      eft_muzzle_ar15_nero
@@ -1252,4 +1289,5 @@ ATT.VisualRecoilMult = 0.93
 
 ATT.Category = {"eft_ar15_muzzle"}
 
+-- EFT ID: 64943b74e9998d641b0412ed
 ARC9.LoadAttachment(ATT, "eft_muzzle_ar15_nero")

@@ -32,6 +32,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 59d64ec286f774171d1e0a42
 ARC9.LoadAttachment(ATT, "eft_gas_ak_6p1")
 
 
@@ -66,6 +67,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 59c6633186f7740cf0493bb9
 ARC9.LoadAttachment(ATT, "eft_gas_ak_6p20")
 
 
@@ -113,6 +115,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 59ccfdba86f7747f2109a587
 ARC9.LoadAttachment(ATT, "eft_gas_ak_m1b")
 
 
@@ -147,6 +150,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 59e649f986f77411d949b246
 ARC9.LoadAttachment(ATT, "eft_gas_ak_molot")
 
 
@@ -223,6 +227,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5b237e425acfc4771e1be0b6
 ARC9.LoadAttachment(ATT, "eft_gas_ak_troy")
 
 
@@ -259,6 +264,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5a01ad4786f77450561fda02
 ARC9.LoadAttachment(ATT, "eft_gas_ak_vdmcs")
 
 
@@ -331,6 +337,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5cf656f2d7f00c06585fb6eb
 ARC9.LoadAttachment(ATT, "eft_gas_ak_vs24vs33")
 
 
@@ -405,6 +412,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5d4aab30a4b9365435358c55
 ARC9.LoadAttachment(ATT, "eft_gas_ak_vs24vs33_w")
 
 ///////////////////////////////////////      eft_gas_rd704_ionlite
@@ -465,4 +473,5 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 628a83c29179c324ed269508
 ARC9.LoadAttachment(ATT, "eft_gas_rd704_ionlite")

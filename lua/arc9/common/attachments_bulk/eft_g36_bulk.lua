@@ -42,6 +42,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 622b379bf9cfc87d675d2de5
 ARC9.LoadAttachment(ATT, "eft_g36_barrel_228")
 
 ///////////////////////////////////////      eft_g36_barrel_318
@@ -88,6 +89,7 @@ ATT.Attachments = {
 
 ATT.MuzzleEffectQCA = 5
 
+-- EFT ID: 622b3858034a3e17ad0b81f5
 ARC9.LoadAttachment(ATT, "eft_g36_barrel_318")
 
 ///////////////////////////////////////      eft_g36_barrel_480
@@ -134,6 +136,7 @@ ATT.Attachments = {
 
 ATT.MuzzleEffectQCA =6 
 
+-- EFT ID: 622b38c56762c718e457e246
 ARC9.LoadAttachment(ATT, "eft_g36_barrel_480")
 
 
@@ -171,6 +174,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 --     },
 -- }
 
+-- EFT ID: 622f14e899892a7f9e08f6c5
 ARC9.LoadAttachment(ATT, "eft_g36_stock_kv")
 
 ///////////////////////////////////////      eft_g36_stock_std
@@ -207,6 +211,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 --     },
 -- }
 
+-- EFT ID: 622f140da5958f63c67f1735
 ARC9.LoadAttachment(ATT, "eft_g36_stock_std")
 
 ///////////////////////////////////////      eft_g36_fs_std
@@ -237,6 +242,7 @@ ATT.ExcludeElements = {
     "eft_mount_30mm_nf",
 }
 
+-- EFT ID: 623166e08c43374ca1567195
 ARC9.LoadAttachment(ATT, "eft_g36_fs_std")
 
 ///////////////////////////////////////      eft_g36_rs_std
@@ -263,6 +269,7 @@ ATT.ExcludeElements = {
     "eft_mount_30mm_nf",
 }
 
+-- EFT ID: 6231670f0b8aa5472d060095
 ARC9.LoadAttachment(ATT, "eft_g36_rs_std")
 
 ///////////////////////////////////////      eft_g36_hg_6
@@ -299,6 +306,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 6231654c71b5bc3baa1078e5
 ARC9.LoadAttachment(ATT, "eft_g36_hg_6")
 
 ///////////////////////////////////////      eft_g36_hg_4
@@ -355,6 +363,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 62386b7153757417e93a4e9f
 ARC9.LoadAttachment(ATT, "eft_g36_hg_4")
 
 ///////////////////////////////////////      eft_g36_hg_2
@@ -409,6 +418,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 62386b2adf47d66e835094b2
 ARC9.LoadAttachment(ATT, "eft_g36_hg_2")
 
 
@@ -437,6 +447,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 62444cd3674028188b052799
 ARC9.LoadAttachment(ATT, "eft_g36_hg_mount_side")
 
 
@@ -465,6 +476,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 62444cb99f47004c781903eb
 ARC9.LoadAttachment(ATT, "eft_g36_hg_mount_bottom")
 
 
@@ -489,6 +501,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_g36_gas"}
 
+-- EFT ID: 622b327b267a1b13a44abea3
 ARC9.LoadAttachment(ATT, "eft_g36_gas_std")
 
 ///////////////////////////////////////      eft_g36_hg_handstop
@@ -509,6 +522,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_g36_handstop"}
 
+-- EFT ID: 622f16a1a5958f63c67f1737
 ARC9.LoadAttachment(ATT, "eft_g36_hg_handstop")
 
 
@@ -537,6 +551,7 @@ ATT.SwayMultBipod = 0.1
 
 ATT.Category = {"eft_bipod_g36"}
 
+-- EFT ID: 622b397c9a3d4327e41843b6
 ARC9.LoadAttachment(ATT, "eft_g36_hg_bipod")
 
 
@@ -561,6 +576,7 @@ ATT.ActivateElements = {"magwell"}
 ATT.Category = {"eft_magwell_g36"}
 -- ATT.ExcludeElements = {"eft_g36_mag"}
 
+-- EFT ID: 622f039199f4ea1a4d6c9a17
 ARC9.LoadAttachment(ATT, "eft_g36_magwell_stanag")
 
 ///////////////////////////////////////      eft_g36_magwell_std
@@ -584,6 +600,7 @@ ATT.ActivateElements = {"magwell"}
 ATT.Category = {"eft_magwell_g36"}
 -- ATT.ExcludeElements = {"eft_ar15_mag"}
 
+-- EFT ID: 622f02437762f55aaa68ac85
 ARC9.LoadAttachment(ATT, "eft_g36_magwell_std")
 
 
@@ -636,6 +653,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 622b3c081b89c677a33bcda6
 ARC9.LoadAttachment(ATT, "eft_g36_top_std")
 
 ///////////////////////////////////////      eft_g36_top_flip
@@ -681,6 +699,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 622b3d5cf9cfc87d675d2de9
 ARC9.LoadAttachment(ATT, "eft_g36_top_flip")
 
 ///////////////////////////////////////      eft_g36_top_3x
@@ -747,6 +766,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 622b4d7df9cfc87d675d2ded
 ARC9.LoadAttachment(ATT, "eft_g36_top_3x")
 
 ///////////////////////////////////////      eft_g36_top_15x
@@ -803,6 +823,7 @@ ATT.RTScopeNew_ShadowScale = 0.5
 
 ATT.ScopeScreenRatio = 366/1080
 
+-- EFT ID: 622b4f54dc8dcc0ba8742f85
 ARC9.LoadAttachment(ATT, "eft_g36_top_15x")
 
 
@@ -830,6 +851,7 @@ ATT.Attachments = {
 
 ATT.Category = {"eft_g36_hensoldt_mount"}
 
+-- EFT ID: 622efdf8ec80d870d349b4e5
 ARC9.LoadAttachment(ATT, "eft_g36_hensoldt_rail")
 
 ///////////////////////////////////////      eft_g36_hensoldt_sight
@@ -866,6 +888,7 @@ ATT.HoloSightColorable = false
 
 ATT.Category = {"eft_g36_hensoldt_mount"}
 
+-- EFT ID: 622efbcb99f4ea1a4d6c9a15
 ARC9.LoadAttachment(ATT, "eft_g36_hensoldt_sight")
 
 
@@ -880,7 +903,6 @@ ATT.Icon = Material("entities/eft_g36_attachments/hk_g36_556x45_30round_magazine
 ATT.Description = "A 30-round 5.56x45 magazine designed for the HK G36."
 
 ATT.EFTErgoAdd = -3
-ATT.CustomCons = { Ergonomics = "-3" }
 ATT.MalfunctionMeanShotsToFailMult = 0.95
 ATT.EFTImprovedMagCheck = true
 
@@ -975,6 +997,7 @@ ATT.ReloadHideBoneTables = {
     },
 }
 
+-- EFT ID: 62307b7b10d2321fa8741921
 ARC9.LoadAttachment(ATT, "eft_g28_mag_30")
 
 ///////////////////////////////////////      eft_g28_mag_30old
@@ -990,7 +1013,6 @@ ATT.Description = [[A 30-round 5.56x45 magazine designed for the HK G36.
 original nontransparent version like in tarkov]]
 
 ATT.EFTErgoAdd = -3
-ATT.CustomCons = { Ergonomics = "-3" }
 ATT.MalfunctionMeanShotsToFailMult = 0.95
 ATT.EFTImprovedMagCheck = true
 
@@ -1010,6 +1032,7 @@ ATT.ShouldDropMagEmpty = false
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_g36_30.mdl"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_g36_30.mdl"
 
+-- EFT ID: 62307b7b10d2321fa8741921
 ARC9.LoadAttachment(ATT, "eft_g28_mag_30old")
 
 
@@ -1039,6 +1062,7 @@ ATT.HeatCapacityMult = 0.99
 
 ATT.Category = {"eft_g36_muzzle"}
 
+-- EFT ID: 622f07cfae33bc505b2c4dd5
 ARC9.LoadAttachment(ATT, "eft_g36_muzzle_std")
 
 ///////////////////////////////////////      eft_g36_muzzle_c
@@ -1064,6 +1088,7 @@ ATT.HeatCapacityMult = 0.99
 
 ATT.Category = {"eft_g36_muzzle"}
 
+-- EFT ID: 622f0ee47762f55aaa68ac87
 ARC9.LoadAttachment(ATT, "eft_g36_muzzle_c")
 
 ///////////////////////////////////////      eft_g36_muzzle_4
@@ -1091,6 +1116,7 @@ ATT.HeatCapacityMult = 0.99
 
 ATT.Category = {"eft_g36_muzzle"}
 
+-- EFT ID: 622f128cec80d870d349b4e8
 ARC9.LoadAttachment(ATT, "eft_g36_muzzle_4")
 
 
@@ -1127,6 +1153,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 67110d06723c2733410161e8
 ARC9.LoadAttachment(ATT, "eft_g36_stock_idz")
 
 ///////////////////////////////////////      eft_g36_stock_idz_butt_cave
@@ -1147,6 +1174,7 @@ ATT.SortOrder = 0
 ATT.Category = "eft_g36idz_buttpad"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+-- EFT ID: 67110d6fa71d1f123d021cd3
 ARC9.LoadAttachment(ATT, "eft_g36_stock_idz_butt_cave")
 
 ///////////////////////////////////////      eft_g36_stock_idz_butt_vex
@@ -1167,6 +1195,7 @@ ATT.SortOrder = 0
 ATT.Category = "eft_g36idz_buttpad"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+-- EFT ID: 67110d5ed1758189fc0bd221
 ARC9.LoadAttachment(ATT, "eft_g36_stock_idz_butt_vex")
 
 
@@ -1196,6 +1225,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 6706a159c67236b2f703bb95
 ARC9.LoadAttachment(ATT, "eft_g36_stock_buffer")
 
 ///////////////////////////////////////      eft_g36_hg_quad
@@ -1264,6 +1294,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 67069d66af4890b09f0006ec
 ARC9.LoadAttachment(ATT, "eft_g36_hg_quad")
 
 ///////////////////////////////////////      eft_g36_hg_slim
@@ -1334,6 +1365,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 67069d8dad91f3a63c0bc2b4
 ARC9.LoadAttachment(ATT, "eft_g36_hg_slim")
 
 
@@ -1366,4 +1398,5 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 67069d3bb29a2cd338033390
 ARC9.LoadAttachment(ATT, "eft_mount_hkey_3")

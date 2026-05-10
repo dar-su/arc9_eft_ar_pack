@@ -20,7 +20,6 @@ ATT.Category = {"eft_ar15_mag"}
 ATT.SuppressEmptySuffix = false 
 
 ATT.EFTErgoAdd = -3
-ATT.CustomCons = { Ergonomics = "-3" }
 
 ATT.MalfunctionMeanShotsToFailMult = 0.92
 
@@ -30,6 +29,7 @@ ATT.ChamberSize = 1
 ATT.ClipSize = 30
 
 ATT.AdvancedCamoSupport = true
+-- EFT ID: 55d4887d4bdc2d962f8b4570
 ARC9.LoadAttachment(ATT, "eft_mag_ar15_stanag_30")
 
 ///////////////////////////////////////      eft_mag_ar15_mk16_30
@@ -51,7 +51,6 @@ ATT.Category = {"eft_ar15_mag"}
 ATT.SuppressEmptySuffix = false 
 
 ATT.EFTErgoAdd = -3
-ATT.CustomCons = { Ergonomics = "-3" }
 
 ATT.MalfunctionMeanShotsToFailMult = 0.92
 
@@ -60,6 +59,7 @@ ATT.ActivateElements = {"30rnd"}
 ATT.ChamberSize = 1
 ATT.ClipSize = 30
 
+-- EFT ID: 61840bedd92c473c77021635
 ARC9.LoadAttachment(ATT, "eft_mag_ar15_mk16_30")
 
 ///////////////////////////////////////      eft_mag_ar15_mk16_30_f
@@ -83,7 +83,6 @@ ATT.Category = {"eft_ar15_mag"}
 ATT.SuppressEmptySuffix = false 
 
 ATT.EFTErgoAdd = -3
-ATT.CustomCons = { Ergonomics = "-3" }
 
 ATT.MalfunctionMeanShotsToFailMult = 0.92
 
@@ -92,6 +91,7 @@ ATT.ActivateElements = {"30rnd"}
 ATT.ChamberSize = 1
 ATT.ClipSize = 30
 
+-- EFT ID: 61840d85568c120fdd2962a5
 ARC9.LoadAttachment(ATT, "eft_mag_ar15_mk16_30_f")
 
 ///////////////////////////////////////      eft_mag_ar15_hksteel
@@ -113,7 +113,6 @@ ATT.Category = {"eft_ar15_mag"}
 ATT.SuppressEmptySuffix = false 
 
 ATT.EFTErgoAdd = -3
-ATT.CustomCons = { Ergonomics = "-3" }
 
 ATT.MalfunctionMeanShotsToFailMult = 0.94
 
@@ -123,6 +122,7 @@ ATT.ChamberSize = 1
 ATT.ClipSize = 30
 
 ATT.AdvancedCamoSupport = true
+-- EFT ID: 5c05413a0db834001c390617
 ARC9.LoadAttachment(ATT, "eft_mag_ar15_hksteel")
 
 
@@ -145,7 +145,6 @@ ATT.Category = {"eft_ar15_mag"}
 ATT.SuppressEmptySuffix = false 
 
 ATT.EFTErgoAdd = -3
-ATT.CustomCons = { Ergonomics = "-3" }
 
 ATT.MalfunctionMeanShotsToFailMult = 0.93
 
@@ -154,6 +153,7 @@ ATT.ActivateElements = {"30rnd"}
 ATT.ChamberSize = 1
 ATT.ClipSize = 30
 
+-- EFT ID: 5c6d450c2e221600114c997d
 ARC9.LoadAttachment(ATT, "eft_mag_ar15_hkpmgen2")
 
 
@@ -186,6 +186,7 @@ ATT.ChamberSize = 1
 ATT.ClipSize = 30
 ATT.AdvancedCamoSupport = true
 
+-- EFT ID: 5c6d42cb2e2216000e69d7d1
 ARC9.LoadAttachment(ATT, "eft_mag_ar15_hkstanag")
 
 ///////////////////////////////////////      eft_mag_ar15_pmag_60
@@ -217,6 +218,7 @@ ATT.ChamberSize = 1
 ATT.ClipSize = 60
 ATT.AdvancedCamoSupport = true
 
+-- EFT ID: 59c1383d86f774290a37e0ca
 ARC9.LoadAttachment(ATT, "eft_mag_ar15_pmag_60")
 
 ///////////////////////////////////////      eft_mag_ar15_pmag_10
@@ -247,6 +249,7 @@ ATT.ActivateElements = {"10rnd"}
 ATT.ChamberSize = 1
 ATT.ClipSize = 10
 
+-- EFT ID: 5aaa5e60e5b5b000140293d6
 ARC9.LoadAttachment(ATT, "eft_mag_ar15_pmag_10")
 
 ///////////////////////////////////////      eft_mag_ar15_pmag_20
@@ -277,6 +280,7 @@ ATT.ActivateElements = {"20rnd"}
 ATT.ChamberSize = 1
 ATT.ClipSize = 20
 
+-- EFT ID: 5448c1d04bdc2dff2f8b4569
 ARC9.LoadAttachment(ATT, "eft_mag_ar15_pmag_20")
 
 ///////////////////////////////////////      eft_mag_ar15_pmag_30
@@ -298,7 +302,6 @@ ATT.Category = {"eft_ar15_mag"}
 ATT.SuppressEmptySuffix = false 
 
 ATT.EFTErgoAdd = -3
-ATT.CustomCons = { Ergonomics = "-3" }
 
 ATT.MalfunctionMeanShotsToFailMult = 0.92
 
@@ -307,6 +310,7 @@ ATT.ActivateElements = {"30rnd"}
 ATT.ChamberSize = 1
 ATT.ClipSize = 30
 
+-- EFT ID: 5aaa5dfee5b5b000140293d3
 ARC9.LoadAttachment(ATT, "eft_mag_ar15_pmag_30")
 
 
@@ -332,13 +336,13 @@ ATT.Category = {"eft_ar15_mag"}
 ATT.SuppressEmptySuffix = false 
 
 ATT.EFTErgoAdd = -3
-ATT.CustomCons = { Ergonomics = "-3" }
 
 ATT.ActivateElements = {"30rnd"}
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 30
 
+-- EFT ID: 5d1340b3d7ad1a0b52682ed7
 ARC9.LoadAttachment(ATT, "eft_mag_ar15_pmag_30_f")
 
 ATT.MalfunctionMeanShotsToFailMult = 0.92
@@ -372,6 +376,7 @@ ATT.ActivateElements = {"40rnd"}
 ATT.ChamberSize = 1
 ATT.ClipSize = 40
 
+-- EFT ID: 544a378f4bdc2d30388b4567
 ARC9.LoadAttachment(ATT, "eft_mag_ar15_pmag_40")
 
 
@@ -406,6 +411,7 @@ ATT.ActivateElements = {"40rnd"}
 ATT.ChamberSize = 1
 ATT.ClipSize = 40
 
+-- EFT ID: 5d1340bdd7ad1a0e8d245aab
 ARC9.LoadAttachment(ATT, "eft_mag_ar15_pmag_40_f")
 
 
@@ -429,7 +435,6 @@ ATT.SuppressEmptySuffix = false
 
 
 ATT.EFTErgoAdd = -3
-ATT.CustomCons = { Ergonomics = "-3" }
 ATT.CustomPros = { ["Improved check accuracy"] = "Yes" }
 ATT.EFTImprovedMagCheck = true
 
@@ -440,6 +445,7 @@ ATT.ActivateElements = {"30rnd"}
 ATT.ChamberSize = 1
 ATT.ClipSize = 30
 
+-- EFT ID: 55802d5f4bdc2dac148b458e
 ARC9.LoadAttachment(ATT, "eft_mag_ar15_pmag_w_30")
 
 
@@ -465,7 +471,6 @@ ATT.Category = {"eft_ar15_mag"}
 ATT.SuppressEmptySuffix = false 
 
 ATT.EFTErgoAdd = -3
-ATT.CustomCons = { Ergonomics = "-3" }
 ATT.CustomPros = { ["Improved check accuracy"] = "Yes" }
 ATT.EFTImprovedMagCheck = true
 
@@ -476,6 +481,7 @@ ATT.ActivateElements = {"30rnd"}
 ATT.ChamberSize = 1
 ATT.ClipSize = 30
 
+-- EFT ID: 5d1340cad7ad1a0b0b249869
 ARC9.LoadAttachment(ATT, "eft_mag_ar15_pmag_30_w_f")
 
 
@@ -508,6 +514,7 @@ ATT.ActivateElements = {"100rnd"}
 ATT.ChamberSize = 1
 ATT.ClipSize = 100
 
+-- EFT ID: 5c6592372e221600133e47d7
 ARC9.LoadAttachment(ATT, "eft_mag_ar15_surefire_100")
 
 ///////////////////////////////////////      eft_mag_ar15_surefire_60
@@ -539,6 +546,7 @@ ATT.ActivateElements = {"100rnd"}
 ATT.ChamberSize = 1
 ATT.ClipSize = 60
 
+-- EFT ID: 544a37c44bdc2d25388b4567
 ARC9.LoadAttachment(ATT, "eft_mag_ar15_surefire_60")
 
 
@@ -571,6 +579,7 @@ ATT.ActivateElements = {"30rnd"}
 ATT.ChamberSize = 1
 ATT.ClipSize = 30
 
+-- EFT ID: 5c6d46132e221601da357d56
 ARC9.LoadAttachment(ATT, "eft_mag_ar15_battlemag_30")
 
 
@@ -597,7 +606,6 @@ ATT.SuppressEmptySuffix = false
 ATT.FuckingAirsoft = true 
 
 ATT.EFTErgoAdd = -3
-ATT.CustomCons = { Ergonomics = "-3" }
 
 ATT.MalfunctionMeanShotsToFailMult = 0.92
 
@@ -606,6 +614,7 @@ ATT.ActivateElements = {"30rnd", "eft_bb_mag"}
 ATT.ChamberSize = 1
 ATT.ClipSize = 30
 
+-- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_mag_ar15_airsoft")
 
 
@@ -641,6 +650,7 @@ ATT.ActivateElements = {"100rndballs"}
 ATT.ChamberSize = 1
 ATT.ClipSize = 100
 
+-- EFT ID: 6761765f1f08ed5e8800b7a6
 ARC9.LoadAttachment(ATT, "eft_mag_ar15_beta_100")
 
 
@@ -671,4 +681,5 @@ ATT.ActivateElements = {"20rnd"}
 ATT.ChamberSize = 1
 ATT.ClipSize = 20
 
+-- EFT ID: 68a63b73c92ee33ffa01bf57
 ARC9.LoadAttachment(ATT, "eft_mag_ar15_stanag_20")

@@ -31,6 +31,7 @@ ATT.Attachments = {
 
 
 
+-- EFT ID: 59d36a0086f7747e673f3946
 ARC9.LoadAttachment(ATT, "eft_aksu_gas_ak")
 
 
@@ -58,6 +59,7 @@ ATT.RequireElements = {"gasblock"}
 ATT.Category = {"eft_aksu_handguard"}
 
 
+-- EFT ID: 57dc32dc245977596d4ef3d3
 ARC9.LoadAttachment(ATT, "eft_aksu_hg_ak_std")
 
 
@@ -90,6 +92,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 57ffb0062459777a045af529
 ARC9.LoadAttachment(ATT, "eft_aksu_mount_b18")
 
 
@@ -116,6 +119,7 @@ ATT.PhysBulletMuzzleVelocityMult = 1.005
 ATT.Category = {"eft_ak74_muzzle"}
 
 
+-- EFT ID: 57dc324a24597759501edc20
 ARC9.LoadAttachment(ATT, "eft_aksu_muzzle_ak_std")
 
 
@@ -139,6 +143,7 @@ ATT.CustomPros = { Ergonomics = "+5" }
 ATT.Category = {"eft_aksu_dustcover"}
 
 
+-- EFT ID: 5839a7742459773cf9693481
 ARC9.LoadAttachment(ATT, "eft_aksu_rec_ak_b")
 
 
@@ -172,6 +177,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 57dc334d245977597164366f
 ARC9.LoadAttachment(ATT, "eft_aksu_rec_ak_std")
 
 ///////////////////////////////////////      eft_aksu_stock_std
@@ -206,6 +212,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 57dc347d245977596754e7a1
 ARC9.LoadAttachment(ATT, "eft_aksu_stock_std")
 
 
@@ -245,6 +252,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 655cb6b5d680a544f30607fa
 ARC9.LoadAttachment(ATT, "eft_aksu_rec_piligrim")
 
 ///////////////////////////////////////      eft_hg_ak_goliaf_mlok
@@ -305,4 +313,5 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 647db1eca8d3399c380d195c
 ARC9.LoadAttachment(ATT, "eft_hg_ak_goliaf_mlok")

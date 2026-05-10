@@ -20,6 +20,7 @@ ATT.Category = {"eft_ar15_charge"}
 
 ATT.AdvancedCamoSupport = "eft_charge_ar15_colt"
 
+-- EFT ID: 5c0faf68d174af02a96260b8
 ARC9.LoadAttachment(ATT, "eft_charge_ar15_adar")
 
 ///////////////////////////////////////      eft_charge_ar15_botl
@@ -40,6 +41,7 @@ ATT.EFTErgoAdd = 1
 ATT.CustomPros = { Ergonomics = "+1" }
 ATT.Category = {"eft_ar15_charge"}
 
+-- EFT ID: 56ea7165d2720b6e518b4583
 ARC9.LoadAttachment(ATT, "eft_charge_ar15_botl")
 
 ///////////////////////////////////////      eft_charge_ar15_colt
@@ -61,6 +63,7 @@ ATT.Category = {"eft_ar15_charge"}
 
 ATT.AdvancedCamoSupport = true
 
+-- EFT ID: 55d44fd14bdc2d962f8b456e
 ARC9.LoadAttachment(ATT, "eft_charge_ar15_colt")
 
 ///////////////////////////////////////      eft_charge_ar15_ach
@@ -81,6 +84,7 @@ ATT.EFTErgoAdd = 2
 ATT.CustomPros = { Ergonomics = "+2" }
 ATT.Category = {"eft_ar15_charge"}
 
+-- EFT ID: 5ea16d4d5aad6446a939753d
 ARC9.LoadAttachment(ATT, "eft_charge_ar15_ach")
 
 ///////////////////////////////////////      eft_charge_ar15_hkext
@@ -103,6 +107,7 @@ ATT.Category = {"eft_ar15_charge"}
 
 ATT.AdvancedCamoSupport = true
 
+-- EFT ID: 5bb20dbcd4351e44f824c04e
 ARC9.LoadAttachment(ATT, "eft_charge_ar15_hkext")
 
 
@@ -124,6 +129,7 @@ ATT.EFTErgoAdd = 3
 ATT.CustomPros = { Ergonomics = "+3" }
 ATT.Category = {"eft_ar15_charge"}
 
+-- EFT ID: 5b2240bf5acfc40dc528af69
 ARC9.LoadAttachment(ATT, "eft_charge_ar15_raptor")
 
 ///////////////////////////////////////      eft_charge_ar15_raptor_g
@@ -145,6 +151,7 @@ ATT.EFTErgoAdd = 3
 ATT.CustomPros = { Ergonomics = "+3" }
 ATT.Category = {"eft_ar15_charge"}
 
+-- EFT ID: 5d44334ba4b9362b346d1948
 ARC9.LoadAttachment(ATT, "eft_charge_ar15_raptor_g")
 
 ///////////////////////////////////////      eft_charge_ar15_mod2
@@ -164,6 +171,7 @@ ATT.EFTErgoAdd = 3
 ATT.CustomPros = { Ergonomics = "+3" }
 ATT.Category = {"eft_ar15_charge"}
 
+-- EFT ID: 5f633ff5c444ce7e3c30a006
 ARC9.LoadAttachment(ATT, "eft_charge_ar15_mod2")
 
 ///////////////////////////////////////      eft_charge_ar15_gnr
@@ -183,6 +191,7 @@ ATT.EFTErgoAdd = 2
 ATT.CustomPros = { Ergonomics = "+2" }
 ATT.Category = {"eft_ar15_charge"}
 
+-- EFT ID: 651bf5617b3b552ef6712cb7
 ARC9.LoadAttachment(ATT, "eft_charge_ar15_gnr")
 
 ///////////////////////////////////////      eft_charge_ar15_badlever
@@ -203,6 +212,7 @@ ATT.EFTErgoAdd = 2
 ATT.CustomPros = { Ergonomics = "+2" }
 ATT.Category = {"eft_ar15_charge_lever"}
 
+-- EFT ID: 675307301f7c19a9780f2668
 ARC9.LoadAttachment(ATT, "eft_charge_ar15_badlever")
 
 ///////////////////////////////////////      eft_charge_ar15_raptor_sd
@@ -222,6 +232,7 @@ ATT.EFTErgoAdd = 3.5
 ATT.CustomPros = { Ergonomics = "+3.5" }
 ATT.Category = {"eft_ar15_charge"}
 
+-- EFT ID: 6895bf08e2d16810ba0bf43e
 ARC9.LoadAttachment(ATT, "eft_charge_ar15_raptor_sd")
 
 ///////////////////////////////////////      eft_charge_ar15_early
@@ -240,6 +251,7 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/charge_ar15_colt_charging_handle
 
 ATT.Category = {"eft_ar15_charge"}
 
+-- EFT ID: 68a63a9522b1e0bd360afe5f
 ARC9.LoadAttachment(ATT, "eft_charge_ar15_early")
 
 ///////////////////////////////////////      eft_charge_ar15_m84
@@ -260,4 +272,5 @@ ATT.CustomPros = { Ergonomics = "+2" }
 
 ATT.Category = {"eft_ar15_charge"}
 
+-- EFT ID: 68caabebc71156cf470bc186
 ARC9.LoadAttachment(ATT, "eft_charge_ar15_m84")

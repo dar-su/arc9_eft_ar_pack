@@ -46,6 +46,7 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/lhik_nogripaug.mdl"
 ATT.LHIK = true 
 ATT.ModelOffset = Vector(-1.8, 0, -2)
 
+-- EFT ID: 630e39c3bd357927e4007c15
 ARC9.LoadAttachment(ATT, "eft_aug_barrel_16")
 
 ///////////////////////////////////////      eft_aug_barrel_20
@@ -95,6 +96,7 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/lhik_nogripaug.mdl"
 ATT.LHIK = true 
 ATT.ModelOffset = Vector(-1.8, 0, -2)
 
+-- EFT ID: 62e7c7f3c34ea971710c32fc
 ARC9.LoadAttachment(ATT, "eft_aug_barrel_20")
 
 ///////////////////////////////////////      eft_aug_barrel_16a1
@@ -143,6 +145,7 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/lhik_nogripaug.mdl"
 ATT.LHIK = true 
 ATT.ModelOffset = Vector(-1.8, 0, -2)
 
+-- EFT ID: 6333f05d1bc0e6217a0e9d34
 ARC9.LoadAttachment(ATT, "eft_aug_barrel_16a1")
 
 
@@ -165,6 +168,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_aug_fg"}
 
+-- EFT ID: 634e61b0767cb15c4601a877
 ARC9.LoadAttachment(ATT, "eft_aug_grip")
 
 ///////////////////////////////////////      eft_aug_scope_m1
@@ -235,6 +239,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 62ebd290c427473eff0baafb
 ARC9.LoadAttachment(ATT, "eft_aug_scope_m1")
 
 ///////////////////////////////////////      eft_aug_upper
@@ -290,6 +295,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 62e7c72df68e7a0676050c77
 ARC9.LoadAttachment(ATT, "eft_aug_upper")
 
 ///////////////////////////////////////      eft_aug_upper_stg
@@ -308,7 +314,6 @@ ATT.Category = {"eft_aug_rec"}
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/scope_aug_steyr_stg77_optic_15x.mdl"
 ATT.EFTErgoAdd = -3
-ATT.CustomCons = { Ergonomics = "-3" }
 ATT.HasReceiver = true
 
 ATT.Attachments = {
@@ -359,6 +364,7 @@ ATT.RTScopeNew_ShadowScale = 1.8
 
 ATT.ScopeScreenRatio = 462/1080
 
+-- EFT ID: 62ea7c793043d74a0306e19f
 ARC9.LoadAttachment(ATT, "eft_aug_upper_stg")
 
 
@@ -390,6 +396,7 @@ ATT.DropMagazineAmount = 1
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_aug_20.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_aug_20.mdl"
 
+-- EFT ID: 630e1adbbd357927e4007c09
 ARC9.LoadAttachment(ATT, "eft_aug_mag_10")
 
 ///////////////////////////////////////      eft_aug_mag_30
@@ -402,7 +409,6 @@ ATT.Icon = Material("entities/eft_aug_attachments/30.png", "mips smooth")
 ATT.Description = [[A 30-round polymer Steyr AUG magazine, for 5.56x45 ammunition.]]
 
 ATT.EFTErgoAdd = -3
-ATT.CustomCons = { Ergonomics = "-3" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -418,6 +424,7 @@ ATT.DropMagazineAmount = 1
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_aug_30.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_aug_30.mdl"
 
+-- EFT ID: 62e7c98b550c8218d602cbb4
 ARC9.LoadAttachment(ATT, "eft_aug_mag_30")
 
 ///////////////////////////////////////      eft_aug_mag_42
@@ -430,7 +437,6 @@ ATT.Icon = Material("entities/eft_aug_attachments/42.png", "mips smooth")
 ATT.Description = [[A 42-round polymer Steyr AUG magazine, for 5.56x45 ammunition.]]
 
 ATT.EFTErgoAdd = -3
-ATT.CustomCons = { Ergonomics = "-3" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -446,6 +452,7 @@ ATT.DropMagazineAmount = 1
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_aug_42.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_aug_42.mdl"
 
+-- EFT ID: 630e295c984633f1fb0e7c30
 ARC9.LoadAttachment(ATT, "eft_aug_mag_42")
 
 
@@ -469,6 +476,7 @@ ATT.HeatCapacityMult = 1.01
 
 ATT.Category = {"eft_aug_muzzle"}
 
+-- EFT ID: 630f28f0cadb1fe05e06f004
 ARC9.LoadAttachment(ATT, "eft_muzzle_aug_fh_a3")
 
 ///////////////////////////////////////      eft_muzzle_aug_fh_a1
@@ -491,6 +499,7 @@ ATT.HeatCapacityMult = 1.01
 
 ATT.Category = {"eft_aug_muzzle"}
 
+-- EFT ID: 630f2872911356c17d06abc5
 ARC9.LoadAttachment(ATT, "eft_muzzle_aug_fh_a1")
 
 ///////////////////////////////////////      eft_muzzle_aug_brake
@@ -512,6 +521,7 @@ ATT.VisualRecoilMult = 0.94
 ATT.HeatCapacityMult = 1.01
 ATT.Category = {"eft_aug_muzzle"}
 
+-- EFT ID: 630f291b9f66a28b37094bb8
 ARC9.LoadAttachment(ATT, "eft_muzzle_aug_brake")
 
 ///////////////////////////////////////      eft_muzzle_aug_rat
@@ -543,6 +553,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 630f27f04f3f6281050b94d7
 ARC9.LoadAttachment(ATT, "eft_muzzle_aug_rat")
 
 ///////////////////////////////////////      eft_muzzle_aug_ase
@@ -573,6 +584,7 @@ ATT.NoFlash = true
 
 ATT.Category = {"eft_aug_muzzle"}
 
+-- EFT ID: 634eba08f69c710e0108d386
 ARC9.LoadAttachment(ATT, "eft_muzzle_aug_ase")
 
 ///////////////////////////////////////      eft_muzzle_aug_t4
@@ -605,6 +617,7 @@ ATT.ModelOffset  = Vector(-2.12, 0, 0)
 
 ATT.Category = {"eft_aug_muzzle"}
 
+-- EFT ID: 630f2982cdb9e392db0cbcc7
 ARC9.LoadAttachment(ATT, "eft_muzzle_aug_t4")
 
 
@@ -626,6 +639,7 @@ ATT.Category = {"eft_aug_charge"}
 ATT.EFTErgoAdd = 2
 ATT.CustomPros = { Ergonomics = "+2" }
 
+-- EFT ID: 62e7c880f68e7a0676050c7c
 ARC9.LoadAttachment(ATT, "eft_aug_ch_a1")
 
 ///////////////////////////////////////      eft_aug_ch_a3
@@ -646,6 +660,7 @@ ATT.Category = {"eft_aug_charge"}
 ATT.EFTErgoAdd = 3
 ATT.CustomPros = { Ergonomics = "+3" }
 
+-- EFT ID: 62ebbc53e3c1e1ec7c02c44f
 ARC9.LoadAttachment(ATT, "eft_aug_ch_a3")
 
 
@@ -677,6 +692,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 62ebba1fb658e07ef9082b5a
 ARC9.LoadAttachment(ATT, "eft_aug_upper_rail_low")
 
 ///////////////////////////////////////      eft_aug_upper_rail_high
@@ -707,6 +723,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 62e7c8f91cd3fde4d503d690
 ARC9.LoadAttachment(ATT, "eft_aug_upper_rail_high")
 
 ///////////////////////////////////////      eft_aug_blk
@@ -738,6 +755,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_aug_blk")
 
 ///////////////////////////////////////      eft_aug_wht
@@ -769,6 +787,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_aug_wht")
 
 ///////////////////////////////////////      eft_aug_fde     NOT MADE BY DARSU
@@ -804,6 +823,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_aug_fde")
 
 
@@ -854,6 +874,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 6711107e1ad01bb88705347e
 ARC9.LoadAttachment(ATT, "eft_aug_grip_mount")
 
 ///////////////////////////////////////      eft_aug_upper_vltor
@@ -911,6 +932,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 67110d8d388bded67304ceb4
 ARC9.LoadAttachment(ATT, "eft_aug_upper_vltor")
 
 ///////////////////////////////////////      eft_aug_upper_rail_vltor
@@ -962,4 +984,5 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 67110dd41ad01bb88705347b
 ARC9.LoadAttachment(ATT, "eft_aug_upper_rail_vltor")

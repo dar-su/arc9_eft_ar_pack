@@ -24,6 +24,7 @@ ATT.HeatCapacityMult = 1.074
 ATT.Category = {"eft_ar15_hguard"}
 ATT.ExcludeElements = {"barrel_10i", "barrel_145i"}
 
+-- EFT ID: 5c0e2f5cd174af02a012cfc9
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_adar")
 
 ///////////////////////////////////////      eft_hg_ar15_ax15
@@ -90,6 +91,7 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+-- EFT ID: 619b5db699fb192e7430664f
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_ax15")
 
 ///////////////////////////////////////      eft_hg_ar15_mk10
@@ -140,6 +142,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5b2cfa535acfc432ff4db7a0
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_mk10")
 
 ///////////////////////////////////////      eft_hg_ar15_m4
@@ -176,6 +179,7 @@ ATT.AdvancedCamoSupport = true
 
 ATT.ActivateElements = {"eft_m203_allowed"}
 
+-- EFT ID: 5ae30db85acfc408fb139a05
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_m4")
 
 ///////////////////////////////////////      eft_hg_ar15_m4_lower
@@ -195,6 +199,7 @@ ATT.HeatCapacityMult = 1.029
 ATT.Category = {"eft_hglower_m4"}
 ATT.AdvancedCamoSupport = "eft_hg_ar15_m4"
 ATT.ExcludeElements = {"eft_m203"}
+-- EFT ID: 637f57a68d137b27f70c4968
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_m4_lower")
 
 
@@ -273,6 +278,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5c9a25172e2216000f20314e
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_ddrisii1225")
 
 ///////////////////////////////////////      eft_hg_ar15_ddrisii1225_lower
@@ -309,6 +315,7 @@ ATT.Attachments = {
     },
 }
 ATT.ExcludeElements = {"eft_m203"}
+-- EFT ID: 638f2003bbd47aeb9e0ff637
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_ddrisii1225_lower")
 
 
@@ -385,6 +392,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 55f84c3c4bdc2d5f408b4576
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_ddrisii95")
 
 ///////////////////////////////////////      eft_hg_ar15_ddrisii95_lower
@@ -415,6 +423,7 @@ ATT.Attachments = {
     },
 }
 ATT.ExcludeElements = {"eft_m203"}
+-- EFT ID: 638f1ff84822287cad04be9d
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_ddrisii95_lower")
 
 ///////////////////////////////////////      eft_hg_ar15_ddrisii95_b
@@ -490,6 +499,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 55f84c3c4bdc2d5f408b4576
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_ddrisii95_b")
 
 ///////////////////////////////////////      eft_hg_ar15_ddrisii95_lower_b
@@ -520,6 +530,7 @@ ATT.Attachments = {
     },
 }
 ATT.ExcludeElements = {"eft_m203"}
+-- EFT ID: 638f1ff84822287cad04be9d
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_ddrisii95_lower_b")
 
 ///////////////////////////////////////      eft_hg_ar15_ddfsp
@@ -576,6 +587,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5c9a26332e2216001219ea70
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_ddfsp")
 
 ///////////////////////////////////////      eft_hg_ar15_mk16
@@ -654,6 +666,7 @@ ATT.Attachments = {
 }
 ATT.AdvancedCamoSupport = true
 
+-- EFT ID: 5ea16ada09aa976f2e7a51be
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_mk16")
 
 ///////////////////////////////////////      eft_hg_ar15_mk1695
@@ -726,6 +739,7 @@ ATT.Attachments = {
 }
 ATT.AdvancedCamoSupport = true
 
+-- EFT ID: 5ea16acdfadf1d18c87b0784
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_mk1695")
 
 ///////////////////////////////////////      eft_hg_ar15_kacris
@@ -783,6 +797,7 @@ ATT.Attachments = {
 }
 
 ATT.AdvancedCamoSupport = true
+-- EFT ID: 55d459824bdc2d892f8b4573
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_kacris")
 
 ///////////////////////////////////////      eft_hg_ar15_kacris_lower
@@ -811,6 +826,7 @@ ATT.Attachments = {
 }
 ATT.AdvancedCamoSupport = "eft_hg_ar15_kacris"
 ATT.ExcludeElements = {"eft_m203"}
+-- EFT ID: 637f57b78d137b27f70c496a
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_kacris_lower")
 
 
@@ -902,6 +918,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5d122e7bd7ad1a07102d6d7f
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_kacurx31")
 
 
@@ -939,6 +956,7 @@ ATT.Attachments = {
     },
 }
 ATT.ExcludeElements = {"eft_m203"}
+-- EFT ID: 637f57c532b66e7e320a6676
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_kacurx31_lower")
 
 
@@ -962,6 +980,7 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, -1),
     },
 }
+-- EFT ID: 5d133067d7ad1a33013f95b4
 ARC9.LoadAttachment(ATT, "eft_urxpanel_3")
 
 ///////////////////////////////////////      eft_urxstoper
@@ -980,6 +999,7 @@ ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 0.99
 ATT.Category = {"eft_urx_panel_lower"}
+-- EFT ID: 5d123b7dd7ad1a004f01b262
 ARC9.LoadAttachment(ATT, "eft_urxstoper")
 ///////////////////////////////////////      eft_urxstoper_fde
 ATT = {}
@@ -998,6 +1018,7 @@ ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 0.99
 ATT.Category = {"eft_urx_panel_lower"}
+-- EFT ID: 5d124c1ad7ad1a12227c53a7
 ARC9.LoadAttachment(ATT, "eft_urxstoper_fde")
 
 ///////////////////////////////////////      eft_urxlong
@@ -1014,6 +1035,7 @@ ATT.EFTErgoAdd = 3
 ATT.CustomPros = { Ergonomics = "+3" }
 ATT.HeatCapacityMult = 0.98
 ATT.Category = {"eft_urx_panel_long"}
+-- EFT ID: 5d123b70d7ad1a0ee35e0754
 ARC9.LoadAttachment(ATT, "eft_urxlong")
 
 ///////////////////////////////////////      eft_urxlong_fde
@@ -1031,6 +1053,7 @@ ATT.EFTErgoAdd = 3
 ATT.CustomPros = { Ergonomics = "+3" }
 ATT.HeatCapacityMult = 0.98
 ATT.Category = {"eft_urx_panel_long"}
+-- EFT ID: 5d124c0ed7ad1a10d168dd9b
 ARC9.LoadAttachment(ATT, "eft_urxlong_fde")
 
 ///////////////////////////////////////      eft_urxshort
@@ -1047,6 +1070,7 @@ ATT.EFTErgoAdd = 2
 ATT.CustomPros = { Ergonomics = "+2" }
 ATT.HeatCapacityMult = 0.99
 ATT.Category = {"eft_urx_panel_short"}
+-- EFT ID: 5d123a3cd7ad1a004e476058
 ARC9.LoadAttachment(ATT, "eft_urxshort")
 
 ///////////////////////////////////////      eft_urxshort_fde
@@ -1064,6 +1088,7 @@ ATT.EFTErgoAdd = 2
 ATT.CustomPros = { Ergonomics = "+2" }
 ATT.HeatCapacityMult = 0.99
 ATT.Category = {"eft_urx_panel_short"}
+-- EFT ID: 5d124c01d7ad1a115c7d59fb
 ARC9.LoadAttachment(ATT, "eft_urxshort_fde")
 
 ///////////////////////////////////////      eft_hg_ar15_kacurx38
@@ -1144,6 +1169,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5d123102d7ad1a004e475fe5
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_kacurx38")
 
 ///////////////////////////////////////      eft_hg_ar15_kacurx38_lower
@@ -1180,6 +1206,7 @@ ATT.Attachments = {
     },
 }
 ATT.ExcludeElements = {"eft_m203"}
+-- EFT ID: 637f57d2f5ef8c33840d36c4
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_kacurx38_lower")
 
 ///////////////////////////////////////      eft_hg_ar15_ionlite
@@ -1278,6 +1305,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5d4405f0a4b9361e6a4e6bd9
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_ionlite")
 
 ///////////////////////////////////////      eft_hg_ar15_moesl
@@ -1327,6 +1355,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5c78f2792e221600106f4683
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_moesl")
 
 ///////////////////////////////////////      eft_hg_ar15_moeslmid
@@ -1377,6 +1406,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5c78f26f2e221601da3581d1
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_moeslmid")
 
 ///////////////////////////////////////      eft_hg_ar15_saiqd
@@ -1481,6 +1511,7 @@ ATT.Attachments = {
 }
 
 ATT.AdvancedCamoSupport = true
+-- EFT ID: 5c78f2492e221600114c9f04
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_saiqd")
 
 ///////////////////////////////////////      eft_hg_ar15_saiqd10
@@ -1586,6 +1617,7 @@ ATT.Attachments = {
 
 
 ATT.AdvancedCamoSupport = "eft_hg_ar15_saiqd"
+-- EFT ID: 5c78f2612e221600114c9f0d
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_saiqd10")
 
 
@@ -1666,6 +1698,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5c6d5d8b2e221644fc630b39
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_vypr")
 
 ///////////////////////////////////////      eft_hg_ar15_viper
@@ -1720,6 +1753,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5d00e0cbd7ad1a6c6566a42d
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_viper")
 
 
@@ -1774,6 +1808,7 @@ ATT.Attachments = {
 ATT.ExcludeElements = {"barrel_406mm"}
 
 
+-- EFT ID: 5d00f63bd7ad1a59283b1c1e
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_viper_f")
 
 ///////////////////////////////////////      eft_hg_ar15_viper_lower
@@ -1801,6 +1836,7 @@ ATT.Attachments = {
     },
 }
 ATT.ExcludeElements = {"eft_m203"}
+-- EFT ID: 637f589af5ef8c33840d36d3
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_viper_lower")
 
 ///////////////////////////////////////      eft_hg_ar15_viper_lower_fde
@@ -1829,6 +1865,7 @@ ATT.Attachments = {
     },
 }
 ATT.ExcludeElements = {"eft_m203"}
+-- EFT ID: 63969c9019971040b005049b
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_viper_lower_fde")
 
 ///////////////////////////////////////      eft_hg_ar15_wing
@@ -1855,6 +1892,7 @@ ATT.ExcludeElements = {"barrel_260mm", "gasblock_big"}
 ATT.EFTErgoAdd = 15
 ATT.CustomPros = { Ergonomics = "+15" }
 ATT.HeatCapacityMult = 0.964
+-- EFT ID: 6087e0336d0bd7580617bb7a
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_wing")
 
 ///////////////////////////////////////      eft_hg_ar15_lvoac_b
@@ -1939,6 +1977,7 @@ ATT.Attachments = {
         Ang = Angle(0, -90, -90),   
     },
 }
+-- EFT ID: 595cfa8b86f77427437e845b
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_lvoac_b")
 
 ///////////////////////////////////////      eft_hg_ar15_lvoac_f
@@ -2024,6 +2063,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 595cfa8b86f77427437e845b
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_lvoac_f")
 
 ///////////////////////////////////////      eft_hg_ar15_lvoac_g
@@ -2108,6 +2148,7 @@ ATT.Attachments = {
         Ang = Angle(0, -90, -90),   
     },
 }
+-- EFT ID: 595cfa8b86f77427437e845b
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_lvoac_g")
 
 ///////////////////////////////////////      eft_hg_ar15_lvoas_b
@@ -2189,6 +2230,7 @@ ATT.Attachments = {
         Ang = Angle(0, -90, -90),   
     },
 }
+-- EFT ID: 595cf16b86f77427440c32e2
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_lvoas_b")
 
 ///////////////////////////////////////      eft_hg_ar15_lvoas_f
@@ -2271,6 +2313,7 @@ ATT.Attachments = {
         Ang = Angle(0, -90, -90),   
     },
 }
+-- EFT ID: 595cfa8b86f77427437e845b
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_lvoas_f")
 
 ///////////////////////////////////////      eft_hg_ar15_lvoas_g
@@ -2355,6 +2398,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 595cfa8b86f77427437e845b
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_lvoas_g")
 
 ///////////////////////////////////////      eft_hg_ar15_precision
@@ -2412,6 +2456,7 @@ ATT.Attachments = {
 }
 ATT.AdvancedCamoSupport = true
 
+-- EFT ID: 63888bbd28e5cc32cc09d2b6
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_precision")
 
 ///////////////////////////////////////      eft_mount_precision_bottom
@@ -2433,6 +2478,7 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, -1),
     },
 }
+-- EFT ID: 6388c4ac8d895f557a0c6515
 ARC9.LoadAttachment(ATT, "eft_mount_precision_bottom")
 
 ///////////////////////////////////////      eft_mount_precision_side
@@ -2454,6 +2500,7 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+-- EFT ID: 6388c4478d895f557a0c6512
 ARC9.LoadAttachment(ATT, "eft_mount_precision_side")
 
 ///////////////////////////////////////      eft_mount_precision_top
@@ -2483,6 +2530,7 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+-- EFT ID: 6388c5d19c00405f4717c0f0
 ARC9.LoadAttachment(ATT, "eft_mount_precision_top")
 
 
@@ -2522,6 +2570,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 63f4ba71f31d4a33b87bd046
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_ax15_4")
 
 ///////////////////////////////////////      eft_hg_ar15_ax15_158
@@ -2620,6 +2669,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5b30bc165acfc40016387293
 ARC9.LoadAttachment(ATT, "eft_mount_alexander_3")
 
 
@@ -2661,6 +2711,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5b30bc285acfc47a8608615d
 ARC9.LoadAttachment(ATT, "eft_mount_alexander_10")
 
 
@@ -2690,6 +2741,7 @@ ATT.CustomPros = { Ergonomics = "+7" }
 ATT.HeatCapacityMult = 1.074
 ATT.Category = {"eft_ar15_hguard"}
 
+-- EFT ID: 68a63cb3e1fb670852024664
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_m16a1")
 
 ///////////////////////////////////////      eft_hg_ar15_m16a2
@@ -2728,6 +2780,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 68a63cc0c92ee33ffa01bf5c
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_m16a2")
 
 ///////////////////////////////////////      eft_hg_ar15_m16a2_lower
@@ -2745,6 +2798,7 @@ ATT.EFTErgoAdd = 6
 ATT.CustomPros = { Ergonomics = "+6" }
 ATT.Category = {"eft_hglower_m16a2"}
 ATT.ExcludeElements = {"eft_m203"}
+-- EFT ID: 68a6413b54ef229c4d089238
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_m16a2_lower")
 
 ///////////////////////////////////////      eft_hg_ar15_skinny
@@ -2782,6 +2836,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 68a63ccc8a85019a82087956
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_skinny")
 
 ///////////////////////////////////////      eft_hg_ar15_skinny_lower
@@ -2799,6 +2854,7 @@ ATT.EFTErgoAdd = 7.5
 ATT.CustomPros = { Ergonomics = "+7.5" }
 ATT.Category = {"eft_hglower_skinny"}
 ATT.ExcludeElements = {"eft_m203"}
+-- EFT ID: 68a641452258a88280055616
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_skinny_lower")
 
 
@@ -2881,6 +2937,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 68a63cdac92ee33ffa01bf5f
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_kac_m5")
 
 ///////////////////////////////////////      eft_hg_ar15_kac_m5_lower
@@ -2917,6 +2974,7 @@ ATT.Attachments = {
     },
 }
 ATT.ExcludeElements = {"eft_m203"}
+-- EFT ID: 68a63ce2e1fb670852024667
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_kac_m5_lower")
 
 
@@ -3001,6 +3059,7 @@ ATT.Attachments = {
     },
 }
 ATT.AdvancedCamoSupport = true
+-- EFT ID: 6895bd19d55f0ebf6a0c0306
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_radian_14")
 
 ///////////////////////////////////////      eft_hg_ar15_cgnl_105
@@ -3074,6 +3133,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 68c1707983e2d814b0093f7e
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_cgnl_105")
 
 ///////////////////////////////////////      eft_hg_ar15_cgnl_14
@@ -3155,6 +3215,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 68c170e383e2d814b0093f87
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_cgnl_14")
 
 
@@ -3239,6 +3300,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 68caac360bfe742288085e16
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_kac_ff")
 
 
@@ -3315,6 +3377,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 68caac28f42a4476cf0be2ac
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_precision_round")
 
 ///////////////////////////////////////      eft_hg_ar15_precision_round_fde
@@ -3391,6 +3454,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 68cc2ae66e59cb54f4054f47
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_precision_round_fde")
 
 ///////////////////////////////////////      eft_hg_ar15_gridlok_base_blk
@@ -3431,6 +3495,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 68a5dc0c2cd64a8b58023b87
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_gridlok_base_blk")
 
 ///////////////////////////////////////      eft_hg_ar15_gridlok_base_red
@@ -3471,6 +3536,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 68a7000d7708ac5120060527
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_gridlok_base_red")
 
 ///////////////////////////////////////      eft_hg_ar15_gridlok_base_yellow
@@ -3511,6 +3577,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 68a6fff085a17dc1cb008066
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_gridlok_base_yellow")
 
 
@@ -3562,6 +3629,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 68a5dc4eed35a7eac1048ff6
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_gridlok_85")
 
 ///////////////////////////////////////      eft_hg_ar15_gridlok_11
@@ -3622,6 +3690,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 68a6f3b27279296357007cd7
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_gridlok_11")
 
 ///////////////////////////////////////      eft_hg_ar15_gridlok_15
@@ -3681,6 +3750,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 68a6fbb07279296357007ce2
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_gridlok_15")
 
 ///////////////////////////////////////      eft_hg_ar15_gridlok_17
@@ -3740,6 +3810,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 68a6fbfdd31595bb360c73bd
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_gridlok_17")
 
 
@@ -3786,6 +3857,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 68a6e8fd4ac5b037cb0e9b86
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_gridlok_ext_blk")
 
 ///////////////////////////////////////      eft_hg_ar15_gridlok_ext_red
@@ -3831,6 +3903,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 68a6ff952885e0bbd30bb6fd
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_gridlok_ext_red")
 
 ///////////////////////////////////////      eft_hg_ar15_gridlok_ext_yellow
@@ -3876,6 +3949,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 68a6ff732885e0bbd30bb6f9
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_gridlok_ext_yellow")
 
 
@@ -3923,6 +3997,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 647de824196bf69818044c93
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_abamod1")
 
 
@@ -3943,4 +4018,5 @@ ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 1.018
 ATT.Category = {"eft_hglower_abamod1"}
 ATT.ExcludeElements = {"eft_m203"}
+-- EFT ID: 647def638295ebcb5b02f05b
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_abamod1_lower")

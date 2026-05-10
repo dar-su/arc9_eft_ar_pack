@@ -42,6 +42,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 6183b0711cb55961fa0fdcad
 ARC9.LoadAttachment(ATT, "eft_scar_barrel_h16")
 
 ///////////////////////////////////////      eft_scar_barrel_h13
@@ -86,6 +87,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 618168b350224f204c1da4d8
 ARC9.LoadAttachment(ATT, "eft_scar_barrel_h13")
 
 ///////////////////////////////////////      eft_scar_barrel_h20
@@ -131,6 +133,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 6183b084a112697a4b3a6e6c
 ARC9.LoadAttachment(ATT, "eft_scar_barrel_h20")
 
 ///////////////////////////////////////      eft_scar_barrel_l10
@@ -175,6 +178,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 6183fc15d3a39d50044c13e9
 ARC9.LoadAttachment(ATT, "eft_scar_barrel_l10")
 
 ///////////////////////////////////////      eft_scar_barrel_l14
@@ -219,6 +223,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 6183fd911cb55961fa0fdce9
 ARC9.LoadAttachment(ATT, "eft_scar_barrel_l14")
 
 ///////////////////////////////////////      eft_scar_barrel_l18
@@ -263,6 +268,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 6183fd9e8004cc50514c358f
 ARC9.LoadAttachment(ATT, "eft_scar_barrel_l18")
 
 
@@ -303,6 +309,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 61816734d8e3106d9806c1f3
 ARC9.LoadAttachment(ATT, "eft_scar_stock_base")
 
 ///////////////////////////////////////      eft_scar_stock_base_f
@@ -342,6 +349,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 61825d06d92c473c770215de
 ARC9.LoadAttachment(ATT, "eft_scar_stock_base_f")
 
 ///////////////////////////////////////      eft_scar_stock_ext
@@ -373,6 +381,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 618167528004cc50514c34f9
 ARC9.LoadAttachment(ATT, "eft_scar_stock_ext")
 
 ///////////////////////////////////////      eft_scar_stock_ext_f
@@ -404,6 +413,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 61825d136ef05c2ce828f1cc
 ARC9.LoadAttachment(ATT, "eft_scar_stock_ext_f")
 
 ///////////////////////////////////////      eft_scar_stock_cheeck
@@ -423,6 +433,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_scar_stockcheek"}
 
+-- EFT ID: 618167441cb55961fa0fdc71
 ARC9.LoadAttachment(ATT, "eft_scar_stock_cheeck")
 
 ///////////////////////////////////////      eft_scar_stock_cheeck_f
@@ -442,6 +453,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_scar_stockcheek"}
 
+-- EFT ID: 61825d24d3a39d50044c13af
 ARC9.LoadAttachment(ATT, "eft_scar_stock_cheeck_f")
 
 ///////////////////////////////////////      eft_scar_stock_pad
@@ -463,6 +475,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_scar_stockpad"}
 
+-- EFT ID: 618167616ef05c2ce828f1a8
 ARC9.LoadAttachment(ATT, "eft_scar_stock_pad")
 
 ///////////////////////////////////////      eft_rearsight_scar
@@ -499,6 +512,7 @@ ATT.Sights = {
 }
 
 
+-- EFT ID: 61817865d3a39d50044c13a4
 ARC9.LoadAttachment(ATT, "eft_rearsight_scar")
 
 ///////////////////////////////////////      eft_scar_fss
@@ -515,6 +529,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_scar_fs"}
 
+-- EFT ID: 61816fcad92c473c770215cc
 ARC9.LoadAttachment(ATT, "eft_scar_fss")
 
 ///////////////////////////////////////      eft_scar_upper_h
@@ -596,6 +611,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 6165adcdd3a39d50044c120f
 ARC9.LoadAttachment(ATT, "eft_scar_upper_h")
 
 ///////////////////////////////////////      eft_scar_upper_h_f
@@ -678,6 +694,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 6165aeedfaa1272e431521e3
 ARC9.LoadAttachment(ATT, "eft_scar_upper_h_f")
 
 ///////////////////////////////////////      eft_scar_upper_l
@@ -758,6 +775,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 618405198004cc50514c3594
 ARC9.LoadAttachment(ATT, "eft_scar_upper_l")
 
 ///////////////////////////////////////      eft_scar_upper_l_f
@@ -836,6 +854,7 @@ ATT.Attachments = {
         ExcludeElements = {"nosiderail"},
     },
 }
+-- EFT ID: 618426d96c780c1e710c9b9f
 ARC9.LoadAttachment(ATT, "eft_scar_upper_l_f")
 
 
@@ -864,6 +883,7 @@ ATT.SuppressEmptySuffix = false
 ATT.DropMagazineAmount = 1
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_scar17_mag_dropped.mdl"
 
+-- EFT ID: 618168dc8004cc50514c34fc
 ARC9.LoadAttachment(ATT, "eft_scar_mag_h20")
 
 ///////////////////////////////////////      eft_scar_mag_h20_f
@@ -892,6 +912,7 @@ ATT.DropMagazineAmount = 1
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_scar17_mag_dropped.mdl"
 ATT.DropMagazineSkin = 1
 
+-- EFT ID: 6183d53f1cb55961fa0fdcda
 ARC9.LoadAttachment(ATT, "eft_scar_mag_h20_f")
 
 ///////////////////////////////////////      eft_muzzle_scar_fh
@@ -919,6 +940,7 @@ ATT.HeatCapacityMult = 1.01
 
 ATT.Category = {"eft_scarl_muzzle"}
 
+-- EFT ID: 618407a850224f204c1da549
 ARC9.LoadAttachment(ATT, "eft_muzzle_scar_fh")
 
 
@@ -953,6 +975,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 61816df1d3a39d50044c139e
 ARC9.LoadAttachment(ATT, "eft_scar_rail_bottom")
 
 ///////////////////////////////////////      eft_scar_rail_side
@@ -986,6 +1009,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 61816dfa6ef05c2ce828f1ad
 ARC9.LoadAttachment(ATT, "eft_scar_rail_side")
 
 ///////////////////////////////////////      eft_scar_ch
@@ -1006,6 +1030,7 @@ ATT.Category = {"eft_scar_charge"}
 ATT.EFTErgoAdd = 1
 ATT.CustomPros = { Ergonomics = "+1" }
 
+-- EFT ID: 6181688c6c780c1e710c9b04
 ARC9.LoadAttachment(ATT, "eft_scar_ch")
 
 
@@ -1068,6 +1093,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 619666f4af1f5202c57a952d
 ARC9.LoadAttachment(ATT, "eft_scar_rail_mrex")
 
 ///////////////////////////////////////      eft_scar_srx
@@ -1119,6 +1145,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 61965d9058ef8c428c287e0d
 ARC9.LoadAttachment(ATT, "eft_scar_srx")
 
 
@@ -1129,7 +1156,7 @@ ATT = {}
 ATT.PrintName = "Flat Dark Earth Reciever"
 ATT.CompactName = "FDE"
 ATT.Icon = Material("entities/eft_scar_attachments/fdelower.png", "mips smooth")
-ATT.Description = [[Changes reciever color to Flat Dark Earth.c]]
+ATT.Description = [[Changes reciever color to Flat Dark Earth.]]
 
 ATT.SortOrder = -90
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -1148,6 +1175,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_scar_fde")
 
 
@@ -1213,6 +1241,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 66ffc6ceb7ff397142017c3a
 ARC9.LoadAttachment(ATT, "eft_scar_rail_mrex_fde")
 
 ///////////////////////////////////////      eft_scar_rail_bottom_mlok
@@ -1247,6 +1276,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 66ffc72082d36dec82030c1f
 ARC9.LoadAttachment(ATT, "eft_scar_rail_bottom_mlok")
 
 ///////////////////////////////////////      eft_scar_rail_bottom_mlokf
@@ -1281,6 +1311,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 66ffc903fe9b382596065304
 ARC9.LoadAttachment(ATT, "eft_scar_rail_bottom_mlokf")
 
 ///////////////////////////////////////      eft_scar_mrexl
@@ -1325,6 +1356,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 66ffe2fbab3336cc0106382b
 ARC9.LoadAttachment(ATT, "eft_scar_mrexl")
 
 ///////////////////////////////////////      eft_scar_mrexlf
@@ -1369,6 +1401,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 66ffe5edfe9b38259606530d
 ARC9.LoadAttachment(ATT, "eft_scar_mrexlf")
 
 ///////////////////////////////////////      eft_scar_rail_side_nothing
@@ -1388,6 +1421,7 @@ ATT.CustomPros = { Ergonomics = "+2" }
 
 ATT.Category = {"eft_scar_mount_side"}
 
+-- EFT ID: 66ffe66a20771d839f0fb4a9
 ARC9.LoadAttachment(ATT, "eft_scar_rail_side_nothing")
 
 ///////////////////////////////////////      eft_scar_rail_side_nothingf
@@ -1407,6 +1441,7 @@ ATT.CustomPros = { Ergonomics = "+2" }
 
 ATT.Category = {"eft_scar_mount_side"}
 
+-- EFT ID: 66ffe6916f11538c7d0581e1
 ARC9.LoadAttachment(ATT, "eft_scar_rail_side_nothingf")
 
 ///////////////////////////////////////      eft_scar_rail_side_mlok
@@ -1440,6 +1475,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 66ffe6c36f11538c7d0581e3
 ARC9.LoadAttachment(ATT, "eft_scar_rail_side_mlok")
 
 ///////////////////////////////////////      eft_scar_rail_side_mlokf
@@ -1473,6 +1509,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 66ffe7bab8da88805e07a03e
 ARC9.LoadAttachment(ATT, "eft_scar_rail_side_mlokf")
 
 
@@ -1533,6 +1570,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 66ffe811f5d758d71101e89a
 ARC9.LoadAttachment(ATT, "eft_scar_rail_casv")
 
 ///////////////////////////////////////      eft_scar_rail_casvf
@@ -1592,6 +1630,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 66ffea06132225f0fe061394
 ARC9.LoadAttachment(ATT, "eft_scar_rail_casvf")
 
 ///////////////////////////////////////      eft_scar_rail_casv_ext
@@ -1652,6 +1691,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 66ffea456be19fd81e0ef742
 ARC9.LoadAttachment(ATT, "eft_scar_rail_casv_ext")
 
 ///////////////////////////////////////      eft_scar_rail_casv_extf
@@ -1712,6 +1752,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 66ffeab4ab3336cc01063833
 ARC9.LoadAttachment(ATT, "eft_scar_rail_casv_extf")
 
 
@@ -1742,6 +1783,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 66ffc246a81a4f85e70d4d06
 ARC9.LoadAttachment(ATT, "eft_scar_stock_base_rail")
 
 ///////////////////////////////////////      eft_scar_stock_ext_vss
@@ -1763,6 +1805,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_scar_stockext"}
 
+-- EFT ID: 66ffc2bd132225f0fe0611d8
 ARC9.LoadAttachment(ATT, "eft_scar_stock_ext_vss")
 
 ///////////////////////////////////////      eft_scar_stock_ext_vssf
@@ -1784,6 +1827,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_scar_stockext"}
 
+-- EFT ID: 66ffc2ecfe9b3825960652f7
 ARC9.LoadAttachment(ATT, "eft_scar_stock_ext_vssf")
 
 ///////////////////////////////////////      eft_scar_stock_base_buff
@@ -1818,6 +1862,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 66ffbfb1a73a7bce3d0b45a8
 ARC9.LoadAttachment(ATT, "eft_scar_stock_base_buff")
 
 ///////////////////////////////////////      eft_scar_stock_base_bufff
@@ -1852,4 +1897,5 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 66ffc20ba73a7bce3d0b45ab
 ARC9.LoadAttachment(ATT, "eft_scar_stock_base_bufff")

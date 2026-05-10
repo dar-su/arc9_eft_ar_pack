@@ -53,6 +53,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 55d35ee94bdc2d61338b4568
 ARC9.LoadAttachment(ATT, "eft_barrel_ar15_260mm")
 
 
@@ -105,6 +106,7 @@ ATT.Attachments = {
 
 ATT.AdvancedCamoSupport = true
 
+-- EFT ID: 55d3632e4bdc2d972f8b4569
 ARC9.LoadAttachment(ATT, "eft_barrel_ar15_370mm")
 
 
@@ -155,6 +157,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5d440b93a4b9364276578d4b
 ARC9.LoadAttachment(ATT, "eft_barrel_ar15_18i")
 
 ///////////////////////////////////////      eft_barrel_ar15_20i
@@ -204,6 +207,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5d440b9fa4b93601354d480c
 ARC9.LoadAttachment(ATT, "eft_barrel_ar15_20i")
 
 ///////////////////////////////////////      eft_barrel_ar15_406mm
@@ -254,6 +258,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5c0e2f94d174af029f650d56
 ARC9.LoadAttachment(ATT, "eft_barrel_ar15_406mm")
 
 
@@ -305,6 +310,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 63d3d44a2a49307baf09386d
 ARC9.LoadAttachment(ATT, "eft_barrel_ar15_hanson_16")
 
 
@@ -355,6 +361,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 63d3ce0446bd475bcb50f55f
 ARC9.LoadAttachment(ATT, "eft_barrel_ar15_hanson_137")
 
 
@@ -405,6 +412,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 68a86bd51d1284a8e20e39d5
 ARC9.LoadAttachment(ATT, "eft_barrel_ar15_292mm")
 
 ///////////////////////////////////////      eft_barrel_ar15_16i_mk12
@@ -455,6 +463,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 68caabc3f42a4476cf0be2a6
 ARC9.LoadAttachment(ATT, "eft_barrel_ar15_16i_mk12")
 
 
@@ -506,6 +515,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 68caaa93269e10396503acf6
 ARC9.LoadAttachment(ATT, "eft_barrel_ar15_18i_mk12")
 
 
@@ -556,6 +566,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 68a63ac58e1fe612970728f2
 ARC9.LoadAttachment(ATT, "eft_barrel_ar15_m16_20i")
 
 
@@ -591,6 +602,7 @@ ATT.ActivateElements = {"gasblock_big"}
 
 -- ATT.ExcludeElements = {"eft_hg_ar15_stm12", "eft_hg_ar15_stm15", "eft_hg_ar15_stm9", "eft_hg_ar15_adar", "eft_hg_ar15_ax15", "eft_hg_ar15_mk10", "eft_hg_ar15_ddrisii1225", "eft_hg_ar15_ddrisii95", "eft_hg_ar15_mk16", "eft_hg_ar15_kacurx31", "eft_hg_ar15_kacurx38", "eft_hg_ar15_ionlite", "eft_hg_ar15_saiqd10", "eft_hg_ar15_vypr", "eft_hg_ar15_wing", "eft_hg_ar15_lvoac_b", "eft_hg_ar15_lvoac_f", "eft_hg_ar15_lvoac_g", "eft_hg_ar15_lvoas_b", "eft_hg_ar15_lvoas_f", "eft_hg_ar15_lvoas_g", "eft_hg_ar15_ax15_158", "eft_hg_ar15_kac_m5", "eft_hg_ar15_radian_14", "eft_hg_ar15_cgnl_105", "eft_hg_ar15_cgnl_14", "eft_hg_ar15_kac_ff", "eft_hg_ar15_precision_round", "eft_hg_ar15_precision_round_fde", "eft_hg_ar15_precision"}
 
+-- EFT ID: 5ae30e795acfc408fb139a0b
 ARC9.LoadAttachment(ATT, "eft_gas_ar15_m4fs")
 
 
@@ -615,6 +627,7 @@ ATT.VisualRecoilMult = 0.98
 ATT.HeatCapacityMult = 0.995
 ATT.Category = {"eft_ar15_gasblock", "eft_ar15_gasblock_thin"}
 
+-- EFT ID: 56eabcd4d2720b66698b4574
 ARC9.LoadAttachment(ATT, "eft_gas_ar15_mk12")
 
 
@@ -641,6 +654,7 @@ ATT.Category = {"eft_ar15_gasblock", "eft_ar15_gasblock_thin"}
 
 ATT.ExcludeElements = {"eft_hg_ar15_moeslmid"}
 
+-- EFT ID: 5d00ec68d7ad1a04a067e5be
 ARC9.LoadAttachment(ATT, "eft_gas_ar15_jp")
 
 
@@ -674,6 +688,7 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 0),
     },
 }
+-- EFT ID: 56ea8d2fd2720b7c698b4570
 ARC9.LoadAttachment(ATT, "eft_gas_ar15_rg")
 
 ///////////////////////////////////////      eft_gas_ar15_lopro
@@ -697,6 +712,7 @@ ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 0.98
 ATT.Category = {"eft_ar15_gasblock", "eft_ar15_gasblock_thin"}
 
+-- EFT ID: 63d3ce281fe77d0f2801859e
 ARC9.LoadAttachment(ATT, "eft_gas_ar15_lopro")
 
 
@@ -724,6 +740,7 @@ ATT.ActivateElements = {"gasblock_big"}
 
 ATT.DrawFunc = function(swep, model) model:SetBodygroup(1, (swep:GetValue("FoldSights") or swep:HasElement("eft_frontsight")) and 1 or 0) end
 
+-- EFT ID: 68caac02269e10396503acfa
 ARC9.LoadAttachment(ATT, "eft_gas_ar15_mk12g1")
 
 ///////////////////////////////////////      eft_gas_ar15_sentry7
@@ -746,4 +763,5 @@ ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 ATT.Category = {"eft_ar15_gasblock", "eft_ar15_gasblock_thin"}
 
+-- EFT ID: 68c16f6883e2d814b0093f7a
 ARC9.LoadAttachment(ATT, "eft_gas_ar15_sentry7")

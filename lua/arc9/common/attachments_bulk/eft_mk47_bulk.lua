@@ -25,6 +25,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_ar10_gas", "eft_mk47_gas"}
 
+-- EFT ID: 6065dc8a132d4d12c81fd8e3
 ARC9.LoadAttachment(ATT, "eft_ar10_gas_cmmg")
 
 
@@ -49,6 +50,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mk47_charge"}
 
 ATT.AdvancedCamoSupport = true
+-- EFT ID: 606587bd6d0bd7580617bacc
 ARC9.LoadAttachment(ATT, "eft_mk47_charge_std")
 
 
@@ -94,6 +96,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 60658776f2cb2e02a42ace2b
 ARC9.LoadAttachment(ATT, "eft_mk47_barrel_254")
 
 ///////////////////////////////////////      eft_mk47_barrel_409
@@ -137,6 +140,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 6065878ac9cf8012264142fd
 ARC9.LoadAttachment(ATT, "eft_mk47_barrel_409")
 
 
@@ -195,6 +199,7 @@ ATT.Attachments = {
 
 ATT.AdvancedCamoSupport = true
 
+-- EFT ID: 606587a88900dc2d9a55b659
 ARC9.LoadAttachment(ATT, "eft_mk47_upper_std")
 
 
@@ -232,6 +237,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 606587e18900dc2d9a55b65f
 ARC9.LoadAttachment(ATT, "eft_ar_buffertube_cmmg")
 
     
@@ -283,6 +289,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_mk47_conversion_545")
 
 ///////////////////////////////////////      eft_mk47_conversion_556
@@ -335,6 +342,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_mk47_conversion_556")
 
 
@@ -412,6 +420,7 @@ ATT.Attachments = {
 }
 
 ATT.AdvancedCamoSupport = true
+-- EFT ID: 6065880c132d4d12c81fd8da
 ARC9.LoadAttachment(ATT, "eft_ar10_hg_rml9")
 
 ///////////////////////////////////////      eft_ar10_hg_rml15
@@ -494,4 +503,5 @@ ATT.Attachments = {
 }
 
 ATT.AdvancedCamoSupport = true
+-- EFT ID: 6065881d1246154cad35d637
 ARC9.LoadAttachment(ATT, "eft_ar10_hg_rml15")

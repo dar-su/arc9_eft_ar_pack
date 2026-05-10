@@ -35,6 +35,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5dcbe9431e1f4616d354987e
 ARC9.LoadAttachment(ATT, "eft_mdr_barrel_762")
 
 ///////////////////////////////////////      eft_mdr_barrel_556
@@ -72,6 +73,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5c48a2852e221602b21d5923
 ARC9.LoadAttachment(ATT, "eft_mdr_barrel_556")
 
 
@@ -95,6 +97,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mdr_pg"}
 ATT.AdvancedCamoSupport = true
 
+-- EFT ID: 5c48a2c22e221602b313fb6c
 ARC9.LoadAttachment(ATT, "eft_mdr_pg_blk")
 
 ///////////////////////////////////////      eft_mdr_pg_fde
@@ -117,6 +120,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mdr_pg"}
 ATT.AdvancedCamoSupport = true
 
+-- EFT ID: 5c48a2c22e221602b313fb6c
 ARC9.LoadAttachment(ATT, "eft_mdr_pg_fde")
 
 ///////////////////////////////////////      eft_mdr_hg_blk
@@ -180,6 +184,7 @@ ATT.Attachments = {
 }
 ATT.AdvancedCamoSupport = true
 
+-- EFT ID: 5c48a14f2e2216152006edd7
 ARC9.LoadAttachment(ATT, "eft_mdr_hg_blk")
 
 ///////////////////////////////////////      eft_mdr_hg_fde
@@ -243,6 +248,7 @@ ATT.Attachments = {
 }
 ATT.AdvancedCamoSupport = true
 
+-- EFT ID: 5c48a14f2e2216152006edd7
 ARC9.LoadAttachment(ATT, "eft_mdr_hg_fde")
 
 
@@ -276,4 +282,5 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_mdr_fde")

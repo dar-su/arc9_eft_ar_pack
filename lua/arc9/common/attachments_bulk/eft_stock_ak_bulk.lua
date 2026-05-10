@@ -31,6 +31,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5ac78eaf5acfc4001926317a
 ARC9.LoadAttachment(ATT, "eft_stock_ak74m_zenit_lock")
 
 
@@ -68,6 +69,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5649b0fc4bdc2d17108b4588
 ARC9.LoadAttachment(ATT, "eft_stock_ak74_polymer")
 
 
@@ -105,6 +107,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5cbdb1b0ae9215000d50e105
 ARC9.LoadAttachment(ATT, "eft_stock_ak74_polymer_plum")
 
 
@@ -142,6 +145,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5649b1c04bdc2d16268b457c
 ARC9.LoadAttachment(ATT, "eft_stock_ak74_std")
 
 
@@ -179,6 +183,7 @@ ATT.ToggleStats = {
 }
 
 
+-- EFT ID: 59ff3b6a86f77477562ff5ed
 ARC9.LoadAttachment(ATT, "eft_stock_akms")
 
 
@@ -216,6 +221,7 @@ ATT.ToggleStats = {
 }
 
 
+-- EFT ID: 5abcd472d8ce8700166032ae
 ARC9.LoadAttachment(ATT, "eft_stock_akmsn")
 
 
@@ -244,6 +250,7 @@ ATT.RecoilMult = 0.61
 ATT.VisualRecoilMult = 0.61
 
 
+-- EFT ID: 6087e2a5232e5a31c233d552
 ARC9.LoadAttachment(ATT, "eft_stock_akm_aa47")
 
 
@@ -282,6 +289,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5cf518cfd7f00c065b422214
 ARC9.LoadAttachment(ATT, "eft_stock_akm_akts")
 
 
@@ -310,6 +318,7 @@ ATT.Category = {"eft_akm_stock"}
 
 
 
+-- EFT ID: 5b04473a5acfc40018632f70
 ARC9.LoadAttachment(ATT, "eft_stock_akm_fabd_uas")
 
 
@@ -339,6 +348,7 @@ ATT.VisualRecoilMult = 0.66
 ATT.Category = {"eft_akm_stock"}
 
 
+-- EFT ID: 5e217ba4c1434648c13568cd
 ARC9.LoadAttachment(ATT, "eft_stock_akm_kocherga")
 
 
@@ -377,6 +387,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5649b2314bdc2d79388b4576
 ARC9.LoadAttachment(ATT, "eft_stock_akm_me4")
 
 
@@ -408,6 +419,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5b222d335acfc4771e1be099
 ARC9.LoadAttachment(ATT, "eft_stock_akm_pt_lock")
 
 
@@ -445,6 +457,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 59d6514b86f774171a068a08
 ARC9.LoadAttachment(ATT, "eft_stock_akm_std")
 
 
@@ -473,6 +486,7 @@ ATT.Category = {"eft_akm_stock"}
 
 
 
+-- EFT ID: 5b0e794b5acfc47a877359b2
 ARC9.LoadAttachment(ATT, "eft_stock_akm_zhu_s")
 
 
@@ -510,6 +524,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5ab626e4d8ce87272e4c6e43
 ARC9.LoadAttachment(ATT, "eft_stock_aks74_std")
 
 
@@ -542,6 +557,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 59ecc28286f7746d7a68aa8c
 ARC9.LoadAttachment(ATT, "eft_stock_aks_zenit_lock")
 
 
@@ -577,6 +593,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 628a6678ccaab13006640e49
 ARC9.LoadAttachment(ATT, "eft_stock_ak_aktom4")
 
 
@@ -603,6 +620,7 @@ ATT.VisualRecoilMult = 0.99
 ATT.Category = {"eft_stock_ak_pad"}
 
 
+-- EFT ID: 5a0c59791526d8dba737bba7
 ARC9.LoadAttachment(ATT, "eft_stock_ak_pad")
 
 
@@ -640,6 +658,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 59e6227d86f77440d64f5dc2
 ARC9.LoadAttachment(ATT, "eft_stock_vpo136")
 
 
@@ -677,6 +696,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 59e89d0986f77427600d226e
 ARC9.LoadAttachment(ATT, "eft_stock_vpo209")
 
 
@@ -717,6 +737,7 @@ ATT.Attachments = {
 
 ATT.AdvancedCamoSupport = true
 
+-- EFT ID: 5b222d405acfc400153af4fe
 ARC9.LoadAttachment(ATT, "eft_stock_zenit_pt1")
 
 
@@ -746,6 +767,7 @@ ATT.HasStock = true
 
 ATT.Category = {"eft_stock_zenit_lock"}
 
+-- EFT ID: 59ecc3dd86f7746dc827481c
 ARC9.LoadAttachment(ATT, "eft_stock_zenit_pt3")
 
 
@@ -784,6 +806,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 6386300124a1dc425c00577a
 ARC9.LoadAttachment(ATT, "eft_stock_ak100_skelet")
 
 ///////////////////////////////////////      eft_stock_ak_skelet_cust
@@ -819,6 +842,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 66ac9d9740e27931602042d4
 ARC9.LoadAttachment(ATT, "eft_stock_ak_skelet_cust")
 
 ///////////////////////////////////////      eft_stock_ak_evo
@@ -844,6 +868,7 @@ ATT.VisualRecoilMult = 0.78
 
 ATT.Category = {"eft_ak74m_stock", "eft_aks_stock", "eft_rpk16_stock"}
 
+-- EFT ID: 6761779c48fa5c377e06fc3f
 ARC9.LoadAttachment(ATT, "eft_stock_ak_evo")
 
 ///////////////////////////////////////      eft_stock_akms_fab
@@ -876,6 +901,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 6761763448fa5c377e06fc39
 ARC9.LoadAttachment(ATT, "eft_stock_akms_fab")
 
 ///////////////////////////////////////      eft_stock_ak_pad_stef
@@ -900,4 +926,5 @@ ATT.VisualRecoilMult = 0.98
 ATT.Category = {"eft_stock_ak_pad_skelet"}
 
 
+-- EFT ID: 6494094948796d891603e59f
 ARC9.LoadAttachment(ATT, "eft_stock_ak_pad_stef")

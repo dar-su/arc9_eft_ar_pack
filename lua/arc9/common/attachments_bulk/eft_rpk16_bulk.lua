@@ -24,6 +24,7 @@ ATT.HeatCapacityMult = 1.02
 ATT.PhysBulletMuzzleVelocityMult = 0.92
 
 
+-- EFT ID: 5beec1bd0db834001e6006f3
 ARC9.LoadAttachment(ATT, "eft_rpk16_barrel_370")
 
 
@@ -59,6 +60,7 @@ ATT.PhysBulletMuzzleVelocityMult = 0.95
 ATT.Category = {"eft_rpk16_barrel"}
 
 
+-- EFT ID: 5beec2820db834001b095426
 ARC9.LoadAttachment(ATT, "eft_rpk16_barrel_550")
 
 
@@ -128,6 +130,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5beec3e30db8340019619424
 ARC9.LoadAttachment(ATT, "eft_rpk16_hg_std")
 
 
@@ -159,6 +162,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5beecbb80db834001d2c465e
 ARC9.LoadAttachment(ATT, "eft_rpk16_mount_side")
 
 
@@ -185,6 +189,7 @@ ATT.VisualRecoilMult = 0.92
 ATT.PhysBulletMuzzleVelocityMult = 1.005
 
 
+-- EFT ID: 5beec3420db834001b095429
 ARC9.LoadAttachment(ATT, "eft_rpk16_muzzle_std")
 
 
@@ -225,6 +230,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5beec91a0db834001961942d
 ARC9.LoadAttachment(ATT, "eft_rpk16_rec")
 
 
@@ -245,6 +251,7 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_rs_rpk16.mdl"
 ATT.Category = {"eft_rpk16_rearsight"}
 
 
+-- EFT ID: 5beec9450db83400970084fd
 ARC9.LoadAttachment(ATT, "eft_rpk16_rs")
 
 
@@ -273,6 +280,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5beec9450db83400970084fd
 ARC9.LoadAttachment(ATT, "eft_rpk16_rs_base")
 
 
@@ -307,5 +315,6 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5beec8b20db834001961942a
 ARC9.LoadAttachment(ATT, "eft_rpk16_stock_tube")
 

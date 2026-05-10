@@ -41,6 +41,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5c0faeddd174af02a962601f
 ARC9.LoadAttachment(ATT, "eft_ar_buffertube_adar")
 
 
@@ -72,6 +73,7 @@ ATT.Category = {"eft_ar15_buffertube", "eft_hk416_buffertube"}
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 
+-- EFT ID: 5b0800175acfc400153aebd4
 ARC9.LoadAttachment(ATT, "eft_ar_buffertube_f93pro")
 
 
@@ -102,6 +104,7 @@ ATT.Category = {"eft_ar15_buffertube", "eft_hk416_buffertube"}
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 
+-- EFT ID: 591aef7986f774139d495f03
 ARC9.LoadAttachment(ATT, "eft_ar_buffertube_m7a1")
 
 
@@ -133,6 +136,7 @@ ATT.Category = {"eft_ar15_buffertube", "eft_hk416_buffertube"}
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 
+-- EFT ID: 591af10186f774139d495f0e
 ARC9.LoadAttachment(ATT, "eft_ar_buffertube_m7a1f")
 
 
@@ -173,6 +177,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 638de3603a1a4031d8260b8c
 ARC9.LoadAttachment(ATT, "eft_ar_buffertube_rtm")
 
 
@@ -213,6 +218,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5c793fb92e221644f31bfb64
 ARC9.LoadAttachment(ATT, "eft_ar_buffertube_siadv")
 
 
@@ -254,6 +260,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5c793fc42e221600114ca25d
 ARC9.LoadAttachment(ATT, "eft_ar_buffertube_siadvred")
 
 
@@ -289,6 +296,7 @@ ATT.Category = {"eft_ar15_buffertube", "eft_hk416_buffertube"}
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 
+-- EFT ID: 5947e98b86f774778f1448bc
 ARC9.LoadAttachment(ATT, "eft_ar_buffertube_ubrgen2")
 
 
@@ -321,6 +329,7 @@ ATT.Category = {"eft_ar15_buffertube", "eft_hk416_buffertube"}
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 
+-- EFT ID: 5947eab886f77475961d96c5
 ARC9.LoadAttachment(ATT, "eft_ar_buffertube_ubrgen2f")
 
 
@@ -352,6 +361,7 @@ ATT.Category = {"eft_ar15_buffertube", "eft_hk416_buffertube"}
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 
+-- EFT ID: 627254cc9c563e6e442c398f
 ARC9.LoadAttachment(ATT, "eft_ar_buffertube_viperpdw")
 
 
@@ -384,6 +394,7 @@ ATT.Category = "eft_ar15_buffertube"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 
+-- EFT ID: 6761777a1f08ed5e8800b7ac
 ARC9.LoadAttachment(ATT, "eft_ar_buffertube_arfx")
 
 ///////////////////////////////////////      eft_ar_buffertube_baskak
@@ -414,6 +425,7 @@ ATT.Category = "eft_ar15_buffertube_notbuffer"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 
+-- EFT ID: 57ade1442459771557167e15
 ARC9.LoadAttachment(ATT, "eft_ar_buffertube_baskak")
 
 
@@ -449,6 +461,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 68c17005ba442c8112076088
 ARC9.LoadAttachment(ATT, "eft_ar_buffertube_cgnl")
 
 ///////////////////////////////////////      eft_ar_buffertube_cgnl_fde
@@ -484,4 +497,5 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 68c1701cba442c811207608b
 ARC9.LoadAttachment(ATT, "eft_ar_buffertube_cgnl_fde")

@@ -16,6 +16,7 @@ ATT.HasBolt = true
 ATT.Category = {"eft_mcx_charge"}
 
 ATT.AdvancedCamoSupport = true
+-- EFT ID: 5fbcc640016cce60e8341acc
 ARC9.LoadAttachment(ATT, "eft_mcx_ch")
 
 
@@ -91,6 +92,7 @@ ATT.Attachments = {
 }
 ATT.AdvancedCamoSupport = true
 
+-- EFT ID: 5fbcc3e4d6fa9c00c571bb58
 ARC9.LoadAttachment(ATT, "eft_mcx_rec")
 
 
@@ -138,6 +140,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5fbbfabed5cb881a7363194e
 ARC9.LoadAttachment(ATT, "eft_mcx_barrel171")
 
 ///////////////////////////////////////      eft_mcx_barrel229
@@ -183,6 +186,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5fbbfacda56d053a3543f799
 ARC9.LoadAttachment(ATT, "eft_mcx_barrel229")
 
 
@@ -231,6 +235,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 681245a31eb182c02f0d7f09
 ARC9.LoadAttachment(ATT, "eft_mcx_barrel406")
 
 
@@ -252,6 +257,7 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/gas_block_mcx_sig_mcx_mid_piston
 ATT.RecoilMult = 0.96
 ATT.VisualRecoilMult = 0.96
 
+-- EFT ID: 68124640c5fd00ec0a01a237
 ARC9.LoadAttachment(ATT, "eft_mcx_gbcalx")
 
 ///////////////////////////////////////      eft_mcx_gb
@@ -273,6 +279,7 @@ ATT.CustomCons = { Ergonomics = "-1" }
 ATT.RecoilMult = 0.97
 ATT.VisualRecoilMult = 0.97
 
+-- EFT ID: 5fbc210bf24b94483f726481
 ARC9.LoadAttachment(ATT, "eft_mcx_gb")
 
 
@@ -332,6 +339,7 @@ ATT.Attachments = {
 }
 
 ATT.AdvancedCamoSupport = true
+-- EFT ID: 5fbc227aa56d053a3543f79e
 ARC9.LoadAttachment(ATT, "eft_mcx_hg_12")
 
 ///////////////////////////////////////      eft_mcx_hg_8
@@ -390,6 +398,7 @@ ATT.Attachments = {
 }
 
 ATT.AdvancedCamoSupport = true
+-- EFT ID: 5fbc226eca32ed67276c155d
 ARC9.LoadAttachment(ATT, "eft_mcx_hg_8")
 
 
@@ -453,6 +462,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 68120dcbb90552f01004e5ca
 ARC9.LoadAttachment(ATT, "eft_mcx_hg_lancer_105")
 
 ///////////////////////////////////////      eft_mcx_hg_lancer_12
@@ -515,6 +525,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 6812180dc20f5c52bc04d6cc
 ARC9.LoadAttachment(ATT, "eft_mcx_hg_lancer_12")
 
 ///////////////////////////////////////      eft_mcx_hg_lancer_18
@@ -577,6 +588,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 681236df5cbf0518e00557a0
 ARC9.LoadAttachment(ATT, "eft_mcx_hg_lancer_18")
 
 ///////////////////////////////////////      eft_mcx_hg_gen1
@@ -637,6 +649,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 6811f4854922782caa087440
 ARC9.LoadAttachment(ATT, "eft_mcx_hg_gen1")
 
 
@@ -677,6 +690,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 58ac1bf086f77420ed183f9f
 ARC9.LoadAttachment(ATT, "eft_mcx_stock_adap")
 
 ///////////////////////////////////////      eft_mcx_stock_cqb
@@ -702,6 +716,7 @@ ATT.SortOrder = 0
 ATT.Category = "eft_mcx_stock"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+-- EFT ID: 5c5db6ee2e221600113fba54
 ARC9.LoadAttachment(ATT, "eft_mcx_stock_cqb")
 
 ///////////////////////////////////////      eft_mcx_stock_light
@@ -728,6 +743,7 @@ ATT.Category = "eft_mcx_stock"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.AdvancedCamoSupport = true
+-- EFT ID: 5fbcc437d724d907e2077d5c
 ARC9.LoadAttachment(ATT, "eft_mcx_stock_light")
 
 ///////////////////////////////////////      eft_mcx_stock_tele
@@ -753,6 +769,7 @@ ATT.SortOrder = 0
 ATT.Category = "eft_mcx_stock"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+-- EFT ID: 5fbcc429900b1d5091531dd7
 ARC9.LoadAttachment(ATT, "eft_mcx_stock_tele")
 
 ///////////////////////////////////////      eft_mcx_stock_ulss
@@ -778,6 +795,7 @@ ATT.SortOrder = 0
 ATT.Category = "eft_mcx_stock"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+-- EFT ID: 5c5db6f82e2216003a0fe914
 ARC9.LoadAttachment(ATT, "eft_mcx_stock_ulss")
 
 
@@ -814,6 +832,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 68badb6458dbe419740b1520
 ARC9.LoadAttachment(ATT, "eft_mcx_stock_ucs")
 
 ///////////////////////////////////////      eft_mcx_stock_ucs_fde
@@ -849,6 +868,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 68d566f3f3d7cd248f0a06db
 ARC9.LoadAttachment(ATT, "eft_mcx_stock_ucs_fde")
 
 
@@ -871,6 +891,7 @@ ATT.VisualRecoilMult = 0.75
 ATT.Category = "eft_ucs_cheek"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+-- EFT ID: 68badc0366a72211fe004bc7
 ARC9.LoadAttachment(ATT, "eft_mcx_stock_ucs_cheek")
 
 
@@ -956,6 +977,7 @@ ATT.DamageLookupTable = {
 
 ATT.Category = {"eft_ammo_300blk"}
 
+-- EFT ID: 5fd20ff893a8961fc660a954
 ARC9.LoadAttachment(ATT, "eft_ammo_300blk_ap")
 
 
@@ -1030,6 +1052,7 @@ ATT.DamageLookupTable = {
 
 ATT.Category = {"eft_ammo_300blk"}
 
+-- EFT ID: 619636be6db0f2477964e710
 ARC9.LoadAttachment(ATT, "eft_ammo_300blk_m62")
 
 
@@ -1103,6 +1126,7 @@ ATT.DamageLookupTable = {
 
 ATT.Category = {"eft_ammo_300blk"}
 
+-- EFT ID: 5fbe3ffdf8b6a877a729ea82
 ARC9.LoadAttachment(ATT, "eft_ammo_300blk_bcp")
 
 ///////////////////////////////////////      eft_ammo_300blk_cbj
@@ -1175,6 +1199,7 @@ ATT.DamageLookupTable = {
 
 ATT.Category = {"eft_ammo_300blk"}
 
+-- EFT ID: 64b8725c4b75259c590fa899
 ARC9.LoadAttachment(ATT, "eft_ammo_300blk_cbj")
 
 
@@ -1248,6 +1273,7 @@ ATT.DamageLookupTable = {
 
 ATT.Category = {"eft_ammo_300blk"}
 
+-- EFT ID: 6196364158ef8c428c287d9f
 ARC9.LoadAttachment(ATT, "eft_ammo_300blk_vmax")
 
 ///////////////////////////////////////      eft_ammo_300blk_whisper
@@ -1320,5 +1346,6 @@ ATT.DamageLookupTable = {
 
 ATT.Category = {"eft_ammo_300blk"}
 
+-- EFT ID: 6196365d58ef8c428c287da1
 ARC9.LoadAttachment(ATT, "eft_ammo_300blk_whisper")
 

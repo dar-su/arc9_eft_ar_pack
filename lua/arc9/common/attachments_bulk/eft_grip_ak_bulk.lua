@@ -23,6 +23,7 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_ak74_bakelit.mdl"
 ATT.Category = {"eft_ak_grip"}
 
 
+-- EFT ID: 5649ad3f4bdc2df8348b4585
 ARC9.LoadAttachment(ATT, "eft_grip_ak_6p1sb8v")
 
 
@@ -47,6 +48,7 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_aks74_bakelit.mdl"
 ATT.Category = {"eft_ak_grip"}
 
 
+-- EFT ID: 57e3dba62459770f0c32322b
 ARC9.LoadAttachment(ATT, "eft_grip_ak_6p4sb9")
 
 
@@ -71,6 +73,7 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_aeroknox_scorpius.mdl"
 ATT.Category = {"eft_ak_grip"}
 
 
+-- EFT ID: 5f6341043ada5942720e2dc5
 ARC9.LoadAttachment(ATT, "eft_grip_ak_aeroknox")
 
 
@@ -95,6 +98,7 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_agr_47.mdl"
 ATT.Category = {"eft_ak_grip"}
 
 
+-- EFT ID: 623c3be0484b5003161840dc
 ARC9.LoadAttachment(ATT, "eft_grip_ak_agr47")
 
 
@@ -121,6 +125,7 @@ ATT.Category = {"eft_ak_grip"}
 
 ATT.AdvancedCamoSupport = true
 
+-- EFT ID: 6087e663132d4d12c81fd96b
 ARC9.LoadAttachment(ATT, "eft_grip_ak_ags74")
 
 
@@ -146,6 +151,7 @@ ATT.Category = {"eft_ak_grip"}
 
 ATT.AdvancedCamoSupport = true
 
+-- EFT ID: 5beec8ea0db834001a6f9dbf
 ARC9.LoadAttachment(ATT, "eft_grip_ak_ak12")
 
 
@@ -171,6 +177,7 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_strike_indsustries.mdl"
 ATT.Category = {"eft_ak_grip"}
 
 
+-- EFT ID: 5cf50850d7f00c056e24104c
 ARC9.LoadAttachment(ATT, "eft_grip_ak_akepg")
 
 
@@ -198,6 +205,7 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_strike_indsustries_fde.
 ATT.Category = {"eft_ak_grip"}
 
 
+-- EFT ID: 5cf508bfd7f00c056e24104e
 ARC9.LoadAttachment(ATT, "eft_grip_ak_akepg_fde")
 
 
@@ -222,6 +230,7 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_akm_bakelit.mdl"
 ATT.Category = {"eft_ak_grip"}
 
 
+-- EFT ID: 59e62cc886f77440d40b52a1
 ARC9.LoadAttachment(ATT, "eft_grip_ak_akm_b")
 
 
@@ -246,6 +255,7 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_akm_wood.mdl"
 ATT.Category = {"eft_ak_grip"}
 
 
+-- EFT ID: 5a0071d486f77404e23a12b2
 ARC9.LoadAttachment(ATT, "eft_grip_ak_akm_w")
 
 
@@ -270,6 +280,7 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_molot_bakelit.mdl"
 ATT.Category = {"eft_ak_grip"}
 
 
+-- EFT ID: 59e62cc886f77440d40b52a1
 ARC9.LoadAttachment(ATT, "eft_grip_ak_ak_b")
 
 
@@ -297,6 +308,7 @@ ATT.ActivateElements = {"nostock"}
 ATT.Category = {"eft_ak_cqrgrip"}
 
 
+-- EFT ID: 619b69037b9de8162902673e
 ARC9.LoadAttachment(ATT, "eft_grip_ak_cqr47")
 
 
@@ -323,6 +335,7 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_kgb_mg47.mdl"
 ATT.Category = {"eft_ak_grip"}
 
 
+-- EFT ID: 5cf54404d7f00c108840b2ef
 ARC9.LoadAttachment(ATT, "eft_grip_ak_mg47")
 
 
@@ -351,6 +364,7 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_kgb_mg47_red.mdl"
 ATT.Category = {"eft_ak_grip"}
 
 
+-- EFT ID: 5e2192a498a36665e8337386
 ARC9.LoadAttachment(ATT, "eft_grip_ak_mg47_ar")
 
 
@@ -376,6 +390,7 @@ ATT.Category = {"eft_ak_grip"}
 
 ATT.AdvancedCamoSupport = true
 
+-- EFT ID: 5b30ac585acfc433000eb79c
 ARC9.LoadAttachment(ATT, "eft_grip_ak_moe")
 
 
@@ -404,6 +419,7 @@ ATT.Category = {"eft_ak_grip"}
 
 ATT.AdvancedCamoSupport = true
 
+-- EFT ID: 5649ae4a4bdc2d1b2b8b4588
 ARC9.LoadAttachment(ATT, "eft_grip_ak_rk3")
 
 
@@ -428,6 +444,7 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_tango_down.mdl"
 ATT.Category = {"eft_ak_grip"}
 
 
+-- EFT ID: 628a664bccaab13006640e47
 ARC9.LoadAttachment(ATT, "eft_grip_ak_tangodown")
 
 
@@ -454,6 +471,7 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_tango_down_fde.mdl"
 ATT.Category = {"eft_ak_grip"}
 
 
+-- EFT ID: 628c9ab845c59e5b80768a81
 ARC9.LoadAttachment(ATT, "eft_grip_ak_tangodown_fde")
 
 
@@ -479,6 +497,7 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_tapco_saw.mdl"
 ATT.Category = {"eft_ak_grip"}
 
 
+-- EFT ID: 5947f92f86f77427344a76b1
 ARC9.LoadAttachment(ATT, "eft_grip_ak_tapco_saw")
 
 
@@ -504,6 +523,7 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_tapco_saw_fde.mdl"
 ATT.Category = {"eft_ak_grip"}
 
 
+-- EFT ID: 5947fa2486f77425b47c1a9b
 ARC9.LoadAttachment(ATT, "eft_grip_ak_tapco_saw_fde")
 
 
@@ -528,6 +548,7 @@ ATT.CustomPros = { Ergonomics = "+12" }
 ATT.Category = {"eft_ak_grip"}
 
 
+-- EFT ID: 5c6bf4aa2e2216001219b0ae
 ARC9.LoadAttachment(ATT, "eft_grip_ak_us_palm")
 
 
@@ -555,6 +576,7 @@ ATT.ModelOffset = Vector(0, 0, 0.06)
 ATT.Category = {"eft_ak_grip"}
 
 
+-- EFT ID: 63f4da90f31d4a33b87bd054
 ARC9.LoadAttachment(ATT, "eft_grip_ak_mft")
 
 -- 0.14
@@ -591,4 +613,5 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 648ae3e356c6310a830fc291
 ARC9.LoadAttachment(ATT, "eft_grip_ak_cg101")

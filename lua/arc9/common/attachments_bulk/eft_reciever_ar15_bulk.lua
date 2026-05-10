@@ -56,6 +56,7 @@ ATT.Attachments = {
 }
 ATT.AdvancedCamoSupport = true
 
+-- EFT ID: 55d355e64bdc2d962f8b4569
 ARC9.LoadAttachment(ATT, "eft_rec_ar15_m4a1")
 
 
@@ -111,6 +112,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5c0e2f26d174af02a9625114
 ARC9.LoadAttachment(ATT, "eft_rec_ar15_adar")
 
 
@@ -170,6 +172,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5d4405aaa4b9361e6a4e6bd3
 ARC9.LoadAttachment(ATT, "eft_rec_ar15_tx15")
 
 
@@ -228,6 +231,7 @@ ATT.Attachments = {
 }
 
 ATT.AdvancedCamoSupport = true
+-- EFT ID: 5c07a8770db8340023300450
 ARC9.LoadAttachment(ATT, "eft_rec_ar15_gen3")
 
 
@@ -288,6 +292,7 @@ ATT.Attachments = {
 }
 
 ATT.AdvancedCamoSupport = true
+-- EFT ID: 59bfe68886f7746004266202
 ARC9.LoadAttachment(ATT, "eft_rec_ar15_mur")
 
 ///////////////////////////////////////      eft_rec_ar15_aeronknxo
@@ -346,6 +351,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 63f5ed14534b2c3d5479a677
 ARC9.LoadAttachment(ATT, "eft_rec_ar15_aeronknxo")
 
 ///////////////////////////////////////      eft_rec_ar15_radian
@@ -404,6 +410,7 @@ ATT.Attachments = {
 }
 
 ATT.AdvancedCamoSupport = true
+-- EFT ID: 6895becad55f0ebf6a0c0311
 ARC9.LoadAttachment(ATT, "eft_rec_ar15_radian")
 
 
@@ -466,6 +473,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 68a63b90e1fb670852024659
 ARC9.LoadAttachment(ATT, "eft_rec_ar15_m16a1e1")
 
 
@@ -527,6 +535,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 68a63b9b8e1fe612970728f7
 ARC9.LoadAttachment(ATT, "eft_rec_ar15_m16a2")
 
 ///////////////////////////////////////      eft_rec_m16_rail
@@ -564,6 +573,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 68a63d1522b1e0bd360afe67
 ARC9.LoadAttachment(ATT, "eft_rec_m16_rail")
 
 ///////////////////////////////////////      eft_rec_ar15_spr_rail
@@ -614,6 +624,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 68caacb4c8ac87b10507c5a6
 ARC9.LoadAttachment(ATT, "eft_rec_ar15_spr_rail")
 
 
@@ -664,6 +675,7 @@ ATT.DrawFunc = function(swep, model)
 end
 
 
+-- EFT ID: 68a63d3c8e977b40b2032286
 ARC9.LoadAttachment(ATT, "eft_rearsight_matech")
 
 ///////////////////////////////////////      eft_rearsight_arms40
@@ -713,4 +725,5 @@ ATT.DrawFunc = function(swep, model)
 end
 
 
+-- EFT ID: 68caad70269e10396503ad00
 ARC9.LoadAttachment(ATT, "eft_rearsight_arms40")

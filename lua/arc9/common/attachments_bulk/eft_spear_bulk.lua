@@ -15,6 +15,7 @@ ATT.HasBolt = true
 
 ATT.Category = {"eft_spear_charge"}
 
+-- EFT ID: 6529109524cbe3c74a05e5b7
 ARC9.LoadAttachment(ATT, "eft_spear_charge_std")
 
 
@@ -80,6 +81,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 6529119424cbe3c74a05e5bb
 ARC9.LoadAttachment(ATT, "eft_spear_upper_std")
 
 
@@ -126,6 +128,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 652910565ae2ae97b80fdf35
 ARC9.LoadAttachment(ATT, "eft_spear_barrel_330")
 
 ///////////////////////////////////////      eft_spear_gas_std
@@ -147,6 +150,7 @@ ATT.CustomCons = { Ergonomics = "-1" }
 ATT.RecoilMult = 0.97
 ATT.VisualRecoilMult = 0.97
 
+-- EFT ID: 652910bc24cbe3c74a05e5b9
 ARC9.LoadAttachment(ATT, "eft_spear_gas_std")
 
 
@@ -207,6 +211,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 652910ef50dc782999054b97
 ARC9.LoadAttachment(ATT, "eft_spear_hg_std")
 
 ///////////////////////////////////////      eft_mcx_stock_hinge
@@ -239,6 +244,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 6529348224cbe3c74a05e5c4
 ARC9.LoadAttachment(ATT, "eft_mcx_stock_hinge")
 
 ///////////////////////////////////////      eft_spear_buffertube_ct
@@ -273,6 +279,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 6529366450dc782999054ba0
 ARC9.LoadAttachment(ATT, "eft_spear_buffertube_ct")
 
 ///////////////////////////////////////      eft_spear_buffertube_ct_blk
@@ -310,6 +317,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 6529366450dc782999054ba0
 ARC9.LoadAttachment(ATT, "eft_spear_buffertube_ct_blk")
 
 ///////////////////////////////////////      eft_spear_mz_std
@@ -342,6 +350,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 6529113b5ae2ae97b80fdf39
 ARC9.LoadAttachment(ATT, "eft_spear_mz_std")
 
 
@@ -372,6 +381,7 @@ ATT.MuzzleEffectQCA = 5
 
 ATT.Category = {"eft_spear_silencer"}
 
+-- EFT ID: 652911e650dc782999054b9d
 ARC9.LoadAttachment(ATT, "eft_spear_silencer_std")
 
 ///////////////////////////////////////      eft_spear_blk
@@ -403,6 +413,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_spear_blk")
 
 
@@ -437,6 +448,7 @@ ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ar10_lancer_l7_a
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ar10_lancer_l7_awm_762x51_20.mdl"
 
 
+-- EFT ID: 65293c38fc460e50a509cb25
 ARC9.LoadAttachment(ATT, "eft_ar10_mag_l7_20")
 
 ///////////////////////////////////////      eft_ar10_mag_l7_25
@@ -450,7 +462,6 @@ ATT.Icon = Material("entities/eft_spear_attachments/25.png", "mips smooth")
 ATT.Description = [[A 25-round double-stack L7AWM 25 magazine for 7.62x51 NATO ammunition. Manufactured by Lancer Systems.]]
 
 ATT.EFTErgoAdd = -3
-ATT.CustomCons = { Ergonomics = "-3" }
 ATT.MalfunctionMeanShotsToFailMult = 0.98
 
 ATT.SortOrder = 0
@@ -466,6 +477,7 @@ ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ar10_lancer_l7_a
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ar10_lancer_l7_awm_762x51_25.mdl"
 
 
+-- EFT ID: 65293c7a17e14363030ad308
 ARC9.LoadAttachment(ATT, "eft_ar10_mag_l7_25")
 
 ///////////////////////////////////////      eft_spear_bolting
@@ -495,6 +507,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_spear_bolting")
 
 
@@ -574,6 +587,7 @@ ATT.DamageLookupTable = {
 ATT.Category = {"eft_ammo_68x51"}
 
 
+-- EFT ID: 6529302b8c26af6326029fb7
 ARC9.LoadAttachment(ATT, "eft_ammo_68x51_fmj")
 
 
@@ -649,4 +663,5 @@ ATT.DamageLookupTable = {
 
 ATT.Category = {"eft_ammo_68x51"}
 
+-- EFT ID: 6529243824cbe3c74a05e5c1
 ARC9.LoadAttachment(ATT, "eft_ammo_68x51_hybrid")

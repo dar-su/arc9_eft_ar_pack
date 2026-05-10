@@ -62,6 +62,7 @@ ATT.Attachments = {
 
 ATT.AdvancedCamoSupport = true
 
+-- EFT ID: 5beecbb80db834001d2c465e
 ARC9.LoadAttachment(ATT, "eft_ak12_hg_std")
 
 
@@ -79,6 +80,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasGas = true
 ATT.Category = {"eft_ak12_gas"}
 
+-- EFT ID: 649ec107961514b22506b10c
 ARC9.LoadAttachment(ATT, "eft_ak12_gas_std")
 
 ///////////////////////////////////////      eft_ak12_muzzle_std
@@ -104,6 +106,7 @@ ATT.VisualRecoilMult = 0.91
 ATT.PhysBulletMuzzleVelocityMult = 1.005
 
 
+-- EFT ID: 649ec2af961514b22506b10f
 ARC9.LoadAttachment(ATT, "eft_ak12_muzzle_std")
 
 ///////////////////////////////////////      eft_ak12_silencer_std
@@ -139,6 +142,7 @@ ATT.PhysBulletMuzzleVelocityMult = 1.0075
 
 ATT.AdvancedCamoSupport = true
 
+-- EFT ID: 64c196ad26a15b84aa07132f
 ARC9.LoadAttachment(ATT, "eft_ak12_silencer_std")
 
 
@@ -180,6 +184,7 @@ ATT.Attachments = {
 
 ATT.AdvancedCamoSupport = true
 
+-- EFT ID: 649ec2f3961514b22506b111
 ARC9.LoadAttachment(ATT, "eft_ak12_rec")
 
 
@@ -200,6 +205,7 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_rs_ak12.mdl"
 ATT.Category = {"eft_rpk16_rearsight"}
 
 
+-- EFT ID: 649ec2cec93611967b03495e
 ARC9.LoadAttachment(ATT, "eft_ak12_rs")
 
 
@@ -228,6 +234,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 649ec2da59cbb3c813042dca
 ARC9.LoadAttachment(ATT, "eft_ak12_rs_base")
 
 
@@ -265,5 +272,6 @@ ATT.Attachments = {
 ATT.AdvancedCamoSupport = true
 
 
+-- EFT ID: 649ec87d8007560a9001ab36
 ARC9.LoadAttachment(ATT, "eft_ak12_stock_tube")
 

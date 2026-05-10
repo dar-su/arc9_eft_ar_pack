@@ -17,6 +17,7 @@ ATT.Category = {"eft_ash12_fs"}
 
 
 
+-- EFT ID: 5caf16a2ae92152ac412efbc
 ARC9.LoadAttachment(ATT, "eft_ash12_fs_std")
 
 
@@ -51,6 +52,7 @@ ATT.Attachments = {
 
 ATT.AdvancedCamoSupport = true
 
+-- EFT ID: 5cdaa99dd7f00c002412d0b2
 ARC9.LoadAttachment(ATT, "eft_ash12_hg_std")
 
 
@@ -65,7 +67,6 @@ ATT.Icon = Material("entities/eft_ash12_attachments/mag10.png", "mips smooth")
 ATT.Description = [[10-round magazine for 12.7x55 ASh-12.]]
 
 ATT.EFTErgoAdd = -3
-ATT.CustomCons = { Ergonomics = "-3" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -82,6 +83,7 @@ ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/ash12mag10.mdl"
 ATT.ActivateElements = {"ashmag10"}
 
 ATT.AdvancedCamoSupport = true
+-- EFT ID: 5caf1041ae92157c28402e3f
 ARC9.LoadAttachment(ATT, "eft_ash12_mag_10")
 
 
@@ -115,6 +117,7 @@ ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/ash12mag20.mdl"
 ATT.ActivateElements = {"ashmag20"}
 
 ATT.AdvancedCamoSupport = true
+-- EFT ID: 5caf1109ae9215753c44119f
 ARC9.LoadAttachment(ATT, "eft_ash12_mag_20")
 
 
@@ -153,6 +156,7 @@ ATT.Category = {"eft_ash12_muzzle"}
 
 ATT.AdvancedCamoSupport = true
 
+-- EFT ID: 5caf187cae92157c28402e43
 ARC9.LoadAttachment(ATT, "eft_ash12_muzzle_silencer")
 
 
@@ -181,6 +185,7 @@ ATT.Category = {"eft_ash12_muzzle"}
 
 
 
+-- EFT ID: 5caf17c9ae92150b30006be1
 ARC9.LoadAttachment(ATT, "eft_ash12_muzzle_std")
 
 
@@ -225,4 +230,5 @@ ATT.Category = {"eft_as12_rs"}
 
 
 
+-- EFT ID: 5caf1691ae92152ac412efb9
 ARC9.LoadAttachment(ATT, "eft_ash12_rs_std")
