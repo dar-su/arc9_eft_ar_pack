@@ -30,11 +30,11 @@ ATT.Category = {"eft_ak12_handguard"}
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_scope"),
-        Category = {"eft_tactical_top", "eft_optic_medium", "eft_optic_small"},
+        Category = {"eft_tactical_top", "eft_optic_medium", "eft_optic_small", "eft_backupmount"},
         Pos = Vector(0, 3.75, -2.5),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0.5),
-        ExtraSightDistance = 8
+        ExtraSightDistance = 7
     },
     {
         PrintName = ARC9:GetPhrase("eft_cat_foregrip"),

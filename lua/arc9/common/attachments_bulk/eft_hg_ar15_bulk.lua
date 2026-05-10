@@ -2952,7 +2952,7 @@ ATT.Attachments = {
         Pos = Vector(0, 1.8, -1.12),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0),
-        ExtraSightDistance = 8,
+        ExtraSightDistance = 5,
         ExcludeElements = {"eft_rec_ar15_spr_rail"}
     },
     {

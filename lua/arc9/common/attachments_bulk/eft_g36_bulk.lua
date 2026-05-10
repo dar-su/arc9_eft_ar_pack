@@ -670,7 +670,7 @@ ATT.Attachments = {
         Pos = Vector(-3.5, 0, -0.63),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
-        ExtraSightDistance = 8
+        ExtraSightDistance = 5
     },
     {
         PrintName = ARC9:GetPhrase("eft_cat_tactical_u"),
