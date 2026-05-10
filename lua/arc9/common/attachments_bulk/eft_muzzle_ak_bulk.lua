@@ -19,7 +19,6 @@ ATT.Category = {"eft_ak101_muzzle"}
 
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 ATT.RecoilMult = 0.9
 ATT.VisualRecoilMult = 0.9
 ATT.PhysBulletMuzzleVelocityMult = 1.005
@@ -45,7 +44,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak74_izhmash_ak102_std_55
 ATT.Category = {"eft_ak101_muzzle"}
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 ATT.RecoilMult = 0.92
 ATT.VisualRecoilMult = 0.92
 ATT.PhysBulletMuzzleVelocityMult = 1.005
@@ -72,7 +70,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak74_izhmash_ak74m_std_54
 ATT.Category = {"eft_ak103_muzzle", "eft_ak_ttak"}
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 ATT.RecoilMult = 0.9
 ATT.VisualRecoilMult = 0.9
 ATT.PhysBulletMuzzleVelocityMult = 1.005
@@ -99,7 +96,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak74_izhmash_ak102_std_55
 ATT.Category = {"eft_ak103_muzzle", "eft_ak_ttak"}
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 ATT.RecoilMult = 0.92
 ATT.VisualRecoilMult = 0.92
 ATT.PhysBulletMuzzleVelocityMult = 1.005
@@ -124,7 +120,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak74_izhmash_ak102_std_556x45.mdl"
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 ATT.RecoilMult = 0.92
 ATT.VisualRecoilMult = 0.92
 ATT.PhysBulletMuzzleVelocityMult = 1.005
@@ -153,7 +148,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak74_izhmash_ak74m_std_54
 ATT.Category = {"eft_ak74_muzzle", "eft_rpk16_muzzle"}
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 ATT.RecoilMult = 0.9
 ATT.VisualRecoilMult = 0.9
 ATT.PhysBulletMuzzleVelocityMult = 1.005
@@ -180,7 +174,6 @@ ATT.Model = "models/weapons/arc9_eft_shared/atts/muzzle/muzzle_ar15_pws_cqb_556x
 ATT.Category = {"eft_ak74_muzzle", "eft_rpk16_muzzle"}
 
 ATT.EFTErgoAdd = -4
-ATT.CustomCons = { Ergonomics = "-4" }
 ATT.RecoilMult = 0.84
 ATT.VisualRecoilMult = 0.84
 ATT.HeatCapacityMult = 0.989
@@ -206,7 +199,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak74_srvv_mbr_jet_545_545x39.mdl"
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 ATT.RecoilMult = 0.85
 ATT.VisualRecoilMult = 0.85
 ATT.HeatCapacityMult = 0.99
@@ -234,7 +226,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak74_izhmash_std_545x39.mdl"
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 ATT.RecoilMult = 0.9
 ATT.VisualRecoilMult = 0.9
 ATT.PhysBulletMuzzleVelocityMult = 1.005
@@ -261,7 +252,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak_izhmash_akml_762x39.mdl"
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 ATT.RecoilMult = 0.95
 ATT.VisualRecoilMult = 0.95
 ATT.PhysBulletMuzzleVelocityMult = 1.015
@@ -286,7 +276,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 ATT.RecoilMult = 0.84
 ATT.VisualRecoilMult = 0.84
 ATT.HeatCapacityMult = 0.99
@@ -340,7 +329,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak_venom_antidote_muzzle_brake_multi.mdl"
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 ATT.RecoilMult = 0.83
 ATT.VisualRecoilMult = 0.83
 ATT.SpreadMult = 0.98
@@ -397,7 +385,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 ATT.RecoilMult = 0.85
 ATT.VisualRecoilMult = 0.85
 ATT.HeatCapacityMult = 0.99
@@ -429,7 +416,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak_zenit_dtk1_762x39_545x
 ATT.Category = {"eft_ak74_muzzle", "eft_ak103_muzzle", "eft_ak_ttak", "eft_rpk16_muzzle"}
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 ATT.RecoilMult = 0.87
 ATT.VisualRecoilMult = 0.87
 ATT.HeatCapacityMult = 0.99
@@ -483,7 +469,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak_samson_thread_adapter_9x19.mdl"
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 
@@ -521,7 +506,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak_hexagon_reactor_muzzle
 ATT.Category = {"eft_ak74_muzzle"}
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.RecoilMult = 0.83
 ATT.VisualRecoilMult = 0.83
 ATT.HeatCapacityMult = 0.99
@@ -559,7 +543,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak_jmac_rrd_4c_762x39.mdl
 ATT.Category = {"eft_akm_muzzle"}
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 ATT.RecoilMult = 0.8
 ATT.VisualRecoilMult = 0.8
 ATT.HeatCapacityMult = 0.984
@@ -585,7 +568,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak74_jmac_rrd_4c_multi.mdl"
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 ATT.RecoilMult = 0.81
 ATT.VisualRecoilMult = 0.81
 ATT.HeatCapacityMult = 0.987
@@ -667,7 +649,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = 1
-ATT.CustomPros = { Ergonomics = "+1" }
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak_molot_vpo_209_366TKM.mdl"
 
@@ -695,7 +676,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak_vector_vr_05t_762x39.m
 ATT.Category = {"eft_akm_muzzle", "eft_ak103_muzzle"}
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 ATT.RecoilMult = 0.86
 ATT.VisualRecoilMult = 0.86
 ATT.HeatCapacityMult = 0.98
@@ -731,7 +711,6 @@ ATT.NoFlash = true
 ATT.BarrelLengthAdd = 5
 
 ATT.EFTErgoAdd = -22
-ATT.CustomCons = { Ergonomics = "-22" }
 ATT.RecoilMult = 0.91
 ATT.VisualRecoilMult = 0.91
 ATT.SpreadMult = 1.01
@@ -767,7 +746,6 @@ ATT.BarrelLengthAdd = 5
 
 
 ATT.EFTErgoAdd = -23
-ATT.CustomCons = { Ergonomics = "-23" }
 ATT.RecoilMult = 0.91
 ATT.VisualRecoilMult = 0.91
 ATT.SpreadMult = 1.01
@@ -802,7 +780,6 @@ ATT.NoFlash = true
 ATT.BarrelLengthAdd = 5
 
 ATT.EFTErgoAdd = -21
-ATT.CustomCons = { Ergonomics = "-21" }
 ATT.RecoilMult = 0.915
 ATT.VisualRecoilMult = 0.915
 ATT.SpreadMult = 1.02
@@ -841,7 +818,6 @@ ATT.NoFlash = true
 ATT.BarrelLengthAdd = 5
 
 ATT.EFTErgoAdd = -21
-ATT.CustomCons = { Ergonomics = "-21" }
 ATT.RecoilMult = 0.9
 ATT.VisualRecoilMult = 0.9
 ATT.SpreadMult = 1.01
@@ -866,7 +842,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -25
-ATT.CustomCons = { Ergonomics = "-25" }
 ATT.RecoilMult = 0.88
 ATT.VisualRecoilMult = 0.88
 ATT.SpreadMult = 1.01
@@ -902,7 +877,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -25
-ATT.CustomCons = { Ergonomics = "-25" }
 ATT.RecoilMult = 0.9
 ATT.VisualRecoilMult = 0.9
 ATT.HeatCapacityMult = 1.14
@@ -937,7 +911,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -25
-ATT.CustomCons = { Ergonomics = "-25" }
 ATT.RecoilMult = 0.895
 ATT.VisualRecoilMult = 0.895
 ATT.SpreadMult = 1.01
@@ -973,7 +946,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -19
-ATT.CustomCons = { Ergonomics = "-19" }
 ATT.RecoilMult = 0.93
 ATT.VisualRecoilMult = 0.93
 ATT.HeatCapacityMult = 1.14
@@ -1010,7 +982,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9_eft_shared/atts/muzzle/silencer_all_rotor_43_v2.mdl"
 
 ATT.EFTErgoAdd = -20
-ATT.CustomCons = { Ergonomics = "-20" }
 ATT.RecoilMult = 0.91
 ATT.VisualRecoilMult = 0.91
 ATT.SpreadMult = 1.02

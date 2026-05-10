@@ -91,7 +91,6 @@ ATT.Category = {"eft_ak_gasblock"}
 
 
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 1.03
@@ -181,7 +180,6 @@ ATT.ExcludeElements = {"short_barrel"}
 ATT.ActivateElements = {"nogp34"}
 
 ATT.EFTErgoAdd = 10
-ATT.CustomPros = { Ergonomics = "+10" }
 ATT.RecoilMult = 0.955
 ATT.VisualRecoilMult = 0.955
 ATT.HeatCapacityMult = 0.93
@@ -292,7 +290,6 @@ ATT.ExcludeElements = {"short_barrel"}
 ATT.ActivateElements = {"nogp34"}
 
 ATT.EFTErgoAdd = 14
-ATT.CustomPros = { Ergonomics = "+14" }
 ATT.RecoilMult = 0.96
 ATT.VisualRecoilMult = 0.96
 ATT.HeatCapacityMult = 0.956
@@ -368,7 +365,6 @@ ATT.ExcludeElements = {"short_barrel"}
 ATT.ActivateElements = {"nogp34"}
 
 ATT.EFTErgoAdd = 14
-ATT.CustomPros = { Ergonomics = "+14" }
 ATT.RecoilMult = 0.96
 ATT.VisualRecoilMult = 0.96
 ATT.HeatCapacityMult = 0.956
@@ -431,7 +427,6 @@ ATT.HasGas = true
 ATT.HasHG = true 
 
 ATT.EFTErgoAdd = 9
-ATT.CustomPros = { Ergonomics = "+9" }
 ATT.RecoilMult = 0.95
 ATT.VisualRecoilMult = 0.95
 ATT.HeatCapacityMult = 0.945

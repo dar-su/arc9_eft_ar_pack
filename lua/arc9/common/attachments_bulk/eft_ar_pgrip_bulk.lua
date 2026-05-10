@@ -25,7 +25,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/pistolgrip_ar15_f1_firearms_st1_
 ATT.HasGrip = true
 
 ATT.EFTErgoAdd = 11
-ATT.CustomPros = { Ergonomics = "+11" }
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar15_pgrip"
@@ -51,7 +50,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/pistolgrip_ar15_f1_firearms_st2_
 ATT.HasGrip = true
 
 ATT.EFTErgoAdd = 12
-ATT.CustomPros = { Ergonomics = "+12" }
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar15_pgrip"
@@ -77,7 +75,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/pistolgrip_ar15_f1_firearms_st2_
 ATT.HasGrip = true
 
 ATT.EFTErgoAdd = 13
-ATT.CustomPros = { Ergonomics = "+13" }
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar15_pgrip"
@@ -103,7 +100,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/pistolgrip_ar15_naroh_arms_gral_
 ATT.HasGrip = true
 
 ATT.EFTErgoAdd = 15
-ATT.CustomPros = { Ergonomics = "+15" }
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar15_pgrip_m4"
@@ -130,7 +126,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/pistolgrip_ar15_tactical_dynamic
 ATT.HasGrip = true
 
 ATT.EFTErgoAdd = 7
-ATT.CustomPros = { Ergonomics = "+7" }
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar15_pgrip"
@@ -156,7 +151,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/pistolgrip_ar15_hera_arms_hg15.m
 ATT.HasGrip = true
 
 ATT.EFTErgoAdd = 10
-ATT.CustomPros = { Ergonomics = "+10" }
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar15_pgrip_m4"
@@ -182,7 +176,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/pistolgrip_ar15_hk_battle_grip.m
 ATT.HasGrip = true
 
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar15_pgrip"
@@ -209,7 +202,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/pistolgrip_ar15_hk_grip_v2.mdl"
 ATT.HasGrip = true
 
 ATT.EFTErgoAdd = 7
-ATT.CustomPros = { Ergonomics = "+7" }
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar15_pgrip_m4"
@@ -236,7 +228,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/pistolgrip_ar15_sig_mcx_std.mdl"
 ATT.HasGrip = true
 
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar15_pgrip_m4"
@@ -266,7 +257,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/pistolgrip_ar15_magpul_moe.mdl"
 ATT.HasGrip = true
 
 ATT.EFTErgoAdd = 10
-ATT.CustomPros = { Ergonomics = "+10" }
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar15_pgrip_m4"
@@ -294,7 +284,6 @@ ATT.ModelSkin = 1
 ATT.HasGrip = true
 
 ATT.EFTErgoAdd = 10
-ATT.CustomPros = { Ergonomics = "+10" }
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar15_pgrip_m4"
@@ -321,7 +310,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/pistolgrip_ar15_hk_ergo_psg1_sty
 ATT.HasGrip = true
 
 ATT.EFTErgoAdd = 15
-ATT.CustomPros = { Ergonomics = "+15" }
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar15_pgrip_m4"
@@ -348,7 +336,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/pistolgrip_ar15_stark_ar_rifle_g
 ATT.HasGrip = true
 
 ATT.EFTErgoAdd = 11
-ATT.CustomPros = { Ergonomics = "+11" }
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar15_pgrip_m4"
@@ -375,7 +362,6 @@ ATT.ModelSkin = 1
 ATT.HasGrip = true
 
 ATT.EFTErgoAdd = 11
-ATT.CustomPros = { Ergonomics = "+11" }
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar15_pgrip_m4"
@@ -401,7 +387,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/pistolgrip_ar15_tactical_dynamic
 ATT.HasGrip = true
 
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar15_pgrip"
@@ -427,7 +412,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/pistolgrip_ar15_aeroknox_orion.m
 ATT.HasGrip = true
 
 ATT.EFTErgoAdd = 12
-ATT.CustomPros = { Ergonomics = "+12" }
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar15_pgrip"
@@ -452,7 +436,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/pistolgrip_ar15_sig_reduced_angl
 ATT.HasGrip = true
 
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar15_pgrip_m4"
@@ -475,7 +458,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/pistolgrip_ar15_colt_a1.mdl"
 ATT.HasGrip = true
 
 ATT.EFTErgoAdd = 5.5
-ATT.CustomPros = { Ergonomics = "+5.5" }
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar15_pgrip_m4"
@@ -499,7 +481,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/pistolgrip_ar15_sierra_precision
 ATT.HasGrip = true
 
 ATT.EFTErgoAdd = 12
-ATT.CustomPros = { Ergonomics = "+12" }
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar15_pgrip_m4"
@@ -524,7 +505,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/pistolgrip_ar15_dlg_138.mdl"
 ATT.HasGrip = true
 
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar15_pgrip_m4"
@@ -550,7 +530,6 @@ ATT.ModelSkin = 1
 ATT.HasGrip = true
 
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar15_pgrip_m4"

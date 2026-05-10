@@ -11,7 +11,6 @@ ATT.Icon = Material("entities/eft_vsk_attachments/20.png", "mips smooth")
 ATT.Description = [[A standard-issue 20-round magazine for the 9A-91 assault rifle and VSK-94 marksman rifle. Manufactured by Tula KPB Instrument Design Bureau. ]]
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -42,7 +41,6 @@ ATT.Icon = Material("entities/eft_vsk_attachments/stock.png", "mips smooth")
 ATT.Description = [[A standard-issue stock for the VSK-94 marksman rifle. Manufactured by Tula KPB Instrument Design Bureau. ]]
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 ATT.RecoilMult = 0.72
 ATT.VisualRecoilMult = 0.72
 
@@ -66,8 +64,6 @@ ATT.Icon = Material("entities/eft_vsk_attachments/top.png", "mips smooth")
 ATT.Description = [[A standard-issue top-folding stock for the 9A-91 assault rifle. Manufactured by Tula KPB Instrument Design Bureau. ]]
 
 ATT.EFTErgoAdd = 8
--- ATT.CustomPros = { Ergonomics = "+8" }
-ATT.CustomPros = { Ergonomics = "+8", ["Recoil while unfolded"] = "-20%" }
 -- ATT.RecoilMult = 0.8
 -- ATT.VisualRecoilMult = 0.8
 
@@ -103,7 +99,6 @@ ATT.Icon = Material("entities/eft_vsk_attachments/hg9.png", "mips smooth")
 ATT.Description = [[A standard-issue handguard for the 9A-91 assault rifle. Manufactured by Tula KPB Instrument Design Bureau. ]]
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 
 ATT.HasHandguard = true
 
@@ -125,7 +120,6 @@ ATT.Icon = Material("entities/eft_vsk_attachments/hg.png", "mips smooth")
 ATT.Description = [[A standard-issue handguard for the VSK-94 marksman rifle. Manufactured by Tula KPB Instrument Design Bureau. ]]
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 
 ATT.HasHandguard = true
 
@@ -168,7 +162,6 @@ ATT.Description = [[A standard-issue handguard retainer for the 9A-91 compact as
 ATT.HasGas = true 
 
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -191,7 +184,6 @@ ATT.Description = [[A detachable sound suppressor for the 9A-91 compact assault 
 ATT.HasGas = true 
 
 ATT.EFTErgoAdd = -4
-ATT.CustomCons = { Ergonomics = "-4" }
 ATT.RecoilMult = 0.86
 ATT.VisualRecoilMult = 0.86
 -- ATT.PhysBulletMuzzleVelocityMult = 0.94

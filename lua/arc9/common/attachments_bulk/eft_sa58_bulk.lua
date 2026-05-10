@@ -13,7 +13,6 @@ ATT.Description = [[An 11 inch (280mm) long barrel for DS Arms SA-58 7.62x51.]]
 ATT.HasBarrel = true 
 
 ATT.EFTErgoAdd = -8
-ATT.CustomCons = { Ergonomics = "-8" }
 ATT.RecoilMult = 0.98
 ATT.VisualRecoilMult = 0.98
 ATT.PhysBulletMuzzleVelocityMult = 0.88
@@ -51,7 +50,6 @@ ATT.Description = [[An 16 inch (406mm) long barrel for DS Arms SA-58 7.62x51.]]
 ATT.HasBarrel = true 
 
 ATT.EFTErgoAdd = -18
-ATT.CustomCons = { Ergonomics = "-18" }
 ATT.RecoilMult = 0.94
 ATT.VisualRecoilMult = 0.94
 ATT.PhysBulletMuzzleVelocityMult = 0.92
@@ -89,7 +87,6 @@ ATT.Description = [[An 21 inch (533mm) long barrel for DS Arms SA-58 7.62x51.]]
 ATT.HasBarrel = true 
 
 ATT.EFTErgoAdd = -28
-ATT.CustomCons = { Ergonomics = "-28" }
 ATT.RecoilMult = 0.92
 ATT.VisualRecoilMult = 0.92
 ATT.PhysBulletMuzzleVelocityMult = 0.97
@@ -127,7 +124,6 @@ ATT.Description = [[The AG-FAL anatomical pistol grip for SA-58 rifles manufactu
 ATT.HasGrip = true 
 
 ATT.EFTErgoAdd = 13
-ATT.CustomPros = { Ergonomics = "+13" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -149,7 +145,6 @@ ATT.Description = [[A standard pistol grip for SA-58 rifles manufactured by DS A
 ATT.HasGrip = true 
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -171,7 +166,6 @@ ATT.Description = [[An anatomical pistol grip for SA-58 assault rifles, inspired
 ATT.HasGrip = true 
 
 ATT.EFTErgoAdd = 10
-ATT.CustomPros = { Ergonomics = "+10" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -208,7 +202,6 @@ ATT.Icon = Material("entities/eft_sa58_attachments/rec.png", "mips smooth")
 ATT.Description = [[A standard-issue dust cover for FAL-series rifles.]]
 
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -233,7 +226,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_sa58_rec"}
 
 ATT.EFTErgoAdd = 4
-ATT.CustomPros = { Ergonomics = "+4" }
 
 ATT.Attachments = {
     {
@@ -258,7 +250,6 @@ ATT.Icon = Material("entities/eft_sa58_attachments/brs.png", "mips smooth")
 ATT.Description = [[The BRS (Battle Rifle Stock) buttstock for SA-58 assault rifles. Manufactured by DS Arms.]]
 
 ATT.EFTErgoAdd = 9
-ATT.CustomPros = { Ergonomics = "+9" }
 ATT.RecoilMult = 0.63
 ATT.VisualRecoilMult = 0.63
 
@@ -280,7 +271,6 @@ ATT.Icon = Material("entities/eft_sa58_attachments/hump.png", "mips smooth")
 ATT.Description = [[A polymer humpback-style stock for SA-58 assault rifles. Manufactured by DS Arms.]]
 
 ATT.EFTErgoAdd = 4
-ATT.CustomPros = { Ergonomics = "+4" }
 ATT.RecoilMult = 0.69
 ATT.VisualRecoilMult = 0.69
 
@@ -302,7 +292,6 @@ ATT.Icon = Material("entities/eft_sa58_attachments/spr.png", "mips smooth")
 ATT.Description = [[A polymer stock from the SPR (Special Purpose Rifle) kit for SA-58 assault rifles, manufactured by DS Arms.]]
 
 ATT.EFTErgoAdd = 7
-ATT.CustomPros = { Ergonomics = "+7" }
 ATT.RecoilMult = 0.64
 ATT.VisualRecoilMult = 0.64
 
@@ -324,7 +313,6 @@ ATT.Icon = Material("entities/eft_sa58_attachments/adap.png", "mips smooth")
 ATT.Description = [[An adapter for installation of telescopic stock buffer tubes on SA-58 rifles. Manufactured by DS Arms.]]
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -354,7 +342,6 @@ ATT.Icon = Material("entities/eft_sa58_attachments/fold.png", "mips smooth")
 ATT.Description = [[A folding steel stock for SA-58 assault rifles. Manufactured by DS Arms.]]
 
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3" }
 ATT.RecoilMult = 0.69
 ATT.VisualRecoilMult = 0.69
 
@@ -376,7 +363,6 @@ ATT.Icon = Material("entities/eft_sa58_attachments/magpul.png", "mips smooth")
 ATT.Description = [[The PRS 2 polymer stock for FAL series rifles. Manufactured by Magpul.]]
 
 ATT.EFTErgoAdd = 16
-ATT.CustomPros = { Ergonomics = "+16" }
 ATT.RecoilMult = 0.66
 ATT.VisualRecoilMult = 0.66
 
@@ -399,7 +385,6 @@ ATT.Icon = Material("entities/eft_sa58_attachments/10.png", "mips smooth")
 ATT.Description = [[A 10-round double-stack steel magazine for FAL/SA-58 7.62x51 NATO rounds.]]
 
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 ATT.MalfunctionMeanShotsToFailMult = 0.95
 
 ATT.SortOrder = 0
@@ -430,7 +415,6 @@ ATT.Icon = Material("entities/eft_sa58_attachments/30.png", "mips smooth")
 ATT.Description = [[A 30-round double-stack steel magazine for FAL/SA-58 7.62x51 NATO rounds.]]
 
 ATT.EFTErgoAdd = -9
-ATT.CustomCons = { Ergonomics = "-9" }
 ATT.MalfunctionMeanShotsToFailMult = 0.8
 
 ATT.SortOrder = 0
@@ -460,7 +444,6 @@ ATT.Icon = Material("entities/eft_sa58_attachments/30l.png", "mips smooth")
 ATT.Description = [[A 30-round double-stack steel 7.62x51 magazine for L1A1 Self-Loading Rifle (SLR), a British version of FN FAL.]]
 
 ATT.EFTErgoAdd = -8
-ATT.CustomCons = { Ergonomics = "-8" }
 ATT.MalfunctionMeanShotsToFailMult = 0.819
 
 ATT.SortOrder = 0
@@ -490,7 +473,6 @@ ATT.Icon = Material("entities/eft_sa58_attachments/20mmw.png", "mips smooth")
 ATT.Description = [[A 20-round double-stack plastic magazine for FAL/SA-58 7.62x51 NATO rounds. Manufactured by Moses Machine Works.]]
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 ATT.MalfunctionMeanShotsToFailMult = 0.99
 
 ATT.SortOrder = 0
@@ -520,7 +502,6 @@ ATT.Icon = Material("entities/eft_sa58_attachments/50.png", "mips smooth")
 ATT.Description = [[X-FAL is a 50-round drum magazine for FAL/SA-58 7.62x51 NATO rounds. Manufactured by X Products.]]
 
 ATT.EFTErgoAdd = -20
-ATT.CustomCons = { Ergonomics = "-20" }
 ATT.MalfunctionMeanShotsToFailMult = 0.774
 
 ATT.SortOrder = 0
@@ -556,7 +537,6 @@ ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_fal_vltor_casv_fal.mdl"
 
 ATT.EFTErgoAdd = 10
-ATT.CustomPros = { Ergonomics = "+10" }
 ATT.HeatCapacityMult = 1.006
 ATT.RecoilMult = 0.97
 ATT.VisualRecoilMult = 0.97
@@ -619,7 +599,6 @@ ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_fal_vltor_casv_fas.mdl"
 
 ATT.EFTErgoAdd = 14
-ATT.CustomPros = { Ergonomics = "+14" }
 ATT.HeatCapacityMult = 1.01
 ATT.RecoilMult = 0.98
 ATT.VisualRecoilMult = 0.98
@@ -676,7 +655,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_fal_fn_original_stampe
 ATT.LHIK = true 
 
 ATT.EFTErgoAdd = 7
-ATT.CustomPros = { Ergonomics = "+7" }
 ATT.HeatCapacityMult = 0.962
 
 ATT.Category = {"eft_sa58_hg"}
@@ -701,7 +679,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_fal_ds_arms_belgian.md
 ATT.LHIK = true 
 
 ATT.EFTErgoAdd = 9
-ATT.CustomPros = { Ergonomics = "+9" }
 
 ATT.Category = {"eft_sa58_hg"}
 ATT.ExcludeElements = {"barrel_208mm"}
@@ -725,7 +702,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_sa58_ds_arms_picatinny
 -- ATT.LHIK = true 
 
 ATT.EFTErgoAdd = 7
-ATT.CustomPros = { Ergonomics = "+7" }
 ATT.HeatCapacityMult = 1.07
 
 ATT.Category = {"eft_sa58_hg"}
@@ -781,7 +757,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_sa58_ds_arms_picatinny
 -- ATT.LHIK = true 
 
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 ATT.HeatCapacityMult = 1.06
 
 ATT.Category = {"eft_sa58_hg"}
@@ -844,7 +819,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_fal_aim_sport_universa
 ATT.LHIK = true 
 
 ATT.EFTErgoAdd = 9
-ATT.CustomPros = { Ergonomics = "+9" }
 ATT.HeatCapacityMult = 0.98
 
 ATT.Category = {"eft_sa58_hg"}
@@ -899,7 +873,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_fal_aim_sport_universa
 ATT.LHIK = true 
 
 ATT.EFTErgoAdd = 9
-ATT.CustomPros = { Ergonomics = "+9" }
 ATT.HeatCapacityMult = 0.972
 
 ATT.Category = {"eft_sa58_hg"}
@@ -1023,7 +996,6 @@ ATT.Icon = Material("entities/eft_ar10_attachments/magdrum.png", "mips smooth")
 ATT.Description = [[A 50-round 7.62x51 drum magazine for the AR-10 platform weapons. Manufactured by X Products.]]
 
 ATT.EFTErgoAdd = -15
-ATT.CustomCons = { Ergonomics = "-15" }
 ATT.MalfunctionMeanShotsToFailMult = 0.7
 
 ATT.SortOrder = 0

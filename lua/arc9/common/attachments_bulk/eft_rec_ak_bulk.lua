@@ -19,7 +19,6 @@ ATT.Category = {"eft_ak74_dustcover"}
 
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 
 -- EFT ID: 5649af094bdc2df8348b4586
 ARC9.LoadAttachment(ATT, "eft_rec_ak_ak74")
@@ -40,7 +39,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_dc_ak74m_std.mdl"
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 
 ATT.Category = {"eft_ak74_dustcover"}
 
@@ -62,7 +60,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_dc_akm_std.mdl"
 
@@ -90,7 +87,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_dc_molot_akm.mdl"
 ATT.Category = {"eft_ak_dustcover"}
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 
 
 -- EFT ID: 59e6449086f7746c9f75e822
@@ -117,7 +113,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_dc_zenit_b33.mdl"
 ATT.ModelOffset = Vector(0, -0.05, -0.1)
 
 ATT.EFTErgoAdd = 7
-ATT.CustomPros = { Ergonomics = "+7" }
 ATT.RecoilMult = 0.985
 ATT.VisualRecoilMult = 0.985
 
@@ -162,7 +157,6 @@ ATT.ActivateElements = {"norearsight", "railedcover"}
 ATT.Category = {"eft_ak_dustcover", "eft_ak74_dustcover"}
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 
@@ -202,7 +196,6 @@ ATT.ActivateElements = {"norearsight", "railedcover"}
 ATT.Category = {"eft_ak_dustcover", "eft_ak74_dustcover"}
 
 ATT.EFTErgoAdd = 7
-ATT.CustomPros = { Ergonomics = "+7" }
 
 
 ATT.Attachments = {
@@ -236,7 +229,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_dc_fab_defence_pdc.mdl"
 
 ATT.EFTErgoAdd = 4
-ATT.CustomPros = { Ergonomics = "+4" }
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 
@@ -274,7 +266,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_dc_rd_704_std.mdl"
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 ATT.HeatCapacityMult = 0.998
 
 ATT.Category = {"eft_ak_dustcover", "eft_ak74_dustcover"}
@@ -297,7 +288,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = 1
-ATT.CustomPros = { Ergonomics = "+1" }
 
 ATT.ActivateElements = {"nmount"}
 ATT.Category = {"eft_ak74_conv"}
@@ -320,7 +310,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3" }
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/charge_ak_css.mdl"
 ATT.Category = {"eft_ak_charge"}
@@ -347,7 +336,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = 1
-ATT.CustomPros = { Ergonomics = "+1" }
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/charge_ak_zenit_rp1.mdl"
 ATT.Category = {"eft_ak_charge"}

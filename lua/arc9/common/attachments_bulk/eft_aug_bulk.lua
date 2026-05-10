@@ -13,7 +13,6 @@ ATT.Description = [[A barrel for Steyr AUG A3 designed for 5.56x45 NATO ammo, 16
 ATT.HasBarrel = true 
 
 ATT.EFTErgoAdd = -13
-ATT.CustomCons = { Ergonomics = "-13" }
 ATT.RecoilMult = 0.96
 ATT.VisualRecoilMult = 0.96
 -- ATT.PhysBulletMuzzleVelocityMult = 0.94
@@ -62,7 +61,6 @@ ATT.Description = [[A barrel for Steyr AUG A1 designed for 5.56x45 NATO ammo, 20
 ATT.HasBarrel = true 
 
 ATT.EFTErgoAdd = -18
-ATT.CustomCons = { Ergonomics = "-18" }
 ATT.RecoilMult = 0.94
 ATT.VisualRecoilMult = 0.94
 -- ATT.PhysBulletMuzzleVelocityMult = 0.94
@@ -112,7 +110,6 @@ ATT.Description = [[A barrel for Steyr AUG A1 designed for 5.56x45 NATO ammo, 16
 ATT.HasBarrel = true 
 
 ATT.EFTErgoAdd = -14
-ATT.CustomCons = { Ergonomics = "-14" }
 ATT.RecoilMult = 0.96
 ATT.VisualRecoilMult = 0.96
 -- ATT.PhysBulletMuzzleVelocityMult = 0.94
@@ -159,7 +156,6 @@ ATT.Icon = Material("entities/eft_aug_attachments/fgg.png", "mips smooth")
 ATT.Description = [[A vertical foregrip for the Steyr AUG assault rifle.]]
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 
 ATT.HasGrip = true
 
@@ -188,7 +184,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = "eft_aug_toprec"
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 
 ATT.FoldSights = true
 
@@ -257,7 +252,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_aug_rec"}
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.HasReceiver = true
 
 ATT.Attachments = {
@@ -378,9 +372,6 @@ ATT.Icon = Material("entities/eft_aug_attachments/10.png", "mips smooth")
 ATT.Description = [[A 10-round polymer Steyr AUG magazine, for 5.56x45 ammunition.]]
 
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
--- ATT.EFTErgoAdd = -4
--- ATT.CustomCons = { Ergonomics = "-4" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -539,7 +530,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_aug_ratworx_suppressor_ad
 ATT.BarrelLengthAdd = 0.5
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.Category = {"eft_aug_muzzle"}
 
@@ -571,7 +561,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/silencer_aug_aseutra_sl7i.mdl"
 -- ATT.ModelOffset = Vector(0.95, 0, 0)
 
 ATT.EFTErgoAdd = -24
-ATT.CustomCons = { Ergonomics = "-24" }
 ATT.RecoilMult = 0.93
 ATT.VisualRecoilMult = 0.93
 -- ATT.SpreadMult = 1.03
@@ -602,7 +591,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/silencer_aug_reflex_suppressor_t
 -- ATT.ModelOffset = Vector(0.95, 0, 0)
 
 ATT.EFTErgoAdd = -22
-ATT.CustomCons = { Ergonomics = "-22" }
 ATT.RecoilMult = 0.94
 ATT.VisualRecoilMult = 0.94
 -- ATT.SpreadMult = 1.03
@@ -637,7 +625,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_aug_charge"}
 
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 
 -- EFT ID: 62e7c880f68e7a0676050c7c
 ARC9.LoadAttachment(ATT, "eft_aug_ch_a1")
@@ -658,7 +645,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_aug_charge"}
 
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3" }
 
 -- EFT ID: 62ebbc53e3c1e1ec7c02c44f
 ARC9.LoadAttachment(ATT, "eft_aug_ch_a3")
@@ -677,9 +663,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_aug_toprec"}
-
--- ATT.EFTErgoAdd = -1
--- ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.Attachments = {
     {
@@ -710,7 +693,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_aug_toprec"}
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.Attachments = {
     {
@@ -842,7 +824,6 @@ ATT.Icon = Material("entities/eft_aug_attachments/augbottomrail.png", "mips smoo
 ATT.Description = [[A KeyMod interface mount that replaces the standard front grip and allows installation of various accessories, designed for the AUG assault rifle. Manufactured by Corvus Defensio.]]
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 -- ATT.HasGrip = true
 
 ATT.SortOrder = 0
@@ -892,7 +873,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_aug_rec"}
 
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3" }
 ATT.RecoilMult = 0.96
 ATT.VisualRecoilMult = 0.96
 ATT.HasReceiver = true
@@ -950,7 +930,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_aug_toprec_new"}
 
 ATT.EFTErgoAdd = -0.5
-ATT.CustomCons = { Ergonomics = "-0.5" }
 
 ATT.Attachments = {
     {

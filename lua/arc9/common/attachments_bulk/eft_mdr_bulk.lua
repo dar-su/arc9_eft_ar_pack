@@ -13,7 +13,6 @@ ATT.Description = [[A barrel for MDR based weapons for .308 ammo, 16 inch long. 
 ATT.HasBarrel = true 
 
 ATT.EFTErgoAdd = -6
-ATT.CustomCons = { Ergonomics = "-6" }
 ATT.RecoilMult = 0.9
 ATT.VisualRecoilMult = 0.9
 -- ATT.PhysBulletMuzzleVelocityMult = 0.94
@@ -51,7 +50,6 @@ ATT.Description = [[A barrel for MDR based weapons for 5.56x45 NATO ammo, 406mm 
 ATT.HasBarrel = true 
 
 ATT.EFTErgoAdd = -6
-ATT.CustomCons = { Ergonomics = "-6" }
 ATT.RecoilMult = 0.91
 ATT.VisualRecoilMult = 0.91
 -- ATT.PhysBulletMuzzleVelocityMult = 0.94
@@ -87,7 +85,6 @@ ATT.Icon = Material("entities/eft_mdr_attachments/pgb.png", "mips smooth")
 ATT.Description = [[Desert Tech pistol grip can be installed at MDR.]]
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 
 ATT.HasGrip = true
 
@@ -110,7 +107,6 @@ ATT.Icon = Material("entities/eft_mdr_attachments/pgf.png", "mips smooth")
 ATT.Description = [[Desert Tech pistol grip can be installed at MDR. Flat dark earth.]]
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 
 ATT.HasGrip = true
 
@@ -133,7 +129,6 @@ ATT.Icon = Material("entities/eft_mdr_attachments/hgb.png", "mips smooth")
 ATT.Description = [[Desert Tech foregrip for MDR equipped with a M-LOK interface for installation of additional devices and accessories.]]
 
 ATT.EFTErgoAdd = 9
-ATT.CustomPros = { Ergonomics = "+9" }
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 
@@ -197,7 +192,6 @@ ATT.Icon = Material("entities/eft_mdr_attachments/hgf.png", "mips smooth")
 ATT.Description = [[Desert Tech foregrip for MDR equipped with a M-LOK interface for installation of additional devices and accessories. Flat bark earth.]]
 
 ATT.EFTErgoAdd = 9
-ATT.CustomPros = { Ergonomics = "+9" }
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 

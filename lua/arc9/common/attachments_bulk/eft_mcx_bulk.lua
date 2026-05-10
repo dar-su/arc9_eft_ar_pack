@@ -38,7 +38,6 @@ ATT.HasBufferTube = true -- we using
 ATT.Category = {"eft_mcx_upper"}
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 -- ATT.RecoilMult = 0.99
 -- ATT.VisualRecoilMult = 0.99
 -- ATT.HeatCapacityMult = 0.989
@@ -114,7 +113,6 @@ ATT.BarrelLengthAdd = 2
 ATT.Category = {"eft_mcx_barrel"}
 
 ATT.EFTErgoAdd = -4
-ATT.CustomCons = { Ergonomics = "-4" }
 ATT.RecoilMult = 0.97
 ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 1.06
@@ -161,7 +159,6 @@ ATT.MuzzleEffectQCA = 5
 ATT.Category = {"eft_mcx_barrel"}
 
 ATT.EFTErgoAdd = -6
-ATT.CustomCons = { Ergonomics = "-6" }
 ATT.RecoilMult = 0.95
 ATT.VisualRecoilMult = 0.95
 ATT.HeatCapacityMult = 1.02
@@ -205,7 +202,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mcx_barrel"}
 
 ATT.EFTErgoAdd = -10
-ATT.CustomCons = { Ergonomics = "-10" }
 ATT.RecoilMult = 0.92
 ATT.VisualRecoilMult = 0.92
 ATT.PhysBulletMuzzleVelocityMult = 0.9309999999999999
@@ -275,7 +271,6 @@ ATT.HasGas = true
 ATT.Category = {"eft_mcx_gasblock"}
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.RecoilMult = 0.97
 ATT.VisualRecoilMult = 0.97
 
@@ -298,7 +293,6 @@ ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_mcx_sig_gen1_12inch.mdl"
 ATT.LHIK = true 
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 0.962
@@ -357,7 +351,6 @@ ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_mcx_sig_gen1_8_inch.mdl"
 ATT.LHIK = true 
 ATT.EFTErgoAdd = 9
-ATT.CustomPros = { Ergonomics = "+9" }
 -- ATT.RecoilMult = 0.99
 -- ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 0.973
@@ -417,7 +410,6 @@ ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_mcx_lancer_oem_gen1_105_inch_mlok.mdl"
 ATT.LHIK = true 
 ATT.EFTErgoAdd = 8
-ATT.CustomPros = { Ergonomics = "+8" }
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 ATT.Category = {"eft_mcx_hguard"}
@@ -480,7 +472,6 @@ ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_mcx_lancer_oem_gen1_12_inch_mlok.mdl"
 ATT.LHIK = true 
 ATT.EFTErgoAdd = 10
-ATT.CustomPros = { Ergonomics = "+10" }
 ATT.RecoilMult = 0.985
 ATT.VisualRecoilMult = 0.985
 ATT.Category = {"eft_mcx_hguard"}
@@ -543,7 +534,6 @@ ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_mcx_lancer_oem_gen1_18_inch_mlok.mdl"
 ATT.LHIK = true 
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 ATT.RecoilMult = 0.98
 ATT.VisualRecoilMult = 0.98
 ATT.Category = {"eft_mcx_hguard"}
@@ -606,7 +596,6 @@ ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_mcx_sig_mcx_gen1_105_inch.mdl"
 ATT.LHIK = true 
 ATT.EFTErgoAdd = 8
-ATT.CustomPros = { Ergonomics = "+8" }
 ATT.Category = {"eft_mcx_hguard"}
 
 -- ATT.ExcludeElements = {"barrel_260mm", "eft_silencer_r43_556","eft_gas_ar15_rg", "eft_gas_ar15_m4fs"}
@@ -674,7 +663,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_all_sig_folding_knuckle.md
 -- ATT.HasStock = true
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 
 ATT.SortOrder = 0
 ATT.Category = "eft_mcx_stock"
@@ -710,7 +698,6 @@ ATT.RecoilMult = 0.7
 ATT.VisualRecoilMult = 0.7
 
 ATT.EFTErgoAdd = 15
-ATT.CustomPros = { Ergonomics = "+15" }
 
 ATT.SortOrder = 0
 ATT.Category = "eft_mcx_stock"
@@ -736,7 +723,6 @@ ATT.RecoilMult = 0.69
 ATT.VisualRecoilMult = 0.69
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 
 ATT.SortOrder = 0
 ATT.Category = "eft_mcx_stock"
@@ -763,7 +749,6 @@ ATT.RecoilMult = 0.71
 ATT.VisualRecoilMult = 0.71
 
 ATT.EFTErgoAdd = 10
-ATT.CustomPros = { Ergonomics = "+10" }
 
 ATT.SortOrder = 0
 ATT.Category = "eft_mcx_stock"
@@ -789,7 +774,6 @@ ATT.RecoilMult = 0.67
 ATT.VisualRecoilMult = 0.67
 
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3" }
 
 ATT.SortOrder = 0
 ATT.Category = "eft_mcx_stock"
@@ -814,7 +798,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_all_magpul_ucs.mdl"
 ATT.HasStock = true
 
 ATT.EFTErgoAdd = 12
-ATT.CustomPros = { Ergonomics = "+12" }
 ATT.RecoilMult = 0.75
 ATT.VisualRecoilMult = 0.75
 
@@ -850,7 +833,6 @@ ATT.ModelSkin = 1
 ATT.HasStock = true
 
 ATT.EFTErgoAdd = 12
-ATT.CustomPros = { Ergonomics = "+12" }
 ATT.RecoilMult = 0.75
 ATT.VisualRecoilMult = 0.75
 
@@ -884,7 +866,6 @@ ATT.Description = "A cheek rest for the Universal Carbine Stock. Manufactured by
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ucs_magpul_ucs_buttstock_cheek.mdl"
 
 ATT.EFTErgoAdd = 12
-ATT.CustomPros = { Ergonomics = "+12" }
 ATT.RecoilMult = 0.75
 ATT.VisualRecoilMult = 0.75
 

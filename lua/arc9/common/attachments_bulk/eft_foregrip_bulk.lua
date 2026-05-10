@@ -23,7 +23,6 @@ ATT.LHIK_Priority = 2
 ATT.LHIK = true
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 -- ATT.RecoilMult = 0.98
 -- ATT.VisualRecoilMult = 0.98
 
@@ -54,7 +53,6 @@ ATT.LHIK_Priority = 2
 ATT.LHIK = true
 
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 
@@ -83,7 +81,6 @@ ATT.LHIK_Priority = 2
 ATT.LHIK = true
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 
@@ -114,7 +111,6 @@ ATT.LHIK_Priority = 2
 ATT.LHIK = true
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 
@@ -145,7 +141,6 @@ ATT.LHIK_Priority = 2
 ATT.LHIK = true
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 
@@ -175,7 +170,6 @@ ATT.LHIK_Priority = 2
 ATT.LHIK = true
 
 ATT.EFTErgoAdd = 9
-ATT.CustomPros = { Ergonomics = "+9" }
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 
@@ -205,7 +199,6 @@ ATT.LHIK_Priority = 2
 ATT.LHIK = true
 
 ATT.EFTErgoAdd = 4
-ATT.CustomPros = { Ergonomics = "+4" }
 ATT.RecoilMult = 0.97
 ATT.VisualRecoilMult = 0.97
 
@@ -237,7 +230,6 @@ ATT.LHIK_Priority = 2
 ATT.LHIK = true
 
 ATT.EFTErgoAdd = 8
-ATT.CustomPros = { Ergonomics = "+8" }
 ATT.RecoilMult = 0.985
 ATT.VisualRecoilMult = 0.985
 
@@ -269,7 +261,6 @@ ATT.LHIK_Priority = 2
 ATT.LHIK = true
 
 ATT.EFTErgoAdd = 8
-ATT.CustomPros = { Ergonomics = "+8" }
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 
@@ -299,7 +290,6 @@ ATT.LHIK_Priority = 2
 ATT.LHIK = true
 
 ATT.EFTErgoAdd = 10
-ATT.CustomPros = { Ergonomics = "+10" }
 -- ATT.RecoilMult = 0.98
 -- ATT.VisualRecoilMult = 0.98
 
@@ -329,7 +319,6 @@ ATT.LHIK_Priority = 2
 ATT.LHIK = true
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 ATT.RecoilMult = 0.98
 ATT.VisualRecoilMult = 0.98
 
@@ -359,7 +348,6 @@ ATT.LHIK_Priority = 2
 ATT.LHIK = true
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 
@@ -390,7 +378,6 @@ ATT.LHIK_Priority = 2
 ATT.LHIK = true
 
 ATT.EFTErgoAdd = 8
-ATT.CustomPros = { Ergonomics = "+8" }
 ATT.RecoilMult = 0.98
 ATT.VisualRecoilMult = 0.98
 
@@ -420,7 +407,6 @@ ATT.LHIK_Priority = 2
 ATT.LHIK = true
 
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 ATT.RecoilMult = 0.98
 ATT.VisualRecoilMult = 0.98
 
@@ -449,7 +435,6 @@ ATT.LHIK_Priority = 2
 ATT.LHIK = true
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 ATT.RecoilMult = 0.98
 ATT.VisualRecoilMult = 0.98
 
@@ -482,7 +467,6 @@ ATT.LHIK_Priority = 2
 ATT.LHIK = true
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 
@@ -510,7 +494,6 @@ ATT.LHIK_Priority = 2
 ATT.LHIK = true
 
 ATT.EFTErgoAdd = 8
-ATT.CustomPros = { Ergonomics = "+8" }
 ATT.RecoilMult = 0.98
 ATT.VisualRecoilMult = 0.98
 
@@ -539,7 +522,6 @@ ATT.LHIK_Priority = 2
 ATT.LHIK = true
 
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 ATT.RecoilMult = 0.98
 ATT.VisualRecoilMult = 0.98
 
@@ -566,7 +548,6 @@ ATT.LHIK_Priority = 2
 ATT.LHIK = true
 
 ATT.EFTErgoAdd = 1
-ATT.CustomPros = { Ergonomics = "+1" }
 ATT.RecoilMult = 0.97
 ATT.VisualRecoilMult = 0.97
 
@@ -594,7 +575,6 @@ ATT.LHIK_Priority = 2
 ATT.LHIK = true
 
 ATT.EFTErgoAdd = 1
-ATT.CustomPros = { Ergonomics = "+1" }
 ATT.RecoilMult = 0.97
 ATT.VisualRecoilMult = 0.97
 
@@ -622,7 +602,6 @@ ATT.LHIK_Priority = 2
 ATT.LHIK = true
 
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 ATT.RecoilMult = 0.985
 ATT.VisualRecoilMult = 0.985
 
@@ -652,7 +631,6 @@ ATT.LHIK_Priority = 2
 ATT.LHIK = true
 
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 ATT.RecoilMult = 0.985
 ATT.VisualRecoilMult = 0.985
 
@@ -687,7 +665,6 @@ ATT.LHIK_Priority = 2
 ATT.LHIK = true
 
 ATT.EFTErgoAdd = 4.5
-ATT.CustomPros = { Ergonomics = "+4.5" }
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 
@@ -716,7 +693,6 @@ ATT.LHIK_Priority = 2
 ATT.LHIK = true
 
 ATT.EFTErgoAdd = 4.5
-ATT.CustomPros = { Ergonomics = "+4.5" }
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 
@@ -744,7 +720,6 @@ ATT.LHIK_Priority = 2
 ATT.LHIK = true
 
 ATT.EFTErgoAdd = 3.5
-ATT.CustomPros = { Ergonomics = "+3.5" }
 ATT.RecoilMult = 0.985
 ATT.VisualRecoilMult = 0.985
 
@@ -773,7 +748,6 @@ ATT.LHIK_Priority = 2
 ATT.LHIK = true
 
 ATT.EFTErgoAdd = 3.5
-ATT.CustomPros = { Ergonomics = "+3.5" }
 ATT.RecoilMult = 0.985
 ATT.VisualRecoilMult = 0.985
 
@@ -805,7 +779,6 @@ ATT.LHIK_Priority = 2
 ATT.LHIK = true
 
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 
@@ -835,7 +808,6 @@ ATT.LHIK_Priority = 2
 ATT.LHIK = true
 
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 

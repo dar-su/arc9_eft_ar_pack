@@ -176,7 +176,6 @@ ATT.Category = {"eft_ar15_mag"}
 ATT.SuppressEmptySuffix = false 
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 
 ATT.MalfunctionMeanShotsToFailMult = 0.95
 
@@ -208,7 +207,6 @@ ATT.Category = {"eft_ar15_mag"}
 ATT.SuppressEmptySuffix = false 
 
 ATT.EFTErgoAdd = -16
-ATT.CustomCons = { Ergonomics = "-16" }
 
 ATT.MalfunctionMeanShotsToFailMult = 0.7
 
@@ -240,7 +238,6 @@ ATT.Category = {"eft_ar15_mag"}
 ATT.SuppressEmptySuffix = false 
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 
 ATT.MalfunctionMeanShotsToFailMult = 0.97
 
@@ -271,7 +268,6 @@ ATT.Category = {"eft_ar15_mag"}
 ATT.SuppressEmptySuffix = false 
 
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3" }
 
 ATT.MalfunctionMeanShotsToFailMult = 0.96
 
@@ -367,7 +363,6 @@ ATT.Category = {"eft_ar15_mag"}
 ATT.SuppressEmptySuffix = false 
 
 ATT.EFTErgoAdd = -7
-ATT.CustomCons = { Ergonomics = "-7" }
 
 ATT.MalfunctionMeanShotsToFailMult = 0.83
 
@@ -402,7 +397,6 @@ ATT.Category = {"eft_ar15_mag"}
 ATT.SuppressEmptySuffix = false 
 
 ATT.EFTErgoAdd = -7
-ATT.CustomCons = { Ergonomics = "-7" }
 
 ATT.MalfunctionMeanShotsToFailMult = 0.83
 
@@ -505,7 +499,6 @@ ATT.Category = {"eft_ar15_mag"}
 ATT.SuppressEmptySuffix = false 
 
 ATT.EFTErgoAdd = -27
-ATT.CustomCons = { Ergonomics = "-27" }
 
 ATT.MalfunctionMeanShotsToFailMult = 0.55
 
@@ -537,7 +530,6 @@ ATT.Category = {"eft_ar15_mag"}
 ATT.SuppressEmptySuffix = false 
 
 ATT.EFTErgoAdd = -18
-ATT.CustomCons = { Ergonomics = "-18" }
 
 ATT.MalfunctionMeanShotsToFailMult = 0.64
 
@@ -570,7 +562,6 @@ ATT.Category = {"eft_ar15_mag"}
 ATT.SuppressEmptySuffix = false 
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 
 ATT.MalfunctionMeanShotsToFailMult = 0.98
 
@@ -641,7 +632,6 @@ ATT.Category = {"eft_ar15_doubledrum"}
 ATT.SuppressEmptySuffix = false 
 
 ATT.EFTErgoAdd = -24
-ATT.CustomCons = { Ergonomics = "-24" }
 
 ATT.MalfunctionMeanShotsToFailMult = 0.6
 
@@ -674,7 +664,6 @@ ATT.Category = {"eft_ar15_mag"}
 ATT.SuppressEmptySuffix = false 
 
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 
 ATT.ActivateElements = {"20rnd"}
 

@@ -52,7 +52,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/aksu_hg_std.mdl"
 ATT.LHIK = true
 
 ATT.EFTErgoAdd = 4
-ATT.CustomPros = { Ergonomics = "+4" }
 ATT.HeatCapacityMult = 1.052
 
 ATT.RequireElements = {"gasblock"}
@@ -79,7 +78,6 @@ ATT.Category = {"eft_b18"}
 ATT.ActivateElements = {"railedcover"}
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.Attachments = {
     {
@@ -111,7 +109,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_aks74u_izhmash_std_545x39.mdl"
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 ATT.RecoilMult = 0.92
 ATT.VisualRecoilMult = 0.92
 ATT.PhysBulletMuzzleVelocityMult = 1.005
@@ -138,7 +135,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.ExcludeElements = {"nolongrear", "eft_mount_dovetail_b13v", "eft_mount_dovetail_b13", "eft_scope_dovetail_pso1", "eft_scope_dovetail_pso1m2", "eft_scope_dovetail_okp7"}
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 
 ATT.Category = {"eft_aksu_dustcover"}
 
@@ -162,7 +158,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.ExcludeElements = {"nolongrear", "eft_mount_dovetail_b13v", "eft_mount_dovetail_b13", "eft_scope_dovetail_pso1", "eft_scope_dovetail_pso1m2", "eft_scope_dovetail_okp7"}
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 
 ATT.Category = {"eft_aksu_dustcover"}
 
@@ -195,7 +190,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_aks74u_std.mdl"
 
 ATT.EFTErgoAdd = 10
-ATT.CustomPros = { Ergonomics = "+10" }
 ATT.RecoilMult = 0.7
 ATT.VisualRecoilMult = 0.7
 
@@ -235,7 +229,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.ActivateElements = {"railedcover"}
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 
@@ -272,7 +265,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/aksu_goliaf_mlok.mdl"
 ATT.LHIK = true
 
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 1.01

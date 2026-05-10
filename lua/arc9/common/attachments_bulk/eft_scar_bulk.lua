@@ -13,7 +13,6 @@ ATT.Description = [[A 16 inches long (406mm) barrel for the SCAR-series weapons 
 ATT.HasBarrel = true 
 
 ATT.EFTErgoAdd = -13
-ATT.CustomCons = { Ergonomics = "-13" }
 ATT.RecoilMult = 0.94
 ATT.VisualRecoilMult = 0.94
 ATT.PhysBulletMuzzleVelocityMult = 0.94
@@ -58,7 +57,6 @@ ATT.Description = [[A 13 inches long (330mm) barrel for the SCAR-series weapons 
 ATT.HasBarrel = true 
 
 ATT.EFTErgoAdd = -6
-ATT.CustomCons = { Ergonomics = "-6" }
 ATT.RecoilMult = 0.97
 ATT.VisualRecoilMult = 0.97
 ATT.PhysBulletMuzzleVelocityMult = 0.92
@@ -104,7 +102,6 @@ ATT.HasBarrel = true
 
 
 ATT.EFTErgoAdd = -22
-ATT.CustomCons = { Ergonomics = "-22" }
 ATT.RecoilMult = 0.9
 ATT.VisualRecoilMult = 0.9
 ATT.PhysBulletMuzzleVelocityMult = 0.955
@@ -149,7 +146,6 @@ ATT.Description = [[A 10 inches long (254mm) CQB barrel for the SCAR-series weap
 ATT.HasBarrel = true 
 
 ATT.EFTErgoAdd = -5
-ATT.CustomCons = { Ergonomics = "-5" }
 ATT.RecoilMult = 0.98
 ATT.VisualRecoilMult = 0.98
 ATT.PhysBulletMuzzleVelocityMult = 0.85
@@ -194,7 +190,6 @@ ATT.Description = [[A 14 inches long (355mm) STD barrel for the SCAR-series weap
 ATT.HasBarrel = true 
 
 ATT.EFTErgoAdd = -13
-ATT.CustomCons = { Ergonomics = "-13" }
 ATT.RecoilMult = 0.96
 ATT.VisualRecoilMult = 0.96
 ATT.PhysBulletMuzzleVelocityMult = 0.92
@@ -239,7 +234,6 @@ ATT.Description = [[An 18 inches long (457mm) LB barrel for the SCAR-series weap
 ATT.HasBarrel = true 
 
 ATT.EFTErgoAdd = -19
-ATT.CustomCons = { Ergonomics = "-19" }
 ATT.RecoilMult = 0.94
 ATT.VisualRecoilMult = 0.94
 ATT.PhysBulletMuzzleVelocityMult = 0.955
@@ -283,7 +277,6 @@ ATT.Description = [[A folding polymer stock for the SCAR-series rifles, manufact
 
 ATT.HasStock = true
 -- ATT.EFTErgoAdd = 13
--- ATT.CustomPros = { Ergonomics = "+13" }
 ATT.RecoilMult = 0.95
 ATT.VisualRecoilMult = 0.95
 
@@ -323,7 +316,6 @@ ATT.Description = [[A folding polymer stock for the SCAR-series rifles, manufact
 
 ATT.HasStock = true
 -- ATT.EFTErgoAdd = 13
--- ATT.CustomPros = { Ergonomics = "+13" }
 ATT.RecoilMult = 0.95
 ATT.VisualRecoilMult = 0.95
 
@@ -362,7 +354,6 @@ ATT.Icon = Material("entities/eft_scar_attachments/sex.png", "mips smooth")
 ATT.Description = [[A retractable polymer stock for the SCAR-series assault rifles, manufactured by Fabrique Nationale Herstal.]]
 
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3" }
 ATT.RecoilMult = 0.76
 ATT.VisualRecoilMult = 0.76
 
@@ -394,7 +385,6 @@ ATT.Icon = Material("entities/eft_scar_attachments/sexf.png", "mips smooth")
 ATT.Description = [[A retractable polymer stock for the SCAR-series assault rifles, manufactured by Fabrique Nationale Herstal. Flat Dark Earth version.]]
 
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3" }
 ATT.RecoilMult = 0.76
 ATT.VisualRecoilMult = 0.76
 
@@ -426,7 +416,6 @@ ATT.Icon = Material("entities/eft_scar_attachments/che.png", "mips smooth")
 ATT.Description = [[A standard cheek rest that is installed on top of the FN SCAR polymer stock. Manufactured by Fabrique Nationale Herstal.]]
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -446,7 +435,6 @@ ATT.Icon = Material("entities/eft_scar_attachments/chef.png", "mips smooth")
 ATT.Description = [[A standard cheek rest that is installed on top of the FN SCAR polymer stock. Manufactured by Fabrique Nationale Herstal. Flat Dark Earth version.]]
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -466,7 +454,6 @@ ATT.Icon = Material("entities/eft_scar_attachments/pad.png", "mips smooth")
 ATT.Description = [[A rubber buttpad for the SCAR-series assault rifle polymer stocks, manufactured by Fabrique Nationale Herstal.]]
 
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3" }
 ATT.RecoilMult = 0.96
 ATT.VisualRecoilMult = 0.96
 
@@ -549,7 +536,6 @@ ATT.Category = {"eft_scar_upperh"}
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 
 ATT.Attachments = {
     {
@@ -631,7 +617,6 @@ ATT.Category = {"eft_scar_upperh"}
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 
 ATT.Attachments = {
     {
@@ -712,7 +697,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_scar_upperl"}
 
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 
 ATT.Attachments = {
     {
@@ -793,7 +777,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_scar_upperl"}
 
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 
 ATT.Attachments = {
     {
@@ -868,7 +851,6 @@ ATT.Icon = Material("entities/eft_scar_attachments/20.png", "mips smooth")
 ATT.Description = [[A 20-round magazine for the FN SCAR-H 7.62x51 battle rifle.]]
 
 ATT.EFTErgoAdd = -4
-ATT.CustomCons = { Ergonomics = "-4" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -896,7 +878,6 @@ ATT.Icon = Material("entities/eft_scar_attachments/20f.png", "mips smooth")
 ATT.Description = [[A 20-round magazine for the FN SCAR-H 7.62x51 battle rifle. Flat Dark Earth version.]]
 
 ATT.EFTErgoAdd = -4
-ATT.CustomCons = { Ergonomics = "-4" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -932,7 +913,6 @@ ATT.MuzzleDevice_Priority = 4
 ATT.BarrelLengthAdd = 0.5
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.SpreadMult = 0.99
 ATT.RecoilMult = 0.93
 ATT.VisualRecoilMult = 0.93
@@ -1028,7 +1008,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_scar_charge"}
 
 ATT.EFTErgoAdd = 1
-ATT.CustomPros = { Ergonomics = "+1" }
 
 -- EFT ID: 6181688c6c780c1e710c9b04
 ARC9.LoadAttachment(ATT, "eft_scar_ch")
@@ -1052,7 +1031,6 @@ ATT.ActivateElements = {"nosiderail"}
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3" }
 ATT.HeatCapacityMult = 1.02
 
 ATT.Attachments = {
@@ -1111,7 +1089,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_scar_mount_srx"}
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 ATT.HeatCapacityMult = 1.05
 
 ATT.Attachments = {
@@ -1200,7 +1177,6 @@ ATT.ActivateElements = {"nosiderail"}
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3" }
 ATT.HeatCapacityMult = 1.02
 
 ATT.Attachments = {
@@ -1329,7 +1305,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_scar_mount_mre"}
 
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 ATT.HeatCapacityMult = 1.032
 
 ATT.Attachments = {
@@ -1374,7 +1349,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_scar_mount_mre"}
 
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 ATT.HeatCapacityMult = 1.032
 
 ATT.Attachments = {
@@ -1417,7 +1391,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 
 ATT.Category = {"eft_scar_mount_side"}
 
@@ -1437,7 +1410,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 
 ATT.Category = {"eft_scar_mount_side"}
 
@@ -1531,7 +1503,6 @@ ATT.ActivateElements = {"nosiderail"}
 ATT.RecoilMult = 0.98
 ATT.VisualRecoilMult = 0.98
 ATT.EFTErgoAdd = 4
-ATT.CustomPros = { Ergonomics = "+4" }
 ATT.HeatCapacityMult = 1.02
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_scar_casv_lhik.mdl"
@@ -1591,7 +1562,6 @@ ATT.ActivateElements = {"nosiderail"}
 ATT.RecoilMult = 0.98
 ATT.VisualRecoilMult = 0.98
 ATT.EFTErgoAdd = 4
-ATT.CustomPros = { Ergonomics = "+4" }
 ATT.HeatCapacityMult = 1.02
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_scar_casv_lhik.mdl"
@@ -1648,7 +1618,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_scar_mount_casvext"}
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.HeatCapacityMult = 1.032
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
@@ -1709,7 +1678,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_scar_mount_casvext"}
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.HeatCapacityMult = 1.032
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
@@ -1796,7 +1764,6 @@ ATT.Icon = Material("entities/eft_scar_attachments/scarnewstock.png", "mips smoo
 ATT.Description = [[The VSS-11 telescopic polymer buttstock for SCAR series rifles, manufactured by Vltor.]]
 
 ATT.EFTErgoAdd = 10
-ATT.CustomPros = { Ergonomics = "+10" }
 ATT.RecoilMult = 0.77
 ATT.VisualRecoilMult = 0.77
 
@@ -1818,7 +1785,6 @@ ATT.Icon = Material("entities/eft_scar_attachments/scarnewstockf.png", "mips smo
 ATT.Description = [[The VSS-11 telescopic polymer buttstock for SCAR series rifles, manufactured by Vltor. flat dark eath.]]
 
 ATT.EFTErgoAdd = 10
-ATT.CustomPros = { Ergonomics = "+10" }
 ATT.RecoilMult = 0.77
 ATT.VisualRecoilMult = 0.77
 
@@ -1842,7 +1808,6 @@ ATT.Description = [[An adapter with a five-position tube for installing AR butts
 
 ATT.HasStock = true
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
@@ -1877,7 +1842,6 @@ ATT.Description = [[An adapter with a five-position tube for installing AR butts
 
 ATT.HasStock = true
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99

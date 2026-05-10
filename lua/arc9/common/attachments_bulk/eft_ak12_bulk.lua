@@ -19,7 +19,6 @@ ATT.LHIK = true
 ATT.ModelOffset = Vector(0, 0, 1.5)
 
 ATT.EFTErgoAdd = 8
-ATT.CustomPros = { Ergonomics = "+8" }
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 1.027
@@ -100,7 +99,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_ak12_muzzle"}
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 ATT.RecoilMult = 0.91
 ATT.VisualRecoilMult = 0.91
 ATT.PhysBulletMuzzleVelocityMult = 1.005
@@ -133,7 +131,6 @@ ATT.NoFlash = true
 ATT.BarrelLengthAdd = 5
 
 ATT.EFTErgoAdd = -25
-ATT.CustomCons = { Ergonomics = "-25" }
 ATT.RecoilMult = 0.88
 ATT.VisualRecoilMult = 0.88
 ATT.SpreadMult = 1.01
@@ -161,7 +158,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_ak12_dustcover"}
 
 ATT.EFTErgoAdd = 4
-ATT.CustomPros = { Ergonomics = "+4" }
 
 ATT.Attachments = {
     {

@@ -22,7 +22,6 @@ ATT.HasBufferTube = true
 -- ATT.VisualRecoilMult = 0.99
 
 -- ATT.EFTErgoAdd = 4
--- ATT.CustomPros = { Ergonomics = "+4" }
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar15_buffertube"
@@ -63,7 +62,6 @@ ATT.RecoilMult = 0.7
 ATT.VisualRecoilMult = 0.7
 
 ATT.EFTErgoAdd = 10
-ATT.CustomPros = { Ergonomics = "+10" }
 
 ATT.ExcludeElements = {"pgrip_stock"}
 
@@ -95,7 +93,6 @@ ATT.RecoilMult = 0.74
 ATT.VisualRecoilMult = 0.74
 
 ATT.EFTErgoAdd = 18
-ATT.CustomPros = { Ergonomics = "+18" }
 
 ATT.ExcludeElements = {"pgrip_stock"}
 
@@ -127,7 +124,6 @@ ATT.RecoilMult = 0.74
 ATT.VisualRecoilMult = 0.74
 
 ATT.EFTErgoAdd = 18
-ATT.CustomPros = { Ergonomics = "+18" }
 
 ATT.ExcludeElements = {"pgrip_stock"}
 
@@ -158,7 +154,6 @@ ATT.RecoilMult = 0.975
 ATT.VisualRecoilMult = 0.975
 
 -- ATT.EFTErgoAdd = 4
--- ATT.CustomPros = { Ergonomics = "+4" }
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar15_buffertube"
@@ -199,7 +194,6 @@ ATT.RecoilMult = 0.96
 ATT.VisualRecoilMult = 0.96
 
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar15_buffertube"
@@ -241,7 +235,6 @@ ATT.RecoilMult = 0.96
 ATT.VisualRecoilMult = 0.96
 
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar15_buffertube"
@@ -286,7 +279,6 @@ ATT.RecoilMult = 0.67
 ATT.VisualRecoilMult = 0.67
 
 ATT.EFTErgoAdd = 7
-ATT.CustomPros = { Ergonomics = "+7" }
 
 
 ATT.ExcludeElements = {"pgrip_stock"}
@@ -319,7 +311,6 @@ ATT.RecoilMult = 0.67
 ATT.VisualRecoilMult = 0.67
 
 ATT.EFTErgoAdd = 7
-ATT.CustomPros = { Ergonomics = "+7" }
 
 ATT.ExcludeElements = {"pgrip_stock"}
 
@@ -351,7 +342,6 @@ ATT.RecoilMult = 0.75
 ATT.VisualRecoilMult = 0.75
 
 ATT.EFTErgoAdd = 21
-ATT.CustomPros = { Ergonomics = "+21" }
 
 ATT.ExcludeElements = {"pgrip_stock"}
 
@@ -384,7 +374,6 @@ ATT.RecoilMult = 0.79
 ATT.VisualRecoilMult = 0.79
 
 ATT.EFTErgoAdd = 8
-ATT.CustomPros = { Ergonomics = "+8" }
 
 ATT.ExcludeElements = {"pgrip_stock"}
 
@@ -415,7 +404,6 @@ ATT.RecoilMult = 0.75
 ATT.VisualRecoilMult = 0.75
 
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 
 ATT.ExcludeElements = {"pgrip_stock"}
 

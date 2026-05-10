@@ -14,7 +14,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = 4
-ATT.CustomPros = { Ergonomics = "+4" }
 ATT.HeatCapacityMult = 1.054
 
 ATT.HasHG = true
@@ -42,7 +41,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = 4
-ATT.CustomPros = { Ergonomics = "+4" }
 ATT.HeatCapacityMult = 1.054
 
 ATT.HasHG = true
@@ -73,7 +71,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 ATT.HeatCapacityMult = 1.045
 
 ATT.HasHG = true
@@ -102,7 +99,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 ATT.RecoilMult = 0.97
 ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 0.92
@@ -181,7 +177,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 ATT.HeatCapacityMult = 1.045
 
 ATT.HasHG = true
@@ -236,7 +231,6 @@ ATT.ModelSkin = "0"
 ATT.LHIK = true
 
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 ATT.HeatCapacityMult = 0.986
 
 ATT.RequireElements = {"gasblock"}
@@ -295,7 +289,6 @@ ATT.ModelSkin = "1"
 ATT.LHIK = true
 
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 ATT.HeatCapacityMult = 0.986
 
 ATT.RequireElements = {"gasblock"}
@@ -349,7 +342,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Folder = "TDI"
 
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 ATT.HeatCapacityMult = 0.986
 
 ATT.HasHG = true
@@ -409,7 +401,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 -- ATT.Folder = "ZENIT"
 
 ATT.EFTErgoAdd = 9
-ATT.CustomPros = { Ergonomics = "+9" }
 ATT.RecoilMult = 0.98
 ATT.VisualRecoilMult = 0.98
 ATT.HeatCapacityMult = 0.968
@@ -479,7 +470,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/aksu_b11.mdl"
 ATT.LHIK = true
 
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3" }
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 0.994
@@ -531,7 +521,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 -- ATT.Folder = "ZENIT"
 
 ATT.EFTErgoAdd = 7
-ATT.CustomPros = { Ergonomics = "+7" }
 ATT.RecoilMult = 0.97
 ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 0.906
@@ -608,7 +597,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = 10
-ATT.CustomPros = { Ergonomics = "+10" }
 ATT.RecoilMult = 0.96
 ATT.VisualRecoilMult = 0.96
 ATT.HeatCapacityMult = 0.93
@@ -675,7 +663,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_cncguns.mdl"
 ATT.LHIK = true
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 ATT.RecoilMult = 0.975
 ATT.VisualRecoilMult = 0.975
 ATT.HeatCapacityMult = 0.966
@@ -747,7 +734,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/aksu_goliaf.mdl"
 ATT.LHIK = true
 
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3" }
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 1.01
@@ -821,7 +807,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 -- ATT.Folder = "HEXAGON"
 
 ATT.EFTErgoAdd = 14
-ATT.CustomPros = { Ergonomics = "+14" }
 ATT.RecoilMult = 0.97
 ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 0.952
@@ -887,7 +872,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 -- ATT.Folder = "HEXAGON"
 
 ATT.EFTErgoAdd = 14
-ATT.CustomPros = { Ergonomics = "+14" }
 ATT.RecoilMult = 0.97
 ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 0.952
@@ -955,7 +939,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Folder = "Magpul"
 
 ATT.EFTErgoAdd = 10
-ATT.CustomPros = { Ergonomics = "+10" }
 ATT.RecoilMult = 0.98
 ATT.VisualRecoilMult = 0.98
 ATT.HeatCapacityMult = 1.053
@@ -1012,7 +995,6 @@ ATT.ModelSkin = "1"
 ATT.LHIK = true 
 
 ATT.EFTErgoAdd = 10
-ATT.CustomPros = { Ergonomics = "+10" }
 ATT.RecoilMult = 0.98
 ATT.VisualRecoilMult = 0.98
 ATT.HeatCapacityMult = 1.053
@@ -1059,7 +1041,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Folder = "Magpul"
 
 ATT.EFTErgoAdd = 10
-ATT.CustomPros = { Ergonomics = "+10" }
 ATT.RecoilMult = 0.98
 ATT.VisualRecoilMult = 0.98
 ATT.HeatCapacityMult = 1.053
@@ -1111,7 +1092,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Folder = "Magpul"
 
 ATT.EFTErgoAdd = 10
-ATT.CustomPros = { Ergonomics = "+10" }
 ATT.RecoilMult = 0.98
 ATT.VisualRecoilMult = 0.98
 ATT.HeatCapacityMult = 1.053
@@ -1161,7 +1141,6 @@ Stealth Gray version.]]
 ATT.SortOrder = 0
 
 ATT.EFTErgoAdd = 10
-ATT.CustomPros = { Ergonomics = "+10" }
 ATT.RecoilMult = 0.98
 ATT.VisualRecoilMult = 0.98
 ATT.HeatCapacityMult = 1.053
@@ -1222,7 +1201,6 @@ ATT.ActivateElements = {"nogp34"}
 ATT.Category = {"eft_ak_handguard", "eft_vityaz_handguard"}
 
 ATT.EFTErgoAdd = 7
-ATT.CustomPros = { Ergonomics = "+7" }
 ATT.RecoilMult = 0.98
 ATT.VisualRecoilMult = 0.98
 ATT.HeatCapacityMult = 1.032
@@ -1279,7 +1257,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 ATT.RecoilMult = 0.98
 ATT.VisualRecoilMult = 0.98
 ATT.HeatCapacityMult = 0.966
@@ -1347,7 +1324,6 @@ ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ak_strike_industries_trax_2.mdl"
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 0.966
@@ -1447,7 +1423,6 @@ ATT.RequireElements = {"gasblock_vdmcs"}
 ATT.ActivateElements = {"nogp34"}
 
 ATT.EFTErgoAdd = 11
-ATT.CustomPros = { Ergonomics = "+11" }
 ATT.RecoilMult = 0.97
 ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 0.943
@@ -1522,7 +1497,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = 4
-ATT.CustomPros = { Ergonomics = "+4" }
 ATT.HeatCapacityMult = 1.054
 
 ATT.HasHG = true
@@ -1555,7 +1529,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_vepr_km_vpo_209.mdl"
 ATT.LHIK = true
 
 ATT.EFTErgoAdd = 4
-ATT.CustomPros = { Ergonomics = "+4" }
 ATT.HeatCapacityMult = 1.054
 
 ATT.RequireElements = {"gasblock"}
@@ -1584,7 +1557,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_wasr.mdl"
 ATT.LHIK = true
 
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3" }
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 1.05
@@ -1617,7 +1589,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_x47.mdl"
 ATT.LHIK = true
 
 ATT.EFTErgoAdd = 10
-ATT.CustomPros = { Ergonomics = "+10" }
 ATT.RecoilMult = 0.97
 ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 0.96
@@ -1694,7 +1665,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/aksu_xrsu.mdl"
 ATT.LHIK = true
 
 ATT.EFTErgoAdd = 10
-ATT.CustomPros = { Ergonomics = "+10" }
 ATT.RecoilMult = 0.97
 ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 0.931
@@ -1765,7 +1735,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Folder = "Magpul"
 
 ATT.EFTErgoAdd = 14
-ATT.CustomPros = { Ergonomics = "+14" }
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 1.072
@@ -1824,7 +1793,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Folder = "Magpul"
 
 ATT.EFTErgoAdd = 14
-ATT.CustomPros = { Ergonomics = "+14" }
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 1.072
@@ -1883,7 +1851,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Folder = "Magpul"
 
 ATT.EFTErgoAdd = 14
-ATT.CustomPros = { Ergonomics = "+14" }
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 1.072
@@ -1947,7 +1914,6 @@ ATT.RequireElements = {"gasblock"}
 ATT.Category = {"eft_ak_handguard", "eft_vityaz_handguard"}
 
 ATT.EFTErgoAdd = 8
-ATT.CustomPros = { Ergonomics = "+8" }
 ATT.RecoilMult = 0.985
 ATT.VisualRecoilMult = 0.985
 ATT.HeatCapacityMult = 1.032
@@ -1989,7 +1955,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 -- ATT.Folder = "ZENIT"
 
 ATT.EFTErgoAdd = 9
-ATT.CustomPros = { Ergonomics = "+9" }
 ATT.RecoilMult = 0.975
 ATT.VisualRecoilMult = 0.975
 ATT.HeatCapacityMult = 0.906
@@ -2064,7 +2029,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 -- ATT.Folder = "HEXAGON"
 
 ATT.EFTErgoAdd = 15
-ATT.CustomPros = { Ergonomics = "+15" }
 ATT.RecoilMult = 0.98
 ATT.VisualRecoilMult = 0.98
 ATT.HeatCapacityMult = 0.952
@@ -2150,7 +2114,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = 7
-ATT.CustomPros = { Ergonomics = "+7" }
 ATT.HeatCapacityMult = 1.045
 
 ATT.HasGas = true
@@ -2181,7 +2144,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_b12.mdl"
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.Attachments = {
     {

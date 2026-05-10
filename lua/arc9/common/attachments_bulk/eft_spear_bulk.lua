@@ -37,7 +37,6 @@ ATT.HasBufferTube = true -- we using
 ATT.Category = {"eft_spear_upper"}
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 -- ATT.HeatCapacityMult = 0.989
@@ -103,7 +102,6 @@ ATT.BarrelLengthAdd = 2
 ATT.Category = {"eft_spear_barrel"}
 
 ATT.EFTErgoAdd = -6
-ATT.CustomCons = { Ergonomics = "-6" }
 ATT.RecoilMult = 0.95
 ATT.VisualRecoilMult = 0.95
 ATT.HeatCapacityMult = 1.06
@@ -146,7 +144,6 @@ ATT.HasGas = true
 ATT.Category = {"eft_spear_gas"}
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.RecoilMult = 0.97
 ATT.VisualRecoilMult = 0.97
 
@@ -167,7 +164,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasHG = true
 
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 0.962
@@ -228,7 +224,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_all_sig_stock_locking_hing
 -- ATT.HasStock = true
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 
 ATT.SortOrder = 0
 ATT.Category = "eft_mcx_stock"
@@ -334,7 +329,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.BarrelLengthAdd = 0.5
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.RecoilMult = 0.93
 ATT.VisualRecoilMult = 0.93
 ATT.SpreadMult = 0.97
@@ -366,7 +360,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -23
-ATT.CustomCons = { Ergonomics = "-23" }
 ATT.RecoilMult = 0.9
 ATT.VisualRecoilMult = 0.9
 ATT.PhysBulletMuzzleVelocityMult = 1.0075
@@ -432,7 +425,6 @@ ATT.Icon = Material("entities/eft_spear_attachments/20.png", "mips smooth")
 ATT.Description = [[A 20-round double-stack L7AWM 20 magazine for 7.62x51 NATO ammunition. Manufactured by Lancer Systems.]]
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 ATT.MalfunctionMeanShotsToFailMult = 0.98
 
 ATT.SortOrder = 0

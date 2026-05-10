@@ -13,7 +13,6 @@ ATT.Description = "A 228mm 5.56x45 NATO barrel for the HK G36 assault rifle."
 ATT.HasBarrel = true 
 
 ATT.EFTErgoAdd = -8
-ATT.CustomCons = { Ergonomics = "-8" }
 ATT.RecoilMult = 0.98
 ATT.VisualRecoilMult = 0.98
 ATT.HeatCapacityMult = 1.11
@@ -58,7 +57,6 @@ ATT.Description = "A 318mm 5.56x45 NATO barrel for the HK G36 assault rifle."
 ATT.HasBarrel = true 
 
 ATT.EFTErgoAdd = -12
-ATT.CustomCons = { Ergonomics = "-12" }
 ATT.RecoilMult = 0.97
 ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 1.04
@@ -105,7 +103,6 @@ ATT.Description = "A 480mm 5.56x45 NATO barrel for the HK G36 assault rifle."
 ATT.HasBarrel = true 
 
 ATT.EFTErgoAdd = -16
-ATT.CustomCons = { Ergonomics = "-16" }
 ATT.RecoilMult = 0.96
 ATT.VisualRecoilMult = 0.96
 ATT.HeatCapacityMult = 0.98
@@ -153,26 +150,12 @@ ATT.Description = "A polymer adjustable 4-position stock for the G36, manufactur
 ATT.HasStock = true
 
 ATT.EFTErgoAdd = 1
-ATT.CustomPros = { Ergonomics = "+1" }
 ATT.RecoilMult = 0.78
 ATT.VisualRecoilMult = 0.78
 
 ATT.SortOrder = 0
 ATT.Category = "eft_g36_stock"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
-
--- ATT.CustomPros = { Ergonomics = "+1", ["Recoil while extended"] = "-22%" }
--- ATT.ToggleStats = {
---     {
---         PrintName = "eft_toggle_unfolded",
---         RecoilMult = 0.78,
---         VisualRecoilMult = 0.78,
---     },
---     {
---         PrintName = "eft_toggle_folded",
---         EFTFoldStock = true
---     },
--- }
 
 -- EFT ID: 622f14e899892a7f9e08f6c5
 ARC9.LoadAttachment(ATT, "eft_g36_stock_kv")
@@ -189,27 +172,12 @@ ATT.Description = "A polymer stock for the G36, manufactured by Heckler & Koch."
 ATT.HasStock = true
 
 ATT.EFTErgoAdd = 7
-ATT.CustomPros = { Ergonomics = "+7" }
 ATT.RecoilMult = 0.81
 ATT.VisualRecoilMult = 0.81
 
 ATT.SortOrder = 0
 ATT.Category = "eft_g36_stock"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
-
--- ATT.CustomPros = { Ergonomics = "+7", ["Recoil while extended"] = "-19%" }
-
--- ATT.ToggleStats = {
---     {
---         PrintName = "eft_toggle_unfolded",
---         RecoilMult = 0.81,
---         VisualRecoilMult = 0.81,
---     },
---     {
---         PrintName = "eft_toggle_folded",
---         EFTFoldStock = true
---     },
--- }
 
 -- EFT ID: 622f140da5958f63c67f1735
 ARC9.LoadAttachment(ATT, "eft_g36_stock_std")
@@ -284,7 +252,6 @@ ATT.Description = "A standard polymer 6-vent handguard with a heatshield for the
 ATT.HasHG = true
 
 ATT.EFTErgoAdd = 7
-ATT.CustomPros = { Ergonomics = "+7" }
 ATT.RecoilMult = 0.98
 ATT.VisualRecoilMult = 0.98
 ATT.HeatCapacityMult = 0.975
@@ -321,7 +288,6 @@ ATT.Description = "A standard polymer 4-vent handguard with a heatshield for the
 ATT.HasHG = true
 
 ATT.EFTErgoAdd = 9
-ATT.CustomPros = { Ergonomics = "+9" }
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 1.05
@@ -378,7 +344,6 @@ ATT.Description = "A standard polymer 2-vent handguard with a heatshield for the
 ATT.HasHG = true
 
 ATT.EFTErgoAdd = 12
-ATT.CustomPros = { Ergonomics = "+12" }
 ATT.HeatCapacityMult = 1.07
 
 ATT.SortOrder = 0
@@ -493,7 +458,6 @@ ATT.Description = "A gas block designed for the G36 assault rifles, manufactured
 ATT.HasGas = true
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.HeatCapacityMult = 0.995
 
 ATT.SortOrder = 0
@@ -515,7 +479,6 @@ ATT.Icon = Material("entities/eft_g36_attachments/hk_g36_hand_stop.png", "mips s
 ATT.Description = "A polymer hand stop for the G36. Manufactured by Heckler & Koch."
 
 ATT.EFTErgoAdd = 1
-ATT.CustomPros = { Ergonomics = "+1" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -540,7 +503,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 
 ATT.Bipod = true 
 ATT.RecoilMultBipod = 0.33
@@ -570,7 +532,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasChassis = true
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.ActivateElements = {"magwell"}
 ATT.Category = {"eft_magwell_g36"}
@@ -594,7 +555,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasChassis = true
 
 ATT.EFTErgoAdd = 0.5
-ATT.CustomPros = { Ergonomics = "+0.5" }
 
 ATT.ActivateElements = {"magwell"}
 ATT.Category = {"eft_magwell_g36"}
@@ -615,7 +575,6 @@ ATT.Icon = Material("entities/eft_g36_attachments/hk_g36_sight_mount.png", "mips
 ATT.Description = "A mount for sights and tactical attachments, installs on HK G36."
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -667,7 +626,6 @@ ATT.Icon = Material("entities/eft_g36_attachments/hk_g36_optic_rail_with_flipup_
 ATT.Description = "An HK G36 optic rail that features flip-up front and rear sights, giving you more space to mount scopes and tactical attachments."
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -713,7 +671,6 @@ ATT.Icon = Material("entities/eft_g36_attachments/hk_g36_hensoldt_hkv_3x_carry_h
 ATT.Description = "The HKV carry handle with ZF optic sight and RV red dot carrier. The optical sight provides a threefold zoom and has a truly miniature 4 mm objective lens. Also includes open non-removable ironsights in the upper part of the carrying handle."
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -780,7 +737,6 @@ ATT.Icon = Material("entities/eft_g36_attachments/hk_g36_hensoldt_hkv_zf_15x_car
 ATT.Description = "The HKV carry handle with ZF optic sight and RV red dot carrier. The optical sight provides a 1.5x zoom and has a truly miniature 4 mm objective lens. Also includes open non-removable ironsights in the upper part of the carrying handle."
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -864,7 +820,6 @@ ATT.Icon = Material("entities/eft_g36_attachments/hensoldt_rv_red_dot_sight.png"
 ATT.Description = "Hensoldt RV is part of the HKV sighting system. RV has a light accumulator, which allows it to operate from an external light source. The red dot manually switches to AA battery power in the absence of a sufficient level of illumination."
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -1054,7 +1009,6 @@ ATT.MuzzleDevice_Priority = 4
 ATT.BarrelLengthAdd = 0.5
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.RecoilMult = 0.95
 ATT.VisualRecoilMult = 0.95
 ATT.SpreadMult = 0.97
@@ -1108,7 +1062,6 @@ ATT.MuzzleDevice_Priority = 4
 ATT.BarrelLengthAdd = 0.5
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.RecoilMult = 0.94
 ATT.VisualRecoilMult = 0.94
 ATT.SpreadMult = 0.97
@@ -1135,7 +1088,6 @@ ATT.Description = "A polymer adjustable 4-position stock for the G36, manufactur
 ATT.HasStock = true
 
 ATT.EFTErgoAdd = 8
-ATT.CustomPros = { Ergonomics = "+8" }
 ATT.RecoilMult = 0.78
 ATT.VisualRecoilMult = 0.78
 
@@ -1166,7 +1118,6 @@ ATT.Icon = Material("entities/eft_g36_attachments/g36pad.png", "mips smooth")
 ATT.Description = "A concave buttpad designed for installation on IDZ stocks for the G36 assault rifle. Manufactured by Heckler & Koch."
 
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3" }
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 
@@ -1187,7 +1138,6 @@ ATT.Icon = Material("entities/eft_g36_attachments/g36padbig.png", "mips smooth")
 ATT.Description = "An extended convex buttpad designed for installation on IDZ stocks for the G36 assault rifle. Manufactured by Heckler & Koch."
 
 ATT.EFTErgoAdd = 1
-ATT.CustomPros = { Ergonomics = "+1" }
 ATT.RecoilMult = 0.97
 ATT.VisualRecoilMult = 0.97
 
@@ -1240,7 +1190,6 @@ ATT.Description = "A quad rail Picatinny handguard for the G36K assault rifle. M
 ATT.HasHG = true
 
 ATT.EFTErgoAdd = 8
-ATT.CustomPros = { Ergonomics = "+8" }
 ATT.RecoilMult = 0.975
 ATT.VisualRecoilMult = 0.975
 
@@ -1309,7 +1258,6 @@ ATT.Description = "A low-profile handguard with an HKey mounting interface for t
 ATT.HasHG = true
 
 ATT.EFTErgoAdd = 8
-ATT.CustomPros = { Ergonomics = "+8" }
 ATT.RecoilMult = 0.975
 ATT.VisualRecoilMult = 0.975
 

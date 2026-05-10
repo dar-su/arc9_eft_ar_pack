@@ -38,7 +38,6 @@ ATT.HasBolt = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/charge_ar15_badger_ordnance_tactical_latch.mdl"
 ATT.EFTErgoAdd = 1
-ATT.CustomPros = { Ergonomics = "+1" }
 ATT.Category = {"eft_ar15_charge"}
 
 -- EFT ID: 56ea7165d2720b6e518b4583
@@ -81,7 +80,6 @@ ATT.HasBolt = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/charge_ar15_geissele_ach.mdl"
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 ATT.Category = {"eft_ar15_charge"}
 
 -- EFT ID: 5ea16d4d5aad6446a939753d
@@ -102,7 +100,6 @@ ATT.HasBolt = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/charge_ar15_hk_extended_latch_charging_handle.mdl"
 ATT.EFTErgoAdd = 1
-ATT.CustomPros = { Ergonomics = "+1" }
 ATT.Category = {"eft_ar15_charge"}
 
 ATT.AdvancedCamoSupport = true
@@ -126,7 +123,6 @@ ATT.HasBolt = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/charge_ar15_radian_raptor_ambidextrous_charging_handle.mdl"
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3" }
 ATT.Category = {"eft_ar15_charge"}
 
 -- EFT ID: 5b2240bf5acfc40dc528af69
@@ -148,7 +144,6 @@ ATT.HasBolt = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/charge_ar15_radian_raptor_ambidextrous_charging_handle.mdl"
 ATT.ModelSkin = 1
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3" }
 ATT.Category = {"eft_ar15_charge"}
 
 -- EFT ID: 5d44334ba4b9362b346d1948
@@ -168,7 +163,6 @@ ATT.HasBolt = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/charge_ar15_rainer_arms_avalanche_mod2.mdl"
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3" }
 ATT.Category = {"eft_ar15_charge"}
 
 -- EFT ID: 5f633ff5c444ce7e3c30a006
@@ -188,7 +182,6 @@ ATT.HasBolt = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/charge_ar15_dd_grip_n_rip.mdl"
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 ATT.Category = {"eft_ar15_charge"}
 
 -- EFT ID: 651bf5617b3b552ef6712cb7
@@ -209,7 +202,6 @@ ATT.ActivateElements = {"eft_fast_catch"}
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/charge_ar15_magpul_bad_lever.mdl"
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 ATT.Category = {"eft_ar15_charge_lever"}
 
 -- EFT ID: 675307301f7c19a9780f2668
@@ -229,7 +221,6 @@ ATT.HasBolt = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/charge_ar15_radian_raptor_sd_ambidextrous_charging_handle.mdl"
 ATT.EFTErgoAdd = 3.5
-ATT.CustomPros = { Ergonomics = "+3.5" }
 ATT.Category = {"eft_ar15_charge"}
 
 -- EFT ID: 6895bf08e2d16810ba0bf43e
@@ -268,7 +259,6 @@ ATT.HasBolt = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/charge_ar15_precision_reflex_m84_gas_buster_w_military_latch.mdl"
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 
 ATT.Category = {"eft_ar15_charge"}
 

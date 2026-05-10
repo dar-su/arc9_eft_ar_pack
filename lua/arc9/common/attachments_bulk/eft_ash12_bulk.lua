@@ -32,7 +32,6 @@ ATT.Icon = Material("entities/eft_ash12_attachments/hg.png", "mips smooth")
 ATT.Description = [[Polymer ASh-12 foregrip produced by CKIB.]]
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 
 ATT.HeatCapacityMult = 0.96
 
@@ -98,7 +97,6 @@ ATT.Icon = Material("entities/eft_ash12_attachments/mag20.png", "mips smooth")
 ATT.Description = [[20-round magazine for 12.7x55 ASh-12.]]
 
 ATT.EFTErgoAdd = -7
-ATT.CustomCons = { Ergonomics = "-7" }
 
 ATT.MalfunctionMeanShotsToFailMult = 0.75
 
@@ -139,7 +137,6 @@ ATT.BarrelLengthAdd = 5
 ATT.MuzzleEffectQCA = 5
 
 ATT.EFTErgoAdd = -21
-ATT.CustomCons = { Ergonomics = "-21" }
 ATT.RecoilMult = 0.82
 ATT.VisualRecoilMult = 0.82
 ATT.SpreadMult = 0.9
@@ -173,7 +170,6 @@ ATT.Description = [[Regular muzzle brake for ASh-12, produced by CKIB.]]
 ATT.BarrelLengthAdd = 2
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.RecoilMult = 0.76
 ATT.VisualRecoilMult = 0.76
 ATT.PhysBulletMuzzleVelocityMult = 1.005
@@ -200,7 +196,6 @@ ATT.Icon = Material("entities/eft_ash12_attachments/rs.png", "mips smooth")
 ATT.Description = [[Detachable Carry Handle with a rear sight for ASh-12.]]
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 
 ATT.ActivateElements = {"NoRS"}
 

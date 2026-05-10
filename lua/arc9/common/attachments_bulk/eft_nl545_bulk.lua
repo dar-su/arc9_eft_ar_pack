@@ -14,7 +14,6 @@ ATT.Description = "An adjustable gas block designed for NL545 series carbines an
 ATT.HasGas = true
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 
@@ -40,7 +39,6 @@ ATT.Description = "A standard charging handle for NL545 series carbines and assa
 ATT.HasCharge = true 
 
 ATT.EFTErgoAdd = 1
-ATT.CustomPros = { Ergonomics = "+1" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -64,7 +62,6 @@ ATT.Description = "A 11.5 inch (292mm) 5.45x39mm barrel for the short-stroke gas
 ATT.HasBarrel = true 
 
 ATT.EFTErgoAdd = -6
-ATT.CustomCons = { Ergonomics = "-6" }
 ATT.RecoilMult = 0.979
 ATT.VisualRecoilMult = 0.979
 ATT.PhysBulletMuzzleVelocityMult = 0.881
@@ -109,7 +106,6 @@ ATT.Description = "A 16.5 inch (420mm) 5.45x39mm barrel for the short-stroke gas
 ATT.HasBarrel = true 
 
 ATT.EFTErgoAdd = -19
-ATT.CustomCons = { Ergonomics = "-19" }
 ATT.RecoilMult = 0.944
 ATT.VisualRecoilMult = 0.944
 ATT.PhysBulletMuzzleVelocityMult = 0.958
@@ -154,7 +150,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasBarrel = true
 
 ATT.EFTErgoAdd = -16.5
-ATT.CustomCons = { Ergonomics = "-16.5" }
 ATT.RecoilMult = 0.95
 ATT.VisualRecoilMult = 0.95
 ATT.PhysBulletMuzzleVelocityMult = 0.954
@@ -200,7 +195,6 @@ ATT.Description = "An upper receiver for the short-stroke gas piston NL545 assau
 ATT.HasReceiver = true 
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 ATT.RecoilMult = 0.98
 ATT.VisualRecoilMult = 0.98
 
@@ -254,7 +248,6 @@ ATT.Description = "An upper receiver for the direct impingement NL545 assault ri
 ATT.HasReceiver = true 
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 ATT.RecoilMult = 0.98
 ATT.VisualRecoilMult = 0.98
 
@@ -314,7 +307,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_416_cgnl_nl545_105_inc
 ATT.ModelOffset = Vector(0, 0.04, 0)
 ATT.LHIK = true 
 ATT.EFTErgoAdd = 10
-ATT.CustomPros = { Ergonomics = "+10" }
 ATT.RecoilMult = 0.988
 ATT.VisualRecoilMult = 0.988
 ATT.HeatCapacityMult = 0.986
@@ -387,7 +379,6 @@ ATT.ModelOffset = Vector(0, 0.04, 0)
 ATT.ModelSkin = 1
 ATT.LHIK = true 
 ATT.EFTErgoAdd = 10
-ATT.CustomPros = { Ergonomics = "+10" }
 ATT.RecoilMult = 0.988
 ATT.VisualRecoilMult = 0.988
 ATT.HeatCapacityMult = 0.986

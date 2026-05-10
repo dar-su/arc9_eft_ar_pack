@@ -27,7 +27,6 @@ ATT.Category = "eft_ar15_pgripstock"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = 13
-ATT.CustomPros = { Ergonomics = "+13" }
 ATT.RecoilMult = 0.72
 ATT.VisualRecoilMult = 0.72
 
@@ -55,7 +54,6 @@ ATT.RecoilMult = 0.7
 ATT.VisualRecoilMult = 0.7
 
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3" }
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar_stock"
@@ -87,7 +85,6 @@ ATT.RecoilMult = 0.97
 ATT.VisualRecoilMult = 0.97
 
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar_buttpad"
@@ -116,7 +113,6 @@ ATT.RecoilMult = 0.68
 ATT.VisualRecoilMult = 0.68
 
 ATT.EFTErgoAdd = 10
-ATT.CustomPros = { Ergonomics = "+10" }
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar_stock"
@@ -148,7 +144,6 @@ ATT.RecoilMult = 0.68
 ATT.VisualRecoilMult = 0.68
 
 ATT.EFTErgoAdd = 10
-ATT.CustomPros = { Ergonomics = "+10" }
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar_stock"
@@ -179,7 +174,6 @@ ATT.RecoilMult = 0.68
 ATT.VisualRecoilMult = 0.68
 
 ATT.EFTErgoAdd = 9
-ATT.CustomPros = { Ergonomics = "+9" }
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar_stock"
@@ -209,7 +203,6 @@ ATT.RecoilMult = 0.68
 ATT.VisualRecoilMult = 0.68
 
 ATT.EFTErgoAdd = 9
-ATT.CustomPros = { Ergonomics = "+9" }
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar_stock"
@@ -238,7 +231,6 @@ ATT.RecoilMult = 0.67
 ATT.VisualRecoilMult = 0.67
 
 ATT.EFTErgoAdd = 4
-ATT.CustomPros = { Ergonomics = "+4" }
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar_stock"
@@ -267,7 +259,6 @@ ATT.RecoilMult = 0.69
 ATT.VisualRecoilMult = 0.69
 
 ATT.EFTErgoAdd = 9
-ATT.CustomPros = { Ergonomics = "+9" }
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar_stock"
@@ -298,7 +289,6 @@ ATT.RecoilMult = 0.71
 ATT.VisualRecoilMult = 0.71
 
 ATT.EFTErgoAdd = 13
-ATT.CustomPros = { Ergonomics = "+13" }
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar_stock"
@@ -328,7 +318,6 @@ ATT.RecoilMult = 0.71
 ATT.VisualRecoilMult = 0.71
 
 ATT.EFTErgoAdd = 13
-ATT.CustomPros = { Ergonomics = "+13" }
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar_stock"
@@ -361,7 +350,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasGrip = true
 
 ATT.EFTErgoAdd = 20
-ATT.CustomPros = { Ergonomics = "+20" }
 ATT.RecoilMult = 0.67
 ATT.VisualRecoilMult = 0.67
 
@@ -388,7 +376,6 @@ ATT.RecoilMult = 0.7
 ATT.VisualRecoilMult = 0.7
 
 ATT.EFTErgoAdd = 8
-ATT.CustomPros = { Ergonomics = "+8" }
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar_stock"
@@ -429,7 +416,6 @@ ATT.RecoilMult = 0.7
 ATT.VisualRecoilMult = 0.7
 
 ATT.EFTErgoAdd = 8
-ATT.CustomPros = { Ergonomics = "+8" }
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar_stock"
@@ -470,7 +456,6 @@ ATT.RecoilMult = 0.7
 ATT.VisualRecoilMult = 0.7
 
 ATT.EFTErgoAdd = 8
-ATT.CustomPros = { Ergonomics = "+8" }
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar_stock"
@@ -511,7 +496,6 @@ ATT.RecoilMult = 0.7
 ATT.VisualRecoilMult = 0.7
 
 ATT.EFTErgoAdd = 8
-ATT.CustomPros = { Ergonomics = "+8" }
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar_stock"
@@ -552,7 +536,6 @@ ATT.RecoilMult = 0.7
 ATT.VisualRecoilMult = 0.7
 
 ATT.EFTErgoAdd = 8
-ATT.CustomPros = { Ergonomics = "+8" }
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar_stock"
@@ -595,7 +578,6 @@ ATT.RecoilMult = 0.66
 ATT.VisualRecoilMult = 0.66
 
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3" }
 
 ATT.SortOrder = 0
 ATT.Category = {"eft_ar_stock", "eft_ar_stock_a2"}
@@ -626,7 +608,6 @@ ATT.RecoilMult = 0.66
 ATT.VisualRecoilMult = 0.66
 
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3" }
 
 ATT.SortOrder = 0
 ATT.Category = {"eft_ar_stock", "eft_ar_stock_a2"}
@@ -656,7 +637,6 @@ ATT.RecoilMult = 0.73
 ATT.VisualRecoilMult = 0.73
 
 ATT.EFTErgoAdd = 8
-ATT.CustomPros = { Ergonomics = "+8" }
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar_stock"
@@ -686,7 +666,6 @@ ATT.RecoilMult = 0.81
 ATT.VisualRecoilMult = 0.81
 
 ATT.EFTErgoAdd = 10
-ATT.CustomPros = { Ergonomics = "+10" }
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar_stock"
@@ -715,7 +694,6 @@ ATT.RecoilMult = 0.7
 ATT.VisualRecoilMult = 0.7
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar_stock"
@@ -747,7 +725,6 @@ ATT.RecoilMult = 0.7
 ATT.VisualRecoilMult = 0.7
 
 ATT.EFTErgoAdd = 11
-ATT.CustomPros = { Ergonomics = "+11" }
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar_stock"
@@ -775,7 +752,6 @@ ATT.RecoilMult = 0.78
 ATT.VisualRecoilMult = 0.78
 
 ATT.EFTErgoAdd = 10
-ATT.CustomPros = { Ergonomics = "+10" }
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar_stock"
@@ -807,7 +783,6 @@ ATT.RecoilMult = 0.8
 ATT.VisualRecoilMult = 0.8
 
 ATT.EFTErgoAdd = 14
-ATT.CustomPros = { Ergonomics = "+14" }
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar_stock"
@@ -847,7 +822,6 @@ ATT.RecoilMult = 0.8
 ATT.VisualRecoilMult = 0.8
 
 ATT.EFTErgoAdd = 14
-ATT.CustomPros = { Ergonomics = "+14" }
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar_stock"
@@ -885,7 +859,6 @@ ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 
 -- ATT.EFTErgoAdd = 2
--- ATT.CustomPros = { Ergonomics = "+2" }
 
 ATT.SortOrder = 0
 ATT.Category = "eft_dd_buttpad"
@@ -912,7 +885,6 @@ ATT.RecoilMult = 0.98
 ATT.VisualRecoilMult = 0.98
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 
 ATT.SortOrder = 0
 ATT.Category = "eft_dd_buttpad"
@@ -941,7 +913,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_colt_n1.mdl"
 ATT.HasStock = true
 
 ATT.EFTErgoAdd = 9
-ATT.CustomPros = { Ergonomics = "+9" }
 ATT.RecoilMult = 0.82
 ATT.VisualRecoilMult = 0.82
 
@@ -978,7 +949,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_john_masen_n1_recoil_
 -- ATT.HasStock = true
 
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 
@@ -1004,7 +974,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_magpul_acs_carbine.md
 ATT.HasStock = true
 
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 ATT.RecoilMult = 0.76
 ATT.VisualRecoilMult = 0.76
 
@@ -1034,7 +1003,6 @@ ATT.ModelSkin = 1
 ATT.HasStock = true
 
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 ATT.RecoilMult = 0.76
 ATT.VisualRecoilMult = 0.76
 
@@ -1063,7 +1031,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_colt_m16a1_type_7.mdl
 ATT.HasStock = true
 
 ATT.EFTErgoAdd = 4
-ATT.CustomPros = { Ergonomics = "+4" }
 ATT.RecoilMult = 0.78
 ATT.VisualRecoilMult = 0.78
 
@@ -1088,7 +1055,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_colt_a2.mdl"
 ATT.HasStock = true
 
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 ATT.RecoilMult = 0.77
 ATT.VisualRecoilMult = 0.77
 

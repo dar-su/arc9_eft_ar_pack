@@ -15,7 +15,6 @@ ATT.HasGas = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/gas_block_ar10_cmmg.mdl"
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.HeatCapacityMult = 0.995
 ATT.RecoilMult = 0.97
 ATT.VisualRecoilMult = 0.97
@@ -42,7 +41,6 @@ ATT.Description = [[A 254mm long barrel for the CMMG Mk47 Mutant assault rifle, 
 ATT.HasCharge = true 
 
 ATT.EFTErgoAdd = 1
-ATT.CustomPros = { Ergonomics = "+1" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -67,7 +65,6 @@ ATT.Description = [[A 254mm long barrel for the CMMG Mk47 Mutant assault rifle, 
 ATT.HasBarrel = true 
 
 ATT.EFTErgoAdd = -7
-ATT.CustomCons = { Ergonomics = "-7" }
 ATT.RecoilMult = 0.98
 ATT.VisualRecoilMult = 0.98
 ATT.PhysBulletMuzzleVelocityMult = 0.839
@@ -112,7 +109,6 @@ ATT.Description = [[A 409mm long barrel for the CMMG Mk47 Mutant assault rifle, 
 ATT.HasBarrel = true 
 
 ATT.EFTErgoAdd = -19
-ATT.CustomCons = { Ergonomics = "-19" }
 ATT.RecoilMult = 0.96
 ATT.VisualRecoilMult = 0.96
 ATT.PhysBulletMuzzleVelocityMult = 0.942
@@ -156,7 +152,6 @@ ATT.Description = [[The Resolute upper receiver for Mk47 Mutant assault rifle, c
 ATT.HasReceiver = true 
 
 ATT.EFTErgoAdd = 4
-ATT.CustomPros = { Ergonomics = "+4" }
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 
@@ -367,7 +362,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar10_cmmg_mk3_rml9.mdl
 ATT.ModelOffset = Vector(0, 0, -0.085)
 
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 ATT.HeatCapacityMult = 0.975
 
 ATT.Category = {"eft_ar10_hg"}
@@ -440,7 +434,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar10_cmmg_mk3_rml15.md
 ATT.ModelOffset = Vector(0, 0, -0.085)
 
 ATT.EFTErgoAdd = 5.5
-ATT.CustomPros = { Ergonomics = "+5.5" }
 ATT.HeatCapacityMult = 1.038
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99

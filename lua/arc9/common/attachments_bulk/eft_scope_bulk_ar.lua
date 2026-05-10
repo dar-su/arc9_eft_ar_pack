@@ -20,7 +20,6 @@ ATT.Category = {"eft_optic_large", "eft_optic_large_nosniper"}
 ATT.Folder = "Scopes"
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 
 ATT.FoldSights = true
 
@@ -121,7 +120,6 @@ ATT.Category = {"eft_1p78"}
 
 
 ATT.EFTErgoAdd = -6
-ATT.CustomCons = { Ergonomics = "-6" }
 
 ATT.FoldSights = true
 
@@ -287,7 +285,6 @@ ATT.Folder = "Scopes"
 ATT.RecoilMult = 0.95
 ATT.VisualRecoilMult = 0.95
 ATT.EFTErgoAdd = -20
-ATT.CustomCons = { Ergonomics = "-20" }
 
 
 ATT.FoldSights = true
@@ -377,7 +374,6 @@ ATT.Folder = "Reflex"
 ATT.ActivateElements = {"nolongrear"}
 
 ATT.EFTErgoAdd = -4
-ATT.CustomCons = { Ergonomics = "-4" }
 
 
 ATT.FoldSights = true
@@ -478,7 +474,6 @@ ATT.ActivateElements = {"nolongrear"}
 
 
 ATT.EFTErgoAdd = -4
-ATT.CustomCons = { Ergonomics = "-4" }
 
 
 ATT.FoldSights = true
@@ -526,7 +521,6 @@ ATT.Folder = "Scopes"
 
 
 ATT.EFTErgoAdd = -7
-ATT.CustomCons = { Ergonomics = "-7" }
 
 
 ATT.FoldSights = true
@@ -608,7 +602,6 @@ ATT.Folder = "Scopes"
 
 
 ATT.EFTErgoAdd = -7
-ATT.CustomCons = { Ergonomics = "-7" }
 
 
 ATT.FoldSights = true
@@ -688,7 +681,6 @@ ATT.Folder = "Scopes"
 
 
 ATT.EFTErgoAdd = -7
-ATT.CustomCons = { Ergonomics = "-7" }
 
 
 ATT.FoldSights = true
@@ -769,7 +761,6 @@ ATT.Folder = "Scopes"
 
 
 ATT.EFTErgoAdd = -6
-ATT.CustomCons = { Ergonomics = "-6" }
 
 ATT.FoldSights = true
 
@@ -887,7 +878,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = "eft_optic_30mm"
 
 ATT.EFTErgoAdd = -4
-ATT.CustomCons = { Ergonomics = "-4" }
 
 ATT.FoldSights = true
 
@@ -1061,7 +1051,6 @@ ATT.Description = [[A rubber eyecup for the NPZ 1P78 scope.]]
 ATT.Model = "models/weapons/arc9_eft_shared/atts/optic/dovetail/1p78_eyecap.mdl"
 
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 
 
 ATT.Category = {"eft_1p78_eyecap"}
@@ -1087,7 +1076,6 @@ ATT.Description = [[Rubber eyecup for NSPU-M scope.]]
 ATT.Model = "models/weapons/arc9_eft_shared/atts/optic/dovetail/1p78_eyecap.mdl"
 
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 
 
 ATT.Category = {"eft_nspum_eyecap"}
@@ -1114,7 +1102,6 @@ ATT.Description = [[Rubber eyecup for PSO scopes family.]]
 ATT.Model = "models/weapons/arc9_eft_shared/atts/optic/dovetail/pso_eyecap.mdl"
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 
 
 ATT.Category = {"eft_pso_eyecap"}
@@ -1139,7 +1126,6 @@ ATT.Description = [[Rubber eyecup for USP-1]]
 
 ATT.Model = "models/weapons/arc9_eft_shared/atts/optic/dovetail/1p29_eyecap.mdl"
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 
 
 ATT.Category = {"eft_tulpan_eyecap"}
@@ -1170,7 +1156,6 @@ ATT.Folder = "Scopes/Mounts"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_scope"),
@@ -1205,7 +1190,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = "eft_optic_30mm"
 
 ATT.EFTErgoAdd = -3.5
-ATT.CustomCons = { Ergonomics = "-3.5" }
 
 ATT.FoldSights = true
 
@@ -1280,7 +1264,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_elcan_mount"}
 
 ATT.EFTErgoAdd = -0.1
-ATT.CustomCons = { Ergonomics = "-0.1" }
 
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mount_base_specter_trijicon_mounting_plate.mdl"
@@ -1316,7 +1299,6 @@ ATT.Folder = "Scopes/Mounts"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_scope"),
@@ -1350,7 +1332,6 @@ ATT.Description = "A top ring cap for the A.R.M.S. #22 mount."
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mount_base_arms_22_ring_cap.mdl"
 
 ATT.EFTErgoAdd = 0.5
-ATT.CustomPros = { Ergonomics = "+0.5" }
 ATT.Category = {"eft_mount_arms_22"}
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
@@ -1371,7 +1352,6 @@ ATT.Description = "A universal rail mount for installation of various red dot si
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mount_base_arms_22_trr.mdl"
 
 ATT.EFTErgoAdd = -0.1
-ATT.CustomCons = { Ergonomics = "-0.1" }
 
 ATT.Category = {"eft_mount_arms_22"}
 ATT.MenuCategory = "ARC9 - EFT Attachments"

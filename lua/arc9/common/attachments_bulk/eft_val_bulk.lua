@@ -10,9 +10,6 @@ ATT.Icon = Material("entities/eft_val_attachments/10.png", "mips smooth")
 ATT.Description = [[A 10-round polymer TsNIITochMash 6L24 9x39 magazine for the VSS sniper rifle.]]
 
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
--- ATT.EFTErgoAdd = -4
--- ATT.CustomCons = { Ergonomics = "-4" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -41,7 +38,6 @@ ATT.Icon = Material("entities/eft_val_attachments/20.png", "mips smooth")
 ATT.Description = [[A 20-round polymer TsNIITochMash 6L25 9x39 magazine for the AS VAL special assault rifle. Made out of plum-colored polymer, earning the nickname "Sliva" (Plum).]]
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -70,7 +66,6 @@ ATT.Icon = Material("entities/eft_val_attachments/30.png", "mips smooth")
 ATT.Description = [[A 30-round steel TsNIITochMash SR3M.130 magazine for 9x39 caliber SR-3M, VSS, and AS VAL.]]
 
 ATT.EFTErgoAdd = -4
-ATT.CustomCons = { Ergonomics = "-4" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -99,7 +94,6 @@ ATT.Icon = Material("entities/eft_val_attachments/30s.png", "mips smooth")
 ATT.Description = [[A 30-round polymer TsNIITochMash 9x39 magazine for the AS VAL special assault rifle.]]
 
 ATT.EFTErgoAdd = -3.5
-ATT.CustomCons = { Ergonomics = "-3.5" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -130,7 +124,6 @@ ATT.Icon = Material("entities/eft_val_attachments/wood.png", "mips smooth")
 ATT.Description = [[A standard-issue wooden stock for VSS Vintorez sniper rifles, manufactured by TsNIITochMash.]]
 
 ATT.EFTErgoAdd = 8
-ATT.CustomPros = { Ergonomics = "+8" }
 ATT.RecoilMult = 0.78
 ATT.VisualRecoilMult = 0.78
 
@@ -155,7 +148,6 @@ ATT.Icon = Material("entities/eft_val_attachments/stock.png", "mips smooth")
 ATT.Description = [[A standard-issue foldable skeleton stock for AS VAL, manufactured by TsNIITochMash.]]
 
 ATT.EFTErgoAdd = 10
-ATT.CustomPros = { Ergonomics = "+10" }
 ATT.RecoilMult = 0.82
 ATT.VisualRecoilMult = 0.82
 
@@ -209,7 +201,6 @@ ARC9.LoadAttachment(ATT, "eft_val_stock_nb")
 -- ATT.Description = [[A standard-issue dust cover for VSS Vintorez sniper rifles, manufactured by TsNIITochMash.]]
 
 -- ATT.EFTErgoAdd = 2
--- ATT.CustomPros = { Ergonomics = "+2" }
 
 -- ATT.SortOrder = 0
 -- ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -229,7 +220,6 @@ ATT.Icon = Material("entities/eft_val_attachments/dcval.png", "mips smooth")
 ATT.Description = [[A standard-issue dust cover for AS VAL, manufactured by TsNIItochmash.]]
 
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -285,7 +275,6 @@ ATT.Description = [[A standard-issue polymer pistol grip for AS VAL, manufacture
 ATT.HasGrip = true
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -307,7 +296,6 @@ ATT.Description = [[A standard-issue polymer pistol grip for AS VAL, manufacture
 ATT.HasGrip = true
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -329,7 +317,6 @@ ATT.Description = "A custom Zenit pistol grip for the AS VAL. Replaces the stand
 ATT.HasGrip = true
 
 ATT.EFTErgoAdd = 7
-ATT.CustomPros = { Ergonomics = "+7" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -351,7 +338,6 @@ ATT.Description = [[A polymer handguard for the AS Val and VSS Vintorez. Manufac
 ATT.HasHG = true
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -373,7 +359,6 @@ ATT.Description = [[A polymer handguard for the AS Val and VSS Vintorez. Manufac
 ATT.HasHG = true
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -395,7 +380,6 @@ ATT.Description = [[A pistol grip with an integrated Mil-Spec buffer tube for AS
 ATT.HasGrip = true
 
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3" }
 
 ATT.HasStock = true
 
@@ -431,7 +415,6 @@ ARC9.LoadAttachment(ATT, "eft_val_grip_rotor")
 -- ATT.HasBarrel = true 
 
 -- ATT.EFTErgoAdd = -5
--- ATT.CustomCons = { Ergonomics = "-5" }
 -- ATT.RecoilMult = 0.86
 -- ATT.VisualRecoilMult = 0.86
 -- -- ATT.PhysBulletMuzzleVelocityMult = 0.94
@@ -478,7 +461,6 @@ ATT.Description = [[A TsNIITochMash-manufactured integral barrel-suppressor modu
 ATT.HasBarrel = true 
 
 ATT.EFTErgoAdd = -5
-ATT.CustomCons = { Ergonomics = "-5" }
 ATT.RecoilMult = 0.86
 ATT.VisualRecoilMult = 0.86
 -- ATT.PhysBulletMuzzleVelocityMult = 0.94
@@ -523,7 +505,6 @@ ATT.Description = [[The TOZ 6P29M mount, developed for a modified version of the
 
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -579,7 +560,6 @@ ATT.Description = [[The B-3 combo mounts are installed on the VSS/VAL sound supp
 
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -621,7 +601,6 @@ ATT.Description = [[The B-3 combo mounts are installed on the VSS/VAL sound supp
 
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -657,7 +636,6 @@ ATT.Description = [[A standard-issue sound suppressor for the SR-3M assault rifl
 -- ATT.HasBarrel = true 
 
 ATT.EFTErgoAdd = -5
-ATT.CustomCons = { Ergonomics = "-5" }
 ATT.RecoilMult = 0.86
 ATT.VisualRecoilMult = 0.86
 -- ATT.PhysBulletMuzzleVelocityMult = 0.94
@@ -700,7 +678,6 @@ ATT.HasHG = true
 ATT.HasBarrel = true
 
 ATT.EFTErgoAdd = 7
-ATT.CustomPros = { Ergonomics = "+7" }
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 
@@ -742,7 +719,6 @@ ATT.HasHG = true
 ATT.HasBarrel = true
 
 ATT.EFTErgoAdd = 7
-ATT.CustomPros = { Ergonomics = "+7" }
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 
@@ -784,7 +760,6 @@ ATT.HasHG = true
 ATT.HasBarrel = true
 
 ATT.EFTErgoAdd = 8
-ATT.CustomPros = { Ergonomics = "+8" }
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 
@@ -842,7 +817,6 @@ ATT.Description = [[A standard-issue polymer foregrip for the SR-3M assault rifl
 -- ATT.HasHG = true
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 
@@ -871,7 +845,6 @@ ATT.Description = [[A standard-issue polymer foregrip for the SR-3M assault rifl
 -- ATT.HasHG = true
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 
@@ -905,7 +878,6 @@ ATT.Category = {"eft_mount_dovetail_sr3"}
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.ActivateElements = {"nolongrear"}
 
 ATT.Attachments = {
@@ -950,7 +922,6 @@ ATT.Category = {"eft_mount_dovetail_sr3"}
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.ActivateElements = {"nolongrear"}
 
 ATT.Attachments = {
@@ -1568,7 +1539,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_valmod4_hg"}
 
 ATT.EFTErgoAdd = 10
-ATT.CustomPros = { Ergonomics = "+10" }
 ATT.RecoilMult = 0.97
 ATT.VisualRecoilMult = 0.97
 
@@ -1660,7 +1630,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_valmod4_magw"}
 
 ATT.EFTErgoAdd = 4
-ATT.CustomPros = { Ergonomics = "+4" }
 
 -- EFT ID: 68712a7d505fed5f370b1633
 ARC9.LoadAttachment(ATT, "eft_valmod4_magwell")
@@ -1708,7 +1677,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_valmod4_top"}
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.Attachments = {
     {
@@ -1747,7 +1715,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_valmod4_sup"}
 
 ATT.EFTErgoAdd = -4
-ATT.CustomCons = { Ergonomics = "-4" }
 ATT.RecoilMult = 0.89
 ATT.VisualRecoilMult = 0.89
 ATT.PhysBulletMuzzleVelocityMult = 1.011
@@ -1783,7 +1750,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_valmod4_sup2"}
 
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 ATT.RecoilMult = 0.98
 ATT.VisualRecoilMult = 0.98
 
@@ -1806,7 +1772,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_valmod4_sup2"}
 
 ATT.EFTErgoAdd = -8
-ATT.CustomCons = { Ergonomics = "-8" }
 ATT.RecoilMult = 0.94
 ATT.VisualRecoilMult = 0.94
 
@@ -1829,7 +1794,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_valmod4_jail"}
 
 ATT.EFTErgoAdd = -9
-ATT.CustomCons = { Ergonomics = "-9" }
 ATT.RecoilMult = 0.96
 ATT.VisualRecoilMult = 0.96
 ATT.SpreadMult = 0.97

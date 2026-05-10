@@ -19,7 +19,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/reciever_ar15_colt_m4a1_std.mdl"
 ATT.Category = {"eft_m4a1_upper"}
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 0.989
@@ -78,7 +77,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/reciever_ar15_adar_2-15_std.mdl"
 ATT.Category = {"eft_m4a1_upper"}
 
 ATT.EFTErgoAdd = 4
-ATT.CustomPros = { Ergonomics = "+4" }
 ATT.HeatCapacityMult = 0.991
 
 ATT.Attachments = {
@@ -132,7 +130,6 @@ ATT.HasReceiver = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/reciever_ar15_lone_star_tx15_lightweight.mdl"
 
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 ATT.RecoilMult = 0.98
 ATT.VisualRecoilMult = 0.98
 ATT.HeatCapacityMult = 0.983
@@ -194,7 +191,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/reciever_ar15_noveske_gen3.mdl"
 ATT.Category = {"eft_m4a1_upper"}
 
 ATT.EFTErgoAdd = 13
-ATT.CustomPros = { Ergonomics = "+13" }
 ATT.RecoilMult = 0.98
 ATT.VisualRecoilMult = 0.98
 ATT.HeatCapacityMult = 0.979
@@ -253,7 +249,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/reciever_ar15_vltor_mur-1s.mdl"
 ATT.Category = {"eft_m4a1_upper"}
 
 ATT.EFTErgoAdd = 8
-ATT.CustomPros = { Ergonomics = "+8" }
 ATT.RecoilMult = 0.96
 ATT.VisualRecoilMult = 0.96
 ATT.HeatCapacityMult = 0.975
@@ -313,7 +308,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/reciever_ar15_aeroknox_ax15.mdl"
 ATT.Category = {"eft_m4a1_upper"}
 
 ATT.EFTErgoAdd = 14
-ATT.CustomPros = { Ergonomics = "+14" }
 ATT.RecoilMult = 0.97
 ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 0.975
@@ -372,7 +366,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/reciever_ar15_radian_model1_std.
 ATT.Category = {"eft_m4a1_upper"}
 
 ATT.EFTErgoAdd = 7
-ATT.CustomPros = { Ergonomics = "+7" }
 ATT.RecoilMult = 0.95
 ATT.VisualRecoilMult = 0.95
 
@@ -433,7 +426,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/reciever_ar15_colt_m16a1e1_std.m
 ATT.Category = {"eft_m4a1_upper"}
 
 ATT.EFTErgoAdd = 4
-ATT.CustomPros = { Ergonomics = "+4" }
 ATT.RecoilMult = 0.985
 ATT.VisualRecoilMult = 0.985
 
@@ -495,7 +487,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/reciever_ar15_colt_m16a2_std.mdl
 ATT.Category = {"eft_m4a1_upper"}
 
 ATT.EFTErgoAdd = 4
-ATT.CustomPros = { Ergonomics = "+4" }
 ATT.RecoilMult = 0.985
 ATT.VisualRecoilMult = 0.985
 
@@ -551,7 +542,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -0.2
-ATT.CustomCons = { Ergonomics = "-0.2" }
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mount_ar15_promag_delta_style.mdl"
 -- ATT.ModelOffset = Vector(-1.525, 0, 0.025)
@@ -593,7 +583,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 -- ATT.Max = 1
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 ATT.ModelOffset = Vector(0.22, 0, -0)
 
 ATT.RequireElements = {"sprrailallowed"}
@@ -645,7 +634,6 @@ ATT.Category = {"eft_rearsight"}
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = 0.5
-ATT.CustomPros = { Ergonomics = "+0.5" }
 
 ATT.Scale = 1
 ATT.ModelOffset = Vector(0, 0, -0)
@@ -695,7 +683,6 @@ ATT.Category = {"eft_rearsight_hk416"}
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = 0.5
-ATT.CustomPros = { Ergonomics = "+0.5" }
 
 ATT.Scale = 1
 ATT.ModelOffset = Vector(0, 0, -0)

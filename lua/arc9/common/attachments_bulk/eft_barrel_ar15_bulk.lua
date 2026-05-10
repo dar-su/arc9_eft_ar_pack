@@ -26,7 +26,6 @@ ATT.BarrelLengthAdd = 2
 ATT.Category = {"eft_m4a1_barrel"}
 
 ATT.EFTErgoAdd = -7
-ATT.CustomCons = { Ergonomics = "-7" }
 ATT.RecoilMult = 0.98
 ATT.VisualRecoilMult = 0.98
 ATT.HeatCapacityMult = 1.06
@@ -75,7 +74,6 @@ ATT.MuzzleDevice_Priority = 2
 ATT.BarrelLengthAdd = 4
 
 ATT.EFTErgoAdd = -14
-ATT.CustomCons = { Ergonomics = "-14" }
 ATT.RecoilMult = 0.97
 ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 1.02
@@ -128,7 +126,6 @@ ATT.MuzzleDevice_Priority = 2
 ATT.BarrelLengthAdd = 6
 
 ATT.EFTErgoAdd = -22
-ATT.CustomCons = { Ergonomics = "-22" }
 ATT.RecoilMult = 0.95
 ATT.VisualRecoilMult = 0.95
 ATT.HeatCapacityMult = 0.96
@@ -178,7 +175,6 @@ ATT.MuzzleDevice_Priority = 2
 ATT.BarrelLengthAdd = 7
 
 ATT.EFTErgoAdd = -29
-ATT.CustomCons = { Ergonomics = "-29" }
 ATT.RecoilMult = 0.94
 ATT.VisualRecoilMult = 0.94
 ATT.HeatCapacityMult = 0.94
@@ -228,7 +224,6 @@ ATT.MuzzleDevice_Priority = 2
 ATT.BarrelLengthAdd = 5
 
 ATT.EFTErgoAdd = -15
-ATT.CustomCons = { Ergonomics = "-15" }
 ATT.RecoilMult = 0.96
 ATT.VisualRecoilMult = 0.96
 ATT.HeatCapacityMult = 0.98
@@ -280,7 +275,6 @@ ATT.MuzzleDevice_Priority = 2
 ATT.BarrelLengthAdd = 5
 
 ATT.EFTErgoAdd = -15
-ATT.CustomCons = { Ergonomics = "-15" }
 ATT.RecoilMult = 0.95
 ATT.VisualRecoilMult = 0.95
 ATT.HeatCapacityMult = 0.96
@@ -334,7 +328,6 @@ ATT.BarrelLengthAdd = 3.5
 ATT.Category = {"eft_m4a1_barrel"}
 
 ATT.EFTErgoAdd = -12
-ATT.CustomCons = { Ergonomics = "-12" }
 ATT.RecoilMult = 0.97
 ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 1.03
@@ -385,7 +378,6 @@ ATT.BarrelLengthAdd = 2
 ATT.Category = {"eft_m4a1_barrel"}
 
 ATT.EFTErgoAdd = -9
-ATT.CustomCons = { Ergonomics = "-9" }
 ATT.RecoilMult = 0.98
 ATT.VisualRecoilMult = 0.98
 ATT.PhysBulletMuzzleVelocityMult = 0.882
@@ -433,7 +425,6 @@ ATT.MuzzleDevice_Priority = 2
 ATT.BarrelLengthAdd = 5
 
 ATT.EFTErgoAdd = -17
-ATT.CustomCons = { Ergonomics = "-17" }
 ATT.RecoilMult = 0.95
 ATT.VisualRecoilMult = 0.95
 ATT.PhysBulletMuzzleVelocityMult = 0.949
@@ -486,7 +477,6 @@ ATT.MuzzleDevice_Priority = 2
 ATT.BarrelLengthAdd = 6
 
 ATT.EFTErgoAdd = -24
-ATT.CustomCons = { Ergonomics = "-24" }
 ATT.RecoilMult = 0.94
 ATT.VisualRecoilMult = 0.94
 ATT.PhysBulletMuzzleVelocityMult = 0.962
@@ -537,7 +527,6 @@ ATT.MuzzleDevice_Priority = 2
 ATT.BarrelLengthAdd = 7
 
 ATT.EFTErgoAdd = -30
-ATT.CustomCons = { Ergonomics = "-30" }
 ATT.RecoilMult = 0.95
 ATT.VisualRecoilMult = 0.95
 ATT.PhysBulletMuzzleVelocityMult = 0.966
@@ -594,7 +583,6 @@ ATT.HasGas = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/gas_block_ar15_colt_m4_front_sight_gas_block_std.mdl"
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.HeatCapacityMult = 0.995
 ATT.Category = {"eft_ar15_gasblock"}
 ATT.AdvancedCamoSupport = true
@@ -621,7 +609,6 @@ ATT.HasGas = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/gas_block_ar15_dd_mk12_low_profile.mdl"
 ATT.EFTErgoAdd = 1
-ATT.CustomPros = { Ergonomics = "+1" }
 ATT.RecoilMult = 0.98
 ATT.VisualRecoilMult = 0.98
 ATT.HeatCapacityMult = 0.995
@@ -646,7 +633,6 @@ ATT.HasGas = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/gas_block_ar15_jp_jpgs5b.mdl"
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.RecoilMult = 0.97
 ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 0.99
@@ -706,7 +692,6 @@ ATT.HasGas = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/gas_block_ar15_ba_lo_pro.mdl"
 ATT.EFTErgoAdd = 1
-ATT.CustomPros = { Ergonomics = "+1" }
 ATT.RecoilMult = 0.97
 ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 0.98
@@ -732,7 +717,6 @@ ATT.HasGas = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/gas_block_ar15_precision_reflex_mk12_gen_1_folding_gas_block.mdl"
 ATT.EFTErgoAdd = 0.5
-ATT.CustomPros = { Ergonomics = "+0.5" }
 ATT.RecoilMult = 0.985
 ATT.VisualRecoilMult = 0.985
 ATT.Category = {"eft_ar15_gasblock_mk12"}
@@ -758,7 +742,6 @@ ATT.HasGas = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/gas_block_ar15_slr_sentry_7_adjustable.mdl"
 ATT.EFTErgoAdd = -0.5
-ATT.CustomCons = { Ergonomics = "-0.5" }
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 ATT.Category = {"eft_ar15_gasblock", "eft_ar15_gasblock_thin"}
