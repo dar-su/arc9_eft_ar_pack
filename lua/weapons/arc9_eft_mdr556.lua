@@ -112,7 +112,7 @@ SWEP.DamageLookupTable = {
 }
 
 
-SWEP.MalfunctionMeanShotsToFail = 550
+SWEP.MalfunctionMeanShotsToFail = 550 * 1.5
 SWEP.HeatCapacity = 170
 
 SWEP.MuzzleParticle = "muzzleflash_4"

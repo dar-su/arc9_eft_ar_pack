@@ -28,7 +28,7 @@ SWEP.DefaultBodygroups = "20010100000000"
 
 SWEP.EFTErgo = 30
 SWEP.EFTWeight = 2.092
-SWEP.MalfunctionMeanShotsToFail = 450
+SWEP.MalfunctionMeanShotsToFail = 450 * 1.5
 SWEP.HeatCapacity = 240
 
 SWEP.RPM = 450

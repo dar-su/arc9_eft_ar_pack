@@ -57,7 +57,7 @@ SWEP.FiremodesHook = function(swep, val) if !swep:GetElements()["eft_extras_forc
 
 SWEP.Spread = 1.49 * ARC9.MOAToAcc
 
-SWEP.MalfunctionMeanShotsToFail = 675
+SWEP.MalfunctionMeanShotsToFail = 675 * 1.5
 
 --recoil
 SWEP.RecoilUp   = 3.25  -- up recoil
