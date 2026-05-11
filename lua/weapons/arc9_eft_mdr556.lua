@@ -20,6 +20,8 @@ SWEP.StandardPresets = {
     false,
 }
 
+SWEP.EFTWeight = 2.8
+
 SWEP.Recoil = 0.9 -- general multiplier of main recoil
 
 SWEP.RecoilUp   = 2.5  -- up recoil

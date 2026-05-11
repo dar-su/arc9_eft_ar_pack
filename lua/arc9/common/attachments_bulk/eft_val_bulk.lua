@@ -9,7 +9,6 @@ ATT.CompactName = "6L24 10"
 ATT.Icon = Material("entities/eft_val_attachments/10.png", "mips smooth")
 ATT.Description = [[A 10-round polymer TsNIITochMash 6L24 9x39 magazine for the VSS sniper rifle.]]
 
-ATT.EFTErgoAdd = 2
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -25,6 +24,13 @@ ATT.DropMagazineAmount = 1
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_val2_10.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_val2_10.mdl"
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 4,
+    weight = 0.131,
+    malfunctionChance = 0.12,
+}))
+
+
 -- EFT ID: 57838f0b2459774a256959b2
 ARC9.LoadAttachment(ATT, "eft_val_mag_10")
 
@@ -37,7 +43,6 @@ ATT.CompactName = "6L25 20"
 ATT.Icon = Material("entities/eft_val_attachments/20.png", "mips smooth")
 ATT.Description = [[A 20-round polymer TsNIITochMash 6L25 9x39 magazine for the AS VAL special assault rifle. Made out of plum-colored polymer, earning the nickname "Sliva" (Plum).]]
 
-ATT.EFTErgoAdd = -2
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -53,6 +58,13 @@ ATT.DropMagazineAmount = 1
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_val2_20.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_val2_20.mdl"
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1.5,
+    weight = 0.181,
+    malfunctionChance = 0.19,
+}))
+
+
 -- EFT ID: 57838f9f2459774a150289a0
 ARC9.LoadAttachment(ATT, "eft_val_mag_20")
 
@@ -65,7 +77,6 @@ ATT.CompactName = "SR3M 30"
 ATT.Icon = Material("entities/eft_val_attachments/30.png", "mips smooth")
 ATT.Description = [[A 30-round steel TsNIITochMash SR3M.130 magazine for 9x39 caliber SR-3M, VSS, and AS VAL.]]
 
-ATT.EFTErgoAdd = -4
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -81,6 +92,13 @@ ATT.DropMagazineAmount = 1
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_val2_30sr3.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_val2_30sr3.mdl"
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -4,
+    weight = 0.397,
+    malfunctionChance = 0.17,
+}))
+
+
 -- EFT ID: 5a9e81fba2750c00164f6b11
 ARC9.LoadAttachment(ATT, "eft_val_mag_30")
 
@@ -93,7 +111,6 @@ ATT.CompactName = "VAL 30"
 ATT.Icon = Material("entities/eft_val_attachments/30s.png", "mips smooth")
 ATT.Description = [[A 30-round polymer TsNIITochMash 9x39 magazine for the AS VAL special assault rifle.]]
 
-ATT.EFTErgoAdd = -3.5
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -109,6 +126,13 @@ ATT.DropMagazineAmount = 1
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_val2_30.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_val2_30.mdl"
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -3.5,
+    weight = 0.254,
+    malfunctionChance = 0.273,
+}))
+
+
 -- EFT ID: 65118f531b90b4fc77015083
 ARC9.LoadAttachment(ATT, "eft_val_mag_30s")
 
@@ -123,9 +147,6 @@ ATT.CompactName = "VSS"
 ATT.Icon = Material("entities/eft_val_attachments/wood.png", "mips smooth")
 ATT.Description = [[A standard-issue wooden stock for VSS Vintorez sniper rifles, manufactured by TsNIITochMash.]]
 
-ATT.EFTErgoAdd = 8
-ATT.RecoilMult = 0.78
-ATT.VisualRecoilMult = 0.78
 
 ATT.HasGrip = true
 ATT.HasStock = true
@@ -134,6 +155,13 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_vss_stock"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 8,
+    recoilModifier = -22,
+    weight = 0.59,
+}))
+
 
 -- EFT ID: 578395e82459774a0e553c7b
 ARC9.LoadAttachment(ATT, "eft_val_vss_stock")
@@ -147,9 +175,6 @@ ATT.CompactName = "AS VAL"
 ATT.Icon = Material("entities/eft_val_attachments/stock.png", "mips smooth")
 ATT.Description = [[A standard-issue foldable skeleton stock for AS VAL, manufactured by TsNIITochMash.]]
 
-ATT.EFTErgoAdd = 10
-ATT.RecoilMult = 0.82
-ATT.VisualRecoilMult = 0.82
 
 ATT.HasStock = true
 
@@ -157,6 +182,13 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_val_stock"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 10,
+    recoilModifier = -18,
+    weight = 0.29,
+}))
+
 
 -- EFT ID: 57c450252459772d28133253
 ARC9.LoadAttachment(ATT, "eft_val_stockk")
@@ -170,8 +202,6 @@ ATT.CompactName = "VAL tube"
 ATT.Icon = Material("entities/eft_val_attachments/6878ccf4181ac8a5b5077236.png", "mips smooth")
 ATT.Description = "An adapter for installing aftermarket buttstocks on the AS VAL."
 
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -188,6 +218,13 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    recoilModifier = -0.5,
+    weight = 0.161,
+}))
+
+
 -- EFT ID: 6878ccf4181ac8a5b5077236
 ARC9.LoadAttachment(ATT, "eft_val_stock_nb")
 
@@ -200,8 +237,7 @@ ARC9.LoadAttachment(ATT, "eft_val_stock_nb")
 -- ATT.Icon = Material("entities/eft_val_attachments/dcvss.png", "mips smooth")
 -- ATT.Description = [[A standard-issue dust cover for VSS Vintorez sniper rifles, manufactured by TsNIITochMash.]]
 
--- ATT.EFTErgoAdd = 2
-
+-- 
 -- ATT.SortOrder = 0
 -- ATT.MenuCategory = "ARC9 - EFT Attachments"
 
@@ -219,12 +255,17 @@ ATT.CompactName = "AS VAL"
 ATT.Icon = Material("entities/eft_val_attachments/dcval.png", "mips smooth")
 ATT.Description = [[A standard-issue dust cover for AS VAL, manufactured by TsNIItochmash.]]
 
-ATT.EFTErgoAdd = 2
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_val_dc"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.2,
+}))
+
 
 -- EFT ID: 57c44f4f2459772d2c627113
 ARC9.LoadAttachment(ATT, "eft_val_dc_val")
@@ -260,6 +301,11 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_val_rs"}
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.025,
+}))
+
+
 -- EFT ID: 57c44e7b2459772d28133248
 ARC9.LoadAttachment(ATT, "eft_val_rs_val")
 
@@ -274,12 +320,17 @@ ATT.Description = [[A standard-issue polymer pistol grip for AS VAL, manufacture
 
 ATT.HasGrip = true
 
-ATT.EFTErgoAdd = 5
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_val_grip"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.146,
+}))
+
 
 -- EFT ID: 57c44fa82459772d2d75e415
 ARC9.LoadAttachment(ATT, "eft_val_grip_std")
@@ -295,12 +346,17 @@ ATT.Description = [[A standard-issue polymer pistol grip for AS VAL, manufacture
 
 ATT.HasGrip = true
 
-ATT.EFTErgoAdd = 5
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_val_grip"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.146,
+}))
+
 
 -- EFT ID: 6565b91666492762f5029c0b
 ARC9.LoadAttachment(ATT, "eft_val_grip_black")
@@ -316,12 +372,18 @@ ATT.Description = "A custom Zenit pistol grip for the AS VAL. Replaces the stand
 
 ATT.HasGrip = true
 
-ATT.EFTErgoAdd = 7
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_val_grip"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    recoilModifier = -1,
+    weight = 0.212,
+}))
+
 
 -- EFT ID: 6878cc5bd0c26d57bf0aa37a
 ARC9.LoadAttachment(ATT, "eft_val_grip_rk3")
@@ -337,12 +399,17 @@ ATT.Description = [[A polymer handguard for the AS Val and VSS Vintorez. Manufac
 
 ATT.HasHG = true
 
-ATT.EFTErgoAdd = 5
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_val_hg"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 8,
+    weight = 0.07,
+}))
+
 
 -- EFT ID: 651178336cad06c37c049eb4
 ARC9.LoadAttachment(ATT, "eft_val_hg_std")
@@ -358,12 +425,17 @@ ATT.Description = [[A polymer handguard for the AS Val and VSS Vintorez. Manufac
 
 ATT.HasHG = true
 
-ATT.EFTErgoAdd = 5
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_val_hg"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 8,
+    weight = 0.07,
+}))
+
 
 -- EFT ID: 6565bb7eb4b12a56eb04b084
 ARC9.LoadAttachment(ATT, "eft_val_hg_black")
@@ -379,7 +451,6 @@ ATT.Description = [[A pistol grip with an integrated Mil-Spec buffer tube for AS
 
 ATT.HasGrip = true
 
-ATT.EFTErgoAdd = 3
 
 ATT.HasStock = true
 
@@ -398,6 +469,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.5,
+    weight = 0.065,
+}))
+
+
 -- EFT ID: 5a69a2ed8dc32e000d46d1f1
 ARC9.LoadAttachment(ATT, "eft_val_grip_rotor")
 
@@ -414,10 +491,7 @@ ARC9.LoadAttachment(ATT, "eft_val_grip_rotor")
 
 -- ATT.HasBarrel = true 
 
--- ATT.EFTErgoAdd = -5
--- ATT.RecoilMult = 0.86
--- ATT.VisualRecoilMult = 0.86
--- -- ATT.PhysBulletMuzzleVelocityMult = 0.94
+-- -- -- -- -- ATT.PhysBulletMuzzleVelocityMult = 0.94
 -- -- ATT.HeatCapacityMult = 1.01
 
 -- ATT.Silencer = true
@@ -460,9 +534,6 @@ ATT.Description = [[A TsNIITochMash-manufactured integral barrel-suppressor modu
 
 ATT.HasBarrel = true 
 
-ATT.EFTErgoAdd = -5
-ATT.RecoilMult = 0.86
-ATT.VisualRecoilMult = 0.86
 -- ATT.PhysBulletMuzzleVelocityMult = 0.94
 
 ATT.Silencer = true
@@ -490,6 +561,14 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -5,
+    recoilModifier = -14,
+    weight = 0.496,
+    velocity = 1.1,
+}))
+
+
 -- EFT ID: 57c44dd02459772d2e0ae249
 ARC9.LoadAttachment(ATT, "eft_val_supp_val")
 
@@ -504,7 +583,6 @@ ATT.Icon = Material("entities/eft_val_attachments/6p.png", "mips smooth")
 ATT.Description = [[The TOZ 6P29M mount, developed for a modified version of the VSS sniper rifle. It is installed on the VSS standard silencer and forms 3 rails intended for mounting additional equipment on the weapon.]]
 
 
-ATT.EFTErgoAdd = -1
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -545,6 +623,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.095,
+}))
+
+
 -- EFT ID: 59eb7ebe86f7740b373438ce
 ARC9.LoadAttachment(ATT, "eft_val_mount_6p")
 
@@ -559,7 +643,6 @@ ATT.Icon = Material("entities/eft_val_attachments/b3sparka.png", "mips smooth")
 ATT.Description = [[The B-3 combo mounts are installed on the VSS/VAL sound suppressor to form a Picatinny rail for installation of additional weapon equipment. Manufactured by Zenit.]]
 
 
-ATT.EFTErgoAdd = -1
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -586,6 +669,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.08,
+}))
+
+
 -- EFT ID: 5a9fc7e6a2750c0032157184
 ARC9.LoadAttachment(ATT, "eft_val_mount_b3c")
 
@@ -600,7 +689,6 @@ ATT.Icon = Material("entities/eft_val_attachments/b3.png", "mips smooth")
 ATT.Description = [[The B-3 combo mounts are installed on the VSS/VAL sound suppressor to form a Picatinny rail for installation of additional weapon equipment. Manufactured by Zenit.]]
 
 
-ATT.EFTErgoAdd = -1
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -616,6 +704,12 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.04,
+}))
 
 
 -- EFT ID: 57a3459f245977764a01f703
@@ -635,9 +729,6 @@ ATT.Description = [[A standard-issue sound suppressor for the SR-3M assault rifl
 
 -- ATT.HasBarrel = true 
 
-ATT.EFTErgoAdd = -5
-ATT.RecoilMult = 0.86
-ATT.VisualRecoilMult = 0.86
 -- ATT.PhysBulletMuzzleVelocityMult = 0.94
 -- ATT.HeatCapacityMult = 1.01
 ATT.HeatCapacityMult = 0.75
@@ -661,6 +752,15 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -5,
+    recoilModifier = -14,
+    accuracyModifier = 1,
+    weight = 0.575,
+    velocity = 1.1,
+}))
+
+
 -- EFT ID: 65144ff50e00edc79406836f
 ARC9.LoadAttachment(ATT, "eft_sr3_supp")
 
@@ -677,9 +777,6 @@ ATT.Description = [[A standard-issue polymer handguard for the SR-3M assault rif
 ATT.HasHG = true
 ATT.HasBarrel = true
 
-ATT.EFTErgoAdd = 7
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -702,6 +799,12 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 8,
+    weight = 0.07,
+}))
+
 
 -- EFT ID: 6565c3ab977bcc2dbb01c2e7
 ARC9.LoadAttachment(ATT, "eft_sr3_hg_std")
@@ -718,9 +821,6 @@ ATT.Description = [[A standard-issue polymer handguard for the SR-3M assault rif
 ATT.HasHG = true
 ATT.HasBarrel = true
 
-ATT.EFTErgoAdd = 7
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -744,6 +844,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 8,
+    weight = 0.07,
+}))
+
+
 -- EFT ID: 65144f546ddb773afa0e35e1
 ARC9.LoadAttachment(ATT, "eft_sr3_hg_black")
 
@@ -759,9 +865,6 @@ ATT.Description = [[A polymer handguard with Zenit Picatinny rails for the SR-3M
 ATT.HasHG = true
 ATT.HasBarrel = true
 
-ATT.EFTErgoAdd = 8
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -802,6 +905,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 8,
+    weight = 0.08,
+}))
+
+
 -- EFT ID: 6568a6bf2c5fb7afc70bc424
 ARC9.LoadAttachment(ATT, "eft_sr3_hg_rail")
 
@@ -816,9 +925,6 @@ ATT.Description = [[A standard-issue polymer foregrip for the SR-3M assault rifl
 
 -- ATT.HasHG = true
 
-ATT.EFTErgoAdd = 5
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -829,6 +935,13 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/foregrip_sr3m_lhik.mdl"
 ATT.LHIK = true
 ATT.ModelOffset = Vector(0.1, 0, 1.5)
 ATT.ModelAngleOffset = Angle(0, 90, 0)
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    recoilModifier = -1,
+    weight = 0.08,
+}))
+
 
 -- EFT ID: 6565c0c2ff7eb7070409084c
 ARC9.LoadAttachment(ATT, "eft_sr3_fg_std")
@@ -844,9 +957,6 @@ ATT.Description = [[A standard-issue polymer foregrip for the SR-3M assault rifl
 
 -- ATT.HasHG = true
 
-ATT.EFTErgoAdd = 5
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -857,6 +967,13 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/foregrip_sr3m_lhik.mdl"
 ATT.LHIK = true
 ATT.ModelOffset = Vector(0.1, 0, 1.5)
 ATT.ModelAngleOffset = Angle(0, 90, 0)
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    recoilModifier = -1,
+    weight = 0.08,
+}))
+
 
 -- EFT ID: 65329ebcc0d50d0c9204ace1
 ARC9.LoadAttachment(ATT, "eft_sr3_fg_black")
@@ -877,7 +994,6 @@ ATT.Model = "models/weapons/arc9_eft_shared/atts/mounts/mount_dovetail_sr3mp.mdl
 ATT.Category = {"eft_mount_dovetail_sr3"}
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -1
 ATT.ActivateElements = {"nolongrear"}
 
 ATT.Attachments = {
@@ -901,6 +1017,12 @@ ATT.Attachments = {
 
 ATT.ModelOffset = Vector(0, -1.1, 0)
 ATT.ModelAngleOffset = Angle(0, 90, 0)
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.5,
+    weight = 0.11,
+}))
+
 
 -- EFT ID: 67069c8cee8138ed2f05ad34
 ARC9.LoadAttachment(ATT, "eft_mount_dovetail_sr3mp")
@@ -921,7 +1043,6 @@ ATT.ModelSkin = 1
 ATT.Category = {"eft_mount_dovetail_sr3"}
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -1
 ATT.ActivateElements = {"nolongrear"}
 
 ATT.Attachments = {
@@ -944,6 +1065,12 @@ ATT.Attachments = {
 
 ATT.ModelOffset = Vector(0, -1.1, 0)
 ATT.ModelAngleOffset = Angle(0, 90, 0)
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.5,
+    weight = 0.11,
+}))
+
 
 -- EFT ID: 67069cbbb29a2cd33803338c
 ARC9.LoadAttachment(ATT, "eft_mount_dovetail_sr3mpp")
@@ -982,6 +1109,11 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.05,
+}))
+
+
 -- EFT ID: 67069cf1af4890b09f0006e8
 ARC9.LoadAttachment(ATT, "eft_sr3_mount_hg")
 
@@ -1016,6 +1148,11 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.05,
+}))
 
 
 -- EFT ID: 67069d02ad91f3a63c0bc2b0
@@ -1054,64 +1191,24 @@ ATT.HasAmmoooooooo = true
 
 ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_9x39_fmj.printname")
 
-ATT.DamageMax = 75 * mult9
-ATT.DamageMin = 59.21 * mult9
-ATT.PhysBulletMuzzleVelocity = 330 /0.0254
--- ATT.TracerNum = 1
--- ATT.TracerColor = Color(255, 16, 16)
-ATT.SpreadMult = 0.95
-ATT.RecoilMult = 0.95
-ATT.VisualRecoilMult = 0.95
-ATT.HeatPerShotMult = 1.24
-
-ATT.RangeMin = 10
-ATT.RangeMax = 1000 /0.0254 * dmgrange
-
-ATT.Penetration =      17 *2.54/100/0.0254
-ATT.PenetrationDelta = 28/100
-ATT.ArmorPiercing =    28/100
-ATT.RicochetChance =   30/100
-
-ATT.DamageLookupTable = {
-    {   10/0.0254 * dmgrange, 
-    73 * mult9     },
-
-    {   100 /0.0254 * dmgrange, 
-    70.25 * mult9     },
-
-    {   200 /0.0254 * dmgrange, 
-    67.73 * mult9     },
-
-    {   300 /0.0254 * dmgrange, 
-    66.35 * mult9     },
-
-    {   400 /0.0254 * dmgrange, 
-    65.12 * mult9     },
-
-    {   500 /0.0254 * dmgrange, 
-    63.94 * mult9     },
-
-    {   600 /0.0254 * dmgrange, 
-    62.85 * mult9     },
-
-    {   700 /0.0254 * dmgrange, 
-    61.87 * mult9     },
-
-    {   800 /0.0254 * dmgrange, 
-    60.92 * mult9     },
-
-    {   900 /0.0254 * dmgrange, 
-    60 * mult9     },
-
-    {   1000 /0.0254 * dmgrange, 
-    59.21 * mult9     },
-}
--- wrong fuckign table  cuz fmj too new and my websites are outdated
--- 100m     200m    300m    400m    500m    600m    700m    800m    900m    1000m
--- 69.25 	67.73 	66.35 	65.12 	63.94 	62.85 	61.87 	60.92 	60.05 	59.21
-
-
 ATT.Category = {"eft_ammo_9x39"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.023,
+    damage = 75,
+    ballisticCoeficient = 0.343,
+    initialSpeed = 330,
+    accuracyModifier = 0.05,
+    recoilModifier = -0.05,
+    penetrationPower = 17,
+    armorDamage = 28,
+    penetrationChance = 0.75,
+    ricochetChance = 0.4,
+    heatFactor = 1.24,
+    failureToFeedChance = 0.0871,
+    misfireChance = 0.196,
+}))
 
 
 -- EFT ID: 6576f96220d53a5b8f3e395e
@@ -1133,64 +1230,25 @@ ATT.HasAmmoooooooo = true
 
 ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_9x39_sp6.printname")
 
-ATT.DamageMax = 60 * mult9
-ATT.DamageMin = 49.12 * mult9
-ATT.PhysBulletMuzzleVelocity = 305 /0.0254
--- ATT.TracerNum = 1
--- ATT.TracerColor = Color(255, 16, 16)
--- ATT.SpreadMult = 0.9
-ATT.RecoilMult = 1.05
-ATT.VisualRecoilMult = 1.05
-ATT.HeatPerShotMult = 1.61
-
-ATT.RangeMin = 10
-ATT.RangeMax = 1000 /0.0254 * dmgrange
-
-ATT.Penetration =      48 *2.54/100/0.0254
-ATT.PenetrationDelta = 64/100
-ATT.ArmorPiercing =    64/100
-ATT.RicochetChance =   30/100
-
-ATT.DamageLookupTable = {
-    {   10/0.0254 * dmgrange, 
-    60 * mult9     },
-
-    {   100 /0.0254 * dmgrange, 
-    56.66 * mult9     },
-
-    {   200 /0.0254 * dmgrange, 
-    55.5 * mult9     },
-
-    {   300 /0.0254 * dmgrange, 
-    54.46 * mult9     },
-
-    {   400 /0.0254 * dmgrange, 
-    53.51 * mult9     },
-
-    {   500 /0.0254 * dmgrange, 
-    52.66 * mult9     },
-
-    {   600 /0.0254 * dmgrange, 
-    51.86 * mult9     },
-
-    {   700 /0.0254 * dmgrange, 
-    51.09 * mult9     },
-
-    {   800 /0.0254 * dmgrange, 
-    50.39 * mult9     },
-
-    {   900 /0.0254 * dmgrange, 
-    49.74 * mult9     },
-
-    {   1000 /0.0254 * dmgrange, 
-    49.12 * mult9     },
-}
-
--- 100m     200m    300m    400m    500m    600m    700m    800m    900m    1000m
--- 56.66 	55.5 	54.46 	53.51 	52.66 	51.86 	51.09 	50.39 	49.74 	49.12
-
-
 ATT.Category = {"eft_ammo_9x39"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.023,
+    damage = 60,
+    ballisticCoeficient = 0.414,
+    initialSpeed = 305,
+    recoilModifier = 0.05,
+    penetrationPower = 48,
+    armorDamage = 64,
+    penetrationChance = 0.7,
+    ricochetChance = 0.5,
+    heatFactor = 1.61,
+    failureToFeedChance = 0.0903,
+    misfireChance = 0.168,
+    lightBleedModifier = 0.1,
+    heavyBleedModifier = 0.1,
+}))
 
 
 -- EFT ID: 57a0e5022459774d1673f889
@@ -1212,64 +1270,25 @@ ATT.HasAmmoooooooo = true
 
 ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_9x39_bp.printname")
 
-ATT.DamageMax = 58 * mult9
-ATT.DamageMin = 50.72 * mult9
-ATT.PhysBulletMuzzleVelocity = 295 /0.0254
--- ATT.TracerNum = 1
--- ATT.TracerColor = Color(255, 16, 16)
-ATT.SpreadMult = 0.9
-ATT.RecoilMult = 1.15
-ATT.VisualRecoilMult = 1.15
-ATT.HeatPerShotMult = 1.61
-
-ATT.RangeMin = 10
-ATT.RangeMax = 1000 /0.0254 * dmgrange
-
-ATT.Penetration =      54 *2.54/100/0.0254
-ATT.PenetrationDelta = 69/100
-ATT.ArmorPiercing =    69/100
-ATT.RicochetChance =   30/100
-
-ATT.DamageLookupTable = {
-    {   10/0.0254 * dmgrange, 
-    58 * mult9     },
-
-    {   100 /0.0254 * dmgrange, 
-    58.64 * mult9     },
-
-    {   200 /0.0254 * dmgrange, 
-    57.46 * mult9     },
-
-    {   300 /0.0254 * dmgrange, 
-    56.37 * mult9     },
-
-    {   400 /0.0254 * dmgrange, 
-    55.37 * mult9     },
-
-    {   500 /0.0254 * dmgrange, 
-    54.46 * mult9     },
-
-    {   600 /0.0254 * dmgrange, 
-    53.62 * mult9     },
-
-    {   700 /0.0254 * dmgrange, 
-    52.82 * mult9     },
-
-    {   800 /0.0254 * dmgrange, 
-    52 * mult9     },
-
-    {   900 /0.0254 * dmgrange, 
-    51.38 * mult9     },
-
-    {   1000 /0.0254 * dmgrange, 
-    50.72 * mult9     },
-}
-
--- 100m     200m    300m    400m    500m    600m    700m    800m    900m    1000m
--- 58.64 	57.46 	56.37 	55.37 	54.46 	53.62 	52.82 	52.07 	51.38 	50.72
-
 
 ATT.Category = {"eft_ammo_9x39"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.023,
+    damage = 58,
+    ballisticCoeficient = 0.395,
+    initialSpeed = 295,
+    accuracyModifier = 0.1,
+    recoilModifier = 0.15,
+    penetrationPower = 54,
+    armorDamage = 69,
+    penetrationChance = 0.75,
+    ricochetChance = 0.5,
+    heatFactor = 1.61,
+    failureToFeedChance = 0.0871,
+    misfireChance = 0.196,
+}))
 
 
 -- EFT ID: 5c0d688c86f77413ae3407b2
@@ -1291,64 +1310,26 @@ ATT.HasAmmoooooooo = true
 
 ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_9x39_spp.printname")
 
-ATT.DamageMax = 60 * mult9
-ATT.DamageMin = 50.07 * mult9
-ATT.PhysBulletMuzzleVelocity = 310 /0.0254
--- ATT.TracerNum = 1
--- ATT.TracerColor = Color(255, 16, 16)
-ATT.SpreadMult = 0.9
-ATT.RecoilMult = 1.07
-ATT.VisualRecoilMult = 1.07
-ATT.HeatPerShotMult = 1.45
-
-ATT.RangeMin = 10
-ATT.RangeMax = 1000 /0.0254 * dmgrange
-
-ATT.Penetration =      35 *2.54/100/0.0254
-ATT.PenetrationDelta = 48/100
-ATT.ArmorPiercing =    48/100
-ATT.RicochetChance =   30/100
-
-ATT.DamageLookupTable = {
-    {   10/0.0254 * dmgrange, 
-    60 * mult9     },
-
-    {   100 /0.0254 * dmgrange, 
-    64.66  * mult9     },
-
-    {   200 /0.0254 * dmgrange, 
-    62.16 * mult9     },
-
-    {   300 /0.0254 * dmgrange, 
-    60 * mult9     },
-
-    {   400 /0.0254 * dmgrange, 
-    58.18 * mult9     },
-
-    {   500 /0.0254 * dmgrange, 
-    56.53 * mult9     },
-
-    {   600 /0.0254 * dmgrange, 
-    55 * mult9     },
-
-    {   700 /0.0254 * dmgrange, 
-    53.62 * mult9     },
-
-    {   800 /0.0254 * dmgrange, 
-    52.32 * mult9     },
-
-    {   900 /0.0254 * dmgrange, 
-    51.16 * mult9     },
-
-    {   1000 /0.0254 * dmgrange, 
-    50.07 * mult9     },
-}
-
--- 100m     200m    300m    400m    500m    600m    700m    800m    900m    1000m
--- 64.66 	62.16 	60.06 	58.18 	56.53 	55 	53.62 	52.32 	51.16 	50.07
-
-
 ATT.Category = {"eft_ammo_9x39"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.023,
+    damage = 68,
+    ballisticCoeficient = 0.189,
+    initialSpeed = 310,
+    accuracyModifier = 0.1,
+    recoilModifier = 0.07,
+    penetrationPower = 35,
+    armorDamage = 48,
+    penetrationChance = 0.6,
+    ricochetChance = 0.4,
+    heatFactor = 1.45,
+    failureToFeedChance = 0.0884,
+    misfireChance = 0.14,
+    lightBleedModifier = 0.1,
+    heavyBleedModifier = 0.2,
+}))
 
 
 -- EFT ID: 5c0d668f86f7747ccb7f13b2
@@ -1370,64 +1351,26 @@ ATT.HasAmmoooooooo = true
 
 ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_9x39_pab9.printname")
 
-ATT.DamageMax = 62 * mult9
-ATT.DamageMin = 51.77 * mult9
-ATT.PhysBulletMuzzleVelocity = 320 /0.0254
--- ATT.TracerNum = 1
--- ATT.TracerColor = Color(255, 16, 16)
-ATT.SpreadMult = 1.15
-ATT.RecoilMult = 1.1
-ATT.VisualRecoilMult = 1.1
-ATT.HeatPerShotMult = 1.56
-
-ATT.RangeMin = 10
-ATT.RangeMax = 1000 /0.0254 * dmgrange
-
-ATT.Penetration =      43 *2.54/100/0.0254
-ATT.PenetrationDelta = 57/100
-ATT.ArmorPiercing =    57/100
-ATT.RicochetChance =   30/100
-
-ATT.DamageLookupTable = {
-    {   10/0.0254 * dmgrange, 
-    62 * mult9     },
-
-    {   100 /0.0254 * dmgrange, 
-    60.33 * mult9     },
-
-    {   200 /0.0254 * dmgrange, 
-    58.98 * mult9     },
-
-    {   300 /0.0254 * dmgrange, 
-    57.75 * mult9     },
-
-    {   400 /0.0254 * dmgrange, 
-    56.67 * mult9     },
-
-    {   500 /0.0254 * dmgrange, 
-    55.7 * mult9     },
-
-    {   600 /0.0254 * dmgrange, 
-    54.8 * mult9     },
-
-    {   700 /0.0254 * dmgrange, 
-    53.96 * mult9     },
-
-    {   800 /0.0254 * dmgrange, 
-    53.18 * mult9     },
-
-    {   900 /0.0254 * dmgrange, 
-    52.44 * mult9     },
-
-    {   1000 /0.0254 * dmgrange, 
-    51.77 * mult9     },
-}
-
--- 100m     200m    300m    400m    500m    600m    700m    800m    900m    1000m
--- 60.33 	58.98 	57.75 	56.67 	55.7 	54.8 	53.96 	53.18 	52.44 	51.77
-
-
 ATT.Category = {"eft_ammo_9x39"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.024,
+    damage = 62,
+    ballisticCoeficient = 0.395,
+    initialSpeed = 320,
+    accuracyModifier = -0.15,
+    recoilModifier = 0.1,
+    penetrationPower = 43,
+    armorDamage = 57,
+    penetrationChance = 0.78,
+    ricochetChance = 0.48,
+    heatFactor = 1.56,
+    failureToFeedChance = 0.073,
+    misfireChance = 0.196,
+    lightBleedModifier = 0.1,
+    heavyBleedModifier = 0.12,
+}))
 
 
 -- EFT ID: 61962d879bb3d20b0946d385
@@ -1449,64 +1392,23 @@ ATT.HasAmmoooooooo = true
 
 ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_9x39_sp5.printname")
 
-ATT.DamageMax = 71 * mult9
-ATT.DamageMin = 59.21 * mult9
-ATT.PhysBulletMuzzleVelocity = 290 /0.0254
--- ATT.TracerNum = 1
--- ATT.TracerColor = Color(255, 16, 16)
--- ATT.SpreadMult = 0.9
--- ATT.RecoilMult = 1.1
--- ATT.VisualRecoilMult = 1.1
-ATT.HeatPerShotMult = 1.53
-
-ATT.RangeMin = 10
-ATT.RangeMax = 1000 /0.0254 * dmgrange
-
-ATT.Penetration =      28 *2.54/100/0.0254
-ATT.PenetrationDelta = 39/100
-ATT.ArmorPiercing =    39/100
-ATT.RicochetChance =   30/100
-
-ATT.DamageLookupTable = {
-    {   10/0.0254 * dmgrange, 
-    71 * mult9     },
-
-    {   100 /0.0254 * dmgrange, 
-    69.25 * mult9     },
-
-    {   200 /0.0254 * dmgrange, 
-    67.73 * mult9     },
-
-    {   300 /0.0254 * dmgrange, 
-    66.35 * mult9     },
-
-    {   400 /0.0254 * dmgrange, 
-    65.12 * mult9     },
-
-    {   500 /0.0254 * dmgrange, 
-    63.94 * mult9     },
-
-    {   600 /0.0254 * dmgrange, 
-    62.85 * mult9     },
-
-    {   700 /0.0254 * dmgrange, 
-    61.87 * mult9     },
-
-    {   800 /0.0254 * dmgrange, 
-    60.92 * mult9     },
-
-    {   900 /0.0254 * dmgrange, 
-    60 * mult9     },
-
-    {   1000 /0.0254 * dmgrange, 
-    59.21 * mult9     },
-}
-
--- 100m     200m    300m    400m    500m    600m    700m    800m    900m    1000m
--- 69.25 	67.73 	66.35 	65.12 	63.94 	62.85 	61.87 	60.92 	60.05 	59.21
-
-
 ATT.Category = {"eft_ammo_9x39"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.023,
+    damage = 71,
+    ballisticCoeficient = 0.353,
+    initialSpeed = 290,
+    penetrationPower = 28,
+    armorDamage = 39,
+    penetrationChance = 0.6,
+    ricochetChance = 0.4,
+    heatFactor = 1.53,
+    failureToFeedChance = 0.0923,
+    misfireChance = 0.154,
+    heavyBleedModifier = 0.1,
+}))
 
 
 -- EFT ID: 57a0dfb82459774d3078b56c
@@ -1538,9 +1440,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_valmod4_hg"}
 
-ATT.EFTErgoAdd = 10
-ATT.RecoilMult = 0.97
-ATT.VisualRecoilMult = 0.97
 
 ATT.HasHG = true
 
@@ -1613,6 +1512,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 10,
+    weight = 0.238,
+}))
+
+
 -- EFT ID: 687128c4505fed5f370b1625
 ARC9.LoadAttachment(ATT, "eft_valmod4_hgg")
 
@@ -1629,7 +1534,12 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_valmod4_magw"}
 
-ATT.EFTErgoAdd = 4
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 4,
+    weight = 0.034,
+}))
+
 
 -- EFT ID: 68712a7d505fed5f370b1633
 ARC9.LoadAttachment(ATT, "eft_valmod4_magwell")
@@ -1659,6 +1569,11 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.04,
+}))
+
+
 -- EFT ID: 68712b57a1be89347f0d8179
 ARC9.LoadAttachment(ATT, "eft_valmod4_siderail")
 
@@ -1676,7 +1591,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_valmod4_top"}
 
-ATT.EFTErgoAdd = -1
 
 ATT.Attachments = {
     {
@@ -1698,6 +1612,12 @@ ATT.Attachments = {
 
 ATT.ActivateElements = {"railedcover"}
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.116,
+}))
+
+
 -- EFT ID: 68712bd4251b8d4c6c04ec19
 ARC9.LoadAttachment(ATT, "eft_valmod4_topcover")
 
@@ -1714,9 +1634,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_valmod4_sup"}
 
-ATT.EFTErgoAdd = -4
-ATT.RecoilMult = 0.89
-ATT.VisualRecoilMult = 0.89
 ATT.PhysBulletMuzzleVelocityMult = 1.011
 
 ATT.Silencer = true
@@ -1732,6 +1649,14 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -4,
+    recoilModifier = -11,
+    weight = 0.279,
+    velocity = 1.1,
+}))
+
 
 -- EFT ID: 68712ce2251b8d4c6c04ec1f
 ARC9.LoadAttachment(ATT, "eft_valmod4_suppressor")
@@ -1749,11 +1674,15 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_valmod4_sup2"}
 
-ATT.EFTErgoAdd = 2
-ATT.RecoilMult = 0.98
-ATT.VisualRecoilMult = 0.98
 
 ATT.HasBarrel = true
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    recoilModifier = -2,
+    weight = 0.01,
+}))
+
 
 -- EFT ID: 68712cafa1be89347f0d817c
 ARC9.LoadAttachment(ATT, "eft_valmod4_supcap")
@@ -1771,11 +1700,15 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_valmod4_sup2"}
 
-ATT.EFTErgoAdd = -8
-ATT.RecoilMult = 0.94
-ATT.VisualRecoilMult = 0.94
 
 ATT.HasBarrel = true
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -8,
+    recoilModifier = -6,
+    weight = 0.086,
+}))
+
 
 -- EFT ID: 6878c143254146e6fd043756
 ARC9.LoadAttachment(ATT, "eft_valmod4_brake")
@@ -1793,10 +1726,14 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_valmod4_jail"}
 
-ATT.EFTErgoAdd = -9
-ATT.RecoilMult = 0.96
-ATT.VisualRecoilMult = 0.96
-ATT.SpreadMult = 0.97
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -9,
+    recoilModifier = -4,
+    accuracyModifier = 3,
+    weight = 0.073,
+}))
+
 
 -- EFT ID: 6878c1c723c3173d7f06d926
 ARC9.LoadAttachment(ATT, "eft_valmod4_jailbrake")

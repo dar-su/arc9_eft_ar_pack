@@ -19,9 +19,7 @@ ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_stanag_colt_ar15
 ATT.Category = {"eft_ar15_mag"}
 ATT.SuppressEmptySuffix = false 
 
-ATT.EFTErgoAdd = -3
 
-ATT.MalfunctionMeanShotsToFailMult = 0.92
 
 ATT.ActivateElements = {"30rnd"}
 
@@ -29,6 +27,13 @@ ATT.ChamberSize = 1
 ATT.ClipSize = 30
 
 ATT.AdvancedCamoSupport = true
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1.5,
+    weight = 0.117,
+    malfunctionChance = 0.08,
+}))
+
+
 -- EFT ID: 55d4887d4bdc2d962f8b4570
 ARC9.LoadAttachment(ATT, "eft_mag_ar15_stanag_30")
 
@@ -50,14 +55,19 @@ ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_stanag_fn_mk16_s
 ATT.Category = {"eft_ar15_mag"}
 ATT.SuppressEmptySuffix = false 
 
-ATT.EFTErgoAdd = -3
 
-ATT.MalfunctionMeanShotsToFailMult = 0.92
 
 ATT.ActivateElements = {"30rnd"}
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 30
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.117,
+    malfunctionChance = 0.08,
+}))
+
 
 -- EFT ID: 61840bedd92c473c77021635
 ARC9.LoadAttachment(ATT, "eft_mag_ar15_mk16_30")
@@ -82,14 +92,19 @@ ATT.DropMagazineSkin = 1
 ATT.Category = {"eft_ar15_mag"}
 ATT.SuppressEmptySuffix = false 
 
-ATT.EFTErgoAdd = -3
 
-ATT.MalfunctionMeanShotsToFailMult = 0.92
 
 ATT.ActivateElements = {"30rnd"}
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 30
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.117,
+    malfunctionChance = 0.08,
+}))
+
 
 -- EFT ID: 61840d85568c120fdd2962a5
 ARC9.LoadAttachment(ATT, "eft_mag_ar15_mk16_30_f")
@@ -112,9 +127,7 @@ ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_stanag_hk_416_st
 ATT.Category = {"eft_ar15_mag"}
 ATT.SuppressEmptySuffix = false 
 
-ATT.EFTErgoAdd = -3
 
-ATT.MalfunctionMeanShotsToFailMult = 0.94
 
 ATT.ActivateElements = {"30rnd"}
 
@@ -122,6 +135,13 @@ ATT.ChamberSize = 1
 ATT.ClipSize = 30
 
 ATT.AdvancedCamoSupport = true
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.32,
+    malfunctionChance = 0.06,
+}))
+
+
 -- EFT ID: 5c05413a0db834001c390617
 ARC9.LoadAttachment(ATT, "eft_mag_ar15_hksteel")
 
@@ -144,14 +164,19 @@ ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_stanag_hk_gen_2_
 ATT.Category = {"eft_ar15_mag"}
 ATT.SuppressEmptySuffix = false 
 
-ATT.EFTErgoAdd = -3
 
-ATT.MalfunctionMeanShotsToFailMult = 0.93
 
 ATT.ActivateElements = {"30rnd"}
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 30
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.5,
+    weight = 0.16,
+    malfunctionChance = 0.07,
+}))
+
 
 -- EFT ID: 5c6d450c2e221600114c997d
 ARC9.LoadAttachment(ATT, "eft_mag_ar15_hkpmgen2")
@@ -175,15 +200,20 @@ ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_stanag_hk_polyme
 ATT.Category = {"eft_ar15_mag"}
 ATT.SuppressEmptySuffix = false 
 
-ATT.EFTErgoAdd = -2
 
-ATT.MalfunctionMeanShotsToFailMult = 0.95
 
 ATT.ActivateElements = {"30rnd"}
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 30
 ATT.AdvancedCamoSupport = true
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.5,
+    weight = 0.17,
+    malfunctionChance = 0.05,
+}))
+
 
 -- EFT ID: 5c6d42cb2e2216000e69d7d1
 ARC9.LoadAttachment(ATT, "eft_mag_ar15_hkstanag")
@@ -206,15 +236,20 @@ ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_stanag_magpul_pm
 ATT.Category = {"eft_ar15_mag"}
 ATT.SuppressEmptySuffix = false 
 
-ATT.EFTErgoAdd = -16
 
-ATT.MalfunctionMeanShotsToFailMult = 0.7
 
 ATT.ActivateElements = {"drum"}
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 60
 ATT.AdvancedCamoSupport = true
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -7,
+    weight = 0.58,
+    malfunctionChance = 0.3,
+}))
+
 
 -- EFT ID: 59c1383d86f774290a37e0ca
 ARC9.LoadAttachment(ATT, "eft_mag_ar15_pmag_60")
@@ -237,14 +272,19 @@ ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_stanag_magpul_pm
 ATT.Category = {"eft_ar15_mag"}
 ATT.SuppressEmptySuffix = false 
 
-ATT.EFTErgoAdd = 5
 
-ATT.MalfunctionMeanShotsToFailMult = 0.97
 
 ATT.ActivateElements = {"10rnd"}
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 10
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    weight = 0.12,
+    malfunctionChance = 0.03,
+}))
+
 
 -- EFT ID: 5aaa5e60e5b5b000140293d6
 ARC9.LoadAttachment(ATT, "eft_mag_ar15_pmag_10")
@@ -267,14 +307,19 @@ ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_stanag_magpul_pm
 ATT.Category = {"eft_ar15_mag"}
 ATT.SuppressEmptySuffix = false 
 
-ATT.EFTErgoAdd = 3
 
-ATT.MalfunctionMeanShotsToFailMult = 0.96
 
 ATT.ActivateElements = {"20rnd"}
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 20
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.125,
+    malfunctionChance = 0.04,
+}))
+
 
 -- EFT ID: 5448c1d04bdc2dff2f8b4569
 ARC9.LoadAttachment(ATT, "eft_mag_ar15_pmag_20")
@@ -297,14 +342,19 @@ ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_stanag_magpul_pm
 ATT.Category = {"eft_ar15_mag"}
 ATT.SuppressEmptySuffix = false 
 
-ATT.EFTErgoAdd = -3
 
-ATT.MalfunctionMeanShotsToFailMult = 0.92
 
 ATT.ActivateElements = {"30rnd"}
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 30
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.5,
+    weight = 0.138,
+    malfunctionChance = 0.08,
+}))
+
 
 -- EFT ID: 5aaa5dfee5b5b000140293d3
 ARC9.LoadAttachment(ATT, "eft_mag_ar15_pmag_30")
@@ -331,17 +381,22 @@ ATT.DropMagazineSkin = 1
 ATT.Category = {"eft_ar15_mag"}
 ATT.SuppressEmptySuffix = false 
 
-ATT.EFTErgoAdd = -3
 
 ATT.ActivateElements = {"30rnd"}
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 30
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.5,
+    weight = 0.138,
+    malfunctionChance = 0.08,
+}))
+
+
 -- EFT ID: 5d1340b3d7ad1a0b52682ed7
 ARC9.LoadAttachment(ATT, "eft_mag_ar15_pmag_30_f")
 
-ATT.MalfunctionMeanShotsToFailMult = 0.92
 
 
 ///////////////////////////////////////      eft_mag_ar15_pmag_40
@@ -362,14 +417,19 @@ ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_stanag_magpul_pm
 ATT.Category = {"eft_ar15_mag"}
 ATT.SuppressEmptySuffix = false 
 
-ATT.EFTErgoAdd = -7
 
-ATT.MalfunctionMeanShotsToFailMult = 0.83
 
 ATT.ActivateElements = {"40rnd"}
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 40
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -3.5,
+    weight = 0.2,
+    malfunctionChance = 0.17,
+}))
+
 
 -- EFT ID: 544a378f4bdc2d30388b4567
 ARC9.LoadAttachment(ATT, "eft_mag_ar15_pmag_40")
@@ -396,14 +456,19 @@ ATT.DropMagazineSkin = 1
 ATT.Category = {"eft_ar15_mag"}
 ATT.SuppressEmptySuffix = false 
 
-ATT.EFTErgoAdd = -7
 
-ATT.MalfunctionMeanShotsToFailMult = 0.83
 
 ATT.ActivateElements = {"40rnd"}
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 40
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -3.5,
+    weight = 0.2,
+    malfunctionChance = 0.17,
+}))
+
 
 -- EFT ID: 5d1340bdd7ad1a0e8d245aab
 ARC9.LoadAttachment(ATT, "eft_mag_ar15_pmag_40_f")
@@ -428,16 +493,21 @@ ATT.Category = {"eft_ar15_mag"}
 ATT.SuppressEmptySuffix = false 
 
 
-ATT.EFTErgoAdd = -3
 ATT.CustomPros = { ["Improved check accuracy"] = "Yes" }
 ATT.EFTImprovedMagCheck = true
 
-ATT.MalfunctionMeanShotsToFailMult = 0.92
 
 ATT.ActivateElements = {"30rnd"}
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 30
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.5,
+    weight = 0.138,
+    malfunctionChance = 0.08,
+}))
+
 
 -- EFT ID: 55802d5f4bdc2dac148b458e
 ARC9.LoadAttachment(ATT, "eft_mag_ar15_pmag_w_30")
@@ -464,16 +534,21 @@ ATT.DropMagazineSkin = 1
 ATT.Category = {"eft_ar15_mag"}
 ATT.SuppressEmptySuffix = false 
 
-ATT.EFTErgoAdd = -3
 ATT.CustomPros = { ["Improved check accuracy"] = "Yes" }
 ATT.EFTImprovedMagCheck = true
 
-ATT.MalfunctionMeanShotsToFailMult = 0.92
 
 ATT.ActivateElements = {"30rnd"}
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 30
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.5,
+    weight = 0.138,
+    malfunctionChance = 0.08,
+}))
+
 
 -- EFT ID: 5d1340cad7ad1a0b0b249869
 ARC9.LoadAttachment(ATT, "eft_mag_ar15_pmag_30_w_f")
@@ -498,14 +573,19 @@ ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_stanag_surefire_
 ATT.Category = {"eft_ar15_mag"}
 ATT.SuppressEmptySuffix = false 
 
-ATT.EFTErgoAdd = -27
 
-ATT.MalfunctionMeanShotsToFailMult = 0.55
 
 ATT.ActivateElements = {"100rnd"}
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 100
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -20,
+    weight = 0.27,
+    malfunctionChance = 0.45,
+}))
+
 
 -- EFT ID: 5c6592372e221600133e47d7
 ARC9.LoadAttachment(ATT, "eft_mag_ar15_surefire_100")
@@ -529,14 +609,19 @@ ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_stanag_surefire_
 ATT.Category = {"eft_ar15_mag"}
 ATT.SuppressEmptySuffix = false 
 
-ATT.EFTErgoAdd = -18
 
-ATT.MalfunctionMeanShotsToFailMult = 0.64
 
 ATT.ActivateElements = {"100rnd"}
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 60
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -9,
+    weight = 0.18,
+    malfunctionChance = 0.36,
+}))
+
 
 -- EFT ID: 544a37c44bdc2d25388b4567
 ARC9.LoadAttachment(ATT, "eft_mag_ar15_surefire_60")
@@ -561,14 +646,19 @@ ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_stanag_troy_batt
 ATT.Category = {"eft_ar15_mag"}
 ATT.SuppressEmptySuffix = false 
 
-ATT.EFTErgoAdd = -2
 
-ATT.MalfunctionMeanShotsToFailMult = 0.98
 
 ATT.ActivateElements = {"30rnd"}
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 30
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.5,
+    weight = 0.138,
+    malfunctionChance = 0.02,
+}))
+
 
 -- EFT ID: 5c6d46132e221601da357d56
 ARC9.LoadAttachment(ATT, "eft_mag_ar15_battlemag_30")
@@ -596,16 +686,14 @@ ATT.SuppressEmptySuffix = false
 
 ATT.FuckingAirsoft = true 
 
-ATT.EFTErgoAdd = -3
 
-ATT.MalfunctionMeanShotsToFailMult = 0.92
 
 ATT.ActivateElements = {"30rnd", "eft_bb_mag"}
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 30
 
--- EFT ID: NO
+-- EFT ID: 6241c2c2117ad530666a5108
 ARC9.LoadAttachment(ATT, "eft_mag_ar15_airsoft")
 
 
@@ -631,14 +719,19 @@ ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_stanag_beta_c_ma
 ATT.Category = {"eft_ar15_doubledrum"}
 ATT.SuppressEmptySuffix = false 
 
-ATT.EFTErgoAdd = -24
 
-ATT.MalfunctionMeanShotsToFailMult = 0.6
 
 ATT.ActivateElements = {"100rndballs"}
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 100
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -18,
+    weight = 1.056,
+    malfunctionChance = 0.5,
+}))
+
 
 -- EFT ID: 6761765f1f08ed5e8800b7a6
 ARC9.LoadAttachment(ATT, "eft_mag_ar15_beta_100")
@@ -663,12 +756,18 @@ ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_stanag_colt_ar15
 ATT.Category = {"eft_ar15_mag"}
 ATT.SuppressEmptySuffix = false 
 
-ATT.EFTErgoAdd = 2
 
 ATT.ActivateElements = {"20rnd"}
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 20
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.17,
+    malfunctionChance = 0.06,
+}))
+
 
 -- EFT ID: 68a63b73c92ee33ffa01bf57
 ARC9.LoadAttachment(ATT, "eft_mag_ar15_stanag_20")

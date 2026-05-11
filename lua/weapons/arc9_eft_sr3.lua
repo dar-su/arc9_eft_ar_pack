@@ -28,6 +28,7 @@ SWEP.IronSights = {
 SWEP.DefaultElements = {"sr3uwu"} -- owo
 
 SWEP.EFTErgo = 45
+SWEP.EFTWeight = 1.41
 SWEP.HeatCapacity = 76
 
 local path = ")weapons/darsu_eft/val/"

@@ -18,11 +18,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak12_hg_lhik.mdl"
 ATT.LHIK = true 
 ATT.ModelOffset = Vector(0, 0, 1.5)
 
-ATT.EFTErgoAdd = 8
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
-ATT.HeatCapacityMult = 1.027
-
 -- ATT.RequireElements = {"gasblock"}
 ATT.Category = {"eft_ak12_handguard"}
 
@@ -61,7 +56,14 @@ ATT.Attachments = {
 
 ATT.AdvancedCamoSupport = true
 
--- EFT ID: 5beecbb80db834001d2c465e
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 15,
+    recoilModifier = -1,
+    weight = 0.134,
+}))
+
+
+-- EFT ID: 649ec127c93611967b034957
 ARC9.LoadAttachment(ATT, "eft_ak12_hg_std")
 
 
@@ -78,6 +80,12 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasGas = true
 ATT.Category = {"eft_ak12_gas"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    recoilModifier = -1,
+    weight = 0.12,
+}))
+
 
 -- EFT ID: 649ec107961514b22506b10c
 ARC9.LoadAttachment(ATT, "eft_ak12_gas_std")
@@ -98,10 +106,12 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_ak12_muzzle"}
 
-ATT.EFTErgoAdd = -2
-ATT.RecoilMult = 0.91
-ATT.VisualRecoilMult = 0.91
-ATT.PhysBulletMuzzleVelocityMult = 1.005
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    recoilModifier = -6,
+    weight = 0.1,
+}))
 
 
 -- EFT ID: 649ec2af961514b22506b10f
@@ -130,14 +140,16 @@ ATT.MuzzleParticle = "muzzleflash_suppressed"
 ATT.NoFlash = true
 ATT.BarrelLengthAdd = 5
 
-ATT.EFTErgoAdd = -25
-ATT.RecoilMult = 0.88
-ATT.VisualRecoilMult = 0.88
-ATT.SpreadMult = 1.01
-ATT.HeatCapacityMult = 1.135
-ATT.PhysBulletMuzzleVelocityMult = 1.0075
 
 ATT.AdvancedCamoSupport = true
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -12,
+    recoilModifier = -5,
+    weight = 0.45,
+    velocity = 0.6,
+}))
+
 
 -- EFT ID: 64c196ad26a15b84aa07132f
 ARC9.LoadAttachment(ATT, "eft_ak12_silencer_std")
@@ -156,8 +168,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_ak12_dustcover"}
-
-ATT.EFTErgoAdd = 4
 
 ATT.Attachments = {
     {
@@ -180,6 +190,13 @@ ATT.Attachments = {
 
 ATT.AdvancedCamoSupport = true
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    recoilModifier = -0.3,
+    weight = 0.215,
+}))
+
+
 -- EFT ID: 649ec2f3961514b22506b111
 ARC9.LoadAttachment(ATT, "eft_ak12_rec")
 
@@ -199,6 +216,11 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_rs_ak12.mdl"
 
 ATT.Category = {"eft_rpk16_rearsight"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.025,
+}))
 
 
 -- EFT ID: 649ec2cec93611967b03495e
@@ -228,6 +250,11 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     }
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.05,
+}))
 
 
 -- EFT ID: 649ec2da59cbb3c813042dca
@@ -266,6 +293,13 @@ ATT.Attachments = {
 }
 
 ATT.AdvancedCamoSupport = true
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    recoilModifier = -0.5,
+    weight = 0.142,
+}))
 
 
 -- EFT ID: 649ec87d8007560a9001ab36

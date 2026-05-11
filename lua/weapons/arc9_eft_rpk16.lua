@@ -60,6 +60,7 @@ SWEP.PeekAngReloading = Angle(0, 0, -10)
 SWEP.Spread = 1.375 * ARC9.MOAToAcc
 SWEP.RPM = 650
 SWEP.EFTErgo = 45
+SWEP.EFTWeight = 1.5
 SWEP.BarrelLength = 40
 SWEP.Ammo = "smg1"
 SWEP.Firemodes = {

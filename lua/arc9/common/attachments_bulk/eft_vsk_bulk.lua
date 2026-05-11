@@ -10,7 +10,6 @@ ATT.CompactName = "9A-91 20"
 ATT.Icon = Material("entities/eft_vsk_attachments/20.png", "mips smooth")
 ATT.Description = [[A standard-issue 20-round magazine for the 9A-91 assault rifle and VSK-94 marksman rifle. Manufactured by Tula KPB Instrument Design Bureau. ]]
 
-ATT.EFTErgoAdd = -2
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -26,6 +25,13 @@ ATT.DropMagazineAmount = 1
 -- ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_vsk_20.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_vsk94.mdl"
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1.5,
+    weight = 0.3,
+    malfunctionChance = 0.19,
+}))
+
+
 -- EFT ID: 6450ec2e7da7133e5a09ca96
 ARC9.LoadAttachment(ATT, "eft_vsk_mag_20")
 
@@ -40,9 +46,6 @@ ATT.CompactName = "VSK-94"
 ATT.Icon = Material("entities/eft_vsk_attachments/stock.png", "mips smooth")
 ATT.Description = [[A standard-issue stock for the VSK-94 marksman rifle. Manufactured by Tula KPB Instrument Design Bureau. ]]
 
-ATT.EFTErgoAdd = 5
-ATT.RecoilMult = 0.72
-ATT.VisualRecoilMult = 0.72
 
 ATT.HasGrip = true
 
@@ -50,6 +53,13 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_vsk_stock"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    recoilModifier = -28,
+    weight = 0.7,
+}))
+
 
 -- EFT ID: 6452519e3d52156624001fd5
 ARC9.LoadAttachment(ATT, "eft_vsk_stockk")
@@ -63,9 +73,6 @@ ATT.CompactName = "9A-91"
 ATT.Icon = Material("entities/eft_vsk_attachments/top.png", "mips smooth")
 ATT.Description = [[A standard-issue top-folding stock for the 9A-91 assault rifle. Manufactured by Tula KPB Instrument Design Bureau. ]]
 
-ATT.EFTErgoAdd = 8
--- ATT.RecoilMult = 0.8
--- ATT.VisualRecoilMult = 0.8
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -85,6 +92,12 @@ ATT.ToggleStats = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 16,
+    weight = 0.5,
+}))
+
+
 -- EFT ID: 6451167ad4928d46d30be3fd
 ARC9.LoadAttachment(ATT, "eft_vsk_top_stock")
 
@@ -98,14 +111,18 @@ ATT.CompactName = "9A-91"
 ATT.Icon = Material("entities/eft_vsk_attachments/hg9.png", "mips smooth")
 ATT.Description = [[A standard-issue handguard for the 9A-91 assault rifle. Manufactured by Tula KPB Instrument Design Bureau. ]]
 
-ATT.EFTErgoAdd = 5
-
 ATT.HasHandguard = true
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_vsk_hg"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    weight = 0.167,
+}))
+
 
 -- EFT ID: 644675573d52156624001fc9
 ARC9.LoadAttachment(ATT, "eft_vsk_hg_9a")
@@ -119,14 +136,18 @@ ATT.CompactName = "VSK-94"
 ATT.Icon = Material("entities/eft_vsk_attachments/hg.png", "mips smooth")
 ATT.Description = [[A standard-issue handguard for the VSK-94 marksman rifle. Manufactured by Tula KPB Instrument Design Bureau. ]]
 
-ATT.EFTErgoAdd = 5
-
 ATT.HasHandguard = true
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_vsk_hg"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    weight = 0.167,
+}))
+
 
 -- EFT ID: 6448f2f6d4928d46d30be3f6
 ARC9.LoadAttachment(ATT, "eft_vsk_hg_vsk")
@@ -147,6 +168,12 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_9a_grip"}
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.146,
+}))
+
+
 -- EFT ID: 6450f21a3d52156624001fcf
 ARC9.LoadAttachment(ATT, "eft_vsk_grip_std")
 
@@ -161,12 +188,17 @@ ATT.Description = [[A standard-issue handguard retainer for the 9A-91 compact as
 
 ATT.HasGas = true 
 
-ATT.EFTErgoAdd = 3
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_vsk_muzzle"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.01,
+}))
+
 
 -- EFT ID: 64527a263d52156624001fd7
 ARC9.LoadAttachment(ATT, "eft_vsk_retainer")
@@ -183,10 +215,6 @@ ATT.Description = [[A detachable sound suppressor for the 9A-91 compact assault 
 
 ATT.HasGas = true 
 
-ATT.EFTErgoAdd = -4
-ATT.RecoilMult = 0.86
-ATT.VisualRecoilMult = 0.86
--- ATT.PhysBulletMuzzleVelocityMult = 0.94
 ATT.HeatCapacityMult = 0.84
 
 ATT.Silencer = true
@@ -209,6 +237,14 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -4,
+    recoilModifier = -14,
+    weight = 0.496,
+    velocity = 1.1,
+}))
+
+
 -- EFT ID: 64527a3a7da7133e5a09ca99
 ARC9.LoadAttachment(ATT, "eft_vsk_supp")
 
@@ -226,9 +262,6 @@ ATT.Description = [[A standard-issue 180mm barrel for the VSK-94 marksman rifle.
 ATT.HasBarrel = true 
 
 ATT.Spread = 4.37 * ARC9.MOAToAcc
-ATT.RecoilMult = 0.98
-ATT.VisualRecoilMult = 0.98
--- ATT.PhysBulletMuzzleVelocityMult = 0.94
 ATT.HeatCapacityMult = 0.92
 
 ATT.SortOrder = 0
@@ -251,6 +284,12 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    recoilModifier = -3,
+    weight = 0.409,
+}))
+
 
 -- EFT ID: 645123013d52156624001fd1
 ARC9.LoadAttachment(ATT, "eft_vsk_brl")
@@ -268,9 +307,6 @@ ATT.Description = [[A standard-issue 180mm barrel for the 9A-91 assault rifle. M
 ATT.HasBarrel = true 
 
 ATT.Spread = 4.37 * ARC9.MOAToAcc
-ATT.RecoilMult = 0.98
-ATT.VisualRecoilMult = 0.98
--- ATT.PhysBulletMuzzleVelocityMult = 0.94
 ATT.HeatCapacityMult = 0.92
 
 ATT.SortOrder = 0
@@ -293,6 +329,12 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    recoilModifier = -3,
+    weight = 0.409,
+}))
+
 
 -- EFT ID: 645122f6d4928d46d30be3ff
 ARC9.LoadAttachment(ATT, "eft_vsk_brl9")

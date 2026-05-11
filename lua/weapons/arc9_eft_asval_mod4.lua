@@ -31,6 +31,7 @@ SWEP.IronSights = {
 SWEP.DefaultElements = {"mod4uwu"} -- owo
 
 SWEP.EFTErgo = 46
+SWEP.EFTWeight = 1.205
 SWEP.HeatCapacity = 76
 -- someone said recoil should be lower
 SWEP.Recoil = 0.8 * 0.83 -- general multiplier of main recoil

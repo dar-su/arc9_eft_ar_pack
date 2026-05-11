@@ -16,11 +16,13 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasGas = true
 ATT.Category = {"eft_rpk16_barrel"}
 
-ATT.EFTErgoAdd = -2
-ATT.RecoilMult = 0.97
-ATT.VisualRecoilMult = 0.97
-ATT.HeatCapacityMult = 1.02
-ATT.PhysBulletMuzzleVelocityMult = 0.92
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -16,
+    recoilModifier = -7.4,
+    weight = 0.54,
+    velocity = -8,
+}))
 
 
 -- EFT ID: 5beec1bd0db834001e6006f3
@@ -48,14 +50,15 @@ ATT.MuzzleEffectQCA = 5
 ATT.BarrelLengthAdd = 7
 
 
-ATT.EFTErgoAdd = -11
-ATT.RecoilMult = 0.93
-ATT.VisualRecoilMult = 0.93
-ATT.HeatCapacityMult = 0.92
-ATT.PhysBulletMuzzleVelocityMult = 0.95
-
-
 ATT.Category = {"eft_rpk16_barrel"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -22,
+    recoilModifier = -11,
+    weight = 0.65,
+    velocity = -5,
+}))
 
 
 -- EFT ID: 5beec2820db834001b095426
@@ -77,11 +80,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/rpk16_hg.mdl"
 ATT.LHIK = true 
-
-ATT.EFTErgoAdd = 6
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
-ATT.HeatCapacityMult = 1.038
 
 -- ATT.RequireElements = {"gasblock"}
 ATT.Category = {"eft_rpk16_handguard"}
@@ -127,6 +125,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 13,
+    weight = 0.167,
+}))
+
+
 -- EFT ID: 5beec3e30db8340019619424
 ARC9.LoadAttachment(ATT, "eft_rpk16_hg_std")
 
@@ -159,6 +163,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.1,
+    weight = 0.045,
+}))
+
+
 -- EFT ID: 5beecbb80db834001d2c465e
 ARC9.LoadAttachment(ATT, "eft_rpk16_mount_side")
 
@@ -179,10 +189,12 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_rpk16_izhmash_rpk16_std_5
 
 ATT.Category = {"eft_rpk16_muzzle"}
 
-ATT.EFTErgoAdd = -1
-ATT.RecoilMult = 0.92
-ATT.VisualRecoilMult = 0.92
-ATT.PhysBulletMuzzleVelocityMult = 1.005
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    recoilModifier = -6,
+    weight = 0.09,
+}))
 
 
 -- EFT ID: 5beec3420db834001b095429
@@ -203,8 +215,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_rpk16_dustcover"}
 
-ATT.EFTErgoAdd = 4
-
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_rearsight"),
@@ -223,6 +233,13 @@ ATT.Attachments = {
         -- ExtraSightDistance = 8
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    recoilModifier = -0.3,
+    weight = 0.215,
+}))
 
 
 -- EFT ID: 5beec91a0db834001961942d
@@ -246,7 +263,12 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_rs_rpk16.mdl"
 ATT.Category = {"eft_rpk16_rearsight"}
 
 
--- EFT ID: 5beec9450db83400970084fd
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.025,
+}))
+
+
+-- EFT ID: 5bf3f59f0db834001a6fa060
 ARC9.LoadAttachment(ATT, "eft_rpk16_rs")
 
 
@@ -275,6 +297,11 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.05,
+}))
+
+
 -- EFT ID: 5beec9450db83400970084fd
 ARC9.LoadAttachment(ATT, "eft_rpk16_rs_base")
 
@@ -295,9 +322,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_rpk_stock_tube.mdl"
 
 ATT.Category = {"eft_ak74m_stock", "eft_rpk16_stock"}
 
-ATT.RecoilMult = 0.96
-ATT.VisualRecoilMult = 0.96
-
 
 ATT.Attachments = {
     {
@@ -308,6 +332,13 @@ ATT.Attachments = {
         Icon_Offset = Vector(-1, 0, 0.5),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    recoilModifier = -0.5,
+    weight = 0.142,
+}))
 
 
 -- EFT ID: 5beec8b20db834001961942a

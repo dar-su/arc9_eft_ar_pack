@@ -18,10 +18,14 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak74_izhmash_ak74m_std_54
 ATT.Category = {"eft_ak101_muzzle"}
 
 
-ATT.EFTErgoAdd = -2
-ATT.RecoilMult = 0.9
-ATT.VisualRecoilMult = 0.9
 ATT.PhysBulletMuzzleVelocityMult = 1.005
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    recoilModifier = -6,
+    weight = 0.1,
+}))
+
 
 -- EFT ID: 5ac72e615acfc43f67248aa0
 ARC9.LoadAttachment(ATT, "eft_muzzle_ak_ak101_std")
@@ -43,10 +47,14 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak74_izhmash_ak102_std_55
 
 ATT.Category = {"eft_ak101_muzzle"}
 
-ATT.EFTErgoAdd = -2
-ATT.RecoilMult = 0.92
-ATT.VisualRecoilMult = 0.92
 ATT.PhysBulletMuzzleVelocityMult = 1.005
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    recoilModifier = -6,
+    weight = 0.1,
+}))
 
 
 -- EFT ID: 5ac72e725acfc400180ae701
@@ -69,10 +77,14 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak74_izhmash_ak74m_std_54
 
 ATT.Category = {"eft_ak103_muzzle", "eft_ak_ttak"}
 
-ATT.EFTErgoAdd = -2
-ATT.RecoilMult = 0.9
-ATT.VisualRecoilMult = 0.9
 ATT.PhysBulletMuzzleVelocityMult = 1.005
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    recoilModifier = -7,
+    weight = 0.1,
+}))
 
 
 -- EFT ID: 5ac72e7d5acfc40016339a02
@@ -95,10 +107,14 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak74_izhmash_ak102_std_55
 
 ATT.Category = {"eft_ak103_muzzle", "eft_ak_ttak"}
 
-ATT.EFTErgoAdd = -2
-ATT.RecoilMult = 0.92
-ATT.VisualRecoilMult = 0.92
 ATT.PhysBulletMuzzleVelocityMult = 1.005
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    recoilModifier = -6,
+    weight = 0.1,
+}))
 
 
 -- EFT ID: 5ac72e895acfc43b321d4bd5
@@ -119,12 +135,16 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak74_izhmash_ak102_std_556x45.mdl"
 
-ATT.EFTErgoAdd = -2
-ATT.RecoilMult = 0.92
-ATT.VisualRecoilMult = 0.92
 ATT.PhysBulletMuzzleVelocityMult = 1.005
 
 ATT.Category = {"eft_ak74_muzzle", "eft_rpk16_muzzle"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    recoilModifier = -5.5,
+    weight = 0.1,
+}))
 
 
 -- EFT ID: 5ac72e945acfc43f3b691116
@@ -147,10 +167,14 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak74_izhmash_ak74m_std_54
 
 ATT.Category = {"eft_ak74_muzzle", "eft_rpk16_muzzle"}
 
-ATT.EFTErgoAdd = -2
-ATT.RecoilMult = 0.9
-ATT.VisualRecoilMult = 0.9
 ATT.PhysBulletMuzzleVelocityMult = 1.005
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.5,
+    recoilModifier = -5,
+    weight = 0.1,
+}))
 
 
 -- EFT ID: 5ac7655e5acfc40016339a19
@@ -173,11 +197,15 @@ ATT.Model = "models/weapons/arc9_eft_shared/atts/muzzle/muzzle_ar15_pws_cqb_556x
 
 ATT.Category = {"eft_ak74_muzzle", "eft_rpk16_muzzle"}
 
-ATT.EFTErgoAdd = -4
-ATT.RecoilMult = 0.84
-ATT.VisualRecoilMult = 0.84
 ATT.HeatCapacityMult = 0.989
 ATT.PhysBulletMuzzleVelocityMult = 1.005
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -3.5,
+    recoilModifier = -10.5,
+    weight = 0.19,
+}))
 
 
 -- EFT ID: 5943eeeb86f77412d6384f6b
@@ -198,13 +226,17 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak74_srvv_mbr_jet_545_545x39.mdl"
 
-ATT.EFTErgoAdd = -2
-ATT.RecoilMult = 0.85
-ATT.VisualRecoilMult = 0.85
 ATT.HeatCapacityMult = 0.99
 ATT.PhysBulletMuzzleVelocityMult = 1.005
 
 ATT.Category = {"eft_ak74_muzzle", "eft_ak101_muzzle", "eft_rpk16_muzzle"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -3.5,
+    recoilModifier = -12.5,
+    weight = 0.11,
+}))
 
 
 -- EFT ID: 5cc9a96cd7f00c011c04e04a
@@ -225,12 +257,16 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak74_izhmash_std_545x39.mdl"
 
-ATT.EFTErgoAdd = -2
-ATT.RecoilMult = 0.9
-ATT.VisualRecoilMult = 0.9
 ATT.PhysBulletMuzzleVelocityMult = 1.005
 
 ATT.Category = {"eft_ak74_muzzle", "eft_rpk16_muzzle"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.5,
+    recoilModifier = -5,
+    weight = 0.1,
+}))
 
 
 -- EFT ID: 5649aa744bdc2ded0b8b457e
@@ -251,12 +287,15 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak_izhmash_akml_762x39.mdl"
 
-ATT.EFTErgoAdd = -2
-ATT.RecoilMult = 0.95
-ATT.VisualRecoilMult = 0.95
 ATT.PhysBulletMuzzleVelocityMult = 1.015
 
 ATT.Category = {"eft_akm_muzzle"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    recoilModifier = -4,
+    weight = 0.05,
+}))
 
 
 -- EFT ID: 5a0d716f1526d8000d26b1e2
@@ -275,15 +314,19 @@ ATT.Description = [[An SRVV-produced muzzle brake and compensator for AK assault
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -2
-ATT.RecoilMult = 0.84
-ATT.VisualRecoilMult = 0.84
 ATT.HeatCapacityMult = 0.99
 ATT.PhysBulletMuzzleVelocityMult = 1.005
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak_srvv_mbrfhmb_762_762x39.mdl"
 
 ATT.Category = {"eft_akm_muzzle", "eft_ak103_muzzle", "eft_ak_ttak"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    recoilModifier = -11,
+    weight = 0.11,
+}))
 
 
 -- EFT ID: 5cc9ad73d7f00c000e2579d4
@@ -304,10 +347,14 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak_izhmash_akm_std_762x39.mdl"
 
-ATT.RecoilMult = 0.93
-ATT.VisualRecoilMult = 0.93
 
 ATT.Category = {"eft_akm_muzzle"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    recoilModifier = -4,
+    weight = 0.02,
+}))
 
 
 -- EFT ID: 59d64fc686f774171b243fe2
@@ -328,13 +375,17 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak_venom_antidote_muzzle_brake_multi.mdl"
 
-ATT.EFTErgoAdd = -2
-ATT.RecoilMult = 0.83
-ATT.VisualRecoilMult = 0.83
-ATT.SpreadMult = 0.98
 ATT.HeatCapacityMult = 0.987
 
 ATT.Category = {"eft_akm_muzzle"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -4,
+    recoilModifier = -12,
+    accuracyModifier = 2,
+    weight = 0.096,
+}))
 
 
 -- EFT ID: 5c7951452e221644f31bfd5c
@@ -368,6 +419,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.1,
+}))
+
+
 -- EFT ID: 5e21ca18e4d47f0da15e77dd
 ARC9.LoadAttachment(ATT, "eft_muzzle_ak_cncwar")
 
@@ -384,15 +441,19 @@ ATT.Description = [[The Drakon muzzle brake-compensator by Lantac is designed fo
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -2
-ATT.RecoilMult = 0.85
-ATT.VisualRecoilMult = 0.85
 ATT.HeatCapacityMult = 0.99
 ATT.PhysBulletMuzzleVelocityMult = 0.99
 
 ATT.Model = "models/weapons/arc9_eft_shared/atts/muzzle/muzzle_ar10_lantac_dgn762b_muzzle_brake_762x51.mdl"
 
 ATT.Category = {"eft_akm_muzzle"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -4,
+    recoilModifier = -11,
+    weight = 0.09,
+}))
 
 
 -- EFT ID: 5c878ebb2e2216001219d48a
@@ -415,13 +476,17 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak_zenit_dtk1_762x39_545x
 
 ATT.Category = {"eft_ak74_muzzle", "eft_ak103_muzzle", "eft_ak_ttak", "eft_rpk16_muzzle"}
 
-ATT.EFTErgoAdd = -2
-ATT.RecoilMult = 0.87
-ATT.VisualRecoilMult = 0.87
 ATT.HeatCapacityMult = 0.99
 ATT.PhysBulletMuzzleVelocityMult = 1.004
 
 ATT.AdvancedCamoSupport = true
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2.5,
+    recoilModifier = -11.5,
+    weight = 0.128,
+}))
+
 
 -- EFT ID: 5649ab884bdc2ded0b8b457f
 ARC9.LoadAttachment(ATT, "eft_muzzle_ak_dtk1")
@@ -443,11 +508,15 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak_spike_tactical_ak_dyna
 
 ATT.Category = {"eft_akm_muzzle", "eft_ak103_muzzle"}
 
-ATT.EFTErgoAdd = -3
-ATT.RecoilMult = 0.89
-ATT.VisualRecoilMult = 0.89
 ATT.HeatCapacityMult = 0.99
 ATT.PhysBulletMuzzleVelocityMult = 1.004
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -3,
+    recoilModifier = -8,
+    weight = 0.076,
+}))
 
 
 -- EFT ID: 5a9ea27ca2750c00137fa672
@@ -468,9 +537,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak_samson_thread_adapter_9x19.mdl"
 
-ATT.EFTErgoAdd = -1
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
 
 ATT.Category = {"eft_akm_muzzle"}
 
@@ -483,6 +549,13 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    recoilModifier = -1,
+    weight = 0.11,
+}))
 
 
 -- EFT ID: 615d8e9867085e45ef1409c6
@@ -505,9 +578,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak_hexagon_reactor_muzzle
 
 ATT.Category = {"eft_ak74_muzzle"}
 
-ATT.EFTErgoAdd = -1
-ATT.RecoilMult = 0.83
-ATT.VisualRecoilMult = 0.83
 ATT.HeatCapacityMult = 0.99
 ATT.PhysBulletMuzzleVelocityMult = 1.005
 
@@ -520,6 +590,13 @@ ATT.Attachments = {
         Icon_Offset = Vector(3, 0, 0),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -4,
+    recoilModifier = -8,
+    weight = 0.095,
+}))
 
 
 -- EFT ID: 615d8f5dd92c473c770212ef
@@ -542,11 +619,15 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak_jmac_rrd_4c_762x39.mdl
 
 ATT.Category = {"eft_akm_muzzle"}
 
-ATT.EFTErgoAdd = -2
-ATT.RecoilMult = 0.8
-ATT.VisualRecoilMult = 0.8
 ATT.HeatCapacityMult = 0.984
 ATT.PhysBulletMuzzleVelocityMult = 1.0045
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -4.5,
+    recoilModifier = -13,
+    weight = 0.08,
+}))
 
 
 -- EFT ID: 5f633f68f5750b524b45f112
@@ -567,13 +648,17 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak74_jmac_rrd_4c_multi.mdl"
 
-ATT.EFTErgoAdd = -2
-ATT.RecoilMult = 0.81
-ATT.VisualRecoilMult = 0.81
 ATT.HeatCapacityMult = 0.987
 ATT.PhysBulletMuzzleVelocityMult = 1.0045
 
 ATT.Category = {"eft_ak74_muzzle", "eft_ak101_muzzle", "eft_ak103_muzzle", "eft_ak_ttak"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -4.5,
+    recoilModifier = -13,
+    weight = 0.085,
+}))
 
 
 -- EFT ID: 5f633f791b231926f2329f13
@@ -607,6 +692,11 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.1,
+}))
+
+
 -- EFT ID: 5a0abb6e1526d8000a025282
 ARC9.LoadAttachment(ATT, "eft_muzzle_ak_tt_ak")
 
@@ -626,10 +716,14 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak_izhmash_akm_std_762x39.mdl"
 ATT.ModelSkin = 1
 
-ATT.RecoilMult = 0.94
-ATT.VisualRecoilMult = 0.94
 
 ATT.Category = {"eft_akm_muzzle"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    recoilModifier = -4,
+    weight = 0.02,
+}))
 
 
 -- EFT ID: 59e61eb386f77440d64f5daf
@@ -648,11 +742,16 @@ ATT.Description = [[A thread protector for muzzle brake/compensator for VPO-209 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 1
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak_molot_vpo_209_366TKM.mdl"
 
 ATT.Category = {"eft_akm_muzzle"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.01,
+}))
 
 
 -- EFT ID: 59e8a00d86f7742ad93b569c
@@ -675,10 +774,14 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak_vector_vr_05t_762x39.m
 
 ATT.Category = {"eft_akm_muzzle", "eft_ak103_muzzle"}
 
-ATT.EFTErgoAdd = -2
-ATT.RecoilMult = 0.86
-ATT.VisualRecoilMult = 0.86
 ATT.HeatCapacityMult = 0.98
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -4,
+    recoilModifier = -12.5,
+    weight = 0.116,
+}))
 
 
 -- EFT ID: 64942bfc6ee699f6890dff95
@@ -710,12 +813,16 @@ ATT.MuzzleParticle = "muzzleflash_suppressed"
 ATT.NoFlash = true
 ATT.BarrelLengthAdd = 5
 
-ATT.EFTErgoAdd = -22
-ATT.RecoilMult = 0.91
-ATT.VisualRecoilMult = 0.91
-ATT.SpreadMult = 1.01
 ATT.HeatCapacityMult = 1.145
 ATT.PhysBulletMuzzleVelocityMult = 1.0075
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -5,
+    recoilModifier = -1,
+    weight = 0.462,
+    velocity = 0.7,
+}))
+
 
 -- EFT ID: 593d493f86f7745e6b2ceb22
 ARC9.LoadAttachment(ATT, "eft_silencer_ak_ak74_hexagon")
@@ -745,12 +852,16 @@ ATT.NoFlash = true
 ATT.BarrelLengthAdd = 5
 
 
-ATT.EFTErgoAdd = -23
-ATT.RecoilMult = 0.91
-ATT.VisualRecoilMult = 0.91
-ATT.SpreadMult = 1.01
 ATT.HeatCapacityMult = 1.14
 ATT.PhysBulletMuzzleVelocityMult = 1.0075
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -5,
+    recoilModifier = -1.5,
+    weight = 0.462,
+    velocity = 0.7,
+}))
+
 
 -- EFT ID: 593d489686f7745c6255d58a
 ARC9.LoadAttachment(ATT, "eft_silencer_ak_akm_hexagon")
@@ -779,16 +890,20 @@ ATT.MuzzleParticle = "muzzleflash_suppressed"
 ATT.NoFlash = true
 ATT.BarrelLengthAdd = 5
 
-ATT.EFTErgoAdd = -21
-ATT.RecoilMult = 0.915
-ATT.VisualRecoilMult = 0.915
-ATT.SpreadMult = 1.02
 ATT.HeatCapacityMult = 1.14
 ATT.PhysBulletMuzzleVelocityMult = 1.0075
 
 ATT.BarrelLengthAdd = 2
 
 ATT.AdvancedCamoSupport = true
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -18,
+    recoilModifier = -7,
+    weight = 0.354,
+    velocity = 0.7,
+}))
+
 
 -- EFT ID: 59fb257e86f7742981561852
 ARC9.LoadAttachment(ATT, "eft_silencer_ak_dtk4m")
@@ -817,12 +932,16 @@ ATT.MuzzleParticle = "muzzleflash_suppressed"
 ATT.NoFlash = true
 ATT.BarrelLengthAdd = 5
 
-ATT.EFTErgoAdd = -21
-ATT.RecoilMult = 0.9
-ATT.VisualRecoilMult = 0.9
-ATT.SpreadMult = 1.01
 ATT.HeatCapacityMult = 1.14
 ATT.PhysBulletMuzzleVelocityMult = 1.0075
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -6,
+    recoilModifier = -3.5,
+    weight = 0.412,
+    velocity = 0.7,
+}))
 
 
 -- EFT ID: 5e208b9842457a4a7a33d074
@@ -841,10 +960,6 @@ ATT.Description = [[PBS-1 (Pribór Besshúmnoy Strel'bý - "Silent Firing Device
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -25
-ATT.RecoilMult = 0.88
-ATT.VisualRecoilMult = 0.88
-ATT.SpreadMult = 1.01
 ATT.HeatCapacityMult = 1.14
 ATT.PhysBulletMuzzleVelocityMult = 1.0075
 
@@ -858,6 +973,15 @@ ATT.MuzzleDevice_Priority = 5
 ATT.MuzzleParticle = "muzzleflash_suppressed"
 ATT.NoFlash = true
 ATT.BarrelLengthAdd = 5
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -13,
+    recoilModifier = -5,
+    accuracyModifier = -3,
+    weight = 0.435,
+    velocity = 0.4,
+}))
 
 
 -- EFT ID: 5a0d63621526d8dba31fe3bf
@@ -876,9 +1000,6 @@ ATT.Description = [[The PBS-4 (Pribór Besshúmnoy Strel'bý - "Silent Firing De
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -25
-ATT.RecoilMult = 0.9
-ATT.VisualRecoilMult = 0.9
 ATT.HeatCapacityMult = 1.14
 ATT.PhysBulletMuzzleVelocityMult = 1.0075
 
@@ -892,6 +1013,15 @@ ATT.MuzzleDevice_Priority = 5
 ATT.MuzzleParticle = "muzzleflash_suppressed"
 ATT.NoFlash = true
 ATT.BarrelLengthAdd = 5
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -18,
+    recoilModifier = -2,
+    accuracyModifier = -3,
+    weight = 0.7,
+    velocity = 0.5,
+}))
 
 
 -- EFT ID: 57ffb0e42459777d047111c5
@@ -910,10 +1040,6 @@ ATT.Description = [[The TGP-A tactical muzzle device/suppressor, manufactured by
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -25
-ATT.RecoilMult = 0.895
-ATT.VisualRecoilMult = 0.895
-ATT.SpreadMult = 1.01
 ATT.HeatCapacityMult = 1.14
 ATT.PhysBulletMuzzleVelocityMult = 1.0075
 
@@ -927,6 +1053,14 @@ ATT.MuzzleDevice_Priority = 5
 ATT.MuzzleParticle = "muzzleflash_suppressed"
 ATT.NoFlash = true
 ATT.BarrelLengthAdd = 6
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -18,
+    recoilModifier = -7,
+    weight = 0.7,
+    velocity = 0.8,
+}))
 
 
 -- EFT ID: 564caa3d4bdc2d17108b458e
@@ -945,9 +1079,6 @@ ATT.Description = [[The "Wafflemaker" prototype sound suppressor manufactured by
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -19
-ATT.RecoilMult = 0.93
-ATT.VisualRecoilMult = 0.93
 ATT.HeatCapacityMult = 1.14
 ATT.PhysBulletMuzzleVelocityMult = 1.015
 
@@ -961,6 +1092,14 @@ ATT.MuzzleDevice_Priority = 5
 ATT.MuzzleParticle = "muzzleflash_suppressed"
 ATT.NoFlash = true
 ATT.BarrelLengthAdd = 5
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -22,
+    recoilModifier = -5,
+    weight = 0.29,
+    velocity = 0.8,
+}))
 
 
 -- EFT ID: 615d8f8567085e45ef1409ca
@@ -981,10 +1120,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9_eft_shared/atts/muzzle/silencer_all_rotor_43_v2.mdl"
 
-ATT.EFTErgoAdd = -20
-ATT.RecoilMult = 0.91
-ATT.VisualRecoilMult = 0.91
-ATT.SpreadMult = 1.02
 ATT.HeatCapacityMult = 1.14
 ATT.PhysBulletMuzzleVelocityMult = 1.0075
 
@@ -995,6 +1130,14 @@ ATT.MuzzleParticle = "muzzleflash_suppressed"
 ATT.NoFlash = true
 
 ATT.Category = {"eft_akm_muzzle", "eft_ak103_muzzle"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -14,
+    recoilModifier = -3,
+    weight = 0.57,
+    velocity = 0.8,
+}))
 
 
 -- EFT ID: 5a9fbacda2750c00141e080f

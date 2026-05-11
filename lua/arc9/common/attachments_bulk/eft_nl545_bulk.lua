@@ -13,14 +13,17 @@ ATT.Description = "An adjustable gas block designed for NL545 series carbines an
 
 ATT.HasGas = true
 
-ATT.EFTErgoAdd = -1
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
-
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_nl545_gas"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    recoilModifier = -1,
+    weight = 0.064,
+}))
+
 
 -- EFT ID: 68c2a99647eb77c6310b170f
 ARC9.LoadAttachment(ATT, "eft_nl545_gass")
@@ -38,12 +41,17 @@ ATT.Description = "A standard charging handle for NL545 series carbines and assa
 
 ATT.HasCharge = true 
 
-ATT.EFTErgoAdd = 1
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_nl545_charge"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 1,
+    weight = 0.035,
+}))
+
 
 -- EFT ID: 68c16f15efac701f800dfd36
 ARC9.LoadAttachment(ATT, "eft_nl545_charge_std")
@@ -61,10 +69,6 @@ ATT.Description = "A 11.5 inch (292mm) 5.45x39mm barrel for the short-stroke gas
 
 ATT.HasBarrel = true 
 
-ATT.EFTErgoAdd = -6
-ATT.RecoilMult = 0.979
-ATT.VisualRecoilMult = 0.979
-ATT.PhysBulletMuzzleVelocityMult = 0.881
 ATT.HeatCapacityMult = 1.02
 ATT.Spread = 1.99 * ARC9.MOAToAcc
 
@@ -90,6 +94,14 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -6,
+    recoilModifier = -2.1,
+    weight = 0.78,
+    velocity = -11.9,
+}))
+
+
 -- EFT ID: 68c294800f5ebd68290d6c20
 ARC9.LoadAttachment(ATT, "eft_nl545_barrel_115")
 
@@ -105,10 +117,6 @@ ATT.Description = "A 16.5 inch (420mm) 5.45x39mm barrel for the short-stroke gas
 
 ATT.HasBarrel = true 
 
-ATT.EFTErgoAdd = -19
-ATT.RecoilMult = 0.944
-ATT.VisualRecoilMult = 0.944
-ATT.PhysBulletMuzzleVelocityMult = 0.958
 ATT.HeatCapacityMult = 1.02
 ATT.Spread = 1.31 * ARC9.MOAToAcc
 
@@ -134,6 +142,14 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -19,
+    recoilModifier = -5.6,
+    weight = 0.78,
+    velocity = -4.2,
+}))
+
+
 -- EFT ID: 68c294750f5ebd68290d6c1c
 ARC9.LoadAttachment(ATT, "eft_nl545_barrel_165")
 
@@ -149,10 +165,6 @@ ATT.Description = "A 16.3 inch (415mm) 5.45x39mm barrel for the direct impingeme
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasBarrel = true
 
-ATT.EFTErgoAdd = -16.5
-ATT.RecoilMult = 0.95
-ATT.VisualRecoilMult = 0.95
-ATT.PhysBulletMuzzleVelocityMult = 0.954
 ATT.HeatCapacityMult = 0.96
 ATT.Spread = 1.36 * ARC9.MOAToAcc
 
@@ -179,6 +191,14 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -16.5,
+    recoilModifier = -5,
+    weight = 0.78,
+    velocity = -4.6,
+}))
+
+
 -- EFT ID: 68c16edf83e2d814b0093f76
 ARC9.LoadAttachment(ATT, "eft_nl545_barrel_163_di")
 
@@ -193,10 +213,6 @@ ATT.Icon = Material("entities/eft_nl545_attachments/68c294360f5ebd68290d6c16.png
 ATT.Description = "An upper receiver for the short-stroke gas piston NL545 assault rifle manufactured by Custom Guns. Equipped with a mount for attaching additional devices. Flat Dark Earth version."
 
 ATT.HasReceiver = true 
-
-ATT.EFTErgoAdd = 5
-ATT.RecoilMult = 0.98
-ATT.VisualRecoilMult = 0.98
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -233,6 +249,13 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    recoilModifier = -2,
+    weight = 0.27,
+}))
+
+
 -- EFT ID: 68c294360f5ebd68290d6c16
 ARC9.LoadAttachment(ATT, "eft_nl545_upperr_gp")
 
@@ -246,10 +269,6 @@ ATT.Icon = Material("entities/eft_nl545_attachments/68c16e84fc90c174e50de1a8.png
 ATT.Description = "An upper receiver for the direct impingement NL545 assault rifle manufactured by Custom Guns. Equipped with a mount for attaching additional devices."
 
 ATT.HasReceiver = true 
-
-ATT.EFTErgoAdd = 5
-ATT.RecoilMult = 0.98
-ATT.VisualRecoilMult = 0.98
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -288,6 +307,13 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    recoilModifier = -2,
+    weight = 0.27,
+}))
+
+
 -- EFT ID: 68c16e84fc90c174e50de1a8
 ARC9.LoadAttachment(ATT, "eft_nl545_upperr_di")
 
@@ -306,9 +332,6 @@ ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_416_cgnl_nl545_105_inch.mdl"
 ATT.ModelOffset = Vector(0, 0.04, 0)
 ATT.LHIK = true 
-ATT.EFTErgoAdd = 10
-ATT.RecoilMult = 0.988
-ATT.VisualRecoilMult = 0.988
 ATT.HeatCapacityMult = 0.986
 ATT.Category = {"eft_hk416_hguard"}
 
@@ -358,6 +381,12 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 15,
+    weight = 0.48,
+}))
+
 
 -- EFT ID: 68c2989dc9061bb2f50478f6
 ARC9.LoadAttachment(ATT, "eft_hg_hk416_cgnl")
@@ -378,9 +407,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_416_cgnl_nl545_105_inc
 ATT.ModelOffset = Vector(0, 0.04, 0)
 ATT.ModelSkin = 1
 ATT.LHIK = true 
-ATT.EFTErgoAdd = 10
-ATT.RecoilMult = 0.988
-ATT.VisualRecoilMult = 0.988
 ATT.HeatCapacityMult = 0.986
 ATT.Category = {"eft_hk416_hguard"}
 
@@ -430,6 +456,12 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 15,
+    weight = 0.48,
+}))
+
 
 -- EFT ID: 68c2989dc9061bb2f50478f6
 ARC9.LoadAttachment(ATT, "eft_hg_hk416_cgnl_blk")

@@ -12,11 +12,6 @@ ATT.Description = [[A barrel for MDR based weapons for .308 ammo, 16 inch long. 
 
 ATT.HasBarrel = true 
 
-ATT.EFTErgoAdd = -6
-ATT.RecoilMult = 0.9
-ATT.VisualRecoilMult = 0.9
--- ATT.PhysBulletMuzzleVelocityMult = 0.94
--- ATT.HeatCapacityMult = 1.01
 ATT.Spread = 1.38 * ARC9.MOAToAcc
 
 -- ATT.ActivateElements = {"barrel_16"}
@@ -34,6 +29,14 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -20,
+    recoilModifier = -10.2,
+    weight = 0.62,
+    velocity = -2,
+}))
+
+
 -- EFT ID: 5dcbe9431e1f4616d354987e
 ARC9.LoadAttachment(ATT, "eft_mdr_barrel_762")
 
@@ -49,11 +52,6 @@ ATT.Description = [[A barrel for MDR based weapons for 5.56x45 NATO ammo, 406mm 
 
 ATT.HasBarrel = true 
 
-ATT.EFTErgoAdd = -6
-ATT.RecoilMult = 0.91
-ATT.VisualRecoilMult = 0.91
--- ATT.PhysBulletMuzzleVelocityMult = 0.94
--- ATT.HeatCapacityMult = 1.01
 ATT.Spread = 1.44 * ARC9.MOAToAcc
 
 -- ATT.ActivateElements = {"barrel_16"}
@@ -71,6 +69,14 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -12,
+    recoilModifier = -8.1,
+    weight = 0.509,
+    velocity = -4,
+}))
+
+
 -- EFT ID: 5c48a2852e221602b21d5923
 ARC9.LoadAttachment(ATT, "eft_mdr_barrel_556")
 
@@ -84,8 +90,6 @@ ATT.CompactName = "MDR black"
 ATT.Icon = Material("entities/eft_mdr_attachments/pgb.png", "mips smooth")
 ATT.Description = [[Desert Tech pistol grip can be installed at MDR.]]
 
-ATT.EFTErgoAdd = 5
-
 ATT.HasGrip = true
 
 ATT.SortOrder = 0
@@ -94,7 +98,13 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mdr_pg"}
 ATT.AdvancedCamoSupport = true
 
--- EFT ID: 5c48a2c22e221602b313fb6c
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.08,
+}))
+
+
+-- EFT ID: 5dcbd6dddbd3d91b3e5468de
 ARC9.LoadAttachment(ATT, "eft_mdr_pg_blk")
 
 ///////////////////////////////////////      eft_mdr_pg_fde
@@ -106,8 +116,6 @@ ATT.CompactName = "MDR"
 ATT.Icon = Material("entities/eft_mdr_attachments/pgf.png", "mips smooth")
 ATT.Description = [[Desert Tech pistol grip can be installed at MDR. Flat dark earth.]]
 
-ATT.EFTErgoAdd = 5
-
 ATT.HasGrip = true
 
 ATT.SortOrder = 0
@@ -115,6 +123,12 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_mdr_pg"}
 ATT.AdvancedCamoSupport = true
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.08,
+}))
+
 
 -- EFT ID: 5c48a2c22e221602b313fb6c
 ARC9.LoadAttachment(ATT, "eft_mdr_pg_fde")
@@ -128,10 +142,6 @@ ATT.CompactName = "MDR Black"
 ATT.Icon = Material("entities/eft_mdr_attachments/hgb.png", "mips smooth")
 ATT.Description = [[Desert Tech foregrip for MDR equipped with a M-LOK interface for installation of additional devices and accessories.]]
 
-ATT.EFTErgoAdd = 9
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
-
 ATT.HasHG = true
 
 ATT.SortOrder = 0
@@ -179,7 +189,13 @@ ATT.Attachments = {
 }
 ATT.AdvancedCamoSupport = true
 
--- EFT ID: 5c48a14f2e2216152006edd7
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 14,
+    weight = 0.269,
+}))
+
+
+-- EFT ID: 5dcbd6b46ec07c0c4347a564
 ARC9.LoadAttachment(ATT, "eft_mdr_hg_blk")
 
 ///////////////////////////////////////      eft_mdr_hg_fde
@@ -191,10 +207,6 @@ ATT.CompactName = "MDR"
 ATT.Icon = Material("entities/eft_mdr_attachments/hgf.png", "mips smooth")
 ATT.Description = [[Desert Tech foregrip for MDR equipped with a M-LOK interface for installation of additional devices and accessories. Flat bark earth.]]
 
-ATT.EFTErgoAdd = 9
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
-
 ATT.HasHG = true
 
 ATT.SortOrder = 0
@@ -241,6 +253,12 @@ ATT.Attachments = {
     },
 }
 ATT.AdvancedCamoSupport = true
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 14,
+    weight = 0.269,
+}))
+
 
 -- EFT ID: 5c48a14f2e2216152006edd7
 ARC9.LoadAttachment(ATT, "eft_mdr_hg_fde")

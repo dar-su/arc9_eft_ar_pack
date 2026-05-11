@@ -31,6 +31,11 @@ ATT.Attachments = {
 
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.03,
+}))
+
+
 -- EFT ID: 59d36a0086f7747e673f3946
 ARC9.LoadAttachment(ATT, "eft_aksu_gas_ak")
 
@@ -51,11 +56,16 @@ ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/aksu_hg_std.mdl"
 ATT.LHIK = true
 
-ATT.EFTErgoAdd = 4
 ATT.HeatCapacityMult = 1.052
 
 ATT.RequireElements = {"gasblock"}
 ATT.Category = {"eft_aksu_handguard"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 10,
+    weight = 0.116,
+}))
 
 
 -- EFT ID: 57dc32dc245977596d4ef3d3
@@ -77,7 +87,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_b18"}
 ATT.ActivateElements = {"railedcover"}
 
-ATT.EFTErgoAdd = -1
 
 ATT.Attachments = {
     {
@@ -88,6 +97,12 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.053,
+}))
 
 
 -- EFT ID: 57ffb0062459777a045af529
@@ -108,12 +123,15 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_aks74u_izhmash_std_545x39.mdl"
 
-ATT.EFTErgoAdd = -2
-ATT.RecoilMult = 0.92
-ATT.VisualRecoilMult = 0.92
-ATT.PhysBulletMuzzleVelocityMult = 1.005
 
 ATT.Category = {"eft_ak74_muzzle"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    recoilModifier = -5,
+    weight = 0.1,
+}))
 
 
 -- EFT ID: 57dc324a24597759501edc20
@@ -134,9 +152,13 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.ExcludeElements = {"nolongrear", "eft_mount_dovetail_b13v", "eft_mount_dovetail_b13", "eft_scope_dovetail_pso1", "eft_scope_dovetail_pso1m2", "eft_scope_dovetail_okp7"}
 
-ATT.EFTErgoAdd = 5
-
 ATT.Category = {"eft_aksu_dustcover"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.142,
+}))
 
 
 -- EFT ID: 5839a7742459773cf9693481
@@ -157,7 +179,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.ExcludeElements = {"nolongrear", "eft_mount_dovetail_b13v", "eft_mount_dovetail_b13", "eft_scope_dovetail_pso1", "eft_scope_dovetail_pso1m2", "eft_scope_dovetail_okp7"}
 
-ATT.EFTErgoAdd = 5
 
 ATT.Category = {"eft_aksu_dustcover"}
 
@@ -170,6 +191,12 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, -1, 0),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.136,
+}))
 
 
 -- EFT ID: 57dc334d245977597164366f
@@ -189,10 +216,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_aks74u_std.mdl"
 
-ATT.EFTErgoAdd = 10
-ATT.RecoilMult = 0.7
-ATT.VisualRecoilMult = 0.7
-
 ATT.Category = {"eft_aks_stock"}
 
 ATT.Attachments = {
@@ -204,6 +227,13 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, -9.7, -1),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 10,
+    recoilModifier = -21,
+    weight = 0.218,
+}))
 
 
 -- EFT ID: 57dc347d245977596754e7a1
@@ -228,10 +258,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.ActivateElements = {"railedcover"}
 
-ATT.EFTErgoAdd = 5
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
-
 ATT.Category = {"eft_aksu_dustcover"}
 
 ATT.Attachments = {
@@ -243,6 +269,12 @@ ATT.Attachments = {
         Icon_Offset = Vector(-1, 0, 0.5),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 1.5,
+    weight = 0.12,
+}))
 
 
 -- EFT ID: 655cb6b5d680a544f30607fa
@@ -263,11 +295,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/aksu_goliaf_mlok.mdl"
 ATT.LHIK = true
-
-ATT.EFTErgoAdd = 6
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
-ATT.HeatCapacityMult = 1.01
 
 ATT.ExcludeElements = {"eft_muzzle_ak_ak105_std", "eft_muzzle_ak_ak74m_std", "eft_muzzle_ak_ak74_std", "eft_muzzle_ak_rrd4c74", "eft_muzzle_ak_ak74_pws_cqb", "eft_muzzle_ak_ak74_srvv", "eft_muzzle_ak_reactor", "eft_muzzle_ak_dtk1", "eft_silencer_ak_ak74_hexagon", "eft_silencer_ak_pbs4", "eft_silencer_ak_wafflemaker" }
 ATT.RequireElements = {"gasblock"}
@@ -303,6 +330,12 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 15,
+    weight = 0.25,
+}))
 
 
 -- EFT ID: 647db1eca8d3399c380d195c

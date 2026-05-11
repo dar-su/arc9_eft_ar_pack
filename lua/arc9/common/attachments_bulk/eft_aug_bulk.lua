@@ -12,11 +12,6 @@ ATT.Description = [[A barrel for Steyr AUG A3 designed for 5.56x45 NATO ammo, 16
 
 ATT.HasBarrel = true 
 
-ATT.EFTErgoAdd = -13
-ATT.RecoilMult = 0.96
-ATT.VisualRecoilMult = 0.96
--- ATT.PhysBulletMuzzleVelocityMult = 0.94
-ATT.HeatCapacityMult = 1.01
 ATT.Spread = 1.58 * ARC9.MOAToAcc
 
 ATT.ActivateElements = {"barrel_16"}
@@ -45,6 +40,14 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/lhik_nogripaug.mdl"
 ATT.LHIK = true 
 ATT.ModelOffset = Vector(-1.8, 0, -2)
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -14,
+    recoilModifier = -8.3,
+    weight = 0.53,
+    velocity = -5,
+}))
+
+
 -- EFT ID: 630e39c3bd357927e4007c15
 ARC9.LoadAttachment(ATT, "eft_aug_barrel_16")
 
@@ -60,11 +63,6 @@ ATT.Description = [[A barrel for Steyr AUG A1 designed for 5.56x45 NATO ammo, 20
 
 ATT.HasBarrel = true 
 
-ATT.EFTErgoAdd = -18
-ATT.RecoilMult = 0.94
-ATT.VisualRecoilMult = 0.94
--- ATT.PhysBulletMuzzleVelocityMult = 0.94
-ATT.HeatCapacityMult = 1.02
 ATT.Spread = 1.24 * ARC9.MOAToAcc
 ATT.MuzzleEffectQCA = 5
 
@@ -94,6 +92,13 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/lhik_nogripaug.mdl"
 ATT.LHIK = true 
 ATT.ModelOffset = Vector(-1.8, 0, -2)
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -25,
+    recoilModifier = -10.2,
+    weight = 0.83,
+}))
+
+
 -- EFT ID: 62e7c7f3c34ea971710c32fc
 ARC9.LoadAttachment(ATT, "eft_aug_barrel_20")
 
@@ -109,11 +114,6 @@ ATT.Description = [[A barrel for Steyr AUG A1 designed for 5.56x45 NATO ammo, 16
 
 ATT.HasBarrel = true 
 
-ATT.EFTErgoAdd = -14
-ATT.RecoilMult = 0.96
-ATT.VisualRecoilMult = 0.96
--- ATT.PhysBulletMuzzleVelocityMult = 0.94
-ATT.HeatCapacityMult = 1.02
 ATT.Spread = 1.65 * ARC9.MOAToAcc
 
 ATT.ActivateElements = {"barrel_16"}
@@ -142,6 +142,14 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/lhik_nogripaug.mdl"
 ATT.LHIK = true 
 ATT.ModelOffset = Vector(-1.8, 0, -2)
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -14,
+    recoilModifier = -8.3,
+    weight = 0.535,
+    velocity = -5,
+}))
+
+
 -- EFT ID: 6333f05d1bc0e6217a0e9d34
 ARC9.LoadAttachment(ATT, "eft_aug_barrel_16a1")
 
@@ -155,14 +163,19 @@ ATT.CompactName = "AUG grip"
 ATT.Icon = Material("entities/eft_aug_attachments/fgg.png", "mips smooth")
 ATT.Description = [[A vertical foregrip for the Steyr AUG assault rifle.]]
 
-ATT.EFTErgoAdd = 5
-
 ATT.HasGrip = true
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_aug_fg"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    recoilModifier = -1,
+    weight = 0.08,
+}))
+
 
 -- EFT ID: 634e61b0767cb15c4601a877
 ARC9.LoadAttachment(ATT, "eft_aug_grip")
@@ -183,7 +196,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/scope_aug_steyr_rail_optic_15x.m
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = "eft_aug_toprec"
 
-ATT.EFTErgoAdd = -2
 
 ATT.FoldSights = true
 
@@ -234,6 +246,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    weight = 0.624,
+}))
+
+
 -- EFT ID: 62ebd290c427473eff0baafb
 ARC9.LoadAttachment(ATT, "eft_aug_scope_m1")
 
@@ -251,7 +269,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_aug_rec"}
 
-ATT.EFTErgoAdd = -1
 ATT.HasReceiver = true
 
 ATT.Attachments = {
@@ -289,6 +306,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.794,
+}))
+
+
 -- EFT ID: 62e7c72df68e7a0676050c77
 ARC9.LoadAttachment(ATT, "eft_aug_upper")
 
@@ -307,7 +330,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_aug_rec"}
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/scope_aug_steyr_stg77_optic_15x.mdl"
-ATT.EFTErgoAdd = -3
 ATT.HasReceiver = true
 
 ATT.Attachments = {
@@ -358,6 +380,12 @@ ATT.RTScopeNew_ShadowScale = 1.8
 
 ATT.ScopeScreenRatio = 462/1080
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -3,
+    weight = 1.22,
+}))
+
+
 -- EFT ID: 62ea7c793043d74a0306e19f
 ARC9.LoadAttachment(ATT, "eft_aug_upper_stg")
 
@@ -371,7 +399,6 @@ ATT.CompactName = "AUG 10"
 ATT.Icon = Material("entities/eft_aug_attachments/10.png", "mips smooth")
 ATT.Description = [[A 10-round polymer Steyr AUG magazine, for 5.56x45 ammunition.]]
 
-ATT.EFTErgoAdd = 2
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -387,6 +414,13 @@ ATT.DropMagazineAmount = 1
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_aug_20.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_aug_20.mdl"
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    weight = 0.1,
+    malfunctionChance = 0.08,
+}))
+
+
 -- EFT ID: 630e1adbbd357927e4007c09
 ARC9.LoadAttachment(ATT, "eft_aug_mag_10")
 
@@ -399,7 +433,6 @@ ATT.CompactName = "AUG 30"
 ATT.Icon = Material("entities/eft_aug_attachments/30.png", "mips smooth")
 ATT.Description = [[A 30-round polymer Steyr AUG magazine, for 5.56x45 ammunition.]]
 
-ATT.EFTErgoAdd = -3
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -415,6 +448,13 @@ ATT.DropMagazineAmount = 1
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_aug_30.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_aug_30.mdl"
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.13,
+    malfunctionChance = 0.08,
+}))
+
+
 -- EFT ID: 62e7c98b550c8218d602cbb4
 ARC9.LoadAttachment(ATT, "eft_aug_mag_30")
 
@@ -427,7 +467,6 @@ ATT.CompactName = "AUG 42"
 ATT.Icon = Material("entities/eft_aug_attachments/42.png", "mips smooth")
 ATT.Description = [[A 42-round polymer Steyr AUG magazine, for 5.56x45 ammunition.]]
 
-ATT.EFTErgoAdd = -3
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -442,6 +481,13 @@ ATT.SuppressEmptySuffix = false
 ATT.DropMagazineAmount = 1
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_aug_42.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_aug_42.mdl"
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -3,
+    weight = 0.142,
+    malfunctionChance = 0.08,
+}))
+
 
 -- EFT ID: 630e295c984633f1fb0e7c30
 ARC9.LoadAttachment(ATT, "eft_aug_mag_42")
@@ -461,11 +507,16 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_aug_steyr_a3_closed_flash_hider.mdl"
 ATT.BarrelLengthAdd = 0.5
 
-ATT.RecoilMult = 0.95
-ATT.VisualRecoilMult = 0.95
-ATT.HeatCapacityMult = 1.01
+
 
 ATT.Category = {"eft_aug_muzzle"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    recoilModifier = -5,
+    weight = 0.064,
+}))
+
 
 -- EFT ID: 630f28f0cadb1fe05e06f004
 ARC9.LoadAttachment(ATT, "eft_muzzle_aug_fh_a3")
@@ -484,11 +535,14 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_aug_steyr_a1_closed_flash_hider.mdl"
 ATT.BarrelLengthAdd = 0.5
 
-ATT.RecoilMult = 0.95
-ATT.VisualRecoilMult = 0.95
-ATT.HeatCapacityMult = 1.01
-
 ATT.Category = {"eft_aug_muzzle"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    recoilModifier = -5,
+    weight = 0.063,
+}))
+
 
 -- EFT ID: 630f2872911356c17d06abc5
 ARC9.LoadAttachment(ATT, "eft_muzzle_aug_fh_a1")
@@ -507,10 +561,14 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_aug_steyr_a3_muzzle_brake.mdl"
 ATT.BarrelLengthAdd = 0.5
 
-ATT.RecoilMult = 0.94
-ATT.VisualRecoilMult = 0.94
-ATT.HeatCapacityMult = 1.01
 ATT.Category = {"eft_aug_muzzle"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -3,
+    recoilModifier = -8.5,
+    weight = 0.074,
+}))
+
 
 -- EFT ID: 630f291b9f66a28b37094bb8
 ARC9.LoadAttachment(ATT, "eft_muzzle_aug_brake")
@@ -529,7 +587,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_aug_ratworx_suppressor_adapter.mdl"
 ATT.BarrelLengthAdd = 0.5
 
-ATT.EFTErgoAdd = -1
 
 ATT.Category = {"eft_aug_muzzle"}
 
@@ -542,6 +599,12 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.12,
+}))
+
 
 -- EFT ID: 630f27f04f3f6281050b94d7
 ARC9.LoadAttachment(ATT, "eft_muzzle_aug_rat")
@@ -560,18 +623,22 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/silencer_aug_aseutra_sl7i.mdl"
 -- ATT.ModelOffset = Vector(0.95, 0, 0)
 
-ATT.EFTErgoAdd = -24
-ATT.RecoilMult = 0.93
-ATT.VisualRecoilMult = 0.93
 -- ATT.SpreadMult = 1.03
 ATT.HeatCapacityMult = 0.66
-ATT.PhysBulletMuzzleVelocityMult = 1.06
 
 ATT.Silencer = true
 ATT.MuzzleParticle = "muzzleflash_suppressed"
 ATT.NoFlash = true
 
 ATT.Category = {"eft_aug_muzzle"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -10,
+    recoilModifier = -5,
+    weight = 0.494,
+    velocity = 0.6,
+}))
+
 
 -- EFT ID: 634eba08f69c710e0108d386
 ARC9.LoadAttachment(ATT, "eft_muzzle_aug_ase")
@@ -590,12 +657,8 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/silencer_aug_reflex_suppressor_t4aug_ranger.mdl"
 -- ATT.ModelOffset = Vector(0.95, 0, 0)
 
-ATT.EFTErgoAdd = -22
-ATT.RecoilMult = 0.94
-ATT.VisualRecoilMult = 0.94
 -- ATT.SpreadMult = 1.03
 ATT.HeatCapacityMult = 0.86
-ATT.PhysBulletMuzzleVelocityMult = 1.02
 
 ATT.Silencer = true
 ATT.MuzzleParticle = "muzzleflash_suppressed"
@@ -604,6 +667,14 @@ ATT.NoFlash = true
 ATT.ModelOffset  = Vector(-2.12, 0, 0)
 
 ATT.Category = {"eft_aug_muzzle"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -12,
+    recoilModifier = -1.5,
+    weight = 0.38,
+    velocity = 0.2,
+}))
+
 
 -- EFT ID: 630f2982cdb9e392db0cbcc7
 ARC9.LoadAttachment(ATT, "eft_muzzle_aug_t4")
@@ -624,7 +695,12 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_aug_charge"}
 
-ATT.EFTErgoAdd = 2
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.013,
+}))
+
 
 -- EFT ID: 62e7c880f68e7a0676050c7c
 ARC9.LoadAttachment(ATT, "eft_aug_ch_a1")
@@ -644,7 +720,12 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_aug_charge"}
 
-ATT.EFTErgoAdd = 3
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.011,
+}))
+
 
 -- EFT ID: 62ebbc53e3c1e1ec7c02c44f
 ARC9.LoadAttachment(ATT, "eft_aug_ch_a3")
@@ -675,6 +756,11 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.114,
+}))
+
+
 -- EFT ID: 62ebba1fb658e07ef9082b5a
 ARC9.LoadAttachment(ATT, "eft_aug_upper_rail_low")
 
@@ -692,7 +778,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_aug_toprec"}
 
-ATT.EFTErgoAdd = -1
 
 ATT.Attachments = {
     {
@@ -704,6 +789,12 @@ ATT.Attachments = {
         ExcludeElements = {"IronsBlockingSight"},
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.154,
+}))
+
 
 -- EFT ID: 62e7c8f91cd3fde4d503d690
 ARC9.LoadAttachment(ATT, "eft_aug_upper_rail_high")
@@ -823,7 +914,6 @@ ATT.CompactName = "AUG Corvus"
 ATT.Icon = Material("entities/eft_aug_attachments/augbottomrail.png", "mips smooth")
 ATT.Description = [[A KeyMod interface mount that replaces the standard front grip and allows installation of various accessories, designed for the AUG assault rifle. Manufactured by Corvus Defensio.]]
 
-ATT.EFTErgoAdd = -1
 -- ATT.HasGrip = true
 
 ATT.SortOrder = 0
@@ -855,6 +945,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.057,
+}))
+
+
 -- EFT ID: 6711107e1ad01bb88705347e
 ARC9.LoadAttachment(ATT, "eft_aug_grip_mount")
 
@@ -872,9 +968,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_aug_rec"}
 
-ATT.EFTErgoAdd = 3
-ATT.RecoilMult = 0.96
-ATT.VisualRecoilMult = 0.96
 ATT.HasReceiver = true
 
 ATT.Attachments = {
@@ -912,6 +1005,13 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    recoilModifier = -4,
+    weight = 0.7,
+}))
+
+
 -- EFT ID: 67110d8d388bded67304ceb4
 ARC9.LoadAttachment(ATT, "eft_aug_upper_vltor")
 
@@ -928,8 +1028,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_aug_toprec_new"}
-
-ATT.EFTErgoAdd = -0.5
 
 ATT.Attachments = {
     {
@@ -962,6 +1060,12 @@ ATT.Attachments = {
         ExcludeElements = {"IronsBlockingSight"},
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.5,
+    weight = 0.18,
+}))
+
 
 -- EFT ID: 67110dd41ad01bb88705347b
 ARC9.LoadAttachment(ATT, "eft_aug_upper_rail_vltor")

@@ -14,15 +14,17 @@ ATT.Description = [[A low-profile gas block designed for AR-10 weapon systems an
 ATT.HasGas = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/gas_block_ar10_cmmg.mdl"
 
-ATT.EFTErgoAdd = -1
-ATT.HeatCapacityMult = 0.995
-ATT.RecoilMult = 0.97
-ATT.VisualRecoilMult = 0.97
-
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_ar10_gas", "eft_mk47_gas"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    recoilModifier = -3,
+    weight = 0.095,
+}))
+
 
 -- EFT ID: 6065dc8a132d4d12c81fd8e3
 ARC9.LoadAttachment(ATT, "eft_ar10_gas_cmmg")
@@ -40,7 +42,6 @@ ATT.Description = [[A 254mm long barrel for the CMMG Mk47 Mutant assault rifle, 
 
 ATT.HasCharge = true 
 
-ATT.EFTErgoAdd = 1
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -48,6 +49,12 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mk47_charge"}
 
 ATT.AdvancedCamoSupport = true
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 1,
+    weight = 0.03,
+}))
+
+
 -- EFT ID: 606587bd6d0bd7580617bacc
 ARC9.LoadAttachment(ATT, "eft_mk47_charge_std")
 
@@ -64,11 +71,6 @@ ATT.Description = [[A 254mm long barrel for the CMMG Mk47 Mutant assault rifle, 
 
 ATT.HasBarrel = true 
 
-ATT.EFTErgoAdd = -7
-ATT.RecoilMult = 0.98
-ATT.VisualRecoilMult = 0.98
-ATT.PhysBulletMuzzleVelocityMult = 0.839
-ATT.HeatCapacityMult = 1.02
 ATT.Spread = 2.61 * ARC9.MOAToAcc
 
 ATT.ActivateElements = {"barrel_254mm"}
@@ -93,6 +95,14 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -5,
+    recoilModifier = -4.6,
+    weight = 0.47,
+    velocity = -17,
+}))
+
+
 -- EFT ID: 60658776f2cb2e02a42ace2b
 ARC9.LoadAttachment(ATT, "eft_mk47_barrel_254")
 
@@ -107,12 +117,6 @@ ATT.Icon = Material("entities/eft_ar10_attachments/47long.png", "mips smooth")
 ATT.Description = [[A 409mm long barrel for the CMMG Mk47 Mutant assault rifle, chambered in 7.62x39mm.]]
 
 ATT.HasBarrel = true 
-
-ATT.EFTErgoAdd = -19
-ATT.RecoilMult = 0.96
-ATT.VisualRecoilMult = 0.96
-ATT.PhysBulletMuzzleVelocityMult = 0.942
-ATT.HeatCapacityMult = 1.06
 ATT.Spread = 1.72 * ARC9.MOAToAcc
 
 ATT.SortOrder = 0
@@ -136,6 +140,13 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -13,
+    recoilModifier = -7.4,
+    weight = 1.13,
+}))
+
+
 -- EFT ID: 6065878ac9cf8012264142fd
 ARC9.LoadAttachment(ATT, "eft_mk47_barrel_409")
 
@@ -150,10 +161,6 @@ ATT.Icon = Material("entities/eft_ar10_attachments/47rec.png", "mips smooth")
 ATT.Description = [[The Resolute upper receiver for Mk47 Mutant assault rifle, chambered in 7.62x39mm. Equipped with a mount for attaching additional devices. Manufactured by CMMG.]]
 
 ATT.HasReceiver = true 
-
-ATT.EFTErgoAdd = 4
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -194,6 +201,13 @@ ATT.Attachments = {
 
 ATT.AdvancedCamoSupport = true
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 4,
+    recoilModifier = -1,
+    weight = 0.25,
+}))
+
+
 -- EFT ID: 606587a88900dc2d9a55b659
 ARC9.LoadAttachment(ATT, "eft_mk47_upper_std")
 
@@ -212,9 +226,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_cmmg_mil_spec_tube.md
 
 ATT.HasBufferTube = true
 
-ATT.RecoilMult = 0.98
-ATT.VisualRecoilMult = 0.98
-
 ATT.SortOrder = 0
 ATT.Category = "eft_cmmg_buffertube"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -230,6 +241,13 @@ ATT.Attachments = {
         ExcludeElements = {"pgrip_stock"},
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    recoilModifier = -0.5,
+    weight = 0.132,
+}))
 
 
 -- EFT ID: 606587e18900dc2d9a55b65f
@@ -361,7 +379,6 @@ ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar10_cmmg_mk3_rml9.mdl"
 ATT.ModelOffset = Vector(0, 0, -0.085)
 
-ATT.EFTErgoAdd = 6
 ATT.HeatCapacityMult = 0.975
 
 ATT.Category = {"eft_ar10_hg"}
@@ -414,6 +431,12 @@ ATT.Attachments = {
 }
 
 ATT.AdvancedCamoSupport = true
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 15,
+    weight = 0.155,
+}))
+
+
 -- EFT ID: 6065880c132d4d12c81fd8da
 ARC9.LoadAttachment(ATT, "eft_ar10_hg_rml9")
 
@@ -433,10 +456,6 @@ ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar10_cmmg_mk3_rml15.mdl"
 ATT.ModelOffset = Vector(0, 0, -0.085)
 
-ATT.EFTErgoAdd = 5.5
-ATT.HeatCapacityMult = 1.038
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
 
 ATT.Category = {"eft_ar10_hg"}
 ATT.ExcludeElements = {"barrel_254mm"}
@@ -496,5 +515,11 @@ ATT.Attachments = {
 }
 
 ATT.AdvancedCamoSupport = true
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 19,
+    weight = 0.22,
+}))
+
+
 -- EFT ID: 6065881d1246154cad35d637
 ARC9.LoadAttachment(ATT, "eft_ar10_hg_rml15")

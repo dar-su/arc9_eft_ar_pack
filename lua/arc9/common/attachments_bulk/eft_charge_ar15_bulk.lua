@@ -20,6 +20,12 @@ ATT.Category = {"eft_ar15_charge"}
 
 ATT.AdvancedCamoSupport = "eft_charge_ar15_colt"
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 0.5,
+    weight = 0.039,
+}))
+
+
 -- EFT ID: 5c0faf68d174af02a96260b8
 ARC9.LoadAttachment(ATT, "eft_charge_ar15_adar")
 
@@ -37,8 +43,14 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasBolt = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/charge_ar15_badger_ordnance_tactical_latch.mdl"
-ATT.EFTErgoAdd = 1
+
 ATT.Category = {"eft_ar15_charge"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 1,
+    weight = 0.064,
+}))
+
 
 -- EFT ID: 56ea7165d2720b6e518b4583
 ARC9.LoadAttachment(ATT, "eft_charge_ar15_botl")
@@ -62,6 +74,12 @@ ATT.Category = {"eft_ar15_charge"}
 
 ATT.AdvancedCamoSupport = true
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 0.5,
+    weight = 0.035,
+}))
+
+
 -- EFT ID: 55d44fd14bdc2d962f8b456e
 ARC9.LoadAttachment(ATT, "eft_charge_ar15_colt")
 
@@ -79,8 +97,14 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasBolt = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/charge_ar15_geissele_ach.mdl"
-ATT.EFTErgoAdd = 2
+
 ATT.Category = {"eft_ar15_charge"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.03,
+}))
+
 
 -- EFT ID: 5ea16d4d5aad6446a939753d
 ARC9.LoadAttachment(ATT, "eft_charge_ar15_ach")
@@ -99,10 +123,16 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasBolt = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/charge_ar15_hk_extended_latch_charging_handle.mdl"
-ATT.EFTErgoAdd = 1
+
 ATT.Category = {"eft_ar15_charge"}
 
 ATT.AdvancedCamoSupport = true
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 1,
+    weight = 0.064,
+}))
+
 
 -- EFT ID: 5bb20dbcd4351e44f824c04e
 ARC9.LoadAttachment(ATT, "eft_charge_ar15_hkext")
@@ -122,8 +152,14 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasBolt = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/charge_ar15_radian_raptor_ambidextrous_charging_handle.mdl"
-ATT.EFTErgoAdd = 3
+
 ATT.Category = {"eft_ar15_charge"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.04,
+}))
+
 
 -- EFT ID: 5b2240bf5acfc40dc528af69
 ARC9.LoadAttachment(ATT, "eft_charge_ar15_raptor")
@@ -143,8 +179,14 @@ ATT.HasBolt = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/charge_ar15_radian_raptor_ambidextrous_charging_handle.mdl"
 ATT.ModelSkin = 1
-ATT.EFTErgoAdd = 3
+
 ATT.Category = {"eft_ar15_charge"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.04,
+}))
+
 
 -- EFT ID: 5d44334ba4b9362b346d1948
 ARC9.LoadAttachment(ATT, "eft_charge_ar15_raptor_g")
@@ -162,8 +204,14 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasBolt = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/charge_ar15_rainer_arms_avalanche_mod2.mdl"
-ATT.EFTErgoAdd = 3
+
 ATT.Category = {"eft_ar15_charge"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.028,
+}))
+
 
 -- EFT ID: 5f633ff5c444ce7e3c30a006
 ARC9.LoadAttachment(ATT, "eft_charge_ar15_mod2")
@@ -181,8 +229,13 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasBolt = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/charge_ar15_dd_grip_n_rip.mdl"
-ATT.EFTErgoAdd = 2
 ATT.Category = {"eft_ar15_charge"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.043,
+}))
+
 
 -- EFT ID: 651bf5617b3b552ef6712cb7
 ARC9.LoadAttachment(ATT, "eft_charge_ar15_gnr")
@@ -201,8 +254,14 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.ActivateElements = {"eft_fast_catch"}
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/charge_ar15_magpul_bad_lever.mdl"
-ATT.EFTErgoAdd = 2
+
 ATT.Category = {"eft_ar15_charge_lever"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.03,
+}))
+
 
 -- EFT ID: 675307301f7c19a9780f2668
 ARC9.LoadAttachment(ATT, "eft_charge_ar15_badlever")
@@ -220,8 +279,13 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasBolt = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/charge_ar15_radian_raptor_sd_ambidextrous_charging_handle.mdl"
-ATT.EFTErgoAdd = 3.5
 ATT.Category = {"eft_ar15_charge"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3.5,
+    weight = 0.04,
+}))
+
 
 -- EFT ID: 6895bf08e2d16810ba0bf43e
 ARC9.LoadAttachment(ATT, "eft_charge_ar15_raptor_sd")
@@ -242,6 +306,11 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/charge_ar15_colt_charging_handle
 
 ATT.Category = {"eft_ar15_charge"}
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.035,
+}))
+
+
 -- EFT ID: 68a63a9522b1e0bd360afe5f
 ARC9.LoadAttachment(ATT, "eft_charge_ar15_early")
 
@@ -258,9 +327,14 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasBolt = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/charge_ar15_precision_reflex_m84_gas_buster_w_military_latch.mdl"
-ATT.EFTErgoAdd = 2
 
 ATT.Category = {"eft_ar15_charge"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.049,
+}))
+
 
 -- EFT ID: 68caabebc71156cf470bc186
 ARC9.LoadAttachment(ATT, "eft_charge_ar15_m84")

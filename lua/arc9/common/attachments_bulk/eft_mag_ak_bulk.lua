@@ -20,7 +20,6 @@ ATT.Category = {
     "eft_ak_762_mag",
 }
 
-ATT.EFTErgoAdd = -4
 
 ATT.ActivateElements = {"762"}
 
@@ -35,6 +34,13 @@ ATT.HookP_TranslateSound = function(self, data) -- that is metal mag
     end
     return data
 end
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -4,
+    weight = 0.37,
+    malfunctionChance = 0.09,
+}))
+
 
 -- EFT ID: 59d625f086f774661516605d
 ARC9.LoadAttachment(ATT, "eft_mag_ak_55_762_30")
@@ -59,12 +65,18 @@ ATT.Category = {
     "eft_ak_762_mag",
 }
 
-ATT.EFTErgoAdd = -3
 
 ATT.ActivateElements = {"762"}
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 30
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    weight = 0.37,
+    malfunctionChance = 0.07,
+}))
 
 
 -- EFT ID: 5a01c29586f77474660c694c
@@ -86,7 +98,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak74_izhmash_6l18_545x39_45.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak74_izhmash_6l18_545x39_45.mdl"
 
-ATT.EFTErgoAdd = -7
 
 ATT.Category = {
     "eft_ak_545_mag",
@@ -96,6 +107,13 @@ ATT.ActivateElements = {"long545"}
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 45
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -4.5,
+    weight = 0.3,
+    malfunctionChance = 0.158,
+}))
+
 
 -- EFT ID: 564ca9df4bdc2d35148b4569
 ARC9.LoadAttachment(ATT, "eft_mag_ak_6l18_545_45")
@@ -116,7 +134,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak74_izhmash_6l20_545x39_30.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak74_izhmash_6l20_545x39_30.mdl"
 
-ATT.EFTErgoAdd = -3
 
 ATT.Category = {
     "eft_ak_545_mag",
@@ -126,6 +143,13 @@ ATT.ActivateElements = {"545"}
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 30
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1.5,
+    weight = 0.215,
+    malfunctionChance = 0.07,
+}))
 
 
 -- EFT ID: 564ca99c4bdc2d16268b4589
@@ -148,7 +172,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak74_izhmash_6l23_plum_545x39_30.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak74_izhmash_6l23_plum_545x39_30.mdl"
 
-ATT.EFTErgoAdd = -3
 
 ATT.Category = {
     "eft_ak_545_mag",
@@ -158,6 +181,13 @@ ATT.ActivateElements = {"545"}
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 30
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1.5,
+    weight = 0.215,
+    malfunctionChance = 0.06,
+}))
 
 
 -- EFT ID: 5cbdaf89ae9215000e5b9c94
@@ -179,7 +209,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak74_izhmash_6l23_545x39_30.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak74_izhmash_6l23_545x39_30.mdl"
 
-ATT.EFTErgoAdd = -3
 
 ATT.Category = {
     "eft_ak_545_mag",
@@ -189,6 +218,13 @@ ATT.ActivateElements = {"545"}
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 30
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1.5,
+    weight = 0.215,
+    malfunctionChance = 0.08,
+}))
 
 
 -- EFT ID: 55d480c04bdc2d1d4e8b456a
@@ -217,12 +253,18 @@ ATT.Category = {
 
 ATT.ActivateElements = {"long545"}
 
-ATT.EFTErgoAdd = -8
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 45
 
 ATT.AdvancedCamoSupport = true
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -4,
+    weight = 0.3,
+    malfunctionChance = 0.151,
+}))
 
 
 -- EFT ID: 55d481904bdc2d8c2f8b456a
@@ -248,12 +290,18 @@ ATT.Category = {
     "eft_ak_556_mag",
 }
 
-ATT.EFTErgoAdd = -3
 
 ATT.ActivateElements = {"556"}
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 30
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1.5,
+    weight = 0.215,
+    malfunctionChance = 0.098,
+}))
 
 
 -- EFT ID: 5ac66c5d5acfc4001718d314
@@ -275,7 +323,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak74_izhmash_6l31_545x39_60.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak74_izhmash_6l31_545x39_60.mdl"
 
-ATT.EFTErgoAdd = -16
 
 ATT.Category = {
     "eft_ak_545_mag",
@@ -285,6 +332,13 @@ ATT.ActivateElements = {"60rnd"}
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 60
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -10,
+    weight = 0.3,
+    malfunctionChance = 0.299,
+}))
 
 
 -- EFT ID: 55d482194bdc2d1d4e8b456b
@@ -306,7 +360,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak_izhmash_rpk_std_bakelite_762x39_40.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak_izhmash_rpk_std_bakelite_762x39_40.mdl"
 
-ATT.EFTErgoAdd = -7
 
 ATT.Category = {
     "eft_ak_762_mag",
@@ -317,6 +370,13 @@ ATT.ActivateElements = {"long762"}
 ATT.ChamberSize = 1
 ATT.ClipSize = 40
 
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -4.5,
+    weight = 0.32,
+    malfunctionChance = 0.17,
+}))
 
 
 -- EFT ID: 5b1fb3e15acfc4001637f068
@@ -335,7 +395,6 @@ ATT.Description = [[The 6P2 Sb-11 standard-issue 40-round 7.62x39 magazine for t
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -7
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak_izhmash_rpk_std_61_sector_762x39_40.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak_izhmash_rpk_std_61_sector_762x39_40.mdl"
@@ -358,6 +417,13 @@ ATT.HookP_TranslateSound = function(self, data) -- that is metal mag
     return data
 end
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -4.5,
+    weight = 0.46,
+    malfunctionChance = 0.184,
+}))
+
+
 -- EFT ID: 59e5f5a486f7746c530b3ce2
 ARC9.LoadAttachment(ATT, "eft_mag_ak_6p2sb11_762_40")
 
@@ -377,7 +443,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak_izhmash_ak103_std_762x39_30.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak_izhmash_ak103_std_762x39_30.mdl"
 
-ATT.EFTErgoAdd = -3
 
 ATT.Category = {
     "eft_ak_762_mag",
@@ -387,6 +452,13 @@ ATT.ActivateElements = {"762"}
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 30
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    weight = 0.215,
+    malfunctionChance = 0.08,
+}))
 
 
 -- EFT ID: 5ac66bea5acfc43b321d4aec
@@ -408,7 +480,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak_izhmash_ak12_std_545x39_3
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak_izhmash_ak12_std_545x39_30.mdl"
 
 ATT.CustomPros = { ["Improved check accuracy"] = "Yes" }
-ATT.EFTErgoAdd = -2
 ATT.EFTImprovedMagCheck = true
 
 ATT.Category = {
@@ -419,6 +490,13 @@ ATT.ActivateElements = {"545"}
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 30
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.185,
+    malfunctionChance = 0.03,
+}))
 
 
 -- EFT ID: 649ec30cb013f04a700e60fb
@@ -439,7 +517,6 @@ Flat Dark Earth version.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -1
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak_us_palm_ak30_762x39_30.mdl"
 ATT.ModelOffset = Vector(0, 0, 0.45)
@@ -455,6 +532,13 @@ ATT.ActivateElements = {"762"}
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 30
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.5,
+    weight = 0.2,
+    malfunctionChance = 0.03,
+}))
 
 
 -- EFT ID: 59fafc9386f774067d462453
@@ -475,7 +559,6 @@ Black version.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -1
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak_us_palm_ak30_762x39_30.mdl"
 ATT.ModelOffset = Vector(0, 0, 0.45)
@@ -489,6 +572,13 @@ ATT.ActivateElements = {"762"}
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 30
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.5,
+    weight = 0.2,
+    malfunctionChance = 0.03,
+}))
 
 
 -- EFT ID: 59fafc5086f7740dbe19f6c3
@@ -510,7 +600,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak_izhmash_akms_aluminium_762x39_30.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak_izhmash_akms_aluminium_762x39_30.mdl"
 
-ATT.EFTErgoAdd = -1
 
 ATT.Category = {
     "eft_ak_762_mag",
@@ -529,6 +618,13 @@ ATT.HookP_TranslateSound = function(self, data) -- that is metal mag
     end
     return data
 end
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    weight = 0.17,
+    malfunctionChance = 0.04,
+}))
+
 
 -- EFT ID: 5a0060fc86f7745793204432
 ARC9.LoadAttachment(ATT, "eft_mag_ak_akms_762_30")
@@ -550,7 +646,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak_izhmash_akms_aluminium_76
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak_izhmash_akms_aluminium_762x39_30.mdl"
 ATT.ModelSkin = 1
 
-ATT.EFTErgoAdd = 7
 
 ATT.Category = {
     "eft_ak_762_mag",
@@ -569,6 +664,13 @@ ATT.HookP_TranslateSound = function(self, data) -- that is metal mag
     end
     return data
 end
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 4,
+    weight = 0.12,
+    malfunctionChance = 0.02,
+}))
+
 
 -- EFT ID: 5b1fd4e35acfc40018633c39
 ARC9.LoadAttachment(ATT, "eft_mag_ak_alum_762_10")
@@ -589,7 +691,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak_molot_rpk_drum_762x39_75.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak_molot_rpk_drum_762x39_75.mdl"
 
-ATT.EFTErgoAdd = -26
 
 ATT.Category = {
     "eft_ak_762_mag",
@@ -608,6 +709,13 @@ ATT.HookP_TranslateSound = function(self, data) -- that is metal mag
     end
     return data
 end
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -10,
+    weight = 0.9,
+    malfunctionChance = 0.41,
+}))
+
 
 -- EFT ID: 5cbdc23eae9215001136a407
 ARC9.LoadAttachment(ATT, "eft_mag_ak_molot_762_75")
@@ -628,7 +736,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak74_magpul_pmag_30_ak74_gen_m3_545x39_30.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak74_magpul_pmag_30_ak74_gen_m3_545x39_30.mdl"
 
-ATT.EFTErgoAdd = -1.5
 
 ATT.Category = {
     "eft_ak_545_mag",
@@ -640,6 +747,13 @@ ATT.ChamberSize = 1
 ATT.ClipSize = 30
 
 ATT.AdvancedCamoSupport = true
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.2,
+    malfunctionChance = 0.01,
+}))
+
 
 -- EFT ID: 5aaa4194e5b5b055d06310a5
 ARC9.LoadAttachment(ATT, "eft_mag_ak_pmag_545_30")
@@ -660,7 +774,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak74_magpul_pmag_30_ak74_gen
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak74_magpul_pmag_30_ak74_gen_m3_545x39_30.mdl"
 ATT.ModelMaterial = "models/weapons/arc9/darsu_eft/mods/mag_ak74_magpul_pmag_30_ak74_gen_m3_545x39_30_LOD0_fde"
 
-ATT.EFTErgoAdd = -1.5
 
 ATT.Category = {
     "eft_ak_545_mag",
@@ -673,7 +786,14 @@ ATT.ClipSize = 30
 
 ATT.AdvancedCamoSupport = true
 
--- EFT ID: 5aaa4194e5b5b055d06310a5
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.2,
+    malfunctionChance = 0.01,
+}))
+
+
+-- EFT ID: 68d566b2aa07af2e14059e01
 ARC9.LoadAttachment(ATT, "eft_mag_ak_pmag_545_30_fde")
 
 
@@ -689,7 +809,6 @@ ATT.Description = [[A 30-round polymer Magpul Pmag 30 AK/AKM GEN M3 magazine for
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -1.5
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak_magpul_pmag_30_ak_akm_gen_m3_762x39_30.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak_magpul_pmag_30_ak_akm_gen_m3_762x39_30.mdl"
@@ -704,6 +823,13 @@ ATT.ChamberSize = 1
 ATT.ClipSize = 30
 
 ATT.AdvancedCamoSupport = true
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.2,
+    malfunctionChance = 0.106,
+}))
+
 
 -- EFT ID: 59d6272486f77466146386ff
 ARC9.LoadAttachment(ATT, "eft_mag_ak_pmag_762_30")
@@ -720,7 +846,6 @@ ATT.Description = [[A 30-round polymer Magpul Pmag 30 AK/AKM GEN M3 magazine for
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -1.5
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak_magpul_pmag_30_ak_akm_gen_m3_762x39_30.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak_magpul_pmag_30_ak_akm_gen_m3_762x39_30.mdl"
@@ -737,6 +862,13 @@ ATT.ChamberSize = 1
 ATT.ClipSize = 30
 
 ATT.AdvancedCamoSupport = true
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.2,
+    malfunctionChance = 0.106,
+}))
+
 
 -- EFT ID: 59d6272486f77466146386ff
 ARC9.LoadAttachment(ATT, "eft_mag_ak_pmag_762_30_fde")
@@ -756,7 +888,6 @@ The magazine is painted in a tactical banana yellow color.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -1.5
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak_magpul_pmag_30_ak_akm_gen_m3_762x39_30.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak_magpul_pmag_30_ak_akm_gen_m3_762x39_30.mdl"
@@ -771,6 +902,13 @@ ATT.ActivateElements = {"762"}
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 30
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.2,
+    malfunctionChance = 0.106,
+}))
 
 
 -- EFT ID: 5e21a3c67e40bd02257a008a
@@ -792,7 +930,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak_promag_ak_a_16_drum_762x39_73.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak_promag_ak_a_16_drum_762x39_73.mdl"
 
-ATT.EFTErgoAdd = -18
 
 ATT.Category = {
     "eft_ak_762_mag",
@@ -802,6 +939,13 @@ ATT.ActivateElements = {"bigdrum"}
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 73
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -8,
+    weight = 0.72,
+    malfunctionChance = 0.35,
+}))
 
 
 -- EFT ID: 5c6175362e221600133e3b94
@@ -827,7 +971,6 @@ ATT.Category = {
     "eft_ak_762_mag",
 }
 
-ATT.EFTErgoAdd = 4
 
 ATT.ActivateElements = {"10rnd"}
 
@@ -842,6 +985,13 @@ ATT.HookP_TranslateSound = function(self, data) -- that is metal mag
     end
     return data
 end
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 4,
+    weight = 0.2,
+    malfunctionChance = 0.01,
+}))
+
 
 -- EFT ID: 59e5d83b86f7745aed03d262
 ARC9.LoadAttachment(ATT, "eft_mag_ak_ribbed_762_10")
@@ -862,7 +1012,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak_izhmash_rpk16_drum_545x39_95.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak_izhmash_rpk16_drum_545x39_95.mdl"
 
-ATT.EFTErgoAdd = -24
 
 ATT.Category = {
     "eft_ak_545_mag",
@@ -872,6 +1021,13 @@ ATT.ActivateElements = {"bigdrum"}
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 95
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -12,
+    weight = 0.68,
+    malfunctionChance = 0.394,
+}))
 
 
 -- EFT ID: 5bed625c0db834001c062946
@@ -893,7 +1049,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak_arsenal_cwp_mag_556x45_30.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak_arsenal_cwp_mag_556x45_30.mdl"
 
-ATT.EFTErgoAdd = -2
 
 ATT.Category = {
     "eft_ak_556_mag",
@@ -903,6 +1058,13 @@ ATT.ActivateElements = {"556"}
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 30
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.5,
+    weight = 0.45,
+    malfunctionChance = 0.05,
+}))
 
 
 -- EFT ID: 5c0548ae0db834001966a3c2
@@ -924,7 +1086,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak74_izhmash_saiga_545_std_545x39_10.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak74_izhmash_saiga_545_std_545x39_10.mdl"
 
-ATT.EFTErgoAdd = 5
 
 ATT.Category = {
     "eft_ak_545_mag",
@@ -934,6 +1095,13 @@ ATT.ActivateElements = {"10rnd"}
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 10
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    weight = 0.112,
+    malfunctionChance = 0.09,
+}))
 
 
 -- EFT ID: 55d4837c4bdc2d1d4e8b456c
@@ -952,7 +1120,6 @@ ATT.Description = [[A 30-round windowed polymer magazine for 7.62x39 AKs and com
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -2
 ATT.CustomPros = { ["Improved check accuracy"] = "Yes" }
 ATT.EFTImprovedMagCheck = true
 
@@ -967,6 +1134,13 @@ ATT.ActivateElements = {"762"}
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 30
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.5,
+    weight = 0.156,
+    malfunctionChance = 0.09,
+}))
 
 
 -- EFT ID: 6272874a6c47bd74f92e2087
@@ -985,7 +1159,6 @@ ATT.Description = [[The X-47 is a 50-round drum magazine for 7.62x39 AK family a
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -15
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak_x_products_x_47_drum_762x39_50.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak_x_products_x_47_drum_762x39_50.mdl"
@@ -999,6 +1172,13 @@ ATT.ActivateElements = {"smalldrum"}
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 50
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -9,
+    weight = 0.7,
+    malfunctionChance = 0.28,
+}))
 
 
 -- EFT ID: 5cfe8010d7ad1a59283b14c6
@@ -1024,7 +1204,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak_izhmash_ak12_std_545x39_3
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak_izhmash_ak12_std_545x39_30_new.mdl"
 
 ATT.CustomPros = { ["Improved check accuracy"] = "Yes" }
-ATT.EFTErgoAdd = -2
 ATT.EFTImprovedMagCheck = true
 
 ATT.Category = {
@@ -1037,6 +1216,13 @@ ATT.ChamberSize = 1
 ATT.ClipSize = 30
 
 ATT.AdvancedCamoSupport = true
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.5,
+    weight = 0.19,
+    malfunctionChance = 0.02,
+}))
+
 
 -- EFT ID: 5bed61680db834001d2c45ab
 ARC9.LoadAttachment(ATT, "eft_mag_ak_ak12_545_30")
@@ -1056,7 +1242,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak74_izhmash_saiga_545_std_545x39_20.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak74_izhmash_saiga_545_std_545x39_20.mdl"
 
-ATT.EFTErgoAdd = 2
 
 ATT.Category = {
     "eft_ak_545_mag",
@@ -1066,6 +1251,13 @@ ATT.ActivateElements = {"545"}
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 20
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 1.5,
+    weight = 0.13,
+    malfunctionChance = 0.087,
+}))
+
 
 -- EFT ID: 64b9e265c94d0d15c5027e35
 ARC9.LoadAttachment(ATT, "eft_mag_ak_545_20")
@@ -1089,12 +1281,18 @@ ATT.Category = {
     "eft_ak_762_mag",
 }
 
-ATT.EFTErgoAdd = 2
 
 ATT.ActivateElements = {"762"}
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 20
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2.5,
+    weight = 0.141,
+    malfunctionChance = 0.08,
+}))
+
 
 -- EFT ID: 64b9cf0ac12b9c38db26923a
 ARC9.LoadAttachment(ATT, "eft_mag_ak_pmag_762_20")
@@ -1116,7 +1314,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak_molot_556x45_45.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak_molot_556x45_45.mdl"
 ATT.ModelOffset = Vector(0, 0.05, 0.2)
 
-ATT.EFTErgoAdd = -8
 
 ATT.Category = {
     "eft_ak_556_mag",
@@ -1126,6 +1323,13 @@ ATT.ActivateElements = {"556"}
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 45
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -4.5,
+    weight = 0.3,
+    malfunctionChance = 0.151,
+}))
 
 
 -- EFT ID: 6764139c44b3c96e7b0e2f7b

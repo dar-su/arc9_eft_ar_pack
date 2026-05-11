@@ -18,11 +18,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_colt_stock_tube_std.m
 
 ATT.HasBufferTube = true
 
--- ATT.RecoilMult = 0.99
--- ATT.VisualRecoilMult = 0.99
-
--- ATT.EFTErgoAdd = 4
-
 ATT.SortOrder = 0
 ATT.Category = "eft_ar15_buffertube"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -38,6 +33,13 @@ ATT.Attachments = {
         ExcludeElements = {"pgrip_stock"},
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    recoilModifier = -0.5,
+    weight = 0.19,
+}))
 
 
 -- EFT ID: 5c0faeddd174af02a962601f
@@ -58,17 +60,19 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_ergo_f93_pro_stock.md
 
 ATT.HasBufferTube = true
 
-ATT.RecoilMult = 0.7
-ATT.VisualRecoilMult = 0.7
-
-ATT.EFTErgoAdd = 10
-
 ATT.ExcludeElements = {"pgrip_stock"}
 
 
 ATT.SortOrder = 0
 ATT.Category = {"eft_ar15_buffertube", "eft_hk416_buffertube"}
 ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 12,
+    recoilModifier = -21.5,
+    weight = 0.59,
+}))
 
 
 -- EFT ID: 5b0800175acfc400153aebd4
@@ -89,16 +93,18 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_troy_m7a1_pdw.mdl"
 
 ATT.HasBufferTube = true
 
-ATT.RecoilMult = 0.74
-ATT.VisualRecoilMult = 0.74
-
-ATT.EFTErgoAdd = 18
-
 ATT.ExcludeElements = {"pgrip_stock"}
 
 ATT.SortOrder = 0
 ATT.Category = {"eft_ar15_buffertube", "eft_hk416_buffertube"}
 ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 18,
+    recoilModifier = -20,
+    weight = 0.4,
+}))
 
 
 -- EFT ID: 591aef7986f774139d495f03
@@ -120,16 +126,18 @@ ATT.ModelSkin = 1
 
 ATT.HasBufferTube = true
 
-ATT.RecoilMult = 0.74
-ATT.VisualRecoilMult = 0.74
-
-ATT.EFTErgoAdd = 18
-
 ATT.ExcludeElements = {"pgrip_stock"}
 
 ATT.SortOrder = 0
 ATT.Category = {"eft_ar15_buffertube", "eft_hk416_buffertube"}
 ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 18,
+    recoilModifier = -20,
+    weight = 0.4,
+}))
 
 
 -- EFT ID: 591af10186f774139d495f0e
@@ -150,11 +158,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_rtm_atp_buffer_tube.m
 
 ATT.HasBufferTube = true
 
-ATT.RecoilMult = 0.975
-ATT.VisualRecoilMult = 0.975
-
--- ATT.EFTErgoAdd = 4
-
 ATT.SortOrder = 0
 ATT.Category = "eft_ar15_buffertube"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -170,6 +173,13 @@ ATT.Attachments = {
         ExcludeElements = {"pgrip_stock"},
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1.5,
+    recoilModifier = -0.5,
+    weight = 0.115,
+}))
 
 
 -- EFT ID: 638de3603a1a4031d8260b8c
@@ -190,11 +200,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_strike_industries_adv
 
 ATT.HasBufferTube = true
 
-ATT.RecoilMult = 0.96
-ATT.VisualRecoilMult = 0.96
-
-ATT.EFTErgoAdd = 2
-
 ATT.SortOrder = 0
 ATT.Category = "eft_ar15_buffertube"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -210,6 +215,13 @@ ATT.Attachments = {
         ExcludeElements = {"pgrip_stock"},
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.5,
+    recoilModifier = -0.5,
+    weight = 0.11,
+}))
 
 
 -- EFT ID: 5c793fb92e221644f31bfb64
@@ -231,11 +243,6 @@ ATT.ModelSkin = 1
 
 ATT.HasBufferTube = true
 
-ATT.RecoilMult = 0.96
-ATT.VisualRecoilMult = 0.96
-
-ATT.EFTErgoAdd = 2
-
 ATT.SortOrder = 0
 ATT.Category = "eft_ar15_buffertube"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -251,6 +258,13 @@ ATT.Attachments = {
         ExcludeElements = {"pgrip_stock"},
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.5,
+    recoilModifier = -0.5,
+    weight = 0.11,
+}))
 
 
 -- EFT ID: 5c793fc42e221600114ca25d
@@ -275,17 +289,19 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_magpul_ubr_gen2.mdl"
 
 ATT.HasBufferTube = true
 
-ATT.RecoilMult = 0.67
-ATT.VisualRecoilMult = 0.67
-
-ATT.EFTErgoAdd = 7
-
 
 ATT.ExcludeElements = {"pgrip_stock"}
 
 ATT.SortOrder = 0
 ATT.Category = {"eft_ar15_buffertube", "eft_hk416_buffertube"}
 ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 8,
+    recoilModifier = -22.5,
+    weight = 0.61,
+}))
 
 
 -- EFT ID: 5947e98b86f774778f1448bc
@@ -307,17 +323,19 @@ ATT.ModelSkin = 1
 
 ATT.HasBufferTube = true
 
-ATT.RecoilMult = 0.67
-ATT.VisualRecoilMult = 0.67
-
-ATT.EFTErgoAdd = 7
-
 ATT.ExcludeElements = {"pgrip_stock"}
 
 
 ATT.SortOrder = 0
 ATT.Category = {"eft_ar15_buffertube", "eft_hk416_buffertube"}
 ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 8,
+    recoilModifier = -22.5,
+    weight = 0.61,
+}))
 
 
 -- EFT ID: 5947eab886f77475961d96c5
@@ -338,17 +356,19 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_strike_industries_vip
 
 ATT.HasBufferTube = true
 
-ATT.RecoilMult = 0.75
-ATT.VisualRecoilMult = 0.75
-
-ATT.EFTErgoAdd = 21
-
 ATT.ExcludeElements = {"pgrip_stock"}
 
 
 ATT.SortOrder = 0
 ATT.Category = {"eft_ar15_buffertube", "eft_hk416_buffertube"}
 ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 22,
+    recoilModifier = -18,
+    weight = 0.573,
+}))
 
 
 -- EFT ID: 627254cc9c563e6e442c398f
@@ -370,17 +390,19 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_double_star_ace_arfx.
 
 ATT.HasBufferTube = true
 
-ATT.RecoilMult = 0.79
-ATT.VisualRecoilMult = 0.79
-
-ATT.EFTErgoAdd = 8
-
 ATT.ExcludeElements = {"pgrip_stock"}
 
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar15_buffertube"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 15,
+    recoilModifier = -20.5,
+    weight = 0.317,
+}))
 
 
 -- EFT ID: 6761777a1f08ed5e8800b7ac
@@ -400,10 +422,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_armacon_baskak.mdl"
 ATT.ModelOffset = Vector(0.25, 0, 0)
 ATT.HasBufferTube = true
 
-ATT.RecoilMult = 0.75
-ATT.VisualRecoilMult = 0.75
-
-ATT.EFTErgoAdd = 2
 
 ATT.ExcludeElements = {"pgrip_stock"}
 
@@ -411,6 +429,13 @@ ATT.ExcludeElements = {"pgrip_stock"}
 ATT.SortOrder = 0
 ATT.Category = "eft_ar15_buffertube_notbuffer"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 16,
+    recoilModifier = -19,
+    weight = 0.27,
+}))
 
 
 -- EFT ID: 57ade1442459771557167e15
@@ -430,8 +455,6 @@ ATT.Description = "An AR-15 mil-spec buffer tube for installation of various tel
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_cgnl_stock_tube.mdl"
 
 ATT.HasBufferTube = true
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
 ATT.SortOrder = 0
 ATT.Category = "eft_ar15_buffertube"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -447,6 +470,13 @@ ATT.Attachments = {
         ExcludeElements = {"pgrip_stock"},
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    recoilModifier = -0.5,
+    weight = 0.132,
+}))
 
 
 -- EFT ID: 68c17005ba442c8112076088
@@ -466,8 +496,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_cgnl_stock_tube.mdl"
 ATT.ModelSkin = 1
 
 ATT.HasBufferTube = true
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
 ATT.SortOrder = 0
 ATT.Category = "eft_ar15_buffertube"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -483,6 +511,13 @@ ATT.Attachments = {
         ExcludeElements = {"pgrip_stock"},
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    recoilModifier = -0.5,
+    weight = 0.132,
+}))
 
 
 -- EFT ID: 68c1701cba442c811207608b

@@ -18,10 +18,15 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_adar_wood_v1.mdl"
 ATT.LHIK = true 
 
 ATT.ExcludeElements = {"barrel_260mm", "barrel_370mm"}
-ATT.EFTErgoAdd = 7
 ATT.HeatCapacityMult = 1.074
 ATT.Category = {"eft_ar15_hguard"}
 ATT.ExcludeElements = {"barrel_10i", "barrel_145i"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 12,
+    weight = 0.385,
+}))
+
 
 -- EFT ID: 5c0e2f5cd174af02a012cfc9
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_adar")
@@ -41,7 +46,6 @@ ATT.HasHG = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_aeroknox_ax15_10,5_m_lok.mdl"
 ATT.LHIK = true 
-ATT.EFTErgoAdd = 9
 ATT.HeatCapacityMult = 0.953
 ATT.Category = {"eft_ar15_hguard"}
 
@@ -89,6 +93,12 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 16.5,
+    weight = 0.343,
+}))
+
+
 -- EFT ID: 619b5db699fb192e7430664f
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_ax15")
 
@@ -109,9 +119,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_alexander_arms_mk
 ATT.LHIK = true 
 
 ATT.Category = {"eft_ar15_hguard"}
-ATT.EFTErgoAdd = 8
-ATT.RecoilMult = 0.97
-ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 0.996
 ATT.ExcludeElements = {"barrel_10i", "gasblock_big"}
 ATT.ActivateElements = {"sprrailallowed"}
@@ -139,6 +146,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 17,
+    weight = 0.38,
+}))
+
+
 -- EFT ID: 5b2cfa535acfc432ff4db7a0
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_mk10")
 
@@ -158,7 +171,6 @@ ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_colt_m4_length_std.mdl"
 ATT.LHIK = true 
 -- ATT.LHIK_Priority = -22 -- needs lower hg
-ATT.EFTErgoAdd = 2
 ATT.HeatCapacityMult = 1.032
 ATT.Category = {"eft_ar15_hguard"}
 
@@ -175,6 +187,12 @@ ATT.AdvancedCamoSupport = true
 
 ATT.ActivateElements = {"eft_m203_allowed"}
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 4,
+    weight = 0.193,
+}))
+
+
 -- EFT ID: 5ae30db85acfc408fb139a05
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_m4")
 
@@ -189,11 +207,16 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_colt_m4_length_std_bottom.mdl"
 ATT.LHIK = true
 ATT.LHIK_Priority = 1 -- lower
-ATT.EFTErgoAdd = 7
 ATT.HeatCapacityMult = 1.029
 ATT.Category = {"eft_hglower_m4"}
 ATT.AdvancedCamoSupport = "eft_hg_ar15_m4"
 ATT.ExcludeElements = {"eft_m203"}
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 7,
+    weight = 0.129,
+}))
+
+
 -- EFT ID: 637f57a68d137b27f70c4968
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_m4_lower")
 
@@ -210,7 +233,6 @@ ATT.Description = [[The Daniel Defense RIS II 12.25 foregrip is a part of the SO
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasHG = true
-ATT.EFTErgoAdd = 2
 ATT.HeatCapacityMult = 0.968
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_dd_ris_ii_12,25.mdl"
 ATT.LHIK = true 
@@ -272,6 +294,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 10,
+    weight = 0.352,
+}))
+
+
 -- EFT ID: 5c9a25172e2216000f20314e
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_ddrisii1225")
 
@@ -287,9 +315,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_dd_ris_ii_12,25_l
 ATT.LHIK = true
 ATT.LHIK_Priority = 1 -- lower
 ATT.Category = {"eft_hglower_ddrisii1225"}
-ATT.EFTErgoAdd = 5
-ATT.RecoilMult = 0.98
-ATT.VisualRecoilMult = 0.98
 ATT.HeatCapacityMult = 0.975
 ATT.Attachments = {
     {
@@ -308,6 +333,12 @@ ATT.Attachments = {
     },
 }
 ATT.ExcludeElements = {"eft_m203"}
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 8,
+    weight = 0.15,
+}))
+
+
 -- EFT ID: 638f2003bbd47aeb9e0ff637
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_ddrisii1225_lower")
 
@@ -329,7 +360,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_dd_ris_ii_9,5.mdl
 ATT.ModelSkin = 1
 ATT.LHIK = true 
 -- ATT.LHIK_Priority = -22 -- needs lower hg
-ATT.EFTErgoAdd = 2
 ATT.HeatCapacityMult = 0.987
 ATT.Category = {"eft_ar15_hguard"}
 ATT.Folder = "Daniel Defens"
@@ -384,6 +414,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 7.5,
+    weight = 0.279,
+}))
+
+
 -- EFT ID: 55f84c3c4bdc2d5f408b4576
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_ddrisii95")
 
@@ -400,9 +436,6 @@ ATT.ModelSkin = 1
 ATT.LHIK = true
 ATT.LHIK_Priority = 1 -- lower
 ATT.Category = {"eft_hglower_ddrisii95"}
-ATT.EFTErgoAdd = 5
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 0.992
 ATT.Attachments = {
     {
@@ -414,6 +447,12 @@ ATT.Attachments = {
     },
 }
 ATT.ExcludeElements = {"eft_m203"}
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 7.5,
+    weight = 0.12,
+}))
+
+
 -- EFT ID: 638f1ff84822287cad04be9d
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_ddrisii95_lower")
 
@@ -433,9 +472,6 @@ ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_dd_ris_ii_9,5.mdl"
 ATT.LHIK = true 
 -- ATT.LHIK_Priority = -22 -- needs lower hg
-ATT.EFTErgoAdd = 5
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 0.992
 ATT.Category = {"eft_ar15_hguard"}
 ATT.Folder = "Daniel Defens"
@@ -489,7 +525,13 @@ ATT.Attachments = {
     },
 }
 
--- EFT ID: 55f84c3c4bdc2d5f408b4576
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 7.5,
+    weight = 0.279,
+}))
+
+
+-- EFT ID: 588b56d02459771481110ae2
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_ddrisii95_b")
 
 ///////////////////////////////////////      eft_hg_ar15_ddrisii95_lower_b
@@ -505,9 +547,6 @@ ATT.LHIK = true
 ATT.LHIK_Priority = 1 -- lower
 ATT.Category = {"eft_hglower_ddrisii95"}
 ATT.HasHG = true
-ATT.EFTErgoAdd = 5
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 0.992
 ATT.Attachments = {
     {
@@ -519,7 +558,13 @@ ATT.Attachments = {
     },
 }
 ATT.ExcludeElements = {"eft_m203"}
--- EFT ID: 638f1ff84822287cad04be9d
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 7.5,
+    weight = 0.12,
+}))
+
+
+-- EFT ID: 6396aaa9a52ace83df0840ab
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_ddrisii95_lower_b")
 
 ///////////////////////////////////////      eft_hg_ar15_ddfsp
@@ -537,9 +582,6 @@ ATT.HasHG = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_dd_ris_ii_fsp_9,5.mdl"
 ATT.LHIK = true 
-ATT.EFTErgoAdd = 7
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 0.988
 ATT.Category = {"eft_ar15_hguard"}
 ATT.Folder = "Daniel Defens"
@@ -575,6 +617,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 15.5,
+    weight = 0.3,
+}))
+
+
 -- EFT ID: 5c9a26332e2216001219ea70
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_ddfsp")
 
@@ -593,9 +641,6 @@ ATT.HasHG = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_geissele_smr_mk16_135_inch.mdl"
 ATT.LHIK = true 
-ATT.EFTErgoAdd = 10
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 0.965
 ATT.Category = {"eft_ar15_hguard"}
 ATT.ActivateElements = {"sprrailallowed"}
@@ -653,6 +698,12 @@ ATT.Attachments = {
 }
 ATT.AdvancedCamoSupport = true
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 18,
+    weight = 0.48,
+}))
+
+
 -- EFT ID: 5ea16ada09aa976f2e7a51be
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_mk16")
 
@@ -671,7 +722,6 @@ ATT.HasHG = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_geissele_smr_mk16_95_inch.mdl"
 ATT.LHIK = true 
-ATT.EFTErgoAdd = 8
 ATT.HeatCapacityMult = 0.996
 ATT.Category = {"eft_ar15_hguard"}
 
@@ -725,6 +775,12 @@ ATT.Attachments = {
 }
 ATT.AdvancedCamoSupport = true
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 15.5,
+    weight = 0.335,
+}))
+
+
 -- EFT ID: 5ea16acdfadf1d18c87b0784
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_mk1695")
 
@@ -744,7 +800,6 @@ ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_kac_ris.mdl"
 ATT.LHIK = true 
 -- ATT.LHIK_Priority = -22 -- needs lower hg`
-ATT.EFTErgoAdd = 1
 ATT.HeatCapacityMult = 1.018
 ATT.Category = {"eft_ar15_hguard"}
 ATT.Folder = "KAC"
@@ -782,6 +837,12 @@ ATT.Attachments = {
 }
 
 ATT.AdvancedCamoSupport = true
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 7,
+    weight = 0.226,
+}))
+
+
 -- EFT ID: 55d459824bdc2d892f8b4573
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_kacris")
 
@@ -796,7 +857,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_kac_ris_lower.mdl"
 ATT.LHIK = true
 ATT.LHIK_Priority = 1 -- lower
-ATT.EFTErgoAdd = 4
 ATT.HeatCapacityMult = 1.013
 ATT.Category = {"eft_hglower_kacris"}
 ATT.Attachments = {
@@ -810,6 +870,12 @@ ATT.Attachments = {
 }
 ATT.AdvancedCamoSupport = "eft_hg_ar15_kacris"
 ATT.ExcludeElements = {"eft_m203"}
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 7.5,
+    weight = 0.097,
+}))
+
+
 -- EFT ID: 637f57b78d137b27f70c496a
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_kacris_lower")
 
@@ -830,7 +896,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_kac_urx_31_10,75_
 ATT.LHIK = true 
 -- ATT.LHIK_Priority = -22 -- needs lower hg
 ATT.HasHG = true
-ATT.EFTErgoAdd = 2
 ATT.HeatCapacityMult = 0.96
 ATT.Category = {"eft_ar15_hguard"}
 ATT.Folder = "KAC"
@@ -901,6 +966,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 10,
+    weight = 0.224,
+}))
+
+
 -- EFT ID: 5d122e7bd7ad1a07102d6d7f
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_kacurx31")
 
@@ -916,9 +987,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_kac_urx_31_10,75_inch_lower.mdl"
 ATT.LHIK = true
 ATT.LHIK_Priority = 1 -- lower
-ATT.EFTErgoAdd = 4
-ATT.RecoilMult = 0.98
-ATT.VisualRecoilMult = 0.98
 ATT.HeatCapacityMult = 0.98
 ATT.Category = {"eft_hglower_kacurx31"}
 ATT.Attachments = {
@@ -938,6 +1006,12 @@ ATT.Attachments = {
     },
 }
 ATT.ExcludeElements = {"eft_m203"}
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.096,
+}))
+
+
 -- EFT ID: 637f57c532b66e7e320a6676
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_kacurx31_lower")
 
@@ -962,6 +1036,11 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, -1),
     },
 }
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.07,
+}))
+
+
 -- EFT ID: 5d133067d7ad1a33013f95b4
 ARC9.LoadAttachment(ATT, "eft_urxpanel_3")
 
@@ -975,11 +1054,15 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/tactical_urx_kac_panel_hand_stop.mdl"
 ATT.ModelAngleOffset = Angle(0,-90,0)
-ATT.EFTErgoAdd = 4
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 0.99
 ATT.Category = {"eft_urx_panel_lower"}
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 10,
+    recoilModifier = -1,
+    weight = 0.005,
+}))
+
+
 -- EFT ID: 5d123b7dd7ad1a004f01b262
 ARC9.LoadAttachment(ATT, "eft_urxstoper")
 ///////////////////////////////////////      eft_urxstoper_fde
@@ -993,11 +1076,15 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/tactical_urx_kac_panel_hand_stop.mdl"
 ATT.ModelSkin = 1
 ATT.ModelAngleOffset = Angle(0,-90,0)
-ATT.EFTErgoAdd = 4
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 0.99
 ATT.Category = {"eft_urx_panel_lower"}
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 10,
+    recoilModifier = -1,
+    weight = 0.005,
+}))
+
+
 -- EFT ID: 5d124c1ad7ad1a12227c53a7
 ARC9.LoadAttachment(ATT, "eft_urxstoper_fde")
 
@@ -1011,9 +1098,14 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/tactical_urx_kac_panel_long.mdl"
 ATT.ModelAngleOffset = Angle(0,180,0)
-ATT.EFTErgoAdd = 3
 ATT.HeatCapacityMult = 0.98
 ATT.Category = {"eft_urx_panel_long"}
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.005,
+}))
+
+
 -- EFT ID: 5d123b70d7ad1a0ee35e0754
 ARC9.LoadAttachment(ATT, "eft_urxlong")
 
@@ -1028,9 +1120,14 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/tactical_urx_kac_panel_long.mdl"
 ATT.ModelSkin = 1
 ATT.ModelAngleOffset = Angle(0,180,0)
-ATT.EFTErgoAdd = 3
 ATT.HeatCapacityMult = 0.98
 ATT.Category = {"eft_urx_panel_long"}
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.005,
+}))
+
+
 -- EFT ID: 5d124c0ed7ad1a10d168dd9b
 ARC9.LoadAttachment(ATT, "eft_urxlong_fde")
 
@@ -1044,9 +1141,14 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/tactical_urx_kac_panel_short.mdl"
 ATT.ModelAngleOffset = Angle(0,180,0)
-ATT.EFTErgoAdd = 2
 ATT.HeatCapacityMult = 0.99
 ATT.Category = {"eft_urx_panel_short"}
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.005,
+}))
+
+
 -- EFT ID: 5d123a3cd7ad1a004e476058
 ARC9.LoadAttachment(ATT, "eft_urxshort")
 
@@ -1061,9 +1163,14 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/tactical_urx_kac_panel_short.mdl"
 ATT.ModelSkin = 1
 ATT.ModelAngleOffset = Angle(0,180,0)
-ATT.EFTErgoAdd = 2
 ATT.HeatCapacityMult = 0.99
 ATT.Category = {"eft_urx_panel_short"}
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.005,
+}))
+
+
 -- EFT ID: 5d124c01d7ad1a115c7d59fb
 ARC9.LoadAttachment(ATT, "eft_urxshort_fde")
 
@@ -1079,7 +1186,6 @@ ATT.Description = [[The Knight's Armament URX 3 handguard for AR-15 equipped wit
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasHG = true
-ATT.EFTErgoAdd = 2
 ATT.HeatCapacityMult = 1.018
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_kac_urx_3_8_inch.mdl"
 ATT.LHIK = true 
@@ -1144,6 +1250,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 7,
+    weight = 0.168,
+}))
+
+
 -- EFT ID: 5d123102d7ad1a004e475fe5
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_kacurx38")
 
@@ -1159,9 +1271,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_kac_urx_3_8_inch_
 ATT.LHIK = true
 ATT.LHIK_Priority = 1 -- lower
 ATT.Category = {"eft_hglower_kacurx38"}
-ATT.EFTErgoAdd = 4
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 1.005
 ATT.Attachments = {
     {
@@ -1180,6 +1289,12 @@ ATT.Attachments = {
     },
 }
 ATT.ExcludeElements = {"eft_m203"}
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    weight = 0.072,
+}))
+
+
 -- EFT ID: 637f57d2f5ef8c33840d36c4
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_kacurx38_lower")
 
@@ -1198,9 +1313,6 @@ ATT.HasHG = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_lone_star_ion_lite_m_lok_16_inch.mdl"
 ATT.LHIK = true 
-ATT.EFTErgoAdd = 11
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
 ATT.SpreadMult = 0.99
 ATT.HeatCapacityMult = 0.961
 ATT.Category = {"eft_ar15_hguard"}
@@ -1278,6 +1390,13 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 19,
+    accuracyModifier = 1,
+    weight = 0.38,
+}))
+
+
 -- EFT ID: 5d4405f0a4b9361e6a4e6bd9
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_ionlite")
 
@@ -1298,7 +1417,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_magpul_moe_sl_car
 ATT.LHIK = true 
 
 ATT.Category = {"eft_ar15_hguard"}
-ATT.EFTErgoAdd = 10
 ATT.HeatCapacityMult = 1.058
 ATT.ExcludeElements = {"barrel_10i", "barrel_145i", "barrel_18i", "barrel_20i"}
 
@@ -1327,6 +1445,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 15,
+    weight = 0.19,
+}))
+
+
 -- EFT ID: 5c78f2792e221600106f4683
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_moesl")
 
@@ -1345,9 +1469,6 @@ ATT.HasHG = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_magpul_moe_sl_mid_length.mdl"
 ATT.LHIK = true 
-ATT.EFTErgoAdd = 10
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 1.064
 ATT.Category = {"eft_ar15_hguard"}
 
@@ -1377,6 +1498,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 16,
+    weight = 0.23,
+}))
+
+
 -- EFT ID: 5c78f26f2e221601da3581d1
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_moeslmid")
 
@@ -1395,9 +1522,6 @@ ATT.HasHG = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_sai_qd_rail_long.mdl"
 ATT.LHIK = true 
-ATT.EFTErgoAdd = 12
-ATT.RecoilMult = 0.97
-ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 0.968
 ATT.Category = {"eft_ar15_hguard"}
 
@@ -1481,6 +1605,12 @@ ATT.Attachments = {
 }
 
 ATT.AdvancedCamoSupport = true
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 18,
+    weight = 0.355,
+}))
+
+
 -- EFT ID: 5c78f2492e221600114c9f04
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_saiqd")
 
@@ -1499,9 +1629,6 @@ ATT.HasHG = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_sai_qd_rail_short.mdl"
 ATT.LHIK = true 
-ATT.EFTErgoAdd = 10
-ATT.RecoilMult = 0.97
-ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 0.965
 ATT.Category = {"eft_ar15_hguard"}
 ATT.ActivateElements = {"sprrailallowed"}
@@ -1586,6 +1713,12 @@ ATT.Attachments = {
 
 
 ATT.AdvancedCamoSupport = "eft_hg_ar15_saiqd"
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 16,
+    weight = 0.305,
+}))
+
+
 -- EFT ID: 5c78f2612e221600114c9f0d
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_saiqd10")
 
@@ -1605,9 +1738,6 @@ ATT.HasHG = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_stngr_vypr_m_lok_10_inch.mdl"
 ATT.LHIK = true 
-ATT.EFTErgoAdd = 8
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 0.985
 ATT.Category = {"eft_ar15_hguard"}
 
@@ -1666,6 +1796,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 16.5,
+    weight = 0.209,
+}))
+
+
 -- EFT ID: 5c6d5d8b2e221644fc630b39
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_vypr")
 
@@ -1685,7 +1821,6 @@ ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_strike_industries_viper.mdl"
 ATT.LHIK = true 
 -- ATT.LHIK_Priority = -22 -- needs lower hg
-ATT.EFTErgoAdd = 3
 ATT.HeatCapacityMult = 1.008
 ATT.Category = {"eft_ar15_hguard"}
 
@@ -1720,6 +1855,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    weight = 0.077,
+}))
+
+
 -- EFT ID: 5d00e0cbd7ad1a6c6566a42d
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_viper")
 
@@ -1741,7 +1882,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_strike_industries
 ATT.ModelSkin = 1
 ATT.LHIK = true 
 -- ATT.LHIK_Priority = -22 -- needs lower hg
-ATT.EFTErgoAdd = 3
 ATT.HeatCapacityMult = 1.008
 ATT.Category = {"eft_ar15_hguard"}
 
@@ -1774,6 +1914,12 @@ ATT.Attachments = {
 ATT.ExcludeElements = {"barrel_406mm"}
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    weight = 0.077,
+}))
+
+
 -- EFT ID: 5d00f63bd7ad1a59283b1c1e
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_viper_f")
 
@@ -1788,7 +1934,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_strike_industries_viper_lower.mdl"
 ATT.LHIK = true
 ATT.LHIK_Priority = 1 -- lower
-ATT.EFTErgoAdd = 7
 ATT.HeatCapacityMult = 1.018
 ATT.Category = {"eft_hglower_viper"}
 ATT.Attachments = {
@@ -1801,6 +1946,12 @@ ATT.Attachments = {
     },
 }
 ATT.ExcludeElements = {"eft_m203"}
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 9,
+    weight = 0.094,
+}))
+
+
 -- EFT ID: 637f589af5ef8c33840d36d3
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_viper_lower")
 
@@ -1816,7 +1967,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_strike_industries
 ATT.ModelSkin = 1
 ATT.LHIK = true
 ATT.LHIK_Priority = 1 -- lower
-ATT.EFTErgoAdd = 7
 ATT.HeatCapacityMult = 1.018
 ATT.Category = {"eft_hglower_viper"}
 ATT.Attachments = {
@@ -1829,6 +1979,12 @@ ATT.Attachments = {
     },
 }
 ATT.ExcludeElements = {"eft_m203"}
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 9,
+    weight = 0.094,
+}))
+
+
 -- EFT ID: 63969c9019971040b005049b
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_viper_lower_fde")
 
@@ -1853,8 +2009,13 @@ ATT.ActivateElements = {"sprrailallowed"}
 
 ATT.ExcludeElements = {"barrel_260mm", "gasblock_big"}
 
-ATT.EFTErgoAdd = 15
 ATT.HeatCapacityMult = 0.964
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 17,
+    weight = 0.25,
+}))
+
+
 -- EFT ID: 6087e0336d0bd7580617bb7a
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_wing")
 
@@ -1873,9 +2034,6 @@ ATT.HasHG = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_war_sport_lvoa_c.mdl"
 ATT.LHIK = true 
-ATT.EFTErgoAdd = 10
-ATT.RecoilMult = 0.98
-ATT.VisualRecoilMult = 0.98
 ATT.HeatCapacityMult = 0.942
 ATT.Category = {"eft_ar15_hguard"}
 ATT.Folder = "WS LVOA"
@@ -1939,6 +2097,12 @@ ATT.Attachments = {
         Ang = Angle(0, -90, -90),   
     },
 }
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 19.5,
+    weight = 0.58,
+}))
+
+
 -- EFT ID: 595cfa8b86f77427437e845b
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_lvoac_b")
 
@@ -1958,9 +2122,6 @@ ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_war_sport_lvoa_c.mdl"
 ATT.ModelSkin = 1
 ATT.LHIK = true 
-ATT.EFTErgoAdd = 10
-ATT.RecoilMult = 0.98
-ATT.VisualRecoilMult = 0.98
 ATT.HeatCapacityMult = 0.942
 ATT.Category = {"eft_ar15_hguard"}
 ATT.Folder = "WS LVOA"
@@ -2023,6 +2184,12 @@ ATT.Attachments = {
         Ang = Angle(0, -90, -90),   
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 19.5,
+    weight = 0.58,
+}))
+
 
 -- EFT ID: 595cfa8b86f77427437e845b
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_lvoac_f")
@@ -2043,9 +2210,6 @@ ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_war_sport_lvoa_c.mdl"
 ATT.ModelSkin = 2
 ATT.LHIK = true 
-ATT.EFTErgoAdd = 10
-ATT.RecoilMult = 0.98
-ATT.VisualRecoilMult = 0.98
 ATT.HeatCapacityMult = 0.942
 ATT.Category = {"eft_ar15_hguard"}
 ATT.Folder = "WS LVOA"
@@ -2108,6 +2272,12 @@ ATT.Attachments = {
         Ang = Angle(0, -90, -90),   
     },
 }
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 19.5,
+    weight = 0.58,
+}))
+
+
 -- EFT ID: 595cfa8b86f77427437e845b
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_lvoac_g")
 
@@ -2126,9 +2296,6 @@ ATT.HasHG = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_war_sport_lvoa_s.mdl"
 ATT.LHIK = true 
-ATT.EFTErgoAdd = 9
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 0.95
 ATT.Category = {"eft_ar15_hguard"}
 ATT.ExcludeElements = {"gasblock_big"}
@@ -2189,6 +2356,12 @@ ATT.Attachments = {
         Ang = Angle(0, -90, -90),   
     },
 }
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 18,
+    weight = 0.5,
+}))
+
+
 -- EFT ID: 595cf16b86f77427440c32e2
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_lvoas_b")
 
@@ -2208,9 +2381,6 @@ ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_war_sport_lvoa_s.mdl"
 ATT.ModelSkin = 1
 ATT.LHIK = true 
-ATT.EFTErgoAdd = 9
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 0.95
 ATT.Category = {"eft_ar15_hguard"}
 ATT.ExcludeElements = {"gasblock_big"}
@@ -2271,6 +2441,12 @@ ATT.Attachments = {
         Ang = Angle(0, -90, -90),   
     },
 }
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 19.5,
+    weight = 0.58,
+}))
+
+
 -- EFT ID: 595cfa8b86f77427437e845b
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_lvoas_f")
 
@@ -2290,9 +2466,6 @@ ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_war_sport_lvoa_s.mdl"
 ATT.ModelSkin = 2
 ATT.LHIK = true 
-ATT.EFTErgoAdd = 9
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 0.95
 ATT.Category = {"eft_ar15_hguard"}
 ATT.ExcludeElements = {"gasblock_big"}
@@ -2354,6 +2527,12 @@ ATT.Attachments = {
         Ang = Angle(0, -90, -90),   
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 19.5,
+    weight = 0.58,
+}))
+
 
 -- EFT ID: 595cfa8b86f77427437e845b
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_lvoas_g")
@@ -2376,9 +2555,6 @@ ATT.ModelSkin = 2
 ATT.LHIK = true 
 
 ATT.Category = {"eft_ar15_hguard"}
-ATT.EFTErgoAdd = 14
-ATT.RecoilMult = 0.98
-ATT.VisualRecoilMult = 0.98
 ATT.HeatCapacityMult = 1.03
 ATT.ExcludeElements = {"barrel_10i", "gasblock_big"}
 
@@ -2412,6 +2588,12 @@ ATT.Attachments = {
 }
 ATT.AdvancedCamoSupport = true
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 18,
+    weight = 0.425,
+}))
+
+
 -- EFT ID: 63888bbd28e5cc32cc09d2b6
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_precision")
 
@@ -2434,6 +2616,11 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, -1),
     },
 }
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.075,
+}))
+
+
 -- EFT ID: 6388c4ac8d895f557a0c6515
 ARC9.LoadAttachment(ATT, "eft_mount_precision_bottom")
 
@@ -2456,6 +2643,11 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.07,
+}))
+
+
 -- EFT ID: 6388c4478d895f557a0c6512
 ARC9.LoadAttachment(ATT, "eft_mount_precision_side")
 
@@ -2486,6 +2678,11 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.16,
+}))
+
+
 -- EFT ID: 6388c5d19c00405f4717c0f0
 ARC9.LoadAttachment(ATT, "eft_mount_precision_top")
 
@@ -2508,7 +2705,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_aeroknox_ax15_4.m
 ATT.LHIK = true 
 
 ATT.Category = {"eft_ar15_hguard"}
-ATT.EFTErgoAdd = 13
 ATT.HeatCapacityMult = 0.92
 -- ATT.ExcludeElements = {"gasblock_big"}
 ATT.ActivateElements = {"sprrailallowed"}
@@ -2524,6 +2720,12 @@ ATT.Attachments = {
         ExcludeElements = {"eft_rec_ar15_spr_rail"}
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 12,
+    weight = 0.103,
+}))
+
 
 -- EFT ID: 63f4ba71f31d4a33b87bd046
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_ax15_4")
@@ -2543,7 +2745,6 @@ ATT.HasHG = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_aeroknox_ax15_158.mdl"
 ATT.LHIK = true 
-ATT.EFTErgoAdd = 12
 ATT.HeatCapacityMult = 0.985
 ATT.Category = {"eft_ar15_hguard"}
 
@@ -2623,6 +2824,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.15,
+    weight = 0.022,
+}))
+
+
 -- EFT ID: 5b30bc165acfc40016387293
 ARC9.LoadAttachment(ATT, "eft_mount_alexander_3")
 
@@ -2641,7 +2848,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/mount_mk10_alexander_arms_10_inc
 
 ATT.Category = {"eft_mount_alexander_10"}
 ATT.MenuCategory = "ARC9 - EFT Attachments"
-ATT.EFTErgoAdd = -1
 ATT.ModelOffset = Vector(0, 0, 0)
 ATT.ModelAngleOffset = Angle(0, 0, 90)
 
@@ -2662,6 +2868,12 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.5,
+    weight = 0.09,
+}))
 
 
 -- EFT ID: 5b30bc285acfc47a8608615d
@@ -2689,9 +2901,14 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_colt_m16a1_std.md
 ATT.LHIK = true 
 
 ATT.ExcludeElements = {"barrel_10i", "barrel_145i", "barrel_16i", "eft_barrel_ar15_18i", "eft_barrel_ar15_20i"}
-ATT.EFTErgoAdd = 7
 ATT.HeatCapacityMult = 1.074
 ATT.Category = {"eft_ar15_hguard"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 12,
+    weight = 0.221,
+}))
+
 
 -- EFT ID: 68a63cb3e1fb670852024664
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_m16a1")
@@ -2715,7 +2932,6 @@ ATT.LHIK = true
 
 ATT.ExcludeElements = {"barrel_10i", "barrel_145i", "barrel_16i", "eft_barrel_ar15_18i", "eft_barrel_ar15_20i"}
 
-ATT.EFTErgoAdd = 2
 ATT.HeatCapacityMult = 1.074
 ATT.Category = {"eft_ar15_hguard"}
 
@@ -2731,6 +2947,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 10,
+    weight = 0.205,
+}))
+
+
 -- EFT ID: 68a63cc0c92ee33ffa01bf5c
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_m16a2")
 
@@ -2745,9 +2967,14 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_colt_m16a2_std_lower.mdl"
 ATT.LHIK = true
 ATT.LHIK_Priority = 1 -- lower
-ATT.EFTErgoAdd = 6
 ATT.Category = {"eft_hglower_m16a2"}
 ATT.ExcludeElements = {"eft_m203"}
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.05,
+}))
+
+
 -- EFT ID: 68a6413b54ef229c4d089238
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_m16a2_lower")
 
@@ -2769,7 +2996,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_colt_car15_skinny
 ATT.LHIK = true 
 
 -- ATT.ExcludeElements = {"barrel_260mm"}
-ATT.EFTErgoAdd = 2.5
 ATT.HeatCapacityMult = 1.074
 ATT.Category = {"eft_ar15_hguard"}
 
@@ -2785,6 +3011,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.15,
+}))
+
+
 -- EFT ID: 68a63ccc8a85019a82087956
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_skinny")
 
@@ -2799,9 +3031,14 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_colt_car15_skinny_lower.mdl"
 ATT.LHIK = true
 ATT.LHIK_Priority = 1 -- lower
-ATT.EFTErgoAdd = 7.5
 ATT.Category = {"eft_hglower_skinny"}
 ATT.ExcludeElements = {"eft_m203"}
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 7,
+    weight = 0.025,
+}))
+
+
 -- EFT ID: 68a641452258a88280055616
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_skinny_lower")
 
@@ -2818,9 +3055,6 @@ ATT.Description = "A quad-rail handguard manufactured by Knight's Armament Compa
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasHG = true
-ATT.EFTErgoAdd = 1
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 0.968
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_kac_m5_ras.mdl"
 ATT.LHIK = true 
@@ -2884,6 +3118,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 10,
+    weight = 0.25,
+}))
+
+
 -- EFT ID: 68a63cdac92ee33ffa01bf5f
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_kac_m5")
 
@@ -2900,9 +3140,6 @@ ATT.ModelOffset = Vector(0, -0.1, -0.5)
 ATT.LHIK = true
 ATT.LHIK_Priority = 1 -- lower
 ATT.Category = {"eft_hglower_kacm5"}
-ATT.EFTErgoAdd = 5
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_tactical_b"),
@@ -2920,6 +3157,12 @@ ATT.Attachments = {
     },
 }
 ATT.ExcludeElements = {"eft_m203"}
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 9,
+    weight = 0.15,
+}))
+
+
 -- EFT ID: 68a63ce2e1fb670852024667
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_kac_m5_lower")
 
@@ -2939,9 +3182,6 @@ ATT.HasHG = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_radian_model1_m_lok_14_inch.mdl"
 ATT.LHIK = true 
-ATT.EFTErgoAdd = 10
-ATT.RecoilMult = 0.975
-ATT.VisualRecoilMult = 0.975
 ATT.HeatCapacityMult = 0.985
 ATT.Category = {"eft_ar15_hguard"}
 ATT.ActivateElements = {"sprrailallowed"}
@@ -3004,6 +3244,12 @@ ATT.Attachments = {
     },
 }
 ATT.AdvancedCamoSupport = true
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 19.5,
+    weight = 0.47,
+}))
+
+
 -- EFT ID: 6895bd19d55f0ebf6a0c0306
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_radian_14")
 
@@ -3022,9 +3268,6 @@ ATT.HasHG = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_cgnl_ar15_105_inch.mdl"
 ATT.LHIK = true 
-ATT.EFTErgoAdd = 9
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 0.996
 ATT.Category = {"eft_ar15_hguard"}
 
@@ -3077,6 +3320,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 16,
+    weight = 0.48,
+}))
+
+
 -- EFT ID: 68c1707983e2d814b0093f7e
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_cgnl_105")
 
@@ -3095,9 +3344,6 @@ ATT.HasHG = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_cgnl_ar15_14_inch.mdl"
 ATT.LHIK = true 
-ATT.EFTErgoAdd = 10
-ATT.RecoilMult = 0.985
-ATT.VisualRecoilMult = 0.985
 ATT.HeatCapacityMult = 0.968
 ATT.Category = {"eft_ar15_hguard"}
 
@@ -3158,6 +3404,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 18,
+    weight = 0.48,
+}))
+
+
 -- EFT ID: 68c170e383e2d814b0093f87
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_cgnl_14")
 
@@ -3177,9 +3429,6 @@ ATT.HasHG = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_kac_rifle_lenght_free_float_ras_12_inch.mdl"
 ATT.LHIK = true
-ATT.EFTErgoAdd = 4
-ATT.RecoilMult = 0.985
-ATT.VisualRecoilMult = 0.985
 ATT.HeatCapacityMult = 1.018
 ATT.Category = {"eft_ar15_hguard"}
 ATT.Folder = "KAC"
@@ -3242,6 +3491,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 17,
+    weight = 0.462,
+}))
+
+
 -- EFT ID: 68caac360bfe742288085e16
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_kac_ff")
 
@@ -3264,9 +3519,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_precision_reflex_
 ATT.LHIK = true 
 
 ATT.Category = {"eft_ar15_hguard"}
-ATT.EFTErgoAdd = 12
-ATT.RecoilMult = 0.985
-ATT.VisualRecoilMult = 0.985
 ATT.ExcludeElements = {"barrel_10i"}
 
 ATT.ActivateElements = {"sprrailallowed"}
@@ -3317,6 +3569,12 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0.5),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 17.5,
+    weight = 0.499,
+}))
+
 
 -- EFT ID: 68caac28f42a4476cf0be2ac
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_precision_round")
@@ -3340,9 +3598,6 @@ ATT.ModelSkin = 1
 ATT.LHIK = true 
 
 ATT.Category = {"eft_ar15_hguard"}
-ATT.EFTErgoAdd = 12
-ATT.RecoilMult = 0.985
-ATT.VisualRecoilMult = 0.985
 ATT.ExcludeElements = {"barrel_10i"}
 
 ATT.ActivateElements = {"sprrailallowed"}
@@ -3393,6 +3648,12 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0.5),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 17.5,
+    weight = 0.499,
+}))
+
 
 -- EFT ID: 68cc2ae66e59cb54f4054f47
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_precision_round_fde")
@@ -3435,6 +3696,11 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.126,
+}))
+
+
 -- EFT ID: 68a5dc0c2cd64a8b58023b87
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_gridlok_base_blk")
 
@@ -3475,6 +3741,11 @@ ATT.Attachments = {
         ExtraSightDistance = 8
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.126,
+}))
+
 
 -- EFT ID: 68a7000d7708ac5120060527
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_gridlok_base_red")
@@ -3517,6 +3788,11 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.126,
+}))
+
+
 -- EFT ID: 68a6fff085a17dc1cb008066
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_gridlok_base_yellow")
 
@@ -3538,9 +3814,6 @@ ATT.LHIK = true
 ATT.LHIK_Priority = 1 -- lower
 ATT.HasHG = true
 
-ATT.EFTErgoAdd = 10
-ATT.RecoilMult = 0.995
-ATT.VisualRecoilMult = 0.995
 
 ATT.Category = {"eft_gridlok"}
 
@@ -3568,6 +3841,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 14,
+    weight = 0.162,
+}))
+
+
 -- EFT ID: 68a5dc4eed35a7eac1048ff6
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_gridlok_85")
 
@@ -3588,9 +3867,6 @@ ATT.LHIK = true
 ATT.LHIK_Priority = 1 -- lower
 ATT.HasHG = true
 
-ATT.EFTErgoAdd = 10
-ATT.RecoilMult = 0.995
-ATT.VisualRecoilMult = 0.995
 
 ATT.Category = {"eft_gridlok"}
 
@@ -3628,6 +3904,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 16,
+    weight = 0.208,
+}))
+
+
 -- EFT ID: 68a6f3b27279296357007cd7
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_gridlok_11")
 
@@ -3648,9 +3930,6 @@ ATT.LHIK = true
 ATT.LHIK_Priority = 1 -- lower
 ATT.HasHG = true
 
-ATT.EFTErgoAdd = 10
-ATT.RecoilMult = 0.995
-ATT.VisualRecoilMult = 0.995
 
 ATT.Category = {"eft_gridlok"}
 
@@ -3687,6 +3966,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 18,
+    weight = 0.281,
+}))
+
+
 -- EFT ID: 68a6fbb07279296357007ce2
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_gridlok_15")
 
@@ -3707,9 +3992,6 @@ ATT.LHIK = true
 ATT.LHIK_Priority = 1 -- lower
 ATT.HasHG = true
 
-ATT.EFTErgoAdd = 10
-ATT.RecoilMult = 0.995
-ATT.VisualRecoilMult = 0.995
 
 ATT.Category = {"eft_gridlok"}
 
@@ -3746,6 +4028,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 19,
+    weight = 0.319,
+}))
+
+
 -- EFT ID: 68a6fbfdd31595bb360c73bd
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_gridlok_17")
 
@@ -3766,7 +4054,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/mount_ar15_strike_industries_gri
 ATT.ModelSkin = 0
 ATT.ModelAngleOffset = Angle(0, -90, 0)
 
-ATT.EFTErgoAdd = 2
 
 ATT.Category = {"eft_gridlok_ext"}
 
@@ -3791,6 +4078,12 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.102,
+}))
+
 
 -- EFT ID: 68a6e8fd4ac5b037cb0e9b86
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_gridlok_ext_blk")
@@ -3811,7 +4104,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/mount_ar15_strike_industries_gri
 ATT.ModelSkin = 1
 ATT.ModelAngleOffset = Angle(0, -90, 0)
 
-ATT.EFTErgoAdd = 2
 
 ATT.Category = {"eft_gridlok_ext"}
 
@@ -3836,6 +4128,12 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.102,
+}))
+
 
 -- EFT ID: 68a6ff952885e0bbd30bb6fd
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_gridlok_ext_red")
@@ -3856,7 +4154,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/mount_ar15_strike_industries_gri
 ATT.ModelSkin = 2
 ATT.ModelAngleOffset = Angle(0, -90, 0)
 
-ATT.EFTErgoAdd = 2
 
 ATT.Category = {"eft_gridlok_ext"}
 
@@ -3881,6 +4178,12 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.102,
+}))
+
 
 -- EFT ID: 68a6ff732885e0bbd30bb6f9
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_gridlok_ext_yellow")
@@ -3903,7 +4206,6 @@ ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_abarms_mod1.mdl"
 ATT.LHIK = true 
 -- ATT.LHIK_Priority = -22 -- needs lower hg
-ATT.EFTErgoAdd = 5
 ATT.Category = {"eft_ar15_hguard"}
 
 
@@ -3929,6 +4231,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 6.5,
+    weight = 0.094,
+}))
+
+
 -- EFT ID: 647de824196bf69818044c93
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_abamod1")
 
@@ -3943,11 +4251,14 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_abarms_mod1_lower.mdl"
 ATT.LHIK = true
 ATT.LHIK_Priority = 1 -- lower
-ATT.EFTErgoAdd = 6
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 1.018
 ATT.Category = {"eft_hglower_abamod1"}
 ATT.ExcludeElements = {"eft_m203"}
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 6.5,
+    weight = 0.033,
+}))
+
+
 -- EFT ID: 647def638295ebcb5b02f05b
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_abamod1_lower")

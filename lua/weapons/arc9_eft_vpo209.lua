@@ -27,6 +27,7 @@ SWEP.ViewModel = "models/weapons/arc9/darsu_eft/c_akm.mdl"
 SWEP.DefaultBodygroups = "20010100000000"
 
 SWEP.EFTErgo = 30
+SWEP.EFTWeight = 2.092
 SWEP.MalfunctionMeanShotsToFail = 450
 SWEP.HeatCapacity = 240
 

@@ -31,6 +31,11 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.03,
+}))
+
+
 -- EFT ID: 5ac78eaf5acfc4001926317a
 ARC9.LoadAttachment(ATT, "eft_stock_ak74m_zenit_lock")
 
@@ -51,9 +56,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_ak74_std_plastic.mdl"
 
 ATT.HasStock = true
 
-ATT.EFTErgoAdd = 5
-ATT.RecoilMult = 0.68
-ATT.VisualRecoilMult = 0.68
 
 ATT.Category = {"eft_akm_stock"}
 
@@ -66,6 +68,13 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, -9.7, -1),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    recoilModifier = -21,
+    weight = 0.35,
+}))
 
 
 -- EFT ID: 5649b0fc4bdc2d17108b4588
@@ -84,9 +93,6 @@ ATT.Description = [[A polymer stock for AK-74 automatic rifles, manufactured by 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 5
-ATT.RecoilMult = 0.68
-ATT.VisualRecoilMult = 0.68
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_ak74_std_plum.mdl"
 
@@ -105,6 +111,13 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    recoilModifier = -21,
+    weight = 0.35,
+}))
+
+
 -- EFT ID: 5cbdb1b0ae9215000d50e105
 ARC9.LoadAttachment(ATT, "eft_stock_ak74_polymer_plum")
 
@@ -121,9 +134,6 @@ ATT.Description = [[A standard-issue wooden stock for AK-74 automatic rifles, ma
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 3
-ATT.RecoilMult = 0.67
-ATT.VisualRecoilMult = 0.67
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_ak74_std_wood.mdl"
 
@@ -140,6 +150,13 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, -9.7, -1),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    recoilModifier = -21,
+    weight = 0.45,
+}))
 
 
 -- EFT ID: 5649b1c04bdc2d16268b457c
@@ -162,13 +179,12 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_akms_stock"}
 
-ATT.EFTErgoAdd = 9
 
 ATT.ToggleStats = {
     {
         PrintName = "eft_toggle_unfolded",
-        RecoilMult = 0.7,
-        VisualRecoilMult = 0.7,
+        RecoilMult = 0.8,
+        VisualRecoilMult = 0.8,
         HasStock = true
     },
     {
@@ -177,6 +193,12 @@ ATT.ToggleStats = {
         ActivateElements = {"eft_stock_akms_f"}
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 13,
+    weight = 0.6,
+}))
 
 
 -- EFT ID: 59ff3b6a86f77477562ff5ed
@@ -199,13 +221,12 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_akms_stock"}
 
-ATT.EFTErgoAdd = 9
 
 ATT.ToggleStats = {
     {
         PrintName = "eft_toggle_unfolded",
-        RecoilMult = 0.7,
-        VisualRecoilMult = 0.7,
+        RecoilMult = 0.8,
+        VisualRecoilMult = 0.8,
         HasStock = true
     },
     {
@@ -214,6 +235,12 @@ ATT.ToggleStats = {
         ActivateElements = {"eft_stock_akmsn_f"}
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 13,
+    weight = 0.6,
+}))
 
 
 -- EFT ID: 5abcd472d8ce8700166032ae
@@ -239,9 +266,13 @@ ATT.HasStock = true
 ATT.Category = {"eft_akm_stock"}
 
 
-ATT.EFTErgoAdd = 17
-ATT.RecoilMult = 0.61
-ATT.VisualRecoilMult = 0.61
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 13,
+    recoilModifier = -22.5,
+    weight = 0.39,
+}))
 
 
 -- EFT ID: 6087e2a5232e5a31c233d552
@@ -264,9 +295,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_caa_akts.mdl"
 
 ATT.HasStock = true
 
-ATT.EFTErgoAdd = -1
-ATT.RecoilMult = 0.97
-ATT.VisualRecoilMult = 0.97
 
 ATT.Category = {"eft_akm_stock"}
 
@@ -280,6 +308,13 @@ ATT.Attachments = {
         Icon_Offset = Vector(-1, 0, 0.5),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    recoilModifier = -0.5,
+    weight = 0.24,
+}))
 
 
 -- EFT ID: 5cf518cfd7f00c065b422214
@@ -302,12 +337,16 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_uas_ak_p.mdl"
 
 ATT.HasStock = true
 
-ATT.EFTErgoAdd = 16
-ATT.RecoilMult = 0.62
-ATT.VisualRecoilMult = 0.62
 
 ATT.Category = {"eft_akm_stock"}
 
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 18,
+    recoilModifier = -20,
+    weight = 0.45,
+}))
 
 
 -- EFT ID: 5b04473a5acfc40018632f70
@@ -332,11 +371,15 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_hexagon_kocherga.mdl"
 
 ATT.HasStock = true
 
-ATT.EFTErgoAdd = 12
-ATT.RecoilMult = 0.66
-ATT.VisualRecoilMult = 0.66
 
 ATT.Category = {"eft_akm_stock"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 24,
+    recoilModifier = -18,
+    weight = 0.18,
+}))
 
 
 -- EFT ID: 5e217ba4c1434648c13568cd
@@ -359,9 +402,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_utg_sfs.mdl"
 
 ATT.HasStock = true
 
-ATT.EFTErgoAdd = -1
-ATT.RecoilMult = 0.98
-ATT.VisualRecoilMult = 0.98
 
 ATT.Category = {"eft_akm_stock"}
 
@@ -375,6 +415,13 @@ ATT.Attachments = {
         Icon_Offset = Vector(-0.2, 0, 0.5),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    recoilModifier = -1,
+    weight = 0.265,
+}))
 
 
 -- EFT ID: 5649b2314bdc2d79388b4576
@@ -409,6 +456,11 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.03,
+}))
+
+
 -- EFT ID: 5b222d335acfc4771e1be099
 ARC9.LoadAttachment(ATT, "eft_stock_akm_pt_lock")
 
@@ -429,9 +481,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_akm_std_wood.mdl"
 
 ATT.HasStock = true
 
-ATT.EFTErgoAdd = 3
-ATT.RecoilMult = 0.67
-ATT.VisualRecoilMult = 0.67
 
 ATT.Category = {"eft_akm_stock"}
 
@@ -444,6 +493,13 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, -9.7, -1),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    recoilModifier = -22,
+    weight = 0.45,
+}))
 
 
 -- EFT ID: 59d6514b86f774171a068a08
@@ -466,12 +522,16 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_zhukov_s.mdl"
 
 ATT.HasStock = true
 
-ATT.EFTErgoAdd = 15
-ATT.RecoilMult = 0.6
-ATT.VisualRecoilMult = 0.6
 
 ATT.Category = {"eft_akm_stock"}
 
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 15,
+    recoilModifier = -23,
+    weight = 0.425,
+}))
 
 
 -- EFT ID: 5b0e794b5acfc47a877359b2
@@ -494,9 +554,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_aks74_std.mdl"
 
 ATT.HasStock = true
 
-ATT.EFTErgoAdd = 10
-ATT.RecoilMult = 0.7
-ATT.VisualRecoilMult = 0.7
 
 ATT.Category = {"eft_aks_stock"}
 
@@ -509,6 +566,13 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, -9.7, -1),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 10,
+    recoilModifier = -21,
+    weight = 0.264,
+}))
 
 
 -- EFT ID: 5ab626e4d8ce87272e4c6e43
@@ -544,6 +608,11 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.03,
+}))
+
+
 -- EFT ID: 59ecc28286f7746d7a68aa8c
 ARC9.LoadAttachment(ATT, "eft_stock_aks_zenit_lock")
 
@@ -560,7 +629,6 @@ ATT.Description = [[CAA Receiver Extension Buffer Tube, 6-position, Mil-Spec dia
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -1
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_ak_to_m4.mdl"
 ATT.ModelOffset = Vector(0, -0.2, -0.02)
@@ -577,6 +645,12 @@ ATT.Attachments = {
         Icon_Offset = Vector(-0.2, 0, 0.5),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.198,
+}))
 
 
 -- EFT ID: 628a6678ccaab13006640e49
@@ -598,11 +672,15 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ak_izhmash_6g15u_butt_pad.mdl"
 
-ATT.EFTErgoAdd = 2
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
 
 ATT.Category = {"eft_stock_ak_pad"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 1,
+    recoilModifier = -1,
+    weight = 0.155,
+}))
 
 
 -- EFT ID: 5a0c59791526d8dba737bba7
@@ -621,9 +699,6 @@ ATT.Description = [[A standard-issue wooden stock for VPO-136 Vepr KM carbines, 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 3
-ATT.RecoilMult = 0.67
-ATT.VisualRecoilMult = 0.67
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_vpo_136.mdl"
 
@@ -640,6 +715,13 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, -9.7, -1),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    recoilModifier = -21,
+    weight = 0.45,
+}))
 
 
 -- EFT ID: 59e6227d86f77440d64f5dc2
@@ -662,9 +744,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_vpo_209.mdl"
 
 ATT.HasStock = true
 
-ATT.EFTErgoAdd = 3
-ATT.RecoilMult = 0.67
-ATT.VisualRecoilMult = 0.67
 
 ATT.Category = {"eft_akm_stock"}
 
@@ -677,6 +756,13 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, -9.7, -1),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    recoilModifier = -21,
+    weight = 0.45,
+}))
 
 
 -- EFT ID: 59e89d0986f77427600d226e
@@ -697,9 +783,6 @@ Manufactured by Zenit.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 9
-ATT.RecoilMult = 0.63
-ATT.VisualRecoilMult = 0.63
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ak_zenit_pt1.mdl"
 
@@ -718,6 +801,13 @@ ATT.Attachments = {
 }
 
 ATT.AdvancedCamoSupport = true
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 7,
+    recoilModifier = -25,
+    weight = 0.29,
+}))
+
 
 -- EFT ID: 5b222d405acfc400153af4fe
 ARC9.LoadAttachment(ATT, "eft_stock_zenit_pt1")
@@ -738,15 +828,19 @@ Manufactured by Zenit.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 11
-ATT.RecoilMult = 0.62
-ATT.VisualRecoilMult = 0.62
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ak_zenit_pt3.mdl"
 
 ATT.HasStock = true
 
 ATT.Category = {"eft_stock_zenit_lock"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 12,
+    recoilModifier = -24.5,
+    weight = 0.218,
+}))
+
 
 -- EFT ID: 59ecc3dd86f7746dc827481c
 ARC9.LoadAttachment(ATT, "eft_stock_zenit_pt3")
@@ -770,9 +864,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_aks74_std.mdl"
 
 ATT.HasStock = true
 
-ATT.EFTErgoAdd = 10
-ATT.RecoilMult = 0.79
-ATT.VisualRecoilMult = 0.79
 
 ATT.Category = {"eft_ak74m_stock", "eft_aks_stock"}
 
@@ -785,6 +876,13 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, -9.7, -1),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 10,
+    recoilModifier = -21,
+    weight = 0.264,
+}))
+
 
 -- EFT ID: 6386300124a1dc425c00577a
 ARC9.LoadAttachment(ATT, "eft_stock_ak100_skelet")
@@ -805,9 +903,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_aks74_customized.mdl"
 
 ATT.HasStock = true
 
-ATT.EFTErgoAdd = 11.5
-ATT.RecoilMult = 0.79
-ATT.VisualRecoilMult = 0.79
 
 ATT.Category = {"eft_ak74m_stock", "eft_aks_stock"}
 
@@ -820,6 +915,13 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, -9.7, -1),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 11.5,
+    recoilModifier = -21,
+    weight = 0.264,
+}))
+
 
 -- EFT ID: 66ac9d9740e27931602042d4
 ARC9.LoadAttachment(ATT, "eft_stock_ak_skelet_cust")
@@ -840,11 +942,15 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_evo.mdl"
 
 ATT.HasStock = true
 
-ATT.EFTErgoAdd = 15
-ATT.RecoilMult = 0.78
-ATT.VisualRecoilMult = 0.78
 
 ATT.Category = {"eft_ak74m_stock", "eft_aks_stock", "eft_rpk16_stock"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 15,
+    recoilModifier = -24,
+    weight = 0.397,
+}))
+
 
 -- EFT ID: 6761779c48fa5c377e06fc3f
 ARC9.LoadAttachment(ATT, "eft_stock_ak_evo")
@@ -864,9 +970,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_akms_stock"}
 
 ATT.HasStock = true
-ATT.RecoilMult = 0.98
-ATT.VisualRecoilMult = 0.98
-ATT.EFTErgoAdd = -1
 
 ATT.Attachments = {
     {
@@ -877,6 +980,13 @@ ATT.Attachments = {
         Icon_Offset = Vector(-1, 0, 0.5),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2.5,
+    recoilModifier = -0.5,
+    weight = 0.436,
+}))
+
 
 -- EFT ID: 6761763448fa5c377e06fc39
 ARC9.LoadAttachment(ATT, "eft_stock_akms_fab")
@@ -895,11 +1005,15 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ak_custom_arms_st_ef74.mdl"
 
-ATT.EFTErgoAdd = 1
-ATT.RecoilMult = 0.98
-ATT.VisualRecoilMult = 0.98
 
 ATT.Category = {"eft_stock_ak_pad_skelet"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 1,
+    recoilModifier = -2,
+    weight = 0.055,
+}))
 
 
 -- EFT ID: 6494094948796d891603e59f

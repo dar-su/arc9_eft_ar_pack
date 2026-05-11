@@ -16,7 +16,6 @@ ATT.Model = "models/weapons/arc9_eft_shared/atts/mounts/mount_dovetail_aksion_ko
 ATT.Category = {"eft_mount_dovetail"}
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -3
 ATT.ModelOffset = Vector(-0.1, 0, 0)
 
 
@@ -42,6 +41,12 @@ ATT.Attachments = {
 ATT.ModelAngleOffset = Angle(0, 90, 0)
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -3,
+    weight = 0.043,
+}))
+
+
 -- EFT ID: 591ee00d86f774592f7b841e
 ARC9.LoadAttachment(ATT, "eft_mount_dovetail_aksion_kobra")
 
@@ -63,7 +68,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.ModelOffset = Vector(0, 0, 0)
 
-ATT.EFTErgoAdd = -2
 ATT.ActivateElements = {"nolongrear"}
 
 ATT.Attachments = {
@@ -78,6 +82,12 @@ ATT.Attachments = {
 }
 
 ATT.ModelAngleOffset = Angle(0, 90, 0)
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    weight = 0.175,
+}))
 
 
 -- EFT ID: 5c61a40d2e2216001403158d
@@ -102,7 +112,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.ModelOffset = Vector(0, 0, 0)
 
-ATT.EFTErgoAdd = -2
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_scope"),
@@ -115,6 +124,12 @@ ATT.Attachments = {
 }
 
 ATT.ModelAngleOffset = Angle(0, 90, 0)
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    weight = 0.158,
+}))
 
 
 -- EFT ID: 5c90c3622e221601da359851
@@ -139,7 +154,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.ModelOffset = Vector(0, 0, 0)
 
-ATT.EFTErgoAdd = -1
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_scope"),
@@ -152,6 +166,12 @@ ATT.Attachments = {
 }
 
 ATT.ModelAngleOffset = Angle(0, 90, 0)
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.41,
+}))
 
 
 -- EFT ID: 5d0a29ead7ad1a0026013f27
@@ -176,7 +196,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.ModelOffset = Vector(-0.1, 0, 0)
 
 
-ATT.EFTErgoAdd = -1
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_scope"),
@@ -190,6 +209,12 @@ ATT.Attachments = {
 }
 
 ATT.ModelAngleOffset = Angle(0, 90, 0)
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.04,
+}))
 
 
 -- EFT ID: 618a75c9a3884f56c957ca1b
@@ -214,7 +239,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.ModelOffset = Vector(-0.06, 0, 0)
 ATT.ModelAngleOffset = Angle(0, 90, 0)
 
-ATT.EFTErgoAdd = -3
 
 ATT.Attachments = {
     {
@@ -227,6 +251,12 @@ ATT.Attachments = {
         -- ExtraSightDistance = 8
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -3,
+    weight = 0.04,
+}))
 
 
 -- EFT ID: 57acb6222459771ec34b5cb0
@@ -251,7 +281,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.ModelOffset = Vector(0, 0, 0)
 
-ATT.EFTErgoAdd = -0.5
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_scope"),
@@ -264,6 +293,12 @@ ATT.Attachments = {
 }
 
 ATT.ModelAngleOffset = Angle(0, 90, 0)
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.5,
+    weight = 0.075,
+}))
 
 
 -- EFT ID: 638db77630c4240f9e06f8b6
@@ -288,7 +323,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.ModelOffset = Vector(0, 0, 0)
 
-ATT.EFTErgoAdd = -1
 ATT.ActivateElements = {"nolongrear"}
 
 ATT.Attachments = {
@@ -303,6 +337,12 @@ ATT.Attachments = {
 }
 
 ATT.ModelAngleOffset = Angle(0, 90, 0)
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.165,
+}))
+
 
 -- EFT ID: 63d114019e35b334d82302f7
 ARC9.LoadAttachment(ATT, "eft_mount_dovetail_sag")
@@ -328,7 +368,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.ModelOffset = Vector(0, 0, 0)
 
-ATT.EFTErgoAdd = 2
 ATT.ActivateElements = {"nolongrear"}
 
 ATT.Attachments = {
@@ -343,6 +382,12 @@ ATT.Attachments = {
 }
 
 ATT.ModelAngleOffset = Angle(0, 90, 0)
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.099,
+}))
+
 
 -- EFT ID: 65f1b1176dbd6c5ba2082eed
 ARC9.LoadAttachment(ATT, "eft_mount_dovetail_rsr")

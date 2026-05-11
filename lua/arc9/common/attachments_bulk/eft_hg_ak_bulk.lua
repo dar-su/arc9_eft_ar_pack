@@ -13,7 +13,6 @@ ATT.Description = [[A standard Izhmash-produced wooden AKM handguard.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 4
 ATT.HeatCapacityMult = 1.054
 
 ATT.HasHG = true
@@ -22,6 +21,12 @@ ATT.LHIK = true
 
 ATT.RequireElements = {"gasblock"}
 ATT.Category = {"eft_ak_handguard", "eft_vityaz_handguard"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 10,
+    weight = 0.26,
+}))
 
 
 -- EFT ID: 59d64f2f86f77417193ef8b3
@@ -40,7 +45,6 @@ ATT.Description = [[A standard Izhmash-produced wooden handguard for AK-74 assau
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 4
 ATT.HeatCapacityMult = 1.054
 
 ATT.HasHG = true
@@ -49,6 +53,12 @@ ATT.LHIK = true
 
 ATT.RequireElements = {"gasblock"}
 ATT.Category = {"eft_ak_handguard", "eft_vityaz_handguard"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 11,
+    weight = 0.26,
+}))
 
 
 -- EFT ID: 5648b0744bdc2d363b8b4578
@@ -70,7 +80,6 @@ Made out of plum-colored polymer, for which has earned the nickname "Sliva" ("Pl
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 5
 ATT.HeatCapacityMult = 1.045
 
 ATT.HasHG = true
@@ -79,6 +88,12 @@ ATT.LHIK = true
 
 ATT.RequireElements = {"gasblock"}
 ATT.Category = {"eft_ak_handguard", "eft_vityaz_handguard"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 12,
+    weight = 0.25,
+}))
 
 
 -- EFT ID: 5cbda9f4ae9215000e5b9bfc
@@ -98,9 +113,6 @@ Features 4 side rails for installation of tactical devices and 2 long rails for 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 5
-ATT.RecoilMult = 0.97
-ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 0.92
 
 ATT.HasHG = true
@@ -159,6 +171,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 19,
+    weight = 0.26,
+}))
+
+
 -- EFT ID: 5cf4e3f3d7f00c06595bc7f0
 ARC9.LoadAttachment(ATT, "eft_hg_ak_agressor")
 
@@ -176,7 +194,6 @@ Features a bottom rail for installation of tactical foregrips.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 5
 ATT.HeatCapacityMult = 1.045
 
 ATT.HasHG = true
@@ -207,6 +224,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 12,
+    weight = 0.27,
+}))
+
+
 -- EFT ID: 5cbda392ae92155f3c17c39f
 ARC9.LoadAttachment(ATT, "eft_hg_ak_ak100")
 
@@ -230,7 +253,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_tdi_akm_l.mdl"
 ATT.ModelSkin = "0"
 ATT.LHIK = true
 
-ATT.EFTErgoAdd = 6
 ATT.HeatCapacityMult = 0.986
 
 ATT.RequireElements = {"gasblock"}
@@ -261,6 +283,12 @@ ATT.Attachments = {
     },
 }
 
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 15,
+    weight = 0.221,
+}))
 
 
 -- EFT ID: 5d1b198cd7ad1a604869ad72
@@ -288,7 +316,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_tdi_akm_l.mdl"
 ATT.ModelSkin = "1"
 ATT.LHIK = true
 
-ATT.EFTErgoAdd = 6
 ATT.HeatCapacityMult = 0.986
 
 ATT.RequireElements = {"gasblock"}
@@ -321,6 +348,12 @@ ATT.Attachments = {
 
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 15,
+    weight = 0.221,
+}))
+
+
 -- EFT ID: 5d4aaa73a4b9365392071175
 ARC9.LoadAttachment(ATT, "eft_hg_ak_akm_l_ab")
 
@@ -341,7 +374,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Folder = "TDI"
 
-ATT.EFTErgoAdd = 6
 ATT.HeatCapacityMult = 0.986
 
 ATT.HasHG = true
@@ -379,6 +411,12 @@ ATT.Attachments = {
 
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 15,
+    weight = 0.221,
+}))
+
+
 -- EFT ID: 5d4aaa54a4b9365392071170
 ARC9.LoadAttachment(ATT, "eft_hg_ak_akm_l_ar")
 
@@ -400,9 +438,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 -- ATT.Folder = "ZENIT"
 
-ATT.EFTErgoAdd = 9
-ATT.RecoilMult = 0.98
-ATT.VisualRecoilMult = 0.98
 ATT.HeatCapacityMult = 0.968
 
 ATT.HasHG = true
@@ -449,6 +484,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 14.5,
+    weight = 0.26,
+}))
+
+
 -- EFT ID: 5648b4534bdc2d3d1c8b4580
 ARC9.LoadAttachment(ATT, "eft_hg_ak_b10mb19")
 
@@ -469,9 +510,6 @@ ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/aksu_b11.mdl"
 ATT.LHIK = true
 
-ATT.EFTErgoAdd = 3
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 0.994
 
 ATT.RequireElements = {"gasblock"}
@@ -501,6 +539,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 12,
+    weight = 0.15,
+}))
+
+
 -- EFT ID: 57ffa9f4245977728561e844
 ARC9.LoadAttachment(ATT, "eft_hg_ak_b11")
 
@@ -520,9 +564,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 -- ATT.Folder = "ZENIT"
 
-ATT.EFTErgoAdd = 7
-ATT.RecoilMult = 0.97
-ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 0.906
 
 ATT.HasHG = true
@@ -579,6 +620,12 @@ ATT.Attachments = {
 
 ATT.AdvancedCamoSupport = true
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 18,
+    weight = 0.39,
+}))
+
+
 -- EFT ID: 5efaf417aeb21837e749c7f2
 ARC9.LoadAttachment(ATT, "eft_hg_ak_b30b31s")
 
@@ -596,9 +643,6 @@ Includes KeyMod slots for rail installation.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 10
-ATT.RecoilMult = 0.96
-ATT.VisualRecoilMult = 0.96
 ATT.HeatCapacityMult = 0.93
 
 ATT.HasHG = true
@@ -642,6 +686,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 18,
+    weight = 0.397,
+}))
+
+
 -- EFT ID: 5c17664f2e2216398b5a7e3c
 ARC9.LoadAttachment(ATT, "eft_hg_ak_cmrd")
 
@@ -662,9 +712,6 @@ ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_cncguns.mdl"
 ATT.LHIK = true
 
-ATT.EFTErgoAdd = 5
-ATT.RecoilMult = 0.975
-ATT.VisualRecoilMult = 0.975
 ATT.HeatCapacityMult = 0.966
 
 
@@ -713,6 +760,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 18,
+    weight = 0.536,
+}))
+
+
 -- EFT ID: 6389f1dfc879ce63f72fc43e
 ARC9.LoadAttachment(ATT, "eft_hg_ak_cncguns")
 
@@ -733,9 +786,6 @@ ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/aksu_goliaf.mdl"
 ATT.LHIK = true
 
-ATT.EFTErgoAdd = 3
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 1.01
 
 ATT.ExcludeElements = {"eft_muzzle_ak_ak105_std", "eft_muzzle_ak_ak74m_std", "eft_muzzle_ak_ak74_std", "eft_muzzle_ak_rrd4c74", "eft_muzzle_ak_ak74_pws_cqb", "eft_muzzle_ak_ak74_srvv", "eft_muzzle_ak_reactor", "eft_muzzle_ak_dtk1", "eft_silencer_ak_ak74_hexagon", "eft_silencer_ak_pbs4", "eft_silencer_ak_wafflemaker" }
@@ -789,6 +839,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 15,
+    weight = 0.15,
+}))
+
+
 -- EFT ID: 5d15ce51d7ad1a1eff619092
 ARC9.LoadAttachment(ATT, "eft_hg_ak_goliaf")
 
@@ -806,9 +862,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 -- ATT.Folder = "HEXAGON"
 
-ATT.EFTErgoAdd = 14
-ATT.RecoilMult = 0.97
-ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 0.952
 
 ATT.HasHG = true
@@ -852,6 +905,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 19,
+    weight = 0.167,
+}))
+
+
 -- EFT ID: 5b800e9286f7747a8b04f3ff
 ARC9.LoadAttachment(ATT, "eft_hg_ak_hexagon")
 
@@ -871,9 +930,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 -- ATT.Folder = "HEXAGON"
 
-ATT.EFTErgoAdd = 14
-ATT.RecoilMult = 0.97
-ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 0.952
 
 ATT.HasHG = true
@@ -917,6 +973,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 19,
+    weight = 0.167,
+}))
+
+
 -- EFT ID: 5b80242286f77429445e0b47
 ARC9.LoadAttachment(ATT, "eft_hg_ak_hexagon_r")
 
@@ -938,9 +1000,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Folder = "Magpul"
 
-ATT.EFTErgoAdd = 10
-ATT.RecoilMult = 0.98
-ATT.VisualRecoilMult = 0.98
 ATT.HeatCapacityMult = 1.053
 
 ATT.HasHG = true
@@ -967,6 +1026,12 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, -0.5),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 17,
+    weight = 0.221,
+}))
 
 
 -- EFT ID: 57cff947245977638e6f2a19
@@ -994,9 +1059,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_magpul_moe.mdl"
 ATT.ModelSkin = "1"
 ATT.LHIK = true 
 
-ATT.EFTErgoAdd = 10
-ATT.RecoilMult = 0.98
-ATT.VisualRecoilMult = 0.98
 ATT.HeatCapacityMult = 1.053
 
 ATT.RequireElements = {"gasblock"}
@@ -1020,6 +1082,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 17,
+    weight = 0.221,
+}))
+
+
 -- EFT ID: 57cffd8224597763b03fc609
 ARC9.LoadAttachment(ATT, "eft_hg_ak_moe_fde")
 
@@ -1040,9 +1108,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Folder = "Magpul"
 
-ATT.EFTErgoAdd = 10
-ATT.RecoilMult = 0.98
-ATT.VisualRecoilMult = 0.98
 ATT.HeatCapacityMult = 1.053
 
 ATT.HasHG = true
@@ -1071,6 +1136,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 17,
+    weight = 0.221,
+}))
+
+
 -- EFT ID: 57cffddc24597763133760c6
 ARC9.LoadAttachment(ATT, "eft_hg_ak_moe_olv")
 
@@ -1091,9 +1162,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Folder = "Magpul"
 
-ATT.EFTErgoAdd = 10
-ATT.RecoilMult = 0.98
-ATT.VisualRecoilMult = 0.98
 ATT.HeatCapacityMult = 1.053
 
 ATT.HasHG = true
@@ -1122,6 +1190,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 17,
+    weight = 0.221,
+}))
+
+
 -- EFT ID: 57cffe0024597763b03fc60b
 ARC9.LoadAttachment(ATT, "eft_hg_ak_moe_plm")
 
@@ -1140,9 +1214,6 @@ It comes equipped with licensed M-LOK mounts for the installation of additional 
 Stealth Gray version.]]
 ATT.SortOrder = 0
 
-ATT.EFTErgoAdd = 10
-ATT.RecoilMult = 0.98
-ATT.VisualRecoilMult = 0.98
 ATT.HeatCapacityMult = 1.053
 
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -1174,6 +1245,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 17,
+    weight = 0.221,
+}))
+
+
 -- EFT ID: 57cffe20245977632f391a9d
 ARC9.LoadAttachment(ATT, "eft_hg_ak_moe_sg")
 
@@ -1200,9 +1277,6 @@ ATT.RequireElements = {"gasblock"}
 ATT.ActivateElements = {"nogp34"}
 ATT.Category = {"eft_ak_handguard", "eft_vityaz_handguard"}
 
-ATT.EFTErgoAdd = 7
-ATT.RecoilMult = 0.98
-ATT.VisualRecoilMult = 0.98
 ATT.HeatCapacityMult = 1.032
 
 ATT.Attachments = {
@@ -1238,6 +1312,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 14,
+    weight = 0.22,
+}))
+
+
 -- EFT ID: 5648ae314bdc2d3d1c8b457f
 ARC9.LoadAttachment(ATT, "eft_hg_ak_rs47")
 
@@ -1256,9 +1336,6 @@ Can be combined with the TRAX 2 rail for maximum amount of modularity.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 6
-ATT.RecoilMult = 0.98
-ATT.VisualRecoilMult = 0.98
 ATT.HeatCapacityMult = 0.966
 
 ATT.HasHG = true
@@ -1304,6 +1381,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 16,
+    weight = 0.26,
+}))
+
+
 -- EFT ID: 5a9d56c8a2750c0032157146
 ARC9.LoadAttachment(ATT, "eft_hg_ak_trax1")
 
@@ -1323,9 +1406,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ak_strike_industries_trax_2.mdl"
 
-ATT.EFTErgoAdd = 5
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 0.966
 
 ATT.Category = {"eft_mount_trax_bridge"}
@@ -1348,6 +1428,12 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0.1, 0),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.26,
+}))
 
 
 -- EFT ID: 5a9d6d34a2750c00141e07da
@@ -1402,6 +1488,11 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.075,
+}))
+
+
 -- EFT ID: 5a9d6d21a2750c00137fa649
 ARC9.LoadAttachment(ATT, "eft_hg_ak_trax_bridge")
 
@@ -1422,9 +1513,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.RequireElements = {"gasblock_vdmcs"}
 ATT.ActivateElements = {"nogp34"}
 
-ATT.EFTErgoAdd = 11
-ATT.RecoilMult = 0.97
-ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 0.943
 
 ATT.HasHG = true
@@ -1480,6 +1568,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 18,
+    weight = 0.26,
+}))
+
+
 -- EFT ID: 59fb375986f7741b681b81a6
 ARC9.LoadAttachment(ATT, "eft_hg_ak_ufm")
 
@@ -1496,7 +1590,6 @@ ATT.Description = [[A standard wooden handguard for VPO-136 Vepr KM carbines, ma
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 4
 ATT.HeatCapacityMult = 1.054
 
 ATT.HasHG = true
@@ -1506,6 +1599,12 @@ ATT.LHIK = true
 ATT.RequireElements = {"gasblock"}
 
 ATT.Category = {"eft_ak_handguard", "eft_vityaz_handguard"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 10,
+    weight = 0.26,
+}))
 
 
 -- EFT ID: 59e6284f86f77440d569536f
@@ -1528,11 +1627,16 @@ ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_vepr_km_vpo_209.mdl"
 ATT.LHIK = true
 
-ATT.EFTErgoAdd = 4
 ATT.HeatCapacityMult = 1.054
 
 ATT.RequireElements = {"gasblock"}
 ATT.Category = {"eft_ak_handguard", "eft_vityaz_handguard"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 10,
+    weight = 0.26,
+}))
 
 
 -- EFT ID: 59e898ee86f77427614bd225
@@ -1556,14 +1660,18 @@ ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_wasr.mdl"
 ATT.LHIK = true
 
-ATT.EFTErgoAdd = 3
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 1.05
 
 ATT.RequireElements = {"gasblock"}
 ATT.ActivateElements = {"nogp34"}
 ATT.Category = {"eft_ak_handguard", "eft_vityaz_handguard"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 10,
+    recoilModifier = -0.5,
+    weight = 0.28,
+}))
 
 
 -- EFT ID: 5d2c829448f0353a5c7d6674
@@ -1588,9 +1696,6 @@ ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_x47.mdl"
 ATT.LHIK = true
 
-ATT.EFTErgoAdd = 10
-ATT.RecoilMult = 0.97
-ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 0.96
 
 ATT.RequireElements = {"gasblock"}
@@ -1644,6 +1749,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 18,
+    weight = 0.42,
+}))
+
+
 -- EFT ID: 5f6331e097199b7db2128dc2
 ARC9.LoadAttachment(ATT, "eft_hg_ak_x47")
 
@@ -1664,9 +1775,6 @@ ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/aksu_xrsu.mdl"
 ATT.LHIK = true
 
-ATT.EFTErgoAdd = 10
-ATT.RecoilMult = 0.97
-ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 0.931
 
 ATT.RequireElements = {"gasblock"}
@@ -1714,6 +1822,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 17,
+    weight = 0.52,
+}))
+
+
 -- EFT ID: 5a957c3fa2750c00137fa5f7
 ARC9.LoadAttachment(ATT, "eft_hg_ak_xrsu47")
 
@@ -1734,9 +1848,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Folder = "Magpul"
 
-ATT.EFTErgoAdd = 14
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 1.072
 
 ATT.HasHG = true
@@ -1772,6 +1883,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 18.5,
+    weight = 0.31,
+}))
+
+
 -- EFT ID: 5c9a07572e221644f31c4b32
 ARC9.LoadAttachment(ATT, "eft_hg_ak_zhu")
 
@@ -1792,9 +1909,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Folder = "Magpul"
 
-ATT.EFTErgoAdd = 14
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 1.072
 
 ATT.HasHG = true
@@ -1830,6 +1944,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 18.5,
+    weight = 0.31,
+}))
+
+
 -- EFT ID: 5c9a1c3a2e2216000e69fb6a
 ARC9.LoadAttachment(ATT, "eft_hg_ak_zhu_fde")
 
@@ -1850,9 +1970,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Folder = "Magpul"
 
-ATT.EFTErgoAdd = 14
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 1.072
 
 ATT.HasHG = true
@@ -1888,6 +2005,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 18.5,
+    weight = 0.31,
+}))
+
+
 -- EFT ID: 5c9a1c422e221600106f69f0
 ARC9.LoadAttachment(ATT, "eft_hg_ak_zhu_plm")
 
@@ -1913,9 +2036,6 @@ ATT.RequireElements = {"gasblock"}
 -- ATT.ActivateElements = {"nogp34"}
 ATT.Category = {"eft_ak_handguard", "eft_vityaz_handguard"}
 
-ATT.EFTErgoAdd = 8
-ATT.RecoilMult = 0.985
-ATT.VisualRecoilMult = 0.985
 ATT.HeatCapacityMult = 1.032
 
 ATT.Attachments = {
@@ -1938,6 +2058,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 16.5,
+    weight = 0.315,
+}))
+
+
 -- EFT ID: 647dba3142c479dde701b654
 ARC9.LoadAttachment(ATT, "eft_hg_ak_dominat")
 
@@ -1954,9 +2080,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 -- ATT.Folder = "ZENIT"
 
-ATT.EFTErgoAdd = 9
-ATT.RecoilMult = 0.975
-ATT.VisualRecoilMult = 0.975
 ATT.HeatCapacityMult = 0.906
 
 ATT.HasHG = true
@@ -2012,6 +2135,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 19,
+    weight = 0.37,
+}))
+
+
 -- EFT ID: 647dd2b8a12ebf96c3031655
 ARC9.LoadAttachment(ATT, "eft_hg_ak_aspid")
 
@@ -2028,9 +2157,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 -- ATT.Folder = "HEXAGON"
 
-ATT.EFTErgoAdd = 15
-ATT.RecoilMult = 0.98
-ATT.VisualRecoilMult = 0.98
 ATT.HeatCapacityMult = 0.952
 
 ATT.HasHG = true
@@ -2067,6 +2193,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 15,
+    weight = 0.27,
+}))
+
+
 -- EFT ID: 651bfe4d1065f87f082e7209
 ARC9.LoadAttachment(ATT, "eft_hg_ak_hartman")
 
@@ -2096,6 +2228,11 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.019,
+}))
+
+
 -- EFT ID: 65434a4e4e3a01736a6c9706
 ARC9.LoadAttachment(ATT, "eft_mount_lenok_70")
 
@@ -2113,7 +2250,6 @@ ATT.Description = [[A polymer handguard for the Velociraptor assault rifle. A mo
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 7
 ATT.HeatCapacityMult = 1.045
 
 ATT.HasGas = true
@@ -2122,6 +2258,12 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ak_velociraptor_lhik.m
 ATT.LHIK = true
 
 ATT.Category = {"eft_velociraptor_handguard"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 11,
+    weight = 0.17,
+}))
+
 
 -- EFT ID: 674d5e287075e056160e0176
 ARC9.LoadAttachment(ATT, "eft_hg_velociraptor_std")
@@ -2143,7 +2285,6 @@ ATT.Category = {"eft_b12"}
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_b12.mdl"
 
-ATT.EFTErgoAdd = -1
 
 ATT.Attachments = {
     {
@@ -2162,6 +2303,12 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.087,
+}))
+
 
 -- EFT ID: 57ffaea724597779f52b3a4d
 ARC9.LoadAttachment(ATT, "eft_mount_b12")
@@ -2194,6 +2341,12 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, -1),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.2,
+    weight = 0.075,
+}))
 
 
 -- EFT ID: 5b800ebc86f774394e230a90
@@ -2232,6 +2385,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.2,
+    weight = 0.075,
+}))
+
+
 -- EFT ID: 5b8403a086f7747ff856f4e2
 ARC9.LoadAttachment(ATT, "eft_mount_hexagon_m_ar")
 
@@ -2263,6 +2422,12 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.15,
+    weight = 0.07,
+}))
 
 
 -- EFT ID: 5b800ed086f7747baf6e2f9e
@@ -2299,6 +2464,12 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.15,
+    weight = 0.07,
+}))
 
 
 -- EFT ID: 5b84038986f774774913b0c1

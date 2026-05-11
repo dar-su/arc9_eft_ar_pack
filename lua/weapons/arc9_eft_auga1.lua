@@ -15,6 +15,7 @@ SWEP.Description = ARC9:GetPhrase("eft_weapon_auga1_desc")
 SWEP.DefaultElements = {"auga1"} -- owo
 
 SWEP.EFTErgo = 83
+SWEP.EFTWeight = 1.49
 
 SWEP.DropMagazineTime = 0.45
 SWEP.DropMagazineVelocity = Vector(0, -66, 0)

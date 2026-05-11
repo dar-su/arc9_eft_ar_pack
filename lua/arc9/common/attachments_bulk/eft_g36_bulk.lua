@@ -12,11 +12,7 @@ ATT.Description = "A 228mm 5.56x45 NATO barrel for the HK G36 assault rifle."
 
 ATT.HasBarrel = true 
 
-ATT.EFTErgoAdd = -8
-ATT.RecoilMult = 0.98
-ATT.VisualRecoilMult = 0.98
 ATT.HeatCapacityMult = 1.11
-ATT.PhysBulletMuzzleVelocityMult = 0.8369
 ATT.Spread = 2.75 * ARC9.MOAToAcc
 
 ATT.ActivateElements = {"barrel_228mm"}
@@ -41,6 +37,14 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    recoilModifier = -4.6,
+    weight = 0.39,
+    velocity = -26,
+}))
+
+
 -- EFT ID: 622b379bf9cfc87d675d2de5
 ARC9.LoadAttachment(ATT, "eft_g36_barrel_228")
 
@@ -56,11 +60,7 @@ ATT.Description = "A 318mm 5.56x45 NATO barrel for the HK G36 assault rifle."
 
 ATT.HasBarrel = true 
 
-ATT.EFTErgoAdd = -12
-ATT.RecoilMult = 0.97
-ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 1.04
-ATT.PhysBulletMuzzleVelocityMult = 0.8769
 ATT.Spread = 2.06 * ARC9.MOAToAcc
 
 ATT.ActivateElements = {"barrel_318mm"}
@@ -87,6 +87,14 @@ ATT.Attachments = {
 
 ATT.MuzzleEffectQCA = 5
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -12,
+    recoilModifier = -6.4,
+    weight = 0.47,
+    velocity = -18,
+}))
+
+
 -- EFT ID: 622b3858034a3e17ad0b81f5
 ARC9.LoadAttachment(ATT, "eft_g36_barrel_318")
 
@@ -102,9 +110,6 @@ ATT.Description = "A 480mm 5.56x45 NATO barrel for the HK G36 assault rifle."
 
 ATT.HasBarrel = true 
 
-ATT.EFTErgoAdd = -16
-ATT.RecoilMult = 0.96
-ATT.VisualRecoilMult = 0.96
 ATT.HeatCapacityMult = 0.98
 ATT.PhysBulletMuzzleVelocityMult = 0.9569
 ATT.Spread = 1.79 * ARC9.MOAToAcc
@@ -133,6 +138,13 @@ ATT.Attachments = {
 
 ATT.MuzzleEffectQCA =6 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -26,
+    recoilModifier = -9.6,
+    weight = 0.69,
+}))
+
+
 -- EFT ID: 622b38c56762c718e457e246
 ARC9.LoadAttachment(ATT, "eft_g36_barrel_480")
 
@@ -149,13 +161,17 @@ ATT.Description = "A polymer adjustable 4-position stock for the G36, manufactur
 
 ATT.HasStock = true
 
-ATT.EFTErgoAdd = 1
-ATT.RecoilMult = 0.78
-ATT.VisualRecoilMult = 0.78
 
 ATT.SortOrder = 0
 ATT.Category = "eft_g36_stock"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 10,
+    recoilModifier = -22,
+    weight = 0.907,
+}))
+
 
 -- EFT ID: 622f14e899892a7f9e08f6c5
 ARC9.LoadAttachment(ATT, "eft_g36_stock_kv")
@@ -171,13 +187,17 @@ ATT.Description = "A polymer stock for the G36, manufactured by Heckler & Koch."
 
 ATT.HasStock = true
 
-ATT.EFTErgoAdd = 7
-ATT.RecoilMult = 0.81
-ATT.VisualRecoilMult = 0.81
 
 ATT.SortOrder = 0
 ATT.Category = "eft_g36_stock"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 7,
+    recoilModifier = -19,
+    weight = 0.454,
+}))
+
 
 -- EFT ID: 622f140da5958f63c67f1735
 ARC9.LoadAttachment(ATT, "eft_g36_stock_std")
@@ -210,6 +230,11 @@ ATT.ExcludeElements = {
     "eft_mount_30mm_nf",
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.07,
+}))
+
+
 -- EFT ID: 623166e08c43374ca1567195
 ARC9.LoadAttachment(ATT, "eft_g36_fs_std")
 
@@ -237,6 +262,11 @@ ATT.ExcludeElements = {
     "eft_mount_30mm_nf",
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.15,
+}))
+
+
 -- EFT ID: 6231670f0b8aa5472d060095
 ARC9.LoadAttachment(ATT, "eft_g36_rs_std")
 
@@ -251,9 +281,6 @@ ATT.Description = "A standard polymer 6-vent handguard with a heatshield for the
 
 ATT.HasHG = true
 
-ATT.EFTErgoAdd = 7
-ATT.RecoilMult = 0.98
-ATT.VisualRecoilMult = 0.98
 ATT.HeatCapacityMult = 0.975
 
 ATT.SortOrder = 0
@@ -273,6 +300,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 18,
+    weight = 0.38,
+}))
+
+
 -- EFT ID: 6231654c71b5bc3baa1078e5
 ARC9.LoadAttachment(ATT, "eft_g36_hg_6")
 
@@ -287,9 +320,6 @@ ATT.Description = "A standard polymer 4-vent handguard with a heatshield for the
 
 ATT.HasHG = true
 
-ATT.EFTErgoAdd = 9
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 1.05
 
 ATT.ExcludeElements = {"eft_g36_barrel_228", "eft_g36_barrel_480"}
@@ -329,6 +359,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 14,
+    weight = 0.28,
+}))
+
+
 -- EFT ID: 62386b7153757417e93a4e9f
 ARC9.LoadAttachment(ATT, "eft_g36_hg_4")
 
@@ -343,7 +379,6 @@ ATT.Description = "A standard polymer 2-vent handguard with a heatshield for the
 
 ATT.HasHG = true
 
-ATT.EFTErgoAdd = 12
 ATT.HeatCapacityMult = 1.07
 
 ATT.SortOrder = 0
@@ -383,6 +418,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 12,
+    weight = 0.23,
+}))
+
+
 -- EFT ID: 62386b2adf47d66e835094b2
 ARC9.LoadAttachment(ATT, "eft_g36_hg_2")
 
@@ -411,6 +452,11 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.05,
+}))
+
 
 -- EFT ID: 62444cd3674028188b052799
 ARC9.LoadAttachment(ATT, "eft_g36_hg_mount_side")
@@ -441,6 +487,11 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.07,
+}))
+
+
 -- EFT ID: 62444cb99f47004c781903eb
 ARC9.LoadAttachment(ATT, "eft_g36_hg_mount_bottom")
 
@@ -457,13 +508,18 @@ ATT.Description = "A gas block designed for the G36 assault rifles, manufactured
 
 ATT.HasGas = true
 
-ATT.EFTErgoAdd = -1
 ATT.HeatCapacityMult = 0.995
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_g36_gas"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.06,
+}))
+
 
 -- EFT ID: 622b327b267a1b13a44abea3
 ARC9.LoadAttachment(ATT, "eft_g36_gas_std")
@@ -478,12 +534,17 @@ ATT.CompactName = "G36 HS"
 ATT.Icon = Material("entities/eft_g36_attachments/hk_g36_hand_stop.png", "mips smooth")
 ATT.Description = "A polymer hand stop for the G36. Manufactured by Heckler & Koch."
 
-ATT.EFTErgoAdd = 1
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_g36_handstop"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 1,
+    weight = 0.005,
+}))
+
 
 -- EFT ID: 622f16a1a5958f63c67f1737
 ARC9.LoadAttachment(ATT, "eft_g36_hg_handstop")
@@ -502,7 +563,6 @@ A bit improvised version of EFT bipods, does not need manual unfolding.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -2
 
 ATT.Bipod = true 
 ATT.RecoilMultBipod = 0.33
@@ -512,6 +572,12 @@ ATT.HoldBreathTimeMultBipod = 30
 ATT.SwayMultBipod = 0.1
 
 ATT.Category = {"eft_bipod_g36"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -4,
+    weight = 0.226,
+}))
+
 
 -- EFT ID: 622b397c9a3d4327e41843b6
 ARC9.LoadAttachment(ATT, "eft_g36_hg_bipod")
@@ -531,11 +597,16 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasChassis = true
 
-ATT.EFTErgoAdd = -1
 
 ATT.ActivateElements = {"magwell"}
 ATT.Category = {"eft_magwell_g36"}
 -- ATT.ExcludeElements = {"eft_g36_mag"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.02,
+}))
+
 
 -- EFT ID: 622f039199f4ea1a4d6c9a17
 ARC9.LoadAttachment(ATT, "eft_g36_magwell_stanag")
@@ -554,11 +625,16 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasChassis = true
 
-ATT.EFTErgoAdd = 0.5
 
 ATT.ActivateElements = {"magwell"}
 ATT.Category = {"eft_magwell_g36"}
 -- ATT.ExcludeElements = {"eft_ar15_mag"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 0.5,
+    weight = 0.02,
+}))
+
 
 -- EFT ID: 622f02437762f55aaa68ac85
 ARC9.LoadAttachment(ATT, "eft_g36_magwell_std")
@@ -574,7 +650,6 @@ ATT.CompactName = "G36"
 ATT.Icon = Material("entities/eft_g36_attachments/hk_g36_sight_mount.png", "mips smooth")
 ATT.Description = "A mount for sights and tactical attachments, installs on HK G36."
 
-ATT.EFTErgoAdd = -1
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -612,6 +687,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.312,
+}))
+
+
 -- EFT ID: 622b3c081b89c677a33bcda6
 ARC9.LoadAttachment(ATT, "eft_g36_top_std")
 
@@ -625,7 +706,6 @@ ATT.CompactName = "G36 flip-up"
 ATT.Icon = Material("entities/eft_g36_attachments/hk_g36_optic_rail_with_flipup_sights.png", "mips smooth")
 ATT.Description = "An HK G36 optic rail that features flip-up front and rear sights, giving you more space to mount scopes and tactical attachments."
 
-ATT.EFTErgoAdd = -1
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -657,6 +737,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.453,
+}))
+
+
 -- EFT ID: 622b3d5cf9cfc87d675d2de9
 ARC9.LoadAttachment(ATT, "eft_g36_top_flip")
 
@@ -670,7 +756,6 @@ ATT.CompactName = "HKV 3x"
 ATT.Icon = Material("entities/eft_g36_attachments/hk_g36_hensoldt_hkv_3x_carry_handle.png", "mips smooth")
 ATT.Description = "The HKV carry handle with ZF optic sight and RV red dot carrier. The optical sight provides a threefold zoom and has a truly miniature 4 mm objective lens. Also includes open non-removable ironsights in the upper part of the carrying handle."
 
-ATT.EFTErgoAdd = -2
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -723,6 +808,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    weight = 0.198,
+}))
+
+
 -- EFT ID: 622b4d7df9cfc87d675d2ded
 ARC9.LoadAttachment(ATT, "eft_g36_top_3x")
 
@@ -736,7 +827,6 @@ ATT.CompactName = "HKV 1.5x"
 ATT.Icon = Material("entities/eft_g36_attachments/hk_g36_hensoldt_hkv_zf_15x_carry_handle.png", "mips smooth")
 ATT.Description = "The HKV carry handle with ZF optic sight and RV red dot carrier. The optical sight provides a 1.5x zoom and has a truly miniature 4 mm objective lens. Also includes open non-removable ironsights in the upper part of the carrying handle."
 
-ATT.EFTErgoAdd = -2
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -779,6 +869,12 @@ ATT.RTScopeNew_ShadowScale = 0.5
 
 ATT.ScopeScreenRatio = 366/1080
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    weight = 0.192,
+}))
+
+
 -- EFT ID: 622b4f54dc8dcc0ba8742f85
 ARC9.LoadAttachment(ATT, "eft_g36_top_15x")
 
@@ -807,6 +903,11 @@ ATT.Attachments = {
 
 ATT.Category = {"eft_g36_hensoldt_mount"}
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.015,
+}))
+
+
 -- EFT ID: 622efdf8ec80d870d349b4e5
 ARC9.LoadAttachment(ATT, "eft_g36_hensoldt_rail")
 
@@ -819,7 +920,6 @@ ATT.CompactName = "RV"
 ATT.Icon = Material("entities/eft_g36_attachments/hensoldt_rv_red_dot_sight.png", "mips smooth")
 ATT.Description = "Hensoldt RV is part of the HKV sighting system. RV has a light accumulator, which allows it to operate from an external light source. The red dot manually switches to AA battery power in the absence of a sufficient level of illumination."
 
-ATT.EFTErgoAdd = -2
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -843,6 +943,12 @@ ATT.HoloSightColorable = false
 
 ATT.Category = {"eft_g36_hensoldt_mount"}
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    weight = 0.227,
+}))
+
+
 -- EFT ID: 622efbcb99f4ea1a4d6c9a15
 ARC9.LoadAttachment(ATT, "eft_g36_hensoldt_sight")
 
@@ -857,8 +963,6 @@ ATT.CompactName = "G36 30"
 ATT.Icon = Material("entities/eft_g36_attachments/hk_g36_556x45_30round_magazine.png", "mips smooth")
 ATT.Description = "A 30-round 5.56x45 magazine designed for the HK G36."
 
-ATT.EFTErgoAdd = -3
-ATT.MalfunctionMeanShotsToFailMult = 0.95
 ATT.EFTImprovedMagCheck = true
 
 ATT.ActivateElements = {"g36_30rnd"}
@@ -952,6 +1056,13 @@ ATT.ReloadHideBoneTables = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.14,
+    malfunctionChance = 0.08,
+}))
+
+
 -- EFT ID: 62307b7b10d2321fa8741921
 ARC9.LoadAttachment(ATT, "eft_g28_mag_30")
 
@@ -967,8 +1078,6 @@ ATT.Description = [[A 30-round 5.56x45 magazine designed for the HK G36.
 
 original nontransparent version like in tarkov]]
 
-ATT.EFTErgoAdd = -3
-ATT.MalfunctionMeanShotsToFailMult = 0.95
 ATT.EFTImprovedMagCheck = true
 
 ATT.ActivateElements = {"g36_30rnd"}
@@ -986,6 +1095,13 @@ ATT.ShouldDropMag = false
 ATT.ShouldDropMagEmpty = false
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_g36_30.mdl"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_g36_30.mdl"
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.14,
+    malfunctionChance = 0.08,
+}))
+
 
 -- EFT ID: 62307b7b10d2321fa8741921
 ARC9.LoadAttachment(ATT, "eft_g28_mag_30old")
@@ -1008,13 +1124,16 @@ ATT.MuzzleDevice = true
 ATT.MuzzleDevice_Priority = 4
 ATT.BarrelLengthAdd = 0.5
 
-ATT.EFTErgoAdd = -1
-ATT.RecoilMult = 0.95
-ATT.VisualRecoilMult = 0.95
-ATT.SpreadMult = 0.97
-ATT.HeatCapacityMult = 0.99
 
 ATT.Category = {"eft_g36_muzzle"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.5,
+    recoilModifier = -5.5,
+    accuracyModifier = 3,
+    weight = 0.063,
+}))
+
 
 -- EFT ID: 622f07cfae33bc505b2c4dd5
 ARC9.LoadAttachment(ATT, "eft_g36_muzzle_std")
@@ -1035,12 +1154,17 @@ ATT.MuzzleDevice = true
 ATT.MuzzleDevice_Priority = 4
 ATT.BarrelLengthAdd = 0.5
 
-ATT.RecoilMult = 0.95
-ATT.VisualRecoilMult = 0.95
-ATT.SpreadMult = 0.97
 ATT.HeatCapacityMult = 0.99
 
 ATT.Category = {"eft_g36_muzzle"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    recoilModifier = -6,
+    accuracyModifier = 3,
+    weight = 0.05,
+}))
+
 
 -- EFT ID: 622f0ee47762f55aaa68ac87
 ARC9.LoadAttachment(ATT, "eft_g36_muzzle_c")
@@ -1061,13 +1185,17 @@ ATT.MuzzleDevice = true
 ATT.MuzzleDevice_Priority = 4
 ATT.BarrelLengthAdd = 0.5
 
-ATT.EFTErgoAdd = -1
-ATT.RecoilMult = 0.94
-ATT.VisualRecoilMult = 0.94
-ATT.SpreadMult = 0.97
 ATT.HeatCapacityMult = 0.99
 
 ATT.Category = {"eft_g36_muzzle"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    recoilModifier = -6,
+    accuracyModifier = 3,
+    weight = 0.06,
+}))
+
 
 -- EFT ID: 622f128cec80d870d349b4e8
 ARC9.LoadAttachment(ATT, "eft_g36_muzzle_4")
@@ -1087,9 +1215,6 @@ ATT.Description = "A polymer adjustable 4-position stock for the G36, manufactur
 
 ATT.HasStock = true
 
-ATT.EFTErgoAdd = 8
-ATT.RecoilMult = 0.78
-ATT.VisualRecoilMult = 0.78
 
 ATT.SortOrder = 0
 ATT.Category = "eft_g36_stock"
@@ -1105,6 +1230,13 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 9,
+    recoilModifier = -21,
+    weight = 0.41,
+}))
+
+
 -- EFT ID: 67110d06723c2733410161e8
 ARC9.LoadAttachment(ATT, "eft_g36_stock_idz")
 
@@ -1117,13 +1249,16 @@ ATT.CompactName = "IDZ Concave"
 ATT.Icon = Material("entities/eft_g36_attachments/g36pad.png", "mips smooth")
 ATT.Description = "A concave buttpad designed for installation on IDZ stocks for the G36 assault rifle. Manufactured by Heckler & Koch."
 
-ATT.EFTErgoAdd = 3
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
-
 ATT.SortOrder = 0
 ATT.Category = "eft_g36idz_buttpad"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    recoilModifier = -1,
+    weight = 0.06,
+}))
+
 
 -- EFT ID: 67110d6fa71d1f123d021cd3
 ARC9.LoadAttachment(ATT, "eft_g36_stock_idz_butt_cave")
@@ -1137,13 +1272,16 @@ ATT.CompactName = "IDZ Convex"
 ATT.Icon = Material("entities/eft_g36_attachments/g36padbig.png", "mips smooth")
 ATT.Description = "An extended convex buttpad designed for installation on IDZ stocks for the G36 assault rifle. Manufactured by Heckler & Koch."
 
-ATT.EFTErgoAdd = 1
-ATT.RecoilMult = 0.97
-ATT.VisualRecoilMult = 0.97
 
 ATT.SortOrder = 0
 ATT.Category = "eft_g36idz_buttpad"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    recoilModifier = -2,
+    weight = 0.06,
+}))
+
 
 -- EFT ID: 67110d5ed1758189fc0bd221
 ARC9.LoadAttachment(ATT, "eft_g36_stock_idz_butt_vex")
@@ -1175,6 +1313,13 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    recoilModifier = -0.5,
+    weight = 0.14,
+}))
+
+
 -- EFT ID: 6706a159c67236b2f703bb95
 ARC9.LoadAttachment(ATT, "eft_g36_stock_buffer")
 
@@ -1189,9 +1334,6 @@ ATT.Description = "A quad rail Picatinny handguard for the G36K assault rifle. M
 
 ATT.HasHG = true
 
-ATT.EFTErgoAdd = 8
-ATT.RecoilMult = 0.975
-ATT.VisualRecoilMult = 0.975
 
 ATT.ExcludeElements = {"eft_g36_barrel_228"}
 
@@ -1243,6 +1385,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 15,
+    weight = 0.51,
+}))
+
+
 -- EFT ID: 67069d66af4890b09f0006ec
 ARC9.LoadAttachment(ATT, "eft_g36_hg_quad")
 
@@ -1256,10 +1404,6 @@ ATT.Icon = Material("entities/eft_g36_attachments/g36hgidk3.png", "mips smooth")
 ATT.Description = "A low-profile handguard with an HKey mounting interface for the G36K assault rifle. Manufactured by Heckler & Koch."
 
 ATT.HasHG = true
-
-ATT.EFTErgoAdd = 8
-ATT.RecoilMult = 0.975
-ATT.VisualRecoilMult = 0.975
 
 ATT.ExcludeElements = {"eft_g36_barrel_228"}
 
@@ -1313,6 +1457,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 15,
+    weight = 0.44,
+}))
+
+
 -- EFT ID: 67069d8dad91f3a63c0bc2b4
 ARC9.LoadAttachment(ATT, "eft_g36_hg_slim")
 
@@ -1344,6 +1494,12 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.15,
+    weight = 0.07,
+}))
 
 
 -- EFT ID: 67069d3bb29a2cd338033390

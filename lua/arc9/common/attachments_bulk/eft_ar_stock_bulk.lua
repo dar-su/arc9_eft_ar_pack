@@ -26,11 +26,15 @@ ATT.SortOrder = 0
 ATT.Category = "eft_ar15_pgripstock"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 13
-ATT.RecoilMult = 0.72
-ATT.VisualRecoilMult = 0.72
 
 ATT.HasGrip = true
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 13,
+    recoilModifier = -20,
+    weight = 0.695,
+}))
+
 
 -- EFT ID: 5c0e2ff6d174af02a1659d4a
 ARC9.LoadAttachment(ATT, "eft_ar_stock_adar")
@@ -50,17 +54,19 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_izhmash_ak12_std.mdl"
 
 ATT.HasStock = true
 
-ATT.RecoilMult = 0.7
-ATT.VisualRecoilMult = 0.7
-
-ATT.EFTErgoAdd = 3
-
 ATT.SortOrder = 0
 ATT.Category = "eft_ar_stock"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 
 ATT.AdvancedCamoSupport = true
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 11,
+    recoilModifier = -21,
+    weight = 0.148,
+}))
+
 
 -- EFT ID: 5beec8c20db834001d2c465c
 ARC9.LoadAttachment(ATT, "eft_ar_stock_ak12")
@@ -81,14 +87,15 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_magpul_rubber_butt_pa
 
 -- ATT.HasStock = true
 
-ATT.RecoilMult = 0.97
-ATT.VisualRecoilMult = 0.97
-
-ATT.EFTErgoAdd = 2
-
 ATT.SortOrder = 0
 ATT.Category = "eft_ar_buttpad"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.055,
+}))
 
 
 -- EFT ID: 58d2912286f7744e27117493
@@ -109,17 +116,19 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_magpul_ctr_carbine.md
 
 ATT.HasStock = true
 
-ATT.RecoilMult = 0.68
-ATT.VisualRecoilMult = 0.68
-
-ATT.EFTErgoAdd = 10
-
 ATT.SortOrder = 0
 ATT.Category = "eft_ar_stock"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Folder = "Magpul"
 
 ATT.AdvancedCamoSupport = true
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 10,
+    recoilModifier = -21,
+    weight = 0.226,
+}))
+
 
 -- EFT ID: 5d135e83d7ad1a21b83f42d8
 ARC9.LoadAttachment(ATT, "eft_ar_stock_ctr")
@@ -140,17 +149,19 @@ ATT.ModelSkin = 1
 
 ATT.HasStock = true
 
-ATT.RecoilMult = 0.68
-ATT.VisualRecoilMult = 0.68
-
-ATT.EFTErgoAdd = 10
-
 ATT.SortOrder = 0
 ATT.Category = "eft_ar_stock"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Folder = "Magpul"
 
 ATT.AdvancedCamoSupport = true
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 10,
+    recoilModifier = -21,
+    weight = 0.226,
+}))
+
 
 -- EFT ID: 5d135ecbd7ad1a21c176542e
 ARC9.LoadAttachment(ATT, "eft_ar_stock_ctrf")
@@ -170,14 +181,16 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_kriss_defiance_ds150.
 
 ATT.HasStock = true
 
-ATT.RecoilMult = 0.68
-ATT.VisualRecoilMult = 0.68
-
-ATT.EFTErgoAdd = 9
-
 ATT.SortOrder = 0
 ATT.Category = "eft_ar_stock"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 10,
+    recoilModifier = -21.5,
+    weight = 0.4,
+}))
 
 
 -- EFT ID: 5fbbaa86f9986c4cff3fe5f6
@@ -199,14 +212,16 @@ ATT.ModelSkin = 1
 
 ATT.HasStock = true
 
-ATT.RecoilMult = 0.68
-ATT.VisualRecoilMult = 0.68
-
-ATT.EFTErgoAdd = 9
-
 ATT.SortOrder = 0
 ATT.Category = "eft_ar_stock"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 10,
+    recoilModifier = -21.5,
+    weight = 0.4,
+}))
 
 
 -- EFT ID: 5fce16961f152d4312622bc9
@@ -227,14 +242,16 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_hk_e1.mdl"
 
 ATT.HasStock = true
 
-ATT.RecoilMult = 0.67
-ATT.VisualRecoilMult = 0.67
-
-ATT.EFTErgoAdd = 4
-
 ATT.SortOrder = 0
 ATT.Category = "eft_ar_stock"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 6,
+    recoilModifier = -22,
+    weight = 0.39,
+}))
 
 
 -- EFT ID: 5c87a07c2e2216001219d4a2
@@ -255,14 +272,16 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_vltor_emod.mdl"
 
 ATT.HasStock = true
 
-ATT.RecoilMult = 0.69
-ATT.VisualRecoilMult = 0.69
-
-ATT.EFTErgoAdd = 9
-
 ATT.SortOrder = 0
 ATT.Category = "eft_ar_stock"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 7,
+    recoilModifier = -21.5,
+    weight = 0.39,
+}))
 
 
 -- EFT ID: 5b39f8db5acfc40016387a1b
@@ -285,15 +304,17 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_fab_defense_glr_16_s.
 
 ATT.HasStock = true
 
-ATT.RecoilMult = 0.71
-ATT.VisualRecoilMult = 0.71
-
-ATT.EFTErgoAdd = 13
-
 ATT.SortOrder = 0
 ATT.Category = "eft_ar_stock"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Folder = "FAB"
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 6,
+    recoilModifier = -21.5,
+    weight = 0.276,
+}))
 
 
 -- EFT ID: 5bfe86df0db834001b734685
@@ -314,15 +335,17 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_fab_defense_gl_shock.
 
 ATT.HasStock = true
 
-ATT.RecoilMult = 0.71
-ATT.VisualRecoilMult = 0.71
-
-ATT.EFTErgoAdd = 13
-
 ATT.SortOrder = 0
 ATT.Category = "eft_ar_stock"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Folder = "FAB"
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 4,
+    recoilModifier = -22.5,
+    weight = 0.308,
+}))
 
 
 -- EFT ID: 5a9eb32da2750c00171b3f9c
@@ -349,9 +372,13 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasGrip = true
 
-ATT.EFTErgoAdd = 20
-ATT.RecoilMult = 0.67
-ATT.VisualRecoilMult = 0.67
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 15,
+    recoilModifier = -23,
+    weight = 0.499,
+}))
+
 
 -- EFT ID: 5a33e75ac4a2826c6e06d759
 ARC9.LoadAttachment(ATT, "eft_ar_stock_heracqr")
@@ -372,10 +399,6 @@ ATT.ModelSkin = 0
 
 ATT.HasStock = true
 
-ATT.RecoilMult = 0.7
-ATT.VisualRecoilMult = 0.7
-
-ATT.EFTErgoAdd = 8
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar_stock"
@@ -391,6 +414,13 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 8,
+    recoilModifier = -21,
+    weight = 0.226,
+}))
 
 
 -- EFT ID: 56eabf3bd2720b75698b4569
@@ -412,10 +442,6 @@ ATT.ModelSkin = 1
 
 ATT.HasStock = true
 
-ATT.RecoilMult = 0.7
-ATT.VisualRecoilMult = 0.7
-
-ATT.EFTErgoAdd = 8
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar_stock"
@@ -431,6 +457,13 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 8,
+    recoilModifier = -21,
+    weight = 0.226,
+}))
 
 
 -- EFT ID: 58d2946386f774496974c37e
@@ -452,10 +485,6 @@ ATT.ModelSkin = 2
 
 ATT.HasStock = true
 
-ATT.RecoilMult = 0.7
-ATT.VisualRecoilMult = 0.7
-
-ATT.EFTErgoAdd = 8
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar_stock"
@@ -471,6 +500,13 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 8,
+    recoilModifier = -21,
+    weight = 0.226,
+}))
 
 
 -- EFT ID: 58d2946c86f7744e271174b5
@@ -492,10 +528,6 @@ ATT.ModelSkin = 3
 
 ATT.HasStock = true
 
-ATT.RecoilMult = 0.7
-ATT.VisualRecoilMult = 0.7
-
-ATT.EFTErgoAdd = 8
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar_stock"
@@ -511,6 +543,13 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 8,
+    recoilModifier = -21,
+    weight = 0.226,
+}))
 
 
 -- EFT ID: 58d2947686f774485c6a1ee5
@@ -532,10 +571,6 @@ ATT.ModelSkin = 4
 
 ATT.HasStock = true
 
-ATT.RecoilMult = 0.7
-ATT.VisualRecoilMult = 0.7
-
-ATT.EFTErgoAdd = 8
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar_stock"
@@ -551,6 +586,13 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 8,
+    recoilModifier = -21,
+    weight = 0.226,
+}))
 
 
 -- EFT ID: 58d2947e86f77447aa070d53
@@ -574,15 +616,19 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_magpul_prs_gen3.mdl"
 
 ATT.HasStock = true
 
-ATT.RecoilMult = 0.66
-ATT.VisualRecoilMult = 0.66
-
-ATT.EFTErgoAdd = 3
 
 ATT.SortOrder = 0
 ATT.Category = {"eft_ar_stock", "eft_ar_stock_a2"}
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Folder = "Magpul"
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 1,
+    recoilModifier = -24,
+    accuracyModifier = 5,
+    weight = 0.78,
+}))
 
 
 -- EFT ID: 5d44069ca4b9361ebd26fc37
@@ -604,15 +650,19 @@ ATT.ModelSkin = 1
 
 ATT.HasStock = true
 
-ATT.RecoilMult = 0.66
-ATT.VisualRecoilMult = 0.66
-
-ATT.EFTErgoAdd = 3
 
 ATT.SortOrder = 0
 ATT.Category = {"eft_ar_stock", "eft_ar_stock_a2"}
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Folder = "Magpul"
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 1,
+    recoilModifier = -24,
+    accuracyModifier = 5,
+    weight = 0.78,
+}))
 
 
 -- EFT ID: 5d4406a8a4b9361e4f6eb8b7
@@ -633,16 +683,19 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_cmmg_ripstock_micro.m
 
 ATT.HasStock = true
 
-ATT.RecoilMult = 0.73
-ATT.VisualRecoilMult = 0.73
-
-ATT.EFTErgoAdd = 8
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar_stock"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.AdvancedCamoSupport = true
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 15,
+    recoilModifier = -19,
+    weight = 0.28,
+}))
+
 
 -- EFT ID: 606587d11246154cad35d635
 ARC9.LoadAttachment(ATT, "eft_ar_stock_ripstop")
@@ -662,14 +715,17 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_sb_tactical_sba3_lod0
 
 ATT.HasStock = true
 
-ATT.RecoilMult = 0.81
-ATT.VisualRecoilMult = 0.81
-
-ATT.EFTErgoAdd = 10
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar_stock"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 8,
+    recoilModifier = -18,
+    weight = 0.191,
+}))
 
 
 -- EFT ID: 628a85ee6b1d481ff772e9d5
@@ -690,16 +746,19 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_hk_slim_line.mdl"
 
 ATT.HasStock = true
 
-ATT.RecoilMult = 0.7
-ATT.VisualRecoilMult = 0.7
-
-ATT.EFTErgoAdd = 5
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar_stock"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.AdvancedCamoSupport = true
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 10,
+    recoilModifier = -21.5,
+    weight = 0.695,
+}))
+
 
 -- EFT ID: 5bb20e70d4351e0035629f8f
 ARC9.LoadAttachment(ATT, "eft_ar_stock_slim")
@@ -721,14 +780,17 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_strike_industries_vip
 
 ATT.HasStock = true
 
-ATT.RecoilMult = 0.7
-ATT.VisualRecoilMult = 0.7
-
-ATT.EFTErgoAdd = 11
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar_stock"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 12,
+    recoilModifier = -20,
+    weight = 0.188,
+}))
 
 
 -- EFT ID: 5c793fde2e221601da358614
@@ -748,16 +810,19 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_magpul_moe_sl_k.mdl"
 
 ATT.HasStock = true
 
-ATT.RecoilMult = 0.78
-ATT.VisualRecoilMult = 0.78
-
-ATT.EFTErgoAdd = 10
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar_stock"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Folder = "Magpul"
 ATT.ModelOffset = Vector(-0.5, 0, 0)
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 8,
+    recoilModifier = -22,
+    weight = 0.226,
+}))
 
 
 -- EFT ID: 6529370c405a5f51dd023db8
@@ -779,10 +844,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_dd_enhanced.mdl"
 
 ATT.HasStock = true
 
-ATT.RecoilMult = 0.8
-ATT.VisualRecoilMult = 0.8
-
-ATT.EFTErgoAdd = 14
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar_stock"
@@ -799,6 +860,13 @@ ATT.Attachments = {
 }
 
 ATT.AdvancedCamoSupport = true
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 8,
+    recoilModifier = -21,
+    weight = 0.227,
+}))
+
 
 -- EFT ID: 6516e91f609aaf354b34b3e2
 ARC9.LoadAttachment(ATT, "eft_ar_stock_ddecb")
@@ -818,10 +886,6 @@ ATT.ModelSkin = 1
 
 ATT.HasStock = true
 
-ATT.RecoilMult = 0.8
-ATT.VisualRecoilMult = 0.8
-
-ATT.EFTErgoAdd = 14
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar_stock"
@@ -839,6 +903,13 @@ ATT.Attachments = {
 
 ATT.AdvancedCamoSupport = true
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 8,
+    recoilModifier = -21,
+    weight = 0.227,
+}))
+
+
 -- EFT ID: 6516e971a3d4c6497930b450
 ARC9.LoadAttachment(ATT, "eft_ar_stock_ddecb_f")
 
@@ -855,14 +926,16 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_base_dd_buttpad_12mm.mdl"
 
 -- ATT.HasStock = true
 
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
-
--- ATT.EFTErgoAdd = 2
 
 ATT.SortOrder = 0
 ATT.Category = "eft_dd_buttpad"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.055,
+}))
 
 
 -- EFT ID: 6516e9bc5901745209404287
@@ -881,14 +954,17 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_base_dd_buttpad_20mm.mdl"
 
 -- ATT.HasStock = true
 
-ATT.RecoilMult = 0.98
-ATT.VisualRecoilMult = 0.98
-
-ATT.EFTErgoAdd = -2
 
 ATT.SortOrder = 0
 ATT.Category = "eft_dd_buttpad"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 0.5,
+    recoilModifier = -0.5,
+    weight = 0.063,
+}))
 
 
 -- EFT ID: 6516e9d7e239bd0c487e3766
@@ -912,9 +988,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_colt_n1.mdl"
 
 ATT.HasStock = true
 
-ATT.EFTErgoAdd = 9
-ATT.RecoilMult = 0.82
-ATT.VisualRecoilMult = 0.82
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar_stock"
@@ -929,6 +1002,13 @@ ATT.Attachments = {
         Icon_Offset = Vector(-4.5, 0, 0),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    recoilModifier = -21,
+    weight = 0.126,
+}))
 
 
 -- EFT ID: 68a63c7322b1e0bd360afe65
@@ -948,13 +1028,17 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_john_masen_n1_recoil_
 
 -- ATT.HasStock = true
 
-ATT.EFTErgoAdd = 2
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
 
 ATT.SortOrder = 0
 ATT.Category = "eft_n1_buttpad"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    recoilModifier = -1,
+    weight = 0.07,
+}))
+
 
 -- EFT ID: 68a63c998e1fe612970728fe
 ARC9.LoadAttachment(ATT, "eft_ar_stock_n1_buttpad")
@@ -973,15 +1057,19 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_magpul_acs_carbine.md
 
 ATT.HasStock = true
 
-ATT.EFTErgoAdd = 6
-ATT.RecoilMult = 0.76
-ATT.VisualRecoilMult = 0.76
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar_stock"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Folder = "Magpul"
 ATT.ModelOffset = Vector(-0.5, 0, 0)
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 9,
+    recoilModifier = -22,
+    weight = 0.327,
+}))
 
 
 -- EFT ID: 68bb25270e48a3afd7071216
@@ -1002,15 +1090,19 @@ ATT.ModelSkin = 1
 
 ATT.HasStock = true
 
-ATT.EFTErgoAdd = 6
-ATT.RecoilMult = 0.76
-ATT.VisualRecoilMult = 0.76
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar_stock"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Folder = "Magpul"
 ATT.ModelOffset = Vector(-0.5, 0, 0)
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 9,
+    recoilModifier = -22,
+    weight = 0.327,
+}))
 
 
 -- EFT ID: 68bb2a3831ee03fbc00931e6
@@ -1030,13 +1122,17 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_colt_m16a1_type_7.mdl
 
 ATT.HasStock = true
 
-ATT.EFTErgoAdd = 4
-ATT.RecoilMult = 0.78
-ATT.VisualRecoilMult = 0.78
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar_stock_a2"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 4,
+    recoilModifier = -22,
+    weight = 0.48,
+}))
+
 
 -- EFT ID: 68a63bc422b1e0bd360afe61
 ARC9.LoadAttachment(ATT, "eft_ar_stock_7")
@@ -1054,13 +1150,17 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_colt_a2.mdl"
 
 ATT.HasStock = true
 
-ATT.EFTErgoAdd = 2
-ATT.RecoilMult = 0.77
-ATT.VisualRecoilMult = 0.77
 
 ATT.SortOrder = 0
 ATT.Category = "eft_ar_stock_a2"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    recoilModifier = -23,
+    weight = 0.42,
+}))
+
 
 -- EFT ID: 68a63c1fc92ee33ffa01bf5a
 ARC9.LoadAttachment(ATT, "eft_ar_stock_a2")

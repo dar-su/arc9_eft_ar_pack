@@ -25,11 +25,6 @@ ATT.BarrelLengthAdd = 2
 
 ATT.Category = {"eft_m4a1_barrel"}
 
-ATT.EFTErgoAdd = -7
-ATT.RecoilMult = 0.98
-ATT.VisualRecoilMult = 0.98
-ATT.HeatCapacityMult = 1.06
-ATT.PhysBulletMuzzleVelocityMult = 0.84
 ATT.Spread = 2.41 * ARC9.MOAToAcc
 
 ATT.ActivateElements = {"barrel_260mm", "barrel_10i"}
@@ -52,6 +47,14 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    recoilModifier = -5.2,
+    weight = 0.409,
+    velocity = -11,
+}))
+
+
 -- EFT ID: 55d35ee94bdc2d61338b4568
 ARC9.LoadAttachment(ATT, "eft_barrel_ar15_260mm")
 
@@ -73,11 +76,6 @@ ATT.MuzzleDevice = true
 ATT.MuzzleDevice_Priority = 2
 ATT.BarrelLengthAdd = 4
 
-ATT.EFTErgoAdd = -14
-ATT.RecoilMult = 0.97
-ATT.VisualRecoilMult = 0.97
-ATT.HeatCapacityMult = 1.02
-ATT.PhysBulletMuzzleVelocityMult = 0.935
 ATT.Spread = 1.82 * ARC9.MOAToAcc
 
 ATT.Category = {"eft_m4a1_barrel"}
@@ -104,6 +102,13 @@ ATT.Attachments = {
 
 ATT.AdvancedCamoSupport = true
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -12,
+    recoilModifier = -7.4,
+    weight = 0.509,
+}))
+
+
 -- EFT ID: 55d3632e4bdc2d972f8b4569
 ARC9.LoadAttachment(ATT, "eft_barrel_ar15_370mm")
 
@@ -125,11 +130,6 @@ ATT.MuzzleDevice = true
 ATT.MuzzleDevice_Priority = 2
 ATT.BarrelLengthAdd = 6
 
-ATT.EFTErgoAdd = -22
-ATT.RecoilMult = 0.95
-ATT.VisualRecoilMult = 0.95
-ATT.HeatCapacityMult = 0.96
-ATT.PhysBulletMuzzleVelocityMult = 0.958
 ATT.Spread = 1.41 * ARC9.MOAToAcc
 
 ATT.Category = {"eft_m4a1_barrel"}
@@ -154,6 +154,14 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -26,
+    recoilModifier = -9.1,
+    weight = 0.78,
+    velocity = 3,
+}))
+
+
 -- EFT ID: 5d440b93a4b9364276578d4b
 ARC9.LoadAttachment(ATT, "eft_barrel_ar15_18i")
 
@@ -174,11 +182,6 @@ ATT.MuzzleDevice = true
 ATT.MuzzleDevice_Priority = 2
 ATT.BarrelLengthAdd = 7
 
-ATT.EFTErgoAdd = -29
-ATT.RecoilMult = 0.94
-ATT.VisualRecoilMult = 0.94
-ATT.HeatCapacityMult = 0.94
-ATT.PhysBulletMuzzleVelocityMult = 0.97
 ATT.Spread = 1.1 * ARC9.MOAToAcc
 
 ATT.Category = {"eft_m4a1_barrel"}
@@ -203,6 +206,14 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -29,
+    recoilModifier = -10.2,
+    weight = 0.91,
+    velocity = 5,
+}))
+
+
 -- EFT ID: 5d440b9fa4b93601354d480c
 ARC9.LoadAttachment(ATT, "eft_barrel_ar15_20i")
 
@@ -223,11 +234,6 @@ ATT.MuzzleDevice = true
 ATT.MuzzleDevice_Priority = 2
 ATT.BarrelLengthAdd = 5
 
-ATT.EFTErgoAdd = -15
-ATT.RecoilMult = 0.96
-ATT.VisualRecoilMult = 0.96
-ATT.HeatCapacityMult = 0.98
-ATT.PhysBulletMuzzleVelocityMult = 0.945
 ATT.Spread = 2.2 * ARC9.MOAToAcc
 
 ATT.Category = {"eft_m4a1_barrel"}
@@ -253,6 +259,14 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -16,
+    recoilModifier = -8.1,
+    weight = 0.594,
+    velocity = 2,
+}))
+
+
 -- EFT ID: 5c0e2f94d174af029f650d56
 ARC9.LoadAttachment(ATT, "eft_barrel_ar15_406mm")
 
@@ -274,11 +288,6 @@ ATT.MuzzleDevice = true
 ATT.MuzzleDevice_Priority = 2
 ATT.BarrelLengthAdd = 5
 
-ATT.EFTErgoAdd = -15
-ATT.RecoilMult = 0.95
-ATT.VisualRecoilMult = 0.95
-ATT.HeatCapacityMult = 0.96
-ATT.PhysBulletMuzzleVelocityMult = 0.945
 ATT.Spread = 1.03 * ARC9.MOAToAcc
 
 ATT.Category = {"eft_m4a1_barrel"}
@@ -304,6 +313,15 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -14,
+    recoilModifier = -8.1,
+    accuracyModifier = 7,
+    weight = 0.78,
+    velocity = 2,
+}))
+
+
 -- EFT ID: 63d3d44a2a49307baf09386d
 ARC9.LoadAttachment(ATT, "eft_barrel_ar15_hanson_16")
 
@@ -327,11 +345,6 @@ ATT.BarrelLengthAdd = 3.5
 
 ATT.Category = {"eft_m4a1_barrel"}
 
-ATT.EFTErgoAdd = -12
-ATT.RecoilMult = 0.97
-ATT.VisualRecoilMult = 0.97
-ATT.HeatCapacityMult = 1.03
-ATT.PhysBulletMuzzleVelocityMult = 0.93
 ATT.Spread = 1.55 * ARC9.MOAToAcc
 
 ATT.ActivateElements = {"barrel_370mm", "barrel_145i", "barrel_137i"}
@@ -353,6 +366,15 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -8,
+    recoilModifier = -7,
+    accuracyModifier = 5,
+    weight = 0.509,
+    velocity = -2,
+}))
+
 
 -- EFT ID: 63d3ce0446bd475bcb50f55f
 ARC9.LoadAttachment(ATT, "eft_barrel_ar15_hanson_137")
@@ -377,10 +399,6 @@ ATT.BarrelLengthAdd = 2
 
 ATT.Category = {"eft_m4a1_barrel"}
 
-ATT.EFTErgoAdd = -9
-ATT.RecoilMult = 0.98
-ATT.VisualRecoilMult = 0.98
-ATT.PhysBulletMuzzleVelocityMult = 0.882
 ATT.HeatCapacityMult = 1.06
 ATT.Spread = 2.13 * ARC9.MOAToAcc
 
@@ -404,6 +422,14 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -4,
+    recoilModifier = -5.8,
+    weight = 0.581,
+    velocity = -6,
+}))
+
+
 -- EFT ID: 68a86bd51d1284a8e20e39d5
 ARC9.LoadAttachment(ATT, "eft_barrel_ar15_292mm")
 
@@ -424,10 +450,6 @@ ATT.MuzzleDevice = true
 ATT.MuzzleDevice_Priority = 2
 ATT.BarrelLengthAdd = 5
 
-ATT.EFTErgoAdd = -17
-ATT.RecoilMult = 0.95
-ATT.VisualRecoilMult = 0.95
-ATT.PhysBulletMuzzleVelocityMult = 0.949
 ATT.HeatCapacityMult = 0.96
 ATT.Spread = 1.03 * ARC9.MOAToAcc
 
@@ -454,6 +476,14 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -15,
+    recoilModifier = -8.1,
+    weight = 1,
+    velocity = 2,
+}))
+
+
 -- EFT ID: 68caabc3f42a4476cf0be2a6
 ARC9.LoadAttachment(ATT, "eft_barrel_ar15_16i_mk12")
 
@@ -476,10 +506,6 @@ ATT.MuzzleDevice = true
 ATT.MuzzleDevice_Priority = 2
 ATT.BarrelLengthAdd = 6
 
-ATT.EFTErgoAdd = -24
-ATT.RecoilMult = 0.94
-ATT.VisualRecoilMult = 0.94
-ATT.PhysBulletMuzzleVelocityMult = 0.962
 ATT.HeatCapacityMult = 0.96
 ATT.Spread = 0.89 * ARC9.MOAToAcc
 
@@ -505,6 +531,14 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -27,
+    recoilModifier = -9.1,
+    weight = 1.1,
+    velocity = 3,
+}))
+
+
 -- EFT ID: 68caaa93269e10396503acf6
 ARC9.LoadAttachment(ATT, "eft_barrel_ar15_18i_mk12")
 
@@ -526,10 +560,6 @@ ATT.MuzzleDevice = true
 ATT.MuzzleDevice_Priority = 2
 ATT.BarrelLengthAdd = 7
 
-ATT.EFTErgoAdd = -30
-ATT.RecoilMult = 0.95
-ATT.VisualRecoilMult = 0.95
-ATT.PhysBulletMuzzleVelocityMult = 0.966
 ATT.HeatCapacityMult = 0.94
 ATT.Spread = 1.24 * ARC9.MOAToAcc
 
@@ -554,6 +584,14 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -32,
+    recoilModifier = -10.2,
+    weight = 0.96,
+    velocity = 5,
+}))
+
 
 -- EFT ID: 68a63ac58e1fe612970728f2
 ARC9.LoadAttachment(ATT, "eft_barrel_ar15_m16_20i")
@@ -582,13 +620,19 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasGas = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/gas_block_ar15_colt_m4_front_sight_gas_block_std.mdl"
-ATT.EFTErgoAdd = -1
+
 ATT.HeatCapacityMult = 0.995
 ATT.Category = {"eft_ar15_gasblock"}
 ATT.AdvancedCamoSupport = true
 ATT.ActivateElements = {"gasblock_big"}
 
 -- ATT.ExcludeElements = {"eft_hg_ar15_stm12", "eft_hg_ar15_stm15", "eft_hg_ar15_stm9", "eft_hg_ar15_adar", "eft_hg_ar15_ax15", "eft_hg_ar15_mk10", "eft_hg_ar15_ddrisii1225", "eft_hg_ar15_ddrisii95", "eft_hg_ar15_mk16", "eft_hg_ar15_kacurx31", "eft_hg_ar15_kacurx38", "eft_hg_ar15_ionlite", "eft_hg_ar15_saiqd10", "eft_hg_ar15_vypr", "eft_hg_ar15_wing", "eft_hg_ar15_lvoac_b", "eft_hg_ar15_lvoac_f", "eft_hg_ar15_lvoac_g", "eft_hg_ar15_lvoas_b", "eft_hg_ar15_lvoas_f", "eft_hg_ar15_lvoas_g", "eft_hg_ar15_ax15_158", "eft_hg_ar15_kac_m5", "eft_hg_ar15_radian_14", "eft_hg_ar15_cgnl_105", "eft_hg_ar15_cgnl_14", "eft_hg_ar15_kac_ff", "eft_hg_ar15_precision_round", "eft_hg_ar15_precision_round_fde", "eft_hg_ar15_precision"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.15,
+}))
+
 
 -- EFT ID: 5ae30e795acfc408fb139a0b
 ARC9.LoadAttachment(ATT, "eft_gas_ar15_m4fs")
@@ -608,11 +652,15 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasGas = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/gas_block_ar15_dd_mk12_low_profile.mdl"
-ATT.EFTErgoAdd = 1
-ATT.RecoilMult = 0.98
-ATT.VisualRecoilMult = 0.98
-ATT.HeatCapacityMult = 0.995
+
 ATT.Category = {"eft_ar15_gasblock", "eft_ar15_gasblock_thin"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 1,
+    recoilModifier = -2,
+    weight = 0.053,
+}))
+
 
 -- EFT ID: 56eabcd4d2720b66698b4574
 ARC9.LoadAttachment(ATT, "eft_gas_ar15_mk12")
@@ -632,13 +680,17 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasGas = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/gas_block_ar15_jp_jpgs5b.mdl"
-ATT.EFTErgoAdd = -1
-ATT.RecoilMult = 0.97
-ATT.VisualRecoilMult = 0.97
-ATT.HeatCapacityMult = 0.99
+
 ATT.Category = {"eft_ar15_gasblock", "eft_ar15_gasblock_thin"}
 
 ATT.ExcludeElements = {"eft_hg_ar15_moeslmid"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    recoilModifier = -3,
+    weight = 0.064,
+}))
+
 
 -- EFT ID: 5d00ec68d7ad1a04a067e5be
 ARC9.LoadAttachment(ATT, "eft_gas_ar15_jp")
@@ -658,9 +710,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasGas = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/gas_block_ar15_windham_weaponry_rail_gas_block.mdl"
-ATT.RecoilMult = 0.98
-ATT.VisualRecoilMult = 0.98
-ATT.HeatCapacityMult = 0.995
+
 ATT.Category = {"eft_ar15_gasblock"}
 ATT.ActivateElements = {"gasblock_big"}
 
@@ -674,6 +724,12 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 0),
     },
 }
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    recoilModifier = -2,
+    weight = 0.12,
+}))
+
+
 -- EFT ID: 56ea8d2fd2720b7c698b4570
 ARC9.LoadAttachment(ATT, "eft_gas_ar15_rg")
 
@@ -691,11 +747,15 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasGas = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/gas_block_ar15_ba_lo_pro.mdl"
-ATT.EFTErgoAdd = 1
-ATT.RecoilMult = 0.97
-ATT.VisualRecoilMult = 0.97
-ATT.HeatCapacityMult = 0.98
+
 ATT.Category = {"eft_ar15_gasblock", "eft_ar15_gasblock_thin"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 1,
+    recoilModifier = -3,
+    weight = 0.053,
+}))
+
 
 -- EFT ID: 63d3ce281fe77d0f2801859e
 ARC9.LoadAttachment(ATT, "eft_gas_ar15_lopro")
@@ -716,13 +776,18 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasGas = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/gas_block_ar15_precision_reflex_mk12_gen_1_folding_gas_block.mdl"
-ATT.EFTErgoAdd = 0.5
-ATT.RecoilMult = 0.985
-ATT.VisualRecoilMult = 0.985
+
 ATT.Category = {"eft_ar15_gasblock_mk12"}
 ATT.ActivateElements = {"gasblock_big"}
 
 ATT.DrawFunc = function(swep, model) model:SetBodygroup(1, (swep:GetValue("FoldSights") or swep:HasElement("eft_frontsight")) and 1 or 0) end
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 0.5,
+    recoilModifier = -1.5,
+    weight = 0.14,
+}))
+
 
 -- EFT ID: 68caac02269e10396503acfa
 ARC9.LoadAttachment(ATT, "eft_gas_ar15_mk12g1")
@@ -741,10 +806,15 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasGas = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/gas_block_ar15_slr_sentry_7_adjustable.mdl"
-ATT.EFTErgoAdd = -0.5
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
+
 ATT.Category = {"eft_ar15_gasblock", "eft_ar15_gasblock_thin"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.5,
+    recoilModifier = -1,
+    weight = 0.04,
+}))
+
 
 -- EFT ID: 68c16f6883e2d814b0093f7a
 ARC9.LoadAttachment(ATT, "eft_gas_ar15_sentry7")

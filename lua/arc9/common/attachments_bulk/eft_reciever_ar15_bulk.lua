@@ -18,9 +18,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/reciever_ar15_colt_m4a1_std.mdl"
 
 ATT.Category = {"eft_m4a1_upper"}
 
-ATT.EFTErgoAdd = 5
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 0.989
 
 ATT.Attachments = {
@@ -55,6 +52,13 @@ ATT.Attachments = {
 }
 ATT.AdvancedCamoSupport = true
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    recoilModifier = -1,
+    weight = 0.27,
+}))
+
+
 -- EFT ID: 55d355e64bdc2d962f8b4569
 ARC9.LoadAttachment(ATT, "eft_rec_ar15_m4a1")
 
@@ -76,7 +80,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/reciever_ar15_adar_2-15_std.mdl"
 
 ATT.Category = {"eft_m4a1_upper"}
 
-ATT.EFTErgoAdd = 4
 ATT.HeatCapacityMult = 0.991
 
 ATT.Attachments = {
@@ -110,6 +113,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 4,
+    weight = 0.27,
+}))
+
+
 -- EFT ID: 5c0e2f26d174af02a9625114
 ARC9.LoadAttachment(ATT, "eft_rec_ar15_adar")
 
@@ -129,9 +138,6 @@ ATT.HasReceiver = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/reciever_ar15_lone_star_tx15_lightweight.mdl"
 
-ATT.EFTErgoAdd = 6
-ATT.RecoilMult = 0.98
-ATT.VisualRecoilMult = 0.98
 ATT.HeatCapacityMult = 0.983
 
 ATT.Category = {"eft_m4a1_upper"}
@@ -169,6 +175,13 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 7,
+    recoilModifier = -2,
+    weight = 0.19,
+}))
+
+
 -- EFT ID: 5d4405aaa4b9361e6a4e6bd3
 ARC9.LoadAttachment(ATT, "eft_rec_ar15_tx15")
 
@@ -190,9 +203,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/reciever_ar15_noveske_gen3.mdl"
 
 ATT.Category = {"eft_m4a1_upper"}
 
-ATT.EFTErgoAdd = 13
-ATT.RecoilMult = 0.98
-ATT.VisualRecoilMult = 0.98
 ATT.HeatCapacityMult = 0.979
 
 ATT.Attachments = {
@@ -227,6 +237,13 @@ ATT.Attachments = {
 }
 
 ATT.AdvancedCamoSupport = true
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 8,
+    recoilModifier = -2,
+    weight = 0.212,
+}))
+
+
 -- EFT ID: 5c07a8770db8340023300450
 ARC9.LoadAttachment(ATT, "eft_rec_ar15_gen3")
 
@@ -248,9 +265,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/reciever_ar15_vltor_mur-1s.mdl"
 
 ATT.Category = {"eft_m4a1_upper"}
 
-ATT.EFTErgoAdd = 8
-ATT.RecoilMult = 0.96
-ATT.VisualRecoilMult = 0.96
 ATT.HeatCapacityMult = 0.975
 
 ATT.EFTAR15NoFwdAssist = true
@@ -287,6 +301,13 @@ ATT.Attachments = {
 }
 
 ATT.AdvancedCamoSupport = true
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 7,
+    recoilModifier = -4,
+    weight = 0.246,
+}))
+
+
 -- EFT ID: 59bfe68886f7746004266202
 ARC9.LoadAttachment(ATT, "eft_rec_ar15_mur")
 
@@ -307,9 +328,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/reciever_ar15_aeroknox_ax15.mdl"
 
 ATT.Category = {"eft_m4a1_upper"}
 
-ATT.EFTErgoAdd = 14
-ATT.RecoilMult = 0.97
-ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 0.975
 
 ATT.EFTAR15NoFwdAssist = true
@@ -345,6 +363,13 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 11,
+    recoilModifier = -3.5,
+    weight = 0.285,
+}))
+
+
 -- EFT ID: 63f5ed14534b2c3d5479a677
 ARC9.LoadAttachment(ATT, "eft_rec_ar15_aeronknxo")
 
@@ -365,9 +390,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/reciever_ar15_radian_model1_std.
 
 ATT.Category = {"eft_m4a1_upper"}
 
-ATT.EFTErgoAdd = 7
-ATT.RecoilMult = 0.95
-ATT.VisualRecoilMult = 0.95
 
 -- ATT.EFTAR15NoFwdAssist = true
 
@@ -403,6 +425,13 @@ ATT.Attachments = {
 }
 
 ATT.AdvancedCamoSupport = true
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2.5,
+    recoilModifier = -4.5,
+    weight = 0.304,
+}))
+
+
 -- EFT ID: 6895becad55f0ebf6a0c0311
 ARC9.LoadAttachment(ATT, "eft_rec_ar15_radian")
 
@@ -425,9 +454,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/reciever_ar15_colt_m16a1e1_std.m
 
 ATT.Category = {"eft_m4a1_upper"}
 
-ATT.EFTErgoAdd = 4
-ATT.RecoilMult = 0.985
-ATT.VisualRecoilMult = 0.985
 
 -- ATT.EFTAR15NoFwdAssist = true
 
@@ -464,6 +490,13 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 4, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 4,
+    recoilModifier = -1.5,
+    weight = 0.37,
+}))
+
 
 -- EFT ID: 68a63b90e1fb670852024659
 ARC9.LoadAttachment(ATT, "eft_rec_ar15_m16a1e1")
@@ -486,9 +519,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/reciever_ar15_colt_m16a2_std.mdl
 
 ATT.Category = {"eft_m4a1_upper"}
 
-ATT.EFTErgoAdd = 4
-ATT.RecoilMult = 0.985
-ATT.VisualRecoilMult = 0.985
 
 -- ATT.EFTAR15NoFwdAssist = true
 
@@ -526,6 +556,13 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 4,
+    recoilModifier = -1.5,
+    weight = 0.39,
+}))
+
+
 -- EFT ID: 68a63b9b8e1fe612970728f7
 ARC9.LoadAttachment(ATT, "eft_rec_ar15_m16a2")
 
@@ -541,7 +578,6 @@ ATT.Description = "A scope mount that fits over the AR-15 carry handle. Modeled 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -0.2
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mount_ar15_promag_delta_style.mdl"
 -- ATT.ModelOffset = Vector(-1.525, 0, 0.025)
@@ -563,6 +599,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.2,
+    weight = 0.07,
+}))
+
+
 -- EFT ID: 68a63d1522b1e0bd360afe67
 ARC9.LoadAttachment(ATT, "eft_rec_m16_rail")
 
@@ -582,7 +624,6 @@ ATT.Category = {"eft_sprrail"}
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 -- ATT.Max = 1
 
-ATT.EFTErgoAdd = -2
 ATT.ModelOffset = Vector(0.22, 0, -0)
 
 ATT.RequireElements = {"sprrailallowed"}
@@ -613,6 +654,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    weight = 0.295,
+}))
+
+
 -- EFT ID: 68caacb4c8ac87b10507c5a6
 ARC9.LoadAttachment(ATT, "eft_rec_ar15_spr_rail")
 
@@ -633,7 +680,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/sight_rear_all_matech_buis.mdl"
 ATT.Category = {"eft_rearsight"}
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 0.5
 
 ATT.Scale = 1
 ATT.ModelOffset = Vector(0, 0, -0)
@@ -661,6 +707,12 @@ ATT.DrawFunc = function(swep, model)
         model:SetBodygroup(1, 0)
     end
 end
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 0.5,
+    weight = 0.095,
+}))
 
 
 -- EFT ID: 68a63d3c8e977b40b2032286
@@ -682,7 +734,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/sight_rear_all_arms_40.mdl"
 ATT.Category = {"eft_rearsight_hk416"}
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 0.5
 
 ATT.Scale = 1
 ATT.ModelOffset = Vector(0, 0, -0)
@@ -710,6 +761,12 @@ ATT.DrawFunc = function(swep, model)
         model:SetBodygroup(1, 0)
     end
 end
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 0.5,
+    weight = 0.07,
+}))
 
 
 -- EFT ID: 68caad70269e10396503ad00

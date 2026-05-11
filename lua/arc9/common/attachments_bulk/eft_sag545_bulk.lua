@@ -13,8 +13,6 @@ ATT.Description = [[A standard-issue dust cover for AK-545 carbines, manufacture
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 3
-
 ATT.Category = {"eft_sag545_coverr"}
 
 ATT.Attachments = {
@@ -34,6 +32,12 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.088,
+}))
 
 
 -- EFT ID: 628b9be6cff66b70c002b14c
@@ -69,6 +73,11 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.1,
+}))
+
+
 -- EFT ID: 628b8d83717774443b15e248
 ARC9.LoadAttachment(ATT, "eft_sag545_gastube")
 
@@ -85,10 +94,6 @@ ATT.Description = [[The Sureshot Armament Group Mk.3 handguard for AK-545, equip
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 16
-ATT.RecoilMult = 0.97
-ATT.VisualRecoilMult = 0.97
-ATT.SpreadMult = 0.98
 ATT.HeatCapacityMult = 1.08
 
 ATT.HasHG = true
@@ -147,6 +152,13 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 19.5,
+    accuracyModifier = 2,
+    weight = 0.617,
+}))
+
+
 -- EFT ID: 628b916469015a4e1711ed8d
 ARC9.LoadAttachment(ATT, "eft_sag545_hg_std")
 
@@ -165,6 +177,11 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_sag545_rss"}
 
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.015,
+}))
 
 
 -- EFT ID: 628b9471078f94059a4b9bfb
@@ -187,9 +204,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_sag545_stock"}
 
-ATT.RecoilMult = 0.98
-ATT.VisualRecoilMult = 0.98
-
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_stock"),
@@ -199,6 +213,13 @@ ATT.Attachments = {
         Icon_Offset = Vector(-1, 0, 0.5),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    recoilModifier = -0.5,
+    weight = 0.175,
+}))
 
 
 -- EFT ID: 628b9a40717774443b15e9f2

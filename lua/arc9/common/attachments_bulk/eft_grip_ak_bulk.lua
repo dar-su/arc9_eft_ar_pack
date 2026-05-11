@@ -14,12 +14,17 @@ ATT.Description = [[An Izhmash-manufactured bakelite pistol grip for the AK auto
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 6
 
 ATT.HasGrip = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_ak74_bakelit.mdl"
 
 ATT.Category = {"eft_ak_grip"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.07,
+}))
 
 
 -- EFT ID: 5649ad3f4bdc2df8348b4585
@@ -38,12 +43,17 @@ ATT.Description = [[A bakelite Izhmash-manufatured pistol grip for the AK automa
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 6
 
 ATT.HasGrip = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_aks74_bakelit.mdl"
 
 ATT.Category = {"eft_ak_grip"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.07,
+}))
 
 
 -- EFT ID: 57e3dba62459770f0c32322b
@@ -62,12 +72,18 @@ ATT.Description = [[A lightweight ergonomic pistol grip for AK-family automatic 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 12
 
 ATT.HasGrip = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_aeroknox_scorpius.mdl"
 
 ATT.Category = {"eft_ak_grip"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    recoilModifier = -1.5,
+    weight = 0.14,
+}))
 
 
 -- EFT ID: 5f6341043ada5942720e2dc5
@@ -86,12 +102,18 @@ ATT.Description = [[The AGR-47 pistol grip for AK-family automatic rifles and co
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 7
 
 ATT.HasGrip = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_agr_47.mdl"
 
 ATT.Category = {"eft_ak_grip"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    recoilModifier = -1.5,
+    weight = 0.12,
+}))
 
 
 -- EFT ID: 623c3be0484b5003161840dc
@@ -111,7 +133,6 @@ Manufactured by Custom Arms.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 14
 
 ATT.HasGrip = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_ags74_pro.mdl"
@@ -119,6 +140,13 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_ags74_pro.mdl"
 ATT.Category = {"eft_ak_grip"}
 
 ATT.AdvancedCamoSupport = true
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    recoilModifier = -1.5,
+    weight = 0.15,
+}))
+
 
 -- EFT ID: 6087e663132d4d12c81fd96b
 ARC9.LoadAttachment(ATT, "eft_grip_ak_ags74")
@@ -136,7 +164,6 @@ ATT.Description = [[A standard-issue Izhmash-manufactured pistol grip for AK-12 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 6.5
 
 ATT.HasGrip = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_ak12_std.mdl"
@@ -144,6 +171,13 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_ak12_std.mdl"
 ATT.Category = {"eft_ak_grip"}
 
 ATT.AdvancedCamoSupport = true
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    recoilModifier = -1,
+    weight = 0.05,
+}))
+
 
 -- EFT ID: 5beec8ea0db834001a6f9dbf
 ARC9.LoadAttachment(ATT, "eft_grip_ak_ak12")
@@ -162,12 +196,18 @@ Manufactured by Strike Industries.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 8
 
 ATT.HasGrip = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_strike_indsustries.mdl"
 
 ATT.Category = {"eft_ak_grip"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    recoilModifier = -1,
+    weight = 0.091,
+}))
 
 
 -- EFT ID: 5cf50850d7f00c056e24104c
@@ -189,12 +229,18 @@ Flat Dark Earth version.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 8
 
 ATT.HasGrip = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_strike_indsustries_fde.mdl"
 
 ATT.Category = {"eft_ak_grip"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    recoilModifier = -1,
+    weight = 0.091,
+}))
 
 
 -- EFT ID: 5cf508bfd7f00c056e24104e
@@ -213,12 +259,17 @@ ATT.Description = [[A bakelite Izhmash-manufactured pistol grip for AKM automati
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 6
 
 ATT.HasGrip = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_akm_bakelit.mdl"
 
 ATT.Category = {"eft_ak_grip"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.07,
+}))
 
 
 -- EFT ID: 59e62cc886f77440d40b52a1
@@ -237,12 +288,17 @@ ATT.Description = [[A wooden Izhmash-manufactured pistol grip for AK-compatible 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 6
 
 ATT.HasGrip = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_akm_wood.mdl"
 
 ATT.Category = {"eft_ak_grip"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.07,
+}))
 
 
 -- EFT ID: 5a0071d486f77404e23a12b2
@@ -261,7 +317,6 @@ ATT.Description = [[A bakelite pistol grip for AK assault rifles and compatible 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 6
 
 ATT.HasGrip = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_molot_bakelit.mdl"
@@ -269,7 +324,13 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_molot_bakelit.mdl"
 ATT.Category = {"eft_ak_grip"}
 
 
--- EFT ID: 59e62cc886f77440d40b52a1
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 6,
+    weight = 0.07,
+}))
+
+
+-- EFT ID: 59e6318286f77444dd62c4cc
 ARC9.LoadAttachment(ATT, "eft_grip_ak_ak_b")
 
 
@@ -285,7 +346,6 @@ ATT.Description = [[Designed for both the civilian market and military use. The 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 16
 ATT.RecoilMult = 0.65
 ATT.VisualRecoilMult = 0.65
 
@@ -294,6 +354,13 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_cqr47.mdl"
 ATT.ActivateElements = {"nostock"}
 
 ATT.Category = {"eft_ak_cqrgrip"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 13,
+    recoilModifier = -23,
+    weight = 0.525,
+}))
 
 
 -- EFT ID: 619b69037b9de8162902673e
@@ -314,12 +381,18 @@ Manufactured by Kraft Gun Builders.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 10
 
 ATT.HasGrip = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_kgb_mg47.mdl"
 
 ATT.Category = {"eft_ak_grip"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    recoilModifier = -1.5,
+    weight = 0.153,
+}))
 
 
 -- EFT ID: 5cf54404d7f00c108840b2ef
@@ -342,12 +415,18 @@ Anodized Red version.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 10
 
 ATT.HasGrip = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_kgb_mg47_red.mdl"
 
 ATT.Category = {"eft_ak_grip"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    recoilModifier = -1.5,
+    weight = 0.153,
+}))
 
 
 -- EFT ID: 5e2192a498a36665e8337386
@@ -366,7 +445,6 @@ ATT.Description = [[The MOE (Magpul Original Equipment) lightweight pistol grip 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 12
 
 ATT.HasGrip = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_magpul_moe.mdl"
@@ -374,6 +452,13 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_magpul_moe.mdl"
 ATT.Category = {"eft_ak_grip"}
 
 ATT.AdvancedCamoSupport = true
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    recoilModifier = -1.5,
+    weight = 0.08,
+}))
+
 
 -- EFT ID: 5b30ac585acfc433000eb79c
 ARC9.LoadAttachment(ATT, "eft_grip_ak_moe")
@@ -394,7 +479,6 @@ ATT.Description = [[The RK-3 Klassika anatomic pistol grip features a built-in h
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 12
 
 ATT.HasGrip = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_zenit_rk3.mdl"
@@ -402,6 +486,13 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_zenit_rk3.mdl"
 ATT.Category = {"eft_ak_grip"}
 
 ATT.AdvancedCamoSupport = true
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    recoilModifier = -1,
+    weight = 0.225,
+}))
+
 
 -- EFT ID: 5649ae4a4bdc2d1b2b8b4588
 ARC9.LoadAttachment(ATT, "eft_grip_ak_rk3")
@@ -419,12 +510,18 @@ ATT.Description = [[A lightweight pistol grip for AK assault rifles, manufacture
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 12
 
 ATT.HasGrip = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_tango_down.mdl"
 
 ATT.Category = {"eft_ak_grip"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    recoilModifier = -1,
+    weight = 0.11,
+}))
 
 
 -- EFT ID: 628a664bccaab13006640e47
@@ -445,12 +542,18 @@ Flat Dark Earth version.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 12
 
 ATT.HasGrip = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_tango_down_fde.mdl"
 
 ATT.Category = {"eft_ak_grip"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    recoilModifier = -1,
+    weight = 0.11,
+}))
 
 
 -- EFT ID: 628c9ab845c59e5b80768a81
@@ -470,12 +573,18 @@ Black version.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 11
 
 ATT.HasGrip = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_tapco_saw.mdl"
 
 ATT.Category = {"eft_ak_grip"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    recoilModifier = -1,
+    weight = 0.13,
+}))
 
 
 -- EFT ID: 5947f92f86f77427344a76b1
@@ -495,12 +604,18 @@ Flat Dark Earth version.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 11
 
 ATT.HasGrip = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_tapco_saw_fde.mdl"
 
 ATT.Category = {"eft_ak_grip"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    recoilModifier = -1,
+    weight = 0.13,
+}))
 
 
 -- EFT ID: 5947fa2486f77425b47c1a9b
@@ -522,9 +637,15 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasGrip = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_us_palm.mdl"
 
-ATT.EFTErgoAdd = 12
 
 ATT.Category = {"eft_ak_grip"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    recoilModifier = -1.5,
+    weight = 0.09,
+}))
 
 
 -- EFT ID: 5c6bf4aa2e2216001219b0ae
@@ -546,12 +667,18 @@ ATT.Description = [[The ENGAGE AK47 pistol grip for AK-family automatic rifles a
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 8
 
 ATT.HasGrip = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/pistolgrip_ak_mft_engage_ak47.mdl"
 ATT.ModelOffset = Vector(0, 0, 0.06)
 ATT.Category = {"eft_ak_grip"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    recoilModifier = -1.5,
+    weight = 0.12,
+}))
 
 
 -- EFT ID: 63f4da90f31d4a33b87bd054
@@ -572,7 +699,6 @@ ATT.Description = [[An adapter that allows AR-type pistol grips installation on 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -1
 
 -- ATT.HasGrip = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/pistolgrip_ak_cg101_adapter.mdl"
@@ -589,6 +715,12 @@ ATT.Attachments = {
         Icon_Offset = Vector(-0.5, 0, -0.5),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.5,
+    weight = 0.045,
+}))
+
 
 -- EFT ID: 648ae3e356c6310a830fc291
 ARC9.LoadAttachment(ATT, "eft_grip_ak_cg101")

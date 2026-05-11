@@ -16,9 +16,6 @@ ATT.HasReceiver = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/reciever_ar15_hk_hk416a5_std.mdl"
 
 ATT.Category = {"eft_hk416_upper"}
-ATT.EFTErgoAdd = 6
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 0.986
 ATT.Attachments = {
     {
@@ -51,6 +48,13 @@ ATT.Attachments = {
 }
 ATT.AdvancedCamoSupport = true
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 6,
+    recoilModifier = -1,
+    weight = 0.27,
+}))
+
+
 -- EFT ID: 5bb20d53d4351e4502010a69
 ARC9.LoadAttachment(ATT, "eft_rec_hk416")
 
@@ -71,8 +75,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_hk_enhanced_stock_tub
 ATT.HasBufferTube = true
 
 
-ATT.RecoilMult = 0.97
-ATT.VisualRecoilMult = 0.97
 
 
 ATT.ExcludeElements = {"pgrip_stock"}
@@ -92,6 +94,13 @@ ATT.Attachments = {
         ExcludeElements = {"pgrip_stock"},
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1.5,
+    recoilModifier = -0.5,
+    weight = 0.162,
+}))
+
 
 -- EFT ID: 5bb20e58d4351e00320205d7
 ARC9.LoadAttachment(ATT, "eft_ar_buffertube_hkenh")
@@ -113,9 +122,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/barrel_416_hk_264mm_556x45.mdl"
 ATT.MuzzleDevice = true
 ATT.MuzzleDevice_Priority = 2
 ATT.BarrelLengthAdd = 2
-ATT.EFTErgoAdd = -5
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 1.06
 ATT.PhysBulletMuzzleVelocityMult = 0.82
 ATT.Spread = 2.51 * ARC9.MOAToAcc
@@ -143,6 +149,14 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -3,
+    recoilModifier = -5.3,
+    weight = 0.572,
+    velocity = -9,
+}))
+
+
 -- EFT ID: 5c6d85e02e22165df16b81f4
 ARC9.LoadAttachment(ATT, "eft_barrel_hk416_106i")
 
@@ -162,9 +176,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/barrel_416_hk_279mm_556x45.mdl"
 ATT.MuzzleDevice = true
 ATT.MuzzleDevice_Priority = 2
 ATT.BarrelLengthAdd = 2.5
-ATT.EFTErgoAdd = -8
-ATT.RecoilMult = 0.98
-ATT.VisualRecoilMult = 0.98
 ATT.HeatCapacityMult = 1.04
 ATT.PhysBulletMuzzleVelocityMult = 0.84
 ATT.Spread = 2.41 * ARC9.MOAToAcc
@@ -189,6 +200,14 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -4,
+    recoilModifier = -5.6,
+    weight = 0.615,
+    velocity = -8,
+}))
+
+
 -- EFT ID: 5bb20d92d4351e00853263eb
 ARC9.LoadAttachment(ATT, "eft_barrel_hk416_11i")
 
@@ -208,9 +227,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/barrel_416_hk_368mm_556x45.mdl"
 ATT.MuzzleDevice = true
 ATT.MuzzleDevice_Priority = 2
 ATT.BarrelLengthAdd = 4
-ATT.EFTErgoAdd = -15
-ATT.RecoilMult = 0.97
-ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 1.02
 ATT.PhysBulletMuzzleVelocityMult = 0.92
 ATT.Spread = 1.89 * ARC9.MOAToAcc
@@ -238,6 +254,13 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -12,
+    recoilModifier = -7.4,
+    weight = 0.985,
+}))
+
+
 -- EFT ID: 5bb20d9cd4351e00334c9d8a
 ARC9.LoadAttachment(ATT, "eft_barrel_hk416_145i")
 
@@ -257,9 +280,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/barrel_416_hk_419mm_556x45.mdl"
 ATT.MuzzleDevice = true
 ATT.MuzzleDevice_Priority = 2
 ATT.BarrelLengthAdd = 5.5
-ATT.EFTErgoAdd = -20
-ATT.RecoilMult = 0.95
-ATT.VisualRecoilMult = 0.95
 ATT.HeatCapacityMult = 0.98
 ATT.PhysBulletMuzzleVelocityMult = 0.95
 ATT.Spread = 1.55 * ARC9.MOAToAcc
@@ -287,6 +307,14 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -17,
+    recoilModifier = -8.4,
+    weight = 1.05,
+    velocity = 2,
+}))
+
+
 -- EFT ID: 5bb20da5d4351e0035629dbf
 ARC9.LoadAttachment(ATT, "eft_barrel_hk416_165i")
 
@@ -306,9 +334,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/barrel_416_hk_505mm_556x45.mdl"
 ATT.MuzzleDevice = true
 ATT.MuzzleDevice_Priority = 2
 ATT.BarrelLengthAdd = 7
-ATT.EFTErgoAdd = -30
-ATT.RecoilMult = 0.93
-ATT.VisualRecoilMult = 0.93
 ATT.HeatCapacityMult = 0.94
 ATT.PhysBulletMuzzleVelocityMult = 1.03
 ATT.Spread = 1.1 * ARC9.MOAToAcc
@@ -335,6 +360,14 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -30,
+    recoilModifier = -10.1,
+    weight = 1.2,
+    velocity = 5,
+}))
+
+
 -- EFT ID: 5bb20dadd4351e00367faeff
 ARC9.LoadAttachment(ATT, "eft_barrel_hk416_20i")
 
@@ -354,6 +387,11 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/gas_block_416_hk_416a5_std.mdl"
 ATT.HeatCapacityMult = 0.995
 
 ATT.Category = {"eft_hk416_gasblock"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.12,
+}))
+
 
 -- EFT ID: 5bb20dcad4351e3bac1212da
 ARC9.LoadAttachment(ATT, "eft_gas_hk416_std")
@@ -387,6 +425,11 @@ ATT.Sights = {
     }
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.14,
+}))
+
+
 -- EFT ID: 5bb20e49d4351e3bac1212de
 ARC9.LoadAttachment(ATT, "eft_rearsight_hk416")
 
@@ -401,9 +444,6 @@ ATT.Description = [[The HK MRS KeyMod handguard for 416A5 equipped with a KeyMod
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasHG = true
-ATT.EFTErgoAdd = 6
-ATT.RecoilMult = 0.97
-ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 0.977
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_416_hk_mrs_keymod_14_inch.mdl"
 ATT.LHIK = true 
@@ -485,6 +525,12 @@ ATT.Attachments = {
 }
 ATT.AdvancedCamoSupport = true
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 19.5,
+    weight = 0.39,
+}))
+
+
 -- EFT ID: 5c6d10e82e221601da357b07
 ARC9.LoadAttachment(ATT, "eft_hg_hk416_mrs14")
 
@@ -502,7 +548,6 @@ ATT.HasHG = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_416_hk_quad_rail.mdl"
 ATT.LHIK = true 
-ATT.EFTErgoAdd = 4
 ATT.HeatCapacityMult = 0.976
 ATT.Category = {"eft_hk416_hguard"}
 
@@ -563,6 +608,12 @@ ATT.Attachments = {
 }
 ATT.AdvancedCamoSupport = true
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 15,
+    weight = 0.399,
+}))
+
+
 -- EFT ID: 5bb20de5d4351e0035629e59
 ARC9.LoadAttachment(ATT, "eft_hg_hk416_quad")
 
@@ -580,9 +631,6 @@ ATT.HasHG = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_416_hk_quad_rail_extended.mdl"
 ATT.LHIK = true 
-ATT.EFTErgoAdd = 5
-ATT.RecoilMult = 0.98
-ATT.VisualRecoilMult = 0.98
 ATT.HeatCapacityMult = 0.985
 ATT.Category = {"eft_hk416_hguard"}
 
@@ -645,6 +693,12 @@ ATT.Attachments = {
 }
 
 ATT.AdvancedCamoSupport = true
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 19.5,
+    weight = 0.54,
+}))
+
+
 -- EFT ID: 5bb20dfcd4351e00334c9e24
 ARC9.LoadAttachment(ATT, "eft_hg_hk416_quadext")
 
@@ -659,7 +713,6 @@ ATT.Description = [[Quadrail handguard for 416 and compatables. Comes with a fou
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasHG = true
-ATT.EFTErgoAdd = 4
 ATT.HeatCapacityMult = 0.976
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_416_hk_quad_rail_w_sight.mdl"
 ATT.LHIK = true 
@@ -725,6 +778,12 @@ ATT.Attachments = {
     }, 
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 14.5,
+    weight = 0.43,
+}))
+
+
 -- EFT ID: 5bb20df1d4351e00347787d5
 ARC9.LoadAttachment(ATT, "eft_hg_hk416_quadsight")
 
@@ -742,7 +801,6 @@ ATT.HasHG = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_416_midwest_m_lok_9_inch.mdl"
 ATT.LHIK = true 
-ATT.EFTErgoAdd = 8
 ATT.HeatCapacityMult = 0.986
 ATT.Category = {"eft_hk416_hguard"}
 
@@ -796,6 +854,12 @@ ATT.Attachments = {
 }
 
 ATT.AdvancedCamoSupport = true
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 15.5,
+    weight = 0.28,
+}))
+
+
 -- EFT ID: 5c6d10fa2e221600106f3f23
 ARC9.LoadAttachment(ATT, "eft_hg_hk416_midwest9")
 
@@ -813,9 +877,6 @@ ATT.HasHG = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_416_midwest_m_lok_13,5_inch.mdl"
 ATT.LHIK = true 
-ATT.EFTErgoAdd = 10
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 0.969
 ATT.Category = {"eft_hk416_hguard"}
 
@@ -877,6 +938,12 @@ ATT.Attachments = {
 }
 ATT.AdvancedCamoSupport = "eft_hg_hk416_midwest9"
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 19.5,
+    weight = 0.37,
+}))
+
+
 -- EFT ID: 5c6d11072e2216000e69d2e4
 ARC9.LoadAttachment(ATT, "eft_hg_hk416_midwest135")
 
@@ -899,9 +966,6 @@ ATT.LHIK = true
 ATT.DrawFunc = function(swep, model) model:SetBodygroup(1, (swep:GetValue("FoldSights") or swep:HasElement("eft_frontsight")) and 1 or 0) end
 
 ATT.Category = {"eft_hk416_hguard"}
-ATT.EFTErgoAdd = 11
-ATT.RecoilMult = 0.97
-ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 0.958
 -- ATT.ExcludeElements = {"barrel_260mm","barrel_370mm","barrel_406mm", "eft_gas_ar15_rg", "eft_gas_ar15_jp", "eft_gas_ar15_m4fs"}
 
@@ -960,6 +1024,12 @@ ATT.Attachments = {
 }
 ATT.AdvancedCamoSupport = true
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 20,
+    weight = 0.44,
+}))
+
+
 -- EFT ID: 5c6d11152e2216000f2003e7
 ARC9.LoadAttachment(ATT, "eft_hg_hk416_crux")
 
@@ -974,7 +1044,6 @@ ATT.Description = [[Troy industries carbon fiber M-LOK foregrip for 416A5 equipp
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasHG = true
-ATT.EFTErgoAdd = 14
 ATT.HeatCapacityMult = 1.017
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_416_troy_m_lok_13_inch_carbon_fiber.mdl"
 ATT.LHIK = true 
@@ -1036,6 +1105,12 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 19,
+    weight = 0.25,
+}))
+
 
 -- EFT ID: 5c6c2c9c2e2216000f2002e4
 ARC9.LoadAttachment(ATT, "eft_hg_hk416_troy")

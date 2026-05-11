@@ -12,10 +12,6 @@ ATT.Description = [[An 11 inch (280mm) long barrel for DS Arms SA-58 7.62x51.]]
 
 ATT.HasBarrel = true 
 
-ATT.EFTErgoAdd = -8
-ATT.RecoilMult = 0.98
-ATT.VisualRecoilMult = 0.98
-ATT.PhysBulletMuzzleVelocityMult = 0.88
 ATT.HeatCapacityMult = 1.02
 ATT.Spread = 2.75 * ARC9.MOAToAcc
 
@@ -34,6 +30,14 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -5,
+    recoilModifier = -8.4,
+    weight = 0.409,
+    velocity = -31,
+}))
+
+
 -- EFT ID: 5b099a765acfc47a8607efe3
 ARC9.LoadAttachment(ATT, "eft_sa58_barrel_208")
 
@@ -49,10 +53,6 @@ ATT.Description = [[An 16 inch (406mm) long barrel for DS Arms SA-58 7.62x51.]]
 
 ATT.HasBarrel = true 
 
-ATT.EFTErgoAdd = -18
-ATT.RecoilMult = 0.94
-ATT.VisualRecoilMult = 0.94
-ATT.PhysBulletMuzzleVelocityMult = 0.92
 ATT.HeatCapacityMult = 1.06
 ATT.Spread = 1.58 * ARC9.MOAToAcc
 
@@ -71,6 +71,14 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -18,
+    recoilModifier = -12.2,
+    weight = 0.609,
+    velocity = -2,
+}))
+
+
 -- EFT ID: 5b7be1125acfc4001876c0e5
 ARC9.LoadAttachment(ATT, "eft_sa58_barrel_406")
 
@@ -86,10 +94,6 @@ ATT.Description = [[An 21 inch (533mm) long barrel for DS Arms SA-58 7.62x51.]]
 
 ATT.HasBarrel = true 
 
-ATT.EFTErgoAdd = -28
-ATT.RecoilMult = 0.92
-ATT.VisualRecoilMult = 0.92
-ATT.PhysBulletMuzzleVelocityMult = 0.97
 ATT.HeatCapacityMult = 1.12
 ATT.Spread = 1.0 * ARC9.MOAToAcc
 
@@ -108,6 +112,14 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -33,
+    recoilModifier = -16,
+    weight = 0.784,
+    velocity = 1,
+}))
+
+
 -- EFT ID: 5b7be1265acfc400161d0798
 ARC9.LoadAttachment(ATT, "eft_sa58_barrel_533")
 
@@ -123,12 +135,18 @@ ATT.Description = [[The AG-FAL anatomical pistol grip for SA-58 rifles manufactu
 
 ATT.HasGrip = true 
 
-ATT.EFTErgoAdd = 13
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_sa58_pgrip"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    recoilModifier = -1,
+    weight = 0.088,
+}))
+
 
 -- EFT ID: 5b7d679f5acfc4001a5c4024
 ARC9.LoadAttachment(ATT, "eft_sa58_pgrip_fab")
@@ -144,12 +162,17 @@ ATT.Description = [[A standard pistol grip for SA-58 rifles manufactured by DS A
 
 ATT.HasGrip = true 
 
-ATT.EFTErgoAdd = 5
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_sa58_pgrip"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.11,
+}))
+
 
 -- EFT ID: 5b7d678a5acfc4001a5c4022
 ARC9.LoadAttachment(ATT, "eft_sa58_pgrip_std")
@@ -165,12 +188,18 @@ ATT.Description = [[An anatomical pistol grip for SA-58 assault rifles, inspired
 
 ATT.HasGrip = true 
 
-ATT.EFTErgoAdd = 10
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_sa58_pgrip"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    recoilModifier = -1,
+    weight = 0.13,
+}))
+
 
 -- EFT ID: 5b099b965acfc400186331e6
 ARC9.LoadAttachment(ATT, "eft_sa58_pgrip_saw")
@@ -189,6 +218,11 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_sa58_rs"}
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.09,
+}))
+
+
 -- EFT ID: 5b0bc22d5acfc47a8607f085
 ARC9.LoadAttachment(ATT, "eft_sa58_rs_std")
 
@@ -201,12 +235,17 @@ ATT.CompactName = "FAL"
 ATT.Icon = Material("entities/eft_sa58_attachments/rec.png", "mips smooth")
 ATT.Description = [[A standard-issue dust cover for FAL-series rifles.]]
 
-ATT.EFTErgoAdd = 2
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_sa58_rec"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.175,
+}))
+
 
 -- EFT ID: 5b7d6c105acfc40015109a5f
 ARC9.LoadAttachment(ATT, "eft_sa58_rec_fal")
@@ -225,7 +264,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_sa58_rec"}
 
-ATT.EFTErgoAdd = 4
 
 ATT.Attachments = {
     {
@@ -236,6 +274,12 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 4,
+    weight = 0.215,
+}))
+
 
 -- EFT ID: 5b099bb25acfc400186331e8
 ARC9.LoadAttachment(ATT, "eft_sa58_rec_ed")
@@ -249,14 +293,18 @@ ATT.CompactName = "SA58 BRS"
 ATT.Icon = Material("entities/eft_sa58_attachments/brs.png", "mips smooth")
 ATT.Description = [[The BRS (Battle Rifle Stock) buttstock for SA-58 assault rifles. Manufactured by DS Arms.]]
 
-ATT.EFTErgoAdd = 9
-ATT.RecoilMult = 0.63
-ATT.VisualRecoilMult = 0.63
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_sa58_stock"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 7,
+    recoilModifier = -23.5,
+    weight = 0.81,
+}))
+
 
 -- EFT ID: 5b7d64555acfc4001876c8e2
 ARC9.LoadAttachment(ATT, "eft_sa58_stock_brs")
@@ -270,14 +318,18 @@ ATT.CompactName = "SA58 Hump"
 ATT.Icon = Material("entities/eft_sa58_attachments/hump.png", "mips smooth")
 ATT.Description = [[A polymer humpback-style stock for SA-58 assault rifles. Manufactured by DS Arms.]]
 
-ATT.EFTErgoAdd = 4
-ATT.RecoilMult = 0.69
-ATT.VisualRecoilMult = 0.69
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_sa58_stock"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -4,
+    recoilModifier = -22,
+    weight = 0.8,
+}))
+
 
 -- EFT ID: 5b7d645e5acfc400170e2f90
 ARC9.LoadAttachment(ATT, "eft_sa58_stock_hump")
@@ -291,14 +343,18 @@ ATT.CompactName = "SA58 SPR"
 ATT.Icon = Material("entities/eft_sa58_attachments/spr.png", "mips smooth")
 ATT.Description = [[A polymer stock from the SPR (Special Purpose Rifle) kit for SA-58 assault rifles, manufactured by DS Arms.]]
 
-ATT.EFTErgoAdd = 7
-ATT.RecoilMult = 0.64
-ATT.VisualRecoilMult = 0.64
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_sa58_stock"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 12,
+    recoilModifier = -22.5,
+    weight = 0.95,
+}))
+
 
 -- EFT ID: 5b7d63de5acfc400170e2f8d
 ARC9.LoadAttachment(ATT, "eft_sa58_stock_spr")
@@ -311,8 +367,6 @@ ATT.PrintName = "SA-58 buffer tube adapter"
 ATT.CompactName = "SA58 adpt."
 ATT.Icon = Material("entities/eft_sa58_attachments/adap.png", "mips smooth")
 ATT.Description = [[An adapter for installation of telescopic stock buffer tubes on SA-58 rifles. Manufactured by DS Arms.]]
-
-ATT.EFTErgoAdd = -1
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -329,6 +383,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.31,
+}))
+
+
 -- EFT ID: 5b099bf25acfc4001637e683
 ARC9.LoadAttachment(ATT, "eft_sa58_stock_adap")
 
@@ -341,14 +401,18 @@ ATT.CompactName = "SA58 folding"
 ATT.Icon = Material("entities/eft_sa58_attachments/fold.png", "mips smooth")
 ATT.Description = [[A folding steel stock for SA-58 assault rifles. Manufactured by DS Arms.]]
 
-ATT.EFTErgoAdd = 3
-ATT.RecoilMult = 0.69
-ATT.VisualRecoilMult = 0.69
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_sa58_stock"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 10,
+    recoilModifier = -20,
+    weight = 0.8,
+}))
+
 
 -- EFT ID: 5b7d63cf5acfc4001876c8df
 ARC9.LoadAttachment(ATT, "eft_sa58_stock_fold")
@@ -362,14 +426,18 @@ ATT.CompactName = "SA58/FAL PRS2"
 ATT.Icon = Material("entities/eft_sa58_attachments/magpul.png", "mips smooth")
 ATT.Description = [[The PRS 2 polymer stock for FAL series rifles. Manufactured by Magpul.]]
 
-ATT.EFTErgoAdd = 16
-ATT.RecoilMult = 0.66
-ATT.VisualRecoilMult = 0.66
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_sa58_stock"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    recoilModifier = -24,
+    weight = 0.86,
+}))
+
 
 -- EFT ID: 5b7d63b75acfc400170e2f8a
 ARC9.LoadAttachment(ATT, "eft_sa58_stock_magpul")
@@ -384,8 +452,6 @@ ATT.CompactName = "SA58/FAL 10"
 ATT.Icon = Material("entities/eft_sa58_attachments/10.png", "mips smooth")
 ATT.Description = [[A 10-round double-stack steel magazine for FAL/SA-58 7.62x51 NATO rounds.]]
 
-ATT.EFTErgoAdd = 2
-ATT.MalfunctionMeanShotsToFailMult = 0.95
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -401,6 +467,13 @@ ATT.DropMagazineAmount = 1
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_fal_ds_arms_fal_sa58_762x51_10.mdl"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_fal_ds_arms_fal_sa58_762x51_10.mdl"
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.27,
+    malfunctionChance = 0.05,
+}))
+
+
 -- EFT ID: 5b7bef1e5acfc43d82528402
 ARC9.LoadAttachment(ATT, "eft_sa58_mag_10")
 
@@ -414,8 +487,6 @@ ATT.CompactName = "SA58/FAL 30"
 ATT.Icon = Material("entities/eft_sa58_attachments/30.png", "mips smooth")
 ATT.Description = [[A 30-round double-stack steel magazine for FAL/SA-58 7.62x51 NATO rounds.]]
 
-ATT.EFTErgoAdd = -9
-ATT.MalfunctionMeanShotsToFailMult = 0.8
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -431,6 +502,13 @@ ATT.DropMagazineAmount = 1
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_fal_ds_arms_fal_sa58_762x51_30.mdl"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_fal_ds_arms_fal_sa58_762x51_30.mdl"
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -4,
+    weight = 0.49,
+    malfunctionChance = 0.2,
+}))
+
+
 -- EFT ID: 5b7bef5d5acfc43bca7067a3
 ARC9.LoadAttachment(ATT, "eft_sa58_mag_30")
 
@@ -443,8 +521,6 @@ ATT.CompactName = "L1A1 30"
 ATT.Icon = Material("entities/eft_sa58_attachments/30l.png", "mips smooth")
 ATT.Description = [[A 30-round double-stack steel 7.62x51 magazine for L1A1 Self-Loading Rifle (SLR), a British version of FN FAL.]]
 
-ATT.EFTErgoAdd = -8
-ATT.MalfunctionMeanShotsToFailMult = 0.819
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -460,6 +536,13 @@ ATT.DropMagazineAmount = 1
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_fal_sarco_fal_l1a1_orig_762x51_30.mdl"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_fal_sarco_fal_l1a1_orig_762x51_30.mdl"
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -4,
+    weight = 0.49,
+    malfunctionChance = 0.179,
+}))
+
+
 -- EFT ID: 5b7d37845acfc400170e2f87
 ARC9.LoadAttachment(ATT, "eft_sa58_mag_30l")
 
@@ -472,8 +555,6 @@ ATT.CompactName = "SA58 MMW 20"
 ATT.Icon = Material("entities/eft_sa58_attachments/20mmw.png", "mips smooth")
 ATT.Description = [[A 20-round double-stack plastic magazine for FAL/SA-58 7.62x51 NATO rounds. Manufactured by Moses Machine Works.]]
 
-ATT.EFTErgoAdd = -2
-ATT.MalfunctionMeanShotsToFailMult = 0.99
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -489,6 +570,13 @@ ATT.DropMagazineAmount = 1
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_fal_mmw_fal_sa58_762x51_20.mdl"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_fal_mmw_fal_sa58_762x51_20.mdl"
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    weight = 0.29,
+    malfunctionChance = 0.01,
+}))
+
+
 -- EFT ID: 5b7c2d1d5acfc43d1028532a
 ARC9.LoadAttachment(ATT, "eft_sa58_mag_20mmw")
 
@@ -501,8 +589,6 @@ ATT.CompactName = "X-FAL 50"
 ATT.Icon = Material("entities/eft_sa58_attachments/50.png", "mips smooth")
 ATT.Description = [[X-FAL is a 50-round drum magazine for FAL/SA-58 7.62x51 NATO rounds. Manufactured by X Products.]]
 
-ATT.EFTErgoAdd = -20
-ATT.MalfunctionMeanShotsToFailMult = 0.774
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -517,6 +603,13 @@ ATT.SuppressEmptySuffix = false
 ATT.DropMagazineAmount = 1
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_fal_x_products_x_fal_762x51_50.mdl"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_fal_x_products_x_fal_762x51_50.mdl"
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -7,
+    weight = 0.7,
+    malfunctionChance = 0.236,
+}))
+
 
 -- EFT ID: 5b7bef9c5acfc43d102852ec
 ARC9.LoadAttachment(ATT, "eft_sa58_mag_50")
@@ -536,10 +629,6 @@ ATT.HasHG = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_fal_vltor_casv_fal.mdl"
 
-ATT.EFTErgoAdd = 10
-ATT.HeatCapacityMult = 1.006
-ATT.RecoilMult = 0.97
-ATT.VisualRecoilMult = 0.97
 
 ATT.Category = {"eft_sa58_hg"}
 ATT.ExcludeElements = {"barrel_208mm"}
@@ -581,6 +670,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 20,
+    weight = 0.224,
+}))
+
+
 -- EFT ID: 5b7bedd75acfc43d825283f9
 ARC9.LoadAttachment(ATT, "eft_sa58_hg_casvfal")
 
@@ -598,10 +693,6 @@ ATT.HasHG = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_fal_vltor_casv_fas.mdl"
 
-ATT.EFTErgoAdd = 14
-ATT.HeatCapacityMult = 1.01
-ATT.RecoilMult = 0.98
-ATT.VisualRecoilMult = 0.98
 
 ATT.Category = {"eft_sa58_hg"}
 ATT.ExcludeElements = {"barrel_533mm"}
@@ -636,6 +727,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 15,
+    weight = 0.232,
+}))
+
+
 -- EFT ID: 5b7bee755acfc400196d5383
 ARC9.LoadAttachment(ATT, "eft_sa58_hg_casvfas")
 
@@ -654,11 +751,15 @@ ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_fal_fn_original_stamped.mdl"
 ATT.LHIK = true 
 
-ATT.EFTErgoAdd = 7
-ATT.HeatCapacityMult = 0.962
 
 ATT.Category = {"eft_sa58_hg"}
 ATT.ExcludeElements = {"barrel_208mm"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 15,
+    weight = 0.61,
+}))
+
 
 -- EFT ID: 5b7bed205acfc400161d08cc
 ARC9.LoadAttachment(ATT, "eft_sa58_hg_fal")
@@ -678,10 +779,15 @@ ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_fal_ds_arms_belgian.mdl"
 ATT.LHIK = true 
 
-ATT.EFTErgoAdd = 9
 
 ATT.Category = {"eft_sa58_hg"}
 ATT.ExcludeElements = {"barrel_208mm"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 16,
+    weight = 0.51,
+}))
+
 
 -- EFT ID: 5b7d671b5acfc43d82528ddd
 ARC9.LoadAttachment(ATT, "eft_sa58_hg_belg")
@@ -701,8 +807,6 @@ ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_sa58_ds_arms_picatinny_quad_rail.mdl"
 -- ATT.LHIK = true 
 
-ATT.EFTErgoAdd = 7
-ATT.HeatCapacityMult = 1.07
 
 ATT.Category = {"eft_sa58_hg"}
 ATT.ExcludeElements = {"barrel_533mm"}
@@ -738,6 +842,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 14.5,
+    weight = 0.48,
+}))
+
+
 -- EFT ID: 5b099a9d5acfc47a8607efe7
 ARC9.LoadAttachment(ATT, "eft_sa58_hg_quad")
 
@@ -755,9 +865,6 @@ ATT.HasHG = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_sa58_ds_arms_picatinny_full_lenght_quad_rail.mdl"
 -- ATT.LHIK = true 
-
-ATT.EFTErgoAdd = 6
-ATT.HeatCapacityMult = 1.06
 
 ATT.Category = {"eft_sa58_hg"}
 ATT.ExcludeElements = {"barrel_208mm"}
@@ -800,6 +907,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 20,
+    weight = 0.61,
+}))
+
+
 -- EFT ID: 5b7be1ca5acfc400170e2d2f
 ARC9.LoadAttachment(ATT, "eft_sa58_hg_quadfull")
 
@@ -818,8 +931,6 @@ ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_fal_aim_sport_universal_keymod.mdl"
 ATT.LHIK = true 
 
-ATT.EFTErgoAdd = 9
-ATT.HeatCapacityMult = 0.98
 
 ATT.Category = {"eft_sa58_hg"}
 ATT.ExcludeElements = {"barrel_208mm"}
@@ -854,6 +965,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 20,
+    weight = 0.211,
+}))
+
+
 -- EFT ID: 5b7be2345acfc400196d524a
 ARC9.LoadAttachment(ATT, "eft_sa58_hg_sportkm")
 
@@ -872,8 +989,6 @@ ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_fal_aim_sport_universal_m_lok.mdl"
 ATT.LHIK = true 
 
-ATT.EFTErgoAdd = 9
-ATT.HeatCapacityMult = 0.972
 
 ATT.Category = {"eft_sa58_hg"}
 ATT.ExcludeElements = {"barrel_208mm"}
@@ -924,6 +1039,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 20,
+    weight = 0.269,
+}))
+
+
 -- EFT ID: 5b7bebc85acfc43bca706666
 ARC9.LoadAttachment(ATT, "eft_sa58_hg_sportmlok")
 
@@ -943,13 +1064,16 @@ ATT.MuzzleDevice = true
 ATT.MuzzleDevice_Priority = 4
 ATT.BarrelLengthAdd = 0.5
 
-ATT.SpreadMult = 0.97
-ATT.RecoilMult = 0.93
-ATT.VisualRecoilMult = 0.93
-ATT.HeatCapacityMult = 1.01
-ATT.PhysBulletMuzzleVelocityMult = 1.005
 
 ATT.Category = {"eft_fal_muzzle"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    recoilModifier = -5,
+    accuracyModifier = 3,
+    weight = 0.064,
+}))
+
 
 -- EFT ID: 5b099b7d5acfc400186331e4
 ARC9.LoadAttachment(ATT, "eft_muzzle_sa58_3pr")
@@ -970,13 +1094,16 @@ ATT.MuzzleDevice = true
 ATT.MuzzleDevice_Priority = 4
 ATT.BarrelLengthAdd = 1
 
-ATT.RecoilMult = 0.89
-ATT.SpreadMult = 0.96
-ATT.VisualRecoilMult = 0.89
-ATT.HeatCapacityMult = 1.01
-ATT.PhysBulletMuzzleVelocityMult = 1.005
 
 ATT.Category = {"eft_fal_muzzle"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -3,
+    recoilModifier = -12,
+    accuracyModifier = 4,
+    weight = 0.11,
+}))
+
 
 -- EFT ID: 5b7d68af5acfc400170e30c3
 ARC9.LoadAttachment(ATT, "eft_muzzle_sa58_aut")
@@ -995,8 +1122,6 @@ ATT.CompactName = "X-25 50"
 ATT.Icon = Material("entities/eft_ar10_attachments/magdrum.png", "mips smooth")
 ATT.Description = [[A 50-round 7.62x51 drum magazine for the AR-10 platform weapons. Manufactured by X Products.]]
 
-ATT.EFTErgoAdd = -15
-ATT.MalfunctionMeanShotsToFailMult = 0.7
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -1009,6 +1134,13 @@ ATT.SuppressEmptySuffix = false
 ATT.DropMagazineAmount = 1
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ar10_drum_762x51_50.mdl"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ar10_drum_762x51_50.mdl"
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -12,
+    weight = 0.69,
+    malfunctionChance = 0.28,
+}))
 
 
 -- EFT ID: 6761770e48fa5c377e06fc3c

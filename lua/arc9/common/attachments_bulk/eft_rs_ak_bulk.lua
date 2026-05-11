@@ -27,6 +27,11 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.025,
+}))
+
+
 -- EFT ID: 5ac733a45acfc400192630e2
 ARC9.LoadAttachment(ATT, "eft_rs_ak_ak105")
 
@@ -56,6 +61,11 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, -2, 0.3),
     }
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.025,
+}))
 
 
 -- EFT ID: 5649b0544bdc2d1b2b8b458a
@@ -88,6 +98,11 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.025,
+}))
+
+
 -- EFT ID: 5ac72e475acfc400180ae6fe
 ARC9.LoadAttachment(ATT, "eft_rs_ak_ak74m")
 
@@ -118,6 +133,11 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.025,
+}))
+
+
 -- EFT ID: 59d650cf86f7741b846413a4
 ARC9.LoadAttachment(ATT, "eft_rs_ak_akm")
 
@@ -137,6 +157,11 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_rs_akmb.mdl"
 
 ATT.Category = {"eft_akm_rearsight"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.035,
+}))
 
 
 -- EFT ID: 5a0eb980fcdbcb001a3b00a6
@@ -171,6 +196,11 @@ ATT.IronSights = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.01,
+}))
+
+
 -- EFT ID: 5a0ed824fcdbcb0176308b0d
 ARC9.LoadAttachment(ATT, "eft_rs_ak_akmp")
 
@@ -189,10 +219,15 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_rs_rifle_dynamics.mdl"
 
-ATT.EFTErgoAdd = 1
 
 ATT.Category = {"eft_ak74_rearsight", "eft_akm_rearsight", "eft_rpk16_rearsight"}
 
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 0.1,
+    weight = 0.026,
+}))
 
 
 -- EFT ID: 628a7b23b0f75035732dd565
@@ -213,7 +248,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_rs_tula_tt01.mdl"
 
-ATT.EFTErgoAdd = -1
 
 ATT.ExcludeElements = {"railedcover", "nolongrear"}
 ATT.Category = {"eft_ak74_rearsight", "eft_akm_rearsight", "eft_tt01_rearsight", "eft_svds_rs"}
@@ -227,6 +261,12 @@ ATT.Attachments = {
         ExtraSightDistance = 8
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.1,
+    weight = 0.085,
+}))
 
 
 -- EFT ID: 5649d9a14bdc2d79388b4580
@@ -259,6 +299,11 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.025,
+}))
+
+
 -- EFT ID: 59e8977386f77415a553c453
 ARC9.LoadAttachment(ATT, "eft_rs_ak_vpo209")
 
@@ -277,6 +322,11 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_front_akmp.mdl"
 
 ATT.Category = {"eft_ak_akmp_fs"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.01,
+}))
 
 
 -- EFT ID: 5a0f096dfcdbcb0176308b15

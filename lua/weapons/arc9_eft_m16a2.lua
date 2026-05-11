@@ -50,6 +50,7 @@ SWEP.ViewModel = "models/weapons/arc9/darsu_eft/c_m16.mdl"
 SWEP.DefaultBodygroups = "10000000000000"
 
 SWEP.EFTErgo = 32
+SWEP.EFTWeight = 0.79
 SWEP.Spread = 1.24 * ARC9.MOAToAcc
 
 

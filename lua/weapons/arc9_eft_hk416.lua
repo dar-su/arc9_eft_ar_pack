@@ -38,6 +38,7 @@ SWEP.CustomizePos = Vector(17, 42.5, 4)
 
 SWEP.RPM = 850
 SWEP.EFTErgo = 51
+SWEP.EFTWeight = 0.52
 
 SWEP.Spread = 0.344 * ARC9.MOAToAcc
 SWEP.HeatCapacity = 240

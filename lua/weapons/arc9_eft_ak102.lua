@@ -21,6 +21,7 @@ SWEP.CustomizeRotateAnchor = Vector(21.5, -4.28, -5.23)
 SWEP.BarrelLength = 26
 
 SWEP.EFTErgo = 38
+SWEP.EFTWeight = 1.992
 
 SWEP.Spread = 1.925 * ARC9.MOAToAcc
 

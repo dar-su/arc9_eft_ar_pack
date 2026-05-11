@@ -28,6 +28,7 @@ SWEP.Spread = 0.344 * ARC9.MOAToAcc
 SWEP.DefaultElements = {"x17uwu"} -- owo
 
 SWEP.EFTErgo = 47
+SWEP.EFTWeight = 0.81
 
 SWEP.Attachments = {
     _,

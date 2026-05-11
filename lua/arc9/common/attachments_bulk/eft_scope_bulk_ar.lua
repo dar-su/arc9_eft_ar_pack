@@ -19,7 +19,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_optic_large", "eft_optic_large_nosniper"}
 ATT.Folder = "Scopes"
 
-ATT.EFTErgoAdd = -2
 
 ATT.FoldSights = true
 
@@ -96,6 +95,12 @@ ATT.HoloSightSize = 600
 ATT.HoloSightColorable = false
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    weight = 0.595,
+}))
+
+
 -- EFT ID: 5dfe6104585a0c3e995c7b82
 ARC9.LoadAttachment(ATT, "eft_scope_adop4")
 
@@ -119,7 +124,6 @@ ATT.Category = {"eft_1p78"}
 -- ATT.Folder = "Scopes"
 
 
-ATT.EFTErgoAdd = -6
 
 ATT.FoldSights = true
 
@@ -169,6 +173,12 @@ ATT.Attachments = {
 -- ATT.ActivateElements = {"nolongrear"}
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -6,
+    weight = 0.6,
+}))
+
+
 -- EFT ID: 618a75f0bd321d49084cd399
 ARC9.LoadAttachment(ATT, "eft_scope_dovetail_1p78")
 
@@ -197,7 +207,6 @@ ATT.Folder = "Reflex"
 
 
 
-ATT.EFTErgoAdd = -3
 
 
 ATT.FoldSights = true
@@ -259,6 +268,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -3,
+    weight = 0.273,
+}))
+
+
 -- EFT ID: 5947db3f86f77447880cf76f
 ARC9.LoadAttachment(ATT, "eft_scope_dovetail_ekp802")
 
@@ -280,11 +295,6 @@ ATT.Model = "models/weapons/arc9_eft_shared/atts/optic/dovetail/npsum.mdl"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mount_dovetail", "eft_mount_dovetail_pp19"}
 ATT.Folder = "Scopes"
-
-
-ATT.RecoilMult = 0.95
-ATT.VisualRecoilMult = 0.95
-ATT.EFTErgoAdd = -20
 
 
 ATT.FoldSights = true
@@ -347,6 +357,13 @@ ATT.Attachments = {
 -- ATT.ActivateElements = {"nolongrear"}
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -20,
+    recoilModifier = -5,
+    weight = 1.9,
+}))
+
+
 -- EFT ID: 5a7c74b3e899ef0014332c29
 ARC9.LoadAttachment(ATT, "eft_scope_dovetail_nspum")
 
@@ -373,7 +390,6 @@ ATT.Folder = "Reflex"
 
 ATT.ActivateElements = {"nolongrear"}
 
-ATT.EFTErgoAdd = -4
 
 
 ATT.FoldSights = true
@@ -396,6 +412,12 @@ ATT.HoloSightSize = 376
 ATT.HoloSightColorable = false
 ATT.HoloSightDepthAdjustment = -0.0035
 ATT.ModelOffset = Vector(-2.4, 0.97, 2.05)
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -4,
+    weight = 0.295,
+}))
 
 
 -- EFT ID: 57486e672459770abd687134
@@ -422,7 +444,6 @@ ATT.Category = {"eft_mount_dovetail", "eft_mount_dovetail_pp19"}
 ATT.Folder = "Reflex"
 
 
-ATT.EFTErgoAdd = -3
 
 
 ATT.FoldSights = true
@@ -445,6 +466,12 @@ ATT.HoloSightSize = 570
 ATT.HoloSightColorable = false
 -- ATT.HoloSightDepthAdjustment = 0.01
 ATT.ModelOffset = Vector(-2.4, 0.97, 2.05)
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -3,
+    weight = 0.52,
+}))
 
 
 -- EFT ID: 618a5d5852ecee1505530b2a
@@ -473,7 +500,6 @@ ATT.Folder = "Reflex"
 ATT.ActivateElements = {"nolongrear"}
 
 
-ATT.EFTErgoAdd = -4
 
 
 ATT.FoldSights = true
@@ -494,6 +520,12 @@ ATT.HoloSightSize = 620
 ATT.HoloSightColorable = false
 -- ATT.HoloSightDepthAdjustment = 0.01
 ATT.ModelOffset = Vector(-2.4, 0.97, 2.05)
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -4,
+    weight = 0.45,
+}))
 
 
 -- EFT ID: 6113d6c3290d254f5e6b27db
@@ -520,7 +552,6 @@ ATT.Folder = "Scopes"
 
 
 
-ATT.EFTErgoAdd = -7
 
 
 ATT.FoldSights = true
@@ -578,6 +609,12 @@ ATT.Attachments = {
 ATT.ActivateElements = {"nolongrear"}
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -7,
+    weight = 0.6,
+}))
+
+
 -- EFT ID: 5c82342f2e221644f31c060e
 ARC9.LoadAttachment(ATT, "eft_scope_dovetail_pso1")
 
@@ -601,7 +638,6 @@ ATT.Category = {"eft_mount_dovetail", "eft_mount_dovetail_pp19"}
 ATT.Folder = "Scopes"
 
 
-ATT.EFTErgoAdd = -7
 
 
 ATT.FoldSights = true
@@ -658,6 +694,12 @@ ATT.Attachments = {
 ATT.ActivateElements = {"nolongrear"}
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -7,
+    weight = 0.6,
+}))
+
+
 -- EFT ID: 576fd4ec2459777f0b518431
 ARC9.LoadAttachment(ATT, "eft_scope_dovetail_pso1m2")
 
@@ -680,7 +722,6 @@ ATT.Category = {"eft_mount_dovetail", "eft_mount_dovetail_pp19"}
 ATT.Folder = "Scopes"
 
 
-ATT.EFTErgoAdd = -7
 
 
 ATT.FoldSights = true
@@ -737,6 +778,12 @@ ATT.Attachments = {
 ATT.ActivateElements = {"nolongrear"}
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -7,
+    weight = 0.6,
+}))
+
+
 -- EFT ID: 5c82343a2e221644f31c0611
 ARC9.LoadAttachment(ATT, "eft_scope_dovetail_pso1m2non1")
 
@@ -760,7 +807,6 @@ ATT.Category = {"eft_mount_dovetail", "eft_mount_dovetail_pp19"}
 ATT.Folder = "Scopes"
 
 
-ATT.EFTErgoAdd = -6
 
 ATT.FoldSights = true
 
@@ -808,6 +854,12 @@ ATT.Attachments = {
 -- ATT.ActivateElements = {"nolongrear"}
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -6,
+    weight = 0.795,
+}))
+
+
 -- EFT ID: 5cf638cbd7f00c06595bc936
 ARC9.LoadAttachment(ATT, "eft_scope_dovetail_tulpan")
 
@@ -828,7 +880,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_optic_large", "eft_optic_large_nosniper"}
 ATT.Folder = "Scopes"
 
-ATT.EFTErgoAdd = -3
 ATT.FoldSights = true
 
 ATT.Sights = {
@@ -857,6 +908,12 @@ ATT.ScopeScreenRatio = 478/1080
 
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -3,
+    weight = 0.436,
+}))
+
+
 -- EFT ID: 626bb8532c923541184624b4
 ARC9.LoadAttachment(ATT, "eft_scope_swampfox")
 
@@ -877,7 +934,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/scope_sig_tango6t.mdl"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = "eft_optic_30mm"
 
-ATT.EFTErgoAdd = -4
 
 ATT.FoldSights = true
 
@@ -956,6 +1012,12 @@ ATT.ScopeScreenRatio = 573/1080
 ATT.RTScopeNew_ShadowScale = 1.2
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -4,
+    weight = 0.626,
+}))
+
+
 -- EFT ID: 6567e7681265c8a131069b0f
 ARC9.LoadAttachment(ATT, "eft_scope_30mm_tango6t")
 
@@ -983,7 +1045,6 @@ ATT.Folder = "Reflex"
 
 
 
-ATT.EFTErgoAdd = -3
 
 
 ATT.FoldSights = true
@@ -1032,6 +1093,12 @@ ATT.HoloSightColorable = false
 -- ATT.HoloSightDepthAdjustment = 0.01
 ATT.ModelOffset = Vector(-2.1, 1, 2.0)
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -3,
+    weight = 0.273,
+}))
+
+
 -- EFT ID: 6544d4187c5457729210d277
 ARC9.LoadAttachment(ATT, "eft_scope_dovetail_ekp1s03")
 
@@ -1050,7 +1117,6 @@ ATT.Description = [[A rubber eyecup for the NPZ 1P78 scope.]]
 
 ATT.Model = "models/weapons/arc9_eft_shared/atts/optic/dovetail/1p78_eyecap.mdl"
 
-ATT.EFTErgoAdd = 6
 
 
 ATT.Category = {"eft_1p78_eyecap"}
@@ -1058,6 +1124,12 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.AdditionalSightDistance = 1
 ATT.ModelOffset = Vector(0, 0, 0)
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    weight = 0.005,
+}))
 
 
 -- EFT ID: 618a760e526131765025aae3
@@ -1075,7 +1147,6 @@ ATT.Description = [[Rubber eyecup for NSPU-M scope.]]
 
 ATT.Model = "models/weapons/arc9_eft_shared/atts/optic/dovetail/1p78_eyecap.mdl"
 
-ATT.EFTErgoAdd = 6
 
 
 ATT.Category = {"eft_nspum_eyecap"}
@@ -1083,6 +1154,12 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.AdditionalSightDistance = 2
 ATT.ModelOffset = Vector(0, 0, 0)
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 6,
+    weight = 0.005,
+}))
 
 
 -- EFT ID: 5ba36f85d4351e0085325c81
@@ -1101,7 +1178,6 @@ ATT.Description = [[Rubber eyecup for PSO scopes family.]]
 
 ATT.Model = "models/weapons/arc9_eft_shared/atts/optic/dovetail/pso_eyecap.mdl"
 
-ATT.EFTErgoAdd = 5
 
 
 ATT.Category = {"eft_pso_eyecap"}
@@ -1109,6 +1185,12 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.AdditionalSightDistance = 2
 ATT.ModelOffset = Vector(0, 0, 0)
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    weight = 0.005,
+}))
 
 
 -- EFT ID: 57f3a5ae2459772b0e0bf19e
@@ -1125,7 +1207,6 @@ ATT.Icon = Material("entities/eft_attachments/scopes/usp1cup.png", "mips smooth"
 ATT.Description = [[Rubber eyecup for USP-1]]
 
 ATT.Model = "models/weapons/arc9_eft_shared/atts/optic/dovetail/1p29_eyecap.mdl"
-ATT.EFTErgoAdd = 5
 
 
 ATT.Category = {"eft_tulpan_eyecap"}
@@ -1133,6 +1214,12 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.AdditionalSightDistance = 2
 ATT.ModelOffset = Vector(0, 0, 0)
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    weight = 0.005,
+}))
 
 
 -- EFT ID: 5cf639aad7f00c065703d455
@@ -1155,7 +1242,6 @@ ATT.Category = {"eft_optic_large"}
 ATT.Folder = "Scopes/Mounts"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -1
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_scope"),
@@ -1165,6 +1251,12 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.19,
+}))
+
 
 -- EFT ID: 6567e751a715f85433025998
 ARC9.LoadAttachment(ATT, "eft_mount_30mm_alpha4")
@@ -1189,7 +1281,6 @@ ATT.ExcludeElements = {"eft_rsh12_mag_std"} -- wawa not for rsh12
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = "eft_optic_30mm"
 
-ATT.EFTErgoAdd = -3.5
 
 ATT.FoldSights = true
 
@@ -1246,6 +1337,12 @@ ATT.ScopeScreenRatio = 0.5833
 ATT.RTScopeNew_ShadowScale = 1.3
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -3.5,
+    weight = 0.453,
+}))
+
+
 -- EFT ID: 68caad7f933990601c07f47c
 ARC9.LoadAttachment(ATT, "eft_scope_30mm_mark4mrt")
 
@@ -1263,7 +1360,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_elcan_mount"}
 
-ATT.EFTErgoAdd = -0.1
 
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mount_base_specter_trijicon_mounting_plate.mdl"
@@ -1278,6 +1374,12 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 1),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.1,
+    weight = 0.0155,
+}))
+
 
 -- EFT ID: 688b54a11cef2a61d005273b
 ARC9.LoadAttachment(ATT, "eft_scope_elcan_mount")
@@ -1298,7 +1400,6 @@ ATT.Category = {"eft_optic_large"}
 ATT.Folder = "Scopes/Mounts"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -1
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_scope"),
@@ -1316,6 +1417,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.18,
+}))
+
+
 -- EFT ID: 68caacc7933990601c07f479
 ARC9.LoadAttachment(ATT, "eft_mount_30mm_arms")
 
@@ -1331,9 +1438,13 @@ ATT.Description = "A top ring cap for the A.R.M.S. #22 mount."
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mount_base_arms_22_ring_cap.mdl"
 
-ATT.EFTErgoAdd = 0.5
 ATT.Category = {"eft_mount_arms_22"}
 ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.02,
+}))
 
 
 -- EFT ID: 68caace5f42a4476cf0be2b4
@@ -1351,7 +1462,6 @@ ATT.Description = "A universal rail mount for installation of various red dot si
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mount_base_arms_22_trr.mdl"
 
-ATT.EFTErgoAdd = -0.1
 
 ATT.Category = {"eft_mount_arms_22"}
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -1367,6 +1477,12 @@ ATT.Attachments = {
         
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.1,
+    weight = 0.075,
+}))
 
 
 -- EFT ID: 68caacf7c8ac87b10507c5a9

@@ -47,6 +47,7 @@ SWEP.DefaultBodygroups = "00000010000000"
 SWEP.RecoilAutoControl = 6
 
 SWEP.EFTErgo = 50
+SWEP.EFTWeight = 0.69
 
 SWEP.RPM = 450
 

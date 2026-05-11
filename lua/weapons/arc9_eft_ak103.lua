@@ -28,6 +28,7 @@ SWEP.DefaultBodygroups = "00000020000000"
 
 SWEP.BarrelLength = 38
 SWEP.EFTErgo = 35
+SWEP.EFTWeight = 2.392
 SWEP.MalfunctionMeanShotsToFail = 675
 
 SWEP.RPM = 600

@@ -17,6 +17,7 @@ SWEP.DefaultBodygroups = "010000000000000"
 SWEP.Description = ARC9:GetPhrase("eft_weapon_vsk94_desc")
 
 SWEP.Spread = 3.266 * ARC9.MOAToAcc
+SWEP.EFTWeight = 0.92
 
 SWEP.DefaultElements = {"vskuwu"} -- owo
 

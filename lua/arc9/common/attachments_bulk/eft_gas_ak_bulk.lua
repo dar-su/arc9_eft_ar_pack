@@ -32,6 +32,11 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.12,
+}))
+
+
 -- EFT ID: 59d64ec286f774171d1e0a42
 ARC9.LoadAttachment(ATT, "eft_gas_ak_6p1")
 
@@ -67,6 +72,11 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.12,
+}))
+
+
 -- EFT ID: 59c6633186f7740cf0493bb9
 ARC9.LoadAttachment(ATT, "eft_gas_ak_6p20")
 
@@ -90,9 +100,6 @@ ATT.LHIK = true
 ATT.Category = {"eft_ak_gasblock"}
 
 
-ATT.EFTErgoAdd = 6
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 1.03
 
 ATT.Attachments = {
@@ -112,6 +119,13 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 1, 0),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 13,
+    recoilModifier = -0.5,
+    weight = 0.12,
+}))
 
 
 -- EFT ID: 59ccfdba86f7747f2109a587
@@ -149,6 +163,11 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.12,
+}))
+
+
 -- EFT ID: 59e649f986f77411d949b246
 ARC9.LoadAttachment(ATT, "eft_gas_ak_molot")
 
@@ -179,9 +198,6 @@ ATT.Category = {"eft_ak_gasblock"}
 ATT.ExcludeElements = {"short_barrel"}
 ATT.ActivateElements = {"nogp34"}
 
-ATT.EFTErgoAdd = 10
-ATT.RecoilMult = 0.955
-ATT.VisualRecoilMult = 0.955
 ATT.HeatCapacityMult = 0.93
 
 ATT.Attachments = {
@@ -225,6 +241,13 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 17,
+    recoilModifier = -0.5,
+    weight = 0.55,
+}))
+
+
 -- EFT ID: 5b237e425acfc4771e1be0b6
 ARC9.LoadAttachment(ATT, "eft_gas_ak_troy")
 
@@ -262,6 +285,11 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.12,
+}))
+
+
 -- EFT ID: 5a01ad4786f77450561fda02
 ARC9.LoadAttachment(ATT, "eft_gas_ak_vdmcs")
 
@@ -289,9 +317,6 @@ ATT.Category = {"eft_ak_gasblock"}
 ATT.ExcludeElements = {"short_barrel"}
 ATT.ActivateElements = {"nogp34"}
 
-ATT.EFTErgoAdd = 14
-ATT.RecoilMult = 0.96
-ATT.VisualRecoilMult = 0.96
 ATT.HeatCapacityMult = 0.956
 
 
@@ -332,6 +357,13 @@ ATT.Attachments = {
         Ang = Angle(0, -90, -90),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 17,
+    recoilModifier = -0.5,
+    weight = 0.385,
+}))
 
 
 -- EFT ID: 5cf656f2d7f00c06585fb6eb
@@ -364,9 +396,6 @@ ATT.Category = {"eft_ak_gasblock"}
 ATT.ExcludeElements = {"short_barrel"}
 ATT.ActivateElements = {"nogp34"}
 
-ATT.EFTErgoAdd = 14
-ATT.RecoilMult = 0.96
-ATT.VisualRecoilMult = 0.96
 ATT.HeatCapacityMult = 0.956
 
 ATT.Attachments = {
@@ -408,6 +437,13 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 17,
+    recoilModifier = -0.5,
+    weight = 0.385,
+}))
+
+
 -- EFT ID: 5d4aab30a4b9365435358c55
 ARC9.LoadAttachment(ATT, "eft_gas_ak_vs24vs33_w")
 
@@ -426,9 +462,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasGas = true 
 ATT.HasHG = true 
 
-ATT.EFTErgoAdd = 9
-ATT.RecoilMult = 0.95
-ATT.VisualRecoilMult = 0.95
 ATT.HeatCapacityMult = 0.945
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_rd704_ionlite.mdl"
@@ -467,6 +500,13 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, -0.2),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 15,
+    recoilModifier = -5,
+    weight = 0.48,
+}))
+
 
 -- EFT ID: 628a83c29179c324ed269508
 ARC9.LoadAttachment(ATT, "eft_gas_rd704_ionlite")
