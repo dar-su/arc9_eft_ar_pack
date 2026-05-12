@@ -1234,14 +1234,13 @@ ATT = {}
 
 ATT.PrintName = "AK-74 \"Saiga 545\" 5.45x39 20-round magazine"
 ATT.CompactName = "Saiga 20"
-ATT.Icon = Material("entities/eft_ak_attachments/mag/545saiga20.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/mag/saiga20.png", "mips smooth")
 ATT.Description = [[A 20-round 5.45x39 Delta-Tech polymer magazine Saiga 545, for the AK-based civilian carbine of the same name.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak74_izhmash_saiga_545_std_545x39_20.mdl"
-ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak74_izhmash_saiga_545_std_545x39_20.mdl"
-
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak74_deltatech_saiga_mk_545_20.mdl"
+ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak74_deltatech_saiga_mk_545_20.mdl"
 
 ATT.Category = {
     "eft_ak_545_mag",
@@ -1257,7 +1256,6 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     weight = 0.13,
     malfunctionChance = 0.087,
 }))
-
 
 -- EFT ID: 64b9e265c94d0d15c5027e35
 ARC9.LoadAttachment(ATT, "eft_mag_ak_545_20")
