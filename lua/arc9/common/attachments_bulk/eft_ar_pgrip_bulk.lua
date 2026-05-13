@@ -534,6 +534,13 @@ ATT.Category = "eft_ar15_pgrip_m4"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    recoilModifier = -1.5,
+    weight = 0.08,
+}))
+
+-- EFT ID: 652911675ae2ae97b80fdf3c
 ARC9.LoadAttachment(ATT, "eft_ar_pgrip_sig")
 
 ///////////////////////////////////////      eft_ar_pgrip_a1

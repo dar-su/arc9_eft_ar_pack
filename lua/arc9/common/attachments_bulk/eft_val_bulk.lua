@@ -228,23 +228,6 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
 -- EFT ID: 6878ccf4181ac8a5b5077236
 ARC9.LoadAttachment(ATT, "eft_val_stock_nb")
 
--- ///////////////////////////////////////      eft_val_dc_vss
-
--- ATT = {}
-
--- ATT.PrintName = "VSS dust cover"
--- ATT.CompactName = "VSS"
--- ATT.Icon = Material("entities/eft_val_attachments/dcvss.png", "mips smooth")
--- ATT.Description = [[A standard-issue dust cover for VSS Vintorez sniper rifles, manufactured by TsNIITochMash.]]
-
--- 
--- ATT.SortOrder = 0
--- ATT.MenuCategory = "ARC9 - EFT Attachments"
-
--- ATT.Category = {"eft_val_dc"}
-
--- EFT ID: 578395402459774a256959b5
--- ARC9.LoadAttachment(ATT, "eft_val_dc_vss")
 
 ///////////////////////////////////////      eft_val_dc_val
 
@@ -269,23 +252,6 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
 
 -- EFT ID: 57c44f4f2459772d2c627113
 ARC9.LoadAttachment(ATT, "eft_val_dc_val")
-
--- ///////////////////////////////////////      eft_val_rs_vss
-
--- ATT = {}
-
--- ATT.PrintName = "VSS rear sight"
--- ATT.CompactName = "VSS"
--- ATT.Icon = Material("entities/eft_val_attachments/rs.png", "mips smooth")
--- ATT.Description = [[A standard vertically adjustable mechanical rear sight for the VSS Vintorez sniper rifle.]]
-
--- ATT.SortOrder = 0
--- ATT.MenuCategory = "ARC9 - EFT Attachments"
-
--- ATT.Category = {"eft_val_rs"}
-
--- EFT ID: 57838e1b2459774a256959b1
--- ARC9.LoadAttachment(ATT, "eft_val_rs_vss")
 
 ///////////////////////////////////////      eft_val_rs_val
 
@@ -478,49 +444,6 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
 -- EFT ID: 5a69a2ed8dc32e000d46d1f1
 ARC9.LoadAttachment(ATT, "eft_val_grip_rotor")
 
-
--- ///////////////////////////////////////      eft_val_supp_vss
-
-
--- ATT = {}
-
--- ATT.PrintName = "VSS 9x39 integral barrel-suppressor"
--- ATT.CompactName = "VSS"
--- ATT.Icon = Material("entities/eft_val_attachments/sup.png", "mips smooth")
--- ATT.Description = [[A TsNIITochMash-manufactured integral barrel-suppressor module for VSS Vintorez.]]
-
--- ATT.HasBarrel = true 
-
--- -- -- -- -- ATT.PhysBulletMuzzleVelocityMult = 0.94
--- -- ATT.HeatCapacityMult = 1.01
-
--- ATT.Silencer = true
--- ATT.MuzzleParticle = "muzzleflash_suppressed"
--- ATT.NoFlash = true
-
--- ATT.SortOrder = 0
--- ATT.MenuCategory = "ARC9 - EFT Attachments"
-
--- ATT.Category = {"eft_val_barrel"}
--- ATT.Attachments = {
---     {
---         PrintName = ARC9:GetPhrase("eft_cat_mount"),
---         Category = "eft_val_mount",
---         Pos = Vector(-3.25, 0, 0),
---         Ang = Angle(0, 0, 0),
---         Icon_Offset = Vector(0, 0, 0),
---     },
---     {
---         PrintName = ARC9:GetPhrase("eft_cat_rearsight"),
---         Category = "eft_val_rs",
---         Pos = Vector(-2.25, 0, -1),
---         Ang = Angle(0, 0, 0),
---         Icon_Offset = Vector(0, 0, 0),
---     },
--- }
-
--- EFT ID: 57838c962459774a1651ec63
--- ARC9.LoadAttachment(ATT, "eft_val_supp_vss")
 
 ///////////////////////////////////////      eft_val_supp_val
 

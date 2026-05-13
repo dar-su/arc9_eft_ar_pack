@@ -196,6 +196,37 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
 -- EFT ID: 5c791e872e2216001219c40a
 ARC9.LoadAttachment(ATT, "eft_foregrip_cobra")
 
+///////////////////////////////////////      eft_foregrip_cobra_fde
+
+
+ATT = {}
+
+ATT.PrintName = "Strike Industries Cobra Tactical foregrip FDE"
+ATT.CompactName = "Cobra FDE"
+ATT.Description = [[The Cobra tactical vertical grip integrates the form with functionality. Its hybrid-designed shape works both as a regular foregrip and as a comfortable hand stop when going with the thumb over method. The grip allows you to handle the weapon with the confidence and the organic design enables the operator to manipulate the rifle in a way that's most comfortable at any given moment. Flat Dark Earth.]]
+ATT.Icon = Material("entities/eft_attachments/655dccfdbdcc6b5df71382b6.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/fg_cobra.mdl"
+ATT.ModelMaterial = "models/weapons/arc9/darsu_eft/mods/foregrip_all_strike_industries_cobra_tactical_LOD0_fde"
+
+ATT.LHIK_Priority = 2
+ATT.LHIK = true
+
+ATT.SortOrder = 0
+ATT.Category = "eft_foregrip_small"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.AdvancedCamoSupport = true
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 12,
+    weight = 0.08,
+}))
+
+
+-- EFT ID: 655dccfdbdcc6b5df71382b6
+ARC9.LoadAttachment(ATT, "eft_foregrip_cobra_fde")
+
 
 ///////////////////////////////////////      eft_foregrip_cqr
 

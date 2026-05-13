@@ -151,6 +151,38 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
 -- EFT ID: 6087e663132d4d12c81fd96b
 ARC9.LoadAttachment(ATT, "eft_grip_ak_ags74")
 
+///////////////////////////////////////      eft_grip_ak_ags74_redline
+
+
+ATT = {}
+
+ATT.PrintName = "AK Custom Arms AGS-74 PRO + Sniper Kit pistol grip (Redline)"
+ATT.CompactName = "AGS-74 RL"
+ATT.Icon = Material("entities/eft_ak_attachments/grip/agsrl.png", "mips smooth")
+ATT.Description = [[A lightweight ergonomic pistol grip for AK series weapon systems, features the "Sniper Kit" palm shelf for user comfort and hand rest. 
+Manufactured by Custom Arms.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+
+ATT.HasGrip = true
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_ags74_pro.mdl"
+ATT.ModelMaterial = "models/weapons/arc9/darsu_eft/mods/pistolgrip_ak_custom_arms_ags74_pro_stage_2_LOD0_rl"
+
+ATT.Category = {"eft_ak_grip"}
+
+ATT.AdvancedCamoSupport = true
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    recoilModifier = -1.5,
+    weight = 0.15,
+}))
+
+
+-- EFT ID: 6981f8ca1d2e2070560b7275
+ARC9.LoadAttachment(ATT, "eft_grip_ak_ags74_redline")
+
 
 ///////////////////////////////////////      eft_grip_ak_ak12
 

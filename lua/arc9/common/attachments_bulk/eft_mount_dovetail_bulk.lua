@@ -356,10 +356,8 @@ ATT = {}
 
 ATT.PrintName = "RS Regulate AK-303M Full Length Lower dovetail mount"
 ATT.CompactName = "AK-303M"
-ATT.Icon = Material("entities/eft_attachments/mount/dt_rsr.png", "mips smooth")
-ATT.Description = [[The AK-303M side platform is designed as a base for mounting RS Regulate top mounts on AK assault rifles and their variants: Saiga, SVD, and others. Manufactured by RS Regulate.
-+
-The AKR 1913 Railed 0 MOA Mount, installed on the AK-303M Lower Mount. Manufactured by RS Regulate.]]
+ATT.Icon = Material("entities/eft_attachments/65f1b1176dbd6c5ba2082eed.png", "mips smooth")
+ATT.Description = [[The AK-303M side platform is designed as a base for mounting RS Regulate top mounts on AK assault rifles and their variants: Saiga, SVD, and others. Manufactured by RS Regulate. ]]
 
 ATT.Model = "models/weapons/arc9_eft_shared/atts/mounts/mount_dovetail_rsr.mdl"
 
@@ -372,12 +370,11 @@ ATT.ActivateElements = {"nolongrear"}
 
 ATT.Attachments = {
     {
-        PrintName = ARC9:GetPhrase("eft_cat_scope"),
-        Category = {"eft_optic_medium", "eft_optic_large", "eft_optic_small"},
-        Pos = Vector(0, 1, -2.11),
+        PrintName = ARC9:GetPhrase("eft_cat_mount"),
+        Category = "eft_rsr",
+        Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(0, 1, 0),
-        -- ExtraSightDistance = 8
+        Icon_Offset = Vector(0, 0, 1.5),
     },
 }
 
@@ -391,3 +388,42 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
 
 -- EFT ID: 65f1b1176dbd6c5ba2082eed
 ARC9.LoadAttachment(ATT, "eft_mount_dovetail_rsr")
+
+///////////////////////////////////////      eft_mount_dovetail_rsr_top
+
+
+ATT = {}
+
+ATT.PrintName = "RS Regulate AKR top mount"
+ATT.CompactName = "AKR"
+ATT.Icon = Material("entities/eft_attachments/65f1b2a5c14a07890801fc70.png", "mips smooth")
+ATT.Description = [[The AKR 1913 Railed 0 MOA Mount, installed on the AK-303M Lower Mount. Manufactured by RS Regulate. ]]
+
+ATT.Model = "models/weapons/arc9_eft_shared/atts/mounts/mount_dovetail_rsr2.mdl"
+
+ATT.Category = {"eft_rsr"}
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.ModelOffset = Vector(0, 0, 0)
+
+ATT.ActivateElements = {"nolongrear"}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_scope"),
+        Category = {"eft_optic_medium", "eft_optic_large", "eft_optic_small"},
+        Pos = Vector(0, 1, -2.11),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        -- ExtraSightDistance = 8
+    },
+}
+
+ATT.ModelAngleOffset = Angle(0, 90, 0)
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.067,
+}))
+
+-- EFT ID: 65f1b2a5c14a07890801fc70
+ARC9.LoadAttachment(ATT, "eft_mount_dovetail_rsr_top")
