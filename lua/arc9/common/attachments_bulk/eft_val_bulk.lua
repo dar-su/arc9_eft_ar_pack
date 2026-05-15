@@ -30,6 +30,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     malfunctionChance = 0.12,
 }))
 
+ATT.AdvancedCamoSupport = true
 
 -- EFT ID: 57838f0b2459774a256959b2
 ARC9.LoadAttachment(ATT, "eft_val_mag_10")
@@ -64,6 +65,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     malfunctionChance = 0.19,
 }))
 
+ATT.AdvancedCamoSupport = true
 
 -- EFT ID: 57838f9f2459774a150289a0
 ARC9.LoadAttachment(ATT, "eft_val_mag_20")
@@ -98,6 +100,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     malfunctionChance = 0.17,
 }))
 
+ATT.AdvancedCamoSupport = true
 
 -- EFT ID: 5a9e81fba2750c00164f6b11
 ARC9.LoadAttachment(ATT, "eft_val_mag_30")
@@ -132,6 +135,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     malfunctionChance = 0.273,
 }))
 
+ATT.AdvancedCamoSupport = true
 
 -- EFT ID: 65118f531b90b4fc77015083
 ARC9.LoadAttachment(ATT, "eft_val_mag_30s")
@@ -189,6 +193,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     weight = 0.29,
 }))
 
+ATT.AdvancedCamoSupport = true
 
 -- EFT ID: 57c450252459772d28133253
 ARC9.LoadAttachment(ATT, "eft_val_stockk")
@@ -249,6 +254,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     weight = 0.2,
 }))
 
+ATT.AdvancedCamoSupport = true
 
 -- EFT ID: 57c44f4f2459772d2c627113
 ARC9.LoadAttachment(ATT, "eft_val_dc_val")
@@ -297,6 +303,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     weight = 0.146,
 }))
 
+ATT.AdvancedCamoSupport = true
 
 -- EFT ID: 57c44fa82459772d2d75e415
 ARC9.LoadAttachment(ATT, "eft_val_grip_std")
@@ -323,6 +330,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     weight = 0.146,
 }))
 
+ATT.AdvancedCamoSupport = true
 
 -- EFT ID: 6565b91666492762f5029c0b
 ARC9.LoadAttachment(ATT, "eft_val_grip_black")
@@ -376,6 +384,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     weight = 0.07,
 }))
 
+ATT.AdvancedCamoSupport = true
 
 -- EFT ID: 651178336cad06c37c049eb4
 ARC9.LoadAttachment(ATT, "eft_val_hg_std")
@@ -402,6 +411,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     weight = 0.07,
 }))
 
+ATT.AdvancedCamoSupport = true
 
 -- EFT ID: 6565bb7eb4b12a56eb04b084
 ARC9.LoadAttachment(ATT, "eft_val_hg_black")
@@ -440,6 +450,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     weight = 0.065,
 }))
 
+ATT.AdvancedCamoSupport = true
 
 -- EFT ID: 5a69a2ed8dc32e000d46d1f1
 ARC9.LoadAttachment(ATT, "eft_val_grip_rotor")
@@ -491,9 +502,61 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     velocity = 1.1,
 }))
 
-
 -- EFT ID: 57c44dd02459772d2e0ae249
 ARC9.LoadAttachment(ATT, "eft_val_supp_val")
+
+///////////////////////////////////////      eft_val_supp_val_camo
+
+
+ATT = {}
+
+ATT.PrintName = "AS VAL 9x39 integral barrel-suppressor (Camo, but no heat display)"
+ATT.CompactName = "VAL Camo"
+ATT.Icon = Material("entities/eft_val_attachments/sup.png", "mips smooth")
+ATT.Description = [[A TsNIITochMash-manufactured integral barrel-suppressor module for AS VAL.]]
+
+ATT.HasBarrel = true 
+
+ATT.SubMaterial12 = "models/weapons/arc9/darsu_eft/val2/silencer_vss_tochmash_std_9x39_LOD0camo"
+ATT.ActivateElements = {"eft_val_supp_val"}
+
+-- ATT.PhysBulletMuzzleVelocityMult = 0.94
+
+ATT.Silencer = true
+ATT.MuzzleParticle = "muzzleflash_suppressed"
+ATT.NoFlash = true
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_val_barrel"}
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_rearsight"),
+        Category = "eft_val_rs",
+        Pos = Vector(-2.25, 0, -1),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount"),
+        Category = "eft_val_mount",
+        Pos = Vector(-3.25, 0, 0),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -5,
+    recoilModifier = -14,
+    weight = 0.496,
+    velocity = 1.1,
+}))
+
+ATT.AdvancedCamoSupport = true
+
+-- EFT ID: 57c44dd02459772d2e0ae249
+ARC9.LoadAttachment(ATT, "eft_val_supp_val_camo")
 
 ///////////////////////////////////////      eft_val_mount_6p
 
@@ -545,6 +608,7 @@ ATT.Attachments = {
     },
 }
 
+ATT.AdvancedCamoSupport = true
 
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = -1,
@@ -687,6 +751,58 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
 -- EFT ID: 65144ff50e00edc79406836f
 ARC9.LoadAttachment(ATT, "eft_sr3_supp")
 
+///////////////////////////////////////      eft_sr3_supp_camo
+
+
+ATT = {}
+
+ATT.PrintName = "SR-3M 9x39 sound suppressor (Camo, but no heat)"
+ATT.CompactName = "SR-3ML Camo"
+ATT.Icon = Material("entities/eft_val_attachments/srs.png", "mips smooth")
+ATT.Description = [[A standard-issue sound suppressor for the SR-3M assault rifle.]]
+
+ATT.SubMaterial12 = "models/weapons/arc9/darsu_eft/val2/silencer_sr3m_tochmash_std_9x39_LOD0camo"
+ATT.ActivateElements = {"eft_val_supp_val"}
+
+ATT.AdvancedCamoSupport = true
+
+-- ATT.HasBarrel = true 
+
+-- ATT.PhysBulletMuzzleVelocityMult = 0.94
+-- ATT.HeatCapacityMult = 1.01
+ATT.HeatCapacityMult = 0.75
+
+ATT.Silencer = true
+ATT.MuzzleParticle = "muzzleflash_suppressed"
+ATT.NoFlash = true
+ATT.MuzzleEffectQCA = 5
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_sr3_barrel"}
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount"),
+        Category = "eft_sr3_mount",
+        Pos = Vector(-2.1, 0, 0),
+        Ang = Angle(0, 0, -90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -5,
+    recoilModifier = -14,
+    accuracyModifier = 1,
+    weight = 0.575,
+    velocity = 1.1,
+}))
+
+
+-- EFT ID: 65144ff50e00edc79406836f
+ARC9.LoadAttachment(ATT, "eft_sr3_supp_camo")
+
 
 ///////////////////////////////////////      eft_sr3_hg_std
 
@@ -727,6 +843,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 8,
     weight = 0.07,
 }))
+ATT.AdvancedCamoSupport = true
 
 
 -- EFT ID: 6565c3ab977bcc2dbb01c2e7
@@ -772,6 +889,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     weight = 0.07,
 }))
 
+ATT.AdvancedCamoSupport = true
 
 -- EFT ID: 65144f546ddb773afa0e35e1
 ARC9.LoadAttachment(ATT, "eft_sr3_hg_black")
@@ -833,6 +951,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     weight = 0.08,
 }))
 
+ATT.AdvancedCamoSupport = true
 
 -- EFT ID: 6568a6bf2c5fb7afc70bc424
 ARC9.LoadAttachment(ATT, "eft_sr3_hg_rail")
@@ -865,6 +984,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     weight = 0.08,
 }))
 
+ATT.AdvancedCamoSupport = true
 
 -- EFT ID: 6565c0c2ff7eb7070409084c
 ARC9.LoadAttachment(ATT, "eft_sr3_fg_std")
@@ -897,6 +1017,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     weight = 0.08,
 }))
 
+ATT.AdvancedCamoSupport = true
 
 -- EFT ID: 65329ebcc0d50d0c9204ace1
 ARC9.LoadAttachment(ATT, "eft_sr3_fg_black")
@@ -1094,8 +1215,6 @@ ARC9.LoadAttachment(ATT, "eft_sr3_mount_hgp")
 
 
 
-local dmgrange = (GetConVar("arc9_eft_mindmgrange"):GetInt() or 1000)/1000
-local mult9 = GetConVar("arc9_eft_mult_rifle"):GetFloat() or 0.5
 
 
 ///////////////////////////////////////      eft_ammo_9x39_fmj
@@ -1660,3 +1779,77 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
 
 -- EFT ID: 6878c1c723c3173d7f06d926
 ARC9.LoadAttachment(ATT, "eft_valmod4_jailbrake")
+
+
+
+///////////////////////////////////////      eft_sr3_hg_karden
+
+ATT = {}
+
+ATT.PrintName = "SR-3M Karden rail handguard"
+ATT.CompactName = "SR-3MK"
+ATT.Icon = Material("entities/eft_attachments/688c86420e99e554a90c0fd6.png", "mips smooth")
+ATT.Description = "A custom handguard for the SR-3M assault rifle made on order from one of the well-known local operatives. Made out of aircraft-grade aluminum alloy and fitted with Zenit rails for installation of additional tactical equipment."
+
+ATT.HasHG = true
+ATT.HasBarrel = true
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_sr3m_karden.mdl"
+ATT.ModelAngleOffset = Angle(0, 90, 0)
+ATT.ModelOffset = Vector(0, 0.23, -0.12)
+ATT.LHIK = true
+
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_sr3_hg"}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_foregrip"),
+        Category = {"eft_foregrip_small"},
+        Pos = Vector(-1.5, 0, 1.25),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_scope"),
+        Category = {"eft_optic_small", "eft_optic_medium", "eft_tactical_top"},
+        RejectAttachments = {
+            ["eft_optic_553"] = true,
+            ["eft_optic_boss"] = true,
+            ["eft_optic_krechet"] = true,
+            ["eft_optic_kobra"] = true,
+            ["eft_optic_pk120"] = true,
+        },
+        Pos = Vector(-2.3, 0, -1.7),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExcludeElements = {"IronsBlockingSight"},
+        ExtraSightDistance = 6,
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_r"),
+        Category = {"eft_tactical_pistol"},
+        Pos = Vector(-3.5, 1.1, -0.125),
+        Ang = Angle(0, 0, 90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_l"),
+        Category = {"eft_tactical_pistol"},
+        Pos = Vector(-3.7, -1.1, -0.125),
+        Ang = Angle(0, 0, -90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 9,
+    weight = 0.08,
+}))
+-- EFT ID: 688c86420e99e554a90c0fd6
+ARC9.LoadAttachment(ATT, "eft_sr3_hg_karden")

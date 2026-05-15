@@ -1115,3 +1115,46 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
 
 -- EFT ID: 68caad12269e10396503acfe
 ARC9.LoadAttachment(ATT, "eft_muzzle_spr_sup")
+
+
+///////////////////////////////////////      eft_muzzle_ar15_psr762
+
+ATT = {}
+
+ATT.PrintName = "AR-15 AWC PSR 7.62x51 muzzle brake"
+ATT.CompactName = "PSR-762"
+ATT.Icon = Material("entities/eft_ar15_attachments/muzzle/ar15_awc_psr_556x45_muzzle_brake.png", "mips smooth")
+ATT.Description = [[PSR is an effective muzzle brake manufactured by AWC Silencers for 7.62x51. Reduces recoil and counters the muzzle rise. The brake is threaded and compatible with AWC PSR THOR sound suppressors.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ar15_awc_psr_muzzle_brake_556x45.mdl"
+ATT.MuzzleDevice = true
+ATT.MuzzleDevice_Priority = 4
+ATT.BarrelLengthAdd = 0.5
+
+ATT.HeatCapacityMult = 0.987
+ATT.PhysBulletMuzzleVelocityMult = 1.005
+
+ATT.Category = {"eft_ar10_muzzle"}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
+        Category = "eft_awcpsr",
+        Pos = Vector(-0.32, 0, 0),
+        Icon_Offset = Vector(1, 0, 0),
+        Ang = Angle(0, 0, 0),
+    },
+}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -3,
+    recoilModifier = -8.5,
+    accuracyModifier = 1,
+    weight = 0.165,
+}))
+
+
+-- EFT ID: 612e0d3767085e45ef14057f
+ARC9.LoadAttachment(ATT, "eft_muzzle_ar15_psr762")

@@ -1242,8 +1242,38 @@ SWEP.AttachmentElements = {
     ["mdr_556"] = { Bodygroups = { {4, 1} } },
 
     ["eft_mdr_fde"] = { Skin = 1 },
+
+
+    ["eft_mdr_barrel_762_20"] = { Bodygroups = { {1, 4} } },
+    ["eft_mdr_barrel_556_115"] = { Bodygroups = { {1, 2} } },
+    ["eft_mdr_barrel_556_20"] = { Bodygroups = { {1, 3} } },
+
+    ["eft_mdr_hg_micron"] = { Bodygroups = { {2, 3} } },
+    ["eft_mdr_hg_micron_fde"] = { Bodygroups = { {2, 3} } },
+
+    ["eft_mdr_hg_alx16"] = { Bodygroups = { {2, 4} } },
+    ["eft_mdr_hg_alx16_fde"] = { Bodygroups = { {2, 4} } },
+    ["eft_mdr_hg_alx20"] = { Bodygroups = { {2, 5} } },
+    ["eft_mdr_hg_alx20_fde"] = { Bodygroups = { {2, 5} } },
+    ["eft_mdr_hg_alx16_bipod"] = { Bodygroups = { {2, 6} } },
+    ["eft_mdr_hg_alx16_bipod_fde"] = { Bodygroups = { {2, 6} } },
+    ["eft_mdr_hg_alx20_bipod"] = { Bodygroups = { {2, 7} } },
+    ["eft_mdr_hg_alx20_bipod_fde"] = { Bodygroups = { {2, 7} } },
+
+    ["eft_mdr_bipod_16"] = { Bodygroups = { {5, 1}, {6, 1} } },
+    ["eft_mdr_bipod_20"] = { Bodygroups = { {5, 2}, {6, 3} } },
 }
 
+SWEP.Hook_ModifyBodygroups = function(wep, data)
+    local eles = data.elements
+    local mdl = data.model
+
+    if (eles["eft_mdr_bipod_16"] or eles["eft_mdr_bipod_20"]) and wep:GetBipod() then
+        if wep:GetEnterBipodTime() + 0.1 < CurTime() then
+            mdl:SetBodygroup(6, eles["eft_mdr_bipod_16"] and 2 or 4)
+        end
+    end
+end
 
 SWEP.Attachments = {
     {

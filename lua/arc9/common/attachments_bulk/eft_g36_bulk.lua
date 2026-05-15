@@ -1307,7 +1307,7 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_stock"),
         Category = {"eft_ar_stock", "eft_ar_stock_notbuffer"},
-        Pos = Vector(4.78, -0.9, 0.3),
+        Pos = Vector(4.5, -0.9, 0.3),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(-1, 0, 0.5),
     },
@@ -1504,3 +1504,78 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
 
 -- EFT ID: 67069d3bb29a2cd338033390
 ARC9.LoadAttachment(ATT, "eft_mount_hkey_3")
+
+
+
+
+
+
+///////////////////////////////////////      eft_g36_top_kac_rs
+
+
+ATT = {}
+
+ATT.PrintName = "HK G36 KAC 600m Rear Sight Rail"
+ATT.CompactName = "KAC RS"
+ATT.Icon = Material("entities/eft_attachments/680b884f1a335f66240ecde7.png", "mips smooth")
+ATT.Description = "A flip-up rear sight with a Picatinny rail for the HK G36 assault rifle. Manufactured by Knight's Armament Company."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_g36_topmount"}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_scope"),
+        Category = {"eft_optic_medium", "eft_optic_small"},
+        Pos = Vector(0.95, 0, -0.47),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_frontsight"),
+        Category = {"eft_g36_topmount_fs"},
+        Pos = Vector(-9, 0, -0.47),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+ATT.Sights = {
+    {
+        Pos = Vector(0, 9, -1.22),
+        Ang = Angle(0, 0, 0),
+        Magnification = 1.25,
+        ViewModelFOV = 53,
+        IsIronSight = true
+    }
+}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 0.5,
+    weight = 0.108,
+}))
+-- EFT ID: 680b884f1a335f66240ecde7
+ARC9.LoadAttachment(ATT, "eft_g36_top_kac_rs")
+
+
+///////////////////////////////////////      eft_g36_top_kac_fs
+
+ATT = {}
+
+ATT.PrintName = "HK G36 KAC Front Flip Up Sight"
+ATT.CompactName = "KAC G36"
+ATT.Icon = Material("entities/eft_attachments/680b87fc9402a78e7504a057.png", "mips smooth")
+ATT.Description = "A flip-up folding front sight for the HK G36 assault rifle. Manufactured by Knight's Armament Company."
+
+ATT.SortOrder = 0
+ATT.Category = "eft_g36_topmount_fs"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 0.5,
+    weight = 0.067,
+}))
+-- EFT ID: 680b87fc9402a78e7504a057
+ARC9.LoadAttachment(ATT, "eft_g36_top_kac_fs")

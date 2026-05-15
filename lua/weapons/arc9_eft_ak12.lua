@@ -288,9 +288,9 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
         Category = "eft_ak12_muzzle",
         Bone = "weapon",
-        Pos = Vector(0, 19.2+14.15, -0.8+0.6),
+        Pos = Vector(0, 19.2+14.15, -0.8+0.85),
         Ang = Angle(0, -90, 0),
-        Icon_Offset = Vector(0, 0, 0.15),
+        Icon_Offset = Vector(0, 0, 0),
         Installed = "eft_ak12_muzzle_std",
     },
     {

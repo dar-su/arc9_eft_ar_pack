@@ -938,3 +938,64 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
 
 -- EFT ID: 665edce564fb556f940ab32a
 ARC9.LoadAttachment(ATT, "eft_foregrip_mlok_mod3f")
+
+
+
+///////////////////////////////////////      eft_foregrip_irbis30
+
+
+ATT = {}
+
+ATT.PrintName = "IRBIS-GUN 30AL Foregrip"
+ATT.CompactName = "30AL"
+ATT.Icon = Material("entities/eft_attachments/30.png", "mips smooth")
+ATT.Description = "A lightweight aluminum tactical foregrip manufactured by IRBIS-GUN."
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/foregrip_all_irbis_gun_30al.mdl"
+ATT.ModelAngleOffset = Angle(0, 90, 0)
+
+ATT.LHIK_Priority = 2
+ATT.LHIK = true
+
+ATT.SortOrder = 0
+ATT.Category = "eft_foregrip_small"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.AdvancedCamoSupport = true
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 12,
+    weight = 0.151,
+}))
+-- EFT ID: 6984b690b457c5047e0c01fa
+ARC9.LoadAttachment(ATT, "eft_foregrip_irbis30")
+
+///////////////////////////////////////      eft_foregrip_irbis45
+
+
+ATT = {}
+
+ATT.PrintName = "IRBIS-GUN 45AL Foregrip"
+ATT.CompactName = "45AL"
+ATT.Icon = Material("entities/eft_attachments/45.png", "mips smooth")
+ATT.Description = "A lightweight aluminum tactical foregrip manufactured by IRBIS-GUN."
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/foregrip_all_irbis_gun_45al.mdl"
+ATT.ModelAngleOffset = Angle(0, 90, 0)
+
+ATT.LHIK_Priority = 2
+ATT.LHIK = true
+
+ATT.SortOrder = 0
+ATT.Category = "eft_foregrip_small"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.AdvancedCamoSupport = true
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 6,
+    recoilModifier = -2,
+    weight = 0.158,
+}))
+-- EFT ID: 6984b74a5aab442620032fe6
+ARC9.LoadAttachment(ATT, "eft_foregrip_irbis45")

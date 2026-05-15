@@ -680,6 +680,11 @@ SWEP.AttachmentElements = {
     ["eft_ammo_9x39_bp"] = { Bodygroups = { {9, 2} } },
     ["eft_ammo_9x39_spp"] = { Bodygroups = { {9, 6} } },
     ["eft_ammo_9x39_pab9"] = { Bodygroups = { {9, 3} } },
+
+    
+    ["eft_vsk_hg_9a_tts"] = { Bodygroups = { {6, 3} } },
+    ["eft_vsk_hg_9a_tts_top"] = { Bodygroups = { {10, 1} } },
+    ["eft_vsk_hg_9a_tts_side"] = { Bodygroups = { {11, 1} } },
 }
 
 SWEP.Attachments = {

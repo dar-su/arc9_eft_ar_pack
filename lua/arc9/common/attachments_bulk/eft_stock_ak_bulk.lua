@@ -1018,3 +1018,137 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
 
 -- EFT ID: 6494094948796d891603e59f
 ARC9.LoadAttachment(ATT, "eft_stock_ak_pad_stef")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+///////////////////////////////////////      eft_stock_ak74m_rsa55
+
+
+ATT = {}
+
+ATT.PrintName = "AK JMac Customs RSA-5.5 stock adapter"
+ATT.CompactName = "RSA-5.5"
+ATT.Icon = Material("entities/eft_attachments/688c9df121038434840a1e06.png", "mips smooth")
+ATT.Description = "An adapter for installing 1913 Picatinny buttstocks, designed for AK-style assault rifles with 5.5mm pin folding stocks. Manufactured by JMac Customs."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ak_jmac_rsa_1913_adapter.mdl"
+ATT.ModelAngleOffset = Angle(0, -90, 0)
+ATT.ModelOffset = Vector(0.02, 0, 0.02)
+
+ATT.Category = {"eft_ak74m_stock", "eft_vityaz_stock"}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_stock"),
+        Category = {"eft_mcx_stock"},
+        Pos = Vector(0.65, -0.67, -0.1),
+        Ang = Angle(-4, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.5,
+    weight = 0.03,
+}))
+-- EFT ID: 688c9df121038434840a1e06
+ARC9.LoadAttachment(ATT, "eft_stock_ak74m_rsa55")
+
+
+
+///////////////////////////////////////      eft_stock_akm_rtfsa
+
+
+ATT = {}
+
+ATT.PrintName = "AK Samson Rear Trunnion Folding Stock Adapter"
+ATT.CompactName = "RTFSA"
+ATT.Icon = Material("entities/eft_attachments/688cbdc341e2a57a8f0c1c6c.png", "mips smooth")
+ATT.Description = "A 1913 stock adapter, designed for installation on AK-series assault rifles. Manufactured by Samson Manufacturing."
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ak_samson_1913_stock_adapter.mdl"
+
+ATT.ModelAngleOffset = Angle(-3, -90, -3)
+ATT.ModelOffset = Vector(-0.22, 0.61, -0.02)
+
+ATT.HasStock = true
+
+
+ATT.Category = {"eft_akm_stock"}
+
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_stock"),
+        Category = {"eft_mcx_stock"},
+        Pos = Vector(0.64, -1.6, 0.25),
+        Ang = Angle(-3, -90, -3),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.5,
+    weight = 0.034,
+}))
+-- EFT ID: 688cbdc341e2a57a8f0c1c6c
+ARC9.LoadAttachment(ATT, "eft_stock_akm_rtfsa")
+
+
+///////////////////////////////////////      eft_stock_ak74m_mono3
+
+
+ATT = {}
+
+ATT.PrintName = "AK-74M Armacon Monolit 3 Gen.2 buffer tube adapter (Redline)"
+ATT.CompactName = "Mono3 RL"
+ATT.Icon = Material("entities/eft_attachments/monolit5.png", "mips smooth")
+ATT.Description = "The Monolit 3 Gen. 2 adapter for mounting telescopic stocks on modern AK-pattern rifles and their civilian variants. Manufactured by Armacon. A special version made for the Arena champion JP’s Saiga shotgun."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ak_armacon_monolit_5.mdl"
+ATT.ModelAngleOffset = Angle(0, -90, 0)
+ATT.ModelOffset = Vector(0.02, 0, 0.02)
+
+ATT.Category = {"eft_ak74m_stock", "eft_vityaz_stock"}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_buffertube"),
+        Category = {"eft_ar15_buffertube", "eft_hk416_buffertube", "eft_ar15_buffertube_notbuffer"},
+        Pos = Vector(0.65, -1.05, -0.47),
+        Ang = Angle(-4, -90, 0),
+        Icon_Offset = Vector(-0.2, 0, 0.5),
+    },
+}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    recoilModifier = -0.5,
+    weight = 0.158,
+}))
+-- EFT ID: 6981ee9cf819a414310292fb
+ARC9.LoadAttachment(ATT, "eft_stock_ak74m_mono3")

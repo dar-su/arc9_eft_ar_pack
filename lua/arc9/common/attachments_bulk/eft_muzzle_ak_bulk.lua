@@ -1145,3 +1145,31 @@ ARC9.LoadAttachment(ATT, "eft_silencer_ak_r43_762")
 
 
 -- ///////////////////////////////////////      eft_muzzle_ak_kibaarms_308 -- ??
+
+
+
+
+
+///////////////////////////////////////      eft_muzzle_ak_ars4p
+
+
+ATT = {}
+
+ATT.PrintName = "AK 7.62x39 Arsenal 4 Piece Flash Hider"
+ATT.CompactName = "ARS 4P"
+ATT.Icon = Material("entities/eft_attachments/68540aae1e5c6ff6f1051477.png", "mips smooth")
+ATT.Description = "A well-known muzzle device commonly called \"The Bulgarian\" in Russia. Its reverse-cone shape makes it highly effective at reducing muzzle flash, and it also slightly lessens the concussive effect when firing indoors. Compatible with any caliber from 5.45 to 7.62 on the AK-74 platform, or with the appropriate adapter on AKM or AK-12 assault rifles."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak74_arsenal_4_piece_flash_hider_762x39.mdl"
+
+ATT.Category = {"eft_ak74_muzzle", "eft_ak103_muzzle"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    recoilModifier = -7,
+    weight = 0.19,
+}))
+-- EFT ID: 68540aae1e5c6ff6f1051477
+ARC9.LoadAttachment(ATT, "eft_muzzle_ak_ars4p")

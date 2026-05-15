@@ -327,8 +327,16 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_stock"),
         Category = {"eft_ar_stock", "eft_ar_stock_notbuffer"},
-        Pos = Vector(0.66, -3.5, 0.75),
-        Ang = Angle(-3, -90, 0),
+        RejectAttachments = {
+            ["eft_ar_stock_ravage_blk"] = true,
+            ["eft_ar_stock_ravage_ylw"] = true,
+            ["eft_ar_stock_ravage_red"] = true,
+            ["eft_ar_stock_ums_blk"] = true,
+            ["eft_ar_stock_ums_red"] = true,
+            ["eft_ar_stock_ums_ylw"] = true,
+        },
+        Pos = Vector(0.6, -3.5, 0.75),
+        Ang = Angle(-5, -90, 0),
         Icon_Offset = Vector(-1, 0, 0.5),
     },
 }

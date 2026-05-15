@@ -756,3 +756,34 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
 
 -- EFT ID: 648ae3e356c6310a830fc291
 ARC9.LoadAttachment(ATT, "eft_grip_ak_cg101")
+
+
+
+
+
+///////////////////////////////////////      eft_grip_ak_gladman
+
+
+ATT = {}
+
+ATT.PrintName = "AK Gladman Skeleton pistol grip"
+ATT.CompactName = "Skeleton"
+ATT.Icon = Material("entities/eft_attachments/gladman.png", "mips smooth")
+ATT.Description = "A lightweight ergonomic pistol grip for AK-family automatic rifles, manufactured by Gladman."
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.HasGrip = true
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/pistolgrip_ak_gladman_skeleton.mdl"
+-- ATT.ModelOffset = Vector(0, 0, 0.06)
+ATT.ModelAngleOffset = Angle(0, -90, 0)
+ATT.Category = {"eft_ak_grip"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    recoilModifier = -1.5,
+    weight = 0.13,
+}))
+-- EFT ID: 6984b7bf0baed1fc0a0594f6
+ARC9.LoadAttachment(ATT, "eft_grip_ak_gladman")

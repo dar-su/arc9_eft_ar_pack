@@ -1287,6 +1287,10 @@ SWEP.AttachmentElements = {
     ["eft_g36_stock_buffer"] = { Bodygroups = { {7, 4} } },
     ["eft_g36_hg_quad"] = { Bodygroups = { {3, 5} } },
     ["eft_g36_hg_slim"] = { Bodygroups = { {3, 4} } },
+
+
+    ["eft_g36_top_kac_rs"] = { Bodygroups = { {8, 5}, {9, 5} } },
+    ["eft_g36_top_kac_fs"] = { Bodygroups = { {10, 2} } },
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
@@ -1295,6 +1299,14 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     local brllong, brlmid = eles["eft_g36_barrel_480"], eles["eft_g36_barrel_318"]
     if eles["eft_g36_top_flip"] then
         mdl:SetBodygroup(9, wep:GetValue("FoldSights") and 4 or 3)
+    end
+
+    if eles["eft_g36_top_kac_fs"] then
+        mdl:SetBodygroup(10, wep:GetValue("FoldSights") and 3 or 2)
+    end
+
+    if eles["eft_g36_top_kac_rs"] then
+        mdl:SetBodygroup(9, wep:GetValue("FoldSights") and 6 or 5)
     end
 
     if eles["eft_g36_gas_std"] and (brllong or brlmid) then

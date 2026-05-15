@@ -659,3 +659,88 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
 
 -- EFT ID: 68c16fe183e2d814b0093f7c
 ARC9.LoadAttachment(ATT, "eft_ar_pgrip_dlg138_fde")
+
+
+
+///////////////////////////////////////      eft_ar_pgrip_chevron_blk
+
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Tyrant Designs MOD Chevron pistol grip (Black)"
+ATT.CompactName = "Chevron"
+ATT.Icon = Material("entities/eft_attachments/tyrb.png", "mips smooth")
+ATT.Description = "An aluminium rubber-overmolded anti-slip pistol grip for AR systems, manufactured by Tyrant Designs. Black version."
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/pistolgrip_ar15_tyrant_designs_chevron_grip.mdl"
+
+ATT.HasGrip = true
+
+ATT.SortOrder = 0
+ATT.Category = "eft_ar15_pgrip"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 6,
+    recoilModifier = -1.2,
+    weight = 0.112,
+}))
+-- EFT ID: 6984b7d56be2752c150e6895
+ARC9.LoadAttachment(ATT, "eft_ar_pgrip_chevron_blk")
+
+///////////////////////////////////////      eft_ar_pgrip_chevron_red
+
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Tyrant Designs MOD Chevron pistol grip (Red)"
+ATT.CompactName = "Chevron"
+ATT.Icon = Material("entities/eft_attachments/tyrr.png", "mips smooth")
+ATT.Description = "An aluminium rubber-overmolded anti-slip pistol grip for AR systems, manufactured by Tyrant Designs. Red version."
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/pistolgrip_ar15_tyrant_designs_chevron_grip.mdl"
+ATT.ModelSkin = 1
+
+ATT.HasGrip = true
+
+ATT.SortOrder = 0
+ATT.Category = "eft_ar15_pgrip"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 6,
+    recoilModifier = -1.2,
+    weight = 0.112,
+}))
+-- EFT ID: 6985eb089edef67ade080b72
+ARC9.LoadAttachment(ATT, "eft_ar_pgrip_chevron_red")
+
+///////////////////////////////////////      eft_ar_pgrip_chevron_ylw
+
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Tyrant Designs MOD Chevron pistol grip (Yellow)"
+ATT.CompactName = "Chevron"
+ATT.Icon = Material("entities/eft_attachments/tyry.png", "mips smooth")
+ATT.Description = "An aluminium rubber-overmolded anti-slip pistol grip for AR systems, manufactured by Tyrant Designs. Yellow version."
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/pistolgrip_ar15_tyrant_designs_chevron_grip.mdl"
+ATT.ModelSkin = 2
+
+ATT.HasGrip = true
+
+ATT.SortOrder = 0
+ATT.Category = "eft_ar15_pgrip"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 6,
+    recoilModifier = -1.2,
+    weight = 0.112,
+}))
+-- EFT ID: 698dac21772d6f3dc00e4284
+ARC9.LoadAttachment(ATT, "eft_ar_pgrip_chevron_ylw")

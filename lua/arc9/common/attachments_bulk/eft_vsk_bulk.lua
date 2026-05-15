@@ -338,3 +338,112 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
 
 -- EFT ID: 645122f6d4928d46d30be3ff
 ARC9.LoadAttachment(ATT, "eft_vsk_brl9")
+
+///////////////////////////////////////      eft_vsk_hg_9a_tts
+
+ATT = {}
+
+ATT.PrintName = "9A-91 TTS System handguard"
+ATT.CompactName = "TTS 9A"
+ATT.Icon = Material("entities/eft_attachments/688b79b5eb234c75d900e050.png", "mips smooth")
+ATT.Description = "A 9A-91 handguard with a bottom rail for installation of foregrips. Manufactured by TTS System."
+
+ATT.HasHandguard = true
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_vsk_hg"}
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount"),
+        Category = "eft_vsk_hg_tac_top",
+        Pos = Vector(-2, 0, -1.5),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount"),
+        Category = "eft_vsk_hg_tac_side",
+        Pos = Vector(-2, 1.05, -0.63),
+        Ang = Angle(0, 0, 90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_foregrip"),
+        Category = {"eft_foregrip_small"},
+        Pos = Vector(-0.5, 0, 0.6),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, -1),
+    },
+}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 4.5,
+    weight = 0.19,
+}))
+-- EFT ID: 688b79b5eb234c75d900e050
+ARC9.LoadAttachment(ATT, "eft_vsk_hg_9a_tts")
+
+///////////////////////////////////////      eft_vsk_hg_9a_tts_top
+
+ATT = {}
+
+ATT.PrintName = "TTS System handguard top rail"
+ATT.CompactName = "TTS top"
+ATT.Icon = Material("entities/eft_attachments/688b7b0d934c59b7bf0af0b7.png", "mips smooth")
+ATT.Description = "A compact lightweight rail for the TTS System handguard, designed for installation of small optics or tactical devices. Manufactured by TTS System."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_vsk_hg_tac_top"}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_u"),
+        Category = {"eft_tactical_top_big", "eft_tactical_top", "eft_optic_small"},
+        Pos = Vector(0.3, 0, -1.0),
+        Ang = Angle(0, 0, 0),
+    },
+}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.1,
+    weight = 0.061,
+}))
+-- EFT ID: 688b7b0d934c59b7bf0af0b7
+ARC9.LoadAttachment(ATT, "eft_vsk_hg_9a_tts_top")
+
+///////////////////////////////////////      eft_vsk_hg_9a_tts_side
+
+ATT = {}
+
+ATT.PrintName = "TTS System 2.5 inch rail"
+ATT.CompactName = "TTS 2.5\""
+ATT.Icon = Material("entities/eft_attachments/688b7c1b0e99e554a90c0fb7.png", "mips smooth")
+ATT.Description = "A 2.5 inch rail that allows installation of additional equipment on the TTS System handguard. Manufactured by TTS System."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_vsk_hg_tac_side"}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_u"),
+        Category = {"eft_tactical"},
+        Pos = Vector(0, 0, 0),
+        Ang = Angle(0, 0, 0),
+    },
+}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.1,
+    weight = 0.054,
+}))
+-- EFT ID: 688b7c1b0e99e554a90c0fb7
+ARC9.LoadAttachment(ATT, "eft_vsk_hg_9a_tts_side")

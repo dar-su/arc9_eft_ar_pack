@@ -1164,3 +1164,232 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
 
 -- EFT ID: 68a63c1fc92ee33ffa01bf5a
 ARC9.LoadAttachment(ATT, "eft_ar_stock_a2")
+
+
+
+///////////////////////////////////////      eft_ar_stock_ravage_blk
+
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Lead Star Arms Ravage stock"
+ATT.CompactName = "Ravage"
+ATT.Icon = Material("entities/eft_attachments/ravageb.png", "mips smooth")
+ATT.Description = "A lightweight buttstock for AR patter weapons. Manufactured by Lead Star Arms."
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_lead_star_arms_ravage.mdl"
+
+ATT.HasStock = true
+
+ATT.SortOrder = 0
+ATT.Category = {"eft_ar_stock"}
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.ModelOffset = Vector(-4.3, 0, 1)
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 19,
+    recoilModifier = -19,
+    weight = 0.17,
+}))
+-- EFT ID: 6984b82c5aab442620032fe8
+ARC9.LoadAttachment(ATT, "eft_ar_stock_ravage_blk")
+
+///////////////////////////////////////      eft_ar_stock_ravage_red
+
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Lead Star Arms Ravage stock (Red)"
+ATT.CompactName = "Ravage"
+ATT.Icon = Material("entities/eft_attachments/ravager.png", "mips smooth")
+ATT.Description = "A lightweight buttstock for AR patter weapons. Manufactured by Lead Star Arms. Red version."
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_lead_star_arms_ravage.mdl"
+ATT.ModelSkin = 1
+ATT.HasStock = true
+
+ATT.SortOrder = 0
+ATT.Category = {"eft_ar_stock"}
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.ModelOffset = Vector(-4.3, 0, 1)
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 19,
+    recoilModifier = -19,
+    weight = 0.17,
+}))
+-- EFT ID: 6985ec9fc848f05f4600f6b9
+ARC9.LoadAttachment(ATT, "eft_ar_stock_ravage_red")
+
+///////////////////////////////////////      eft_ar_stock_ravage_ylw
+
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Lead Star Arms Ravage stock (Yellow)"
+ATT.CompactName = "Ravage"
+ATT.Icon = Material("entities/eft_attachments/ravagey.png", "mips smooth")
+ATT.Description = "A lightweight buttstock for AR patter weapons. Manufactured by Lead Star Arms. Yellow version."
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_lead_star_arms_ravage.mdl"
+ATT.ModelSkin = 2
+ATT.HasStock = true
+
+ATT.SortOrder = 0
+ATT.Category = {"eft_ar_stock"}
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.ModelOffset = Vector(-4.3, 0, 1)
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 19,
+    recoilModifier = -19,
+    weight = 0.17,
+}))
+-- EFT ID: 6985eca7de77dd8dd50025ba
+ARC9.LoadAttachment(ATT, "eft_ar_stock_ravage_ylw")
+
+
+///////////////////////////////////////      eft_ar_stock_ums_blk
+
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Phase5 Universal Mini Stock"
+ATT.CompactName = "UMS"
+ATT.Icon = Material("entities/eft_attachments/umsb.png", "mips smooth")
+ATT.Description = "A minimalistic buttstock manufactured by Phase5."
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_phase5_ums.mdl"
+
+ATT.HasStock = true
+
+ATT.SortOrder = 0
+ATT.Category = {"eft_hexone_stock", "eft_ar_stock"}
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.ModelOffset = Vector(-4, 0, 1)
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 20,
+    recoilModifier = -18.5,
+    weight = 0.17,
+}))
+-- EFT ID: 698b338649b46ae2d0092e82
+ARC9.LoadAttachment(ATT, "eft_ar_stock_ums_blk")
+
+
+///////////////////////////////////////      eft_ar_stock_ums_red
+
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Phase5 Universal Mini Stock (Red)"
+ATT.CompactName = "UMS"
+ATT.Icon = Material("entities/eft_attachments/umsr.png", "mips smooth")
+ATT.Description = "A minimalistic buttstock manufactured by Phase5. Red version."
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_phase5_ums.mdl"
+ATT.ModelSkin = 1
+
+ATT.HasStock = true
+
+ATT.SortOrder = 0
+ATT.Category = {"eft_hexone_stock", "eft_ar_stock"}
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.ModelOffset = Vector(-4, 0, 1)
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 20,
+    recoilModifier = -18.5,
+    weight = 0.17,
+}))
+-- EFT ID: 698b358b49b46ae2d0092e86
+ARC9.LoadAttachment(ATT, "eft_ar_stock_ums_red")
+
+
+///////////////////////////////////////      eft_ar_stock_ums_ylw
+
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Phase5 Universal Mini Stock (Yellow)"
+ATT.CompactName = "UMS"
+ATT.Icon = Material("entities/eft_attachments/umsy.png", "mips smooth")
+ATT.Description = "A minimalistic buttstock manufactured by Phase5. Yellow version."
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_phase5_ums.mdl"
+ATT.ModelSkin = 2
+
+ATT.HasStock = true
+
+ATT.SortOrder = 0
+ATT.Category = {"eft_hexone_stock", "eft_ar_stock"}
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.ModelOffset = Vector(-4, 0, 1)
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 20,
+    recoilModifier = -18.5,
+    weight = 0.17,
+}))
+-- EFT ID: 698b3592e700c6d632003753
+ARC9.LoadAttachment(ATT, "eft_ar_stock_ums_ylw")
+
+
+///////////////////////////////////////      eft_ar_stock_glcore_s
+
+
+ATT = {}
+
+ATT.PrintName = "AR-15 FAB Defense GL-CORE S buttstock (Redline)"
+ATT.CompactName = "GL-CORE S"
+ATT.Icon = Material("entities/eft_attachments/glcs.png", "mips smooth")
+ATT.Description = "A lightweight telescopic stock manufactured by FAB Defense. Features an ergonomically shaped rubber buttpad for quick shouldering and improved weapon handling. Red-colored decorative accents from JP himself give the stock a distinct personality."
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_fab_defense_gl_core_s.mdl"
+
+ATT.HasStock = true
+
+ATT.SortOrder = 0
+ATT.Category = "eft_ar_stock"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Folder = "FAB"
+
+ATT.AdvancedCamoSupport = true
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 12.5,
+    recoilModifier = -20.5,
+    weight = 0.21,
+}))
+-- EFT ID: 6981f3e2f819a41431029302
+ARC9.LoadAttachment(ATT, "eft_ar_stock_glcore_s")
+
+///////////////////////////////////////      eft_ar_stock_doublestar_buttpad
+
+ATT = {}
+
+ATT.PrintName = "DoubleStar ACE recoil pad"
+ATT.CompactName = "ACE pad"
+ATT.Icon = Material("entities/eft_attachments/5d120a28d7ad1a1c8962e295.png", "mips smooth")
+ATT.Description = "A short 0.5 inch recoil pad for DoubleStar ACE stocks."
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ace_double_star_ace_recoil_pad_05.mdl"
+
+ATT.SortOrder = 0
+ATT.Category = "eft_doublestar_buttpad"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 1,
+    weight = 0.22,
+}))
+-- EFT ID: 5d120a28d7ad1a1c8962e295
+ARC9.LoadAttachment(ATT, "eft_ar_stock_doublestar_buttpad")

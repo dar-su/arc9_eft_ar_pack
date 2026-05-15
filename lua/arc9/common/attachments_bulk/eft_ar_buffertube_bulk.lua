@@ -522,3 +522,128 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
 
 -- EFT ID: 68c1701cba442c811207608b
 ARC9.LoadAttachment(ATT, "eft_ar_buffertube_cgnl_fde")
+
+
+
+///////////////////////////////////////      eft_ar_buffertube_hexone
+
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Phase5 Hexone buffer tube"
+ATT.CompactName = "Hexone"
+ATT.Icon = Material("entities/eft_attachments/hexone.png", "mips smooth")
+ATT.Description = "A hexagonal buffer tube for attaching Phase5 buttstocks. Manufactured by Phase5."
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_phase5_hexone_buffer_tube.mdl"
+
+ATT.HasBufferTube = true
+ATT.SortOrder = 0
+ATT.Category = "eft_ar15_buffertube"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_stock"),
+        Category = "eft_hexone_stock",
+        Pos = Vector(2.7, 0, 0.9),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.18,
+}))
+-- EFT ID: 698b337c49b46ae2d0092e7f
+ARC9.LoadAttachment(ATT, "eft_ar_buffertube_hexone")
+
+///////////////////////////////////////      eft_ar_buffertube_ere
+
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Magpul Enhanced Receiver Extension"
+ATT.CompactName = "ERE"
+ATT.Icon = Material("entities/eft_attachments/5a33ca0fc4a282000d72292f.png", "mips smooth")
+ATT.Description = "A mil-spec rifle length Magpul Receiver Extension buffer tube, will fit any AR-15-based carbine or rifle."
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_colt_stock_tube_a2.mdl"
+-- ATT.ModelMaterial = "models/weapons/arc9/darsu_eft/mods/stock_ar15_magpul_enhanced_rifle_tube_LOD0"
+-- same texture named differently wtf
+
+ATT.HasBufferTube = true
+
+ATT.ExcludeElements = {"pgrip_stock"}
+
+ATT.SortOrder = 0
+ATT.Category = "eft_ar15_buffertube"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_stock"),
+        Category = "eft_ar_stock_a2",
+        Pos = Vector(3, 0, 0.9),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExcludeElements = {"pgrip_stock"},
+    },
+}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1.5,
+    recoilModifier = -1,
+    weight = 0.162,
+}))
+-- EFT ID: 5a33ca0fc4a282000d72292f
+ARC9.LoadAttachment(ATT, "eft_ar_buffertube_ere")
+
+
+///////////////////////////////////////      eft_ar_buffertube_mtc
+
+
+ATT = {}
+
+ATT.PrintName = "Mesa Tactical Crosshair Hydraulic buffer tube"
+ATT.CompactName = "MT Crosshair"
+ATT.Icon = Material("entities/eft_attachments/5ef1ba28c64c5d0dfc0571a5.png", "mips smooth")
+ATT.Description = "The Crosshair Hydraulic buffer tube by Mesa Tactical. Has a moving hydraulic element that mitigates recoil. Requires a LEO stock adapter for installation."
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_mesa_crosshair_hydraulic_buffer_tube.mdl"
+ATT.ModelOffset = Vector(0.0, 0, 0)
+ATT.HasBufferTube = true
+
+
+ATT.ExcludeElements = {"pgrip_stock"}
+
+
+ATT.SortOrder = 0
+ATT.Category = "eft_ar15_buffertube_notbuffer"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_stock"),
+        Category = "eft_ar_stock",
+        Pos = Vector(3.7, 0, 0.9),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExcludeElements = {"pgrip_stock"},
+    },
+}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1.5,
+    recoilModifier = -0.5,
+    weight = 0.3,
+}))
+-- EFT ID: 5ef1ba28c64c5d0dfc0571a5
+ARC9.LoadAttachment(ATT, "eft_ar_buffertube_mtc")
