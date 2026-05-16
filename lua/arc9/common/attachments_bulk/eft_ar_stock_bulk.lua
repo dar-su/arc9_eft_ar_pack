@@ -1186,6 +1186,7 @@ ATT.Category = {"eft_ar_stock"}
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.ModelOffset = Vector(-4.3, 0, 1)
 
+ATT.AdvancedCamoSupport = true
 
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 19,
@@ -1215,6 +1216,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.ModelOffset = Vector(-4.3, 0, 1)
 
 
+ATT.AdvancedCamoSupport = true
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 19,
     recoilModifier = -19,
@@ -1242,6 +1244,7 @@ ATT.Category = {"eft_ar_stock"}
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.ModelOffset = Vector(-4.3, 0, 1)
 
+ATT.AdvancedCamoSupport = true
 
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 19,

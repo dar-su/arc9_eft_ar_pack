@@ -3703,10 +3703,11 @@ ATT.Attachments = {
     },
 }
 
+ATT.AdvancedCamoSupport = true
+
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     weight = 0.126,
 }))
-
 
 -- EFT ID: 68a5dc0c2cd64a8b58023b87
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_gridlok_base_blk")
@@ -3748,6 +3749,8 @@ ATT.Attachments = {
         ExtraSightDistance = 8
     },
 }
+
+ATT.AdvancedCamoSupport = true
 
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     weight = 0.126,
@@ -3795,10 +3798,11 @@ ATT.Attachments = {
     },
 }
 
+ATT.AdvancedCamoSupport = true
+
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     weight = 0.126,
 }))
-
 
 -- EFT ID: 68a6fff085a17dc1cb008066
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_gridlok_base_yellow")
@@ -3852,7 +3856,6 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 14,
     weight = 0.162,
 }))
-
 
 -- EFT ID: 68a5dc4eed35a7eac1048ff6
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_gridlok_85")
@@ -3911,11 +3914,12 @@ ATT.Attachments = {
     },
 }
 
+ATT.AdvancedCamoSupport = true
+
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 16,
     weight = 0.208,
 }))
-
 
 -- EFT ID: 68a6f3b27279296357007cd7
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_gridlok_11")
@@ -3973,11 +3977,12 @@ ATT.Attachments = {
     },
 }
 
+ATT.AdvancedCamoSupport = true
+
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 18,
     weight = 0.281,
 }))
-
 
 -- EFT ID: 68a6fbb07279296357007ce2
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_gridlok_15")
@@ -4035,11 +4040,12 @@ ATT.Attachments = {
     },
 }
 
+ATT.AdvancedCamoSupport = true
+
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 19,
     weight = 0.319,
 }))
-
 
 -- EFT ID: 68a6fbfdd31595bb360c73bd
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_gridlok_17")
@@ -4086,11 +4092,12 @@ ATT.Attachments = {
     },
 }
 
+ATT.AdvancedCamoSupport = true
+
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 2,
     weight = 0.102,
 }))
-
 
 -- EFT ID: 68a6e8fd4ac5b037cb0e9b86
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_gridlok_ext_blk")
@@ -4136,11 +4143,12 @@ ATT.Attachments = {
     },
 }
 
+ATT.AdvancedCamoSupport = true
+
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 2,
     weight = 0.102,
 }))
-
 
 -- EFT ID: 68a6ff952885e0bbd30bb6fd
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_gridlok_ext_red")
@@ -4186,11 +4194,12 @@ ATT.Attachments = {
     },
 }
 
+ATT.AdvancedCamoSupport = true
+
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 2,
     weight = 0.102,
 }))
-
 
 -- EFT ID: 68a6ff732885e0bbd30bb6f9
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_gridlok_ext_yellow")
