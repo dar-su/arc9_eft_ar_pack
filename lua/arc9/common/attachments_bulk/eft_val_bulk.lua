@@ -87,6 +87,8 @@ ATT.Category = {"eft_val_mag"}
 
 ATT.ActivateElements = {"mag30"}
 
+ATT.DropMagazineSounds = ARC9EFT.MagDropMetal
+
 ATT.ClipSize = 30
 ATT.ChamberSize = 1
 ATT.SuppressEmptySuffix = false 

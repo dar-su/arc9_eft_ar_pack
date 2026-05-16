@@ -273,6 +273,8 @@ ATT.SortOrder = 0
 ATT.Category = "eft_custom_mk47"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.Max = 1
+
 local path = ")weapons/darsu_eft/ak/"
 
 ATT.ShootSound = { path .. "fire_new/ak105_close_loop_1.wav", path .. "fire_new/ak105_close_loop_2.wav", path .. "fire_new/ak105_close_loop_3.wav", path .. "fire_new/ak105_close_loop_4.wav" }
@@ -324,6 +326,7 @@ ATT.SortOrder = 0
 ATT.Category = "eft_custom_mk47"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.Max = 1
 
 local path = ")weapons/darsu_eft/ak/"
 

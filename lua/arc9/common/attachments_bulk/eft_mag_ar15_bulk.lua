@@ -21,6 +21,8 @@ ATT.SuppressEmptySuffix = false
 
 
 
+ATT.DropMagazineSounds = ARC9EFT.MagDropMetal
+
 ATT.ActivateElements = {"30rnd"}
 
 ATT.ChamberSize = 1
@@ -56,6 +58,8 @@ ATT.Category = {"eft_ar15_mag"}
 ATT.SuppressEmptySuffix = false 
 
 
+
+ATT.DropMagazineSounds = ARC9EFT.MagDropMetal
 
 ATT.ActivateElements = {"30rnd"}
 
@@ -93,6 +97,8 @@ ATT.Category = {"eft_ar15_mag"}
 ATT.SuppressEmptySuffix = false 
 
 
+ATT.DropMagazineSounds = ARC9EFT.MagDropMetal
+
 
 ATT.ActivateElements = {"30rnd"}
 
@@ -127,6 +133,8 @@ ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_stanag_hk_416_st
 ATT.Category = {"eft_ar15_mag"}
 ATT.SuppressEmptySuffix = false 
 
+
+ATT.DropMagazineSounds = ARC9EFT.MagDropMetal
 
 
 ATT.ActivateElements = {"30rnd"}
@@ -237,6 +245,8 @@ ATT.Category = {"eft_ar15_mag"}
 ATT.SuppressEmptySuffix = false 
 
 
+
+ATT.DropMagazineSounds = ARC9EFT.MagDropDrumEmpty
 
 ATT.ActivateElements = {"drum"}
 
@@ -574,6 +584,8 @@ ATT.Category = {"eft_ar15_mag"}
 ATT.SuppressEmptySuffix = false 
 
 
+ATT.DropMagazineSounds = ARC9EFT.MagDropDrumEmpty
+
 
 ATT.ActivateElements = {"100rnd"}
 
@@ -610,6 +622,8 @@ ATT.Category = {"eft_ar15_mag"}
 ATT.SuppressEmptySuffix = false 
 
 
+
+ATT.DropMagazineSounds = ARC9EFT.MagDropDrumEmpty
 
 ATT.ActivateElements = {"100rnd"}
 
@@ -720,6 +734,8 @@ ATT.Category = {"eft_ar15_doubledrum"}
 ATT.SuppressEmptySuffix = false 
 
 
+ATT.DropMagazineSounds = ARC9EFT.MagDropDrumEmpty
+
 
 ATT.ActivateElements = {"100rndballs"}
 
@@ -756,6 +772,8 @@ ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_stanag_colt_ar15
 ATT.Category = {"eft_ar15_mag"}
 ATT.SuppressEmptySuffix = false 
 
+
+ATT.DropMagazineSounds = ARC9EFT.MagDropMetal
 
 ATT.ActivateElements = {"20rnd"}
 

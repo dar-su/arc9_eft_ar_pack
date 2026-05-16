@@ -26,6 +26,8 @@ ATT.ActivateElements = {"762"}
 ATT.ChamberSize = 1
 ATT.ClipSize = 30
 
+ATT.DropMagazineSounds = ARC9EFT.MagDropMetal
+
 ATT.HookP_TranslateSound = function(self, data) -- that is metal mag
     if data.sound == ")weapons/darsu_eft/ak/ak74_magin_plastic.ogg" then
         data.sound = ")weapons/darsu_eft/ak/akm_magin_metal.ogg"
@@ -408,6 +410,8 @@ ATT.ActivateElements = {"long762"}
 ATT.ChamberSize = 1
 ATT.ClipSize = 40
 
+ATT.DropMagazineSounds = ARC9EFT.MagDropMetal
+
 ATT.HookP_TranslateSound = function(self, data) -- that is metal mag
     if data.sound == ")weapons/darsu_eft/ak/ak74_magin_plastic.ogg" then
         data.sound = ")weapons/darsu_eft/ak/akm_magin_metal.ogg"
@@ -610,6 +614,8 @@ ATT.ActivateElements = {"762"}
 ATT.ChamberSize = 1
 ATT.ClipSize = 30
 
+ATT.DropMagazineSounds = ARC9EFT.MagDropMetal
+
 ATT.HookP_TranslateSound = function(self, data) -- that is metal mag
     if data.sound == ")weapons/darsu_eft/ak/ak74_magin_plastic.ogg" then
         data.sound = ")weapons/darsu_eft/ak/akm_magin_metal.ogg"
@@ -656,6 +662,8 @@ ATT.ActivateElements = {"762"}
 ATT.ChamberSize = 1
 ATT.ClipSize = 10
 
+ATT.DropMagazineSounds = ARC9EFT.MagDropMetal
+
 ATT.HookP_TranslateSound = function(self, data) -- that is metal mag
     if data.sound == ")weapons/darsu_eft/ak/ak74_magin_plastic.ogg" then
         data.sound = ")weapons/darsu_eft/ak/akm_magin_metal.ogg"
@@ -700,6 +708,8 @@ ATT.ActivateElements = {"bigdrum"}
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 75
+
+ATT.DropMagazineSounds = ARC9EFT.MagDropDrumEmpty
 
 ATT.HookP_TranslateSound = function(self, data) -- that is metal mag
     if data.sound == ")weapons/darsu_eft/ak/ak74_magin_plastic.ogg" then
@@ -940,6 +950,8 @@ ATT.ActivateElements = {"bigdrum"}
 ATT.ChamberSize = 1
 ATT.ClipSize = 73
 
+ATT.DropMagazineSounds = ARC9EFT.MagDropDrumEmpty
+
 
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = -8,
@@ -976,6 +988,8 @@ ATT.ActivateElements = {"10rnd"}
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 10
+
+ATT.DropMagazineSounds = ARC9EFT.MagDropMetal
 
 ATT.HookP_TranslateSound = function(self, data) -- that is metal mag
     if data.sound == ")weapons/darsu_eft/ak/ak74_magin_plastic.ogg" then
@@ -1021,6 +1035,8 @@ ATT.ActivateElements = {"bigdrum"}
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 95
+
+ATT.DropMagazineSounds = ARC9EFT.MagDropDrumEmpty
 
 
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
@@ -1172,6 +1188,8 @@ ATT.ActivateElements = {"smalldrum"}
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 50
+
+ATT.DropMagazineSounds = ARC9EFT.MagDropDrumEmpty
 
 
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({

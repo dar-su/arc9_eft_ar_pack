@@ -285,6 +285,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_custom_mdr"}
 
+ATT.Max = 1
 
 ATT.Attachments = {
     {

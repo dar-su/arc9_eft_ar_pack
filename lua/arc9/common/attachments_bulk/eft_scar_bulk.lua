@@ -930,6 +930,8 @@ ATT.Category = {"eft_scar_hmag"}
 
 ATT.ActivateElements = {"mag20"}
 
+ATT.DropMagazineSounds = ARC9EFT.MagDropMetal
+
 ATT.ClipSize = 20
 ATT.ChamberSize = 1
 ATT.SuppressEmptySuffix = false 
@@ -962,6 +964,8 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_scar_hmag"}
 
 ATT.ActivateElements = {"mag20"}
+
+ATT.DropMagazineSounds = ARC9EFT.MagDropMetal
 
 ATT.ClipSize = 20
 ATT.ChamberSize = 1

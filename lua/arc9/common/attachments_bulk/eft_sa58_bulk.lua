@@ -460,6 +460,8 @@ ATT.Category = {"eft_sa58_mag"}
 
 ATT.ActivateElements = {"mag10"}
 
+ATT.DropMagazineSounds = ARC9EFT.MagDropMetal
+
 ATT.ClipSize = 10
 ATT.ChamberSize = 1
 ATT.SuppressEmptySuffix = false 
@@ -495,6 +497,8 @@ ATT.Category = {"eft_sa58_mag"}
 
 ATT.ActivateElements = {"mag20", "mag30"}
 
+ATT.DropMagazineSounds = ARC9EFT.MagDropMetal
+
 ATT.ClipSize = 30
 ATT.ChamberSize = 1
 ATT.SuppressEmptySuffix = false 
@@ -528,6 +532,8 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_sa58_mag"}
 
 ATT.ActivateElements = {"mag20", "mag30"}
+
+ATT.DropMagazineSounds = ARC9EFT.MagDropMetal
 
 ATT.ClipSize = 30
 ATT.ChamberSize = 1
@@ -596,6 +602,8 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_sa58_mag"}
 
 ATT.ActivateElements = {"mag50"}
+
+ATT.DropMagazineSounds = ARC9EFT.MagDropDrumEmpty
 
 ATT.ClipSize = 50
 ATT.ChamberSize = 1
