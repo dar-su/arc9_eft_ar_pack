@@ -35,7 +35,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     misfireChance = 0.14,
     lightBleedModifier = 0.15,
     heavyBleedModifier = 0.15,
-}), "carbine")
+}, "carbine"))
 
 
 -- EFT ID: 56dff216d2720bbd668b4568
@@ -77,7 +77,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     misfireChance = 0.154,
     lightBleedModifier = 0.1,
     heavyBleedModifier = 0.1,
-}), "carbine")
+}, "carbine"))
 
 
 -- EFT ID: 56dff421d2720b5f5a8b4567
@@ -117,7 +117,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     heatFactor = 1.3275,
     failureToFeedChance = 0.01,
     misfireChance = 0.14,
-}), "carbine")
+}, "carbine"))
 
 
 -- EFT ID: 56dff4ecd2720b5f5a8b4568
@@ -156,7 +156,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     heatFactor = 1.5045,
     failureToFeedChance = 0.02,
     misfireChance = 0.154,
-}), "carbine")
+}, "carbine"))
 
 
 -- EFT ID: 56dff338d2720bbd668b4569
@@ -198,7 +198,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     heatFactor = 1.5222,
     failureToFeedChance = 0.02,
     misfireChance = 0.182,
-}), "carbine")
+}, "carbine"))
 
 
 -- EFT ID: 56dff4a2d2720bbd668b456a
@@ -236,7 +236,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     heatFactor = 1.4337,
     failureToFeedChance = 0.02,
     misfireChance = 0.14,
-}), "carbine")
+}, "carbine"))
 
 
 -- EFT ID: 56dff0bed2720bb0668b4567
@@ -278,7 +278,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     misfireChance = 0.175,
     lightBleedModifier = 0.2,
     heavyBleedModifier = 0.15,
-}), "carbine")
+}, "carbine"))
 
 
 -- EFT ID: 61962b617c6c7b169525f168
@@ -316,7 +316,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     heatFactor = 1.4868,
     failureToFeedChance = 0.01,
     misfireChance = 0.175,
-}), "carbine")
+}, "carbine"))
 
 
 -- EFT ID: 56dff3afd2720bba668b4567
@@ -356,7 +356,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     heatFactor = 1.593,
     failureToFeedChance = 0.082,
     misfireChance = 0.175,
-}), "carbine")
+}, "carbine"))
 
 
 -- EFT ID: 56dfef82d2720bbd668b4567
@@ -397,7 +397,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     heatFactor = 1.5399,
     failureToFeedChance = 0.01,
     misfireChance = 0.175,
-}), "carbine")
+}, "carbine"))
 
 
 -- EFT ID: 56dff2ced2720bb4668b4567
@@ -440,7 +440,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     heatFactor = 1.6815,
     failureToFeedChance = 0.079,
     misfireChance = 0.175,
-}), "carbine")
+}, "carbine"))
 
 
 -- EFT ID: 56dff061d2720bb5668b4567
@@ -480,7 +480,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     heatFactor = 1.6992,
     failureToFeedChance = 0.094,
     misfireChance = 0.175,
-}), "carbine")
+}, "carbine"))
 
 
 -- EFT ID: 56dff026d2720bb8668b4567
@@ -521,7 +521,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     heatFactor = 1.77,
     failureToFeedChance = 0.089,
     misfireChance = 0.175,
-}), "carbine")
+}, "carbine"))
 
 
 -- EFT ID: 5c0d5e4486f77478390952fe

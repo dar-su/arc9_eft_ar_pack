@@ -587,7 +587,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     heatFactor = 2.36,
     failureToFeedChance = 0.09,
     misfireChance = 0.175,
-}), "massive")
+}, "massive"))
 
 
 -- EFT ID: 6529302b8c26af6326029fb7
@@ -627,7 +627,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     heatFactor = 2.53,
     failureToFeedChance = 0.02,
     misfireChance = 0.168,
-}), "massive")
+}, "massive"))
 
 
 -- EFT ID: 6529243824cbe3c74a05e5c1
