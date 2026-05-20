@@ -787,7 +787,7 @@ ATT.Sights = {
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 0
 ATT.RTScopeFOV = 36/3
-ATT.RTScopeReticle = Material("entities/eft_g36_attachments/scope_g36_hensoldt_hkv_carry_handle_3x_marks.png", "mips smooth")
+ATT.RTScopeReticle = Material("entities/eft_g36_attachments/scope_g36_hensoldt_hkv_carry_handle_3x_marks.png", "smooth")
 ATT.RTScopeReticleScale = 1.3
 ATT.RTScopeColorable = false
 ATT.RTScopeShadowIntensity = 25
@@ -858,7 +858,7 @@ ATT.Sights = {
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 0
 ATT.RTScopeFOV = 36/1.5
-ATT.RTScopeReticle = Material("entities/eft_g36_attachments/scope_g36_hensoldt_hkv_single_optic_carry_handle_1,5x_marks.png", "mips smooth")
+ATT.RTScopeReticle = Material("entities/eft_g36_attachments/scope_g36_hensoldt_hkv_single_optic_carry_handle_1,5x_marks.png", "smooth")
 ATT.RTScopeReticleScale = 1.3
 ATT.RTScopeColorable = false
 ATT.RTScopeShadowIntensity = 25
@@ -935,7 +935,7 @@ ATT.Sights = {
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/scope_base_hensoldt_hkv.mdl"
 ATT.HoloSight = true
-ATT.HoloSightReticle = Material("vgui/arc9_eft_shared/reticles/new/scope_base_aimpoint_micro_h2_mark.png", "mips smooth")
+ATT.HoloSightReticle = Material("vgui/arc9_eft_shared/reticles/new/scope_base_aimpoint_micro_h2_mark.png", "smooth")
 ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
 ATT.HoloSightReticle:SetVector("$color2", Vector(4.25, 2, 2) * 0.3) -- bright color
 ATT.HoloSightSize = 450
