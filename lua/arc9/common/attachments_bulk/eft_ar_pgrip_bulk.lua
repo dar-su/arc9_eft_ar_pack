@@ -558,7 +558,7 @@ ATT.HasGrip = true
 
 
 ATT.SortOrder = 0
-ATT.Category = "eft_ar15_pgrip_m4"
+ATT.Category = "eft_ar15_pgrip"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 
@@ -586,7 +586,7 @@ ATT.HasGrip = true
 
 
 ATT.SortOrder = 0
-ATT.Category = "eft_ar15_pgrip_m4"
+ATT.Category = "eft_ar15_pgrip"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
