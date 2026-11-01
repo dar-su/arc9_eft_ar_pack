@@ -411,8 +411,8 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
-    ergonomicsModifier = 5,
-    recoilModifier = -1.5,
+    ergonomicsModifier = 6,
+    recoilModifier = -1.2,
     weight = 0.09,
 }))
 
@@ -443,8 +443,8 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
-    ergonomicsModifier = 5,
-    recoilModifier = -1.5,
+    ergonomicsModifier = 6,
+    recoilModifier = -1.2,
     weight = 0.09,
 }))
 
@@ -539,6 +539,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     recoilModifier = -1.5,
     weight = 0.08,
 }))
+
 
 -- EFT ID: 652911675ae2ae97b80fdf3c
 ARC9.LoadAttachment(ATT, "eft_ar_pgrip_sig")
@@ -686,6 +687,8 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     recoilModifier = -1.2,
     weight = 0.112,
 }))
+
+
 -- EFT ID: 6984b7d56be2752c150e6895
 ARC9.LoadAttachment(ATT, "eft_ar_pgrip_chevron_blk")
 
@@ -714,6 +717,8 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     recoilModifier = -1.2,
     weight = 0.112,
 }))
+
+
 -- EFT ID: 6985eb089edef67ade080b72
 ARC9.LoadAttachment(ATT, "eft_ar_pgrip_chevron_red")
 
@@ -742,5 +747,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     recoilModifier = -1.2,
     weight = 0.112,
 }))
+
+
 -- EFT ID: 698dac21772d6f3dc00e4284
 ARC9.LoadAttachment(ATT, "eft_ar_pgrip_chevron_ylw")

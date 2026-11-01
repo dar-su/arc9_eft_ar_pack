@@ -706,6 +706,12 @@ ATT.ActivateElements = {"30rnd", "eft_bb_mag"}
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 30
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.5,
+    weight = 0.138,
+    malfunctionChance = 0.08,
+}))
+
 
 -- EFT ID: 6241c2c2117ad530666a5108
 ARC9.LoadAttachment(ATT, "eft_mag_ar15_airsoft")

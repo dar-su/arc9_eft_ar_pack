@@ -425,5 +425,6 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     weight = 0.067,
 }))
 
+
 -- EFT ID: 65f1b2a5c14a07890801fc70
 ARC9.LoadAttachment(ATT, "eft_mount_dovetail_rsr_top")

@@ -357,7 +357,7 @@ ATT.Category = {"eft_ak_grip"}
 
 
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
-    ergonomicsModifier = 6,
+    ergonomicsModifier = 2,
     weight = 0.07,
 }))
 
@@ -785,5 +785,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     recoilModifier = -1.5,
     weight = 0.13,
 }))
+
+
 -- EFT ID: 6984b7bf0baed1fc0a0594f6
 ARC9.LoadAttachment(ATT, "eft_grip_ak_gladman")

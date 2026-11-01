@@ -1171,5 +1171,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     recoilModifier = -7,
     weight = 0.19,
 }))
+
+
 -- EFT ID: 68540aae1e5c6ff6f1051477
 ARC9.LoadAttachment(ATT, "eft_muzzle_ak_ars4p")

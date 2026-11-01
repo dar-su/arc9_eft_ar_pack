@@ -197,7 +197,7 @@ ATT.Category = {"eft_sa58_pgrip"}
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 3,
     recoilModifier = -1,
-    weight = 0.13,
+    weight = 0.082,
 }))
 
 

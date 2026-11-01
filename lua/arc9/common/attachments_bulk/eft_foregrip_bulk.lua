@@ -967,6 +967,8 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 12,
     weight = 0.151,
 }))
+
+
 -- EFT ID: 6984b690b457c5047e0c01fa
 ARC9.LoadAttachment(ATT, "eft_foregrip_irbis30")
 
@@ -997,5 +999,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     recoilModifier = -2,
     weight = 0.158,
 }))
+
+
 -- EFT ID: 6984b74a5aab442620032fe6
 ARC9.LoadAttachment(ATT, "eft_foregrip_irbis45")

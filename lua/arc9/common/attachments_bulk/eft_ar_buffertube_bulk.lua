@@ -558,6 +558,8 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 2,
     weight = 0.18,
 }))
+
+
 -- EFT ID: 698b337c49b46ae2d0092e7f
 ARC9.LoadAttachment(ATT, "eft_ar_buffertube_hexone")
 
@@ -601,6 +603,8 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     recoilModifier = -1,
     weight = 0.162,
 }))
+
+
 -- EFT ID: 5a33ca0fc4a282000d72292f
 ARC9.LoadAttachment(ATT, "eft_ar_buffertube_ere")
 
@@ -645,5 +649,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     recoilModifier = -0.5,
     weight = 0.3,
 }))
+
+
 -- EFT ID: 5ef1ba28c64c5d0dfc0571a5
 ARC9.LoadAttachment(ATT, "eft_ar_buffertube_mtc")

@@ -526,7 +526,7 @@ ATT.Attachments = {
 ATT.AdvancedCamoSupport = true
 
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
-    ergonomicsModifier = 19.5,
+    ergonomicsModifier = 18,
     weight = 0.39,
 }))
 
@@ -694,7 +694,7 @@ ATT.Attachments = {
 
 ATT.AdvancedCamoSupport = true
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
-    ergonomicsModifier = 19.5,
+    ergonomicsModifier = 19,
     weight = 0.54,
 }))
 
@@ -939,7 +939,7 @@ ATT.Attachments = {
 ATT.AdvancedCamoSupport = "eft_hg_hk416_midwest9"
 
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
-    ergonomicsModifier = 19.5,
+    ergonomicsModifier = 17,
     weight = 0.37,
 }))
 
@@ -1025,7 +1025,7 @@ ATT.Attachments = {
 ATT.AdvancedCamoSupport = true
 
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
-    ergonomicsModifier = 20,
+    ergonomicsModifier = 19,
     weight = 0.44,
 }))
 

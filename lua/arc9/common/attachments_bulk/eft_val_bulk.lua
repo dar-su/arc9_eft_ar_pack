@@ -24,13 +24,13 @@ ATT.DropMagazineAmount = 1
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_val2_10.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_val2_10.mdl"
 
+ATT.AdvancedCamoSupport = true
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 4,
     weight = 0.131,
     malfunctionChance = 0.12,
 }))
 
-ATT.AdvancedCamoSupport = true
 
 -- EFT ID: 57838f0b2459774a256959b2
 ARC9.LoadAttachment(ATT, "eft_val_mag_10")
@@ -59,13 +59,13 @@ ATT.DropMagazineAmount = 1
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_val2_20.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_val2_20.mdl"
 
+ATT.AdvancedCamoSupport = true
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = -1.5,
     weight = 0.181,
     malfunctionChance = 0.19,
 }))
 
-ATT.AdvancedCamoSupport = true
 
 -- EFT ID: 57838f9f2459774a150289a0
 ARC9.LoadAttachment(ATT, "eft_val_mag_20")
@@ -96,13 +96,14 @@ ATT.DropMagazineAmount = 1
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_val2_30sr3.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_val2_30sr3.mdl"
 
+ATT.AdvancedCamoSupport = true
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = -4,
     weight = 0.397,
     malfunctionChance = 0.17,
 }))
 
-ATT.AdvancedCamoSupport = true
+
 
 -- EFT ID: 5a9e81fba2750c00164f6b11
 ARC9.LoadAttachment(ATT, "eft_val_mag_30")
@@ -131,13 +132,13 @@ ATT.DropMagazineAmount = 1
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_val2_30.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_val2_30.mdl"
 
+ATT.AdvancedCamoSupport = true
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = -3.5,
     weight = 0.254,
     malfunctionChance = 0.273,
 }))
 
-ATT.AdvancedCamoSupport = true
 
 -- EFT ID: 65118f531b90b4fc77015083
 ARC9.LoadAttachment(ATT, "eft_val_mag_30s")
@@ -189,13 +190,13 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_val_stock"}
 
+ATT.AdvancedCamoSupport = true
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 10,
     recoilModifier = -18,
     weight = 0.29,
 }))
 
-ATT.AdvancedCamoSupport = true
 
 -- EFT ID: 57c450252459772d28133253
 ARC9.LoadAttachment(ATT, "eft_val_stockk")
@@ -251,12 +252,13 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_val_dc"}
 
+ATT.AdvancedCamoSupport = true
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 2,
     weight = 0.2,
 }))
 
-ATT.AdvancedCamoSupport = true
+
 
 -- EFT ID: 57c44f4f2459772d2c627113
 ARC9.LoadAttachment(ATT, "eft_val_dc_val")
@@ -300,12 +302,12 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_val_grip"}
 
+ATT.AdvancedCamoSupport = true
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 3,
     weight = 0.146,
 }))
 
-ATT.AdvancedCamoSupport = true
 
 -- EFT ID: 57c44fa82459772d2d75e415
 ARC9.LoadAttachment(ATT, "eft_val_grip_std")
@@ -327,12 +329,12 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_val_grip"}
 
+ATT.AdvancedCamoSupport = true
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 3,
     weight = 0.146,
 }))
 
-ATT.AdvancedCamoSupport = true
 
 -- EFT ID: 6565b91666492762f5029c0b
 ARC9.LoadAttachment(ATT, "eft_val_grip_black")
@@ -381,12 +383,13 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_val_hg"}
 
+ATT.AdvancedCamoSupport = true
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 8,
     weight = 0.07,
 }))
 
-ATT.AdvancedCamoSupport = true
+
 
 -- EFT ID: 651178336cad06c37c049eb4
 ARC9.LoadAttachment(ATT, "eft_val_hg_std")
@@ -408,12 +411,13 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_val_hg"}
 
+ATT.AdvancedCamoSupport = true
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 8,
     weight = 0.07,
 }))
 
-ATT.AdvancedCamoSupport = true
+
 
 -- EFT ID: 6565bb7eb4b12a56eb04b084
 ARC9.LoadAttachment(ATT, "eft_val_hg_black")
@@ -447,12 +451,13 @@ ATT.Attachments = {
     },
 }
 
+ATT.AdvancedCamoSupport = true
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = -0.5,
     weight = 0.065,
 }))
 
-ATT.AdvancedCamoSupport = true
+
 
 -- EFT ID: 5a69a2ed8dc32e000d46d1f1
 ARC9.LoadAttachment(ATT, "eft_val_grip_rotor")
@@ -504,6 +509,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     velocity = 1.1,
 }))
 
+
 -- EFT ID: 57c44dd02459772d2e0ae249
 ARC9.LoadAttachment(ATT, "eft_val_supp_val")
 
@@ -548,6 +554,7 @@ ATT.Attachments = {
     },
 }
 
+ATT.AdvancedCamoSupport = true
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = -5,
     recoilModifier = -14,
@@ -555,7 +562,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     velocity = 1.1,
 }))
 
-ATT.AdvancedCamoSupport = true
+
 
 -- EFT ID: 57c44dd02459772d2e0ae249
 ARC9.LoadAttachment(ATT, "eft_val_supp_val_camo")
@@ -841,11 +848,11 @@ ATT.Attachments = {
     },
 }
 
+ATT.AdvancedCamoSupport = true
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 8,
     weight = 0.07,
 }))
-ATT.AdvancedCamoSupport = true
 
 
 -- EFT ID: 6565c3ab977bcc2dbb01c2e7
@@ -885,13 +892,13 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+ATT.AdvancedCamoSupport = true
 
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 8,
     weight = 0.07,
 }))
 
-ATT.AdvancedCamoSupport = true
 
 -- EFT ID: 65144f546ddb773afa0e35e1
 ARC9.LoadAttachment(ATT, "eft_sr3_hg_black")
@@ -948,12 +955,13 @@ ATT.Attachments = {
 }
 
 
+ATT.AdvancedCamoSupport = true
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 8,
     weight = 0.08,
 }))
 
-ATT.AdvancedCamoSupport = true
+
 
 -- EFT ID: 6568a6bf2c5fb7afc70bc424
 ARC9.LoadAttachment(ATT, "eft_sr3_hg_rail")
@@ -980,13 +988,14 @@ ATT.LHIK = true
 ATT.ModelOffset = Vector(0.1, 0, 1.5)
 ATT.ModelAngleOffset = Angle(0, 90, 0)
 
+ATT.AdvancedCamoSupport = true
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 2,
     recoilModifier = -1,
     weight = 0.08,
 }))
 
-ATT.AdvancedCamoSupport = true
+
 
 -- EFT ID: 6565c0c2ff7eb7070409084c
 ARC9.LoadAttachment(ATT, "eft_sr3_fg_std")
@@ -1013,13 +1022,13 @@ ATT.LHIK = true
 ATT.ModelOffset = Vector(0.1, 0, 1.5)
 ATT.ModelAngleOffset = Angle(0, 90, 0)
 
+ATT.AdvancedCamoSupport = true
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 2,
     recoilModifier = -1,
     weight = 0.08,
 }))
 
-ATT.AdvancedCamoSupport = true
 
 -- EFT ID: 65329ebcc0d50d0c9204ace1
 ARC9.LoadAttachment(ATT, "eft_sr3_fg_black")
@@ -1853,5 +1862,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 9,
     weight = 0.08,
 }))
+
+
 -- EFT ID: 688c86420e99e554a90c0fd6
 ARC9.LoadAttachment(ATT, "eft_sr3_hg_karden")

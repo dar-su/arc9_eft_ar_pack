@@ -1275,6 +1275,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     malfunctionChance = 0.087,
 }))
 
+
 -- EFT ID: 64b9e265c94d0d15c5027e35
 ARC9.LoadAttachment(ATT, "eft_mag_ak_545_20")
 

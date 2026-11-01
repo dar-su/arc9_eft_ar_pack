@@ -1556,6 +1556,8 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 0.5,
     weight = 0.108,
 }))
+
+
 -- EFT ID: 680b884f1a335f66240ecde7
 ARC9.LoadAttachment(ATT, "eft_g36_top_kac_rs")
 
@@ -1577,5 +1579,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 0.5,
     weight = 0.067,
 }))
+
+
 -- EFT ID: 680b87fc9402a78e7504a057
 ARC9.LoadAttachment(ATT, "eft_g36_top_kac_fs")

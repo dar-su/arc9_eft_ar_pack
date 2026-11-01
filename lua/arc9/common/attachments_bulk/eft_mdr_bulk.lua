@@ -340,6 +340,8 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     recoilModifier = -12.7,
     weight = 0.763,
 }))
+
+
 -- EFT ID: 680f87196d09c2f0740dd527
 ARC9.LoadAttachment(ATT, "eft_mdr_barrel_762_20")
 
@@ -378,6 +380,8 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     weight = 0.386,
     velocity = -12,
 }))
+
+
 -- EFT ID: 6810d2c6485a5ea11b01e3ad
 ARC9.LoadAttachment(ATT, "eft_mdr_barrel_556_115")
 
@@ -415,6 +419,8 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     recoilModifier = -10.2,
     weight = 0.675,
 }))
+
+
 -- EFT ID: 680f87118c5d2ff9020005cd
 ARC9.LoadAttachment(ATT, "eft_mdr_barrel_556_20")
 
@@ -486,6 +492,8 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 13,
     weight = 0.244,
 }))
+
+
 -- EFT ID: 6810aa1474bf67765c02e91a
 ARC9.LoadAttachment(ATT, "eft_mdr_hg_alx16")
 
@@ -557,6 +565,8 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 13,
     weight = 0.244,
 }))
+
+
 -- EFT ID: 6810a469f6c2827d680d1f4c
 ARC9.LoadAttachment(ATT, "eft_mdr_hg_alx16_fde")
 
@@ -641,6 +651,8 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 20,
     weight = 0.352,
 }))
+
+
 -- EFT ID: 681096b551511048940afed9
 ARC9.LoadAttachment(ATT, "eft_mdr_hg_alx20_fde")
 
@@ -724,6 +736,8 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 20,
     weight = 0.352,
 }))
+
+
 -- EFT ID: 68109a1f327033533604170a
 ARC9.LoadAttachment(ATT, "eft_mdr_hg_alx20")
 
@@ -800,6 +814,8 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 17,
     weight = 0.222,
 }))
+
+
 -- EFT ID: 680f5953b93ecb502102816a
 ARC9.LoadAttachment(ATT, "eft_mdr_hg_alx16_bipod")
 
@@ -877,6 +893,8 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 15,
     weight = 0.222,
 }))
+
+
 -- EFT ID: 680f55b71e275ac1230f2dc6
 ARC9.LoadAttachment(ATT, "eft_mdr_hg_alx16_bipod_fde")
 
@@ -961,6 +979,8 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 15,
     weight = 0.307,
 }))
+
+
 -- EFT ID: 680f47b20407db2e550c4311
 ARC9.LoadAttachment(ATT, "eft_mdr_hg_alx20_bipod_fde")
 
@@ -1045,6 +1065,8 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 15,
     weight = 0.307,
 }))
+
+
 -- EFT ID: 680f55788692125dc00a3354
 ARC9.LoadAttachment(ATT, "eft_mdr_hg_alx20_bipod")
 
@@ -1092,6 +1114,8 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     recoilModifier = -1,
     weight = 0.102,
 }))
+
+
 -- EFT ID: 6810d3d8dc7bbeec2f0081c9
 ARC9.LoadAttachment(ATT, "eft_mdr_hg_micron")
 
@@ -1140,6 +1164,8 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     recoilModifier = -1,
     weight = 0.102,
 }))
+
+
 -- EFT ID: 6810ca87002deee76b04970b
 ARC9.LoadAttachment(ATT, "eft_mdr_hg_micron_fde")
 
@@ -1168,6 +1194,8 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 2,
     weight = 0.243,
 }))
+
+
 -- EFT ID: 680f6d9a4d7624d36e06527b
 ARC9.LoadAttachment(ATT, "eft_mdr_bipod_16")
 
@@ -1196,5 +1224,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 3,
     weight = 0.28,
 }))
+
+
 -- EFT ID: 680f7e4aeee716732708e84e
 ARC9.LoadAttachment(ATT, "eft_mdr_bipod_20")

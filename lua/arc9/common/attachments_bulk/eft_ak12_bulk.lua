@@ -58,7 +58,6 @@ ATT.AdvancedCamoSupport = true
 
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 15,
-    recoilModifier = -1,
     weight = 0.134,
 }))
 
@@ -347,6 +346,8 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = -0.5,
     weight = 0.1,
 }))
+
+
 -- EFT ID: 68235b0b7d3ccc3ca20f4d01
 ARC9.LoadAttachment(ATT, "eft_ak12_muzzle_adapter")
 
@@ -423,6 +424,8 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 18,
     weight = 0.4,
 }))
+
+
 -- EFT ID: 682315b0f8d8f8681e0744b0
 ARC9.LoadAttachment(ATT, "eft_ak12_hg_akv")
 
@@ -488,6 +491,8 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 18.5,
     weight = 0.4,
 }))
+
+
 -- EFT ID: 682315bdf8d8f8681e0744b5
 ARC9.LoadAttachment(ATT, "eft_ak12_hg_n4")
 
@@ -553,6 +558,8 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 10,
     weight = 0.15,
 }))
+
+
 -- EFT ID: 682315c58639961c6001dbe7
 ARC9.LoadAttachment(ATT, "eft_ak12_hg_sport")
 
@@ -596,6 +603,8 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 8,
     weight = 0.11,
 }))
+
+
 -- EFT ID: 682315d08639961c6001dbec
 ARC9.LoadAttachment(ATT, "eft_ak12_hg_sport_top")
 
@@ -632,6 +641,8 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = -0.1,
     weight = 0.05,
 }))
+
+
 -- EFT ID: 682317390ee6ef08a60e4547
 ARC9.LoadAttachment(ATT, "eft_mount_zenit_b2")
 
@@ -669,5 +680,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = -0.2,
     weight = 0.07,
 }))
+
+
 -- EFT ID: 682317428639961c6001dbf1
 ARC9.LoadAttachment(ATT, "eft_mount_zenit_b2u")

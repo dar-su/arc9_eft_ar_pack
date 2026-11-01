@@ -58,7 +58,7 @@ ATT.Category = {"eft_vsk_stock"}
 
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 5,
-    recoilModifier = -28,
+    -- recoilModifier = -28,
     weight = 0.7,
 }))
 
@@ -96,6 +96,7 @@ ATT.ToggleStats = {
 
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 16,
+    recoilModifier = -20,
     weight = 0.5,
 }))
 
@@ -385,6 +386,8 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 4.5,
     weight = 0.19,
 }))
+
+
 -- EFT ID: 688b79b5eb234c75d900e050
 ARC9.LoadAttachment(ATT, "eft_vsk_hg_9a_tts")
 
@@ -416,6 +419,8 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = -0.1,
     weight = 0.061,
 }))
+
+
 -- EFT ID: 688b7b0d934c59b7bf0af0b7
 ARC9.LoadAttachment(ATT, "eft_vsk_hg_9a_tts_top")
 
@@ -447,5 +452,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = -0.1,
     weight = 0.054,
 }))
+
+
 -- EFT ID: 688b7c1b0e99e554a90c0fb7
 ARC9.LoadAttachment(ATT, "eft_vsk_hg_9a_tts_side")
