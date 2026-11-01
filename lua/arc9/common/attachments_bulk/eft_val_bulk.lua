@@ -104,7 +104,6 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
 }))
 
 
-
 -- EFT ID: 5a9e81fba2750c00164f6b11
 ARC9.LoadAttachment(ATT, "eft_val_mag_30")
 
@@ -259,7 +258,6 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
 }))
 
 
-
 -- EFT ID: 57c44f4f2459772d2c627113
 ARC9.LoadAttachment(ATT, "eft_val_dc_val")
 
@@ -390,7 +388,6 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
 }))
 
 
-
 -- EFT ID: 651178336cad06c37c049eb4
 ARC9.LoadAttachment(ATT, "eft_val_hg_std")
 
@@ -416,7 +413,6 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 8,
     weight = 0.07,
 }))
-
 
 
 -- EFT ID: 6565bb7eb4b12a56eb04b084
@@ -456,7 +452,6 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = -0.5,
     weight = 0.065,
 }))
-
 
 
 -- EFT ID: 5a69a2ed8dc32e000d46d1f1
@@ -561,7 +556,6 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     weight = 0.496,
     velocity = 1.1,
 }))
-
 
 
 -- EFT ID: 57c44dd02459772d2e0ae249
@@ -962,7 +956,6 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
 }))
 
 
-
 -- EFT ID: 6568a6bf2c5fb7afc70bc424
 ARC9.LoadAttachment(ATT, "eft_sr3_hg_rail")
 
@@ -994,7 +987,6 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     recoilModifier = -1,
     weight = 0.08,
 }))
-
 
 
 -- EFT ID: 6565c0c2ff7eb7070409084c
