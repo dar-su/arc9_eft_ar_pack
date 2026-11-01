@@ -58,7 +58,7 @@ SWEP.RPM = 750
 SWEP.EFTErgo = 48
 SWEP.EFTWeight = 0.63
 SWEP.BarrelLength = 36
-SWEP.Ammo = "smg"
+SWEP.Ammo = "smg1"
 SWEP.Firemodes = {
     { Mode = -1, PoseParam = 2},
     { Mode = 1, RPM = 450, PoseParam = 1 }
