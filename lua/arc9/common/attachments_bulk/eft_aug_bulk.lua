@@ -23,7 +23,7 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
         Category = "eft_aug_muzzle",
-        Pos = Vector(-4.7, 0, 0.05),
+        Pos = Vector(-5.1, 0, 0.038),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
@@ -74,8 +74,8 @@ ATT.Category = {"eft_aug_barrel"}
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
-        Category = "eft_aug_muzzle",
-        Pos = Vector(-8.25, 0, 0.05),
+        Category = {"eft_aug_muzzle", "eft_aug_muzzle_a1_20"},
+        Pos = Vector(-8.66, 0, 0.038),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
@@ -125,7 +125,7 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
         Category = "eft_aug_muzzle",
-        Pos = Vector(-4.7, 0, 0.05),
+        Pos = Vector(-5.125, 0, 0.038),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
@@ -664,9 +664,9 @@ ATT.Silencer = true
 ATT.MuzzleParticle = "muzzleflash_suppressed"
 ATT.NoFlash = true
 
-ATT.ModelOffset  = Vector(-2.12, 0, 0)
+ATT.ModelOffset  = Vector(-2.5, 0, 0)
 
-ATT.Category = {"eft_aug_muzzle"}
+ATT.Category = {"eft_aug_muzzle_a1_20"}
 
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = -12,
