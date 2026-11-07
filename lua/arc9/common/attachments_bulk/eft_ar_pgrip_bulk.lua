@@ -751,3 +751,69 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
 
 -- EFT ID: 698dac21772d6f3dc00e4284
 ARC9.LoadAttachment(ATT, "eft_ar_pgrip_chevron_ylw")
+
+
+
+///////////////////////////////////////      eft_ar_pgrip_dd
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Daniel Defense Enhanced Pistol Grip (Black)"
+ATT.CompactName = "DD AR15"
+ATT.Icon = Material("entities/eft_attachments/6a1577a0bf497aade1002754.png", "mips smooth")
+ATT.Description = "The polymer Daniel Defense Enhanced Pistol Grip can be installed on any weapon compatible with AR-15 pistol grips. The inside of the grip contains free space for spare parts, tools, batteries, and an accessory kit. No Trigger Guard, Black version."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_ar15_pgrip"}
+
+ATT.HasGrip = true
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/pistolgrip_ar15_dd_enhanced.mdl"
+
+-- EFT ID: 6a1577a0bf497aade1002754
+ARC9.LoadAttachment(ATT, "eft_ar_pgrip_dd")
+
+
+///////////////////////////////////////      eft_ar_pgrip_dd_fde
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Daniel Defense Enhanced Pistol Grip (Mil Spec+)"
+ATT.CompactName = "DD AR15"
+ATT.Icon = Material("entities/eft_attachments/6a1577b09bbb889992032c14.png", "mips smooth")
+ATT.Description = "The polymer Daniel Defense Enhanced Pistol Grip can be installed on any weapon compatible with AR-15 pistol grips. The inside of the grip contains free space for spare parts, tools, batteries, and an accessory kit. No Trigger Guard, Mil Spec+ version."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_ar15_pgrip"}
+
+ATT.HasGrip = true
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/pistolgrip_ar15_dd_enhanced.mdl"
+ATT.ModelSkin = 1
+
+-- EFT ID: 6a1577b09bbb889992032c14
+ARC9.LoadAttachment(ATT, "eft_ar_pgrip_dd_fde")
+
+
+///////////////////////////////////////      eft_ar_pgrip_t20
+
+ATT = {}
+
+ATT.PrintName = "Type 20 pistol grip"
+ATT.CompactName = "T20 PG"
+ATT.Icon = Material("entities/eft_attachments/6a3cea0d277d1c54b5008e27.png", "mips smooth")
+ATT.Description = "A standard-issue polymer pistol grip for the Type 20 assault rifle, partly compatible with the AR-15 platform. Manufactured by Howa Machinery."
+
+ATT.HasGrip = true
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_ar15_pgrip_m4"}
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/pistolgrip_ar15_howa_type20.mdl"
+
+-- EFT ID: 6a3cea0d277d1c54b5008e27
+ARC9.LoadAttachment(ATT, "eft_ar_pgrip_t20")
+

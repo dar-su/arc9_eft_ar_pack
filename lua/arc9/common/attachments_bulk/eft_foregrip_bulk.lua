@@ -1003,3 +1003,88 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
 
 -- EFT ID: 6984b74a5aab442620032fe6
 ARC9.LoadAttachment(ATT, "eft_foregrip_irbis45")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+///////////////////////////////////////      eft_foregrip_para
+
+ATT = {}
+
+ATT.PrintName = "Wilcox Stubby Para Grip"
+ATT.CompactName = "Para Grip"
+ATT.Icon = Material("entities/eft_attachments/6a675e0706a5419b2508f26c.png", "mips smooth")
+ATT.Description = "A folding vertical grip manufactured by Wilcox."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = "eft_foregrip_small"
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/foregrip_wilcox_stubby_para_grip.mdl"
+ATT.ModelAngleOffset = Angle(0, 90, 0)
+ATT.LHIK_Priority = 2
+ATT.LHIK = true
+
+ATT.AdvancedCamoSupport = true
+
+-- EFT ID: 6a675e0706a5419b2508f26c
+ARC9.LoadAttachment(ATT, "eft_foregrip_para")
+
+
+///////////////////////////////////////      eft_foregrip_ddvfg
+
+ATT = {}
+
+ATT.PrintName = "Daniel Defense Vertical Foregrip (Black)"
+ATT.CompactName = "DD VFG"
+ATT.Icon = Material("entities/eft_attachments/6a16f3711c209e26040a5410.png", "mips smooth")
+ATT.Description = "A foregrip designed for installation on Weaver/Picatinny handguards. Manufactured by Daniel Defense. Black version."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = "eft_foregrip_small"
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/fg_dd_vfg.mdl"
+ATT.ModelAngleOffset = Angle(0, 90, 0)
+
+ATT.LHIK_Priority = 2
+ATT.LHIK = true
+
+-- EFT ID: 6a16f3711c209e26040a5410
+ARC9.LoadAttachment(ATT, "eft_foregrip_ddvfg")
+
+
+///////////////////////////////////////      eft_foregrip_ddvfg_fde
+
+ATT = {}
+
+ATT.PrintName = "Daniel Defense Vertical Foregrip (Mil Spec+)"
+ATT.CompactName = "DD VFG"
+ATT.Icon = Material("entities/eft_attachments/6a16f3811c209e26040a5413.png", "mips smooth")
+ATT.Description = "A foregrip designed for installation on Weaver/Picatinny handguards. Manufactured by Daniel Defense. Mil Spec+ color version."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = "eft_foregrip_small"
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/fg_dd_vfg.mdl"
+ATT.ModelAngleOffset = Angle(0, 90, 0)
+ATT.ModelSkin = 1
+
+ATT.LHIK_Priority = 2
+ATT.LHIK = true
+
+-- EFT ID: 6a16f3811c209e26040a5413
+ARC9.LoadAttachment(ATT, "eft_foregrip_ddvfg_fde")
+

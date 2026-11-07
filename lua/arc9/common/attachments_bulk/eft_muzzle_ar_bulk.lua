@@ -1158,3 +1158,208 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
 
 -- EFT ID: 612e0d3767085e45ef14057f
 ARC9.LoadAttachment(ATT, "eft_muzzle_ar15_psr762")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+///////////////////////////////////////      eft_muzzle_checkmate_ar15
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Strike Industries Checkmate 5.56x45 compensator"
+ATT.CompactName = "Checkmate"
+ATT.Icon = Material("entities/eft_attachments/6a6880680934ae00be0d5f9a.png", "mips smooth")
+ATT.Description = "A compensator manufactured by Strike Industries. Can also be equipped with an SI Oppressor or Ferfrans Modular Concussion Reduction muzzle device."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_ar15_muzzle"}
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ar15_strike_industries_checkmate.mdl"
+ATT.MuzzleDevice = true
+ATT.MuzzleDevice_Priority = 4
+ATT.BarrelLengthAdd = 0.5
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
+        Category = "eft_ar15_ferfrans",
+        Pos = Vector(-0.5, 0, 0),
+        Icon_Offset = Vector(1, 0, 0),
+        Ang = Angle(0, 0, 0),
+    },
+}
+
+-- EFT ID: 6a6880680934ae00be0d5f9a
+ARC9.LoadAttachment(ATT, "eft_muzzle_checkmate_ar15")
+
+///////////////////////////////////////      eft_muzzle_oppressor_ar15
+
+ATT = {}
+
+ATT.PrintName = "Strike Industries Oppressor Lite V2 5.56x45 muzzle device"
+ATT.CompactName = "Oppressor"
+ATT.Icon = Material("entities/eft_attachments/6a6895ac4672de9ba1014bcc.png", "mips smooth")
+ATT.Description = "A muzzle device manufactured by Strike Industries, installed only on compatible muzzle devices."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_ar15_ferfrans"}
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_base_strike_industries_opressor_lite_v2.mdl"
+-- ATT.MuzzleDevice = true
+-- ATT.MuzzleDevice_Priority = 4
+-- ATT.BarrelLengthAdd = 0.5
+
+-- EFT ID: 6a6895ac4672de9ba1014bcc
+ARC9.LoadAttachment(ATT, "eft_muzzle_oppressor_ar15")
+
+
+
+///////////////////////////////////////      eft_muzzle_t20_ar15
+
+ATT = {}
+
+ATT.PrintName = "Type 20 5.56x45 compensator"
+ATT.CompactName = "T20 comp"
+ATT.Icon = Material("entities/eft_attachments/6a3cea96194a2625b40c863d.png", "mips smooth")
+ATT.Description = "A standard-issue 5.56x45 compensator for the Type 20 assault rifle. Manufactured by Howa Machinery."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_ar15_muzzle"}
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ar15_howa_type20.mdl"
+ATT.MuzzleDevice = true
+ATT.MuzzleDevice_Priority = 4
+ATT.BarrelLengthAdd = 0.5
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
+        Category = "eft_ar15_printx",
+        Pos = Vector(-0.42, 0, 0),
+        Icon_Offset = Vector(1, 0, 0),
+        Ang = Angle(0, 0, 0),
+    },
+}
+
+-- EFT ID: 6a3cea96194a2625b40c863d
+ARC9.LoadAttachment(ATT, "eft_muzzle_t20_ar15")
+
+///////////////////////////////////////      eft_silencer_printx_556
+
+ATT = {}
+
+ATT.PrintName = "B&T Howa Print-X 5.56x45 sound suppressor"
+ATT.CompactName = "Howa Print-X"
+ATT.Icon = Material("entities/eft_attachments/6a3ceab8194a2625b40c8641.png", "mips smooth")
+ATT.Description = "A 5.56x45/.223 sound suppressor designed to be installed on the compatible muzzle devices. Manufactured by Brugger & Thomet."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_ar15_printx"}
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/silencer_base_bt_print_x_type20.mdl"
+ATT.Silencer = true
+ATT.MuzzleDevice = true
+ATT.MuzzleDevice_Priority = 5
+ATT.MuzzleParticle = "muzzleflash_suppressed"
+ATT.NoFlash = true
+
+-- EFT ID: 6a3ceab8194a2625b40c8641
+ARC9.LoadAttachment(ATT, "eft_silencer_printx_556")
+
+
+///////////////////////////////////////      eft_muzzle_ar10_hux
+
+ATT = {}
+
+ATT.PrintName = "AR-10 HUXWRX 7.62x51 flash hider"
+ATT.CompactName = "HUXWRX 762"
+ATT.Icon = Material("entities/eft_attachments/6a158e63060f61ca2c03e096.png", "mips smooth")
+ATT.Description = "The flashhider manufactured by HUman eXposure WORKShop (HUXWRX) Safety Co for 7.62x51.The muzzle device is threaded and compatible with HUXWRX sound suppressors."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_ar10_muzzle"}
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ar10_huxwrx_flash_hider_qd.mdl"
+ATT.MuzzleDevice = true
+ATT.MuzzleDevice_Priority = 4
+ATT.BarrelLengthAdd = 0.5
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
+        Category = "eft_hux_muzzle",
+        Pos = Vector(-0.4, 0, 0),
+        Icon_Offset = Vector(1, 0, 0),
+        Ang = Angle(0, 0, 0),
+    },
+}
+
+-- EFT ID: 6a158e63060f61ca2c03e096
+ARC9.LoadAttachment(ATT, "eft_muzzle_ar10_hux")
+
+
+///////////////////////////////////////      eft_silencer_hux
+
+ATT = {}
+
+ATT.PrintName = "HUXWRX HX-QD 7.62x51 sound suppressor"
+ATT.CompactName = "HX-QD"
+ATT.Icon = Material("entities/eft_attachments/6a158e4abf497aade10030e0.png", "mips smooth")
+ATT.Description = "HX-QD is a 7.62x51/.308 steel suppressor that uses quick-release muzzle devices to attach the suppressor to the gun. Manufactured by HUman eXposure WORKShop Safety Co."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_hux_muzzle"}
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/silencer_base_huxwrx_hxqd.mdl"
+ATT.Silencer = true
+ATT.MuzzleDevice = true
+ATT.MuzzleDevice_Priority = 5
+ATT.MuzzleParticle = "muzzleflash_suppressed"
+ATT.NoFlash = true
+
+-- EFT ID: 6a158e4abf497aade10030e0
+ARC9.LoadAttachment(ATT, "eft_silencer_hux")
+
+
+///////////////////////////////////////      eft_silencer_hux_fde
+
+ATT = {}
+
+ATT.PrintName = "HUXWRX HX-QD 7.62x51 sound suppressor (Tan)"
+ATT.CompactName = "HX-QD"
+ATT.Icon = Material("entities/eft_attachments/6a1eb32c6cd328ea90037455.png", "mips smooth")
+ATT.Description = "HX-QD is a 7.62x51/.308 steel suppressor that uses quick-release muzzle devices to attach the suppressor to the gun. Manufactured by HUman eXposure WORKShop Safety Co. Tan color version."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_hux_muzzle"}
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/silencer_base_huxwrx_hxqd.mdl"
+ATT.ModelSkin = 1
+ATT.Silencer = true
+ATT.MuzzleDevice = true
+ATT.MuzzleDevice_Priority = 5
+ATT.MuzzleParticle = "muzzleflash_suppressed"
+ATT.NoFlash = true
+
+-- EFT ID: 6a1eb32c6cd328ea90037455
+ARC9.LoadAttachment(ATT, "eft_silencer_hux_fde")
+
+

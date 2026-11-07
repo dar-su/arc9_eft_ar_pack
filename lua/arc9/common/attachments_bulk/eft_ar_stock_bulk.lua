@@ -1412,3 +1412,43 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
 
 -- EFT ID: 5d120a28d7ad1a1c8962e295
 ARC9.LoadAttachment(ATT, "eft_ar_stock_doublestar_buttpad")
+
+
+
+///////////////////////////////////////      eft_ar_stock_caasbs
+
+ATT = {}
+
+ATT.PrintName = "AR-15 CAA SBS stock"
+ATT.CompactName = "SBS"
+ATT.Icon = Material("entities/eft_attachments/6a15bf94e5267ba21c07f9b1.png", "mips smooth")
+ATT.Description = "A Skeleton Style Buttstock manufactured by CAA."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_ar_stock"}
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_caa_sbs.mdl"
+
+-- EFT ID: 6a15bf94e5267ba21c07f9b1
+ARC9.LoadAttachment(ATT, "eft_ar_stock_caasbs")
+
+
+///////////////////////////////////////      eft_ar_stock_caasbs_fde
+
+ATT = {}
+
+ATT.PrintName = "AR-15 CAA SBS stock (Khaki Tropen)"
+ATT.CompactName = "SBS"
+ATT.Icon = Material("entities/eft_attachments/6a15bfa58d059ca69c0a78c0.png", "mips smooth")
+ATT.Description = "A Skeleton Style Buttstock manufactured by CAA. Khaki Tropen color version."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_ar_stock"}
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_caa_sbs.mdl"
+ATT.ModelSkin = 1
+
+-- EFT ID: 6a15bfa58d059ca69c0a78c0
+ARC9.LoadAttachment(ATT, "eft_ar_stock_caasbs_fde")

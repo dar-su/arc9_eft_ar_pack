@@ -795,3 +795,93 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
 
 -- EFT ID: 68a63b73c92ee33ffa01bf57
 ARC9.LoadAttachment(ATT, "eft_mag_ar15_stanag_20")
+
+
+
+
+
+
+
+///////////////////////////////////////      eft_mag_ar15_lancer_30
+
+ATT = {}
+
+ATT.PrintName = "AR-15 5.56x45 Lancer L5 AWM 30-round magazine"
+ATT.CompactName = "L5 AWM"
+ATT.Icon = Material("entities/eft_attachments/6a1579afcbb8d0c82606c541.png", "mips smooth")
+ATT.Description = "A 30-round polymer Lancer L5 AWM (Advanced Warfighter Magazine) magazine, for 5.56x45 ammunition."
+
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_ar15_mag"}
+
+ATT.SortOrder = 30
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_stanag_lancer_l5_awm_556x45.mdl"
+ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_stanag_lancer_l5_awm_556x45.mdl"
+
+ATT.SuppressEmptySuffix = false 
+
+ATT.ActivateElements = {"30rnd"}
+
+ATT.ChamberSize = 1
+ATT.ClipSize = 30
+
+-- EFT ID: 6a1579afcbb8d0c82606c541
+ARC9.LoadAttachment(ATT, "eft_mag_ar15_lancer_30")
+
+///////////////////////////////////////      eft_mag_ar15_lancer_30_fde
+
+ATT = {}
+
+ATT.PrintName = "AR-15 5.56x45 Lancer L5 AWM 30-round magazine (Tan)"
+ATT.CompactName = "L5 AWM"
+ATT.Icon = Material("entities/eft_attachments/6a1579bfb507e45a68038d7f.png", "mips smooth")
+ATT.Description = "A 30-round polymer Lancer L5 AWM (Advanced Warfighter Magazine) magazine, for 5.56x45 ammunition. Tan version."
+
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_ar15_mag"}
+
+ATT.SortOrder = 30
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_stanag_lancer_l5_awm_556x45.mdl"
+ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_stanag_lancer_l5_awm_556x45.mdl"
+ATT.ModelSkin = 1
+ATT.DropMagazineSkin = 1
+
+ATT.SuppressEmptySuffix = false 
+
+ATT.ActivateElements = {"30rnd"}
+
+ATT.ChamberSize = 1
+ATT.ClipSize = 30
+
+-- EFT ID: 6a1579bfb507e45a68038d7f
+ARC9.LoadAttachment(ATT, "eft_mag_ar15_lancer_30_fde")
+
+///////////////////////////////////////      eft_mag_ar15_dd_32
+
+ATT = {}
+
+ATT.PrintName = "AR-15 5.56x45 Daniel Defense 32-round magazine"
+ATT.CompactName = "DD"
+ATT.Icon = Material("entities/eft_attachments/6a16f3a28873771c3704a132.png", "mips smooth")
+ATT.Description = "A 32-round polymer magazine designed for 5.56x45 ammunition. Manufactured by Daniel Defense."
+
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_ar15_mag"}
+
+ATT.SortOrder = 32
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_stanag_dd_mag_556x45.mdl"
+ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_stanag_dd_mag_556x45.mdl"
+
+ATT.SuppressEmptySuffix = false 
+
+ATT.ActivateElements = {"30rnd"}
+
+ATT.ChamberSize = 1
+ATT.ClipSize = 32
+
+-- EFT ID: 6a16f3a28873771c3704a132
+ARC9.LoadAttachment(ATT, "eft_mag_ar15_dd_32")
+

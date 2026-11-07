@@ -1160,3 +1160,38 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
 
 -- EFT ID: 6981ee9cf819a414310292fb
 ARC9.LoadAttachment(ATT, "eft_stock_ak74m_mono3")
+
+
+///////////////////////////////////////      eft_stock_ak74m_mono5
+
+ATT = {}
+
+ATT.PrintName = "AKS-74 Armacon Monolit 5 buffer tube adapter"
+ATT.CompactName = "Mono5"
+ATT.Icon = Material("entities/eft_attachments/6a158e29e5267ba21c07f927.png", "mips smooth")
+ATT.Description = "The Monolit 5 adapter for mounting telescopic stocks on AKS-74 pattern rifles and their civilian variants. Manufactured by Armacon."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ak_armacon_monolit_5.mdl"
+ATT.ModelSkin = 1
+ATT.ModelAngleOffset = Angle(0, -90, 0)
+ATT.ModelOffset = Vector(0.02, 0, 0.02)
+
+ATT.Category = {"eft_ak74m_stock", "eft_vityaz_stock"}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_buffertube"),
+        Category = {"eft_ar15_buffertube", "eft_hk416_buffertube", "eft_ar15_buffertube_notbuffer"},
+        Pos = Vector(0.65, -1.05, -0.47),
+        Ang = Angle(-4, -90, 0),
+        Icon_Offset = Vector(-0.2, 0, 0.5),
+    },
+}
+
+
+-- EFT ID: 6a158e29e5267ba21c07f927
+ARC9.LoadAttachment(ATT, "eft_stock_ak74m_mono5")
+

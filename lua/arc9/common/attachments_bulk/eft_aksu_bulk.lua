@@ -340,3 +340,61 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
 
 -- EFT ID: 647db1eca8d3399c380d195c
 ARC9.LoadAttachment(ATT, "eft_hg_ak_goliaf_mlok")
+
+
+///////////////////////////////////////      eft_hg_ak_krail
+
+ATT = {}
+
+ATT.PrintName = "AKS-74U Samson K-Rail 3 handguard"
+ATT.CompactName = "K-Rail 3"
+ATT.Icon = Material("entities/eft_attachments/6a158dd9060f61ca2c03e08e.png", "mips smooth")
+ATT.Description = "The K-Rail Model 3 is a lightweight, CNC machined handguard designed for short-barreled AK-pattern rifles and carbines. Its two-piece design mounts directly to the barrel and features a low-profile configuration that doesn't obstruct the sight line. Equipped with four MIL-STD-1913 rails for mounting flashlights, foregrips, and other tactical accessories. Manufactured by Samson MFG."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_aksu_handguard"}
+
+
+ATT.HasHG = true
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_aks74u_samson_k_rail_3.mdl"
+ATT.LHIK = true
+
+-- ATT.ExcludeElements = {"eft_muzzle_ak_ak105_std", "eft_muzzle_ak_ak74m_std", "eft_muzzle_ak_ak74_std", "eft_muzzle_ak_rrd4c74", "eft_muzzle_ak_ak74_pws_cqb", "eft_muzzle_ak_ak74_srvv", "eft_muzzle_ak_reactor", "eft_muzzle_ak_dtk1", "eft_silencer_ak_ak74_hexagon", "eft_silencer_ak_pbs4", "eft_silencer_ak_wafflemaker" }
+ATT.RequireElements = {"gasblock"}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_scope"),
+        Category = {"eft_tactical_top", "eft_backupmount", "eft_optic_medium", "eft_optic_small"},
+        RejectAttachments = { ["eft_tactical_raptar"] = true },
+        Pos = Vector(0, 2.75, -1.25),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExtraSightDistance = 6
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_foregrip"),
+        Category = {"eft_foregrip_small"},
+        Pos = Vector(0, 3, 1.7),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, -1),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_r"),
+        Category = {"eft_tactical", "eft_b12"},
+        Pos = Vector(1.15, 4.5, 0.33),
+        Ang = Angle(0, -90, 90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_l"),
+        Category = {"eft_tactical"},
+        Pos = Vector(-1.15, 4.5, 0.33),
+        Ang = Angle(180, 90, 90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+-- EFT ID: 6a158dd9060f61ca2c03e08e
+ARC9.LoadAttachment(ATT, "eft_hg_ak_krail")

@@ -1175,3 +1175,29 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
 
 -- EFT ID: 68540aae1e5c6ff6f1051477
 ARC9.LoadAttachment(ATT, "eft_muzzle_ak_ars4p")
+
+
+
+
+
+///////////////////////////////////////      eft_muzzle_ak_laf24
+
+ATT = {}
+
+ATT.PrintName = "AK-74 thread type JMac Customs LAF-24 multi-caliber muzzle brake"
+ATT.CompactName = "LAF-24"
+ATT.Icon = Material("entities/eft_attachments/6a16dc8b12144b7727017dad.png", "mips smooth")
+ATT.Description = "The LAF-24 (Loud And Flashy) muzzle brake by JMac Customs is designed for installation on modern AK-74 type thread weapon systems. The universal muzzle brake can be used with 5.45x39,5.56x45 and 7.62x39 ammunition. Reduces recoil and counters the barrel climb."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_ak74_muzzle", "eft_ak101_muzzle", "eft_ak103_muzzle", "eft_ak_ttak"}
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak74_jmac_laf_24.mdl"
+
+ATT.MuzzleDevice = true
+ATT.MuzzleDevice_Priority = 4
+ATT.BarrelLengthAdd = 0.5
+
+-- EFT ID: 6a16dc8b12144b7727017dad
+ARC9.LoadAttachment(ATT, "eft_muzzle_ak_laf24")

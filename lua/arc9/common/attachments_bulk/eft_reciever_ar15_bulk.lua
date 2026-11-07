@@ -771,3 +771,120 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
 
 -- EFT ID: 68caad70269e10396503ad00
 ARC9.LoadAttachment(ATT, "eft_rearsight_arms40")
+
+
+
+///////////////////////////////////////      eft_frontsight_dd_fixed
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Daniel Defense Fixed Front Sight"
+ATT.CompactName = "DD FFS"
+ATT.Icon = Material("entities/eft_attachments/6a15785370efdef7be017253.png", "mips smooth")
+ATT.Description = "The Daniel Defense fixed front sight for AR-15 rifles."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_frontsight"}
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/fs_dd_fixed.mdl"
+
+-- EFT ID: 6a15785370efdef7be017253
+ARC9.LoadAttachment(ATT, "eft_frontsight_dd_fixed")
+
+///////////////////////////////////////      eft_frontsight_t20
+
+ATT = {}
+
+ATT.PrintName = "Type 20 flip-up front sight"
+ATT.CompactName = "T20 FS"
+ATT.Icon = Material("entities/eft_attachments/6a3ceadb6280cb85bc03f99a.png", "mips smooth")
+ATT.Description = "A removable flip-up front sight for the Type 20 assault rifle. Manufactured by Howa Machinery."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_frontsight"}
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/fs_howa_type20x.mdl"
+
+ATT.DrawFunc = function(swep, model)
+    if swep:GetValue("FoldSights") then
+        model:SetBodygroup(0, 1)
+    else
+        model:SetBodygroup(0, 0)
+    end
+end
+
+-- EFT ID: 6a3ceadb6280cb85bc03f99a
+ARC9.LoadAttachment(ATT, "eft_frontsight_t20")
+
+
+
+
+
+
+
+
+///////////////////////////////////////      eft_rearsight_dd_fixed
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Daniel Defense Fixed Rear Sight"
+ATT.CompactName = "DD FRS"
+ATT.Icon = Material("entities/eft_attachments/6a1578658d059ca69c0a7853.png", "mips smooth")
+ATT.Description = "The Daniel Defense fixed rear sight for AR-15 rifles."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_rearsight"}
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/rs_dd_fixed.mdl"
+
+ATT.Sights = {
+    {
+        Pos = Vector(0, 7.5, -1.43),
+        Ang = Angle(0, 0, 0),
+        Magnification = 1.1,
+        ViewModelFOV = 53,
+        IsIronSight = true
+    }
+}
+
+-- EFT ID: 6a1578658d059ca69c0a7853
+ARC9.LoadAttachment(ATT, "eft_rearsight_dd_fixed")
+
+///////////////////////////////////////      eft_rearsight_t20
+
+ATT = {}
+
+ATT.PrintName = "Type 20 flip-up rear sight"
+ATT.CompactName = "T20 RS"
+ATT.Icon = Material("entities/eft_attachments/6a3ceacd8ce058e3a2059b28.png", "mips smooth")
+ATT.Description = "A removable flip-up rear sight for the Type 20 assault rifle. Manufactured by Howa Machinery."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_rearsight"}
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/rs_howa_type20.mdl"
+
+ATT.DrawFunc = function(swep, model)
+    if swep:GetValue("FoldSights") then
+        model:SetBodygroup(0, 1)
+    else
+        model:SetBodygroup(0, 0)
+    end
+end
+
+ATT.Sights = {
+    {
+        Pos = Vector(0, 7.5, -1.465),
+        Ang = Angle(0, 0, 0),
+        Magnification = 1.1,
+        ViewModelFOV = 53,
+        IsIronSight = true
+    }
+}
+
+-- EFT ID: 6a3ceacd8ce058e3a2059b28
+ARC9.LoadAttachment(ATT, "eft_rearsight_t20")

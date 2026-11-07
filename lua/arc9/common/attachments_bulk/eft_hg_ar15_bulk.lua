@@ -4288,3 +4288,586 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
 
 -- EFT ID: 647def638295ebcb5b02f05b
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_abamod1_lower")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- post 1.0
+
+
+
+///////////////////////////////////////      eft_hg_ar15_dd_iii
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Daniel Defense RIS III 12.5 handguard (Black)"
+ATT.CompactName = "RIS III 12.5"
+ATT.Icon = Material("entities/eft_attachments/6a156a75cbb8d0c82606c525.png", "mips smooth")
+ATT.Description = "The Daniel Defense RIS III 12.5 handguard, made from lightweight, durable aircraft-grade aluminum. Features an M-LOK interface for mounting additional accessories. Black version."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_ar15_hguard"}
+
+ATT.HasHG = true
+ATT.HeatCapacityMult = 0.968
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_dd_ris_iii_125_inch.mdl"
+ATT.LHIK = true 
+ATT.LHIK_Priority = 0 -- lower
+
+ATT.Folder = "Daniel Defens"
+ATT.ActivateElements = {"sprrailallowed", "eft_m203_allowed"}
+
+ATT.ExcludeElements = {"barrel_10i", "gasblock_big"}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_handguard"),
+        Category = {"eft_hglower_ddrisiii"},
+        Pos = Vector(0, 2.215, 0.22),
+        Ang = Angle(0, 0, 0),   
+        Icon_Offset = Vector(0, 3.35, -1),
+    },    
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_backup"),
+        Category = {"eft_backupmount"},
+        Pos = Vector(0, 1.8, -1.12),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExtraSightDistance = 8,
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_frontsight"),
+        Category = {"eft_frontsight"},
+        Pos = Vector(0, 12.5, -1.12),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExtraSightDistance = 8
+    },    
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_u"),
+        Category = {"eft_tactical_top", "eft_tactical_top_big"},
+        Pos = Vector(0, 8.5, -1.1),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0.5),
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_r"),
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti", "eft_mount_mlokoffset"},
+        Pos = Vector(0.99, 11.5, 0.1),
+        Ang = Angle(180, 90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_l"),
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti", "eft_mount_mlokoffset"},
+        Pos = Vector(-0.99, 11.5, 0.1),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+-- EFT ID: 6a156a75cbb8d0c82606c525
+ARC9.LoadAttachment(ATT, "eft_hg_ar15_dd_iii")
+
+
+///////////////////////////////////////      eft_hg_ar15_dd_iii_95
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Daniel Defense RIS III 9.5 handguard (Black)"
+ATT.CompactName = "RIS III 9.5"
+ATT.Icon = Material("entities/eft_attachments/6a147ad5eff5b3bf690c2c0d.png", "mips smooth")
+ATT.Description = "The Daniel Defense RIS III 9.5 handguard, made from lightweight, durable aircraft-grade aluminum. Features an M-LOK interface for mounting additional accessories. This version of the handguard is not compatible with the M203 underbarrel grenade launcher. Black version."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_ar15_hguard"}
+
+ATT.HasHG = true
+ATT.HeatCapacityMult = 0.968
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_dd_ris_iii_95_inch.mdl"
+ATT.LHIK = true 
+ATT.LHIK_Priority = 0 -- lower
+
+ATT.Folder = "Daniel Defens"
+ATT.ActivateElements = {"sprrailallowed", "eft_m203_allowed"}
+ATT.ExcludeElements = { "gasblock_big"}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_handguard"),
+        Category = {"eft_hglower_ddrisiii95"},
+        Pos = Vector(0, 2.215, 0.22),
+        Ang = Angle(0, 0, 0),   
+        Icon_Offset = Vector(0, 3.35, -1),
+    },    
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_backup"),
+        Category = {"eft_backupmount"},
+        Pos = Vector(0, 1.8, -1.12),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExtraSightDistance = 8,
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_frontsight"),
+        Category = {"eft_frontsight"},
+        Pos = Vector(0, 9.5, -1.12),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExtraSightDistance = 8
+    },    
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_u"),
+        Category = {"eft_tactical_top", "eft_tactical_top_big"},
+        Pos = Vector(0, 6.5, -1.1),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0.5),
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_r"),
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti", "eft_mount_mlokoffset"},
+        Pos = Vector(0.99, 8.0, 0.1),
+        Ang = Angle(180, 90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_l"),
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti", "eft_mount_mlokoffset"},
+        Pos = Vector(-0.99, 8.0, 0.1),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+-- EFT ID: 6a147ad5eff5b3bf690c2c0d
+ARC9.LoadAttachment(ATT, "eft_hg_ar15_dd_iii_95")
+
+
+///////////////////////////////////////      eft_hg_ar15_dd_iii_fde
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Daniel Defense RIS III 12.5 handguard (Mil Spec+)"
+ATT.CompactName = "RIS III 12.5"
+ATT.Icon = Material("entities/eft_attachments/6a156a9407619a15b1023be7.png", "mips smooth")
+ATT.Description = "The Daniel Defense RIS III 12.5 handguard, made from lightweight, durable aircraft-grade aluminum. Features an M-LOK interface for mounting additional accessories. Mil Spec+ Cerakote finish version."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_ar15_hguard"}
+ATT.Folder = "Daniel Defens"
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_dd_ris_iii_125_inch.mdl"
+ATT.ModelSkin = 1
+ATT.LHIK = true 
+ATT.LHIK_Priority = 0 -- lower
+
+ATT.Folder = "Daniel Defens"
+ATT.ActivateElements = {"sprrailallowed", "eft_m203_allowed"}
+
+ATT.ExcludeElements = {"barrel_10i", "gasblock_big"}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_handguard"),
+        Category = {"eft_hglower_ddrisiii"},
+        Pos = Vector(0, 2.215, 0.22),
+        Ang = Angle(0, 0, 0),   
+        Icon_Offset = Vector(0, 3.35, -1),
+    },    
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_backup"),
+        Category = {"eft_backupmount"},
+        Pos = Vector(0, 1.8, -1.12),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExtraSightDistance = 8,
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_frontsight"),
+        Category = {"eft_frontsight"},
+        Pos = Vector(0, 12.5, -1.12),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExtraSightDistance = 8
+    },    
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_u"),
+        Category = {"eft_tactical_top", "eft_tactical_top_big"},
+        Pos = Vector(0, 8.5, -1.1),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0.5),
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_r"),
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti", "eft_mount_mlokoffset"},
+        Pos = Vector(0.99, 11.5, 0.1),
+        Ang = Angle(180, 90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_l"),
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti", "eft_mount_mlokoffset"},
+        Pos = Vector(-0.99, 11.5, 0.1),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+-- EFT ID: 6a156a9407619a15b1023be7
+ARC9.LoadAttachment(ATT, "eft_hg_ar15_dd_iii_fde")
+
+///////////////////////////////////////      eft_hg_ar15_dd_iii_95_fde
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Daniel Defense RIS III 9.5 handguard (Mil Spec+)"
+ATT.CompactName = "RIS III 9.5"
+ATT.Icon = Material("entities/eft_attachments/6a1567ce0cce01965f0bee01.png", "mips smooth")
+ATT.Description = "The Daniel Defense RIS III 9.5 handguard, made from lightweight, durable aircraft-grade aluminum. Features an M-LOK interface for mounting additional accessories. This version of the handguard is not compatible with the M203 underbarrel grenade launcher. Mil Spec+ Cerakote finish version."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_ar15_hguard"}
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_dd_ris_iii_95_inch.mdl"
+ATT.ModelSkin = 1
+ATT.LHIK = true 
+ATT.LHIK_Priority = 0 -- lower
+
+ATT.Folder = "Daniel Defens"
+ATT.ActivateElements = {"sprrailallowed", "eft_m203_allowed"}
+ATT.ExcludeElements = { "gasblock_big"}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_handguard"),
+        Category = {"eft_hglower_ddrisiii95"},
+        Pos = Vector(0, 2.215, 0.22),
+        Ang = Angle(0, 0, 0),   
+        Icon_Offset = Vector(0, 3.35, -1),
+    },    
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_backup"),
+        Category = {"eft_backupmount"},
+        Pos = Vector(0, 1.8, -1.12),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExtraSightDistance = 8,
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_frontsight"),
+        Category = {"eft_frontsight"},
+        Pos = Vector(0, 9.5, -1.12),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExtraSightDistance = 8
+    },    
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_u"),
+        Category = {"eft_tactical_top", "eft_tactical_top_big"},
+        Pos = Vector(0, 6.5, -1.1),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0.5),
+        ExcludeElements = {"eft_rec_ar15_spr_rail"}
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_r"),
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti", "eft_mount_mlokoffset"},
+        Pos = Vector(0.99, 8.0, 0.1),
+        Ang = Angle(180, 90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_l"),
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti", "eft_mount_mlokoffset"},
+        Pos = Vector(-0.99, 8.0, 0.1),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+-- EFT ID: 6a1567ce0cce01965f0bee01
+ARC9.LoadAttachment(ATT, "eft_hg_ar15_dd_iii_95_fde")
+
+
+
+///////////////////////////////////////      eft_hg_ar15_dd_iii_lower
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Daniel Defense RIS III 12.5 lower handguard (Black)"
+ATT.CompactName = "RIS III 12.5 lower"
+ATT.Icon = Material("entities/eft_attachments/6a156ac407619a15b1023bf0.png", "mips smooth")
+ATT.Description = "The lower part of the Daniel Defense RIS III 12.5 handguard, made from lightweight, durable aircraft-grade aluminum. Features an M-LOK interface for mounting additional accessories. Black version."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_hglower_ddrisiii"}
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_dd_ris_iii_125_inch_lower.mdl"
+ATT.LHIK = true
+ATT.LHIK_Priority = 1 -- lower
+
+ATT.HeatCapacityMult = 0.975
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_b"),
+        Category = {"eft_mount_mlok41", "eft_foregrip_mlok"},
+        Pos = Vector(0, 2.9, 0.9),
+        Ang = Angle(0, -90, -90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_b"),
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti", "eft_mount_mlokoffset", "eft_mount_mlok_bipod"},
+        Pos = Vector(0, 9, 0.9),
+        Ang = Angle(0, -90, -90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+ATT.ExcludeElements = {"eft_m203"}
+
+-- EFT ID: 6a156ac407619a15b1023bf0
+ARC9.LoadAttachment(ATT, "eft_hg_ar15_dd_iii_lower")
+
+
+///////////////////////////////////////      eft_ar15_dd_iii_lower_fde
+
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Daniel Defense RIS III 12.5 lower handguard (Mil Spec+)"
+ATT.CompactName = "RIS III 12.5 lower"
+ATT.Icon = Material("entities/eft_attachments/6a1571b8060f61ca2c03e06f.png", "mips smooth")
+ATT.Description = "The lower part of the Daniel Defense RIS III 12.5 handguard, made from lightweight, durable aircraft-grade aluminum. Features an M-LOK interface for mounting additional accessories. Mil Spec+ Cerakote finish version."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_hglower_ddrisiii"}
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_dd_ris_iii_125_inch_lower.mdl"
+ATT.ModelSkin = 1
+ATT.LHIK = true
+ATT.LHIK_Priority = 1 -- lower
+
+ATT.HeatCapacityMult = 0.975
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_b"),
+        Category = {"eft_mount_mlok41", "eft_foregrip_mlok"},
+        Pos = Vector(0, 2.9, 0.9),
+        Ang = Angle(0, -90, -90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_b"),
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti", "eft_mount_mlokoffset", "eft_mount_mlok_bipod"},
+        Pos = Vector(0, 9, 0.9),
+        Ang = Angle(0, -90, -90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+-- EFT ID: 6a1571b8060f61ca2c03e06f
+ARC9.LoadAttachment(ATT, "eft_ar15_dd_iii_lower_fde")
+
+
+///////////////////////////////////////      eft_hg_ar15_dd_iii_95_lower
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Daniel Defense RIS III 9.5 lower handguard (Black)"
+ATT.CompactName = "RIS III 9.5 lower"
+ATT.Icon = Material("entities/eft_attachments/6a147ae25071bc42610640b5.png", "mips smooth")
+ATT.Description = "The lower part of the Daniel Defense RIS III 9.5 handguard, made from lightweight, durable aircraft-grade aluminum. Features an M-LOK interface for mounting additional accessories. This version of the handguard is not compatible with the M203 underbarrel grenade launcher. Black version."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_hglower_ddrisiii95"}
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_dd_ris_iii_95_inch_lower.mdl"
+ATT.LHIK = true
+ATT.LHIK_Priority = 1 -- lower
+
+ATT.HeatCapacityMult = 0.975
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_b"),
+        Category = {"eft_mount_mlok41", "eft_foregrip_mlok"},
+        Pos = Vector(0, 2.9, 0.9),
+        Ang = Angle(0, -90, -90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+-- EFT ID: 6a147ae25071bc42610640b5
+ARC9.LoadAttachment(ATT, "eft_hg_ar15_dd_iii_95_lower")
+
+
+///////////////////////////////////////      eft_hg_ar15_dd_iii_95_lower_fde
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Daniel Defense RIS III 9.5 lower handguard (Mil Spec+)"
+ATT.CompactName = "RIS III 9.5 lower"
+ATT.Icon = Material("entities/eft_attachments/6a1567e0af9c1c57b700776f.png", "mips smooth")
+ATT.Description = "The lower part of the Daniel Defense RIS III 9.5 handguard, made from lightweight, durable aircraft-grade aluminum. Features an M-LOK interface for mounting additional accessories. This version of the handguard is not compatible with the M203 underbarrel grenade launcher. Mil Spec+ Cerakote finish version."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_hglower_ddrisiii95"}
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_dd_ris_iii_95_inch_lower.mdl"
+ATT.ModelSkin = 1
+ATT.LHIK = true
+ATT.LHIK_Priority = 1 -- lower
+
+ATT.HeatCapacityMult = 0.975
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_b"),
+        Category = {"eft_mount_mlok41", "eft_foregrip_mlok"},
+        Pos = Vector(0, 2.9, 0.9),
+        Ang = Angle(0, -90, -90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+-- EFT ID: 6a1567e0af9c1c57b700776f
+ARC9.LoadAttachment(ATT, "eft_hg_ar15_dd_iii_95_lower_fde")
+
+
+///////////////////////////////////////      eft_hg_ar15_uars
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Unique-ARs HEX 12 inch handguard"
+ATT.CompactName = "HEX 12\""
+ATT.Icon = Material("entities/eft_attachments/6a6759a5ca1e7d40a007a56f.png", "mips smooth")
+ATT.Description = "The HEX 12 inch handguard for AR-15 weapon systems. Manufactured by Unique-ARs."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_ar15_hguard"}
+
+ATT.HasHG = true
+ATT.HeatCapacityMult = 0.968
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_unique_ars_hex_12_inch.mdl"
+ATT.LHIK = true 
+ATT.LHIK_Priority = 0 -- lower
+
+ATT.ActivateElements = {"sprrailallowed"}
+
+ATT.ExcludeElements = {"barrel_10i", "gasblock_big"}
+
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_aux"),
+        Category = {"eft_ar15_hguard_heatshield"},
+        Pos = Vector(0, 12.21, 0.1),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(-5, 0, 0),
+    },
+}
+
+
+
+
+-- EFT ID: 6a6759a5ca1e7d40a007a56f
+ARC9.LoadAttachment(ATT, "eft_hg_ar15_uars")
+
+
+///////////////////////////////////////      eft_hg_ar15_uar_hs
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Unique-ARs Heat Shield (Anodized Red)"
+ATT.CompactName = "UARs HS"
+ATT.Icon = Material("entities/eft_attachments/6a675d00358304130d098d4f.png", "mips smooth")
+ATT.Description = "A heat shield for the Unique-ARs handguards. Anodized Red version."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_ar15_hguard_heatshield"}
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/tactical_uars_unique_ars_hex_shield.mdl"
+
+ATT.ExcludeElements = {"eft_barrel_ar15_m16_20i", "eft_barrel_ar15_20i", "eft_barrel_ar15_18i", "eft_barrel_ar15_18i_mk12", "gasblock_big"}
+
+ATT.AdvancedCamoSupport = true
+
+-- EFT ID: 6a675d00358304130d098d4f
+ARC9.LoadAttachment(ATT, "eft_hg_ar15_uar_hs")
+
+///////////////////////////////////////      eft_hg_ar15_uar_hs_y
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Unique-ARs Heat Shield (Anodized Yellow)"
+ATT.CompactName = "UARs HS"
+ATT.Icon = Material("entities/eft_attachments/6a675d75fd8364ead7039dd8.png", "mips smooth")
+ATT.Description = "A heat shield for the Unique-ARs handguards. Anodized Yellow version."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_ar15_hguard_heatshield"}
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/tactical_uars_unique_ars_hex_shield.mdl"
+ATT.ModelSkin = 2
+
+ATT.ExcludeElements = {"eft_barrel_ar15_m16_20i", "eft_barrel_ar15_20i", "eft_barrel_ar15_18i", "eft_barrel_ar15_18i_mk12", "gasblock_big"}
+
+-- EFT ID: 6a675d75fd8364ead7039dd8
+ARC9.LoadAttachment(ATT, "eft_hg_ar15_uar_hs_y")
+
+///////////////////////////////////////      eft_hg_ar15_uar_hs_g
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Unique-ARs Heat Shield (Anodized Grey)"
+ATT.CompactName = "UARs HS"
+ATT.Icon = Material("entities/eft_attachments/6a675d8f2ff856278106eb69.png", "mips smooth")
+ATT.Description = "A heat shield for the Unique-ARs handguards. Anodized Grey version."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_ar15_hguard_heatshield"}
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/tactical_uars_unique_ars_hex_shield.mdl"
+ATT.ModelSkin = 1
+
+ATT.ExcludeElements = {"eft_barrel_ar15_m16_20i", "eft_barrel_ar15_20i", "eft_barrel_ar15_18i", "eft_barrel_ar15_18i_mk12", "gasblock_big"}
+
+-- EFT ID: 6a675d8f2ff856278106eb69
+ARC9.LoadAttachment(ATT, "eft_hg_ar15_uar_hs_g")

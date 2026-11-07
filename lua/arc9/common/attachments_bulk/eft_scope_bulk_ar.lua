@@ -153,10 +153,6 @@ ATT.RTScopeBlackBoxShadow = true
 ATT.ScopeScreenRatio = 645/1080
 ATT.RTScopeNew_ShadowScale = 0.9
 
-ATT.Flare = true
-ATT.FlareColor = Color(255, 255, 255)
-ATT.FlareSize = 10
-ATT.FlareAttachment = 1
 ATT.ModelOffset = Vector(-2.5, 0.97, 1.95)
 
 
@@ -325,24 +321,20 @@ ATT.RTScopeNew_ShadowScale = 1.05
 ATT.RTScopeNightVision = true
 ATT.RTScopeNightVisionMonochrome = true
 ATT.RTScopeNightVisionCC = {
-    ["$pp_colour_addr"] = 0,
-    ["$pp_colour_addg"] = 135/255,
-    ["$pp_colour_addb"] = 0,
+    ["$pp_colour_addr"] = -80/255,
+    ["$pp_colour_addg"] = 165/255,
+    ["$pp_colour_addb"] = -80/255,
     -- ["$pp_colour_brightness"] = -2,
     -- ["$pp_colour_contrast"] = 3.5,
     -- ["$pp_colour_colour"] = 0.09,
-    ["$pp_colour_brightness"] = -0.35,
-    ["$pp_colour_contrast"] = 2.5,
+    ["$pp_colour_brightness"] = -0.2,
+    ["$pp_colour_contrast"] = 2,
     ["$pp_colour_colour"] = 0.05,
     ["$pp_colour_mulr"] = 0,
     ["$pp_colour_mulg"] = 0,
     ["$pp_colour_mulb"] = 0
 }
 
-ATT.Flare = true
-ATT.FlareColor = Color(255, 255, 255)
-ATT.FlareSize = 10
-ATT.FlareAttachment = 1
 ATT.ModelOffset = Vector(-2.5, 0.97, 2.05)
 ATT.Attachments = {
     {
@@ -588,10 +580,6 @@ ATT.RTScopeBlackBox = true
 ATT.RTScopeBlackBoxShadow = true 
 ATT.ScopeScreenRatio = 668/1080
 
-ATT.Flare = true
-ATT.FlareColor = Color(255, 255, 255)
-ATT.FlareSize = 10
-ATT.FlareAttachment = 1
 ATT.ModelOffset = Vector(-3.5, 0.97, 2.05) - Vector(-1.1, 0, 0) -- front dovetail offset
 
 
@@ -675,10 +663,6 @@ ATT.RTScopeBlackBox = true
 ATT.RTScopeBlackBoxShadow = true 
 ATT.ScopeScreenRatio = 668/1080
 
-ATT.Flare = true
-ATT.FlareColor = Color(255, 255, 255)
-ATT.FlareSize = 10
-ATT.FlareAttachment = 1
 ATT.ModelOffset = Vector(-3.5, 0.97, 2.05) - Vector(-1.1, 0, 0) -- front dovetail offset
 ATT.Attachments = {
     {
@@ -759,10 +743,6 @@ ATT.RTScopeBlackBox = true
 ATT.RTScopeBlackBoxShadow = true 
 ATT.ScopeScreenRatio = 668/1080
 
-ATT.Flare = true
-ATT.FlareColor = Color(255, 255, 255)
-ATT.FlareSize = 10
-ATT.FlareAttachment = 1
 ATT.ModelOffset = Vector(-3.5, 0.97, 2.05) - Vector(-1.1, 0, 0) -- front dovetail offset
 ATT.Attachments = {
     {
@@ -834,10 +814,6 @@ ATT.RTScopeBlackBoxShadow = true
 ATT.ScopeScreenRatio = 515/1080
 ATT.RTScopeNew_ShadowScale = 0.7
 
-ATT.Flare = true
-ATT.FlareColor = Color(255, 255, 255)
-ATT.FlareSize = 10
-ATT.FlareAttachment = 1
 ATT.ModelOffset = Vector(-2.5, 0.97, 1.95)
 
 
@@ -1485,3 +1461,366 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
 
 -- EFT ID: 68caacf7c8ac87b10507c5a9
 ARC9.LoadAttachment(ATT, "eft_mount_arms_22_tr")
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- post 1.0
+
+
+
+
+///////////////////////////////////////      eft_mount_30mm_howa
+
+ATT = {}
+
+ATT.PrintName = "Howa 30mm ring scope mount"
+ATT.CompactName = "Howa 30mm"
+ATT.Icon = Material("entities/eft_attachments/6a3ceaf01ac10a22850e295a.png", "mips smooth")
+ATT.Description = "A 30mm short scope ring mount manufactured by Howa Machinery."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_optic_large"}
+ATT.Folder = "Scopes/Mounts"
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/mount_all_howa_30mm.mdl"
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_scope"),
+        Category = {"eft_optic_howa"},
+        Pos = Vector(-1.3, 0, -1.53),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+
+-- EFT ID: 6a3ceaf01ac10a22850e295a
+ARC9.LoadAttachment(ATT, "eft_mount_30mm_howa")
+
+
+
+///////////////////////////////////////      eft_scope_prism3x30
+
+ATT = {}
+
+ATT.PrintName = "Monstrum Tactical Marksman 3x30 Prism Scope"
+ATT.CompactName = "Marksman 3x30"
+ATT.Icon = Material("entities/eft_attachments/6a18508bae175e037a0be420.png", "mips smooth")
+ATT.Description = "A prismatic scope with 3x magnification manufactured by Monstrum Tactical."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_optic_large", "eft_optic_large_nosniper"}
+ATT.Folder = "Scopes"
+
+ATT.FoldSights = true
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/scope_monstrum_marksman.mdl"
+
+local Reticle0 = Material("vgui/arc9_eft_shared/reticles/scope_all_monstrum_marksman_3x30_mark_1.png", "")
+local Reticle1 = Material("vgui/arc9_eft_shared/reticles/scope_all_monstrum_marksman_3x30_mark_0.png", "")
+
+
+
+ATT.Sights = {
+    {
+        Pos = Vector(0, 8.0, -1.2),
+        Ang = Angle(0, 0, 0),
+        Magnification = 1.15,
+        ViewModelFOV = 36,
+        RTScopeFOV = 36/4,
+        OnSwitchToSight = function(self, slottbl)
+            if CLIENT then ARC9EFTdrawnumber("3x") end
+        end,
+        RTScopeMagnification = 3,
+        Reticle = Reticle0
+    },
+    {
+        Pos = Vector(0, 8.0, -1.2),
+        Ang = Angle(0, 0, 0),
+        Magnification = 1.15,
+        ViewModelFOV = 36,
+        RTScopeFOV = 36/4,
+        OnSwitchToSight = function(self, slottbl)
+            if CLIENT then ARC9EFTdrawnumber("3x") end
+        end,
+        RTScopeMagnification = 3,
+        Reticle = Reticle1
+    },
+}
+
+ATT.DrawFunc = function(swep, model, wm) 
+    if !wm then
+        model:SetBodygroup(1, swep:GetMultiSight()-1)
+    end
+end
+
+ATT.RTScope = true
+ATT.RTScopeSubmatIndex = 2
+ATT.RTScopeFOV = 12
+ATT.RTScopeReticle = Material("vgui/arc9_eft_shared/reticles/scope_all_monstrum_marksman_3x30_mark_1.png", "")
+ATT.RTScopeReticleScale = 0.2
+ATT.RTScopeColorable = true
+ATT.RTScopeShadowIntensity = 10
+ATT.RTScopeBlackBox = true 
+ATT.RTScopeBlackBoxShadow = true 
+ATT.RTScopeNew_ShadowScale = 3.3
+
+ATT.ScopeScreenRatio = 623/1080
+
+-- EFT ID: 6a18508bae175e037a0be420
+ARC9.LoadAttachment(ATT, "eft_scope_prism3x30")
+
+
+///////////////////////////////////////      eft_scope_acog_ta02
+
+ATT = {}
+
+ATT.PrintName = "Trijicon ACOG TA02 4x32 scope"
+ATT.CompactName = "TA02"
+ATT.Icon = Material("entities/eft_attachments/6a19487a4afae114f106ba39.png", "mips smooth")
+ATT.Description = "A fixed 4x combat optic with a rugged aluminum housing, designed for accurate target engagement at medium ranges. The TA02 features LED-powered illumination for reliable performance in varying lighting conditions. Manufactured by Trijicon."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_scope_trijicon", "eft_scope_compact"}
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/scope_acog_ta02.mdl"
+
+ATT.FoldSights = true
+
+ATT.Sights = {
+    {
+        Pos = Vector(0.008, 7.6, -1.36),
+        Ang = Angle(0, 0, 0),
+        Magnification = 1.15,
+        ViewModelFOV = 36,
+        OnSwitchToSight = function(self, slottbl)
+            if CLIENT then ARC9EFTdrawnumber("4x") end
+        end,
+        RTScopeMagnification = 4,
+    },
+}
+
+ATT.RTScope = true
+ATT.RTScopeSubmatIndex = 1
+ATT.RTScopeFOV = 36/4
+ATT.RTScopeReticle = Material("vgui/arc9_eft_shared/reticles/scope_base_trijicon_acog_ta02_4x32_marks.png", "")
+ATT.RTScopeReticleScale = 0.35
+ATT.RTScopeColorable = false
+ATT.RTScopeShadowIntensity = 10
+ATT.RTScopeBlackBox = true 
+ATT.RTScopeBlackBoxShadow = true 
+ATT.RTScopeNew_ShadowScale = 2
+
+ATT.ScopeScreenRatio = 580/1080
+
+-- EFT ID: 6a19487a4afae114f106ba39
+ARC9.LoadAttachment(ATT, "eft_scope_acog_ta02")
+
+
+///////////////////////////////////////      eft_scope_30mm_marchf
+
+ATT = {}
+
+ATT.PrintName = "DEON March-F 1-8x24 Shorty 30mm riflescope"
+ATT.CompactName = "March-F Shorty"
+ATT.Icon = Material("entities/eft_attachments/6a3ceaff7047a606b90f5321.png", "mips smooth")
+ATT.Description = "A compact 30mm LPVO, manufactured in Japan by DEON Optical Design. Features a 1x magnification for close-quarters engagements and an 8x zoom range for accurate fire at extended distances."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_optic_howa"}
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/scope_march_f_shorty.mdl"
+
+ATT.FoldSights = true
+
+ATT.Sights = {
+    {
+        Pos = Vector(0, 8.6, 0),        
+        Ang = Angle(0, 0, 0),
+        Magnification = 1.15,
+        ViewModelFOV = 36,
+        RTScopeFOV = 36/1,
+    },
+}
+
+local prevscroll = 0
+ATT.DrawFunc = function(swep, model, wm) 
+    if !wm then
+        -- swep:GetSight().slottbl.Address
+        local active = swep:GetInSights() and model.slottbl.Address == swep:GetActiveSightSlotTable().Address
+
+        if active then
+            local scrollevel = swep:GetSight().SmoothScrollLevel or 0
+            model:SetPoseParameter("switch", 1 - scrollevel)
+            
+
+            local roundedscroll = math.Round(scrollevel, 2)
+            if prevscroll != roundedscroll then
+                if roundedscroll == 1 then ARC9EFTdrawnumber("1x")
+                elseif roundedscroll == 0 then ARC9EFTdrawnumber("8x") end
+            end
+            prevscroll = roundedscroll
+        end
+    end
+end
+
+local Reticle_full = Material("vgui/arc9_eft_shared/reticles/adjustable/shorty_q.png", "")
+local Reticle_quarter = Material("vgui/arc9_eft_shared/reticles/adjustable/shorty_f.png", "")
+
+local scale = 0.75
+local finalsize = 8 * scale
+ATT.RTScopeDrawFunc = function(swep, rtsize, sight) 
+    local scrollevel = sight.SmoothScrollLevel or 0
+    local size = (rtsize + rtsize * (1 - scrollevel) * finalsize) * scale
+    local mat = Reticle_full
+
+    if scrollevel <= 0.8 then 
+        size = size / 4
+        mat = Reticle_quarter
+    end
+
+    surface.SetMaterial(mat)
+    surface.SetDrawColor(255, 255, 255)
+    surface.DrawTexturedRect(rtsize / 2 - size / 2, rtsize / 2 - size / 2, size, size)
+end
+
+ATT.ZoomSound = false
+ATT.RTScopeAdjustable = true
+ATT.RTScopeAdjustmentLevels = 8
+
+ATT.RTScopeMagnification = 1
+ATT.RTScopeMagnificationMin = 1
+ATT.RTScopeMagnificationMax = 8
+
+ATT.RTScope = true
+ATT.RTScopeSubmatIndex = 4
+ATT.RTScopeFOV = 12
+ATT.RTScopeReticle = Material("vgui/arc9_eft_shared/reticles/empty.png", "smooth")
+ATT.RTScopeReticleScale = 1.15
+ATT.RTScopeColorable = false
+ATT.RTScopeShadowIntensity = 10
+ATT.RTScopeBlackBox = true 
+ATT.RTScopeBlackBoxShadow = true 
+
+ATT.ScopeScreenRatio = 622/1080
+ATT.RTScopeNew_ShadowScale = 1.1
+
+
+-- EFT ID: 6a3ceaff7047a606b90f5321
+ARC9.LoadAttachment(ATT, "eft_scope_30mm_marchf")
+
+
+
+///////////////////////////////////////      eft_mount_ac32083
+
+ATT = {}
+
+ATT.PrintName = "Trijicon MRO high profile mount"
+ATT.CompactName = "AC32083"
+ATT.Icon = Material("entities/eft_attachments/6a16dc0b82cfbdc3ab09f58a.png", "mips smooth")
+ATT.Description = "A high-profile mount for installation of the Trijicon MRO series reflex sights on Picatinny and Weaver rails."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+-- ATT.Category = {"eft_optic_medium"}
+ATT.Category = {"eft_optic_small"}
+ATT.Folder = "Reflex/Mounts"
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/mount_trijicon_ac32083.mdl"
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_scope"),
+        Category = "eft_mro",
+        Pos = Vector(0, -0, -0.67),
+        --Pos = Vector(0, 0, 0),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 1),
+    },
+}
+
+-- EFT ID: 6a16dc0b82cfbdc3ab09f58a
+ARC9.LoadAttachment(ATT, "eft_mount_ac32083")
+
+
+///////////////////////////////////////      eft_mount_ac32067
+
+ATT = {}
+
+ATT.PrintName = "Trijicon MRO low profile mount"
+ATT.CompactName = "AC32067"
+ATT.Icon = Material("entities/eft_attachments/6a16dc17b7b9778bee072c65.png", "mips smooth")
+ATT.Description = "A low-profile mount for installation of the Trijicon MRO series reflex sights on Picatinny and Weaver rails."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_optic_small", "eft_optic_micro"}
+ATT.Folder = "Reflex/Mounts"
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/mount_trijicon_ac32067.mdl"
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_scope"),
+        Category = "eft_mro",
+        Pos = Vector(0, -0, -0.15),
+        --Pos = Vector(0, 0, 0),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 1),
+    },
+}
+
+-- EFT ID: 6a16dc17b7b9778bee072c65
+ARC9.LoadAttachment(ATT, "eft_mount_ac32067")
+
+///////////////////////////////////////      eft_optic_mro
+
+ATT = {}
+
+ATT.PrintName = "Trijicon MRO reflex sight"
+ATT.CompactName = "MRO"
+ATT.Icon = Material("entities/eft_attachments/6a16dec146b811b32d0583ef.png", "mips smooth")
+ATT.Description = "A red dot sight for fast and accurate target acquisition. Manufactured by Trijicon."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_mro"}
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/scope_trijicon_mro.mdl"
+
+ATT.FoldSights = true
+
+ATT.Sights = {
+    {
+        Pos = Vector(0, 9, -0.8),
+        Ang = Angle(0, 0, 0),
+        Magnification = 1.25,
+        ViewModelFOV = 53
+    }
+}
+
+ATT.HoloSight = true
+ATT.HoloSightReticle = Material("vgui/arc9_eft_shared/reticles/new/scope_base_trijicon_rmr_mark.png", "smooth")
+ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
+ATT.HoloSightReticle:SetVector("$color2", Vector(10, 0.8, 0.5)) -- bright color
+ATT.HoloSightSize = 400
+ATT.HoloSightColorable = false
+
+
+-- EFT ID: 6a16dec146b811b32d0583ef
+ARC9.LoadAttachment(ATT, "eft_optic_mro")

@@ -126,7 +126,7 @@ ATT.HeatCapacityMult = 1.06
 ATT.PhysBulletMuzzleVelocityMult = 0.82
 ATT.Spread = 2.51 * ARC9.MOAToAcc
 ATT.ExcludeElements = {
-    "eft_hg_hk416_mrs14", "eft_hg_hk416_quadext", "eft_hg_hk416_midwest135", "eft_hg_hk416_crux", "eft_hg_hk416_troy",
+    "eft_hg_hk416_mrs14", "eft_hg_hk416_quadext", "eft_hg_hk416_midwest135", "eft_hg_hk416_crux", "eft_hg_hk416_troy", "eft_hg_hk416_smr145", "eft_hg_hk416_smr145_fde",
     "eft_muzzle_ar15_ferfrans", "eft_silencer_sdn6", "eft_silencer_gemtechone", "eft_silencer_ar15_kacqdssnt4", "eft_silencer_ar15_kacqdssnt4_f", "eft_silencer_ar15_socommonster", "eft_silencer_ar15_socomrc2", "eft_silencer_ar15_socommini", "eft_silencer_ultra5", "eft_silencer_waveqd"
 }
 
@@ -179,7 +179,7 @@ ATT.BarrelLengthAdd = 2.5
 ATT.HeatCapacityMult = 1.04
 ATT.PhysBulletMuzzleVelocityMult = 0.84
 ATT.Spread = 2.41 * ARC9.MOAToAcc
-ATT.ExcludeElements = {"eft_hg_hk416_mrs14", "eft_hg_hk416_quadext", "eft_hg_hk416_midwest135", "eft_hg_hk416_crux", "eft_hg_hk416_troy"}
+ATT.ExcludeElements = {"eft_hg_hk416_mrs14", "eft_hg_hk416_quadext", "eft_hg_hk416_midwest135", "eft_hg_hk416_crux", "eft_hg_hk416_troy", "eft_hg_hk416_smr145", "eft_hg_hk416_smr145_fde"}
 
 ATT.Category = {"eft_hk416_barrel"}
 
@@ -235,7 +235,7 @@ ATT.DrawFunc = function(swep, model) model:SetBodygroup(1, (swep:GetValue("FoldS
 
 ATT.Category = {"eft_hk416_barrel"}
 
-ATT.ExcludeElements = {"eft_hg_hk416_mrs14", "eft_hg_hk416_quadext", "eft_hg_hk416_midwest135", "eft_hg_hk416_crux", "eft_hg_hk416_troy"}
+ATT.ExcludeElements = {"eft_hg_hk416_mrs14", "eft_hg_hk416_quadext", "eft_hg_hk416_midwest135", "eft_hg_hk416_crux", "eft_hg_hk416_troy", "eft_hg_hk416_smr145", "eft_hg_hk416_smr145_fde"}
 
 ATT.ActivateElements = {"barrel_145i"}
 
@@ -288,7 +288,7 @@ ATT.DrawFunc = function(swep, model) model:SetBodygroup(1, (swep:GetValue("FoldS
 
 ATT.Category = {"eft_hk416_barrel"}
 
-ATT.ExcludeElements = {"eft_hg_hk416_mrs14", "eft_hg_hk416_quadext", "eft_hg_hk416_midwest135", "eft_hg_hk416_crux", "eft_hg_hk416_troy"}
+ATT.ExcludeElements = {"eft_hg_hk416_mrs14", "eft_hg_hk416_quadext", "eft_hg_hk416_midwest135", "eft_hg_hk416_crux", "eft_hg_hk416_troy", "eft_hg_hk416_smr145", "eft_hg_hk416_smr145_fde"}
 
 ATT.ActivateElements = {"barrel_16i"}
 
@@ -1114,3 +1114,438 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
 
 -- EFT ID: 5c6c2c9c2e2216000f2002e4
 ARC9.LoadAttachment(ATT, "eft_hg_hk416_troy")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- post 1.0
+
+
+///////////////////////////////////////      eft_barrel_hk416_145i_alt
+
+ATT = {}
+
+ATT.PrintName = "HK 416 5.56x45 14.5 inch barrel"
+ATT.CompactName = "416 14.5\""
+ATT.Icon = Material("entities/eft_attachments/6a15b1fdbf497aade1003af2.png", "mips smooth")
+ATT.Description = "A 14.5 inch (368mm) barrel for 416-based weapons for 5.56x45 NATO ammo. Comes without a front sight, allowing installation of medium length handguards."
+ATT.HasBarrel = true
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/barrel_416_hk_368mm_no_sight_556x45.mdl"
+ATT.MuzzleDevice = true
+ATT.MuzzleDevice_Priority = 2
+ATT.BarrelLengthAdd = 4
+ATT.HeatCapacityMult = 1.02
+ATT.PhysBulletMuzzleVelocityMult = 0.92
+ATT.Spread = 1.89 * ARC9.MOAToAcc
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_hk416_barrel"}
+
+ATT.ExcludeElements = {"eft_hg_hk416_mrs14", "eft_hg_hk416_quadext", "eft_hg_hk416_midwest135", "eft_hg_hk416_crux", "eft_hg_hk416_troy", "eft_hg_hk416_smr145", "eft_hg_hk416_smr145_fde"}
+
+ATT.ActivateElements = {"barrel_145i"}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_gasblock"),
+        Category = "eft_hk416_gasblock",
+        Pos = Vector(-8.32, 0, 0.25),
+        Ang = Angle(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
+        Category = "eft_ar15_muzzle",
+        Pos = Vector(-14.435, 0, 0),
+        Ang = Angle(0, 0, 0),
+    },
+}
+
+-- EFT ID: 6a15b1fdbf497aade1003af2
+ARC9.LoadAttachment(ATT, "eft_barrel_hk416_145i_alt")
+
+
+
+
+///////////////////////////////////////      eft_hg_hk416_smr105
+
+ATT = {}
+
+ATT.PrintName = "HK 416 Geissele SMR HK 10.5 inch handguard (Black)"
+ATT.CompactName = "SMR HK 10.5\""
+ATT.Icon = Material("entities/eft_attachments/6a157b9e5ef5195441036c12.png", "mips smooth")
+ATT.Description = "The Geissele Super Modular Rail handguard for HK416, equipped with a proprietary interface for the installation of additional devices and accessories. Black version."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_hk416_hguard"}
+ATT.HasHG = true
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_416_geissele_smr_hk_105_inch.mdl"
+ATT.LHIK = true 
+ATT.HeatCapacityMult = 0.976
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_backup"),
+        Category = {"eft_backupmount"},
+        Pos = Vector(0, 1.6, -1.35),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExtraSightDistance = 8
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_frontsight"),
+        Category = {"eft_frontsight"},
+        Pos = Vector(0, 9.2, -1.35),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExtraSightDistance = 8
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_u"),
+        Category = {"eft_tactical_top", "eft_tactical_top_big"},
+        Pos = Vector(0, 5, -1.35),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },    
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_r"),
+        Category = {"eft_hk416_hguard_rail"},
+        Pos = Vector(0.9, 8.35, 0.1),
+        Ang = Angle(180, 90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_l"),
+        Category = {"eft_hk416_hguard_rail"},
+        Pos = Vector(-0.9, 8.35, 0.1),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_b"),
+        Category = {"eft_hk416_hguard_rail_b"},
+        Pos = Vector(0, 4.27, 1.15),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_b"),
+        Category = {"eft_hk416_hguard_rail"},
+        Pos = Vector(0, 8.35, 1.15),
+        Ang = Angle(0, -90, -90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+
+-- EFT ID: 6a157b9e5ef5195441036c12
+ARC9.LoadAttachment(ATT, "eft_hg_hk416_smr105")
+
+
+///////////////////////////////////////      eft_hg_hk416_smr105_fde
+
+ATT = {}
+
+ATT.PrintName = "HK 416 Geissele SMR HK 10.5 inch handguard (DDC)"
+ATT.CompactName = "SMR HK 10.5\""
+ATT.Icon = Material("entities/eft_attachments/6a157f34cbb8d0c82606c54c.png", "mips smooth")
+ATT.Description = "The Geissele Super Modular Rail handguard for HK416, equipped with a proprietary interface for the installation of additional devices and accessories. Desert Dirt Color version."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_hk416_hguard"}
+ATT.HasHG = true
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_416_geissele_smr_hk_105_inch.mdl"
+ATT.ModelSkin = 1
+ATT.LHIK = true 
+ATT.HeatCapacityMult = 0.976
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_backup"),
+        Category = {"eft_backupmount"},
+        Pos = Vector(0, 1.6, -1.35),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExtraSightDistance = 8
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_frontsight"),
+        Category = {"eft_frontsight"},
+        Pos = Vector(0, 9.2, -1.35),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExtraSightDistance = 8
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_u"),
+        Category = {"eft_tactical_top", "eft_tactical_top_big"},
+        Pos = Vector(0, 5, -1.35),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },    
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_r"),
+        Category = {"eft_hk416_hguard_rail"},
+        Pos = Vector(0.9, 8.35, 0.1),
+        Ang = Angle(180, 90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_l"),
+        Category = {"eft_hk416_hguard_rail"},
+        Pos = Vector(-0.9, 8.35, 0.1),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_b"),
+        Category = {"eft_hk416_hguard_rail_b"},
+        Pos = Vector(0, 4.27, 1.15),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_b"),
+        Category = {"eft_hk416_hguard_rail"},
+        Pos = Vector(0, 8.35, 1.15),
+        Ang = Angle(0, -90, -90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+-- EFT ID: 6a157f34cbb8d0c82606c54c
+ARC9.LoadAttachment(ATT, "eft_hg_hk416_smr105_fde")
+
+///////////////////////////////////////      eft_hg_hk416_smr145
+
+ATT = {}
+
+ATT.PrintName = "HK 416 Geissele SMR HK 14.5 inch handguard (Black)"
+ATT.CompactName = "SMR HK 14.5\""
+ATT.Icon = Material("entities/eft_attachments/6a157f5d8d059ca69c0a7864.png", "mips smooth")
+ATT.Description = "The Geissele Super Modular Rail handguard for HK416, equipped with a proprietary interface for the installation of additional devices and accessories. Black version."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_hk416_hguard"}
+ATT.HasHG = true
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_416_geissele_smr_hk_145_inch.mdl"
+ATT.LHIK = true 
+ATT.HeatCapacityMult = 0.976
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_backup"),
+        Category = {"eft_backupmount"},
+        Pos = Vector(0, 1.6, -1.35),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExtraSightDistance = 8
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_frontsight"),
+        Category = {"eft_frontsight"},
+        Pos = Vector(0, 9.2+4.25, -1.35),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExtraSightDistance = 8
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_u"),
+        Category = {"eft_tactical_top", "eft_tactical_top_big"},
+        Pos = Vector(0, 5+4.25, -1.35),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },    
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_r"),
+        Category = {"eft_hk416_hguard_rail"},
+        Pos = Vector(0.9, 8.35+4.25, 0.1),
+        Ang = Angle(180, 90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_l"),
+        Category = {"eft_hk416_hguard_rail"},
+        Pos = Vector(-0.9, 8.35+4.25, 0.1),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_b"),
+        Category = {"eft_hk416_hguard_rail_b"},
+        Pos = Vector(0, 4.27, 1.15),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_b"),
+        Category = {"eft_hk416_hguard_rail"},
+        Pos = Vector(0, 8.35+4.25, 1.15),
+        Ang = Angle(0, -90, -90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+-- EFT ID: 6a157f5d8d059ca69c0a7864
+ARC9.LoadAttachment(ATT, "eft_hg_hk416_smr145")
+
+
+///////////////////////////////////////      eft_hg_hk416_smr145_fde
+
+ATT = {}
+
+ATT.PrintName = "HK 416 Geissele SMR HK 14.5 inch handguard (DDC)"
+ATT.CompactName = "SMR HK 14.5\""
+ATT.Icon = Material("entities/eft_attachments/6a157fa8af9c1c57b700778f.png", "mips smooth")
+ATT.Description = "The Geissele Super Modular Rail handguard for HK416, equipped with a proprietary interface for the installation of additional devices and accessories. Desert Dirt Color version."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_hk416_hguard"}
+ATT.HasHG = true
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_416_geissele_smr_hk_145_inch.mdl"
+ATT.ModelSkin = 1
+ATT.LHIK = true 
+ATT.HeatCapacityMult = 0.976
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_backup"),
+        Category = {"eft_backupmount"},
+        Pos = Vector(0, 1.6, -1.35),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExtraSightDistance = 8
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_frontsight"),
+        Category = {"eft_frontsight"},
+        Pos = Vector(0, 9.2+4.25, -1.35),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExtraSightDistance = 8
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_u"),
+        Category = {"eft_tactical_top", "eft_tactical_top_big"},
+        Pos = Vector(0, 5+4.25, -1.35),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },    
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_r"),
+        Category = {"eft_hk416_hguard_rail"},
+        Pos = Vector(0.9, 8.35+4.25, 0.1),
+        Ang = Angle(180, 90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_l"),
+        Category = {"eft_hk416_hguard_rail"},
+        Pos = Vector(-0.9, 8.35+4.25, 0.1),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_b"),
+        Category = {"eft_hk416_hguard_rail_b"},
+        Pos = Vector(0, 4.27, 1.15),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_b"),
+        Category = {"eft_hk416_hguard_rail"},
+        Pos = Vector(0, 8.35+4.25, 1.15),
+        Ang = Angle(0, -90, -90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+-- EFT ID: 6a157fa8af9c1c57b700778f
+ARC9.LoadAttachment(ATT, "eft_hg_hk416_smr145_fde")
+
+
+///////////////////////////////////////      eft_hg_hk416_hg_rail_short
+
+ATT = {}
+
+ATT.PrintName = "Geissele SMR HK short rail"
+ATT.CompactName = "SMR HK short"
+ATT.Icon = Material("entities/eft_attachments/6a157e289bbb889992032c22.png", "mips smooth")
+ATT.Description = "The Geissele SMR HK rail section allows installation of additional equipment on the SMR handguards."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_hk416_hguard_rail"}
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/mount_g36_smr_side_rail.mdl"
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_tactical"),
+        Category = "eft_tactical",
+        -- RejectAttachments = { ["eft_tactical_raptar"] = true },
+        Pos = Vector(-0.0, -0.25, 0),
+        Ang = Angle(0, 0, -90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+-- EFT ID: 6a157e289bbb889992032c22
+ARC9.LoadAttachment(ATT, "eft_hg_hk416_hg_rail_short")
+
+///////////////////////////////////////      eft_hg_hk416_hg_rail_long
+
+ATT = {}
+
+ATT.PrintName = "Geissele SMR HK long rail"
+ATT.CompactName = "SMR HK long"
+ATT.Icon = Material("entities/eft_attachments/6a157e31b507e45a68038d88.png", "mips smooth")
+ATT.Description = "The Geissele Super Modular Rail HK rail section allows installation of additional equipment on the handguards."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_hk416_hguard_rail_b"}
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/mount_g36_smr_bottom_rail.mdl"
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_foregrip"),
+        Category = {"eft_foregrip_small", "eft_foregrip_large"},
+        Pos = Vector(0, 0, 0.25),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, -1),
+    },
+}
+
+-- EFT ID: 6a157e31b507e45a68038d88
+ARC9.LoadAttachment(ATT, "eft_hg_hk416_hg_rail_long")

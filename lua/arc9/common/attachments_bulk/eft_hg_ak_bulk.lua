@@ -647,6 +647,7 @@ ATT.HeatCapacityMult = 0.93
 
 ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_vltor_cmrd.mdl"
+ATT.ModelOffset = Vector(0, 0.05, 0)
 ATT.LHIK = true
 ATT.RequireElements = {"gasblock", "gasblock_vdmcs"}
 ATT.ExcludeElements = {"short_barrel", "eft_vityaz_gas_std"}
@@ -860,7 +861,7 @@ ATT.Icon = Material("entities/eft_ak_attachments/hg/hexa.png", "mips smooth")
 ATT.Description = [[A tubular handguard for AK family automatic rifles, manufactured by Hexagon.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
--- ATT.Folder = "HEXAGON"
+ATT.Folder = "HEXAGON"
 
 ATT.HeatCapacityMult = 0.952
 
@@ -928,7 +929,7 @@ ATT.Description = [[A tubular handguard for AK family automatic rifles, manufact
 DA RED GOEZ FASTA!]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
--- ATT.Folder = "HEXAGON"
+ATT.Folder = "HEXAGON"
 
 ATT.HeatCapacityMult = 0.952
 
@@ -2084,6 +2085,7 @@ ATT.HeatCapacityMult = 0.906
 
 ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_aspid.mdl"
+ATT.ModelOffset = Vector(0, 0.07, 0)
 ATT.ModelBodygroups = "0"
 ATT.LHIK = true
 ATT.RequireElements = {"gasblock", "gasblock_vdmcs"}
@@ -2474,4 +2476,352 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
 
 -- EFT ID: 5b84038986f774774913b0c1
 ARC9.LoadAttachment(ATT, "eft_mount_hexagon_s_ar")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- post 1.0
+
+
+///////////////////////////////////////      eft_hg_ak_cheese1
+
+ATT = {}
+
+ATT.PrintName = "AK Hexagon Cheese Grater mod.1 handguard (Anodized Red)"
+ATT.CompactName = "CG mod.1"
+ATT.Icon = Material("entities/eft_attachments/6a671d320578b5a41000c298.png", "mips smooth")
+ATT.Description = "A handguard for AK family automatic rifles, manufactured by Hexagon. Anodized Red version."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_ak_handguard_custom"}
+ATT.Folder = "HEXAGON"
+
+ATT.HeatCapacityMult = 0.952
+
+ATT.HasHG = true
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ak_hexagon_terka_1.mdl"
+ATT.ModelOffset = Vector(0, 0.08, 0)
+ATT.LHIK = true
+-- ATT.RequireElements = {"gasblock"}
+ATT.ActivateElements = {"nogp34"}
+
+ATT.ExcludeElements = {"short_barrel"}
+
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_l"),
+        Category = {"eft_mount_hexagon"},
+        Pos = Vector(-0.6, 12, 0.68),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0.2, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_r"),
+        Category = {"eft_mount_hexagon"},
+        Pos = Vector(0.6, 12, 0.68),
+        Ang = Angle(180, 90, 0),
+        Icon_Offset = Vector(0, 0.2, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_b"),
+        Category = {"eft_mount_hexagon_m"},
+        Pos = Vector(0, 3.7, 1.6),
+        Ang = Angle(0, -90, -90),
+    },
+}
+
+-- EFT ID: 6a671d320578b5a41000c298
+ARC9.LoadAttachment(ATT, "eft_hg_ak_cheese1")
+
+
+///////////////////////////////////////      eft_hg_ak_cheese1g
+
+ATT = {}
+
+ATT.PrintName = "AK Hexagon Cheese Grater mod.1 handguard (Anodized Grey)"
+ATT.CompactName = "CG mod.1"
+ATT.Icon = Material("entities/eft_attachments/6a6720479d7f57e84800faed.png", "mips smooth")
+ATT.Description = "A handguard for AK family automatic rifles, manufactured by Hexagon. Anodized Grey version."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_ak_handguard_custom"}
+ATT.Folder = "HEXAGON"
+
+ATT.HeatCapacityMult = 0.952
+
+ATT.HasHG = true
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ak_hexagon_terka_1.mdl"
+ATT.ModelSkin = 1
+ATT.ModelOffset = Vector(0, 0.08, 0)
+ATT.LHIK = true
+-- ATT.RequireElements = {"gasblock"}
+ATT.ActivateElements = {"nogp34"}
+
+ATT.ExcludeElements = {"short_barrel"}
+
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_l"),
+        Category = {"eft_mount_hexagon"},
+        Pos = Vector(-0.6, 12, 0.68),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0.2, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_r"),
+        Category = {"eft_mount_hexagon"},
+        Pos = Vector(0.6, 12, 0.68),
+        Ang = Angle(180, 90, 0),
+        Icon_Offset = Vector(0, 0.2, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_b"),
+        Category = {"eft_mount_hexagon_m"},
+        Pos = Vector(0, 3.7, 1.6),
+        Ang = Angle(0, -90, -90),
+    },
+}
+
+-- EFT ID: 6a6720479d7f57e84800faed
+ARC9.LoadAttachment(ATT, "eft_hg_ak_cheese1g")
+
+///////////////////////////////////////      eft_hg_ak_cheese1y
+
+ATT = {}
+
+ATT.PrintName = "AK Hexagon Cheese Grater mod.1 handguard (Anodized Yellow)"
+ATT.CompactName = "CG mod.1"
+ATT.Icon = Material("entities/eft_attachments/6a6720592ff856278106eb3e.png", "mips smooth")
+ATT.Description = "A handguard for AK family automatic rifles, manufactured by Hexagon. Anodized Yellow version."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_ak_handguard_custom"}
+ATT.Folder = "HEXAGON"
+
+ATT.HeatCapacityMult = 0.952
+
+ATT.HasHG = true
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ak_hexagon_terka_1.mdl"
+ATT.ModelSkin = 2
+ATT.ModelOffset = Vector(0, 0.08, 0)
+ATT.LHIK = true
+-- ATT.RequireElements = {"gasblock"}
+ATT.ActivateElements = {"nogp34"}
+
+ATT.ExcludeElements = {"short_barrel"}
+
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_l"),
+        Category = {"eft_mount_hexagon"},
+        Pos = Vector(-0.6, 12, 0.68),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0.2, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_r"),
+        Category = {"eft_mount_hexagon"},
+        Pos = Vector(0.6, 12, 0.68),
+        Ang = Angle(180, 90, 0),
+        Icon_Offset = Vector(0, 0.2, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_b"),
+        Category = {"eft_mount_hexagon_m"},
+        Pos = Vector(0, 3.7, 1.6),
+        Ang = Angle(0, -90, -90),
+    },
+}
+
+-- EFT ID: 6a6720592ff856278106eb3e
+ARC9.LoadAttachment(ATT, "eft_hg_ak_cheese1y")
+
+
+///////////////////////////////////////      eft_hg_ak_cheese2
+
+ATT = {}
+
+ATT.PrintName = "AK Hexagon Cheese Grater mod.2 handguard (Anodized Red)"
+ATT.CompactName = "CG mod.2"
+ATT.Icon = Material("entities/eft_attachments/6a6721edecf09d43410cba5a.png", "mips smooth")
+ATT.Description = "A handguard for AK family automatic rifles, manufactured by Hexagon. Anodized Red version."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_ak_handguard"}
+ATT.Folder = "HEXAGON"
+
+ATT.HasHG = true
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ak_hexagon_terka_2.mdl"
+ATT.ModelOffset = Vector(0, 0.08, 0)
+ATT.LHIK = true
+ATT.RequireElements = {"gasblock"}
+ATT.ActivateElements = {"nogp34"}
+
+ATT.ExcludeElements = {"short_barrel"}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_l"),
+        Category = {"eft_mount_hexagon"},
+        Pos = Vector(-0.65, 12.48, 0.55),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0.2, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_r"),
+        Category = {"eft_mount_hexagon"},
+        Pos = Vector(0.65, 12.48, 0.55),
+        Ang = Angle(180, 90, 0),
+        Icon_Offset = Vector(0, 0.2, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_b"),
+        Category = {"eft_mount_hexagon_m"},
+        Pos = Vector(0, 3.55, 1.6),
+        Ang = Angle(0, -90, -90),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_b"),
+        Category = {"eft_mount_hexagon"},
+        Pos = Vector(0, 12.85, 1.6),
+        Ang = Angle(0, -90, -90),
+        Icon_Offset = Vector(0, 0.2, 0),
+    },
+}
+
+-- EFT ID: 6a6721edecf09d43410cba5a
+ARC9.LoadAttachment(ATT, "eft_hg_ak_cheese2")
+
+
+///////////////////////////////////////      eft_hg_ak_cheese2g
+
+ATT = {}
+
+ATT.PrintName = "AK Hexagon Cheese Grater mod.2 handguard (Anodized Grey)"
+ATT.CompactName = "CG mod.2"
+ATT.Icon = Material("entities/eft_attachments/6a6724bddfb2de5e320d451d.png", "mips smooth")
+ATT.Description = "A handguard for AK family automatic rifles, manufactured by Hexagon. Anodized Grey version."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_ak_handguard"}
+ATT.Folder = "HEXAGON"
+
+ATT.HasHG = true
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ak_hexagon_terka_2.mdl"
+ATT.ModelSkin = 1
+ATT.ModelOffset = Vector(0, 0.08, 0)
+ATT.LHIK = true
+ATT.RequireElements = {"gasblock"}
+ATT.ActivateElements = {"nogp34"}
+
+ATT.ExcludeElements = {"short_barrel"}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_l"),
+        Category = {"eft_mount_hexagon"},
+        Pos = Vector(-0.65, 12.48, 0.55),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0.2, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_r"),
+        Category = {"eft_mount_hexagon"},
+        Pos = Vector(0.65, 12.48, 0.55),
+        Ang = Angle(180, 90, 0),
+        Icon_Offset = Vector(0, 0.2, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_b"),
+        Category = {"eft_mount_hexagon_m"},
+        Pos = Vector(0, 3.55, 1.6),
+        Ang = Angle(0, -90, -90),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_b"),
+        Category = {"eft_mount_hexagon"},
+        Pos = Vector(0, 12.85, 1.6),
+        Ang = Angle(0, -90, -90),
+        Icon_Offset = Vector(0, 0.2, 0),
+    },
+}
+
+-- EFT ID: 6a6724bddfb2de5e320d451d
+ARC9.LoadAttachment(ATT, "eft_hg_ak_cheese2g")
+
+
+///////////////////////////////////////      eft_hg_ak_cheese2y
+
+ATT = {}
+
+ATT.PrintName = "AK Hexagon Cheese Grater mod.2 handguard (Anodized Yellow)"
+ATT.CompactName = "CG mod.2"
+ATT.Icon = Material("entities/eft_attachments/6a67250406a5419b2508f23e.png", "mips smooth")
+ATT.Description = "A handguard for AK family automatic rifles, manufactured by Hexagon. Anodized Yellow version."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_ak_handguard"}
+ATT.Folder = "HEXAGON"
+
+ATT.HasHG = true
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ak_hexagon_terka_2.mdl"
+ATT.ModelSkin = 2
+ATT.ModelOffset = Vector(0, 0.08, 0)
+ATT.LHIK = true
+ATT.RequireElements = {"gasblock"}
+ATT.ActivateElements = {"nogp34"}
+
+ATT.ExcludeElements = {"short_barrel"}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_l"),
+        Category = {"eft_mount_hexagon"},
+        Pos = Vector(-0.65, 12.48, 0.55),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0.2, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_r"),
+        Category = {"eft_mount_hexagon"},
+        Pos = Vector(0.65, 12.48, 0.55),
+        Ang = Angle(180, 90, 0),
+        Icon_Offset = Vector(0, 0.2, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_b"),
+        Category = {"eft_mount_hexagon_m"},
+        Pos = Vector(0, 3.55, 1.6),
+        Ang = Angle(0, -90, -90),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_b"),
+        Category = {"eft_mount_hexagon"},
+        Pos = Vector(0, 12.85, 1.6),
+        Ang = Angle(0, -90, -90),
+        Icon_Offset = Vector(0, 0.2, 0),
+    },
+}
+
+-- EFT ID: 6a67250406a5419b2508f23e
+ARC9.LoadAttachment(ATT, "eft_hg_ak_cheese2y")
 
