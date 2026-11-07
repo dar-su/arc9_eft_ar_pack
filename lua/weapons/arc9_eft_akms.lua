@@ -49,6 +49,18 @@ SWEP.AttachmentElements = {
     ["eft_stock_akms_fab"] = { Bodygroups = { {4, 5}, {5, 0} } },
 }
 
+SWEP.Hook_ModifyBodygroups = function(wep, data)
+    local eles = data.elements
+    local mdl = data.model
+
+    if eles["eft_stock_akms_f"] then
+        mdl:SetBodygroup(4, 3)
+    end
+
+    if eles["eft_stock_akmsn_f"] then
+        mdl:SetBodygroup(4, 4)
+    end
+end
 
 SWEP.Attachments = {
     {
