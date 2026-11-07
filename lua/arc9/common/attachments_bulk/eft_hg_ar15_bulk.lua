@@ -4488,6 +4488,8 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_ar15_hguard"}
 ATT.Folder = "Daniel Defens"
 
+ATT.HasHG = true
+ATT.HeatCapacityMult = 0.968
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_dd_ris_iii_125_inch.mdl"
 ATT.ModelSkin = 1
 ATT.LHIK = true 
@@ -4568,6 +4570,8 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_ar15_hguard"}
 
+ATT.HasHG = true
+ATT.HeatCapacityMult = 0.968
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_dd_ris_iii_95_inch.mdl"
 ATT.ModelSkin = 1
 ATT.LHIK = true 
