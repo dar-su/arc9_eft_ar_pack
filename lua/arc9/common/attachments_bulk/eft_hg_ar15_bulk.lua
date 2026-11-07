@@ -49,7 +49,7 @@ ATT.LHIK = true
 ATT.HeatCapacityMult = 0.953
 ATT.Category = {"eft_ar15_hguard"}
 
-ATT.ExcludeElements = {"barrel_10i", "gasblock_big"}
+ATT.ExcludeElements = {"eft_barrel_ar15_260mm", "gasblock_big"}
 ATT.ActivateElements = {"sprrailallowed"}
 
 ATT.Attachments = {
@@ -901,7 +901,7 @@ ATT.Category = {"eft_ar15_hguard"}
 ATT.Folder = "KAC"
 ATT.ActivateElements = {"sprrailallowed", "eft_m203_allowed"}
 
-ATT.ExcludeElements = {"barrel_10i", "gasblock_big"}
+ATT.ExcludeElements = {"eft_barrel_ar15_260mm", "gasblock_big"}
 
 ATT.Attachments = {
     {
@@ -3279,7 +3279,7 @@ ATT.LHIK = true
 ATT.HeatCapacityMult = 0.996
 ATT.Category = {"eft_ar15_hguard"}
 
-ATT.ExcludeElements = {"barrel_10i", "gasblock_big"}
+ATT.ExcludeElements = {"eft_barrel_ar15_260mm", "gasblock_big"}
 
 ATT.Attachments = {
     {
