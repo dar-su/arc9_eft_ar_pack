@@ -1180,6 +1180,12 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 0),
     },
 }
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -12,
+    recoilModifier = -7.4,
+    weight = 0.85,
+}))
+
 
 -- EFT ID: 6a15b1fdbf497aade1003af2
 ARC9.LoadAttachment(ATT, "eft_barrel_hk416_145i_alt")
@@ -1258,6 +1264,10 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 16.5,
+    weight = 0.367,
+}))
 
 
 -- EFT ID: 6a157b9e5ef5195441036c12
@@ -1336,6 +1346,11 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 16.5,
+    weight = 0.367,
+}))
+
 
 -- EFT ID: 6a157f34cbb8d0c82606c54c
 ARC9.LoadAttachment(ATT, "eft_hg_hk416_smr105_fde")
@@ -1411,6 +1426,11 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 18.5,
+    weight = 0.462,
+}))
+
 
 -- EFT ID: 6a157f5d8d059ca69c0a7864
 ARC9.LoadAttachment(ATT, "eft_hg_hk416_smr145")
@@ -1488,6 +1508,11 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 18.5,
+    weight = 0.462,
+}))
+
 
 -- EFT ID: 6a157fa8af9c1c57b700778f
 ARC9.LoadAttachment(ATT, "eft_hg_hk416_smr145_fde")
@@ -1518,6 +1543,11 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.1,
+    weight = 0.05,
+}))
+
 
 -- EFT ID: 6a157e289bbb889992032c22
 ARC9.LoadAttachment(ATT, "eft_hg_hk416_hg_rail_short")
@@ -1546,6 +1576,11 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, -1),
     },
 }
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.2,
+    weight = 0.07,
+}))
+
 
 -- EFT ID: 6a157e31b507e45a68038d88
 ARC9.LoadAttachment(ATT, "eft_hg_hk416_hg_rail_long")

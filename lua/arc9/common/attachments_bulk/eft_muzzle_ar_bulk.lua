@@ -1200,6 +1200,12 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 0),
     },
 }
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 1,
+    recoilModifier = -8.5,
+    weight = 0.086,
+}))
+
 
 -- EFT ID: 6a6880680934ae00be0d5f9a
 ARC9.LoadAttachment(ATT, "eft_muzzle_checkmate_ar15")
@@ -1221,6 +1227,12 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_base_strike_industries_op
 -- ATT.MuzzleDevice = true
 -- ATT.MuzzleDevice_Priority = 4
 -- ATT.BarrelLengthAdd = 0.5
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -11.5,
+    recoilModifier = -4,
+    weight = 0.269,
+}))
+
 
 -- EFT ID: 6a6895ac4672de9ba1014bcc
 ARC9.LoadAttachment(ATT, "eft_muzzle_oppressor_ar15")
@@ -1254,6 +1266,12 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 0),
     },
 }
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2.5,
+    recoilModifier = -8,
+    weight = 0.063,
+}))
+
 
 -- EFT ID: 6a3cea96194a2625b40c863d
 ARC9.LoadAttachment(ATT, "eft_muzzle_t20_ar15")
@@ -1277,6 +1295,13 @@ ATT.MuzzleDevice = true
 ATT.MuzzleDevice_Priority = 5
 ATT.MuzzleParticle = "muzzleflash_suppressed"
 ATT.NoFlash = true
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -15,
+    recoilModifier = -2,
+    weight = 0.43,
+    velocity = 0.6,
+}))
+
 
 -- EFT ID: 6a3ceab8194a2625b40c8641
 ARC9.LoadAttachment(ATT, "eft_silencer_printx_556")
@@ -1309,6 +1334,13 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 0),
     },
 }
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.5,
+    recoilModifier = -5,
+    accuracyModifier = 2,
+    weight = 0.14,
+}))
+
 
 -- EFT ID: 6a158e63060f61ca2c03e096
 ARC9.LoadAttachment(ATT, "eft_muzzle_ar10_hux")
@@ -1333,6 +1365,13 @@ ATT.MuzzleDevice = true
 ATT.MuzzleDevice_Priority = 5
 ATT.MuzzleParticle = "muzzleflash_suppressed"
 ATT.NoFlash = true
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -14.5,
+    recoilModifier = -4.5,
+    weight = 0.55,
+    velocity = 1.5,
+}))
+
 
 -- EFT ID: 6a158e4abf497aade10030e0
 ARC9.LoadAttachment(ATT, "eft_silencer_hux")
@@ -1358,6 +1397,13 @@ ATT.MuzzleDevice = true
 ATT.MuzzleDevice_Priority = 5
 ATT.MuzzleParticle = "muzzleflash_suppressed"
 ATT.NoFlash = true
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -14.5,
+    recoilModifier = -4.5,
+    weight = 0.55,
+    velocity = 1.5,
+}))
+
 
 -- EFT ID: 6a1eb32c6cd328ea90037455
 ARC9.LoadAttachment(ATT, "eft_silencer_hux_fde")

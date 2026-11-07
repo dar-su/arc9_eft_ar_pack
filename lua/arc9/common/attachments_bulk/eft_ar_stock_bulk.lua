@@ -1429,6 +1429,12 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_ar_stock"}
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_caa_sbs.mdl"
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 10,
+    recoilModifier = -20.5,
+    weight = 0.276,
+}))
+
 
 -- EFT ID: 6a15bf94e5267ba21c07f9b1
 ARC9.LoadAttachment(ATT, "eft_ar_stock_caasbs")
@@ -1449,6 +1455,12 @@ ATT.Category = {"eft_ar_stock"}
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_caa_sbs.mdl"
 ATT.ModelSkin = 1
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 10,
+    recoilModifier = -20.5,
+    weight = 0.276,
+}))
+
 
 -- EFT ID: 6a15bfa58d059ca69c0a78c0
 ARC9.LoadAttachment(ATT, "eft_ar_stock_caasbs_fde")

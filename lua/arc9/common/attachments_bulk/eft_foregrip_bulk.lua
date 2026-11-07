@@ -1037,6 +1037,11 @@ ATT.LHIK_Priority = 2
 ATT.LHIK = true
 
 ATT.AdvancedCamoSupport = true
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    recoilModifier = -1.5,
+    weight = 0.185,
+}))
+
 
 -- EFT ID: 6a675e0706a5419b2508f26c
 ARC9.LoadAttachment(ATT, "eft_foregrip_para")
@@ -1060,6 +1065,12 @@ ATT.ModelAngleOffset = Angle(0, 90, 0)
 
 ATT.LHIK_Priority = 2
 ATT.LHIK = true
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 6,
+    recoilModifier = -2,
+    weight = 0.048,
+}))
+
 
 -- EFT ID: 6a16f3711c209e26040a5410
 ARC9.LoadAttachment(ATT, "eft_foregrip_ddvfg")
@@ -1084,6 +1095,12 @@ ATT.ModelSkin = 1
 
 ATT.LHIK_Priority = 2
 ATT.LHIK = true
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 6,
+    recoilModifier = -2,
+    weight = 0.048,
+}))
+
 
 -- EFT ID: 6a16f3811c209e26040a5413
 ARC9.LoadAttachment(ATT, "eft_foregrip_ddvfg_fde")

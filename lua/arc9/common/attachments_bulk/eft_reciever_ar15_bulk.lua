@@ -788,6 +788,10 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_frontsight"}
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/fs_dd_fixed.mdl"
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.03,
+}))
+
 
 -- EFT ID: 6a15785370efdef7be017253
 ARC9.LoadAttachment(ATT, "eft_frontsight_dd_fixed")
@@ -814,6 +818,11 @@ ATT.DrawFunc = function(swep, model)
         model:SetBodygroup(0, 0)
     end
 end
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 0.5,
+    weight = 0.034,
+}))
+
 
 -- EFT ID: 6a3ceadb6280cb85bc03f99a
 ARC9.LoadAttachment(ATT, "eft_frontsight_t20")
@@ -849,6 +858,10 @@ ATT.Sights = {
         IsIronSight = true
     }
 }
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.04,
+}))
+
 
 -- EFT ID: 6a1578658d059ca69c0a7853
 ARC9.LoadAttachment(ATT, "eft_rearsight_dd_fixed")
@@ -885,6 +898,11 @@ ATT.Sights = {
         IsIronSight = true
     }
 }
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 0.5,
+    weight = 0.036,
+}))
+
 
 -- EFT ID: 6a3ceacd8ce058e3a2059b28
 ARC9.LoadAttachment(ATT, "eft_rearsight_t20")

@@ -825,6 +825,12 @@ ATT.ActivateElements = {"30rnd"}
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 30
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.5,
+    weight = 0.11,
+    malfunctionChance = 0.05,
+}))
+
 
 -- EFT ID: 6a1579afcbb8d0c82606c541
 ARC9.LoadAttachment(ATT, "eft_mag_ar15_lancer_30")
@@ -854,6 +860,12 @@ ATT.ActivateElements = {"30rnd"}
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 30
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.5,
+    weight = 0.11,
+    malfunctionChance = 0.05,
+}))
+
 
 -- EFT ID: 6a1579bfb507e45a68038d7f
 ARC9.LoadAttachment(ATT, "eft_mag_ar15_lancer_30_fde")
@@ -881,6 +893,12 @@ ATT.ActivateElements = {"30rnd"}
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 32
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.5,
+    weight = 0.15,
+    malfunctionChance = 0.07,
+}))
+
 
 -- EFT ID: 6a16f3a28873771c3704a132
 ARC9.LoadAttachment(ATT, "eft_mag_ar15_dd_32")

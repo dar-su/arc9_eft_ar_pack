@@ -4383,6 +4383,11 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 10.5,
+    weight = 0.3,
+}))
+
 
 -- EFT ID: 6a156a75cbb8d0c82606c525
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_dd_iii")
@@ -4459,6 +4464,11 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 8,
+    weight = 0.25,
+}))
+
 
 -- EFT ID: 6a147ad5eff5b3bf690c2c0d
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_dd_iii_95")
@@ -4536,6 +4546,11 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 10.5,
+    weight = 0.3,
+}))
+
 
 -- EFT ID: 6a156a9407619a15b1023be7
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_dd_iii_fde")
@@ -4610,6 +4625,11 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 8,
+    weight = 0.25,
+}))
+
 
 -- EFT ID: 6a1567ce0cce01965f0bee01
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_dd_iii_95_fde")
@@ -4653,6 +4673,11 @@ ATT.Attachments = {
 }
 
 ATT.ExcludeElements = {"eft_m203"}
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 8,
+    weight = 0.17,
+}))
+
 
 -- EFT ID: 6a156ac407619a15b1023bf0
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_dd_iii_lower")
@@ -4695,6 +4720,11 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 8,
+    weight = 0.17,
+}))
+
 
 -- EFT ID: 6a1571b8060f61ca2c03e06f
 ARC9.LoadAttachment(ATT, "eft_ar15_dd_iii_lower_fde")
@@ -4728,6 +4758,11 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 8,
+    weight = 0.116,
+}))
+
 
 -- EFT ID: 6a147ae25071bc42610640b5
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_dd_iii_95_lower")
@@ -4762,6 +4797,11 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 8,
+    weight = 0.116,
+}))
+
 
 -- EFT ID: 6a1567e0af9c1c57b700776f
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_dd_iii_95_lower_fde")
@@ -4800,8 +4840,10 @@ ATT.Attachments = {
         Icon_Offset = Vector(-5, 0, 0),
     },
 }
-
-
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 17,
+    weight = 0.245,
+}))
 
 
 -- EFT ID: 6a6759a5ca1e7d40a007a56f
@@ -4826,6 +4868,11 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/tactical_uars_unique_ars_hex_shi
 ATT.ExcludeElements = {"eft_barrel_ar15_m16_20i", "eft_barrel_ar15_20i", "eft_barrel_ar15_18i", "eft_barrel_ar15_18i_mk12", "gasblock_big"}
 
 ATT.AdvancedCamoSupport = true
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 1.75,
+    weight = 0.08,
+}))
+
 
 -- EFT ID: 6a675d00358304130d098d4f
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_uar_hs")
@@ -4847,6 +4894,11 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/tactical_uars_unique_ars_hex_shi
 ATT.ModelSkin = 2
 
 ATT.ExcludeElements = {"eft_barrel_ar15_m16_20i", "eft_barrel_ar15_20i", "eft_barrel_ar15_18i", "eft_barrel_ar15_18i_mk12", "gasblock_big"}
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 1.75,
+    weight = 0.08,
+}))
+
 
 -- EFT ID: 6a675d75fd8364ead7039dd8
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_uar_hs_y")
@@ -4868,6 +4920,11 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/tactical_uars_unique_ars_hex_shi
 ATT.ModelSkin = 1
 
 ATT.ExcludeElements = {"eft_barrel_ar15_m16_20i", "eft_barrel_ar15_20i", "eft_barrel_ar15_18i", "eft_barrel_ar15_18i_mk12", "gasblock_big"}
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 1.75,
+    weight = 0.08,
+}))
+
 
 -- EFT ID: 6a675d8f2ff856278106eb69
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_uar_hs_g")

@@ -395,6 +395,11 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 14,
+    weight = 0.19,
+}))
+
 
 -- EFT ID: 6a158dd9060f61ca2c03e08e
 ARC9.LoadAttachment(ATT, "eft_hg_ak_krail")

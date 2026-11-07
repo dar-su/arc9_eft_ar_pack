@@ -1504,6 +1504,10 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.18,
+}))
 
 
 -- EFT ID: 6a3ceaf01ac10a22850e295a
@@ -1579,6 +1583,11 @@ ATT.RTScopeBlackBoxShadow = true
 ATT.RTScopeNew_ShadowScale = 3.3
 
 ATT.ScopeScreenRatio = 623/1080
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    weight = 0.48,
+}))
+
 
 -- EFT ID: 6a18508bae175e037a0be420
 ARC9.LoadAttachment(ATT, "eft_scope_prism3x30")
@@ -1626,6 +1635,11 @@ ATT.RTScopeBlackBoxShadow = true
 ATT.RTScopeNew_ShadowScale = 2
 
 ATT.ScopeScreenRatio = 580/1080
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    weight = 0.455,
+}))
+
 
 -- EFT ID: 6a19487a4afae114f106ba39
 ARC9.LoadAttachment(ATT, "eft_scope_acog_ta02")
@@ -1719,6 +1733,10 @@ ATT.RTScopeBlackBoxShadow = true
 
 ATT.ScopeScreenRatio = 622/1080
 ATT.RTScopeNew_ShadowScale = 1.1
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -3,
+    weight = 0.46,
+}))
 
 
 -- EFT ID: 6a3ceaff7047a606b90f5321
@@ -1753,6 +1771,11 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 1),
     },
 }
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.08,
+}))
+
 
 -- EFT ID: 6a16dc0b82cfbdc3ab09f58a
 ARC9.LoadAttachment(ATT, "eft_mount_ac32083")
@@ -1784,6 +1807,11 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 1),
     },
 }
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.026,
+}))
+
 
 -- EFT ID: 6a16dc17b7b9778bee072c65
 ARC9.LoadAttachment(ATT, "eft_mount_ac32067")
@@ -1820,6 +1848,10 @@ ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flag
 ATT.HoloSightReticle:SetVector("$color2", Vector(10, 0.8, 0.5)) -- bright color
 ATT.HoloSightSize = 400
 ATT.HoloSightColorable = false
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.5,
+    weight = 0.116,
+}))
 
 
 -- EFT ID: 6a16dec146b811b32d0583ef

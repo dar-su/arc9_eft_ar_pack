@@ -1198,6 +1198,12 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak74_jmac_laf_24.mdl"
 ATT.MuzzleDevice = true
 ATT.MuzzleDevice_Priority = 4
 ATT.BarrelLengthAdd = 0.5
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -3.5,
+    recoilModifier = -11.5,
+    weight = 0.13,
+}))
+
 
 -- EFT ID: 6a16dc8b12144b7727017dad
 ARC9.LoadAttachment(ATT, "eft_muzzle_ak_laf24")
