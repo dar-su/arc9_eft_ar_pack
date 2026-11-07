@@ -264,7 +264,7 @@ ATT.Description = [[A custom gas tube for specific AK family handguards.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_gb_pp1901_std.mdl"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_gb_custom.mdl"
 
 ATT.HeatCapacityMult = 0.995
 
