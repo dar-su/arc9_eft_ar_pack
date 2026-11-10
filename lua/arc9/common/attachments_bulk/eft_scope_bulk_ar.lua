@@ -944,24 +944,8 @@ ATT.DrawFunc = function(swep, model, wm)
     end
 end
 
-local Reticle_full = Material("vgui/arc9_eft_shared/reticles/adjustable/tango6t_f.png", "")
-local Reticle_quarter = Material("vgui/arc9_eft_shared/reticles/adjustable/tango6t_q.png", "")
-
-local scale = 0.9
-local finalsize = 6.65 * scale
-ATT.RTScopeDrawFunc = function(swep, rtsize, sight) 
-    local scrollevel = sight.SmoothScrollLevel or 0
-    local size = (rtsize + rtsize * (1 - scrollevel) * finalsize) * scale
-    local mat = Reticle_full
-
-    if scrollevel <= 0.45 then 
-        size = size / 4
-        mat = Reticle_quarter
-    end
-
-    surface.SetMaterial(mat)
-    surface.SetDrawColor(255, 255, 255)
-    surface.DrawTexturedRect(rtsize / 2 - size / 2, rtsize / 2 - size / 2, size, size)
+ATT.RTScopeNew_DrawFunc3D = function(swep, scrh, sight, modelang, lerped)
+    ARC9EFT.ScopeReticle3D(sight, modelang, lerped, "tango6t", 0.15, 0.912, 3)
 end
 
 ATT.ZoomSound = false
@@ -1693,24 +1677,8 @@ ATT.DrawFunc = function(swep, model, wm)
     end
 end
 
-local Reticle_full = Material("vgui/arc9_eft_shared/reticles/adjustable/shorty_q.png", "")
-local Reticle_quarter = Material("vgui/arc9_eft_shared/reticles/adjustable/shorty_f.png", "")
-
-local scale = 0.75
-local finalsize = 8 * scale
-ATT.RTScopeDrawFunc = function(swep, rtsize, sight) 
-    local scrollevel = sight.SmoothScrollLevel or 0
-    local size = (rtsize + rtsize * (1 - scrollevel) * finalsize) * scale
-    local mat = Reticle_full
-
-    if scrollevel <= 0.8 then 
-        size = size / 4
-        mat = Reticle_quarter
-    end
-
-    surface.SetMaterial(mat)
-    surface.SetDrawColor(255, 255, 255)
-    surface.DrawTexturedRect(rtsize / 2 - size / 2, rtsize / 2 - size / 2, size, size)
+ATT.RTScopeNew_DrawFunc3D = function(swep, scrh, sight, modelang, lerped)
+    ARC9EFT.ScopeReticle3D(sight, modelang, lerped, "shorty", 1.654, 11.7, 3)
 end
 
 ATT.ZoomSound = false
